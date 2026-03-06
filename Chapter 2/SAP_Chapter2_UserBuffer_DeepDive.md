@@ -15,9 +15,10 @@
 7. [Buffer Size Limit](#7-buffer-size-limit)
 8. [ECC vs S/4HANA — Buffer Differences](#8-ecc-vs-s4hana--buffer-differences)
 9. [Is the Buffer Visible?](#9-is-the-buffer-visible)
-10. [SU56 vs SU53](#su56-vs-su53--know-the-difference)
-11. [Key Transactions](#11-key-transactions)
-12. [Golden Rules — User Buffer](#12-golden-rules--user-buffer)
+10. [SU56 vs SU53](#10-su56-vs-su53--know-the-difference)
+11. [Audit Tracking — If Kernel Forgets, How Are Logins Tracked?](#11-audit-tracking--if-kernel-forgets-how-are-logins-tracked)
+12. [Key Transactions](#12-key-transactions)
+13. [Golden Rules — User Buffer](#13-golden-rules--user-buffer)
 
 ---
 
@@ -415,20 +416,109 @@ Transaction SU56
 
 ---
 
-## 11. Key Transactions
+## 11. Audit Tracking — If Kernel Forgets, How Are Logins Tracked?
+
+The buffer being wiped does NOT mean SAP forgets the login event. SAP has a completely **separate mechanism** for audit tracking!
+
+```
+User Buffer                    Audit / Login Tracking
+───────────────                ──────────────────────
+Lives in RAM                   Written to DATABASE
+Wiped at logout ❌             Stays PERMANENTLY ✅
+Holds authorizations           Holds login history
+Session-specific               Audit-ready
+```
+
+### How SAP Tracks Logins for Audit
+
+```
+Every login/logout event is written to:
+
+├── Table USR02
+│   ├── Last login date & time
+│   ├── Failed login attempts
+│   └── Account lock status
+│
+├── Security Audit Log (SM20)
+│   ├── ✅ Successful logins
+│   ├── ❌ Failed login attempts
+│   ├── 🔓 Account lockouts
+│   ├── 🔑 Password changes
+│   └── ⚠️ Critical transactions executed
+│
+└── System Log (SM21)
+    ├── Login/logout timestamps
+    ├── Session start & end
+    └── System errors
+```
+
+### SU56 Limitation for Audit
+
+```
+User logs out
+      │
+      ▼
+Buffer WIPED from RAM 🗑️
+      │
+      ▼
+SU56 has NOTHING to show
+for that session anymore!
+```
+
+| | `SU56` | `SM20` |
+|---|---|---|
+| **Shows past logins?** | ❌ No | ✅ Yes |
+| **Shows current buffer only?** | ✅ Yes | ❌ No |
+| **Survives logout?** | ❌ No — wiped with buffer | ✅ Yes — permanent |
+| **Useful for audit?** | ❌ No | ✅ Yes |
+| **Useful for troubleshooting?** | ✅ Yes | ❌ Not directly |
+
+> 💡 **CCTV Analogy:** Think of **SU56** as a live CCTV feed 📹 — shows what's happening RIGHT NOW. **SM20** is the recorded footage — shows everything that happened in the PAST, permanently!
+
+### For Audit — Never Rely on SU56!
+
+```
+For AUDIT use:             For TROUBLESHOOTING use:
+──────────────             ────────────────────────
+SM20 ✅                    SU56 ✅
+SM21 ✅                    SU53 ✅
+SUIM ✅
+USR02 table ✅
+```
+
+### S/4HANA — Additional Audit Layers
+
+```
+ABAP Security Audit Log (SM20)
+        +
+SAP HANA DB Audit Log
+(independent — tracks DB-level access)
+        +
+Fiori Access Logs
+```
+
+> S/4HANA gives you **3 layers of audit trails** — one for each security layer!
+
+---
+
+## 12. Key Transactions
 
 | Transaction | Purpose |
 |---|---|
-| `SU56` | View the current user buffer for any user |
+| `SU56` | View the current user buffer (live — session only) |
+| `SU53` | View last failed authorization check |
 | `SU01` | Assign or remove roles from a user |
 | `PFCG` | Change role authorizations & regenerate profile |
 | `SM04` | View all active user sessions — can terminate session |
 | `AL08` | View all active users across all application servers |
+| `SM20` | Security Audit Log — logins, failures, critical actions |
+| `SM21` | System Log — all system-level events |
+| `SUIM` | User Information System — login history & access reports |
 | `RHAUTUPD_NEW` | Report to refresh authorization buffers after mass changes |
 
 ---
 
-## 12. Golden Rules — User Buffer
+## 13. Golden Rules — User Buffer
 
 | # | Rule |
 |---|---|
@@ -444,6 +534,3 @@ Transaction SU56
 | 10 | **Use RHAUTUPD_NEW for mass changes** — refreshes buffers without re-login |
 
 ---
-
-*📝 Part of Chapter 2 — ABAP Authorization Concept*  
-*Back to: [Chapter 2 README](Readme.md)*
