@@ -1,0 +1,45287 @@
+# 🌐 SAP Partner Namespaces — Part 1 (A to N)
+> **Source:** USOBT_C table — SAP S/4HANA system
+> **Date:** March 2026
+
+---
+
+## Namespace Reference
+
+| Namespace | SAP System / Solution | T-codes |
+|-----------|----------------------|---------|
+| `/ACCGO/` | SAP Accrual Engine / Smart Payables | 162 |
+| `/AIF/` | SAP Application Interface Framework (AIF) | 131 |
+| `/AIFX/` | SAP AIF Extension | 3 |
+| `/ASU/` | SAP Application Server Utilities | 4 |
+| `/ATL/` | SAP Atlas — Attribute & Classification | 129 |
+| `/BA1/` | SAP Banking — Loans & Deposits | 34 |
+| `/BCV/` | SAP Bank Communication Management | 24 |
+| `/BDL/` | SAP Business Data Lake | 11 |
+| `/BDTS/` | SAP Bank Data Transfer Services | 19 |
+| `/BEA/` | SAP Banking — External Applications | 49 |
+| `/BEV1/` | SAP Beverage — Empties Management | 25 |
+| `/BEV4/` | SAP Beverage — Excise Duty & Tax | 24 |
+| `/BGLOCS/` | SAP Bulgaria Localization | 19 |
+| `/BOBF/` | SAP Business Object Framework (BOPF) | 4 |
+| `/BOFU/` | SAP Business One Foundation | 3 |
+| `/BON/` | SAP Business One Network | 1 |
+| `/BOPF/` | SAP BOPF Framework | 1 |
+| `/BSNAGT/` | SAP CRM Business Agent | 45 |
+| `/BUILD/` | SAP Build — Citizen Developer | 1 |
+| `/CCEE/` | SAP CEE Localization | 73 |
+| `/CDBASIS/` | SAP Controlled Distribution Basis | 4 |
+| `/CEECV/` | SAP CEE Country Version | 84 |
+| `/CEEIB/` | SAP CEE Internet Banking | 9 |
+| `/CEEIS/` | SAP CEE IS Localization | 28 |
+| `/CEERE/` | SAP CEE Real Estate Localization | 39 |
+| `/CEM/` | SAP Customer Energy Management — Utilities | 176 |
+| `/CFG/` | SAP Configuration Framework | 5 |
+| `/CLMDV/` | SAP Claim Management Development | 1 |
+| `/CPD/` | SAP Central Payment Dispatch | 154 |
+| `/CRMBW/` | SAP CRM BW Integration | 3 |
+| `/CRMTS/` | SAP CRM Trade Spend | 3 |
+| `/CRYSTAL/` | SAP Crystal Reports Integration | 1 |
+| `/CUM/` | SAP Customer Management | 36 |
+| `/CWM/` | SAP Catch Weight Management | 6 |
+| `/DMBE/` | SAP Document Management Basis Extended | 7 |
+| `/DSD/` | SAP Direct Store Delivery | 243 |
+| `/EACA/` | SAP EA Corporate Accounts | 5 |
+| `/EACC/` | SAP EA Credit & Collections | 3 |
+| `/ECRS/` | SAP Cash & Liquidity Management | 33 |
+| `/FLDQ/` | SAP Field Quality Management | 16 |
+| `/FMP/` | SAP Financial Market Planning | 8 |
+| `/FSCAA/` | SAP Financial Services Credit & Asset | 3 |
+| `/FSIH/` | SAP Financial Services Insurance Holdings | 3 |
+| `/FTI/` | SAP Financial Trade & Investment | 7 |
+| `/GC1/` | SAP Global Control Framework | 5 |
+| `/GSINS/` | SAP General & Specialty Insurance | 37 |
+| `/IAM/` | SAP Identity Access Management | 24 |
+| `/IBPP/` | SAP Insurance — Policy Processing | 9 |
+| `/IBS/` | SAP Insurance — Basis | 169 |
+| `/IBX/` | SAP Insurance — Extended | 96 |
+| `/ILE/` | SAP Integrated Logistics Execution | 25 |
+| `/INCMD/` | SAP Incoterms & Command Management | 7 |
+| `/IPRO/` | SAP Intellectual Property Management | 45 |
+| `/ISDFPS/` | SAP Defense & Public Security (DPS) | 370 |
+| `/IWBEP/` | SAP Gateway Backend (OData) | 41 |
+| `/IWFND/` | SAP Gateway Foundation (OData) | 37 |
+| `/IWNGW/` | SAP Next Gen Gateway | 11 |
+| `/IWPGW/` | SAP Push Gateway | 7 |
+| `/IWWRK/` | SAP Gateway Workflow | 4 |
+| `/IWXBE/` | SAP Event Based Infrastructure | 16 |
+| `/KJRTAX01/` | SAP Korea Tax Localization | 8 |
+| `/LIME/` | SAP LIME — Logistics Inventory Engine | 28 |
+| `/LSIERP/` | SAP LSI ERP Integration | 9 |
+| `/LTB/` | SAP Long-Term Budget Planning | 8 |
+| `/MACCRM/` | SAP Marketing CRM | 7 |
+| `/MERP/` | SAP Manufacturing ERP | 3 |
+| `/MFND/` | SAP Manufacturing Foundation | 8 |
+| `/MOC/` | SAP Mobile On Demand | 18 |
+| `/MSG/` | SAP Message & Communication Framework | 24 |
+| `/MVA/` | SAP Merchandise & Category Management | 170 |
+| `/NFM/` | SAP Net Fabric Management | 69 |
+| `/OLC/` | SAP Online Commerce | 1 |
+| `/OSP/` | SAP Order & Service Processing | 21 |
+| `/PERSONAS/` | SAP Screen Personas | 4 |
+| `/PF1/` | SAP Payroll — External Payroll | 280 |
+| `/PICM/` | SAP Process Integration & CM | 25 |
+| `/PLMB/` | SAP PLM Basis | 99 |
+| `/PLMI/` | SAP PLM Integration | 99 |
+| `/PLMPCV/` | SAP PLM Process Control & Variant | 10 |
+| `/PLMU/` | SAP PLM Utilities | 4 |
+| `/PM0/` | SAP Oil & Gas — Upstream | 855 |
+
+---
+
+
+## `/ACCGO/` — SAP Accrual Engine / Smart Payables
+> T-codes: **162**
+
+
+### 1. `/ACCGO/ABD_TYPE_SCEN`
+
+```
+T-Code: /ACCGO/ABD_TYPE_SCEN
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2. `/ACCGO/ACCRUAL_WC`
+
+```
+T-Code: /ACCGO/ACCRUAL_WC
+├── /ACCGO/NEY
+    ├── /ACCGO/APL → (empty — maintain in PFCG)
+    ├── /ACCGO/DTY → (empty — maintain in PFCG)
+    ├── /ACCGO/SID → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+├── /ACCGO/NSS
+    ├── /ACCGO/NSA → 1, 2, 3, 4, 5
+    ├── /ACCGO/SID → M, V
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+├── /ACCGO/STL
+    ├── /ACCGO/SID → M, V
+    ├── /ACCGO/STL → 1, 10, 11, 12, 13, 14, 2, 3, 4, 5, 6, 7, 8, 9
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── TCTYP → (empty — maintain in PFCG)
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → SETTLE_SHIP, STL_ADJ, STL_DIVRSN, STL_LIEN, STL_MAINTAIN, STL_NS_AGEN, STL_RETURNS, STL_REV
+    └── /ACCGO/NOD → NODE_STL_WC
+```
+
+### 3. `/ACCGO/ACM_ADDON_BRF`
+
+```
+T-Code: /ACCGO/ACM_ADDON_BRF
+└── /ACCGO/ADM
+    └── ACTVT → 3
+```
+
+### 4. `/ACCGO/ACM_DEL_LOCK`
+
+```
+T-Code: /ACCGO/ACM_DEL_LOCK
+└── /ACCGO/ADM
+    └── ACTVT → *
+```
+
+### 5. `/ACCGO/ACTV_SWITCH`
+
+```
+T-Code: /ACCGO/ACTV_SWITCH
+├── S_DEVELOP
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_SWITCH
+    ├── ACTVT → 2, 3, 7
+    ├── OBJNAME → SFBF
+    └── OBJTYPE → DUMMY
+```
+
+### 6. `/ACCGO/AGR`
+
+```
+T-Code: /ACCGO/AGR
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /ACCGO/AGR
+```
+
+### 7. `/ACCGO/AID`
+
+```
+T-Code: /ACCGO/AID
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /CASTP/AID
+```
+
+### 8. `/ACCGO/AIER_MAINTAIN`
+
+```
+T-Code: /ACCGO/AIER_MAINTAIN
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 9. `/ACCGO/APL`
+
+```
+T-Code: /ACCGO/APL
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /CASTP/APL
+```
+
+### 10. `/ACCGO/APPLDOC_DIS`
+
+```
+T-Code: /ACCGO/APPLDOC_DIS
+├── /ACCGO/NEY
+    ├── /ACCGO/APL → (empty — maintain in PFCG)
+    ├── /ACCGO/DTY → CAD, IAP, IAS, ICP, ICS, PAD, RPD, RSD, SAD, WAS
+    ├── /ACCGO/SID → M, V
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 11. `/ACCGO/APPL_LOG_DISP`
+
+```
+T-Code: /ACCGO/APPL_LOG_DISP
+├── S_ALV_LAYR
+    ├── ACTVT → 23
+    ├── HANDLE → (empty — maintain in PFCG)
+    ├── LOG_GROUP → (empty — maintain in PFCG)
+    └── REPORT → (empty — maintain in PFCG)
+├── S_DATASET
+    ├── ACTVT → 33, 34, 6, A6, A7
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → (empty — maintain in PFCG)
+└── S_TRANSLAT
+    ├── ACTVT → 2, A8
+    ├── TLANGUAGE → (empty — maintain in PFCG)
+    └── TRANOBJ → (empty — maintain in PFCG)
+```
+
+### 12. `/ACCGO/APP_DISP`
+
+```
+T-Code: /ACCGO/APP_DISP
+├── /ACCGO/UI
+    ├── /ACCGO/LEF → DISP_APPL, MAINTAIN
+    └── /ACCGO/NOD → NODE_APPLDOC
+├── M_BEST_EKO
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── EKORG → $EKORG
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 13. `/ACCGO/APP_SPOT`
+
+```
+T-Code: /ACCGO/APP_SPOT
+└── /ACCGO/SPM
+    ├── /ACCGO/APL → 31, 32
+    ├── /ACCGO/DTY → (empty — maintain in PFCG)
+    └── WERKS → $WERKS
+```
+
+### 14. `/ACCGO/APP_WC`
+
+```
+T-Code: /ACCGO/APP_WC
+├── /ACCGO/P2S
+    └── ACTVT → 1, 16
+├── /ACCGO/UI
+    ├── /ACCGO/LEF → APPLY, APPL_GRP, COMINGLED, CREA_GRP, MAIN_GRP, MPLOTASSIN, RETURN, SETFINALDEL, SETREADYTOPR, WHR
+    └── /ACCGO/NOD → NODE_AGRP, NODE_MANUAL
+├── /ACCGO/WHR
+    ├── /ACCGO/WAC → 1, 2, 4, 5
+    └── WERKS → $WERKS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 15. `/ACCGO/ARFLINK`
+
+```
+T-Code: /ACCGO/ARFLINK
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 16. `/ACCGO/ASGN_PRFCTYPE`
+
+```
+T-Code: /ACCGO/ASGN_PRFCTYPE
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 17. `/ACCGO/ASQ`
+
+```
+T-Code: /ACCGO/ASQ
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /ACCGO/ASQ
+```
+
+### 18. `/ACCGO/AS_MD_STS`
+
+```
+T-Code: /ACCGO/AS_MD_STS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 19. `/ACCGO/BACKDATED`
+
+```
+T-Code: /ACCGO/BACKDATED
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 20. `/ACCGO/BLKPP`
+
+```
+T-Code: /ACCGO/BLKPP
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 21. `/ACCGO/BR_WC`
+
+```
+T-Code: /ACCGO/BR_WC
+├── /ACCGO/BRT
+    ├── /ACCGO/BRT → (empty — maintain in PFCG)
+    ├── /ACCGO/DOC → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → BR_TRP_DISPL
+    └── /ACCGO/NOD → NODE_BR_TRPD
+```
+
+### 22. `/ACCGO/BR_WC_APP`
+
+```
+T-Code: /ACCGO/BR_WC_APP
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → BR_TRP_DISPL
+    └── /ACCGO/NOD → NODE_BR_TRPD
+```
+
+### 23. `/ACCGO/BR_WC_STL`
+
+```
+T-Code: /ACCGO/BR_WC_STL
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → BR_TRP_DISPL
+    └── /ACCGO/NOD → NODE_BR_TRPD
+```
+
+### 24. `/ACCGO/CAK_CCL_BI`
+
+```
+T-Code: /ACCGO/CAK_CCL_BI
+└── /ACCGO/CCL
+    ├── /ACCGO/CCL → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+```
+
+### 25. `/ACCGO/CAK_TYP`
+
+```
+T-Code: /ACCGO/CAK_TYP
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 26. `/ACCGO/CANL_PR`
+
+```
+T-Code: /ACCGO/CANL_PR
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 27. `/ACCGO/CAS_CANC_UF`
+
+```
+T-Code: /ACCGO/CAS_CANC_UF
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 28. `/ACCGO/CAS_RULES_TRS`
+
+```
+T-Code: /ACCGO/CAS_RULES_TRS
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → APPL_RULES, AUTO_APPLY, AUTO_SPLIT, AUTO_TYPE, FILL_ROLL, LO_MA_VEN_PT, PARTIAL_RULE, PRELIM_UNDER, RES_LIMIT, SPLIT_OWN, SPLIT_QUANT, TOS_EARLY, TOS_LATE
+    └── /ACCGO/NOD → NODE_RULES
+```
+
+### 29. `/ACCGO/CAS_STLDOCDIS`
+
+```
+T-Code: /ACCGO/CAS_STLDOCDIS
+└── /ACCGO/STL
+    ├── /ACCGO/SID → M, V
+    ├── /ACCGO/STL → 3
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── TCTYP → (empty — maintain in PFCG)
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+```
+
+### 30. `/ACCGO/CAS_STLGRPDIS`
+
+```
+T-Code: /ACCGO/CAS_STLGRPDIS
+└── /ACCGO/STL
+    ├── /ACCGO/SID → M, V
+    ├── /ACCGO/STL → 3
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── TCTYP → (empty — maintain in PFCG)
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+```
+
+### 31. `/ACCGO/CAS_STL_GRP`
+
+```
+T-Code: /ACCGO/CAS_STL_GRP
+├── /ACCGO/STL
+    ├── /ACCGO/SID → (empty — maintain in PFCG)
+    ├── /ACCGO/STL → 3
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── TCTYP → (empty — maintain in PFCG)
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → SETTLE_GRP
+    └── /ACCGO/NOD → NODE_STLGRP
+```
+
+### 32. `/ACCGO/CAS_STL_MAPEX`
+
+```
+T-Code: /ACCGO/CAS_STL_MAPEX
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → (empty — maintain in PFCG)
+```
+
+### 33. `/ACCGO/CAS_STL_MAPOP`
+
+```
+T-Code: /ACCGO/CAS_STL_MAPOP
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 34. `/ACCGO/CAS_STL_SPLIT`
+
+```
+T-Code: /ACCGO/CAS_STL_SPLIT
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+├── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → (empty — maintain in PFCG)
+└── S_TRANSLAT
+    ├── ACTVT → 2, A8
+    ├── TLANGUAGE → (empty — maintain in PFCG)
+    └── TRANOBJ → (empty — maintain in PFCG)
+```
+
+### 35. `/ACCGO/CAT2ITM`
+
+```
+T-Code: /ACCGO/CAT2ITM
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 36. `/ACCGO/CHNG_LOG_DISP`
+
+```
+T-Code: /ACCGO/CHNG_LOG_DISP
+├── W_WBHK_ORG
+    ├── ACTVT → 3
+    ├── EKGRP → $EKGRP
+    ├── EKORG → $EKORG
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+└── W_WBHK_TCT
+    ├── ACTVT → 3
+    └── TCTYP → (empty — maintain in PFCG)
+```
+
+### 37. `/ACCGO/CMG_HIST`
+
+```
+T-Code: /ACCGO/CMG_HIST
+├── /ACCGO/NEY
+    ├── /ACCGO/APL → (empty — maintain in PFCG)
+    ├── /ACCGO/DTY → (empty — maintain in PFCG)
+    ├── /ACCGO/SID → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+└── /ACCGO/STL
+    ├── /ACCGO/SID → (empty — maintain in PFCG)
+    ├── /ACCGO/STL → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── TCTYP → (empty — maintain in PFCG)
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+```
+
+### 38. `/ACCGO/CMG_STOR`
+
+```
+T-Code: /ACCGO/CMG_STOR
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /ACC
+```
+
+### 39. `/ACCGO/COMMON_UI`
+
+```
+T-Code: /ACCGO/COMMON_UI
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 40. `/ACCGO/CONVERT_UOM`
+
+```
+T-Code: /ACCGO/CONVERT_UOM
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 41. `/ACCGO/CO_WC`
+
+```
+T-Code: /ACCGO/CO_WC
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → PTC, REVERSE, RE_ASSIGN
+    └── /ACCGO/NOD → NODE_CWC
+```
+
+### 42. `/ACCGO/CREDIT_LIMIT`
+
+```
+T-Code: /ACCGO/CREDIT_LIMIT
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3, 8
+    └── TABLE → (empty — maintain in PFCG)
+```
+
+### 43. `/ACCGO/CROP_SEASONID`
+
+```
+T-Code: /ACCGO/CROP_SEASONID
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /ACC
+```
+
+### 44. `/ACCGO/CUST_MAINTAIN`
+
+```
+T-Code: /ACCGO/CUST_MAINTAIN
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 45. `/ACCGO/CUST_OPTN`
+
+```
+T-Code: /ACCGO/CUST_OPTN
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 46. `/ACCGO/CUST_PA_TYPE`
+
+```
+T-Code: /ACCGO/CUST_PA_TYPE
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 47. `/ACCGO/CUST_PCT_CAT`
+
+```
+T-Code: /ACCGO/CUST_PCT_CAT
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 48. `/ACCGO/CUS_PRASP`
+
+```
+T-Code: /ACCGO/CUS_PRASP
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 49. `/ACCGO/DDIC`
+
+```
+T-Code: /ACCGO/DDIC
+└── S_DEVELOP
+    ├── ACTVT → 1, 2, 3
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 50. `/ACCGO/DGR`
+
+```
+T-Code: /ACCGO/DGR
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /ACCGO/AGR
+```
+
+### 51. `/ACCGO/DOCTYP`
+
+```
+T-Code: /ACCGO/DOCTYP
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 52. `/ACCGO/DOCTYPD`
+
+```
+T-Code: /ACCGO/DOCTYPD
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 53. `/ACCGO/DOCTYP_1`
+
+```
+T-Code: /ACCGO/DOCTYP_1
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 54. `/ACCGO/DOCTYP_2`
+
+```
+T-Code: /ACCGO/DOCTYP_2
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 55. `/ACCGO/DPNUMRANGE`
+
+```
+T-Code: /ACCGO/DPNUMRANGE
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /ACCGO/DP
+```
+
+### 56. `/ACCGO/DPQSNUMRANGE`
+
+```
+T-Code: /ACCGO/DPQSNUMRANGE
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /ACCGO/DP
+```
+
+### 57. `/ACCGO/DPQS_CONDTYPE`
+
+```
+T-Code: /ACCGO/DPQS_CONDTYPE
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 58. `/ACCGO/EM_ACC`
+
+```
+T-Code: /ACCGO/EM_ACC
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 59. `/ACCGO/EM_SERMP`
+
+```
+T-Code: /ACCGO/EM_SERMP
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 60. `/ACCGO/ERM`
+
+```
+T-Code: /ACCGO/ERM
+├── /ACCGO/RR
+    ├── ACTVT → 3
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    └── VKORG → $VKORG
+├── /ACCGO/RRP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKGRP → $EKGRP
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → RR_PURCHASE, RR_SALES
+    └── /ACCGO/NOD → NODE_ER
+```
+
+### 61. `/ACCGO/EXM_COPY`
+
+```
+T-Code: /ACCGO/EXM_COPY
+└── /ACCGO/IR
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── OIJ_LOC → (empty — maintain in PFCG)
+    └── WERKS → $WERKS
+```
+
+### 62. `/ACCGO/EXPVBD`
+
+```
+T-Code: /ACCGO/EXPVBD
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 63. `/ACCGO/EXP_CUS`
+
+```
+T-Code: /ACCGO/EXP_CUS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 64. `/ACCGO/GDC`
+
+```
+T-Code: /ACCGO/GDC
+├── /ACCGO/GDC
+    └── ACTVT → 1, 2, 3
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → CHANGE_GDC, CREATE_GDC, DISPLAY_GDC
+    └── /ACCGO/NOD → NODE_GDC
+```
+
+### 65. `/ACCGO/GRPCAT`
+
+```
+T-Code: /ACCGO/GRPCAT
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 66. `/ACCGO/GRPNUMRANGE`
+
+```
+T-Code: /ACCGO/GRPNUMRANGE
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /ACCGO/GRP
+```
+
+### 67. `/ACCGO/GRPTYP`
+
+```
+T-Code: /ACCGO/GRPTYP
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 68. `/ACCGO/INVT`
+
+```
+T-Code: /ACCGO/INVT
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 69. `/ACCGO/INVTRM`
+
+```
+T-Code: /ACCGO/INVTRM
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 70. `/ACCGO/INV_PRICE`
+
+```
+T-Code: /ACCGO/INV_PRICE
+└── /ACCGO/DIS
+    └── ACTVT → 16
+```
+
+### 71. `/ACCGO/INV_ROUTER`
+
+```
+T-Code: /ACCGO/INV_ROUTER
+├── /ACCGO/UI
+    ├── /ACCGO/LEF → INV_ROUTER
+    └── /ACCGO/NOD → NODE_EXM
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 72. `/ACCGO/LDC_CUST`
+
+```
+T-Code: /ACCGO/LDC_CUST
+├── /ACCGO/UIC
+    └── ACTVT → 1, 2, 3, 6
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /ACC
+```
+
+### 73. `/ACCGO/LDC_WC`
+
+```
+T-Code: /ACCGO/LDC_WC
+├── /ACCGO/UI
+    ├── /ACCGO/LEF → NEW_UIS, UIS_WC
+    └── /ACCGO/NOD → NODE_UIS
+├── /ACCGO/UIS
+    ├── /ACCGO/UIS → 1, 2, 3, 4, 5, 6, 7, 8
+    └── WERKS → $WERKS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 74. `/ACCGO/LIENNUMRANGE`
+
+```
+T-Code: /ACCGO/LIENNUMRANGE
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /ACCGO/LN
+```
+
+### 75. `/ACCGO/LIEN_MAINT`
+
+```
+T-Code: /ACCGO/LIEN_MAINT
+├── /ACCGO/LIN
+    └── ACTVT → 1, 2, 3
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → CREATE_LIEN, DISPLAY_LIEN, MAINT_LIEN
+    └── /ACCGO/NOD → NODE_LIEN
+```
+
+### 76. `/ACCGO/MAINTAIN_DPQS`
+
+```
+T-Code: /ACCGO/MAINTAIN_DPQS
+├── /ACCGO/UI
+    ├── /ACCGO/LEF → MAINT_VOL, MAINT_val
+    └── /ACCGO/NOD → DPQS_MAINT
+├── /ACCGO/VAL
+    └── ACTVT → 1, 2, 3
+└── /ACCGO/VOL
+    └── ACTVT → 1, 2, 3
+```
+
+### 77. `/ACCGO/MAINTAIN_OPT`
+
+```
+T-Code: /ACCGO/MAINTAIN_OPT
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 78. `/ACCGO/MAINT_CALC_RL`
+
+```
+T-Code: /ACCGO/MAINT_CALC_RL
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 79. `/ACCGO/MAINT_COST`
+
+```
+T-Code: /ACCGO/MAINT_COST
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 80. `/ACCGO/MAINT_CURR`
+
+```
+T-Code: /ACCGO/MAINT_CURR
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 81. `/ACCGO/MAINT_DERV_RL`
+
+```
+T-Code: /ACCGO/MAINT_DERV_RL
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 82. `/ACCGO/MAINT_DPQS`
+
+```
+T-Code: /ACCGO/MAINT_DPQS
+├── /ACCGO/UI
+    ├── /ACCGO/LEF → MAINT_VOL, MAINT_val
+    └── /ACCGO/NOD → DPQS_MAINT
+├── /ACCGO/VAL
+    └── ACTVT → 1, 2, 3
+└── /ACCGO/VOL
+    └── ACTVT → 1, 2, 3
+```
+
+### 83. `/ACCGO/MAINT_MEOT`
+
+```
+T-Code: /ACCGO/MAINT_MEOT
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 84. `/ACCGO/MAINT_OPT_CAT`
+
+```
+T-Code: /ACCGO/MAINT_OPT_CAT
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 85. `/ACCGO/MAINT_PARAMS`
+
+```
+T-Code: /ACCGO/MAINT_PARAMS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 86. `/ACCGO/MAINT_QTYPRFS`
+
+```
+T-Code: /ACCGO/MAINT_QTYPRFS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 87. `/ACCGO/MAINT_SHD`
+
+```
+T-Code: /ACCGO/MAINT_SHD
+└── S_TCODE
+    └── TCD → /ACCGO/
+```
+
+### 88. `/ACCGO/MAINT_STAT`
+
+```
+T-Code: /ACCGO/MAINT_STAT
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 89. `/ACCGO/MAINT_TABASGN`
+
+```
+T-Code: /ACCGO/MAINT_TABASGN
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 90. `/ACCGO/MAINT_TABLIST`
+
+```
+T-Code: /ACCGO/MAINT_TABLIST
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 91. `/ACCGO/MAINT_TOLR`
+
+```
+T-Code: /ACCGO/MAINT_TOLR
+├── /ACCGO/TOL
+    └── ACTVT → 3
+├── /ACCGO/UI
+    ├── /ACCGO/LEF → MAINT_TOLR
+    └── /ACCGO/NOD → node_tolr_md
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 92. `/ACCGO/MAINT_VOLASG`
+
+```
+T-Code: /ACCGO/MAINT_VOLASG
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → VOL_ASG
+    └── /ACCGO/NOD → VOL_SCH_ASSG
+```
+
+### 93. `/ACCGO/MEK1`
+
+```
+T-Code: /ACCGO/MEK1
+└── V_KONH_VKS
+    ├── ACTVT → 1, 2
+    └── KSCHL → (empty — maintain in PFCG)
+```
+
+### 94. `/ACCGO/MEK2`
+
+```
+T-Code: /ACCGO/MEK2
+└── V_KONH_VKS
+    ├── ACTVT → 1, 2
+    └── KSCHL → (empty — maintain in PFCG)
+```
+
+### 95. `/ACCGO/MTM_STOCK_DEL`
+
+```
+T-Code: /ACCGO/MTM_STOCK_DEL
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 96. `/ACCGO/MVT_TYP`
+
+```
+T-Code: /ACCGO/MVT_TYP
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 97. `/ACCGO/MVT_TYPE`
+
+```
+T-Code: /ACCGO/MVT_TYPE
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 98. `/ACCGO/NEG_STRL`
+
+```
+T-Code: /ACCGO/NEG_STRL
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 99. `/ACCGO/NSL`
+
+```
+T-Code: /ACCGO/NSL
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 100. `/ACCGO/NSSNUMRANGE`
+
+```
+T-Code: /ACCGO/NSSNUMRANGE
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /ACCGO/NSS
+```
+
+### 101. `/ACCGO/OE_REC_DIS`
+
+```
+T-Code: /ACCGO/OE_REC_DIS
+├── /ACCGO/OE
+    └── ACTVT → 2, 3
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → RECOVERY
+    └── /ACCGO/NOD → NODE_OE
+```
+
+### 102. `/ACCGO/OPT_CUS`
+
+```
+T-Code: /ACCGO/OPT_CUS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 103. `/ACCGO/PPHD`
+
+```
+T-Code: /ACCGO/PPHD
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 104. `/ACCGO/PRICING_RUN`
+
+```
+T-Code: /ACCGO/PRICING_RUN
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → BU_LOCK, PRC_RULE
+    └── /ACCGO/NOD → NODE_PRICING
+```
+
+### 105. `/ACCGO/PRNUMRANGE`
+
+```
+T-Code: /ACCGO/PRNUMRANGE
+└── S_NUMBER
+    ├── ACTVT → 11, 2, 3
+    └── NROBJ → (empty — maintain in PFCG)
+```
+
+### 106. `/ACCGO/PROCESS_TRACE`
+
+```
+T-Code: /ACCGO/PROCESS_TRACE
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 107. `/ACCGO/PR_BATCH`
+
+```
+T-Code: /ACCGO/PR_BATCH
+└── /ACCGO/RR
+    ├── ACTVT → 10, 3
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    └── VKORG → $VKORG
+```
+
+### 108. `/ACCGO/QREP_DTSTDB`
+
+```
+T-Code: /ACCGO/QREP_DTSTDB
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 109. `/ACCGO/REASON_CODE`
+
+```
+T-Code: /ACCGO/REASON_CODE
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 110. `/ACCGO/REL_TRADE_CUS`
+
+```
+T-Code: /ACCGO/REL_TRADE_CUS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 111. `/ACCGO/RRP`
+
+```
+T-Code: /ACCGO/RRP
+├── /ACCGO/RRP
+    ├── ACTVT → 10, 3
+    ├── BUKRS → $BUKRS
+    ├── EKGRP → $EKGRP
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → RRP_PURCHASE, RRP_SALES
+    └── /ACCGO/NOD → NODE_RRP
+```
+
+### 112. `/ACCGO/RR_BATCH`
+
+```
+T-Code: /ACCGO/RR_BATCH
+├── /ACCGO/RR
+    ├── ACTVT → 10, 3
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    └── VKORG → $VKORG
+└── /ACCGO/RRP
+    ├── ACTVT → 10, 3
+    ├── BUKRS → $BUKRS
+    ├── EKGRP → $EKGRP
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+### 113. `/ACCGO/RULES_UTL`
+
+```
+T-Code: /ACCGO/RULES_UTL
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 114. `/ACCGO/RUL_CONFIG`
+
+```
+T-Code: /ACCGO/RUL_CONFIG
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 115. `/ACCGO/RUL_MAT_SEL`
+
+```
+T-Code: /ACCGO/RUL_MAT_SEL
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /CAS
+```
+
+### 116. `/ACCGO/RUL_MAT_SEL_D`
+
+```
+T-Code: /ACCGO/RUL_MAT_SEL_D
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /ACC
+```
+
+### 117. `/ACCGO/RUL_STREAMS`
+
+```
+T-Code: /ACCGO/RUL_STREAMS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /ACC
+```
+
+### 118. `/ACCGO/SHD_UTILITY`
+
+```
+T-Code: /ACCGO/SHD_UTILITY
+└── S_TCODE
+    └── TCD → /ACCGO/
+```
+
+### 119. `/ACCGO/SIT_COCKPIT`
+
+```
+T-Code: /ACCGO/SIT_COCKPIT
+├── /ACCGO/UI
+    ├── /ACCGO/LEF → LEAF_SIT
+    ├── /ACCGO/NOD → NODE_SIT
+    └── USER → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+└── V_LIKP_VST
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── VSTEL → $VSTEL
+```
+
+### 120. `/ACCGO/SNIP`
+
+```
+T-Code: /ACCGO/SNIP
+└── S_TCODE
+    └── TCD → 1, 2, 3
+```
+
+### 121. `/ACCGO/SNIP_MASS`
+
+```
+T-Code: /ACCGO/SNIP_MASS
+└── S_TCODE
+    └── TCD → 1, 2, 3
+```
+
+### 122. `/ACCGO/SPTNUMRANGE`
+
+```
+T-Code: /ACCGO/SPTNUMRANGE
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /CASTP/SPT
+```
+
+### 123. `/ACCGO/SRRVBD`
+
+```
+T-Code: /ACCGO/SRRVBD
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /CAS
+```
+
+### 124. `/ACCGO/STLC`
+
+```
+T-Code: /ACCGO/STLC
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /ACC
+```
+
+### 125. `/ACCGO/STLINVT`
+
+```
+T-Code: /ACCGO/STLINVT
+└── BRF_AUTH
+    ├── BRF_ACLASS → /ACC
+    ├── BRF_ACTVT → 1, 2, 3, 4, 5
+    └── BRF_CAT → 0, 1, 2, 3, 4, A, C, E, F, G, R, S
+```
+
+### 126. `/ACCGO/STLNUMRANGE`
+
+```
+T-Code: /ACCGO/STLNUMRANGE
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /ACCGO/STL
+```
+
+### 127. `/ACCGO/STLR`
+
+```
+T-Code: /ACCGO/STLR
+├── S_BCSETS
+    └── ACTVT → 1, 2, 23, 3, 6, 7
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /ACC
+```
+
+### 128. `/ACCGO/STLSET`
+
+```
+T-Code: /ACCGO/STLSET
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /ACC
+```
+
+### 129. `/ACCGO/STLTAB`
+
+```
+T-Code: /ACCGO/STLTAB
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /ACC
+```
+
+### 130. `/ACCGO/STL_APQ`
+
+```
+T-Code: /ACCGO/STL_APQ
+├── /ACCGO/STL
+    ├── /ACCGO/SID → M, V
+    ├── /ACCGO/STL → 10, 3, 5, 7
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── TCTYP → (empty — maintain in PFCG)
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → SETTLE_APPQ
+    └── /ACCGO/NOD → NODE_STL_AQ
+```
+
+### 131. `/ACCGO/STL_DOC`
+
+```
+T-Code: /ACCGO/STL_DOC
+├── /ACCGO/STL
+    ├── /ACCGO/SID → M, V
+    ├── /ACCGO/STL → 3
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── TCTYP → (empty — maintain in PFCG)
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → SETTLE_DOC
+    └── /ACCGO/NOD → NODE_STLDOC
+```
+
+### 132. `/ACCGO/STL_NS`
+
+```
+T-Code: /ACCGO/STL_NS
+├── /ACCGO/NSS
+    ├── /ACCGO/NSA → 1, 2, 3, 4, 5
+    ├── /ACCGO/SID → M, V
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → NSTL_CIRCLE, NSTL_DIS_W, NSTL_WASHOUT
+    └── /ACCGO/NOD → NODE_NSTL
+```
+
+### 133. `/ACCGO/STL_NS_PGM`
+
+```
+T-Code: /ACCGO/STL_NS_PGM
+└── /ACCGO/NSS
+    ├── /ACCGO/NSA → 1, 2, 3, 4, 5
+    ├── /ACCGO/SID → M, V
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+```
+
+### 134. `/ACCGO/STL_RC`
+
+```
+T-Code: /ACCGO/STL_RC
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /ACC
+```
+
+### 135. `/ACCGO/STL_RULES`
+
+```
+T-Code: /ACCGO/STL_RULES
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → AUTO_PAY, DOC_TYP_RULE, EXPCUS_RULE, INVTRM_RULE, LIEN_RULE, SPLIT_RULE, STLCUS_RULE
+    └── /ACCGO/NOD → NODE_CS_RULE
+```
+
+### 136. `/ACCGO/STL_S_PGM`
+
+```
+T-Code: /ACCGO/STL_S_PGM
+├── /ACCGO/STL
+    ├── /ACCGO/SID → M, V
+    ├── /ACCGO/STL → 1, 10, 11, 12, 13, 14, 2, 3, 4, 5, 6, 7, 8, 9
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── TCTYP → (empty — maintain in PFCG)
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /ACC
+```
+
+### 137. `/ACCGO/STL_WC`
+
+```
+T-Code: /ACCGO/STL_WC
+├── /ACCGO/NSS
+    ├── /ACCGO/NSA → 1, 2, 3, 4, 5
+    ├── /ACCGO/SID → M, V
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+├── /ACCGO/STL
+    ├── /ACCGO/SID → M, V
+    ├── /ACCGO/STL → 1, 10, 11, 12, 13, 14, 2, 3, 4, 5, 6, 7, 8, 9
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    ├── PRCTR → $PRCTR
+    ├── SPART → $SPART
+    ├── TCTYP → (empty — maintain in PFCG)
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → SETTLE_SHIP, STL_ADJ, STL_DIVRSN, STL_LIEN, STL_MAINTAIN, STL_NS_AGEN, STL_RETURNS, STL_REV
+    └── /ACCGO/NOD → NODE_STL_WC
+```
+
+### 138. `/ACCGO/SUBPROC`
+
+```
+T-Code: /ACCGO/SUBPROC
+└── BRF_AUTH
+    ├── BRF_ACLASS → /ACC
+    ├── BRF_ACTVT → 1, 2, 3, 4, 5
+    └── BRF_CAT → 0, 1, 2, 3, 4, A, C, E, F, G, R, S
+```
+
+### 139. `/ACCGO/THRESH`
+
+```
+T-Code: /ACCGO/THRESH
+└── BRF_AUTH
+    ├── BRF_ACLASS → /ACC
+    ├── BRF_ACTVT → 1, 2, 3, 4, 5
+    └── BRF_CAT → 0, 1, 2, 3, 4, A, C, E, F, G, R, S
+```
+
+### 140. `/ACCGO/TOLRTYP_MAINT`
+
+```
+T-Code: /ACCGO/TOLRTYP_MAINT
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /ACC
+```
+
+### 141. `/ACCGO/TRP_BR_DIFF`
+
+```
+T-Code: /ACCGO/TRP_BR_DIFF
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → BR_TRP_DISPL
+    └── /ACCGO/NOD → NODE_BR_TRPD
+```
+
+### 142. `/ACCGO/TSW_CUS`
+
+```
+T-Code: /ACCGO/TSW_CUS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /ACC
+```
+
+### 143. `/ACCGO/TSW_VSA`
+
+```
+T-Code: /ACCGO/TSW_VSA
+├── /ACCGO/ASG
+    ├── /ACCGO/LOC → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3
+└── /ACCGO/UI
+    ├── /ACCGO/LEF → MAINTAIN_TSW
+    └── /ACCGO/NOD → NODE_TSW_VSA
+```
+
+### 144. `/ACCGO/T_LN_FILL`
+
+```
+T-Code: /ACCGO/T_LN_FILL
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /ACC
+```
+
+### 145. `/ACCGO/T_TAX_PAY`
+
+```
+T-Code: /ACCGO/T_TAX_PAY
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → /ACC
+```
+
+### 146. `/ACCGO/UISNUMRANGE`
+
+```
+T-Code: /ACCGO/UISNUMRANGE
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /ACCGO/UIS
+```
+
+### 147. `/ACCGO/UTL_APDATA_ST`
+
+```
+T-Code: /ACCGO/UTL_APDATA_ST
+└── /ACCGO/UTL
+    ├── /ACCGO/USC → 3
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+```
+
+### 148. `/ACCGO/UTL_APDOC_ST`
+
+```
+T-Code: /ACCGO/UTL_APDOC_ST
+└── /ACCGO/UTL
+    ├── /ACCGO/USC → 2
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+```
+
+### 149. `/ACCGO/UTL_ASGSHD_A`
+
+```
+T-Code: /ACCGO/UTL_ASGSHD_A
+└── /ACCGO/UTL
+    ├── /ACCGO/USC → 2
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+```
+
+### 150. `/ACCGO/UTL_ASGSHD_M`
+
+```
+T-Code: /ACCGO/UTL_ASGSHD_M
+└── /ACCGO/UTL
+    ├── /ACCGO/USC → 2
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+```
+
+### 151. `/ACCGO/UTL_CALLOF_ST`
+
+```
+T-Code: /ACCGO/UTL_CALLOF_ST
+└── /ACCGO/UTL
+    ├── /ACCGO/USC → 4
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+```
+
+### 152. `/ACCGO/UTL_CAS_REL`
+
+```
+T-Code: /ACCGO/UTL_CAS_REL
+└── /ACCGO/UTL
+    ├── /ACCGO/USC → 8
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+```
+
+### 153. `/ACCGO/UTL_CPE_PRASP`
+
+```
+T-Code: /ACCGO/UTL_CPE_PRASP
+└── /ACCGO/UTL
+    ├── /ACCGO/USC → 11
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+```
+
+### 154. `/ACCGO/UTL_LDC_STAT`
+
+```
+T-Code: /ACCGO/UTL_LDC_STAT
+└── /ACCGO/UTL
+    ├── /ACCGO/USC → 6
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+```
+
+### 155. `/ACCGO/UTL_QTY_CALC`
+
+```
+T-Code: /ACCGO/UTL_QTY_CALC
+└── /ACCGO/UTL
+    ├── /ACCGO/USC → 19
+    ├── BUKRS → $BUKRS
+    └── WERKS → $WERKS
+```
+
+### 156. `/ACCGO/VAL_SCH_MAINT`
+
+```
+T-Code: /ACCGO/VAL_SCH_MAINT
+├── /ACCGO/UI
+    ├── /ACCGO/LEF → MAINT_val
+    └── /ACCGO/NOD → DPQS_MAINT
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 157. `/ACCGO/V_ABDTYPE`
+
+```
+T-Code: /ACCGO/V_ABDTYPE
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /ACC
+```
+
+### 158. `/ACCGO/V_CRDBREQ`
+
+```
+T-Code: /ACCGO/V_CRDBREQ
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /ACC
+```
+
+### 159. `/ACCGO/V_FEE_CUR`
+
+```
+T-Code: /ACCGO/V_FEE_CUR
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /ACC
+```
+
+### 160. `/ACCGO/V_LIEN_AP`
+
+```
+T-Code: /ACCGO/V_LIEN_AP
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /ACC
+```
+
+### 161. `/ACCGO/V_MAPDPQS`
+
+```
+T-Code: /ACCGO/V_MAPDPQS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → /ACC
+```
+
+### 162. `/ACCGO/WHR`
+
+```
+T-Code: /ACCGO/WHR
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /ACCGO/WHR
+```
+
+## `/AIF/` — SAP Application Interface Framework (AIF)
+> T-codes: **131**
+
+
+### 163. `/AIF/28000001`
+
+```
+T-Code: /AIF/28000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_NS
+```
+
+### 164. `/AIF/28000002`
+
+```
+T-Code: /AIF/28000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_ACCHECK, /AIF/V_ACFIELDS, /AIF/V_ACT, /AIF/V_FUNC
+```
+
+### 165. `/AIF/28000003`
+
+```
+T-Code: /AIF/28000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_CHECK, /AIF/V_TABCHK
+```
+
+### 166. `/AIF/28000004`
+
+```
+T-Code: /AIF/28000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_RECFLDS, /AIF/V_RECTYPE
+```
+
+### 167. `/AIF/28000006`
+
+```
+T-Code: /AIF/28000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_FFIX, /AIF/V_TFIX
+```
+
+### 168. `/AIF/28000007`
+
+```
+T-Code: /AIF/28000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_VMAP, /AIF/V_VMAPVAL, /AIF/V_VMAPVAL5
+```
+
+### 169. `/AIF/28000008`
+
+```
+T-Code: /AIF/28000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_FINF
+```
+
+### 170. `/AIF/28000009`
+
+```
+T-Code: /AIF/28000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/T_ALVH
+```
+
+### 171. `/AIF/28000010`
+
+```
+T-Code: /AIF/28000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_FMAP, /AIF/V_FMAPCOND, /AIF/V_IFACT, /AIF/V_IFCHECK, /AIF/V_INTFIX, /AIF/V_INTREC, /AIF/V_SMAP
+```
+
+### 172. `/AIF/28000011`
+
+```
+T-Code: /AIF/28000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_HASH, /AIF/V_HFLD, /AIF/V_IDX, /AIF/V_IFLD
+```
+
+### 173. `/AIF/39000372`
+
+```
+T-Code: /AIF/39000372
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_ODAT_CONF
+```
+
+### 174. `/AIF/39000373`
+
+```
+T-Code: /AIF/39000373
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_NRT_CONF
+```
+
+### 175. `/AIF/39000374`
+
+```
+T-Code: /AIF/39000374
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_NRT_CNF_S
+```
+
+### 176. `/AIF/39000390`
+
+```
+T-Code: /AIF/39000390
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_EP_CONF, /AIF/V_IFLOWCONF
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_EP_CONF, /AIF/V_IFLOWCONF
+```
+
+### 177. `/AIF/39000391`
+
+```
+T-Code: /AIF/39000391
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_EP_CONF
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_EP_CONF
+```
+
+### 178. `/AIF/39000392`
+
+```
+T-Code: /AIF/39000392
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_IFLOWCONF
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_IFLOWCONF
+```
+
+### 179. `/AIF/39000455`
+
+```
+T-Code: /AIF/39000455
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_REP_C
+```
+
+### 180. `/AIF/39000497`
+
+```
+T-Code: /AIF/39000497
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/T_EXCL_STR
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → AIF
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/T_EXCL_STR
+```
+
+### 181. `/AIF/39000498`
+
+```
+T-Code: /AIF/39000498
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/T_TRACE_LV
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → AIF
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/T_TRACE_LV
+```
+
+### 182. `/AIF/39000499`
+
+```
+T-Code: /AIF/39000499
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_MONLOGCAT
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → AIF
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_MONLOGCAT
+```
+
+### 183. `/AIF/39000533`
+
+```
+T-Code: /AIF/39000533
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_EVT_CONF
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → 2, 3
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_EVT_CONF
+```
+
+### 184. `/AIF/39000544`
+
+```
+T-Code: /AIF/39000544
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_FINF_DEL
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_FINF_DEL
+```
+
+### 185. `/AIF/39000545`
+
+```
+T-Code: /AIF/39000545
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_FINF_DELC
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_FINF_DELC
+```
+
+### 186. `/AIF/39000551`
+
+```
+T-Code: /AIF/39000551
+└── /AIF/CUST
+    ├── /AIF/MC → /AIF/VC_MSG_CAT
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → 2, 3
+```
+
+### 187. `/AIF/39000552`
+
+```
+T-Code: /AIF/39000552
+└── /AIF/CUST
+    ├── /AIF/MC → /AIF/VC_MSG_ASN
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → 2, 3
+```
+
+### 188. `/AIF/52000245`
+
+```
+T-Code: /AIF/52000245
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_WET_CUST
+```
+
+### 189. `/AIF/52000246`
+
+```
+T-Code: /AIF/52000246
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_WET_INF
+```
+
+### 190. `/AIF/52000247`
+
+```
+T-Code: /AIF/52000247
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_WET_PRXY
+```
+
+### 191. `/AIF/59000001`
+
+```
+T-Code: /AIF/59000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_INFDETP, /AIF/V_INFDET_CP, /AIF/V_INFDET_VP
+```
+
+### 192. `/AIF/59000002`
+
+```
+T-Code: /AIF/59000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_SYSNAMES
+```
+
+### 193. `/AIF/59000003`
+
+```
+T-Code: /AIF/59000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_INFDETI, /AIF/V_INFDET_CI, /AIF/V_INFDET_VI
+```
+
+### 194. `/AIF/59000004`
+
+```
+T-Code: /AIF/59000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_INFDETX, /AIF/V_INFDET_CX, /AIF/V_INFDET_VX
+```
+
+### 195. `/AIF/59000005`
+
+```
+T-Code: /AIF/59000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_FINF_IDOC
+```
+
+### 196. `/AIF/59000006`
+
+```
+T-Code: /AIF/59000006
+├── /AIF/CUST
+    ├── /AIF/MC → (empty — maintain in PFCG)
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_FINF_ENG
+```
+
+### 197. `/AIF/59000007`
+
+```
+T-Code: /AIF/59000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_INFDET_CC, /AIF/V_INFDET_VC, /AIF/V_INF_DET_C
+```
+
+### 198. `/AIF/59000008`
+
+```
+T-Code: /AIF/59000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_ENGINES
+```
+
+### 199. `/AIF/59000009`
+
+```
+T-Code: /AIF/59000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_IDOCSTAT
+```
+
+### 200. `/AIF/71000003`
+
+```
+T-Code: /AIF/71000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_FINF_ODAT
+```
+
+### 201. `/AIF/71000005`
+
+```
+T-Code: /AIF/71000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_MSG_LTIME
+```
+
+### 202. `/AIF/71000006`
+
+```
+T-Code: /AIF/71000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_GEN_SET
+```
+
+### 203. `/AIF/71000013`
+
+```
+T-Code: /AIF/71000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_RFC_CONF
+```
+
+### 204. `/AIF/71000022`
+
+```
+T-Code: /AIF/71000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_SUB_STA
+```
+
+### 205. `/AIF/71000035`
+
+```
+T-Code: /AIF/71000035
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_WF_SET
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_WF_SET
+```
+
+### 206. `/AIF/87000005`
+
+```
+T-Code: /AIF/87000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/POC_V_CFGAD, /AIF/POC_V_CFGIF, /AIF/POC_V_CFGTS
+```
+
+### 207. `/AIF/87000006`
+
+```
+T-Code: /AIF/87000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_IFSEROBJ, /AIF/V_KFLD_LOBJ, /AIF/V_KFLD_SOBJ, /AIF/V_SEROBJ
+```
+
+### 208. `/AIF/87000007`
+
+```
+T-Code: /AIF/87000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_IFSEROBJ, /AIF/V_KFLD_LOBJ, /AIF/V_KFLD_SOBJ, /AIF/V_SEROBJ
+```
+
+### 209. `/AIF/87000008`
+
+```
+T-Code: /AIF/87000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/BDC_V_CONF
+```
+
+### 210. `/AIF/87000009`
+
+```
+T-Code: /AIF/87000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/CIFPPTJSELV, /AIF/CIFPP_SSASV, /AIF/V_LOGSYST, /AIF/V_QRFC_TJSY, /AIF/V_Q_SS_AS, /AIF/V_SEL_BDC, /AIF/V_TJSS_INF, /AIF/V_TJ_SS, /AIF/V_TRFC_TJSY, /AIF/V_T_SS_AS
+```
+
+### 211. `/AIF/87000010`
+
+```
+T-Code: /AIF/87000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_BDC_IF
+```
+
+### 212. `/AIF/87000012`
+
+```
+T-Code: /AIF/87000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_RFC_FCOL, /AIF/V_RFC_FUNCS
+```
+
+### 213. `/AIF/87000014`
+
+```
+T-Code: /AIF/87000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_IDOC_TCOL, /AIF/V_IDOC_TYPE
+```
+
+### 214. `/AIF/98000053`
+
+```
+T-Code: /AIF/98000053
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_IFDET, /AIF/V_IFDETVAL
+```
+
+### 215. `/AIF/98000054`
+
+```
+T-Code: /AIF/98000054
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/T_ERR_APP, /AIF/V_APPL_KFLD, /AIF/V_FUNC_LST, /AIF/V_FUNC_LSTE
+```
+
+### 216. `/AIF/98000061`
+
+```
+T-Code: /AIF/98000061
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_VARIANT
+```
+
+### 217. `/AIF/98000062`
+
+```
+T-Code: /AIF/98000062
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_IFKEY
+```
+
+### 218. `/AIF/98000063`
+
+```
+T-Code: /AIF/98000063
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_VA_ASSIGN
+```
+
+### 219. `/AIF/98000064`
+
+```
+T-Code: /AIF/98000064
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_ACCHECKV, /AIF/V_ACTV, /AIF/V_FFIXV, /AIF/V_FINFV, /AIF/V_FMAPCONDV, /AIF/V_FUNCV, /AIF/V_IFACTV, /AIF/V_IFCHECKV, /AIF/V_INTFIXV, /AIF/V_SM_FMAPV, /AIF/V_STRMAPV, /AIF/V_TFIXV, /AIF/V_VMAPV
+```
+
+### 220. `/AIF/98000067`
+
+```
+T-Code: /AIF/98000067
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_ALRT_EXT, /AIF/V_ALRT_ROLE, /AIF/V_ALRT_USER
+```
+
+### 221. `/AIF/98000071`
+
+```
+T-Code: /AIF/98000071
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/T_EXCL_STR, /AIF/T_TRACE_LV, /AIF/V_MONLOGCAT
+```
+
+### 222. `/AIF/98000072`
+
+```
+T-Code: /AIF/98000072
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_ALRT_DEF, /AIF/V_ERR_LABEL, /AIF/V_IF_HDFLD, /AIF/V_INF_AFLD, /AIF/V_INF_AOBJ, /AIF/V_INF_AUTH, /AIF/V_INF_HIDE, /AIF/V_INF_KFLDS, /AIF/V_KFUNCPARA
+```
+
+### 223. `/AIF/98000073`
+
+```
+T-Code: /AIF/98000073
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_ALRT_INF, /AIF/V_ALRT_REC, /AIF/V_INF_TBL, /AIF/V_NS_AUTH, /AIF/V_NS_ERR_LB, /AIF/V_NS_HDFLD, /AIF/V_NS_HIDE
+```
+
+### 224. `/AIF/98000082`
+
+```
+T-Code: /AIF/98000082
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_SYSNAMES
+```
+
+### 225. `/AIF/98000238`
+
+```
+T-Code: /AIF/98000238
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_QNAME, /AIF/V_QNAMEFLDS
+```
+
+### 226. `/AIF/BDC_GEN`
+
+```
+T-Code: /AIF/BDC_GEN
+├── S_DEVELOP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → STRU, TTYP
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TTYPE → CUST, DTRA
+```
+
+### 227. `/AIF/CLEAR_SENS_DATA`
+
+```
+T-Code: /AIF/CLEAR_SENS_DATA
+└── S_DEVELOP
+    ├── ACTVT → L0
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 228. `/AIF/CUST_COPY`
+
+```
+T-Code: /AIF/CUST_COPY
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/ERROR_IF, /AIF/ERROR_NS, /AIF/SMAP, /AIF/V_FINF, /AIF/V_FINF_ENG, /AIF/V_FINF_IDOC
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+├── S_DATASET
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /AIF/CPY_CUST
+└── S_TRANSPRT
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TTYPE → DTRA, TASK
+```
+
+### 229. `/AIF/CUST_FUNC`
+
+```
+T-Code: /AIF/CUST_FUNC
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/CFUNC
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_CFUNC, /AIF/V_CFUNCPARA, /AIF/V_CFUNCUSER
+```
+
+### 230. `/AIF/CUST_HINTS`
+
+```
+T-Code: /AIF/CUST_HINTS
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_HINTS
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_HINTCUSER, /AIF/V_HINTS
+```
+
+### 231. `/AIF/CUST_LINK`
+
+```
+T-Code: /AIF/CUST_LINK
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/CLINK
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_CLINK, /AIF/V_CLINKUSER
+```
+
+### 232. `/AIF/CUST_OVERVIEW`
+
+```
+T-Code: /AIF/CUST_OVERVIEW
+├── /AIF/ERR
+    ├── /AIF/IF → (empty — maintain in PFCG)
+    ├── /AIF/IFVER → (empty — maintain in PFCG)
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → 16
+└── S_GUI
+    └── ACTVT → 4, 60, 61
+```
+
+### 233. `/AIF/CUST_SMAP_COPY`
+
+```
+T-Code: /AIF/CUST_SMAP_COPY
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/ERROR_IF, /AIF/ERROR_NS, /AIF/SMAP, /AIF/V_FINF, /AIF/V_FINF_ENG, /AIF/V_FINF_IDOC, /AIF/V_IFKEY
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TTYPE → CLCP, CUST, DTRA, TASK, TRAN
+```
+
+### 234. `/AIF/CUST_TEXT`
+
+```
+T-Code: /AIF/CUST_TEXT
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/CTEXT
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_CTEXT, /AIF/V_CTEXTUSER
+```
+
+### 235. `/AIF/DEL_RUNTIME_OBJ`
+
+```
+T-Code: /AIF/DEL_RUNTIME_OBJ
+└── /AIF/EMC
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → 75
+```
+
+### 236. `/AIF/DEPL_SCENARIO`
+
+```
+T-Code: /AIF/DEPL_SCENARIO
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_DEPLSC
+```
+
+### 237. `/AIF/DOCU`
+
+```
+T-Code: /AIF/DOCU
+└── /AIF/CUST
+    ├── /AIF/MC → /AIF/ACTIONS, /AIF/SMAP, /AIF/V_FINF
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 238. `/AIF/ERR`
+
+```
+T-Code: /AIF/ERR
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /AIF/LOG
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+├── S_BTCH_JOB
+    ├── JOBACTION → RELE
+    └── JOBGROUP → (empty — maintain in PFCG)
+└── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT
+    └── P_PROGNAM → /AIF/PERS_RUN_EXECUTE
+```
+
+### 239. `/AIF/EXT_CON_LIST`
+
+```
+T-Code: /AIF/EXT_CON_LIST
+├── S_ALV_LAYO
+    └── ACTVT → 23
+└── S_ALV_LAYR
+    ├── ACTVT → 23
+    ├── HANDLE → (empty — maintain in PFCG)
+    ├── LOG_GROUP → (empty — maintain in PFCG)
+    └── REPORT → /AIF/EXT_CON_LIST
+```
+
+### 240. `/AIF/FEATURE_CONF`
+
+```
+T-Code: /AIF/FEATURE_CONF
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_FEAT
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_FEAT
+```
+
+### 241. `/AIF/GEN_STRUC_CACHE`
+
+```
+T-Code: /AIF/GEN_STRUC_CACHE
+└── /AIF/CONT
+    ├── /AIF/IF → (empty — maintain in PFCG)
+    ├── /AIF/IFVER → (empty — maintain in PFCG)
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → 16
+```
+
+### 242. `/AIF/GET_FRUN_DATA`
+
+```
+T-Code: /AIF/GET_FRUN_DATA
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /AIF/GET_FRUN_DATA
+    └── RFC_TYPE → FUNC
+```
+
+### 243. `/AIF/IDOC_GEN`
+
+```
+T-Code: /AIF/IDOC_GEN
+├── /AIF/CUST
+    ├── /AIF/MC → (empty — maintain in PFCG)
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → 2, 3
+├── S_CTS_ADMI
+    └── CTS_ADMFCT → EPS1, EPS2
+├── S_DEVELOP
+    ├── ACTVT → 1, 16, 2, 3, 6, 7
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+├── S_GUI
+    └── ACTVT → 61
+└── S_IDOCDEFT
+    ├── ACTVT → 1, 2
+    ├── EDI_CIM → (empty — maintain in PFCG)
+    ├── EDI_DOC → (empty — maintain in PFCG)
+    └── EDI_TCD → (empty — maintain in PFCG)
+```
+
+### 244. `/AIF/IDOC_IMPORT`
+
+```
+T-Code: /AIF/IDOC_IMPORT
+├── /AIF/PROC
+    ├── /AIF/IF → (empty — maintain in PFCG)
+    ├── /AIF/IFVER → (empty — maintain in PFCG)
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    ├── /AIF/VNAME → (empty — maintain in PFCG)
+    ├── /AIF/VNS → (empty — maintain in PFCG)
+    └── ACTVT → 60
+├── S_DOKU_AUT
+    ├── DOKU_ACT → FINAL_VERS, RAW_VERS
+    ├── DOKU_DEVCL → (empty — maintain in PFCG)
+    └── DOKU_MODE → MAINTAIN, TRANSLATE
+├── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TRANSLAT
+    ├── ACTVT → 2
+    ├── TLANGUAGE → (empty — maintain in PFCG)
+    └── TRANOBJ → (empty — maintain in PFCG)
+```
+
+### 245. `/AIF/IDOC_MASS_GEN`
+
+```
+T-Code: /AIF/IDOC_MASS_GEN
+├── S_ALV_LAYO
+    └── ACTVT → 23
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → (empty — maintain in PFCG)
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+├── S_BTCH_JOB
+    ├── JOBACTION → LIST, PROT, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+├── S_DEVELOP
+    ├── ACTVT → 1, 2, 3, 7, 90
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+├── S_TRANSLAT
+    ├── ACTVT → 2, A8
+    ├── TLANGUAGE → (empty — maintain in PFCG)
+    └── TRANOBJ → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → 3
+    └── TTYPE → (empty — maintain in PFCG)
+```
+
+### 246. `/AIF/IFB`
+
+```
+T-Code: /AIF/IFB
+└── /AIF/CUST
+    ├── /AIF/MC → /AIF/SMAP
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 247. `/AIF/IFTEST`
+
+```
+T-Code: /AIF/IFTEST
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /AIF/LOG
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+└── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT
+    └── P_PROGNAM → /AIF/PERS_RUN_EXECUTE
+```
+
+### 248. `/AIF/IF_TRACE`
+
+```
+T-Code: /AIF/IF_TRACE
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_FINF_TL
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_FINF_TL
+```
+
+### 249. `/AIF/INTERFACE_LIST`
+
+```
+T-Code: /AIF/INTERFACE_LIST
+├── S_ADMI_FCD
+    └── S_ADMI_FCD → ' '
+├── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2
+    └── TABLE → (empty — maintain in PFCG)
+```
+
+### 250. `/AIF/LFA_CHECK_SEND`
+
+```
+T-Code: /AIF/LFA_CHECK_SEND
+└── S_DATASET
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /AIF/CHECK_AND_SEND_FILES
+```
+
+### 251. `/AIF/LFA_UPLOAD_FILE`
+
+```
+T-Code: /AIF/LFA_UPLOAD_FILE
+├── S_BTCH_JOB
+    ├── JOBACTION → RELE
+    └── JOBGROUP → (empty — maintain in PFCG)
+├── S_DATASET
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /AIF/UPLOAD_FILES_LFA
+└── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT
+    └── P_PROGNAM → /AIF/PERS_RUN_EXECUTE
+```
+
+### 252. `/AIF/LOG`
+
+```
+T-Code: /AIF/LOG
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /AIF/LOG
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+```
+
+### 253. `/AIF/MANAGE_MSGC_ASN`
+
+```
+T-Code: /AIF/MANAGE_MSGC_ASN
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /AIF/VC_MSG_ASN, /AIF/VC_MSG_CAT
+```
+
+### 254. `/AIF/MSG_CAT_ASGN`
+
+```
+T-Code: /AIF/MSG_CAT_ASGN
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_MSG_ASN
+```
+
+### 255. `/AIF/MSG_CAT_DEF`
+
+```
+T-Code: /AIF/MSG_CAT_DEF
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_MSG_CAT
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_MSG_CAT
+```
+
+### 256. `/AIF/MSG_DEL_DEL`
+
+```
+T-Code: /AIF/MSG_DEL_DEL
+├── /AIF/DLLOG
+    └── ACTVT → 6
+└── S_TCODE
+    └── TCD → /AIF/MSG_DEL_DEL
+```
+
+### 257. `/AIF/MSG_DEL_OV`
+
+```
+T-Code: /AIF/MSG_DEL_OV
+└── /AIF/DLLOG
+    └── ACTVT → 3
+```
+
+### 258. `/AIF/MYRECIPIENTS`
+
+```
+T-Code: /AIF/MYRECIPIENTS
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_ALRT_USR3
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_ALRT_USR3
+```
+
+### 259. `/AIF/MYTRANSPORTS`
+
+```
+T-Code: /AIF/MYTRANSPORTS
+├── S_DEVELOP
+    ├── ACTVT → 16, 3
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+├── S_DOKU_AUT
+    ├── DOKU_ACT → FINAL_VERS, RAW_VERS
+    ├── DOKU_DEVCL → (empty — maintain in PFCG)
+    └── DOKU_MODE → (empty — maintain in PFCG)
+├── S_GUI
+    └── ACTVT → 4, 60, 61
+└── S_TRANSPRT
+    ├── ACTVT → 3
+    └── TTYPE → (empty — maintain in PFCG)
+```
+
+### 260. `/AIF/NEWDEVIDS`
+
+```
+T-Code: /AIF/NEWDEVIDS
+├── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → &NC&
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_NEWDEV_ID
+```
+
+### 261. `/AIF/NEWDEVPRO`
+
+```
+T-Code: /AIF/NEWDEVPRO
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → &NC&
+```
+
+### 262. `/AIF/NS_LOCK`
+
+```
+T-Code: /AIF/NS_LOCK
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_NS_LOCK
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_NS_LOCK
+```
+
+### 263. `/AIF/OBJECT_NEW_WINDOW_NAVI`
+
+```
+T-Code: /AIF/OBJECT_NEW_WINDOW_NAVI
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /AIF/OBJECT_NEW_WINDOW_NAVI
+    └── RFC_TYPE → FUNC
+```
+
+### 264. `/AIF/OD_MYRECIPIENTS`
+
+```
+T-Code: /AIF/OD_MYRECIPIENTS
+└── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_ALRT_USR3
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → 2, 3
+```
+
+### 265. `/AIF/OD_RECIPIENTS`
+
+```
+T-Code: /AIF/OD_RECIPIENTS
+└── /AIF/CUST
+    ├── /AIF/MC → /AIF/ALERT
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → 2, 3
+```
+
+### 266. `/AIF/PERS_CGR`
+
+```
+T-Code: /AIF/PERS_CGR
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_PERS_RTCG
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_PERS_RTCG
+```
+
+### 267. `/AIF/PERS_DEL`
+
+```
+T-Code: /AIF/PERS_DEL
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /AIF/LOG
+    └── ALG_SUBOBJ → /AIF/PERS_DEL
+```
+
+### 268. `/AIF/PERS_DEL_AUTH`
+
+```
+T-Code: /AIF/PERS_DEL_AUTH
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → AIF
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /AIF/V_PERS_D_AU
+```
+
+### 269. `/AIF/PERS_TBL_GEN`
+
+```
+T-Code: /AIF/PERS_TBL_GEN
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /AIF/LOG
+    └── ALG_SUBOBJ → /AIF/PERS_TBL_GENE
+├── S_DEVELOP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → TABL
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TTYPE → DTRA
+```
+
+### 270. `/AIF/PERS_TEST`
+
+```
+T-Code: /AIF/PERS_TEST
+├── /AIF/PROC
+    ├── /AIF/IF → (empty — maintain in PFCG)
+    ├── /AIF/IFVER → (empty — maintain in PFCG)
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    ├── /AIF/VNAME → (empty — maintain in PFCG)
+    ├── /AIF/VNS → (empty — maintain in PFCG)
+    └── ACTVT → 60, 61, A4
+└── S_BTCH_JOB
+    ├── JOBACTION → PLAN, PROT, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 271. `/AIF/READ_LOG`
+
+```
+T-Code: /AIF/READ_LOG
+└── /AIF/RAL
+    ├── /AIF/IF → (empty — maintain in PFCG)
+    ├── /AIF/IFVER → (empty — maintain in PFCG)
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 272. `/AIF/RECIPIENTS`
+
+```
+T-Code: /AIF/RECIPIENTS
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_ALRT_USR2
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_ALRT_USR2
+```
+
+### 273. `/AIF/REP_AC_ASGN`
+
+```
+T-Code: /AIF/REP_AC_ASGN
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/VREP_AC_ASG
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/VREP_AC_ASG
+```
+
+### 274. `/AIF/REP_AC_DEF`
+
+```
+T-Code: /AIF/REP_AC_DEF
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/VREP_AC_DEF
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/VREP_AC_DEF
+```
+
+### 275. `/AIF/RFC_FUNC_GEN`
+
+```
+T-Code: /AIF/RFC_FUNC_GEN
+└── S_TRANSPRT
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TTYPE → DTRA, TASK
+```
+
+### 276. `/AIF/SETUP`
+
+```
+T-Code: /AIF/SETUP
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /AIF/*
+```
+
+### 277. `/AIF/TEST_BUPA`
+
+```
+T-Code: /AIF/TEST_BUPA
+├── S_BTCH_ADM
+    └── BTCADMIN → (empty — maintain in PFCG)
+└── S_BTCH_JOB
+    ├── JOBACTION → PLAN, PROT, RELE
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 278. `/AIF/TEXT_HINTS`
+
+```
+T-Code: /AIF/TEXT_HINTS
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 279. `/AIF/TJ_CONFIG`
+
+```
+T-Code: /AIF/TJ_CONFIG
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/VC_TJ_CONF
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/CIFPPTJSELV, /AIF/CIFPP_SSASV, /AIF/V_LOGSYST, /AIF/V_QRFC_TJSY, /AIF/V_Q_SS_AS, /AIF/V_SEL_BDC, /AIF/V_TJSS_INF, /AIF/V_TJ_SS, /AIF/V_TRFC_TJSY, /AIF/V_T_SS_AS
+```
+
+### 280. `/AIF/TOPICDEF`
+
+```
+T-Code: /AIF/TOPICDEF
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → &NC&
+```
+
+### 281. `/AIF/TOPICSTATUS`
+
+```
+T-Code: /AIF/TOPICSTATUS
+├── S_DEVELOP
+    ├── ACTVT → 16, 3
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → &NC&
+```
+
+### 282. `/AIF/TOPICSTATUSH`
+
+```
+T-Code: /AIF/TOPICSTATUSH
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → &NC&
+```
+
+### 283. `/AIF/TOPICSTATUSHALL`
+
+```
+T-Code: /AIF/TOPICSTATUSHALL
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → &NC&
+```
+
+### 284. `/AIF/TRANSFER`
+
+```
+T-Code: /AIF/TRANSFER
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /AIF/QRFC_READ
+    └── RFC_TYPE → FUGR
+```
+
+### 285. `/AIF/USERATTR`
+
+```
+T-Code: /AIF/USERATTR
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → &NC&
+```
+
+### 286. `/AIF/USERMGR`
+
+```
+T-Code: /AIF/USERMGR
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → AIF
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /AIF/V_USER_MGR
+```
+
+### 287. `/AIF/USERMGR2`
+
+```
+T-Code: /AIF/USERMGR2
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → &NC&
+```
+
+### 288. `/AIF/VPN`
+
+```
+T-Code: /AIF/VPN
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/V_VALID_PER
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_VALID_PER
+```
+
+### 289. `/AIF/WET_CONFIG`
+
+```
+T-Code: /AIF/WET_CONFIG
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/WET_CONFIG
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_WET_CONF
+```
+
+### 290. `/AIF/WET_GEN`
+
+```
+T-Code: /AIF/WET_GEN
+└── S_DEVELOP
+    ├── ACTVT → 1, 16, 2, 3, 40, 41, 42, 6, 7, 70, 90, 94, L0, MA
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 291. `/AIF/WET_INF_CONFIG`
+
+```
+T-Code: /AIF/WET_INF_CONFIG
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/WET_INF_CON
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_WET_INF_C
+```
+
+### 292. `/AIF/WET_PRXY_CONFIG`
+
+```
+T-Code: /AIF/WET_PRXY_CONFIG
+├── /AIF/CUST
+    ├── /AIF/MC → /AIF/WET_PRXYCON
+    ├── /AIF/NS → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIF/V_WET_PRXYC
+```
+
+### 293. `/AIF/XML_RESTART`
+
+```
+T-Code: /AIF/XML_RESTART
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /AIF/LOG
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+├── S_BTCH_JOB
+    ├── JOBACTION → RELE
+    └── JOBGROUP → (empty — maintain in PFCG)
+└── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT
+    └── P_PROGNAM → /AIF/PERS_RUN_EXECUTE, /AIF/PERS_RUN_PACK_EXECUTE
+```
+
+## `/AIFX/` — SAP AIF Extension
+> T-codes: **3**
+
+
+### 294. `/AIFX/80000001`
+
+```
+T-Code: /AIFX/80000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIFX/V_FINF_ECH
+```
+
+### 295. `/AIFX/80000002`
+
+```
+T-Code: /AIFX/80000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /AIFX/V_INFDETCE, /AIFX/V_INFDETPE, /AIFX/V_INFDET_E
+```
+
+### 296. `/AIFX/ERR_WEB`
+
+```
+T-Code: /AIFX/ERR_WEB
+└── S_IDOCMONI
+    ├── ACTVT → 3
+    ├── EDI_DIR → 1, 2
+    ├── EDI_MES → (empty — maintain in PFCG)
+    ├── EDI_PRN → (empty — maintain in PFCG)
+    ├── EDI_PRT → (empty — maintain in PFCG)
+    └── EDI_TCD → (empty — maintain in PFCG)
+```
+
+## `/ASU/` — SAP Application Server Utilities
+> T-codes: **4**
+
+
+### 297. `/ASU/AMT`
+
+```
+T-Code: /ASU/AMT
+├── B_ASU_ADMI
+    ├── /ASU/SCEN → (empty — maintain in PFCG)
+    ├── /ASU/VERSN → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 21, 60
+├── S_BDS_D
+    ├── ACTVT → 30
+    └── LOIO_CLASS → BDS_LOC2
+└── S_BDS_DS
+    ├── ACTVT → 1, 30
+    ├── CLASSNAME → ASU_DOCUMENTS
+    └── CLASSTYPE → OT
+```
+
+### 298. `/ASU/SSM`
+
+```
+T-Code: /ASU/SSM
+├── B_ASU_ADMI
+    ├── /ASU/SCEN → (empty — maintain in PFCG)
+    ├── /ASU/VERSN → (empty — maintain in PFCG)
+    └── ACTVT → 16, 2, 23, 3, 6, 81, A3
+└── S_BDS_DS
+    ├── ACTVT → 30
+    ├── CLASSNAME → ASU_DOCUMENTS
+    └── CLASSTYPE → OT
+```
+
+### 299. `/ASU/START`
+
+```
+T-Code: /ASU/START
+├── B_ASU_ADMI
+    ├── /ASU/SCEN → (empty — maintain in PFCG)
+    ├── /ASU/VERSN → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 21, 60
+├── S_BDS_D
+    ├── ACTVT → 30
+    └── LOIO_CLASS → BDS_LOC2
+└── S_BDS_DS
+    ├── ACTVT → 1, 30
+    ├── CLASSNAME → ASU_DOCUMENTS
+    └── CLASSTYPE → OT
+```
+
+### 300. `/ASU/UPGRADE`
+
+```
+T-Code: /ASU/UPGRADE
+├── B_ASU_ADMI
+    ├── /ASU/SCEN → (empty — maintain in PFCG)
+    ├── /ASU/VERSN → (empty — maintain in PFCG)
+    └── ACTVT → 1, 16, 2, 23, 3, 6, 60, 81, A3
+├── S_BDS_D
+    ├── ACTVT → 30
+    └── LOIO_CLASS → BDS_LOC2
+└── S_BDS_DS
+    ├── ACTVT → 1, 30
+    ├── CLASSNAME → ASU_DOCUMENTS
+    └── CLASSTYPE → OT
+```
+
+## `/ATL/` — SAP Atlas — Attribute & Classification
+> T-codes: **129**
+
+
+### 301. `/ATL/11001253`
+
+```
+T-Code: /ATL/11001253
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/VAT_ACTGRPD, /ATL/VAT_ACTGRPK, /ATL/VAT_GL_TYPE, /ATL/VAT_TAXCODE
+```
+
+### 302. `/ATL/26000038`
+
+```
+T-Code: /ATL/26000038
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/ILS_LEDGER
+```
+
+### 303. `/ATL/26000039`
+
+```
+T-Code: /ATL/26000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/DOCTYPE
+```
+
+### 304. `/ATL/26000040`
+
+```
+T-Code: /ATL/26000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/ACCOUNTTYPE
+```
+
+### 305. `/ATL/26000042`
+
+```
+T-Code: /ATL/26000042
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/VFI00002
+```
+
+### 306. `/ATL/26000043`
+
+```
+T-Code: /ATL/26000043
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/VFI00003
+```
+
+### 307. `/ATL/26000044`
+
+```
+T-Code: /ATL/26000044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/VFI00004
+```
+
+### 308. `/ATL/26000045`
+
+```
+T-Code: /ATL/26000045
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/VTCURT
+```
+
+### 309. `/ATL/26000046`
+
+```
+T-Code: /ATL/26000046
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/VAT_TRANKEY
+```
+
+### 310. `/ATL/26000047`
+
+```
+T-Code: /ATL/26000047
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/FI_CA
+```
+
+### 311. `/ATL/26000049`
+
+```
+T-Code: /ATL/26000049
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/A_D_DATE
+```
+
+### 312. `/ATL/26000050`
+
+```
+T-Code: /ATL/26000050
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/ANOADJY
+```
+
+### 313. `/ATL/26000051`
+
+```
+T-Code: /ATL/26000051
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/AREV_DATE
+```
+
+### 314. `/ATL/26000052`
+
+```
+T-Code: /ATL/26000052
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/LEGACY_DATE
+```
+
+### 315. `/ATL/26000053`
+
+```
+T-Code: /ATL/26000053
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/TKN12_MADAD
+```
+
+### 316. `/ATL/26000054`
+
+```
+T-Code: /ATL/26000054
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/TRAN_TYPE
+```
+
+### 317. `/ATL/26000055`
+
+```
+T-Code: /ATL/26000055
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/GV_GL1
+```
+
+### 318. `/ATL/26000057`
+
+```
+T-Code: /ATL/26000057
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/GV_GL2
+```
+
+### 319. `/ATL/26000058`
+
+```
+T-Code: /ATL/26000058
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/GV_GL4
+```
+
+### 320. `/ATL/26000059`
+
+```
+T-Code: /ATL/26000059
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/GV_GL4A
+```
+
+### 321. `/ATL/26000060`
+
+```
+T-Code: /ATL/26000060
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/GV_GL4R
+```
+
+### 322. `/ATL/26000061`
+
+```
+T-Code: /ATL/26000061
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/ENTTYBUKRS, /ATL/FORDOCLINE, /ATL/FORDOCSPLIT, /ATL/FORECDUPLIC, /ATL/FORECFLDDOC, /ATL/LEGALENTTY, /ATL/REPOSSBRANC, /ATL/RPOSSESSOR
+```
+
+### 323. `/ATL/26000062`
+
+```
+T-Code: /ATL/26000062
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPATAR
+```
+
+### 324. `/ATL/26000063`
+
+```
+T-Code: /ATL/26000063
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPINCOMTYPE
+```
+
+### 325. `/ATL/26000064`
+
+```
+T-Code: /ATL/26000064
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPKP00
+```
+
+### 326. `/ATL/26000065`
+
+```
+T-Code: /ATL/26000065
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KP012C
+```
+
+### 327. `/ATL/26000066`
+
+```
+T-Code: /ATL/26000066
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPKUPD
+```
+
+### 328. `/ATL/26000067`
+
+```
+T-Code: /ATL/26000067
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPKUPA
+```
+
+### 329. `/ATL/26000068`
+
+```
+T-Code: /ATL/26000068
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPKUPB
+```
+
+### 330. `/ATL/26000069`
+
+```
+T-Code: /ATL/26000069
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPKUPC
+```
+
+### 331. `/ATL/26000070`
+
+```
+T-Code: /ATL/26000070
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPLIMIT
+```
+
+### 332. `/ATL/26000071`
+
+```
+T-Code: /ATL/26000071
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPFASR
+```
+
+### 333. `/ATL/26000072`
+
+```
+T-Code: /ATL/26000072
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPCRDLTYP
+```
+
+### 334. `/ATL/26000073`
+
+```
+T-Code: /ATL/26000073
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPCRDTYP
+```
+
+### 335. `/ATL/26000074`
+
+```
+T-Code: /ATL/26000074
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/BNKCHAR
+```
+
+### 336. `/ATL/26000075`
+
+```
+T-Code: /ATL/26000075
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/DCKPM
+```
+
+### 337. `/ATL/26000076`
+
+```
+T-Code: /ATL/26000076
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/DQQ9
+```
+
+### 338. `/ATL/26000078`
+
+```
+T-Code: /ATL/26000078
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPCC_CUR
+```
+
+### 339. `/ATL/26000079`
+
+```
+T-Code: /ATL/26000079
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPCC_FILE
+```
+
+### 340. `/ATL/26000080`
+
+```
+T-Code: /ATL/26000080
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPCC_STR
+```
+
+### 341. `/ATL/26000081`
+
+```
+T-Code: /ATL/26000081
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPCC_MSG
+```
+
+### 342. `/ATL/26000082`
+
+```
+T-Code: /ATL/26000082
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPCC_LOG
+```
+
+### 343. `/ATL/26000083`
+
+```
+T-Code: /ATL/26000083
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/LCHK_BNKAP
+```
+
+### 344. `/ATL/26000084`
+
+```
+T-Code: /ATL/26000084
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/L_VBNKA
+```
+
+### 345. `/ATL/26000085`
+
+```
+T-Code: /ATL/26000085
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/UILBILNR_V
+```
+
+### 346. `/ATL/26000089`
+
+```
+T-Code: /ATL/26000089
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/RECTYPE1
+```
+
+### 347. `/ATL/26000090`
+
+```
+T-Code: /ATL/26000090
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/RECTYPE2
+```
+
+### 348. `/ATL/26000091`
+
+```
+T-Code: /ATL/26000091
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/GLSETCUST
+```
+
+### 349. `/ATL/26000094`
+
+```
+T-Code: /ATL/26000094
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/MAT_MTYPE
+```
+
+### 350. `/ATL/26000095`
+
+```
+T-Code: /ATL/26000095
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/DCKPM
+```
+
+### 351. `/ATL/26000096`
+
+```
+T-Code: /ATL/26000096
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/DQQ9
+```
+
+### 352. `/ATL/26000097`
+
+```
+T-Code: /ATL/26000097
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/BNKCHAR
+```
+
+### 353. `/ATL/26000098`
+
+```
+T-Code: /ATL/26000098
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/V_6111_CODE
+```
+
+### 354. `/ATL/26000099`
+
+```
+T-Code: /ATL/26000099
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/6111_HEADER
+```
+
+### 355. `/ATL/26000151`
+
+```
+T-Code: /ATL/26000151
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/TAXPER, /ATL/TAXPERASSET, /ATL/TAXPERBUKRS, /ATL/TAXPERCLASS
+```
+
+### 356. `/ATL/26000160`
+
+```
+T-Code: /ATL/26000160
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/6111_CONV
+```
+
+### 357. `/ATL/6111_CODE`
+
+```
+T-Code: /ATL/6111_CODE
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/V_6111_CODE
+```
+
+### 358. `/ATL/6111_CONV`
+
+```
+T-Code: /ATL/6111_CONV
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/6111_CONV
+```
+
+### 359. `/ATL/6111_HEADER`
+
+```
+T-Code: /ATL/6111_HEADER
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/6111_HEADER
+```
+
+### 360. `/ATL/AA_APR_DOC`
+
+```
+T-Code: /ATL/AA_APR_DOC
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 361. `/ATL/ACCOUNTTYPE`
+
+```
+T-Code: /ATL/ACCOUNTTYPE
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/ACCOUNTTYPE
+```
+
+### 362. `/ATL/ALLOWED_CHAR`
+
+```
+T-Code: /ATL/ALLOWED_CHAR
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/BNKCHAR
+```
+
+### 363. `/ATL/ARDATE`
+
+```
+T-Code: /ATL/ARDATE
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/AREV_DATE
+```
+
+### 364. `/ATL/BANK_PARM`
+
+```
+T-Code: /ATL/BANK_PARM
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/LCHK_BNKAP
+```
+
+### 365. `/ATL/DCKP`
+
+```
+T-Code: /ATL/DCKP
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/DCKPM
+```
+
+### 366. `/ATL/DOCTYPE`
+
+```
+T-Code: /ATL/DOCTYPE
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/DOCTYPE
+```
+
+### 367. `/ATL/DQQ9`
+
+```
+T-Code: /ATL/DQQ9
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/DQQ9
+```
+
+### 368. `/ATL/F6111_EXPORT`
+
+```
+T-Code: /ATL/F6111_EXPORT
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 369. `/ATL/F6111_IMPORT`
+
+```
+T-Code: /ATL/F6111_IMPORT
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 370. `/ATL/F6111_INPUT`
+
+```
+T-Code: /ATL/F6111_INPUT
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 371. `/ATL/F6111_MANAGE`
+
+```
+T-Code: /ATL/F6111_MANAGE
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 372. `/ATL/FIBP`
+
+```
+T-Code: /ATL/FIBP
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/FI_CA
+```
+
+### 373. `/ATL/FORGD`
+
+```
+T-Code: /ATL/FORGD
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/ENTTYBUKRS, /ATL/FORDOCLINE, /ATL/FORDOCSPLIT, /ATL/FORECDUPLIC, /ATL/FORECFLDDOC, /ATL/LEGALENTTY, /ATL/REPOSSBRANC, /ATL/RPOSSESSOR
+```
+
+### 374. `/ATL/GL01`
+
+```
+T-Code: /ATL/GL01
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/GV_GL1
+```
+
+### 375. `/ATL/GL02`
+
+```
+T-Code: /ATL/GL02
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/GV_GL2
+```
+
+### 376. `/ATL/GL03`
+
+```
+T-Code: /ATL/GL03
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/GV_GL4A
+```
+
+### 377. `/ATL/GL04`
+
+```
+T-Code: /ATL/GL04
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/GV_GL4
+```
+
+### 378. `/ATL/GLR`
+
+```
+T-Code: /ATL/GLR
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/GV_GL4R
+```
+
+### 379. `/ATL/GLSETCUST`
+
+```
+T-Code: /ATL/GLSETCUST
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/GLSETCUST
+```
+
+### 380. `/ATL/GLV`
+
+```
+T-Code: /ATL/GLV
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/GV_GL1V
+```
+
+### 381. `/ATL/ILS_LEDGER`
+
+```
+T-Code: /ATL/ILS_LEDGER
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/ILS_LEDGER
+```
+
+### 382. `/ATL/KP02`
+
+```
+T-Code: /ATL/KP02
+└── B_BUP_DCPD
+    ├── ACTVT → F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+```
+
+### 383. `/ATL/KP04`
+
+```
+T-Code: /ATL/KP04
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPKUPA
+```
+
+### 384. `/ATL/KP05`
+
+```
+T-Code: /ATL/KP05
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPKUPC
+```
+
+### 385. `/ATL/KP06`
+
+```
+T-Code: /ATL/KP06
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPKUPD
+```
+
+### 386. `/ATL/KP09`
+
+```
+T-Code: /ATL/KP09
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 387. `/ATL/KP11`
+
+```
+T-Code: /ATL/KP11
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPFASR
+```
+
+### 388. `/ATL/KP12`
+
+```
+T-Code: /ATL/KP12
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPATAR
+```
+
+### 389. `/ATL/KP13`
+
+```
+T-Code: /ATL/KP13
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPCRDTYP
+```
+
+### 390. `/ATL/KP14`
+
+```
+T-Code: /ATL/KP14
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPCRDLTYP
+```
+
+### 391. `/ATL/KP16`
+
+```
+T-Code: /ATL/KP16
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KP012C
+```
+
+### 392. `/ATL/KP22`
+
+```
+T-Code: /ATL/KP22
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 393. `/ATL/KP23`
+
+```
+T-Code: /ATL/KP23
+├── B_BUP_DCPD
+    ├── ACTVT → F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── F_BKPF_BUK
+    ├── ACTVT → 1, 10, 2, 22, 3, 43, 6, 7, 77, 8, C4
+    └── BUKRS → $BUKRS
+```
+
+### 394. `/ATL/KP24`
+
+```
+T-Code: /ATL/KP24
+├── B_BUP_DCPD
+    ├── ACTVT → F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── F_BKPF_BUK
+    ├── ACTVT → 1, 10, 2, 22, 3, 43, 6, 7, 77, 8, C4
+    └── BUKRS → $BUKRS
+```
+
+### 395. `/ATL/KP25`
+
+```
+T-Code: /ATL/KP25
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 396. `/ATL/KP26`
+
+```
+T-Code: /ATL/KP26
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 397. `/ATL/KP28`
+
+```
+T-Code: /ATL/KP28
+├── B_BUP_DCPD
+    ├── ACTVT → F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 398. `/ATL/KP30`
+
+```
+T-Code: /ATL/KP30
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPLIMIT
+```
+
+### 399. `/ATL/KP35`
+
+```
+T-Code: /ATL/KP35
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPKP00
+```
+
+### 400. `/ATL/KP36`
+
+```
+T-Code: /ATL/KP36
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPKUPB
+```
+
+### 401. `/ATL/KP40`
+
+```
+T-Code: /ATL/KP40
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPINCOMTYPE
+```
+
+### 402. `/ATL/KP41`
+
+```
+T-Code: /ATL/KP41
+├── B_BUP_DCPD
+    ├── ACTVT → F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── F_BKPF_BUK
+    ├── ACTVT → 1, 10, 2, 22, 3, 43, 6, 7, 77, 8, C4
+    └── BUKRS → $BUKRS
+```
+
+### 403. `/ATL/KP45`
+
+```
+T-Code: /ATL/KP45
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPCC_FILE
+```
+
+### 404. `/ATL/KP46`
+
+```
+T-Code: /ATL/KP46
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPCC_STR
+```
+
+### 405. `/ATL/KP47`
+
+```
+T-Code: /ATL/KP47
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPCC_MSG
+```
+
+### 406. `/ATL/KP48`
+
+```
+T-Code: /ATL/KP48
+└── S_TABU_NAM
+    ├── ACTVT → 3
+    └── TABLE → /ATL/KPCC_LOG
+```
+
+### 407. `/ATL/KP49`
+
+```
+T-Code: /ATL/KP49
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/KPCC_CUR
+```
+
+### 408. `/ATL/LCHK_VBNKA`
+
+```
+T-Code: /ATL/LCHK_VBNKA
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/L_VBNKA
+```
+
+### 409. `/ATL/MAT_MTYPE`
+
+```
+T-Code: /ATL/MAT_MTYPE
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/MAT_MTYPE
+```
+
+### 410. `/ATL/NOADJ`
+
+```
+T-Code: /ATL/NOADJ
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/ANOADJY
+```
+
+### 411. `/ATL/SD_DOCUMENT`
+
+```
+T-Code: /ATL/SD_DOCUMENT
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/SD_DOCUMENT
+```
+
+### 412. `/ATL/TAX_PER`
+
+```
+T-Code: /ATL/TAX_PER
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/TAXPER, /ATL/TAXPERASSET, /ATL/TAXPERBUKRS, /ATL/TAXPERCLASS
+```
+
+### 413. `/ATL/TEKEN_19`
+
+```
+T-Code: /ATL/TEKEN_19
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 414. `/ATL/TRAN_TYPE`
+
+```
+T-Code: /ATL/TRAN_TYPE
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/TRAN_TYPE
+```
+
+### 415. `/ATL/UNIFILES`
+
+```
+T-Code: /ATL/UNIFILES
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 416. `/ATL/UNIFILES_UTIL`
+
+```
+T-Code: /ATL/UNIFILES_UTIL
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 417. `/ATL/UNIF_IDNUM`
+
+```
+T-Code: /ATL/UNIF_IDNUM
+├── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /ATL/UNIF
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/ILS_LEDGER
+```
+
+### 418. `/ATL/UPLOAD_CUSTTAB`
+
+```
+T-Code: /ATL/UPLOAD_CUSTTAB
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 419. `/ATL/UVBN`
+
+```
+T-Code: /ATL/UVBN
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/UILBILNR_V
+```
+
+### 420. `/ATL/VATRECT1`
+
+```
+T-Code: /ATL/VATRECT1
+├── B_BUP_DCPD
+    ├── ACTVT → F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/RECTYPE1
+```
+
+### 421. `/ATL/VATRECT2`
+
+```
+T-Code: /ATL/VATRECT2
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/RECTYPE2
+```
+
+### 422. `/ATL/VATRECT3`
+
+```
+T-Code: /ATL/VATRECT3
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/RECTYPE3
+```
+
+### 423. `/ATL/VAT_TRANKEY`
+
+```
+T-Code: /ATL/VAT_TRANKEY
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/VAT_TRANKEY
+```
+
+### 424. `/ATL/VK01_46`
+
+```
+T-Code: /ATL/VK01_46
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 425. `/ATL/VQ22`
+
+```
+T-Code: /ATL/VQ22
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 426. `/ATL/VQZ10`
+
+```
+T-Code: /ATL/VQZ10
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/VFI00003
+```
+
+### 427. `/ATL/VQZ4`
+
+```
+T-Code: /ATL/VQZ4
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/VFI00002
+```
+
+### 428. `/ATL/VQZ6`
+
+```
+T-Code: /ATL/VQZ6
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/VTCURT
+```
+
+### 429. `/ATL/VQZ7`
+
+```
+T-Code: /ATL/VQZ7
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ATL/VFI00004
+```
+
+## `/BA1/` — SAP Banking — Loans & Deposits
+> T-codes: **34**
+
+
+### 430. `/BA1/03000051`
+
+```
+T-Code: /BA1/03000051
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/V_TF4_RRCCB
+```
+
+### 431. `/BA1/03000056`
+
+```
+T-Code: /BA1/03000056
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/V_TF4_RRCTG
+```
+
+### 432. `/BA1/03000057`
+
+```
+T-Code: /BA1/03000057
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/V_TF4_RR, /BA1/V_TF4_RRCB
+```
+
+### 433. `/BA1/22000264`
+
+```
+T-Code: /BA1/22000264
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/V_TF4_SCENS, /BA1/V_TF4_SCFX, /BA1/V_TF4_SCFXV, /BA1/V_TF4_SCIRV, /BA1/V_TF4_SCSCV, /BA1/V_TF4_SCSEC, /BA1/V_TF4_SCSFX, /BA1/V_TF4_SCSSC, /BA1/V_TF4_SCSSV, /BA1/V_TF4_SCSYC, /BA1/V_TF4_SREFR, /BA1/V_TF4_SREFS
+```
+
+### 434. `/BA1/22000265`
+
+```
+T-Code: /BA1/22000265
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/V_TF4_SCENP, /BA1/V_TF4_SCNGP
+```
+
+### 435. `/BA1/22000725`
+
+```
+T-Code: /BA1/22000725
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/V_TF4_MDSCN
+```
+
+### 436. `/BA1/24000003`
+
+```
+T-Code: /BA1/24000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/V_TF4_SCNSQ, /BA1/V_TF4_SCSQG
+```
+
+### 437. `/BA1/24000039`
+
+```
+T-Code: /BA1/24000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/V_TF4_VOLID
+```
+
+### 438. `/BA1/43000001`
+
+```
+T-Code: /BA1/43000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/V_TF4_COMP
+```
+
+### 439. `/BA1/58000006`
+
+```
+T-Code: /BA1/58000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/V_TF4_APCUR, /BA1/V_TF4_APPL, /BA1/V_TF4_APYCT
+```
+
+### 440. `/BA1/70000040`
+
+```
+T-Code: /BA1/70000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/F4_VV15IR
+```
+
+### 441. `/BA1/70000041`
+
+```
+T-Code: /BA1/70000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/F4_V15IRR
+```
+
+### 442. `/BA1/75000122`
+
+```
+T-Code: /BA1/75000122
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/V_TF4_CBOIS
+```
+
+### 443. `/BA1/75000123`
+
+```
+T-Code: /BA1/75000123
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/V_TF4_YCCMP, /BA1/V_TF4_YCSCT
+```
+
+### 444. `/BA1/79000153`
+
+```
+T-Code: /BA1/79000153
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BA1/V_TF4_MASTR, /BA1/V_TF4_MSTRC, /BA1/V_TF4_MSTRP
+```
+
+### 445. `/BA1/F4_FXV02`
+
+```
+T-Code: /BA1/F4_FXV02
+└── F_BAF4_VOT
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    ├── /BA1/F4_VC → FX
+    ├── /BA1/F4_VT → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2
+```
+
+### 446. `/BA1/F4_FXV03`
+
+```
+T-Code: /BA1/F4_FXV03
+└── F_BAF4_VOT
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    ├── /BA1/F4_VC → FX
+    ├── /BA1/F4_VT → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 447. `/BA1/F4_FX_02`
+
+```
+T-Code: /BA1/F4_FX_02
+└── F_BAF4_FXT
+    ├── /BA1/F4_FX → (empty — maintain in PFCG)
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2
+```
+
+### 448. `/BA1/F4_FX_03`
+
+```
+T-Code: /BA1/F4_FX_03
+└── F_BAF4_FXT
+    ├── /BA1/F4_FX → (empty — maintain in PFCG)
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 449. `/BA1/F4_FX_DISPLAY`
+
+```
+T-Code: /BA1/F4_FX_DISPLAY
+└── F_BAF4_FXT
+    ├── /BA1/F4_FX → (empty — maintain in PFCG)
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 450. `/BA1/F4_IRS02`
+
+```
+T-Code: /BA1/F4_IRS02
+└── F_BAF4_SPT
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    ├── /BA1/F4_ST → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2
+```
+
+### 451. `/BA1/F4_IRS03`
+
+```
+T-Code: /BA1/F4_IRS03
+└── F_BAF4_SPT
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    ├── /BA1/F4_ST → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 452. `/BA1/F4_IRV02`
+
+```
+T-Code: /BA1/F4_IRV02
+└── F_BAF4_VOT
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    ├── /BA1/F4_VC → IR
+    ├── /BA1/F4_VT → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2
+```
+
+### 453. `/BA1/F4_IRV03`
+
+```
+T-Code: /BA1/F4_IRV03
+└── F_BAF4_VOT
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    ├── /BA1/F4_VC → IR
+    ├── /BA1/F4_VT → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 454. `/BA1/F4_IR_02`
+
+```
+T-Code: /BA1/F4_IR_02
+└── F_BAF4_MDC
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2
+```
+
+### 455. `/BA1/F4_IR_03`
+
+```
+T-Code: /BA1/F4_IR_03
+└── F_BAF4_MDC
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 456. `/BA1/F4_SEC02`
+
+```
+T-Code: /BA1/F4_SEC02
+├── F_BAF1_AUG
+    ├── /BA1/F1AUG → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── F_BAF4_PRT
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    ├── /BA1/F4_PT → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2
+└── F_BAF4_SCE
+    └── ACTVT → 3
+```
+
+### 457. `/BA1/F4_SEC03`
+
+```
+T-Code: /BA1/F4_SEC03
+├── F_BAF1_AUG
+    ├── /BA1/F1AUG → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── F_BAF4_PRT
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    ├── /BA1/F4_PT → (empty — maintain in PFCG)
+    └── ACTVT → 3
+└── F_BAF4_SCE
+    └── ACTVT → 3
+```
+
+### 458. `/BA1/F4_SEV02`
+
+```
+T-Code: /BA1/F4_SEV02
+├── F_BAF1_AUG
+    ├── /BA1/F1AUG → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── F_BAF4_SCE
+    └── ACTVT → 3
+└── F_BAF4_VOT
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    ├── /BA1/F4_VC → SEC
+    ├── /BA1/F4_VT → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2
+```
+
+### 459. `/BA1/F4_SEV03`
+
+```
+T-Code: /BA1/F4_SEV03
+├── F_BAF1_AUG
+    ├── /BA1/F1AUG → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── F_BAF4_SCE
+    └── ACTVT → 3
+└── F_BAF4_VOT
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    ├── /BA1/F4_VC → SEC
+    ├── /BA1/F4_VT → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 460. `/BA1/F4_VOLA_TEST`
+
+```
+T-Code: /BA1/F4_VOLA_TEST
+├── F_BAF1_AUG
+    ├── /BA1/F1AUG → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── F_BAF4_MDC
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    └── ACTVT → 3
+└── F_BAF4_SCE
+    └── ACTVT → 3
+```
+
+### 461. `/BA1/F4_YC_02`
+
+```
+T-Code: /BA1/F4_YC_02
+├── F_BAF4_MDC
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2
+└── F_BAF4_SPT
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    ├── /BA1/F4_ST → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2
+```
+
+### 462. `/BA1/F4_YC_03`
+
+```
+T-Code: /BA1/F4_YC_03
+├── F_BAF4_MDC
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    └── ACTVT → 3
+└── F_BAF4_SPT
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    ├── /BA1/F4_ST → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 463. `/BA1/F4_YC_SHOW`
+
+```
+T-Code: /BA1/F4_YC_SHOW
+└── F_BAF4_MDC
+    ├── /BA1/F4_MD → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+## `/BCV/` — SAP Bank Communication Management
+> T-codes: **24**
+
+
+### 464. `/BCV/AUTH_CHECK`
+
+```
+T-Code: /BCV/AUTH_CHECK
+└── S_PROGRAM
+    ├── P_ACTION → SUBMIT, VARIANT
+    └── P_GROUP → BCVUSER
+```
+
+### 465. `/BCV/AUTH_HOLDER`
+
+```
+T-Code: /BCV/AUTH_HOLDER
+├── ACO_SUPER
+    ├── ACO_ACT_S → (empty — maintain in PFCG)
+    └── ACO_OTYP_S → /BCV/DASHBOARD, /BCV/QRYVIEW, /BCV/SNAPSHOT, usrgrp
+├── BCV_UGRP
+    └── ACTVT → 3
+├── S_PROGRAM
+    ├── P_ACTION → SUBMIT, VARIANT
+    └── P_GROUP → BCVADMIN
+└── S_START
+    ├── AUTHOBJNAM → /BCV/WDA_AUTH_OIF_ACL_FRAME
+    ├── AUTHOBJTYP → WDYA
+    └── AUTHPGMID → R3TR
+```
+
+### 466. `/BCV/CONS_CHECK`
+
+```
+T-Code: /BCV/CONS_CHECK
+└── S_PROGRAM
+    ├── P_ACTION → SUBMIT, VARIANT
+    └── P_GROUP → BCVUSER
+```
+
+### 467. `/BCV/DEL_PERS`
+
+```
+T-Code: /BCV/DEL_PERS
+└── S_PROGRAM
+    ├── P_ACTION → SUBMIT, VARIANT
+    └── P_GROUP → BCVADMIN
+```
+
+### 468. `/BCV/DEL_SSHOT`
+
+```
+T-Code: /BCV/DEL_SSHOT
+└── S_PROGRAM
+    ├── P_ACTION → BTCSUBMIT, SUBMIT, VARIANT
+    └── P_GROUP → BCVADMIN
+```
+
+### 469. `/BCV/GRPING`
+
+```
+T-Code: /BCV/GRPING
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BCV/V_GRPING
+```
+
+### 470. `/BCV/IMG`
+
+```
+T-Code: /BCV/IMG
+└── S_PROGRAM
+    ├── P_ACTION → SUBMIT
+    └── P_GROUP → BCVADMIN
+```
+
+### 471. `/BCV/MEANING`
+
+```
+T-Code: /BCV/MEANING
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BCV/V_MEANT
+```
+
+### 472. `/BCV/MIGRATION`
+
+```
+T-Code: /BCV/MIGRATION
+└── S_PROGRAM
+    ├── P_ACTION → SUBMIT
+    └── P_GROUP → BCVADMIN
+```
+
+### 473. `/BCV/QCACHE`
+
+```
+T-Code: /BCV/QCACHE
+├── BCV_QUERY
+    ├── ACTVT → 3
+    ├── BCV_CTXKEY → (empty — maintain in PFCG)
+    └── BCV_QRY_ID → (empty — maintain in PFCG)
+├── BCV_SRCCON
+    ├── ACTVT → 3
+    └── BCV_SEA_ID → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BCV/V_QDURA
+```
+
+### 474. `/BCV/QCACHE_DELETE`
+
+```
+T-Code: /BCV/QCACHE_DELETE
+└── S_PROGRAM
+    ├── P_ACTION → BTCSUBMIT, SUBMIT, VARIANT
+    └── P_GROUP → BCVADMIN
+```
+
+### 475. `/BCV/QDISPATCHER`
+
+```
+T-Code: /BCV/QDISPATCHER
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BCV/V_QDISP
+```
+
+### 476. `/BCV/QSTAT`
+
+```
+T-Code: /BCV/QSTAT
+├── BCV_QUERY
+    ├── ACTVT → 3
+    ├── BCV_CTXKEY → (empty — maintain in PFCG)
+    └── BCV_QRY_ID → (empty — maintain in PFCG)
+├── BCV_SRCCON
+    ├── ACTVT → 3
+    └── BCV_SEA_ID → (empty — maintain in PFCG)
+└── S_PROGRAM
+    ├── P_ACTION → SUBMIT
+    └── P_GROUP → BCVUSER
+```
+
+### 477. `/BCV/QUERY`
+
+```
+T-Code: /BCV/QUERY
+├── BCV_QUERY
+    ├── ACTVT → 23, 3
+    ├── BCV_CTXKEY → (empty — maintain in PFCG)
+    └── BCV_QRY_ID → (empty — maintain in PFCG)
+├── BCV_SRCCON
+    ├── ACTVT → 3
+    └── BCV_SEA_ID → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BCV/V_QATTR, /BCV/V_QCLF, /BCV/V_QFORM, /BCV/V_QFPAR, /BCV/V_QHEAD, /BCV/V_QJOIN, /BCV/V_QJOINC, /BCV/V_QRESA, /BCV/V_QSCON, /BCV/V_QSELC, /BCV/V_QVAR
+```
+
+### 478. `/BCV/SINC`
+
+```
+T-Code: /BCV/SINC
+├── BCV_SRCCON
+    ├── ACTVT → 23, 3
+    └── BCV_SEA_ID → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BCV/V_SIN_BI, /BCV/V_SIN_BP, /BCV/V_SIN_BT, /BCV/V_SIN_EB, /BCV/V_SIN_EI, /BCV/V_SIN_EP, /BCV/V_SIN_ES, /BCV/V_SIN_ET, /BCV/V_SIN_EW, /BCV/V_SIN_EWS, /BCV/V_SIN_IB, /BCV/V_SIN_II, /BCV/V_SIN_IP, /BCV/V_SIN_IQ, /BCV/V_SIN_IS, /BCV/V_SIN_IT, /BCV/V_SIN_IW, /BCV/V_SIN_IWS, /BCV/V_SIN_SC, /BCV/V_SIN_SE, /BCV/V_SIN_ST, /BCV/V_SIN_SY, /BCV/V_SIN_WF, /BCV/V_SIN_WS
+```
+
+### 479. `/BCV/SSHOTS`
+
+```
+T-Code: /BCV/SSHOTS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BCV/V_SSHOTS
+```
+
+### 480. `/BCV/SSTAT`
+
+```
+T-Code: /BCV/SSTAT
+├── BCV_SRCCON
+    ├── ACTVT → 3
+    └── BCV_SEA_ID → (empty — maintain in PFCG)
+└── S_PROGRAM
+    ├── P_ACTION → SUBMIT
+    └── P_GROUP → BCVUSER
+```
+
+### 481. `/BCV/TEST_QUERY`
+
+```
+T-Code: /BCV/TEST_QUERY
+├── BCV_QUERY
+    ├── ACTVT → 16, 3
+    ├── BCV_CTXKEY → (empty — maintain in PFCG)
+    └── BCV_QRY_ID → (empty — maintain in PFCG)
+├── BCV_SRCCON
+    ├── ACTVT → 3
+    └── BCV_SEA_ID → (empty — maintain in PFCG)
+└── S_PROGRAM
+    ├── P_ACTION → SUBMIT, VARIANT
+    └── P_GROUP → BCVUSER
+```
+
+### 482. `/BCV/TEST_SEARCHCON`
+
+```
+T-Code: /BCV/TEST_SEARCHCON
+├── BCV_SRCCON
+    ├── ACTVT → 3
+    └── BCV_SEA_ID → (empty — maintain in PFCG)
+└── S_PROGRAM
+    ├── P_ACTION → SUBMIT, VARIANT
+    └── P_GROUP → BCVUSER
+```
+
+### 483. `/BCV/UDASH`
+
+```
+T-Code: /BCV/UDASH
+├── BCV_DASHB
+    ├── ACTVT → 23, 3
+    ├── BCV_CTXKEY → (empty — maintain in PFCG)
+    └── BCV_DASHID → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BCV/V_UDASHB
+```
+
+### 484. `/BCV/UGRP`
+
+```
+T-Code: /BCV/UGRP
+├── BCV_QVWLST
+    ├── ACTVT → 23, 3
+    └── BCV_CTXKEY → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BCV/V_UGROUP, /BCV/V_UGRP
+```
+
+### 485. `/BCV/UPRINT`
+
+```
+T-Code: /BCV/UPRINT
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BCV/V_PRINT_PAR
+```
+
+### 486. `/BCV/UPRVW`
+
+```
+T-Code: /BCV/UPRVW
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BCV/V_UPRVW, /BCV/V_UPRVWR
+```
+
+### 487. `/BCV/UQVIEW`
+
+```
+T-Code: /BCV/UQVIEW
+├── BCV_QRYVW
+    ├── ACTVT → 23, 3
+    ├── BCV_CTXKEY → (empty — maintain in PFCG)
+    └── BCV_QRYVID → (empty — maintain in PFCG)
+├── BCV_QUERY
+    ├── ACTVT → 3
+    ├── BCV_CTXKEY → (empty — maintain in PFCG)
+    └── BCV_QRY_ID → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BCV/V_UDISPLAY, /BCV/V_UDISVALUE, /BCV/V_UQVIEW, /BCV/V_UQVIEWGA, /BCV/V_UQVIEWQA, /BCV/V_UQVIEWQV, /BCV/V_USTRUC, /BCV/V_UTABLE, /BCV/V_UXCCONF, /BCV/V_UXCMAP
+```
+
+## `/BDL/` — SAP Business Data Lake
+> T-codes: **11**
+
+
+### 488. `/BDL/CUST_TREE`
+
+```
+T-Code: /BDL/CUST_TREE
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BDL/CUST_TREE
+```
+
+### 489. `/BDL/LOG_VIEW`
+
+```
+T-Code: /BDL/LOG_VIEW
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BDL/LOG_VIEW
+```
+
+### 490. `/BDL/RTCC_CUST`
+
+```
+T-Code: /BDL/RTCC_CUST
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BDL/RTCC_CUST
+```
+
+### 491. `/BDL/SDCC`
+
+```
+T-Code: /BDL/SDCC
+└── S_SDCC_ADD
+    ├── SDCC_DEV_N → READ
+    └── SDCC_RUN_N → READ
+```
+
+### 492. `/BDL/SDCC_CUST`
+
+```
+T-Code: /BDL/SDCC_CUST
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BDL/SDCC_CUST
+```
+
+### 493. `/BDL/TASKREP`
+
+```
+T-Code: /BDL/TASKREP
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BDL/TASKREP
+```
+
+### 494. `/BDL/TASK_ATTR`
+
+```
+T-Code: /BDL/TASK_ATTR
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BDL/TASK_ATTR
+```
+
+### 495. `/BDL/TASK_CUST`
+
+```
+T-Code: /BDL/TASK_CUST
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BDL/TASK_CUST
+```
+
+### 496. `/BDL/TASK_CUST2`
+
+```
+T-Code: /BDL/TASK_CUST2
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BDL/TASK_CUST2
+```
+
+### 497. `/BDL/TASK_ICONS`
+
+```
+T-Code: /BDL/TASK_ICONS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BDL/TASK_ICONS
+```
+
+### 498. `/BDL/VIEWERS`
+
+```
+T-Code: /BDL/VIEWERS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BDL/VIEWERS
+```
+
+## `/BDTS/` — SAP Bank Data Transfer Services
+> T-codes: **19**
+
+
+### 499. `/BDTS/ADMIN`
+
+```
+T-Code: /BDTS/ADMIN
+├── /BDTS/070
+    └── ACTVT → 6
+├── /BDTS/100
+    ├── /BDTS/REPG → ADM
+    └── ACTVT → 16
+├── /BDTS/110
+    └── ACTVT → 3
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /BDTS/
+    └── ALG_SUBOBJ → /BDTS/ADM
+├── S_CTS_ADMI
+    └── CTS_ADMFCT → TABL
+├── S_DEVELOP
+    ├── ACTVT → 16, 3, 6
+    ├── DEVCLASS → $TMP, /BDTS/*
+    ├── OBJNAME → /1BT/*, /BDTS/*
+    ├── OBJTYPE → PROG
+    └── P_GROUP → (empty — maintain in PFCG)
+├── S_TC
+    ├── ACTVT → 16, 3
+    └── STC_SCN → /BDTS/ADM_SETUP_ROLE_AND_USER
+└── S_USER_GRP
+    ├── ACTVT → 1, 3
+    └── CLASS → (empty — maintain in PFCG)
+```
+
+### 500. `/BDTS/CMD_IS_ASYNC_WORK_DONE`
+
+```
+T-Code: /BDTS/CMD_IS_ASYNC_WORK_DONE
+└── /BDTS/010
+    ├── /BDTS/CMD → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 501. `/BDTS/GET_TABLE_FIELD_STRUCTUR`
+
+```
+T-Code: /BDTS/GET_TABLE_FIELD_STRUCTUR
+├── /BDTS/020
+    ├── /BDTS/TABF → (empty — maintain in PFCG)
+    ├── /BDTS/TABN → (empty — maintain in PFCG)
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/BASE_EXTRACTOR
+    └── RFC_TYPE → FUGR
+```
+
+### 502. `/BDTS/HD_GET_CMD_QUEUE`
+
+```
+T-Code: /BDTS/HD_GET_CMD_QUEUE
+├── /BDTS/100
+    ├── /BDTS/REPG → SUP
+    └── ACTVT → 16
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/HD_GET_CMD_QUEUE
+    └── RFC_TYPE → FUGR, FUNC
+```
+
+### 503. `/BDTS/HD_GET_CMD_QUEUE_LOG`
+
+```
+T-Code: /BDTS/HD_GET_CMD_QUEUE_LOG
+├── /BDTS/100
+    ├── /BDTS/REPG → SUP
+    └── ACTVT → 16
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/HD_GET_CMD_QUEUE_LOG
+    └── RFC_TYPE → FUGR, FUNC
+```
+
+### 504. `/BDTS/HD_PRESEL`
+
+```
+T-Code: /BDTS/HD_PRESEL
+├── /BDTS/100
+    ├── /BDTS/REPG → SUP
+    └── ACTVT → 16
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /BDTS/
+    └── ALG_SUBOBJ → /BDTS/*
+└── S_GUI
+    └── ACTVT → 2, 61
+```
+
+### 505. `/BDTS/JOB_AUTH_DEF`
+
+```
+T-Code: /BDTS/JOB_AUTH_DEF
+└── /BDTS/070
+    └── ACTVT → 16
+```
+
+### 506. `/BDTS/PRESEL_TAB_CREATE`
+
+```
+T-Code: /BDTS/PRESEL_TAB_CREATE
+├── /BDTS/060
+    └── ACTVT → 1
+├── S_DEVELOP
+    ├── ACTVT → 2, 3, 40, 7
+    ├── DEVCLASS → $TMP
+    ├── OBJNAME → /1BT/*
+    ├── OBJTYPE → INDX, TABL
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/PRESEL_TAB_CREATE
+    └── RFC_TYPE → FUGR
+```
+
+### 507. `/BDTS/PRESEL_TAB_DELETE`
+
+```
+T-Code: /BDTS/PRESEL_TAB_DELETE
+├── /BDTS/060
+    └── ACTVT → 6
+├── S_DEVELOP
+    ├── ACTVT → 41, 6
+    ├── DEVCLASS → $TMP
+    ├── OBJNAME → /1BT/*
+    ├── OBJTYPE → INDX, TABL
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/PRESEL_TAB_DELETE
+    └── RFC_TYPE → FUGR
+```
+
+### 508. `/BDTS/PRESEL_TAB_READ_NAME`
+
+```
+T-Code: /BDTS/PRESEL_TAB_READ_NAME
+├── /BDTS/060
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/PRESEL_TAB_READ_NAME
+    └── RFC_TYPE → FUGR
+```
+
+### 509. `/BDTS/PRESEL_TASK_CREATE`
+
+```
+T-Code: /BDTS/PRESEL_TASK_CREATE
+├── /BDTS/070
+    └── ACTVT → 1
+├── S_DEVELOP
+    ├── ACTVT → 1
+    ├── DEVCLASS → $TMP
+    ├── OBJNAME → /1BT/*
+    ├── OBJTYPE → PROG
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/PRESEL_TASK_CREATE
+    └── RFC_TYPE → FUGR
+```
+
+### 510. `/BDTS/PRESEL_TASK_DELETE`
+
+```
+T-Code: /BDTS/PRESEL_TASK_DELETE
+├── /BDTS/070
+    └── ACTVT → 6
+├── S_DEVELOP
+    ├── ACTVT → 6
+    ├── DEVCLASS → $TMP
+    ├── OBJNAME → /1BT/*
+    ├── OBJTYPE → PROG
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/PRESEL_TASK_DELETE
+    └── RFC_TYPE → FUGR
+```
+
+### 511. `/BDTS/PRESEL_TASK_IS_CREATED`
+
+```
+T-Code: /BDTS/PRESEL_TASK_IS_CREATED
+├── /BDTS/070
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/PRESEL_TASK_IS_CREAT
+    └── RFC_TYPE → FUGR
+```
+
+### 512. `/BDTS/PRESEL_TASK_READ_PORTION`
+
+```
+T-Code: /BDTS/PRESEL_TASK_READ_PORTION
+├── /BDTS/070
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/PRESEL_TASK_READ_POR
+    └── RFC_TYPE → FUGR
+```
+
+### 513. `/BDTS/PRESEL_TASK_READ_STATUS`
+
+```
+T-Code: /BDTS/PRESEL_TASK_READ_STATUS
+├── /BDTS/070
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/PRESEL_TASK_READ_STA
+    └── RFC_TYPE → FUGR
+```
+
+### 514. `/BDTS/PRESEL_TASK_REVERT`
+
+```
+T-Code: /BDTS/PRESEL_TASK_REVERT
+├── /BDTS/070
+    └── ACTVT → 85
+├── S_BTCH_JOB
+    ├── JOBACTION → RELE
+    └── JOBGROUP → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/PRESEL_TASK_REVERT
+    └── RFC_TYPE → FUGR
+```
+
+### 515. `/BDTS/PRESEL_TASK_START`
+
+```
+T-Code: /BDTS/PRESEL_TASK_START
+├── /BDTS/070
+    └── ACTVT → 16
+├── S_BTCH_JOB
+    ├── JOBACTION → RELE
+    └── JOBGROUP → (empty — maintain in PFCG)
+├── S_BTCH_NAM
+    └── BTCUNAME → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/PRESEL_TASK_START
+    └── RFC_TYPE → FUGR
+```
+
+### 516. `/BDTS/PRESEL_TASK_STOP`
+
+```
+T-Code: /BDTS/PRESEL_TASK_STOP
+├── /BDTS/070
+    └── ACTVT → 16
+├── S_BTCH_JOB
+    ├── JOBACTION → DELE
+    └── JOBGROUP → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /BDTS/PRESEL_TASK_STOP
+    └── RFC_TYPE → FUGR
+```
+
+### 517. `/BDTS/SUPPORT`
+
+```
+T-Code: /BDTS/SUPPORT
+├── /BDTS/100
+    ├── /BDTS/REPG → SUP
+    └── ACTVT → 16
+└── S_APPL_LOG
+    ├── ACTVT → 3, 6
+    ├── ALG_OBJECT → (empty — maintain in PFCG)
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+```
+
+## `/BEA/` — SAP Banking — External Applications
+> T-codes: **49**
+
+
+### 518. `/BEA/83000050`
+
+```
+T-Code: /BEA/83000050
+└── S_PROJECT
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 519. `/BEA/83000054`
+
+```
+T-Code: /BEA/83000054
+└── S_PROJECT
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 520. `/BEA/CNPL01`
+
+```
+T-Code: /BEA/CNPL01
+└── BEA_PLH
+    ├── ACTVT → 1, 2, 3, 35, 6
+    ├── APPL → CNPL
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 521. `/BEA/CNPL01_OLD`
+
+```
+T-Code: /BEA/CNPL01_OLD
+└── BEA_PLH
+    ├── ACTVT → 1, 2, 3, 35, 6
+    ├── APPL → CNPL
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 522. `/BEA/CNPL02`
+
+```
+T-Code: /BEA/CNPL02
+└── BEA_PLH
+    ├── ACTVT → 1, 2, 3, 35, 6
+    ├── APPL → CNPL
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 523. `/BEA/CNPL02_OLD`
+
+```
+T-Code: /BEA/CNPL02_OLD
+└── BEA_PLH
+    ├── ACTVT → 1, 2, 3, 35, 6
+    ├── APPL → CNPL
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 524. `/BEA/CRMB01`
+
+```
+T-Code: /BEA/CRMB01
+├── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+└── BEA_DLI
+    ├── ACTVT → 3, 5, 84
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 525. `/BEA/CRMB02`
+
+```
+T-Code: /BEA/CRMB02
+└── BEA_DLI
+    ├── ACTVT → 3, 5, 95
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 526. `/BEA/CRMB04`
+
+```
+T-Code: /BEA/CRMB04
+└── BEA_DLI
+    ├── ACTVT → 3, 5
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 527. `/BEA/CRMB05`
+
+```
+T-Code: /BEA/CRMB05
+└── BEA_DLI
+    ├── ACTVT → 3, 39, 5, 84, 95, A8
+    ├── APPL → CRMB, CRMR, IPMI, IPMO
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 528. `/BEA/CRMB06`
+
+```
+T-Code: /BEA/CRMB06
+└── BEA_DLI
+    ├── ACTVT → 3, 39, 5, 84, 95, A8
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 529. `/BEA/CRMB07`
+
+```
+T-Code: /BEA/CRMB07
+├── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+└── BEA_DLI
+    ├── ACTVT → 3, 5, 84
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 530. `/BEA/CRMB11`
+
+```
+T-Code: /BEA/CRMB11
+└── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35, 82, 85, B4
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 531. `/BEA/CRMB12`
+
+```
+T-Code: /BEA/CRMB12
+└── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35, 82, 85, B4
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 532. `/BEA/CRMB13`
+
+```
+T-Code: /BEA/CRMB13
+└── BEA_BDH
+    ├── ACTVT → 1, 2, 3
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 533. `/BEA/CRMB14`
+
+```
+T-Code: /BEA/CRMB14
+└── BEA_BDH
+    ├── ACTVT → 1, 2, 3
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 534. `/BEA/CRMB15`
+
+```
+T-Code: /BEA/CRMB15
+└── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35, 82, 85, B4
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 535. `/BEA/CRMB16`
+
+```
+T-Code: /BEA/CRMB16
+├── BEA_BDH
+    ├── ACTVT → 1, 2, 3
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+└── BEA_SUBS
+    ├── ACTVT → 3
+    ├── APPL → CRMB
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 536. `/BEA/CRMB17`
+
+```
+T-Code: /BEA/CRMB17
+├── BEA_BDH
+    ├── ACTVT → 2, 3, 85
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+└── BEA_DLI
+    ├── ACTVT → 3, 5, 84
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 537. `/BEA/CRMR11`
+
+```
+T-Code: /BEA/CRMR11
+├── BEA_RDLH
+    ├── ACTVT → 1, 2, 24, 3, A1, A2, A8, U4
+    ├── APPL → CRMR
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── REB_PROF → (empty — maintain in PFCG)
+├── BEA_REXH
+    ├── ACTVT → 1, 2, 24, 3, B4
+    ├── APPL → CRMR
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── EXTCT_TYPE → (empty — maintain in PFCG)
+├── BEA_RPDH
+    ├── ACTVT → 1, 2, 3, 35, 85, B4
+    ├── APPL → (empty — maintain in PFCG)
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── SETTL_TYPE → (empty — maintain in PFCG)
+└── BEA_SUBS
+    ├── ACTVT → 3
+    ├── APPL → CRMR
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 538. `/BEA/CRMR12`
+
+```
+T-Code: /BEA/CRMR12
+├── BEA_REXH
+    ├── ACTVT → 1, 2, 24, 3, B4
+    ├── APPL → CRMR
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── EXTCT_TYPE → (empty — maintain in PFCG)
+└── BEA_SUBS
+    ├── ACTVT → 3
+    ├── APPL → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 539. `/BEA/CRMR21`
+
+```
+T-Code: /BEA/CRMR21
+├── BEA_RDLH
+    ├── ACTVT → 1, 2, 24, 3, A1, A2, A8, U4
+    ├── APPL → CRMR
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── REB_PROF → (empty — maintain in PFCG)
+├── BEA_REXH
+    ├── ACTVT → 1, 2, 24, 3, B4
+    ├── APPL → CRMR
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── EXTCT_TYPE → (empty — maintain in PFCG)
+└── BEA_RPDH
+    ├── ACTVT → 1, 2, 3, 35, 85, B4
+    ├── APPL → (empty — maintain in PFCG)
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── SETTL_TYPE → (empty — maintain in PFCG)
+```
+
+### 540. `/BEA/CRMR22`
+
+```
+T-Code: /BEA/CRMR22
+└── BEA_RDLH
+    ├── ACTVT → 1, 2, 24, 3, A1, A2, A8, U4
+    ├── APPL → CRMR
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── REB_PROF → (empty — maintain in PFCG)
+```
+
+### 541. `/BEA/CRMR23`
+
+```
+T-Code: /BEA/CRMR23
+├── BEA_RDLH
+    ├── ACTVT → 1, 2, 24, 3, A1, A2, A8, U4
+    ├── APPL → CRMR
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── REB_PROF → (empty — maintain in PFCG)
+├── BEA_REXH
+    ├── ACTVT → 1, 2, 24, 3, B4
+    ├── APPL → (empty — maintain in PFCG)
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── EXTCT_TYPE → (empty — maintain in PFCG)
+└── BEA_SUBS
+    ├── ACTVT → 3
+    ├── APPL → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 542. `/BEA/CRMR24`
+
+```
+T-Code: /BEA/CRMR24
+└── BEA_RDLH
+    ├── ACTVT → 1, 2, 24, 3, A1, A2, A8, U4
+    ├── APPL → CRMR
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── REB_PROF → (empty — maintain in PFCG)
+```
+
+### 543. `/BEA/CRMR26`
+
+```
+T-Code: /BEA/CRMR26
+└── BEA_RDLH
+    ├── ACTVT → 1, 2, 24, 3, A1, A2, A8, U4
+    ├── APPL → CRMR
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── REB_PROF → (empty — maintain in PFCG)
+```
+
+### 544. `/BEA/CRMR31`
+
+```
+T-Code: /BEA/CRMR31
+├── BEA_REXH
+    ├── ACTVT → 1, 2, 24, 3, B4
+    ├── APPL → CRMR
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── EXTCT_TYPE → (empty — maintain in PFCG)
+├── BEA_RPDH
+    ├── ACTVT → 1, 2, 3, 35, 85, B4
+    ├── APPL → CRMR
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── SETTL_TYPE → (empty — maintain in PFCG)
+└── BEA_SUBS
+    ├── ACTVT → 3
+    ├── APPL → CRMR
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 545. `/BEA/CRMR32`
+
+```
+T-Code: /BEA/CRMR32
+└── BEA_RPDH
+    ├── ACTVT → 1, 2, 3, 35, 85, B4
+    ├── APPL → CRMR
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── SETTL_TYPE → (empty — maintain in PFCG)
+```
+
+### 546. `/BEA/CRMR35`
+
+```
+T-Code: /BEA/CRMR35
+└── BEA_RPDH
+    ├── ACTVT → 1, 2, 3, 35, 85, B4
+    ├── APPL → CRMR
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── SETTL_TYPE → (empty — maintain in PFCG)
+```
+
+### 547. `/BEA/IPMI01`
+
+```
+T-Code: /BEA/IPMI01
+├── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35
+    ├── APPL → IPMI
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+└── BEA_DLI
+    ├── ACTVT → 3, 5, 84
+    ├── APPL → IPMI
+    ├── BILL_ORG → *
+    └── BILL_TYPE → *
+```
+
+### 548. `/BEA/IPMI02`
+
+```
+T-Code: /BEA/IPMI02
+└── BEA_DLI
+    ├── ACTVT → 3, 5, 95
+    ├── APPL → IPMI
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 549. `/BEA/IPMI04`
+
+```
+T-Code: /BEA/IPMI04
+└── BEA_DLI
+    ├── ACTVT → 3, 5
+    ├── APPL → IPMI
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 550. `/BEA/IPMI05`
+
+```
+T-Code: /BEA/IPMI05
+└── BEA_DLI
+    ├── ACTVT → 3, 5
+    ├── APPL → IPMI
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 551. `/BEA/IPMI06`
+
+```
+T-Code: /BEA/IPMI06
+└── BEA_DLI
+    ├── ACTVT → 3, 39, 5, 84, 95, A8
+    ├── APPL → IPMI
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 552. `/BEA/IPMI07`
+
+```
+T-Code: /BEA/IPMI07
+├── BEA_BDH
+    ├── ACTVT → 2
+    ├── APPL → IPMI
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+└── BEA_DLI
+    ├── ACTVT → 5, 95
+    ├── APPL → IPMI
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 553. `/BEA/IPMI11`
+
+```
+T-Code: /BEA/IPMI11
+├── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35, 82, 85, B4
+    ├── APPL → IPMI
+    ├── BILL_ORG → *
+    └── BILL_TYPE → *
+└── BEA_SUBS
+    ├── ACTVT → 3
+    ├── APPL → IPMI
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 554. `/BEA/IPMI12`
+
+```
+T-Code: /BEA/IPMI12
+└── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35, 82, 85, B4
+    ├── APPL → IPMI
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 555. `/BEA/IPMI15`
+
+```
+T-Code: /BEA/IPMI15
+├── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35, 82, 85, B4
+    ├── APPL → IPMI
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+└── CRM_ORD_OP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── PARTN_FCT → (empty — maintain in PFCG)
+    └── PARTN_FCTT → (empty — maintain in PFCG)
+```
+
+### 556. `/BEA/IPMO01`
+
+```
+T-Code: /BEA/IPMO01
+├── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35
+    ├── APPL → IPMO
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+└── BEA_DLI
+    ├── ACTVT → 3, 5, 84
+    ├── APPL → IPMO
+    ├── BILL_ORG → *
+    └── BILL_TYPE → *
+```
+
+### 557. `/BEA/IPMO02`
+
+```
+T-Code: /BEA/IPMO02
+└── BEA_DLI
+    ├── ACTVT → 3, 5, 95
+    ├── APPL → IPMO
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 558. `/BEA/IPMO04`
+
+```
+T-Code: /BEA/IPMO04
+├── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35, 82, 85, B4
+    ├── APPL → IPMO
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+└── BEA_DLI
+    ├── ACTVT → 3, 5
+    ├── APPL → IPMO
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 559. `/BEA/IPMO05`
+
+```
+T-Code: /BEA/IPMO05
+└── BEA_DLI
+    ├── ACTVT → 3, 5
+    ├── APPL → IPMO
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 560. `/BEA/IPMO06`
+
+```
+T-Code: /BEA/IPMO06
+└── BEA_DLI
+    ├── ACTVT → 3, 39, 5, 84, 95, A8
+    ├── APPL → IPMO
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 561. `/BEA/IPMO07`
+
+```
+T-Code: /BEA/IPMO07
+├── BEA_BDH
+    ├── ACTVT → 2
+    ├── APPL → IPMO
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+└── BEA_DLI
+    ├── ACTVT → 5, 95
+    ├── APPL → IPMO
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 562. `/BEA/IPMO11`
+
+```
+T-Code: /BEA/IPMO11
+├── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35, 82, 85, B4
+    ├── APPL → IPMO
+    ├── BILL_ORG → *
+    └── BILL_TYPE → *
+└── BEA_SUBS
+    ├── ACTVT → 3
+    ├── APPL → IPMO
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 563. `/BEA/IPMO12`
+
+```
+T-Code: /BEA/IPMO12
+└── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35, 82, 85, B4
+    ├── APPL → IPMO
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 564. `/BEA/IPMO15`
+
+```
+T-Code: /BEA/IPMO15
+├── BEA_BDH
+    ├── ACTVT → 1, 2, 3, 35, 82, 85, B4
+    ├── APPL → IPMO
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+└── BEA_SUBS
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── APPL → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 565. `/BEA/IPMO21`
+
+```
+T-Code: /BEA/IPMO21
+└── BEA_DLI
+    ├── ACTVT → 3, 84
+    ├── APPL → IPMO
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+### 566. `/BEA/IPMO_BD_MP_REP`
+
+```
+T-Code: /BEA/IPMO_BD_MP_REP
+└── BEA_BDH
+    ├── ACTVT → 1, 2
+    ├── APPL → (empty — maintain in PFCG)
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+```
+
+## `/BEV1/` — SAP Beverage — Empties Management
+> T-codes: **25**
+
+
+### 567. `/BEV1/10000557`
+
+```
+T-Code: /BEV1/10000557
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/NESETTINGS
+```
+
+### 568. `/BEV1/91000082`
+
+```
+T-Code: /BEV1/91000082
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/EMDASV_V
+```
+
+### 569. `/BEV1/91000083`
+
+```
+T-Code: /BEV1/91000083
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/EMFAS1_V
+```
+
+### 570. `/BEV1/91000084`
+
+```
+T-Code: /BEV1/91000084
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/EMFAS2_V
+```
+
+### 571. `/BEV1/91000085`
+
+```
+T-Code: /BEV1/91000085
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/EMFAS3_V
+```
+
+### 572. `/BEV1/91000086`
+
+```
+T-Code: /BEV1/91000086
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/EMFAS4_V
+```
+
+### 573. `/BEV1/91000098`
+
+```
+T-Code: /BEV1/91000098
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/EMFAKTA_V
+```
+
+### 574. `/BEV1/91000099`
+
+```
+T-Code: /BEV1/91000099
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/EMLGFLD_V
+```
+
+### 575. `/BEV1/91000100`
+
+```
+T-Code: /BEV1/91000100
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/EMPART
+```
+
+### 576. `/BEV1/91000101`
+
+```
+T-Code: /BEV1/91000101
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/EMMTART_V
+```
+
+### 577. `/BEV1/91000102`
+
+```
+T-Code: /BEV1/91000102
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/EMPTYP_V
+```
+
+### 578. `/BEV1/91000103`
+
+```
+T-Code: /BEV1/91000103
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/EMGRP_V
+```
+
+### 579. `/BEV1/91000104`
+
+```
+T-Code: /BEV1/91000104
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/EMMATRIX_V
+```
+
+### 580. `/BEV1/91000105`
+
+```
+T-Code: /BEV1/91000105
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/EMLGMAT_V
+```
+
+### 581. `/BEV1/91000173`
+
+```
+T-Code: /BEV1/91000173
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/LUTA_V
+```
+
+### 582. `/BEV1/91000174`
+
+```
+T-Code: /BEV1/91000174
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/LUTL_V
+```
+
+### 583. `/BEV1/91000175`
+
+```
+T-Code: /BEV1/91000175
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/LUT903
+```
+
+### 584. `/BEV1/91000176`
+
+```
+T-Code: /BEV1/91000176
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/LUT904
+```
+
+### 585. `/BEV1/91000177`
+
+```
+T-Code: /BEV1/91000177
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV1/LUT906_V
+```
+
+### 586. `/BEV1/EMA`
+
+```
+T-Code: /BEV1/EMA
+├── B_EM_TCODE
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TCD → /BEV1/EMA
+└── B_V1_TCODE
+    ├── ACTVT → L0
+    ├── BUKRS → $BUKRS
+    ├── DICBERCLS → (empty — maintain in PFCG)
+    ├── PTYPE → (empty — maintain in PFCG)
+    ├── RFC_NAME → (empty — maintain in PFCG)
+    ├── RFC_TYPE → (empty — maintain in PFCG)
+    ├── SPART → $SPART
+    ├── TCD → /BEV1/EMA
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+### 587. `/BEV1/EMF`
+
+```
+T-Code: /BEV1/EMF
+└── B_V1_TCODE
+    ├── ACTVT → L0
+    ├── BUKRS → $BUKRS
+    ├── DICBERCLS → (empty — maintain in PFCG)
+    ├── GLRLDNR → (empty — maintain in PFCG)
+    ├── GLRRCTY → (empty — maintain in PFCG)
+    ├── GLRVERS → (empty — maintain in PFCG)
+    ├── MCINF → (empty — maintain in PFCG)
+    ├── RFC_NAME → (empty — maintain in PFCG)
+    ├── RFC_TYPE → (empty — maintain in PFCG)
+    ├── SPART → $SPART
+    ├── TCD → /BEV1/EMF
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+```
+
+### 588. `/BEV1/EMN`
+
+```
+T-Code: /BEV1/EMN
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /BEV1/EMLG
+```
+
+### 589. `/BEV1/EMS`
+
+```
+T-Code: /BEV1/EMS
+├── B_EM_TCODE
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TCD → /BEV1/EMS
+├── B_V1_TCODE
+    ├── ACTVT → L0
+    ├── BUKRS → $BUKRS
+    ├── DICBERCLS → (empty — maintain in PFCG)
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── MCINF → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    ├── RFC_NAME → (empty — maintain in PFCG)
+    ├── RFC_TYPE → (empty — maintain in PFCG)
+    ├── SPART → $SPART
+    ├── SUBTYP → (empty — maintain in PFCG)
+    ├── TCD → /BEV1/EMS
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+├── B_V3_TCODE
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── MCINF → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    ├── SPART → $SPART
+    ├── SUBTYP → (empty — maintain in PFCG)
+    ├── TCD → /BEV1/EMS
+    ├── VKORG → $VKORG
+    ├── VTWEG → $VTWEG
+    └── WERKS → $WERKS
+└── B_VEM
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── KNDNR → (empty — maintain in PFCG)
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+### 590. `/BEV1/NEMB51`
+
+```
+T-Code: /BEV1/NEMB51
+├── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+└── M_MSEG_WMB
+    ├── ACTVT → 3
+    └── WERKS → $WERKS
+```
+
+### 591. `/BEV1/NE_LISTBALPO`
+
+```
+T-Code: /BEV1/NE_LISTBALPO
+├── M_BEST_WRK
+    ├── ACTVT → 3
+    └── WERKS → $WERKS
+└── M_RECH_WRK
+    ├── ACTVT → 3
+    └── WERKS → $WERKS
+```
+
+## `/BEV4/` — SAP Beverage — Excise Duty & Tax
+> T-codes: **24**
+
+
+### 592. `/BEV4/01000010`
+
+```
+T-Code: /BEV4/01000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLDFAUFTRV
+```
+
+### 593. `/BEV4/77000017`
+
+```
+T-Code: /BEV4/77000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLDVKORGZV
+```
+
+### 594. `/BEV4/77000018`
+
+```
+T-Code: /BEV4/77000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLDANFVKOV
+```
+
+### 595. `/BEV4/77000019`
+
+```
+T-Code: /BEV4/77000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLDAUSGABV
+```
+
+### 596. `/BEV4/77000020`
+
+```
+T-Code: /BEV4/77000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLDPFAD_V
+```
+
+### 597. `/BEV4/77000022`
+
+```
+T-Code: /BEV4/77000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLCPGF, /BEV4/PLVCPG
+```
+
+### 598. `/BEV4/77000023`
+
+```
+T-Code: /BEV4/77000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLCPR
+```
+
+### 599. `/BEV4/77000024`
+
+```
+T-Code: /BEV4/77000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLCPVIEW
+```
+
+### 600. `/BEV4/77000025`
+
+```
+T-Code: /BEV4/77000025
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLDPERIODV
+```
+
+### 601. `/BEV4/77000026`
+
+```
+T-Code: /BEV4/77000026
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLDKART_V
+```
+
+### 602. `/BEV4/77000027`
+
+```
+T-Code: /BEV4/77000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLDROLZU_V
+```
+
+### 603. `/BEV4/77000028`
+
+```
+T-Code: /BEV4/77000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLDIFST_V
+```
+
+### 604. `/BEV4/77000029`
+
+```
+T-Code: /BEV4/77000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLDANFBELV
+```
+
+### 605. `/BEV4/77000030`
+
+```
+T-Code: /BEV4/77000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLDSTAT_V
+```
+
+### 606. `/BEV4/77000399`
+
+```
+T-Code: /BEV4/77000399
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLDALCUSTV
+```
+
+### 607. `/BEV4/77000400`
+
+```
+T-Code: /BEV4/77000400
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BEV4/PLDANFCSTV
+```
+
+### 608. `/BEV4/PLEA`
+
+```
+T-Code: /BEV4/PLEA
+├── V_VBAK_AAT
+    ├── ACTVT → 3
+    └── AUART → ' '
+└── V_VBAK_VKO
+    ├── ACTVT → 3
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+### 609. `/BEV4/PLER`
+
+```
+T-Code: /BEV4/PLER
+├── V_VBAK_AAT
+    ├── ACTVT → 3
+    └── AUART → ' '
+└── V_VBAK_VKO
+    ├── ACTVT → 3
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+### 610. `/BEV4/PLGN`
+
+```
+T-Code: /BEV4/PLGN
+├── V_VBAK_AAT
+    ├── ACTVT → 3
+    └── AUART → ' '
+└── V_VBAK_VKO
+    ├── ACTVT → 3
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+### 611. `/BEV4/PLKM`
+
+```
+T-Code: /BEV4/PLKM
+├── V_VBAK_AAT
+    ├── ACTVT → 3
+    └── AUART → ' '
+└── V_VBAK_VKO
+    ├── ACTVT → 3
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+### 612. `/BEV4/PLRS`
+
+```
+T-Code: /BEV4/PLRS
+├── V_VBAK_AAT
+    ├── ACTVT → 3
+    └── AUART → ' '
+└── V_VBAK_VKO
+    ├── ACTVT → 3
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+### 613. `/BEV4/PLSS`
+
+```
+T-Code: /BEV4/PLSS
+├── V_VBAK_AAT
+    ├── ACTVT → 3
+    └── AUART → ' '
+└── V_VBAK_VKO
+    ├── ACTVT → 3
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+### 614. `/BEV4/PLST`
+
+```
+T-Code: /BEV4/PLST
+├── V_VBAK_AAT
+    ├── ACTVT → 3
+    └── AUART → ' '
+└── V_VBAK_VKO
+    ├── ACTVT → 3
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+### 615. `/BEV4/PLVF`
+
+```
+T-Code: /BEV4/PLVF
+├── V_VBAK_AAT
+    ├── ACTVT → 3
+    └── AUART → ' '
+└── V_VBAK_VKO
+    ├── ACTVT → 3
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+## `/BGLOCS/` — SAP Bulgaria Localization
+> T-codes: **19**
+
+
+### 616. `/BGLOCS/11000041`
+
+```
+T-Code: /BGLOCS/11000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FIFXAAUV
+```
+
+### 617. `/BGLOCS/11000499`
+
+```
+T-Code: /BGLOCS/11000499
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FI_DISDO
+```
+
+### 618. `/BGLOCS/A0`
+
+```
+T-Code: /BGLOCS/A0
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FITAXDPR
+```
+
+### 619. `/BGLOCS/FI_DISAV`
+
+```
+T-Code: /BGLOCS/FI_DISAV
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FI_DISAV
+```
+
+### 620. `/BGLOCS/FI_DISDO`
+
+```
+T-Code: /BGLOCS/FI_DISDO
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FI_DISDO
+```
+
+### 621. `/BGLOCS/FI_DISTX`
+
+```
+T-Code: /BGLOCS/FI_DISTX
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FI_DISTX
+```
+
+### 622. `/BGLOCS/MAT_TRB`
+
+```
+T-Code: /BGLOCS/MAT_TRB
+├── F_BKPF_BUK
+    ├── ACTVT → 3, F4
+    └── BUKRS → $BUKRS
+├── M_MATE_MAR
+    ├── ACTVT → 3, F4
+    └── BEGRU → (empty — maintain in PFCG)
+├── M_MATE_MAT
+    ├── ACTVT → 3, F4
+    └── BEGRU → (empty — maintain in PFCG)
+├── M_MATE_WGR
+    ├── ACTVT → 3, F4
+    └── BEGRU → (empty — maintain in PFCG)
+├── M_MSEG_WMB
+    ├── ACTVT → 3, F4
+    └── WERKS → $WERKS
+└── S_GUI
+    └── ACTVT → 2, 4
+```
+
+### 623. `/BGLOCS/V1`
+
+```
+T-Code: /BGLOCS/V1
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FITXCOL
+```
+
+### 624. `/BGLOCS/V10`
+
+```
+T-Code: /BGLOCS/V10
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FI001ZT
+```
+
+### 625. `/BGLOCS/V11`
+
+```
+T-Code: /BGLOCS/V11
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/BNK_DATA
+```
+
+### 626. `/BGLOCS/V12`
+
+```
+T-Code: /BGLOCS/V12
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FIINDSET
+```
+
+### 627. `/BGLOCS/V2`
+
+```
+T-Code: /BGLOCS/V2
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FIDOCUT
+```
+
+### 628. `/BGLOCS/V3`
+
+```
+T-Code: /BGLOCS/V3
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FI001Z
+```
+
+### 629. `/BGLOCS/V4`
+
+```
+T-Code: /BGLOCS/V4
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FITZST
+```
+
+### 630. `/BGLOCS/V5`
+
+```
+T-Code: /BGLOCS/V5
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FIADRC
+```
+
+### 631. `/BGLOCS/V6`
+
+```
+T-Code: /BGLOCS/V6
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/SDFIMAP
+```
+
+### 632. `/BGLOCS/V7`
+
+```
+T-Code: /BGLOCS/V7
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/MMFIMAP
+```
+
+### 633. `/BGLOCS/V8`
+
+```
+T-Code: /BGLOCS/V8
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FIPRDSET
+```
+
+### 634. `/BGLOCS/V9`
+
+```
+T-Code: /BGLOCS/V9
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/PRNT_FRM
+```
+
+## `/BOBF/` — SAP Business Object Framework (BOPF)
+> T-codes: **4**
+
+
+### 635. `/BOBF/CUST_UI`
+
+```
+T-Code: /BOBF/CUST_UI
+├── S_DEVELOP
+    ├── ACTVT → 1, 2, 3, 6, 7
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → 1
+    └── TTYPE → DTRA, TASK
+```
+
+### 636. `/BOBF/TEST_UI`
+
+```
+T-Code: /BOBF/TEST_UI
+├── S_DEVELOP
+    ├── ACTVT → 1, 2, 3, 6, 7
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → 1
+    └── TTYPE → DTRA, TASK
+```
+
+### 637. `/BOBF/TOOL_CC_LOG`
+
+```
+T-Code: /BOBF/TOOL_CC_LOG
+├── S_DEVELOP
+    ├── ACTVT → 3
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+├── S_GUI
+    └── ACTVT → 2, 4, 61
+└── S_TRANSPRT
+    ├── ACTVT → 1
+    └── TTYPE → DTRA, TASK
+```
+
+### 638. `/BOBF/TOOL_CC_SUM`
+
+```
+T-Code: /BOBF/TOOL_CC_SUM
+├── S_ALV_LAYO
+    └── ACTVT → 23
+└── S_DEVELOP
+    ├── ACTVT → 3
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+## `/BOFU/` — SAP Business One Foundation
+> T-codes: **3**
+
+
+### 639. `/BOFU/28000081`
+
+```
+T-Code: /BOFU/28000081
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BOFU/V_PPF_CATG
+```
+
+### 640. `/BOFU/68000197`
+
+```
+T-Code: /BOFU/68000197
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BOFU/E_DAAG
+```
+
+### 641. `/BOFU/68000200`
+
+```
+T-Code: /BOFU/68000200
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BOFU/C_DAAGRESP
+```
+
+## `/BON/` — SAP Business One Network
+> T-codes: **1**
+
+
+### 642. `/BON/AGNUM_MAINTAIN`
+
+```
+T-Code: /BON/AGNUM_MAINTAIN
+└── S_NUMBER
+    ├── ACTVT → 2, 3
+    └── NROBJ → /BON/AGNUM
+```
+
+## `/BOPF/` — SAP BOPF Framework
+> T-codes: **1**
+
+
+### 643. `/BOPF/CONF_UI`
+
+```
+T-Code: /BOPF/CONF_UI
+├── S_DEVELOP
+    ├── ACTVT → 1, 2, 3, 7
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → 1
+    └── TTYPE → DTRA, TASK
+```
+
+## `/BSNAGT/` — SAP CRM Business Agent
+> T-codes: **45**
+
+
+### 644. `/BSNAGT/36000001`
+
+```
+T-Code: /BSNAGT/36000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_SSF
+```
+
+### 645. `/BSNAGT/36000002`
+
+```
+T-Code: /BSNAGT/36000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_VARI
+```
+
+### 646. `/BSNAGT/36000003`
+
+```
+T-Code: /BSNAGT/36000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_ARC_CU
+```
+
+### 647. `/BSNAGT/36000005`
+
+```
+T-Code: /BSNAGT/36000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_OUT_LP
+```
+
+### 648. `/BSNAGT/36000010`
+
+```
+T-Code: /BSNAGT/36000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_SENDID
+```
+
+### 649. `/BSNAGT/36000014`
+
+```
+T-Code: /BSNAGT/36000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_PARAM
+```
+
+### 650. `/BSNAGT/70000132`
+
+```
+T-Code: /BSNAGT/70000132
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_IHSTEP
+```
+
+### 651. `/BSNAGT/70000179`
+
+```
+T-Code: /BSNAGT/70000179
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_TYPMAP
+```
+
+### 652. `/BSNAGT/70000188`
+
+```
+T-Code: /BSNAGT/70000188
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_GZIP
+```
+
+### 653. `/BSNAGT/70000197`
+
+```
+T-Code: /BSNAGT/70000197
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_ROUTE
+```
+
+### 654. `/BSNAGT/70000215`
+
+```
+T-Code: /BSNAGT/70000215
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_SENS
+```
+
+### 655. `/BSNAGT/70000229`
+
+```
+T-Code: /BSNAGT/70000229
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_ALERT
+```
+
+### 656. `/BSNAGT/70000259`
+
+```
+T-Code: /BSNAGT/70000259
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_DOWN
+```
+
+### 657. `/BSNAGT/70000272`
+
+```
+T-Code: /BSNAGT/70000272
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_SWITCH
+```
+
+### 658. `/BSNAGT/70000281`
+
+```
+T-Code: /BSNAGT/70000281
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_RFCAPI
+```
+
+### 659. `/BSNAGT/70000285`
+
+```
+T-Code: /BSNAGT/70000285
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_PSETID
+```
+
+### 660. `/BSNAGT/70000295`
+
+```
+T-Code: /BSNAGT/70000295
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_PULL
+```
+
+### 661. `/BSNAGT/70000300`
+
+```
+T-Code: /BSNAGT/70000300
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_EBICS
+```
+
+### 662. `/BSNAGT/70000310`
+
+```
+T-Code: /BSNAGT/70000310
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_APPUSR
+```
+
+### 663. `/BSNAGT/70000344`
+
+```
+T-Code: /BSNAGT/70000344
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/VHTTPAPI
+```
+
+### 664. `/BSNAGT/70000387`
+
+```
+T-Code: /BSNAGT/70000387
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_SRCHTC, /BSNAGT/V_SRCHTY
+```
+
+### 665. `/BSNAGT/70000388`
+
+```
+T-Code: /BSNAGT/70000388
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_SEARCH
+```
+
+### 666. `/BSNAGT/70000410`
+
+```
+T-Code: /BSNAGT/70000410
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_MAPUS
+```
+
+### 667. `/BSNAGT/70000411`
+
+```
+T-Code: /BSNAGT/70000411
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_STAPUS
+```
+
+### 668. `/BSNAGT/70000531`
+
+```
+T-Code: /BSNAGT/70000531
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_BTFTYD
+```
+
+### 669. `/BSNAGT/70000532`
+
+```
+T-Code: /BSNAGT/70000532
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_BTFTYP
+```
+
+### 670. `/BSNAGT/70000533`
+
+```
+T-Code: /BSNAGT/70000533
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_BTF
+```
+
+### 671. `/BSNAGT/70000545`
+
+```
+T-Code: /BSNAGT/70000545
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BSNAGT/V_SREF
+```
+
+### 672. `/BSNAGT/ARC_CU`
+
+```
+T-Code: /BSNAGT/ARC_CU
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → (empty — maintain in PFCG)
+```
+
+### 673. `/BSNAGT/ARC_DELETE`
+
+```
+T-Code: /BSNAGT/ARC_DELETE
+└── S_ARCHIVE
+    ├── ACTVT → 1
+    ├── APPLIC → (empty — maintain in PFCG)
+    └── ARCH_OBJ → /BSNAGT/AO
+```
+
+### 674. `/BSNAGT/ARC_PREP`
+
+```
+T-Code: /BSNAGT/ARC_PREP
+└── S_ARCHIVE
+    ├── ACTVT → 1
+    ├── APPLIC → (empty — maintain in PFCG)
+    └── ARCH_OBJ → /BSNAGT/AO
+```
+
+### 675. `/BSNAGT/ARC_RELOAD`
+
+```
+T-Code: /BSNAGT/ARC_RELOAD
+└── S_ARCHIVE
+    ├── ACTVT → 1
+    ├── APPLIC → (empty — maintain in PFCG)
+    └── ARCH_OBJ → /BSNAGT/AO
+```
+
+### 676. `/BSNAGT/ARC_WRITE`
+
+```
+T-Code: /BSNAGT/ARC_WRITE
+└── S_ARCHIVE
+    ├── ACTVT → 1
+    ├── APPLIC → (empty — maintain in PFCG)
+    └── ARCH_OBJ → /BSNAGT/AO
+```
+
+### 677. `/BSNAGT/FILE_MONI`
+
+```
+T-Code: /BSNAGT/FILE_MONI
+├── /BSNAGT/FM
+    ├── ACTVT → 2, 3
+    └── MSGTYPE → (empty — maintain in PFCG)
+├── /BSNAGT/PU
+    └── ACTVT → 16
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /BSNAGT/FSNC
+    └── ALG_SUBOBJ → FSNC
+└── S_BTCH_JOB
+    ├── JOBACTION → PLAN, PROT, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 678. `/BSNAGT/FILE_SEND`
+
+```
+T-Code: /BSNAGT/FILE_SEND
+└── FILE_SEND
+    ├── ACTVT → 16
+    └── CLASS → ADDON_DEV, ADDON_QM, ADDON_TST
+```
+
+### 679. `/BSNAGT/INDEX_CREATE`
+
+```
+T-Code: /BSNAGT/INDEX_CREATE
+└── /BSNAGT/ID
+    ├── ACTVT → 1, 3
+    └── MSG_TYPE → (empty — maintain in PFCG)
+```
+
+### 680. `/BSNAGT/INDEX_DELETE`
+
+```
+T-Code: /BSNAGT/INDEX_DELETE
+└── /BSNAGT/ID
+    ├── ACTVT → 3, 6
+    └── MSG_TYPE → (empty — maintain in PFCG)
+```
+
+### 681. `/BSNAGT/INDEX_TEST`
+
+```
+T-Code: /BSNAGT/INDEX_TEST
+└── /BSNAGT/ID
+    ├── ACTVT → 3
+    └── MSG_TYPE → (empty — maintain in PFCG)
+```
+
+### 682. `/BSNAGT/MONITOR`
+
+```
+T-Code: /BSNAGT/MONITOR
+├── /AIF/EMC
+    ├── /AIF/NS → /FINLF
+    └── ACTVT → 16, 33, 70, 71, A4, GL
+├── /AIF/ERR
+    ├── /AIF/IF → BSNAGT_OUT, BSNAGT_REC, BSNAGT_S_O
+    ├── /AIF/IFVER → 1
+    ├── /AIF/NS → /FINLF
+    └── ACTVT → 16, 33, 70, 71, A4, GL
+├── /BSNAGT/BL
+    └── ACTVT → 3
+├── /BSNAGT/CR
+    ├── ACTVT → 1
+    └── MSG_TYPE → (empty — maintain in PFCG)
+├── /BSNAGT/FM
+    ├── ACTVT → 2, 3
+    └── MSGTYPE → (empty — maintain in PFCG)
+├── /BSNAGT/MS
+    ├── /BSNAGT/MT → (empty — maintain in PFCG)
+    ├── /BSNAGT/RC → (empty — maintain in PFCG)
+    ├── /BSNAGT/SN → (empty — maintain in PFCG)
+    ├── ACTVT → 1, 2, 3, 6
+    └── BUKRS → $BUKRS
+├── /BSNAGT/PL
+    ├── ACTVT → 2, 3
+    └── MSG_TYPE → (empty — maintain in PFCG)
+├── /BSNAGT/PU
+    └── ACTVT → 16
+├── /BSNAGT/RP
+    ├── ACTVT → 2
+    └── MSG_TYPE → (empty — maintain in PFCG)
+├── /BSNAGT/SA
+    ├── ACTVT → 16
+    └── MSG_TYPE → (empty — maintain in PFCG)
+├── /BSNAGT/SE
+    ├── /BSNAGT/DC → PAYLOAD, WORKLIST
+    └── ACTVT → 3
+├── /BSNAGT/SN
+    ├── ACTVT → 16
+    └── MSG_TYPE → (empty — maintain in PFCG)
+├── /BSNAGT/ST
+    ├── ACTVT → 2
+    └── MSG_TYPE → (empty — maintain in PFCG)
+├── /BSNAGT/TR
+    ├── /BSNAGT/TC → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── F_FEBB_BUK
+    ├── ACTVT → 1, 2, 3, F4
+    └── BUKRS → $BUKRS
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /BSNAGT/FSNC
+    └── ALG_SUBOBJ → CREATE, FSNC, SEND
+├── S_BTCH_ADM
+    └── BTCADMIN → Y
+└── S_BTCH_JOB
+    ├── JOBACTION → PROT, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 683. `/BSNAGT/MONITOR_ADMI`
+
+```
+T-Code: /BSNAGT/MONITOR_ADMI
+├── /BSNAGT/FM
+    ├── ACTVT → 2, 3
+    └── MSGTYPE → (empty — maintain in PFCG)
+├── /BSNAGT/PL
+    ├── ACTVT → 2, 3
+    └── MSG_TYPE → (empty — maintain in PFCG)
+├── /BSNAGT/RP
+    ├── ACTVT → 2
+    └── MSG_TYPE → (empty — maintain in PFCG)
+├── /BSNAGT/SE
+    ├── /BSNAGT/DC → PAYLOAD, WORKLIST
+    └── ACTVT → 3
+└── S_BTCH_JOB
+    ├── JOBACTION → PLAN, PROT, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 684. `/BSNAGT/MSGIDNRO`
+
+```
+T-Code: /BSNAGT/MSGIDNRO
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /BSNAGT/N2
+```
+
+### 685. `/BSNAGT/SEARCH`
+
+```
+T-Code: /BSNAGT/SEARCH
+└── /BSNAGT/PS
+    └── ACTVT → 16
+```
+
+### 686. `/BSNAGT/SEARCH_MSG`
+
+```
+T-Code: /BSNAGT/SEARCH_MSG
+└── /BSNAGT/PS
+    └── ACTVT → 16
+```
+
+### 687. `/BSNAGT/TRACE`
+
+```
+T-Code: /BSNAGT/TRACE
+└── /BSNAGT/TR
+    ├── /BSNAGT/TC → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 688. `/BSNAGT/UPLOAD_FILE`
+
+```
+T-Code: /BSNAGT/UPLOAD_FILE
+└── /BSNAGT/CR
+    ├── ACTVT → 1
+    └── MSG_TYPE → (empty — maintain in PFCG)
+```
+
+## `/BUILD/` — SAP Build — Citizen Developer
+> T-codes: **1**
+
+
+### 689. `/BUILD/OVERVIEW`
+
+```
+T-Code: /BUILD/OVERVIEW
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /BUILD/CORE
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+└── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT, SUBMIT
+    └── P_PROGNAM → /BUILD/EXECUTE, /BUILD/PLUGIN_OVERVIEW, /BUILD/SCRIPT_WORKBENCH, /BUILD/VIEWER
+```
+
+## `/CCEE/` — SAP CEE Localization
+> T-codes: **73**
+
+
+### 690. `/CCEE/11000008`
+
+```
+T-Code: /CCEE/11000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/HR_V_MR
+```
+
+### 691. `/CCEE/11000009`
+
+```
+T-Code: /CCEE/11000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/HR_V_PW
+```
+
+### 692. `/CCEE/11000010`
+
+```
+T-Code: /CCEE/11000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/HR_V_PMPW
+```
+
+### 693. `/CCEE/11000011`
+
+```
+T-Code: /CCEE/11000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/HR_V_GLRC
+```
+
+### 694. `/CCEE/11000012`
+
+```
+T-Code: /CCEE/11000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/HR_V_DATE
+```
+
+### 695. `/CCEE/11000013`
+
+```
+T-Code: /CCEE/11000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/HR_V_DT
+```
+
+### 696. `/CCEE/11000050`
+
+```
+T-Code: /CCEE/11000050
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFI_CACCV
+```
+
+### 697. `/CCEE/11000051`
+
+```
+T-Code: /CCEE/11000051
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFI_CACCV
+```
+
+### 698. `/CCEE/11000052`
+
+```
+T-Code: /CCEE/11000052
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFI_CDTPV
+```
+
+### 699. `/CCEE/11000053`
+
+```
+T-Code: /CCEE/11000053
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFI_CMWSV
+```
+
+### 700. `/CCEE/11000054`
+
+```
+T-Code: /CCEE/11000054
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISI_DDVN
+```
+
+### 701. `/CCEE/11000055`
+
+```
+T-Code: /CCEE/11000055
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFI_RFA_V
+```
+
+### 702. `/CCEE/11000056`
+
+```
+T-Code: /CCEE/11000056
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFI_RFD_V
+```
+
+### 703. `/CCEE/11000057`
+
+```
+T-Code: /CCEE/11000057
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFIPODAT2
+```
+
+### 704. `/CCEE/11000058`
+
+```
+T-Code: /CCEE/11000058
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFISTATE2
+```
+
+### 705. `/CCEE/11001876`
+
+```
+T-Code: /CCEE/11001876
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/RSFIAAV_CC
+```
+
+### 706. `/CCEE/11001878`
+
+```
+T-Code: /CCEE/11001878
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/RSFIAA_RAT
+```
+
+### 707. `/CCEE/14000167`
+
+```
+T-Code: /CCEE/14000167
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/XX_CASH_V
+```
+
+### 708. `/CCEE/14000168`
+
+```
+T-Code: /CCEE/14000168
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/XX_SPLIT_V
+```
+
+### 709. `/CCEE/14000170`
+
+```
+T-Code: /CCEE/14000170
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/XXFI_TCJ
+```
+
+### 710. `/CCEE/14000171`
+
+```
+T-Code: /CCEE/14000171
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/XXFI_TCDG
+```
+
+### 711. `/CCEE/14000174`
+
+```
+T-Code: /CCEE/14000174
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/RSFIAA_RVA
+```
+
+### 712. `/CCEE/14000480`
+
+```
+T-Code: /CCEE/14000480
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISC_ALT_V
+```
+
+### 713. `/CCEE/26000275`
+
+```
+T-Code: /CCEE/26000275
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISC_DOC_V
+```
+
+### 714. `/CCEE/26000276`
+
+```
+T-Code: /CCEE/26000276
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISC_TAXAV
+```
+
+### 715. `/CCEE/26000277`
+
+```
+T-Code: /CCEE/26000277
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISC_TAXTV
+```
+
+### 716. `/CCEE/26000331`
+
+```
+T-Code: /CCEE/26000331
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISC_BIL_V
+```
+
+### 717. `/CCEE/26000332`
+
+```
+T-Code: /CCEE/26000332
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → (empty — maintain in PFCG)
+```
+
+### 718. `/CCEE/26000333`
+
+```
+T-Code: /CCEE/26000333
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISC_CD_V
+```
+
+### 719. `/CCEE/26000334`
+
+```
+T-Code: /CCEE/26000334
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISC_CON_V
+```
+
+### 720. `/CCEE/26000335`
+
+```
+T-Code: /CCEE/26000335
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISC_NO_V
+```
+
+### 721. `/CCEE/26000336`
+
+```
+T-Code: /CCEE/26000336
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISC_PAR_V
+```
+
+### 722. `/CCEE/26000337`
+
+```
+T-Code: /CCEE/26000337
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISC_PMT_V
+```
+
+### 723. `/CCEE/45000309`
+
+```
+T-Code: /CCEE/45000309
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/RSFI_POPV
+```
+
+### 724. `/CCEE/52002340`
+
+```
+T-Code: /CCEE/52002340
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISC_SMD_V
+```
+
+### 725. `/CCEE/52003966`
+
+```
+T-Code: /CCEE/52003966
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_DOCCLS
+```
+
+### 726. `/CCEE/52003967`
+
+```
+T-Code: /CCEE/52003967
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_T003_B_I
+```
+
+### 727. `/CCEE/52004064`
+
+```
+T-Code: /CCEE/52004064
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISC_BS_VC
+```
+
+### 728. `/CCEE/BAPI_FISC_SEND_BS`
+
+```
+T-Code: /CCEE/BAPI_FISC_SEND_BS
+└── /CCEE/HR_B
+    ├── ACTVT → 16
+    ├── BUKRS → $BUKRS
+    └── FISC_BS → (empty — maintain in PFCG)
+```
+
+### 729. `/CCEE/BAPI_FISC_SEND_INVOICE`
+
+```
+T-Code: /CCEE/BAPI_FISC_SEND_INVOICE
+└── /CCEE/HR_I
+    ├── ACTVT → 16
+    └── BUKRS → $BUKRS
+```
+
+### 730. `/CCEE/FISC_NR`
+
+```
+T-Code: /CCEE/FISC_NR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /CCEE/FISC
+```
+
+### 731. `/CCEE/FISC_USERD_T`
+
+```
+T-Code: /CCEE/FISC_USERD_T
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISC_USERV
+```
+
+### 732. `/CCEE/FISIFP_A`
+
+```
+T-Code: /CCEE/FISIFP_A
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISIFP_A
+```
+
+### 733. `/CCEE/FISIFP_B`
+
+```
+T-Code: /CCEE/FISIFP_B
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISIFP_B
+```
+
+### 734. `/CCEE/FISIFP_C`
+
+```
+T-Code: /CCEE/FISIFP_C
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISIFP_C
+```
+
+### 735. `/CCEE/FISI_VKO1`
+
+```
+T-Code: /CCEE/FISI_VKO1
+└── S_TRANSLAT
+    ├── ACTVT → A8
+    ├── TLANGUAGE → (empty — maintain in PFCG)
+    └── TRANOBJ → (empty — maintain in PFCG)
+```
+
+### 736. `/CCEE/HRFI_EC`
+
+```
+T-Code: /CCEE/HRFI_EC
+├── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+├── F_BKPF_KOA
+    ├── ACTVT → 3
+    └── KOART → $KOART
+└── F_FAGL_LDR
+    ├── ACTVT → 3
+    ├── BUKRS → $BUKRS
+    ├── GLRLDNR → (empty — maintain in PFCG)
+    ├── GLRRCTY → (empty — maintain in PFCG)
+    └── GLRVERS → (empty — maintain in PFCG)
+```
+
+### 737. `/CCEE/HR_OPZ_STAT_1`
+
+```
+T-Code: /CCEE/HR_OPZ_STAT_1
+├── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+└── F_BKPF_KOA
+    ├── ACTVT → 3
+    └── KOART → $KOART
+```
+
+### 738. `/CCEE/RSFI_FSPAR`
+
+```
+T-Code: /CCEE/RSFI_FSPAR
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/RSFID_FSPA
+```
+
+### 739. `/CCEE/RSFI_RFDUZI`
+
+```
+T-Code: /CCEE/RSFI_RFDUZI
+├── F_BKPF_BUK
+    ├── ACTVT → 3, F4
+    └── BUKRS → $BUKRS
+├── F_BKPF_KOA
+    ├── ACTVT → 3, F4
+    └── KOART → $KOART
+├── F_KNA1_BED
+    ├── ACTVT → F4
+    └── BRGRU → (empty — maintain in PFCG)
+├── F_KNA1_BUK
+    ├── ACTVT → 3, F4
+    └── BUKRS → $BUKRS
+├── F_KNA1_GEN
+    └── ACTVT → F4
+└── F_KNA1_GRP
+    ├── ACTVT → F4
+    └── KTOKD → (empty — maintain in PFCG)
+```
+
+### 740. `/CCEE/RSFI_VAT`
+
+```
+T-Code: /CCEE/RSFI_VAT
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 741. `/CCEE/RSFI_VATC`
+
+```
+T-Code: /CCEE/RSFI_VATC
+├── F_BKPF_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/RSFI_POPV
+```
+
+### 742. `/CCEE/SIFIDDVDOB`
+
+```
+T-Code: /CCEE/SIFIDDVDOB
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFIDDVDOB
+```
+
+### 743. `/CCEE/SIFIPART3`
+
+```
+T-Code: /CCEE/SIFIPART3
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFIINCP3
+```
+
+### 744. `/CCEE/SIFIPE7R`
+
+```
+T-Code: /CCEE/SIFIPE7R
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 745. `/CCEE/SIFIRFBELJ00`
+
+```
+T-Code: /CCEE/SIFIRFBELJ00
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 746. `/CCEE/SIFI_BST_R`
+
+```
+T-Code: /CCEE/SIFI_BST_R
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFI_BST_R
+```
+
+### 747. `/CCEE/SIFI_BST_T`
+
+```
+T-Code: /CCEE/SIFI_BST_T
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFI_BST_T
+```
+
+### 748. `/CCEE/SIFI_CS_ACC_AS`
+
+```
+T-Code: /CCEE/SIFI_CS_ACC_AS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFI_CACCV
+```
+
+### 749. `/CCEE/SIFI_CS_DT_AS`
+
+```
+T-Code: /CCEE/SIFI_CS_DT_AS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFI_CDTPV
+```
+
+### 750. `/CCEE/SIFI_CS_TC_AS`
+
+```
+T-Code: /CCEE/SIFI_CS_TC_AS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFI_CMWSV
+```
+
+### 751. `/CCEE/SIFI_DDV`
+
+```
+T-Code: /CCEE/SIFI_DDV
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 752. `/CCEE/SIFI_DDVN`
+
+```
+T-Code: /CCEE/SIFI_DDVN
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISI_DDVN
+```
+
+### 753. `/CCEE/SIFI_HAL`
+
+```
+T-Code: /CCEE/SIFI_HAL
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/FISIFP_HAL
+```
+
+### 754. `/CCEE/SIFI_KRD_T`
+
+```
+T-Code: /CCEE/SIFI_KRD_T
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFI_PODAT
+```
+
+### 755. `/CCEE/SIFI_POBOTI`
+
+```
+T-Code: /CCEE/SIFI_POBOTI
+├── B_BUP_DCPD
+    ├── ACTVT → F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+├── F_LFA1_BEK
+    ├── ACTVT → F4
+    └── BRGRU → (empty — maintain in PFCG)
+├── F_LFA1_BUK
+    ├── ACTVT → F4
+    └── BUKRS → $BUKRS
+├── F_LFA1_GEN
+    └── ACTVT → F4
+├── F_LFA1_GRP
+    ├── ACTVT → F4
+    └── KTOKK → (empty — maintain in PFCG)
+└── M_LFM1_EKO
+    ├── ACTVT → F4
+    └── EKORG → $EKORG
+```
+
+### 756. `/CCEE/SIFI_POBXRF`
+
+```
+T-Code: /CCEE/SIFI_POBXRF
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFIPOBXRF
+```
+
+### 757. `/CCEE/SIFI_PODAT`
+
+```
+T-Code: /CCEE/SIFI_PODAT
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFIPODAT2
+```
+
+### 758. `/CCEE/SIFI_SFR_CONV`
+
+```
+T-Code: /CCEE/SIFI_SFR_CONV
+└── S_TABU_NAM
+    ├── ACTVT → 3
+    └── TABLE → /CCEE/SIFIPODAT2, /CCEE/SIFI_PODAT
+```
+
+### 759. `/CCEE/SIFI_SFR_T`
+
+```
+T-Code: /CCEE/SIFI_SFR_T
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFIPODAT2
+```
+
+### 760. `/CCEE/SIFI_STATES`
+
+```
+T-Code: /CCEE/SIFI_STATES
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFISTATE2
+```
+
+### 761. `/CCEE/SIFI_VAT_DATE`
+
+```
+T-Code: /CCEE/SIFI_VAT_DATE
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 762. `/CCEE/XXFI_CDG`
+
+```
+T-Code: /CCEE/XXFI_CDG
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /CCEE/CDG
+```
+
+## `/CDBASIS/` — SAP Controlled Distribution Basis
+> T-codes: **4**
+
+
+### 763. `/CDBASIS/ACT_C`
+
+```
+T-Code: /CDBASIS/ACT_C
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /CDBASIS/SYACUSV
+```
+
+### 764. `/CDBASIS/CUSTGEN_DIS`
+
+```
+T-Code: /CDBASIS/CUSTGEN_DIS
+└── /CDBASIS/C
+    ├── /CDBASIS/A → *
+    ├── /CDBASIS/S → CUS, OPR
+    └── ACTVT → 3
+```
+
+### 765. `/CDBASIS/LOG_D`
+
+```
+T-Code: /CDBASIS/LOG_D
+└── S_GUI
+    └── ACTVT → 4, 61
+```
+
+### 766. `/CDBASIS/LOG_DEL`
+
+```
+T-Code: /CDBASIS/LOG_DEL
+└── S_APPL_LOG
+    ├── ACTVT → 3, 6
+    ├── ALG_OBJECT → (empty — maintain in PFCG)
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+```
+
+## `/CEECV/` — SAP CEE Country Version
+> T-codes: **84**
+
+
+### 767. `/CEECV/11000016`
+
+```
+T-Code: /CEECV/11000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/TRVOR_V
+```
+
+### 768. `/CEECV/11000017`
+
+```
+T-Code: /CEECV/11000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROFIRFUMD
+```
+
+### 769. `/CEECV/11000018`
+
+```
+T-Code: /CEECV/11000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROFIRFUMS
+```
+
+### 770. `/CEECV/11000033`
+
+```
+T-Code: /CEECV/11000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FIVTXCOL
+```
+
+### 771. `/CEECV/11000034`
+
+```
+T-Code: /CEECV/11000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FI001Z
+```
+
+### 772. `/CEECV/11000035`
+
+```
+T-Code: /CEECV/11000035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/FI001ZT
+```
+
+### 773. `/CEECV/11000036`
+
+```
+T-Code: /CEECV/11000036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BGLOCS/PRNT_FRM
+```
+
+### 774. `/CEECV/11001035`
+
+```
+T-Code: /CEECV/11001035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROFI_TIPF
+```
+
+### 775. `/CEECV/11001036`
+
+```
+T-Code: /CEECV/11001036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROFIMASK
+```
+
+### 776. `/CEECV/11001037`
+
+```
+T-Code: /CEECV/11001037
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROFI_TIPF
+```
+
+### 777. `/CEECV/11001117`
+
+```
+T-Code: /CEECV/11001117
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROFI_OFFN
+```
+
+### 778. `/CEECV/11001118`
+
+```
+T-Code: /CEECV/11001118
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROFI_PERI
+```
+
+### 779. `/CEECV/11001918`
+
+```
+T-Code: /CEECV/11001918
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BGFI_EXCL
+```
+
+### 780. `/CEECV/11002498`
+
+```
+T-Code: /CEECV/11002498
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVOWNER
+```
+
+### 781. `/CEECV/11002499`
+
+```
+T-Code: /CEECV/11002499
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVSTKCH
+```
+
+### 782. `/CEECV/11002756`
+
+```
+T-Code: /CEECV/11002756
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVOWNID
+```
+
+### 783. `/CEECV/14000164`
+
+```
+T-Code: /CEECV/14000164
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BVLO_DNIG
+```
+
+### 784. `/CEECV/14000165`
+
+```
+T-Code: /CEECV/14000165
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BVLO_DNGA
+```
+
+### 785. `/CEECV/14000166`
+
+```
+T-Code: /CEECV/14000166
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BVLO_DNGB
+```
+
+### 786. `/CEECV/14000169`
+
+```
+T-Code: /CEECV/14000169
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BVLO_SPLI
+```
+
+### 787. `/CEECV/14000427`
+
+```
+T-Code: /CEECV/14000427
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BVFI_TCDV
+```
+
+### 788. `/CEECV/14000428`
+
+```
+T-Code: /CEECV/14000428
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BVFI_TT
+```
+
+### 789. `/CEECV/14000429`
+
+```
+T-Code: /CEECV/14000429
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BVFI_TCTV
+```
+
+### 790. `/CEECV/14000430`
+
+```
+T-Code: /CEECV/14000430
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BVFI_CURR
+```
+
+### 791. `/CEECV/14000431`
+
+```
+T-Code: /CEECV/14000431
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BVFI_DTTV
+```
+
+### 792. `/CEECV/14000432`
+
+```
+T-Code: /CEECV/14000432
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BVFI_SIGV
+```
+
+### 793. `/CEECV/14000498`
+
+```
+T-Code: /CEECV/14000498
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROFI_HB_V, /CEECV/ROFI_SPLV, /CEECV/ROFI_VN_V
+```
+
+### 794. `/CEECV/26000054`
+
+```
+T-Code: /CEECV/26000054
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BGFI_FIVV
+```
+
+### 795. `/CEECV/26000055`
+
+```
+T-Code: /CEECV/26000055
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BGFI_MMVV
+```
+
+### 796. `/CEECV/26000056`
+
+```
+T-Code: /CEECV/26000056
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BGFI_SDVV
+```
+
+### 797. `/CEECV/26000057`
+
+```
+T-Code: /CEECV/26000057
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BGFI_D16V
+```
+
+### 798. `/CEECV/26000061`
+
+```
+T-Code: /CEECV/26000061
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_T100C
+```
+
+### 799. `/CEECV/26000100`
+
+```
+T-Code: /CEECV/26000100
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/RSFIAA_RVA
+```
+
+### 800. `/CEECV/45000287`
+
+```
+T-Code: /CEECV/45000287
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROFI_NC
+```
+
+### 801. `/CEECV/52000013`
+
+```
+T-Code: /CEECV/52000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROLO_UO_V
+```
+
+### 802. `/CEECV/BEFI_BAL`
+
+```
+T-Code: /CEECV/BEFI_BAL
+├── F_BKPF_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+├── F_BKPF_KOA
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── KOART → $KOART
+├── F_FAGL_LDR
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── GLRLDNR → (empty — maintain in PFCG)
+    ├── GLRRCTY → (empty — maintain in PFCG)
+    └── GLRVERS → (empty — maintain in PFCG)
+├── F_SKA1_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 803. `/CEECV/BEFI_FRBEN`
+
+```
+T-Code: /CEECV/BEFI_FRBEN
+├── F_BKPF_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+├── F_BKPF_KOA
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── KOART → $KOART
+├── F_FAGL_LDR
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── GLRLDNR → (empty — maintain in PFCG)
+    ├── GLRRCTY → (empty — maintain in PFCG)
+    └── GLRVERS → (empty — maintain in PFCG)
+├── F_SKA1_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 804. `/CEECV/BEFI_PLSTA`
+
+```
+T-Code: /CEECV/BEFI_PLSTA
+├── F_BKPF_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+├── F_BKPF_KOA
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── KOART → $KOART
+├── F_FAGL_LDR
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── GLRLDNR → (empty — maintain in PFCG)
+    ├── GLRRCTY → (empty — maintain in PFCG)
+    └── GLRVERS → (empty — maintain in PFCG)
+├── F_SKA1_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 805. `/CEECV/BEFI_VATC`
+
+```
+T-Code: /CEECV/BEFI_VATC
+├── F_BKPF_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+├── F_BKPF_KOA
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── KOART → $KOART
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/BEFI_VATV
+```
+
+### 806. `/CEECV/BGFI_PROT`
+
+```
+T-Code: /CEECV/BGFI_PROT
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 807. `/CEECV/BGFI_VAT`
+
+```
+T-Code: /CEECV/BGFI_VAT
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 808. `/CEECV/BTFI_BAL`
+
+```
+T-Code: /CEECV/BTFI_BAL
+└── F_BKPF_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+```
+
+### 809. `/CEECV/BTFI_INV_REG`
+
+```
+T-Code: /CEECV/BTFI_INV_REG
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 810. `/CEECV/BTFI_PLSTA`
+
+```
+T-Code: /CEECV/BTFI_PLSTA
+└── F_BKPF_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+```
+
+### 811. `/CEECV/BVFI_BAL`
+
+```
+T-Code: /CEECV/BVFI_BAL
+├── F_BKPF_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+├── F_BKPF_KOA
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── KOART → $KOART
+├── F_FAGL_LDR
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── GLRLDNR → (empty — maintain in PFCG)
+    ├── GLRRCTY → (empty — maintain in PFCG)
+    └── GLRVERS → (empty — maintain in PFCG)
+├── F_SKA1_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 812. `/CEECV/BVFI_PLSTA`
+
+```
+T-Code: /CEECV/BVFI_PLSTA
+├── F_BKPF_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+├── F_BKPF_KOA
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── KOART → $KOART
+├── F_FAGL_LDR
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── GLRLDNR → (empty — maintain in PFCG)
+    ├── GLRRCTY → (empty — maintain in PFCG)
+    └── GLRVERS → (empty — maintain in PFCG)
+├── F_SKA1_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 813. `/CEECV/ROFI08`
+
+```
+T-Code: /CEECV/ROFI08
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 814. `/CEECV/ROFI09`
+
+```
+T-Code: /CEECV/ROFI09
+└── K_CSKS
+    ├── ACTVT → F4
+    ├── KOKRS → $KOKRS
+    └── KOSTL → (empty — maintain in PFCG)
+```
+
+### 815. `/CEECV/ROFI11_XML`
+
+```
+T-Code: /CEECV/ROFI11_XML
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 816. `/CEECV/ROFI12`
+
+```
+T-Code: /CEECV/ROFI12
+└── F_SKA1_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+```
+
+### 817. `/CEECV/ROFI15`
+
+```
+T-Code: /CEECV/ROFI15
+└── K_CSKS
+    ├── ACTVT → F4
+    ├── KOKRS → $KOKRS
+    └── KOSTL → (empty — maintain in PFCG)
+```
+
+### 818. `/CEECV/ROFI17`
+
+```
+T-Code: /CEECV/ROFI17
+├── B_BUP_DCPD
+    ├── ACTVT → F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+├── F_BKPF_BUK
+    ├── ACTVT → F4
+    └── BUKRS → $BUKRS
+├── F_BKPF_KOA
+    ├── ACTVT → F4
+    └── KOART → $KOART
+├── F_LFA1_BEK
+    ├── ACTVT → F4
+    └── BRGRU → (empty — maintain in PFCG)
+├── F_LFA1_BUK
+    ├── ACTVT → F4
+    └── BUKRS → $BUKRS
+├── F_LFA1_GEN
+    └── ACTVT → F4
+└── F_LFA1_GRP
+    ├── ACTVT → F4
+    └── KTOKK → (empty — maintain in PFCG)
+```
+
+### 819. `/CEECV/ROFIRFUVDE12`
+
+```
+T-Code: /CEECV/ROFIRFUVDE12
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 820. `/CEECV/ROFI_CUST2`
+
+```
+T-Code: /CEECV/ROFI_CUST2
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROFI_HB_V, /CEECV/ROFI_SPLV, /CEECV/ROFI_VN_V
+```
+
+### 821. `/CEECV/ROFI_MERGE394`
+
+```
+T-Code: /CEECV/ROFI_MERGE394
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 822. `/CEECV/ROFI_SPLIT`
+
+```
+T-Code: /CEECV/ROFI_SPLIT
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROFI_HB_V, /CEECV/ROFI_SPLV, /CEECV/ROFI_VN_V
+```
+
+### 823. `/CEECV/ROFI_VIES394`
+
+```
+T-Code: /CEECV/ROFI_VIES394
+└── F_BKPF_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+```
+
+### 824. `/CEECV/ROFI_VIES_XML`
+
+```
+T-Code: /CEECV/ROFI_VIES_XML
+├── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+├── F_BKPF_KOA
+    ├── ACTVT → 3
+    └── KOART → $KOART
+└── F_FAGL_LDR
+    ├── ACTVT → 3
+    ├── BUKRS → $BUKRS
+    ├── GLRLDNR → (empty — maintain in PFCG)
+    ├── GLRRCTY → (empty — maintain in PFCG)
+    └── GLRVERS → (empty — maintain in PFCG)
+```
+
+### 825. `/CEECV/ROLO02`
+
+```
+T-Code: /CEECV/ROLO02
+└── M_MSEG_WMB
+    ├── ACTVT → 3
+    └── WERKS → $WERKS
+```
+
+### 826. `/CEECV/ROLO03`
+
+```
+T-Code: /CEECV/ROLO03
+├── B_BUP_DCPD
+    ├── ACTVT → F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+├── F_KNA1_BED
+    ├── ACTVT → F4
+    └── BRGRU → (empty — maintain in PFCG)
+├── F_KNA1_BUK
+    ├── ACTVT → F4
+    └── BUKRS → $BUKRS
+├── F_KNA1_GEN
+    └── ACTVT → F4
+├── F_KNA1_GRP
+    ├── ACTVT → F4
+    └── KTOKD → (empty — maintain in PFCG)
+├── F_LFA1_BEK
+    ├── ACTVT → F4
+    └── BRGRU → (empty — maintain in PFCG)
+├── F_LFA1_BUK
+    ├── ACTVT → F4
+    └── BUKRS → $BUKRS
+├── F_LFA1_GEN
+    └── ACTVT → F4
+├── F_LFA1_GRP
+    ├── ACTVT → F4
+    └── KTOKK → (empty — maintain in PFCG)
+├── M_MATE_MAR
+    ├── ACTVT → F4
+    └── BEGRU → (empty — maintain in PFCG)
+├── M_MATE_MAT
+    ├── ACTVT → F4
+    └── BEGRU → (empty — maintain in PFCG)
+└── M_MATE_WGR
+    ├── ACTVT → F4
+    └── BEGRU → (empty — maintain in PFCG)
+```
+
+### 827. `/CEECV/ROLO04`
+
+```
+T-Code: /CEECV/ROLO04
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 828. `/CEECV/ROLO04N`
+
+```
+T-Code: /CEECV/ROLO04N
+├── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+└── M_MATE_WRK
+    ├── ACTVT → 3
+    └── WERKS → $WERKS
+```
+
+### 829. `/CEECV/ROVSATRTP`
+
+```
+T-Code: /CEECV/ROVSATRTP
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVSATRTP
+```
+
+### 830. `/CEECV/RO_RFM`
+
+```
+T-Code: /CEECV/RO_RFM
+└── S_GUI
+    └── ACTVT → 60
+```
+
+### 831. `/CEECV/RO_SAFT_ACCMA`
+
+```
+T-Code: /CEECV/RO_SAFT_ACCMA
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVACCMAP
+```
+
+### 832. `/CEECV/RO_SAFT_DOCMF`
+
+```
+T-Code: /CEECV/RO_SAFT_DOCMF
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVDOCMFI
+```
+
+### 833. `/CEECV/RO_SAFT_DOCPY`
+
+```
+T-Code: /CEECV/RO_SAFT_DOCPY
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVDOCPAY
+```
+
+### 834. `/CEECV/RO_SAFT_EXBST`
+
+```
+T-Code: /CEECV/RO_SAFT_EXBST
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVEXBSTA
+```
+
+### 835. `/CEECV/RO_SAFT_EXDCG`
+
+```
+T-Code: /CEECV/RO_SAFT_EXDCG
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVEXDCGL
+```
+
+### 836. `/CEECV/RO_SAFT_GOODS`
+
+```
+T-Code: /CEECV/RO_SAFT_GOODS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVGOODSV
+```
+
+### 837. `/CEECV/RO_SAFT_INVTP`
+
+```
+T-Code: /CEECV/RO_SAFT_INVTP
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVINVTPM
+```
+
+### 838. `/CEECV/RO_SAFT_MOVTY`
+
+```
+T-Code: /CEECV/RO_SAFT_MOVTY
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVMOVTYP
+```
+
+### 839. `/CEECV/RO_SAFT_MVTPM`
+
+```
+T-Code: /CEECV/RO_SAFT_MVTPM
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVMVTPMP
+```
+
+### 840. `/CEECV/RO_SAFT_PYMCH`
+
+```
+T-Code: /CEECV/RO_SAFT_PYMCH
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVPYMCHM
+```
+
+### 841. `/CEECV/RO_SAFT_SPGLI`
+
+```
+T-Code: /CEECV/RO_SAFT_SPGLI
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVSPGLI
+```
+
+### 842. `/CEECV/RO_SAFT_TAXCO`
+
+```
+T-Code: /CEECV/RO_SAFT_TAXCO
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVTAXCOD
+```
+
+### 843. `/CEECV/RO_SAFT_TAXMA`
+
+```
+T-Code: /CEECV/RO_SAFT_TAXMA
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVTAXMAP
+```
+
+### 844. `/CEECV/RO_SAFT_TAXTY`
+
+```
+T-Code: /CEECV/RO_SAFT_TAXTY
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVTAXTYP
+```
+
+### 845. `/CEECV/RO_SAFT_UOM`
+
+```
+T-Code: /CEECV/RO_SAFT_UOM
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVUOM
+```
+
+### 846. `/CEECV/RO_SAFT_UOMMA`
+
+```
+T-Code: /CEECV/RO_SAFT_UOMMA
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVUOMMAP
+```
+
+### 847. `/CEECV/RO_SAFT_VALAN`
+
+```
+T-Code: /CEECV/RO_SAFT_VALAN
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVVALANL
+```
+
+### 848. `/CEECV/RO_SAFT_WHTCM`
+
+```
+T-Code: /CEECV/RO_SAFT_WHTCM
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVWHTCMP
+```
+
+### 849. `/CEECV/RO_SAFT_WHTMA`
+
+```
+T-Code: /CEECV/RO_SAFT_WHTMA
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEECV/ROVWHTMAP
+```
+
+### 850. `/CEECV/RO_XML`
+
+```
+T-Code: /CEECV/RO_XML
+└── S_GUI
+    └── ACTVT → 60, 61
+```
+
+## `/CEEIB/` — SAP CEE Internet Banking
+> T-codes: **9**
+
+
+### 851. `/CEEIB/14000320`
+
+```
+T-Code: /CEEIB/14000320
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3, 8
+    └── TABLE → /CEEIB/SK_KS
+```
+
+### 852. `/CEEIB/14000321`
+
+```
+T-Code: /CEEIB/14000321
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3, 8
+    └── TABLE → /CEEIB/SK_PT
+```
+
+### 853. `/CEEIB/14000322`
+
+```
+T-Code: /CEEIB/14000322
+├── S_TABU_NAM
+    ├── ACTVT → 2, 3, 8
+    └── TABLE → /CEEIB/SK_SUBJ
+└── S_TCODE
+    └── TCD → /CEEIB/14000322
+```
+
+### 854. `/CEEIB/14000323`
+
+```
+T-Code: /CEEIB/14000323
+├── S_TABU_NAM
+    ├── ACTVT → 2, 3, 8
+    └── TABLE → /CEEIB/SK_DS
+└── S_TCODE
+    └── TCD → /CEEIB/14000323
+```
+
+### 855. `/CEEIB/14000324`
+
+```
+T-Code: /CEEIB/14000324
+├── S_TABU_NAM
+    ├── ACTVT → 2, 3, 8
+    └── TABLE → /CEEIB/SK_TP
+└── S_TCODE
+    └── TCD → /CEEIB/14000324
+```
+
+### 856. `/CEEIB/14000325`
+
+```
+T-Code: /CEEIB/14000325
+├── S_TABU_NAM
+    ├── ACTVT → 2, 3, 8
+    └── TABLE → /CEEIB/SK_RES
+└── S_TCODE
+    └── TCD → /CEEIB/14000325
+```
+
+### 857. `/CEEIB/14000326`
+
+```
+T-Code: /CEEIB/14000326
+├── S_TABU_NAM
+    ├── ACTVT → 2, 3, 8
+    └── TABLE → /CEEIB/SK_CHCK_V
+└── S_TCODE
+    └── TCD → /CEEIB/14000326
+```
+
+### 858. `/CEEIB/68000614`
+
+```
+T-Code: /CEEIB/68000614
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3, 8
+    └── TABLE → /CEEIB/SK_NOCH_V
+```
+
+### 859. `/CEEIB/68000615`
+
+```
+T-Code: /CEEIB/68000615
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3, 8
+    └── TABLE → /CEEIB/SK_DIFS_V
+```
+
+## `/CEEIS/` — SAP CEE IS Localization
+> T-codes: **28**
+
+
+### 860. `/CEEIS/RU_F1`
+
+```
+T-Code: /CEEIS/RU_F1
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 861. `/CEEIS/RU_F10_1`
+
+```
+T-Code: /CEEIS/RU_F10_1
+└── G_800_GRP
+    ├── ACTVT → 3
+    └── BRGRU → (empty — maintain in PFCG)
+```
+
+### 862. `/CEEIS/RU_F10_21`
+
+```
+T-Code: /CEEIS/RU_F10_21
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 863. `/CEEIS/RU_F10_22`
+
+```
+T-Code: /CEEIS/RU_F10_22
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 864. `/CEEIS/RU_F10_23`
+
+```
+T-Code: /CEEIS/RU_F10_23
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 865. `/CEEIS/RU_F10_31`
+
+```
+T-Code: /CEEIS/RU_F10_31
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 866. `/CEEIS/RU_F10_32`
+
+```
+T-Code: /CEEIS/RU_F10_32
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 867. `/CEEIS/RU_F10_33`
+
+```
+T-Code: /CEEIS/RU_F10_33
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 868. `/CEEIS/RU_F11`
+
+```
+T-Code: /CEEIS/RU_F11
+└── G_800_GRP
+    ├── ACTVT → 3
+    └── BRGRU → (empty — maintain in PFCG)
+```
+
+### 869. `/CEEIS/RU_F2`
+
+```
+T-Code: /CEEIS/RU_F2
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 870. `/CEEIS/RU_F2_SP`
+
+```
+T-Code: /CEEIS/RU_F2_SP
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 871. `/CEEIS/RU_F3_1`
+
+```
+T-Code: /CEEIS/RU_F3_1
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 872. `/CEEIS/RU_F3_2`
+
+```
+T-Code: /CEEIS/RU_F3_2
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 873. `/CEEIS/RU_F3_3`
+
+```
+T-Code: /CEEIS/RU_F3_3
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 874. `/CEEIS/RU_F3_NA`
+
+```
+T-Code: /CEEIS/RU_F3_NA
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 875. `/CEEIS/RU_F5_3`
+
+```
+T-Code: /CEEIS/RU_F5_3
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 876. `/CEEIS/RU_F5_4`
+
+```
+T-Code: /CEEIS/RU_F5_4
+└── G_800_GRP
+    ├── ACTVT → 3
+    └── BRGRU → (empty — maintain in PFCG)
+```
+
+### 877. `/CEEIS/RU_F5_5`
+
+```
+T-Code: /CEEIS/RU_F5_5
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 878. `/CEEIS/RU_F6_1`
+
+```
+T-Code: /CEEIS/RU_F6_1
+└── G_800_GRP
+    ├── ACTVT → 3
+    └── BRGRU → (empty — maintain in PFCG)
+```
+
+### 879. `/CEEIS/RU_F6_2`
+
+```
+T-Code: /CEEIS/RU_F6_2
+└── G_800_GRP
+    ├── ACTVT → 3
+    └── BRGRU → (empty — maintain in PFCG)
+```
+
+### 880. `/CEEIS/RU_F7_1`
+
+```
+T-Code: /CEEIS/RU_F7_1
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 881. `/CEEIS/RU_F8_1`
+
+```
+T-Code: /CEEIS/RU_F8_1
+└── G_800_GRP
+    ├── ACTVT → 3
+    └── BRGRU → (empty — maintain in PFCG)
+```
+
+### 882. `/CEEIS/RU_F8_2`
+
+```
+T-Code: /CEEIS/RU_F8_2
+└── G_800_GRP
+    ├── ACTVT → 3
+    └── BRGRU → (empty — maintain in PFCG)
+```
+
+### 883. `/CEEIS/RU_F8_2A`
+
+```
+T-Code: /CEEIS/RU_F8_2A
+└── G_800_GRP
+    ├── ACTVT → 3
+    └── BRGRU → (empty — maintain in PFCG)
+```
+
+### 884. `/CEEIS/RU_F8_2_131`
+
+```
+T-Code: /CEEIS/RU_F8_2_131
+└── G_800_GRP
+    ├── ACTVT → 3
+    └── BRGRU → (empty — maintain in PFCG)
+```
+
+### 885. `/CEEIS/RU_F8_2_131A`
+
+```
+T-Code: /CEEIS/RU_F8_2_131A
+└── G_800_GRP
+    ├── ACTVT → 3
+    └── BRGRU → (empty — maintain in PFCG)
+```
+
+### 886. `/CEEIS/RU_F9_1`
+
+```
+T-Code: /CEEIS/RU_F9_1
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 887. `/CEEIS/RU_F9_2`
+
+```
+T-Code: /CEEIS/RU_F9_2
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+## `/CEERE/` — SAP CEE Real Estate Localization
+> T-codes: **39**
+
+
+### 888. `/CEERE/14000052`
+
+```
+T-Code: /CEERE/14000052
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MMAPLFX
+```
+
+### 889. `/CEERE/19000326`
+
+```
+T-Code: /CEERE/19000326
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MDRNEM, /CEERE/MTPNEM
+```
+
+### 890. `/CEERE/19000327`
+
+```
+T-Code: /CEERE/19000327
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MMAPL
+```
+
+### 891. `/CEERE/19000328`
+
+```
+T-Code: /CEERE/19000328
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MKONSTC
+```
+
+### 892. `/CEERE/19000329`
+
+```
+T-Code: /CEERE/19000329
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MPOMNAK, /CEERE/MRIZENI, /CEERE/MUSNAK, /CEERE/MUSZAV
+```
+
+### 893. `/CEERE/19000330`
+
+```
+T-Code: /CEERE/19000330
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/FU
+```
+
+### 894. `/CEERE/19000331`
+
+```
+T-Code: /CEERE/19000331
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MOKRES
+```
+
+### 895. `/CEERE/19000332`
+
+```
+T-Code: /CEERE/19000332
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MPOMNAK, /CEERE/MRIZENI, /CEERE/MUSNAK, /CEERE/MUSZAV
+```
+
+### 896. `/CEERE/19000334`
+
+```
+T-Code: /CEERE/19000334
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/KU
+```
+
+### 897. `/CEERE/50000121`
+
+```
+T-Code: /CEERE/50000121
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MKOEFMPS2, /CEERE/MKU, /CEERE/MOBCE
+```
+
+### 898. `/CEERE/50000122`
+
+```
+T-Code: /CEERE/50000122
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MKUK
+```
+
+### 899. `/CEERE/50000123`
+
+```
+T-Code: /CEERE/50000123
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MFUKD
+```
+
+### 900. `/CEERE/50000178`
+
+```
+T-Code: /CEERE/50000178
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MKONST
+```
+
+### 901. `/CEERE/50000419`
+
+```
+T-Code: /CEERE/50000419
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/TBUKRS
+```
+
+### 902. `/CEERE/50000420`
+
+```
+T-Code: /CEERE/50000420
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/RIZBUK
+```
+
+### 903. `/CEERE/50000457`
+
+```
+T-Code: /CEERE/50000457
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MKOSVOBSI
+```
+
+### 904. `/CEERE/85000114`
+
+```
+T-Code: /CEERE/85000114
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MKOEF
+```
+
+### 905. `/CEERE/DN05`
+
+```
+T-Code: /CEERE/DN05
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 906. `/CEERE/DN12`
+
+```
+T-Code: /CEERE/DN12
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MKONST
+```
+
+### 907. `/CEERE/DNDP`
+
+```
+T-Code: /CEERE/DNDP
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → VTIV08
+```
+
+### 908. `/CEERE/DNEM02`
+
+```
+T-Code: /CEERE/DNEM02
+└── S_TRANSLAT
+    ├── ACTVT → 2
+    ├── TLANGUAGE → (empty — maintain in PFCG)
+    └── TRANOBJ → (empty — maintain in PFCG)
+```
+
+### 909. `/CEERE/DNLOAD`
+
+```
+T-Code: /CEERE/DNLOAD
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 910. `/CEERE/DNPRE`
+
+```
+T-Code: /CEERE/DNPRE
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 911. `/CEERE/DNUCTO`
+
+```
+T-Code: /CEERE/DNUCTO
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 912. `/CEERE/DNUCTO_IND`
+
+```
+T-Code: /CEERE/DNUCTO_IND
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 913. `/CEERE/DNUZ`
+
+```
+T-Code: /CEERE/DNUZ
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 914. `/CEERE/DNZUDP`
+
+```
+T-Code: /CEERE/DNZUDP
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → VTIV76
+```
+
+### 915. `/CEERE/FU_MREGW`
+
+```
+T-Code: /CEERE/FU_MREGW
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/FU_MREGW
+```
+
+### 916. `/CEERE/IMGHS`
+
+```
+T-Code: /CEERE/IMGHS
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 917. `/CEERE/MFUKD`
+
+```
+T-Code: /CEERE/MFUKD
+├── S_PRO_AUTH
+    ├── ACTVT → 2, 3
+    └── PROJAUTH → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MFUKD
+```
+
+### 918. `/CEERE/MFUKDC`
+
+```
+T-Code: /CEERE/MFUKDC
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MFUKDC
+```
+
+### 919. `/CEERE/MKUK`
+
+```
+T-Code: /CEERE/MKUK
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MKUK
+```
+
+### 920. `/CEERE/MMAPLFX`
+
+```
+T-Code: /CEERE/MMAPLFX
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MMAPLFX
+```
+
+### 921. `/CEERE/MMAPLT`
+
+```
+T-Code: /CEERE/MMAPLT
+└── S_TABU_NAM
+    ├── ACTVT → 3
+    └── TABLE → /CEERE/MMAPLT
+```
+
+### 922. `/CEERE/MNUCOK`
+
+```
+T-Code: /CEERE/MNUCOK
+├── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MPOMNAK, /CEERE/MRIZENI, /CEERE/MUSNAK, /CEERE/MUSZAV
+```
+
+### 923. `/CEERE/MOBCOVYK`
+
+```
+T-Code: /CEERE/MOBCOVYK
+├── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/MKOEFMPS2, /CEERE/MKU, /CEERE/MOBCE
+```
+
+### 924. `/CEERE/RIZBUK`
+
+```
+T-Code: /CEERE/RIZBUK
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/RIZBUK
+```
+
+### 925. `/CEERE/SPRO`
+
+```
+T-Code: /CEERE/SPRO
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 926. `/CEERE/TBUKRS`
+
+```
+T-Code: /CEERE/TBUKRS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CEERE/TBUKRS
+```
+
+## `/CEM/` — SAP Customer Energy Management — Utilities
+> T-codes: **176**
+
+
+### 927. `/CEM/ACCESS_SEQ_ENT`
+
+```
+T-Code: /CEM/ACCESS_SEQ_ENT
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 928. `/CEM/APPL_ATTR_CUST`
+
+```
+T-Code: /CEM/APPL_ATTR_CUST
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 929. `/CEM/APPL_CUST`
+
+```
+T-Code: /CEM/APPL_CUST
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 930. `/CEM/APPL_EXTN`
+
+```
+T-Code: /CEM/APPL_EXTN
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 931. `/CEM/APPL_VC_CUST`
+
+```
+T-Code: /CEM/APPL_VC_CUST
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 932. `/CEM/ATTR`
+
+```
+T-Code: /CEM/ATTR
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 933. `/CEM/ATTR_DEF`
+
+```
+T-Code: /CEM/ATTR_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 934. `/CEM/BATCHLOG`
+
+```
+T-Code: /CEM/BATCHLOG
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 935. `/CEM/BPH_NAVIGATION`
+
+```
+T-Code: /CEM/BPH_NAVIGATION
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 936. `/CEM/CEMI`
+
+```
+T-Code: /CEM/CEMI
+├── /CEM/ALL
+    ├── /CEM/APPL → CEMI
+    ├── /CEM/LE → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 5
+├── /CEM/DRP
+    ├── /CEM/LE → (empty — maintain in PFCG)
+    ├── /CEM/PART → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3
+├── COM_PRD
+    └── ACTVT → 1, 2, 3, 6
+└── CRM_TXT_ID
+    ├── ACTVT → 2, 3
+    ├── TEXTID → (empty — maintain in PFCG)
+    └── TEXTOBJECT → (empty — maintain in PFCG)
+```
+
+### 937. `/CEM/CEMI_EXTN`
+
+```
+T-Code: /CEM/CEMI_EXTN
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 938. `/CEM/CEMI_SNRO`
+
+```
+T-Code: /CEM/CEMI_SNRO
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 939. `/CEM/CEMO`
+
+```
+T-Code: /CEM/CEMO
+├── /CEM/ALL
+    ├── /CEM/APPL → CEMO
+    ├── /CEM/LE → (empty — maintain in PFCG)
+    └── ACTVT → 2, 3
+├── /CEM/DRP
+    ├── /CEM/LE → ENT_INBN, RELEASE, SAVE
+    ├── /CEM/PART → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3
+├── BEA_DLI
+    ├── ACTVT → 40
+    ├── APPL → CRMB
+    ├── BILL_ORG → (empty — maintain in PFCG)
+    └── BILL_TYPE → (empty — maintain in PFCG)
+├── COM_PRD
+    └── ACTVT → 1, 2, 3, 6
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /1BEA/CRMB_DL_O_RFCCREATE, /SPE/CRM_ENT_FI_POST_RFC
+    └── RFC_TYPE → FUNC
+```
+
+### 940. `/CEM/CEMO_EXTN`
+
+```
+T-Code: /CEM/CEMO_EXTN
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 941. `/CEM/CEMO_SNRO`
+
+```
+T-Code: /CEM/CEMO_SNRO
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 942. `/CEM/CENT_APPL`
+
+```
+T-Code: /CEM/CENT_APPL
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 943. `/CEM/CENT_APP_ATRIC`
+
+```
+T-Code: /CEM/CENT_APP_ATRIC
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 944. `/CEM/CENT_APP_ATRPD`
+
+```
+T-Code: /CEM/CENT_APP_ATRPD
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 945. `/CEM/CENT_APP_ATRPH`
+
+```
+T-Code: /CEM/CENT_APP_ATRPH
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /CEM/V_APP_ATTRM
+```
+
+### 946. `/CEM/CENT_APP_ATRPT`
+
+```
+T-Code: /CEM/CENT_APP_ATRPT
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 947. `/CEM/CENT_APP_ATRRC`
+
+```
+T-Code: /CEM/CENT_APP_ATRRC
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 948. `/CEM/CENT_APP_ATTR`
+
+```
+T-Code: /CEM/CENT_APP_ATTR
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /CEM/V_APP_ATTRM
+```
+
+### 949. `/CEM/CENT_ARCHIVE_DE`
+
+```
+T-Code: /CEM/CENT_ARCHIVE_DE
+├── S_BTCH_ADM
+    └── BTCADMIN → (empty — maintain in PFCG)
+├── S_BTCH_JOB
+    ├── JOBACTION → DELE, LIST, PLAN, PROT, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+└── S_DATASET
+    ├── ACTVT → 33, 34, 6, A6, A7
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → (empty — maintain in PFCG)
+```
+
+### 950. `/CEM/CENT_ARCHIVE_RD`
+
+```
+T-Code: /CEM/CENT_ARCHIVE_RD
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 951. `/CEM/CENT_ARCHIVE_WR`
+
+```
+T-Code: /CEM/CENT_ARCHIVE_WR
+├── S_ARCHIVE
+    ├── ACTVT → 1, 2, 3
+    ├── APPLIC → (empty — maintain in PFCG)
+    └── ARCH_OBJ → (empty — maintain in PFCG)
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 952. `/CEM/CENT_BL`
+
+```
+T-Code: /CEM/CENT_BL
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 953. `/CEM/CENT_BL_DEF`
+
+```
+T-Code: /CEM/CENT_BL_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 954. `/CEM/CENT_B_PURP`
+
+```
+T-Code: /CEM/CENT_B_PURP
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 955. `/CEM/CENT_DD`
+
+```
+T-Code: /CEM/CENT_DD
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 956. `/CEM/CENT_DD_DEF`
+
+```
+T-Code: /CEM/CENT_DD_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 957. `/CEM/CENT_DOC_TYPE`
+
+```
+T-Code: /CEM/CENT_DOC_TYPE
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /CEM/V_DOC_TYPE
+```
+
+### 958. `/CEM/CENT_EESCN_ATTB`
+
+```
+T-Code: /CEM/CENT_EESCN_ATTB
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 959. `/CEM/CENT_EXEC_CONT`
+
+```
+T-Code: /CEM/CENT_EXEC_CONT
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 960. `/CEM/CENT_EXEC_DEF`
+
+```
+T-Code: /CEM/CENT_EXEC_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 961. `/CEM/CENT_EXEC_PRF`
+
+```
+T-Code: /CEM/CENT_EXEC_PRF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 962. `/CEM/CENT_H_EXTN`
+
+```
+T-Code: /CEM/CENT_H_EXTN
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 963. `/CEM/CENT_IC_BEH`
+
+```
+T-Code: /CEM/CENT_IC_BEH
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 964. `/CEM/CENT_I_EXTN`
+
+```
+T-Code: /CEM/CENT_I_EXTN
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 965. `/CEM/CENT_I_STATUS`
+
+```
+T-Code: /CEM/CENT_I_STATUS
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 966. `/CEM/CENT_LE`
+
+```
+T-Code: /CEM/CENT_LE
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 967. `/CEM/CENT_LE_DEF`
+
+```
+T-Code: /CEM/CENT_LE_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 968. `/CEM/CENT_MAP_DOC`
+
+```
+T-Code: /CEM/CENT_MAP_DOC
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 969. `/CEM/CENT_MAP_PART`
+
+```
+T-Code: /CEM/CENT_MAP_PART
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 970. `/CEM/CENT_PART_DEF`
+
+```
+T-Code: /CEM/CENT_PART_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 971. `/CEM/CENT_PCRC_MAP`
+
+```
+T-Code: /CEM/CENT_PCRC_MAP
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 972. `/CEM/CENT_PRCODE`
+
+```
+T-Code: /CEM/CENT_PRCODE
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /CEM/V_PR_CODE
+```
+
+### 973. `/CEM/CENT_PRGRM_ATT`
+
+```
+T-Code: /CEM/CENT_PRGRM_ATT
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 974. `/CEM/CENT_PRG_LE_S`
+
+```
+T-Code: /CEM/CENT_PRG_LE_S
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 975. `/CEM/CENT_PRG_MPCND`
+
+```
+T-Code: /CEM/CENT_PRG_MPCND
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 976. `/CEM/CENT_PRG_MPPTR`
+
+```
+T-Code: /CEM/CENT_PRG_MPPTR
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /CEM/V_PRG_MPPTR
+```
+
+### 977. `/CEM/CENT_PRG_PROCS`
+
+```
+T-Code: /CEM/CENT_PRG_PROCS
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 978. `/CEM/CENT_PRG_RSCN`
+
+```
+T-Code: /CEM/CENT_PRG_RSCN
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 979. `/CEM/CENT_PRG_SCN`
+
+```
+T-Code: /CEM/CENT_PRG_SCN
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 980. `/CEM/CENT_PRG_SPR`
+
+```
+T-Code: /CEM/CENT_PRG_SPR
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 981. `/CEM/CENT_PR_REL`
+
+```
+T-Code: /CEM/CENT_PR_REL
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /CEM/V_PR_REL
+```
+
+### 982. `/CEM/CENT_RESCODE`
+
+```
+T-Code: /CEM/CENT_RESCODE
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 983. `/CEM/CENT_SCN_RID`
+
+```
+T-Code: /CEM/CENT_SCN_RID
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 984. `/CEM/CENT_SET_COND`
+
+```
+T-Code: /CEM/CENT_SET_COND
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 985. `/CEM/CENT_SET_MAPCND`
+
+```
+T-Code: /CEM/CENT_SET_MAPCND
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 986. `/CEM/CENT_SUBPRCODE`
+
+```
+T-Code: /CEM/CENT_SUBPRCODE
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_CLI
+    └── CLIIDMAINT → ' '
+```
+
+### 987. `/CEM/CND_MAN_GRP_ENT`
+
+```
+T-Code: /CEM/CND_MAN_GRP_ENT
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 988. `/CEM/COM_PRGRM_ATT`
+
+```
+T-Code: /CEM/COM_PRGRM_ATT
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2
+    └── TABLE → /CEM/V_PRGRM_ATB
+```
+
+### 989. `/CEM/COM_PRGRM_EXEC`
+
+```
+T-Code: /CEM/COM_PRGRM_EXEC
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 990. `/CEM/COND_TABLE_ENT`
+
+```
+T-Code: /CEM/COND_TABLE_ENT
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 991. `/CEM/COND_TYPE_ENT`
+
+```
+T-Code: /CEM/COND_TYPE_ENT
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 992. `/CEM/CTFC_ENT`
+
+```
+T-Code: /CEM/CTFC_ENT
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 993. `/CEM/CTLIST_ENT`
+
+```
+T-Code: /CEM/CTLIST_ENT
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 994. `/CEM/C_VIEW_CALL`
+
+```
+T-Code: /CEM/C_VIEW_CALL
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 995. `/CEM/DEF_CLR_PR_ST`
+
+```
+T-Code: /CEM/DEF_CLR_PR_ST
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 996. `/CEM/EE_APP_ATTR`
+
+```
+T-Code: /CEM/EE_APP_ATTR
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /CEM/V_APP_ATTRM
+```
+
+### 997. `/CEM/EE_DUELIST`
+
+```
+T-Code: /CEM/EE_DUELIST
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 998. `/CEM/EE_LOCK_MONITOR`
+
+```
+T-Code: /CEM/EE_LOCK_MONITOR
+├── /CEM/ALL
+    ├── /CEM/APPL → CENT, RPH
+    ├── /CEM/LE → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /CEM/DRP
+    ├── /CEM/LE → (empty — maintain in PFCG)
+    ├── /CEM/PART → (empty — maintain in PFCG)
+    └── ACTVT → 3
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 999. `/CEM/EE_ORGSORG`
+
+```
+T-Code: /CEM/EE_ORGSORG
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1000. `/CEM/EE_SCN`
+
+```
+T-Code: /CEM/EE_SCN
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1001. `/CEM/EE_TRACE`
+
+```
+T-Code: /CEM/EE_TRACE
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1002. `/CEM/EE_TRACK`
+
+```
+T-Code: /CEM/EE_TRACK
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /CEM/V_E_TRACK
+```
+
+### 1003. `/CEM/EM_SCENARIO`
+
+```
+T-Code: /CEM/EM_SCENARIO
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1004. `/CEM/ENT`
+
+```
+T-Code: /CEM/ENT
+├── /CEM/ALL
+    ├── /CEM/APPL → CENT
+    ├── /CEM/LE → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 4, 5
+├── /CEM/DRP
+    ├── /CEM/LE → (empty — maintain in PFCG)
+    ├── /CEM/PART → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 6
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1005. `/CEM/ENTID_SNRO`
+
+```
+T-Code: /CEM/ENTID_SNRO
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2
+    └── NROBJ → /CEM/ENTID
+```
+
+### 1006. `/CEM/ENT_ACD`
+
+```
+T-Code: /CEM/ENT_ACD
+├── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+├── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1007. `/CEM/ENT_ALL_UI`
+
+```
+T-Code: /CEM/ENT_ALL_UI
+├── /CEM/ALL
+    ├── /CEM/APPL → CENT, RPH, SUMM
+    ├── /CEM/LE → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 4, 5
+├── /CEM/DRP
+    ├── /CEM/LE → (empty — maintain in PFCG)
+    ├── /CEM/PART → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 6
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1008. `/CEM/ENT_COND_MAINT`
+
+```
+T-Code: /CEM/ENT_COND_MAINT
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1009. `/CEM/ENT_CUST`
+
+```
+T-Code: /CEM/ENT_CUST
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1010. `/CEM/ENT_CUST_INT`
+
+```
+T-Code: /CEM/ENT_CUST_INT
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1011. `/CEM/ENT_DATE_PRF`
+
+```
+T-Code: /CEM/ENT_DATE_PRF
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1012. `/CEM/ENT_DEF`
+
+```
+T-Code: /CEM/ENT_DEF
+├── /CEM/ALL
+    ├── /CEM/APPL → CENT
+    ├── /CEM/LE → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 5
+├── /CEM/DRP
+    ├── /CEM/LE → (empty — maintain in PFCG)
+    ├── /CEM/PART → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 6
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1013. `/CEM/ENT_HI_MAINT`
+
+```
+T-Code: /CEM/ENT_HI_MAINT
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1014. `/CEM/ENT_JOBS`
+
+```
+T-Code: /CEM/ENT_JOBS
+└── S_BTCH_JOB
+    ├── JOBACTION → DELE, LIST, PLAN, PROT, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 1015. `/CEM/ENT_MASS`
+
+```
+T-Code: /CEM/ENT_MASS
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1016. `/CEM/ENT_MNTR`
+
+```
+T-Code: /CEM/ENT_MNTR
+├── /CEM/ALL
+    ├── /CEM/APPL → CENT
+    ├── /CEM/LE → EM_ACTNF, EM_ACTV, EM_ADJT, EM_ATTR, EM_EXPNF
+    └── ACTVT → 1, 2, 3
+├── /CEM/DRP
+    ├── /CEM/LE → EM_ACTNF, EM_ACTV, EM_ADJT, EM_ATTR, EM_EXPNF
+    ├── /CEM/PART → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1017. `/CEM/ENT_PRG_ELIG`
+
+```
+T-Code: /CEM/ENT_PRG_ELIG
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /CEM/V_ENT_PRF
+```
+
+### 1018. `/CEM/ENT_PROFILE`
+
+```
+T-Code: /CEM/ENT_PROFILE
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1019. `/CEM/ENT_PR_MAINT`
+
+```
+T-Code: /CEM/ENT_PR_MAINT
+└── S_PROJECT
+    ├── ACTVT → 2, 3, 6
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1020. `/CEM/ERR_SUMM`
+
+```
+T-Code: /CEM/ERR_SUMM
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1021. `/CEM/EXC_PROFILE`
+
+```
+T-Code: /CEM/EXC_PROFILE
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1022. `/CEM/EXEC_CONTROLLER`
+
+```
+T-Code: /CEM/EXEC_CONTROLLER
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1023. `/CEM/FICO_SNRO`
+
+```
+T-Code: /CEM/FICO_SNRO
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2
+    └── NROBJ → /CEM/FICO
+```
+
+### 1024. `/CEM/GRID_CEMI`
+
+```
+T-Code: /CEM/GRID_CEMI
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1025. `/CEM/GRID_CEMO`
+
+```
+T-Code: /CEM/GRID_CEMO
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1026. `/CEM/IC_CUST`
+
+```
+T-Code: /CEM/IC_CUST
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1027. `/CEM/IC_HIER`
+
+```
+T-Code: /CEM/IC_HIER
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1028. `/CEM/LRO`
+
+```
+T-Code: /CEM/LRO
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1029. `/CEM/LRO_ARCHIVE_DE`
+
+```
+T-Code: /CEM/LRO_ARCHIVE_DE
+├── S_ARCHIVE
+    ├── ACTVT → 1, 2, 3
+    ├── APPLIC → CR
+    └── ARCH_OBJ → CEM_ENT, CEM_LRO, CEM_RPH, CEM_SUMM, CMS_CEMI, CMS_CEMO
+├── S_BTCH_ADM
+    └── BTCADMIN → (empty — maintain in PFCG)
+├── S_BTCH_JOB
+    ├── JOBACTION → DELE, PLAN, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+└── S_GUI
+    └── ACTVT → 4
+```
+
+### 1030. `/CEM/LRO_ARCHIVE_RD`
+
+```
+T-Code: /CEM/LRO_ARCHIVE_RD
+└── S_ARCHIVE
+    ├── ACTVT → 3
+    ├── APPLIC → CR
+    └── ARCH_OBJ → CEM_ENT, CEM_LRO, CEM_RPH, CEM_SUMM, CMS_CEMI, CMS_CEMO
+```
+
+### 1031. `/CEM/LRO_ARCHIVE_WR`
+
+```
+T-Code: /CEM/LRO_ARCHIVE_WR
+├── S_BTCH_ADM
+    └── BTCADMIN → (empty — maintain in PFCG)
+└── S_BTCH_JOB
+    ├── JOBACTION → DELE, PLAN, RELE
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 1032. `/CEM/PRFMAINT_CTX_GR`
+
+```
+T-Code: /CEM/PRFMAINT_CTX_GR
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1033. `/CEM/PRF_COND_MAP`
+
+```
+T-Code: /CEM/PRF_COND_MAP
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1034. `/CEM/PRF_TYPE`
+
+```
+T-Code: /CEM/PRF_TYPE
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /CEM/V_PROFILE
+```
+
+### 1035. `/CEM/PROFILE`
+
+```
+T-Code: /CEM/PROFILE
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1036. `/CEM/PROFILE_MAINT`
+
+```
+T-Code: /CEM/PROFILE_MAINT
+├── /CEM/ALL
+    ├── /CEM/APPL → CENT
+    ├── /CEM/LE → EM_PROFILE
+    └── ACTVT → 1
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1037. `/CEM/REVAL_ENT`
+
+```
+T-Code: /CEM/REVAL_ENT
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1038. `/CEM/REVAL_RPH`
+
+```
+T-Code: /CEM/REVAL_RPH
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1039. `/CEM/REVAL_RSH`
+
+```
+T-Code: /CEM/REVAL_RSH
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1040. `/CEM/RPH`
+
+```
+T-Code: /CEM/RPH
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1041. `/CEM/RPH_APPL`
+
+```
+T-Code: /CEM/RPH_APPL
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1042. `/CEM/RPH_APP_ATTR`
+
+```
+T-Code: /CEM/RPH_APP_ATTR
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1043. `/CEM/RPH_ARCHIVE_DE`
+
+```
+T-Code: /CEM/RPH_ARCHIVE_DE
+├── S_ARCHIVE
+    ├── ACTVT → 1, 2, 3
+    ├── APPLIC → (empty — maintain in PFCG)
+    └── ARCH_OBJ → (empty — maintain in PFCG)
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1044. `/CEM/RPH_ARCHIVE_RD`
+
+```
+T-Code: /CEM/RPH_ARCHIVE_RD
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1045. `/CEM/RPH_ARCHIVE_WR`
+
+```
+T-Code: /CEM/RPH_ARCHIVE_WR
+├── S_ARCHIVE
+    ├── ACTVT → 1, 2, 3
+    ├── APPLIC → (empty — maintain in PFCG)
+    └── ARCH_OBJ → (empty — maintain in PFCG)
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1046. `/CEM/RPH_ATTR`
+
+```
+T-Code: /CEM/RPH_ATTR
+├── /CEM/ALL
+    ├── /CEM/APPL → RPH
+    ├── /CEM/LE → RPH_ADJU, RPH_ATTR
+    └── ACTVT → 2
+├── /CEM/DRP
+    ├── /CEM/LE → RPH_ADJU, RPH_ATTR
+    ├── /CEM/PART → (empty — maintain in PFCG)
+    └── ACTVT → 2, 3
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1047. `/CEM/RPH_BL`
+
+```
+T-Code: /CEM/RPH_BL
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1048. `/CEM/RPH_BL_DEF`
+
+```
+T-Code: /CEM/RPH_BL_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1049. `/CEM/RPH_DD`
+
+```
+T-Code: /CEM/RPH_DD
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1050. `/CEM/RPH_DD_DEF`
+
+```
+T-Code: /CEM/RPH_DD_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1051. `/CEM/RPH_DOC_TYPE`
+
+```
+T-Code: /CEM/RPH_DOC_TYPE
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1052. `/CEM/RPH_EXEC_CONT`
+
+```
+T-Code: /CEM/RPH_EXEC_CONT
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1053. `/CEM/RPH_EXEC_DEF`
+
+```
+T-Code: /CEM/RPH_EXEC_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1054. `/CEM/RPH_EXEC_PRF`
+
+```
+T-Code: /CEM/RPH_EXEC_PRF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1055. `/CEM/RPH_H_EXTN`
+
+```
+T-Code: /CEM/RPH_H_EXTN
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1056. `/CEM/RPH_I_EXTN`
+
+```
+T-Code: /CEM/RPH_I_EXTN
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1057. `/CEM/RPH_LE`
+
+```
+T-Code: /CEM/RPH_LE
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1058. `/CEM/RPH_LE_DEF`
+
+```
+T-Code: /CEM/RPH_LE_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1059. `/CEM/RPH_MAP_DOC`
+
+```
+T-Code: /CEM/RPH_MAP_DOC
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1060. `/CEM/RPH_MNTR`
+
+```
+T-Code: /CEM/RPH_MNTR
+├── /CEM/ALL
+    ├── /CEM/APPL → RPH
+    ├── /CEM/LE → RPH_ATTR
+    └── ACTVT → (empty — maintain in PFCG)
+├── /CEM/DRP
+    ├── /CEM/LE → RPH_ADJU, RPH_ATTR
+    ├── /CEM/PART → (empty — maintain in PFCG)
+    └── ACTVT → 2, 3
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1061. `/CEM/RPH_PRCODE`
+
+```
+T-Code: /CEM/RPH_PRCODE
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1062. `/CEM/RPH_PRGRM_ATT`
+
+```
+T-Code: /CEM/RPH_PRGRM_ATT
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1063. `/CEM/RSH`
+
+```
+T-Code: /CEM/RSH
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1064. `/CEM/RSH_PART_PRF`
+
+```
+T-Code: /CEM/RSH_PART_PRF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1065. `/CEM/RSH_PRF_DEFN`
+
+```
+T-Code: /CEM/RSH_PRF_DEFN
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /CEM/V_RPH_PRF
+```
+
+### 1066. `/CEM/RSH_PROD_PRF`
+
+```
+T-Code: /CEM/RSH_PROD_PRF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1067. `/CEM/SET_TYPES_CND`
+
+```
+T-Code: /CEM/SET_TYPES_CND
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1068. `/CEM/SET_TYPES_PRT`
+
+```
+T-Code: /CEM/SET_TYPES_PRT
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1069. `/CEM/SNUM_BATCH`
+
+```
+T-Code: /CEM/SNUM_BATCH
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1070. `/CEM/SNUM_CENT`
+
+```
+T-Code: /CEM/SNUM_CENT
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1071. `/CEM/SNUM_RPH`
+
+```
+T-Code: /CEM/SNUM_RPH
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1072. `/CEM/SNUM_SUMM`
+
+```
+T-Code: /CEM/SNUM_SUMM
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1073. `/CEM/SUMM`
+
+```
+T-Code: /CEM/SUMM
+├── /CEM/ALL
+    ├── /CEM/APPL → SUMM
+    ├── /CEM/LE → SUMM_SET, SUMM_XSET
+    └── ACTVT → 2, 3
+├── /CEM/DRP
+    ├── /CEM/LE → SUMM
+    ├── /CEM/PART → (empty — maintain in PFCG)
+    └── ACTVT → 2, 3
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1074. `/CEM/SUMM_APPL`
+
+```
+T-Code: /CEM/SUMM_APPL
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1075. `/CEM/SUMM_ARCHIVE_DE`
+
+```
+T-Code: /CEM/SUMM_ARCHIVE_DE
+├── S_ARCHIVE
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── APPLIC → (empty — maintain in PFCG)
+    └── ARCH_OBJ → CEM_SUMM
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1076. `/CEM/SUMM_ARCHIVE_RD`
+
+```
+T-Code: /CEM/SUMM_ARCHIVE_RD
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1077. `/CEM/SUMM_ARCHIVE_WR`
+
+```
+T-Code: /CEM/SUMM_ARCHIVE_WR
+├── S_ARCHIVE
+    ├── ACTVT → 1, 2, 3
+    ├── APPLIC → (empty — maintain in PFCG)
+    └── ARCH_OBJ → (empty — maintain in PFCG)
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1078. `/CEM/SUMM_BL`
+
+```
+T-Code: /CEM/SUMM_BL
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1079. `/CEM/SUMM_BL_DEF`
+
+```
+T-Code: /CEM/SUMM_BL_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1080. `/CEM/SUMM_B_PURP`
+
+```
+T-Code: /CEM/SUMM_B_PURP
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1081. `/CEM/SUMM_CREATE`
+
+```
+T-Code: /CEM/SUMM_CREATE
+├── /CEM/ALL
+    ├── /CEM/APPL → SUMM
+    ├── /CEM/LE → REP_SUMM, SUMM_CREAT
+    └── ACTVT → 1, 2
+└── /CEM/DRP
+    ├── /CEM/LE → SUMM_CREAT
+    ├── /CEM/PART → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3
+```
+
+### 1082. `/CEM/SUMM_CUST`
+
+```
+T-Code: /CEM/SUMM_CUST
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1083. `/CEM/SUMM_DD`
+
+```
+T-Code: /CEM/SUMM_DD
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1084. `/CEM/SUMM_DD_DEF`
+
+```
+T-Code: /CEM/SUMM_DD_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1085. `/CEM/SUMM_DEF`
+
+```
+T-Code: /CEM/SUMM_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1086. `/CEM/SUMM_EXEC_CONT`
+
+```
+T-Code: /CEM/SUMM_EXEC_CONT
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1087. `/CEM/SUMM_EXEC_DEF`
+
+```
+T-Code: /CEM/SUMM_EXEC_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1088. `/CEM/SUMM_EXEC_PRF`
+
+```
+T-Code: /CEM/SUMM_EXEC_PRF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1089. `/CEM/SUMM_H_EXTN`
+
+```
+T-Code: /CEM/SUMM_H_EXTN
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1090. `/CEM/SUMM_I_EXTN`
+
+```
+T-Code: /CEM/SUMM_I_EXTN
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1091. `/CEM/SUMM_LE_DEF`
+
+```
+T-Code: /CEM/SUMM_LE_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1092. `/CEM/SUMM_MAP_PART`
+
+```
+T-Code: /CEM/SUMM_MAP_PART
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1093. `/CEM/SUMM_PART_DEF`
+
+```
+T-Code: /CEM/SUMM_PART_DEF
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1094. `/CEM/SUMM_PRCODE`
+
+```
+T-Code: /CEM/SUMM_PRCODE
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1095. `/CEM/SUMM_PRGRM_ATT`
+
+```
+T-Code: /CEM/SUMM_PRGRM_ATT
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_CLI
+    └── CLIIDMAINT → ' '
+```
+
+### 1096. `/CEM/SUMM_PRG_MPCND`
+
+```
+T-Code: /CEM/SUMM_PRG_MPCND
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1097. `/CEM/SUMM_PRG_MPPTR`
+
+```
+T-Code: /CEM/SUMM_PRG_MPPTR
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1098. `/CEM/SUMM_REPROCESS`
+
+```
+T-Code: /CEM/SUMM_REPROCESS
+├── /CEM/ALL
+    ├── /CEM/APPL → SUMM
+    ├── /CEM/LE → REP_SUMM, SETT_CREAT
+    └── ACTVT → 1, 2
+├── /CEM/DRP
+    ├── /CEM/LE → REP_SUMM
+    ├── /CEM/PART → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1099. `/CEM/SUMM_SET_COND`
+
+```
+T-Code: /CEM/SUMM_SET_COND
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1100. `/CEM/SUMM_SET_MAPCND`
+
+```
+T-Code: /CEM/SUMM_SET_MAPCND
+└── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 1101. `/CEM/VC_SUMM`
+
+```
+T-Code: /CEM/VC_SUMM
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1102. `/CEM/VIEW_CALL_SORC`
+
+```
+T-Code: /CEM/VIEW_CALL_SORC
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+## `/CFG/` — SAP Configuration Framework
+> T-codes: **5**
+
+
+### 1103. `/CFG/DELETION`
+
+```
+T-Code: /CFG/DELETION
+├── S_ADMI_FCD
+    └── S_ADMI_FCD → ' '
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → (empty — maintain in PFCG)
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+├── S_DATASET
+    ├── ACTVT → 33, 34
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → CL_GUI_ABAPEDIT===============CP, CL_SEDI_TEMPORARY_STORAGE=====CP, SAPLSLOG, SAPLSTRF
+└── S_TRANSPRT
+    ├── ACTVT → 3
+    └── TTYPE → (empty — maintain in PFCG)
+```
+
+### 1104. `/CFG/MIG_AUTO`
+
+```
+T-Code: /CFG/MIG_AUTO
+├── S_BTCH_ADM
+    └── BTCADMIN → Y
+└── S_BTCH_JOB
+    ├── JOBACTION → RELE
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 1105. `/CFG/MIG_NDM`
+
+```
+T-Code: /CFG/MIG_NDM
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /CFG/
+    └── ALG_SUBOBJ → MIGRATION
+├── S_BTCH_NA1
+    ├── BTCUNAME → (empty — maintain in PFCG)
+    └── PROGRAM → /CFG/CTXE_BG_TRANSPORT
+├── S_CFG_DEV
+    ├── /CFG/DIMEN → (empty — maintain in PFCG)
+    ├── /CFG/FUNCT → (empty — maintain in PFCG)
+    ├── /CFG/OBJTY → (empty — maintain in PFCG)
+    ├── /CFG/QUALF → (empty — maintain in PFCG)
+    ├── /CFG/VERSI → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT, SUBMIT, VARIANT
+    └── P_PROGNAM → /CFG/CTXE_BG_TRANSPORT, /CFG/MIGRATION
+└── S_SMB_ADM
+    ├── ACTVT → 2, 3
+    └── SMB_ADMIN → MIGR
+```
+
+### 1106. `/CFG/MIG_SMPH`
+
+```
+T-Code: /CFG/MIG_SMPH
+└── S_SMB_ADM
+    ├── ACTVT → 2
+    └── SMB_ADMIN → MIGR
+```
+
+### 1107. `/CFG/PROGOVW`
+
+```
+T-Code: /CFG/PROGOVW
+└── S_DEVELOP
+    ├── ACTVT → 16, 3
+    ├── DEVCLASS → /CFG/MIGRATION
+    ├── OBJNAME → /CFG/PROGRESSVIEW
+    ├── OBJTYPE → PROG
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+## `/CLMDV/` — SAP Claim Management Development
+> T-codes: **1**
+
+
+### 1108. `/CLMDV/JOB_QUEUE`
+
+```
+T-Code: /CLMDV/JOB_QUEUE
+└── S_DVF_DSP
+    └── DVF_ACTVT1 → DPRJ
+```
+
+## `/CPD/` — SAP Central Payment Dispatch
+> T-codes: **154**
+
+
+### 1109. `/CPD/24000001`
+
+```
+T-Code: /CPD/24000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_MP_TAG
+```
+
+### 1110. `/CPD/24000002`
+
+```
+T-Code: /CPD/24000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_MPST_S, /CPD/VPWS_NEXT, /CPD/VPWS_STGP_S, /CPD/VPWS_STGR_S
+```
+
+### 1111. `/CPD/24000003`
+
+```
+T-Code: /CPD/24000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_MPROT_VV, /CPD/VPWS_SOBJ_VV
+```
+
+### 1112. `/CPD/24000004`
+
+```
+T-Code: /CPD/24000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_MPROLD, /CPD/VPWS_MPROLS
+```
+
+### 1113. `/CPD/24000006`
+
+```
+T-Code: /CPD/24000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_OBJ_LP
+```
+
+### 1114. `/CPD/24000007`
+
+```
+T-Code: /CPD/24000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_OACP_S, /CPD/VPWS_OAGL_S, /CPD/VPWS_OAG_S, /CPD/VPWS_OBAT_S
+```
+
+### 1115. `/CPD/24000008`
+
+```
+T-Code: /CPD/24000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_GRATTR_VV, /CPD/VPWS_GROUP_VV, /CPD/VPWS_GRPRF_VV, /CPD/VPWS_GRPRL_VV, /CPD/VPWS_RA_DEP_VV
+```
+
+### 1116. `/CPD/24000009`
+
+```
+T-Code: /CPD/24000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ORGD_S, /CPD/VPWS_ORGE_S, /CPD/VPWS_ORGI_S, /CPD/VPWS_ORGP_S
+```
+
+### 1117. `/CPD/24000010`
+
+```
+T-Code: /CPD/24000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_VCOND_VV, /CPD/VPWS_VIEW_VV, /CPD/VPWS_VIWCON_VV
+```
+
+### 1118. `/CPD/24000011`
+
+```
+T-Code: /CPD/24000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_VW_SWT
+```
+
+### 1119. `/CPD/24000013`
+
+```
+T-Code: /CPD/24000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_CAL_VV, /CPD/VPWS_MP_KPI_VV
+```
+
+### 1120. `/CPD/24000014`
+
+```
+T-Code: /CPD/24000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ARAS_S, /CPD/VPWS_ARAT_S, /CPD/VPWS_AREA_S, /CPD/VPWS_STATUS_VV, /CPD/VPWS_TEMPLA_VV, /CPD/VPWS_TPA_AR_VV, /CPD/VPWS_TRENDS_VV
+```
+
+### 1121. `/CPD/24000015`
+
+```
+T-Code: /CPD/24000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_CONATT_VV, /CPD/VPWS_CONPRF_VV
+```
+
+### 1122. `/CPD/24000016`
+
+```
+T-Code: /CPD/24000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_ACC_PRF, /CPD/V_ACC_SPEC, /CPD/V_ACC_SUPR, /CPD/V_PRF_ACC
+```
+
+### 1123. `/CPD/24000017`
+
+```
+T-Code: /CPD/24000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ROLPFL, /CPD/VPWS_ROLPRF, /CPD/VPWS_WSPRRL, /CPD/VPWS_WSROLE
+```
+
+### 1124. `/CPD/24000018`
+
+```
+T-Code: /CPD/24000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ASPECT, /CPD/VPWS_CONFIG, /CPD/VPWS_UIBB
+```
+
+### 1125. `/CPD/24000019`
+
+```
+T-Code: /CPD/24000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ALT_CS, /CPD/VPWS_MPATTR, /CPD/VPWS_MPISTS, /CPD/VPWS_MPTOLS, /CPD/VPWS_MPTYSC, /CPD/VPWS_MP_ALS, /CPD/VPWS_VID_MS, /CPD/V_CHK_MAP, /CPD/V_MC_OBJMAP, /CPD/V_STAT_MAP
+```
+
+### 1126. `/CPD/24000020`
+
+```
+T-Code: /CPD/24000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_RA_MAP
+```
+
+### 1127. `/CPD/24000021`
+
+```
+T-Code: /CPD/24000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_AUTHAC
+```
+
+### 1128. `/CPD/24000022`
+
+```
+T-Code: /CPD/24000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ALERT
+```
+
+### 1129. `/CPD/24000023`
+
+```
+T-Code: /CPD/24000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_SEVRTY
+```
+
+### 1130. `/CPD/24000027`
+
+```
+T-Code: /CPD/24000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/C_CHK_TEMPL
+```
+
+### 1131. `/CPD/24000028`
+
+```
+T-Code: /CPD/24000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/C_CHK_ITEMS
+```
+
+### 1132. `/CPD/24000029`
+
+```
+T-Code: /CPD/24000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_MC_OBJMAP
+```
+
+### 1133. `/CPD/24000030`
+
+```
+T-Code: /CPD/24000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_CHK_MAP
+```
+
+### 1134. `/CPD/24000031`
+
+```
+T-Code: /CPD/24000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/C_CHK_STAT
+```
+
+### 1135. `/CPD/24000032`
+
+```
+T-Code: /CPD/24000032
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_STAT_MAP
+```
+
+### 1136. `/CPD/24000033`
+
+```
+T-Code: /CPD/24000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_REASON_CD
+```
+
+### 1137. `/CPD/24000037`
+
+```
+T-Code: /CPD/24000037
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_CAT
+```
+
+### 1138. `/CPD/24000038`
+
+```
+T-Code: /CPD/24000038
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_SUBCAT
+```
+
+### 1139. `/CPD/24000039`
+
+```
+T-Code: /CPD/24000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_LEVEL
+```
+
+### 1140. `/CPD/24000040`
+
+```
+T-Code: /CPD/24000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_SEVER
+```
+
+### 1141. `/CPD/24000041`
+
+```
+T-Code: /CPD/24000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_RESP_TY
+```
+
+### 1142. `/CPD/24000042`
+
+```
+T-Code: /CPD/24000042
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_RESP_ST
+```
+
+### 1143. `/CPD/24000043`
+
+```
+T-Code: /CPD/24000043
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_IM_SEV, /CPD/VRM_PRF_IMP, /CPD/VRM_PRF_PRB, /CPD/VRM_PRF_SEV, /CPD/VRM_PROF, /CPD/VRM_PR_CAT, /CPD/VRM_PR_LEVE, /CPD/VRM_PR_SCAT
+```
+
+### 1144. `/CPD/24000044`
+
+```
+T-Code: /CPD/24000044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_PR_STAT, /CPD/VRM_STATUS, /CPD/VRM_STAT_PR
+```
+
+### 1145. `/CPD/24000045`
+
+```
+T-Code: /CPD/24000045
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_PROB
+```
+
+### 1146. `/CPD/24000046`
+
+```
+T-Code: /CPD/24000046
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_RESCOD
+```
+
+### 1147. `/CPD/24000047`
+
+```
+T-Code: /CPD/24000047
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_BILLCA
+```
+
+### 1148. `/CPD/24000049`
+
+```
+T-Code: /CPD/24000049
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_RCM_CT, /CPD/VPWS_RCM_PR
+```
+
+### 1149. `/CPD/24000068`
+
+```
+T-Code: /CPD/24000068
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VSC_RTYP, /CPD/VSC_RT_SEL, /CPD/VSC_RT_UOM
+```
+
+### 1150. `/CPD/24000069`
+
+```
+T-Code: /CPD/24000069
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VSC_RES, /CPD/VSC_RES_CST
+```
+
+### 1151. `/CPD/24000070`
+
+```
+T-Code: /CPD/24000070
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VSC_PLN_TYP, /CPD/VSC_PTQ_F, /CPD/VSC_PTQ_P, /CPD/VSC_PTQ_VC
+```
+
+### 1152. `/CPD/24000071`
+
+```
+T-Code: /CPD/24000071
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VSC_VER_TYP
+```
+
+### 1153. `/CPD/24000072`
+
+```
+T-Code: /CPD/24000072
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_SKF_EXC, /CPD/VSC_ENGPST, /CPD/VSC_PF_VS, /CPD/VSC_PL_SCEN, /CPD/VSC_PSCRTY, /CPD/VSC_PSCVER, /CPD/VSC_RTY_CST
+```
+
+### 1154. `/CPD/24000073`
+
+```
+T-Code: /CPD/24000073
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VSC_PRF_ST, /CPD/VSC_STATUS, /CPD/VSC_ST_NEXT, /CPD/VSC_ST_PRF
+```
+
+### 1155. `/CPD/24000074`
+
+```
+T-Code: /CPD/24000074
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VSC_KF_CEAT
+```
+
+### 1156. `/CPD/24000075`
+
+```
+T-Code: /CPD/24000075
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VSC_CHARSRV
+```
+
+### 1157. `/CPD/24000076`
+
+```
+T-Code: /CPD/24000076
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VSC_UPTM_TF, /CPD/VSC_UTRMT, /CPD/VSC_UWTM_ST
+```
+
+### 1158. `/CPD/24000077`
+
+```
+T-Code: /CPD/24000077
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_UTRSTG, /CPD/VFC_UTSTGMT
+```
+
+### 1159. `/CPD/24000078`
+
+```
+T-Code: /CPD/24000078
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VSC_DTR_DTL, /CPD/VSC_DT_RULE
+```
+
+### 1160. `/CPD/24000079`
+
+```
+T-Code: /CPD/24000079
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VSC_VLMET, /CPD/VSC_VLMT_RF
+```
+
+### 1161. `/CPD/24000080`
+
+```
+T-Code: /CPD/24000080
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VSC_VS, /CPD/VSC_VS_MAP, /CPD/VSC_VS_MET
+```
+
+### 1162. `/CPD/24000081`
+
+```
+T-Code: /CPD/24000081
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VSC_TRMT_ST, /CPD/VSC_TRMT_TF, /CPD/VSC_TRNMT
+```
+
+### 1163. `/CPD/24000082`
+
+```
+T-Code: /CPD/24000082
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VSC_TRSTRG, /CPD/VSC_TSTRITM, /CPD/VSC_TSTRMET
+```
+
+### 1164. `/CPD/24000083`
+
+```
+T-Code: /CPD/24000083
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_RTYP, /CPD/VFC_RT_SEL, /CPD/VFC_RT_UOM
+```
+
+### 1165. `/CPD/24000084`
+
+```
+T-Code: /CPD/24000084
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_RES, /CPD/VFC_RES_CST
+```
+
+### 1166. `/CPD/24000085`
+
+```
+T-Code: /CPD/24000085
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/AVRC_RES_D, /CPD/VAVRC_RES
+```
+
+### 1167. `/CPD/24000087`
+
+```
+T-Code: /CPD/24000087
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_STAMAP_SC
+```
+
+### 1168. `/CPD/24000102`
+
+```
+T-Code: /CPD/24000102
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VC_PLSC_RTY
+```
+
+### 1169. `/CPD/37000002`
+
+```
+T-Code: /CPD/37000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_SEVER
+```
+
+### 1170. `/CPD/37000003`
+
+```
+T-Code: /CPD/37000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_PROB
+```
+
+### 1171. `/CPD/37000005`
+
+```
+T-Code: /CPD/37000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_IM_SEV, /CPD/VRM_PRF_IMP, /CPD/VRM_PRF_PRB, /CPD/VRM_PRF_SEV, /CPD/VRM_PROF, /CPD/VRM_PR_CAT, /CPD/VRM_PR_LEVE, /CPD/VRM_PR_SCAT
+```
+
+### 1172. `/CPD/37000007`
+
+```
+T-Code: /CPD/37000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_RESP_TY
+```
+
+### 1173. `/CPD/37000008`
+
+```
+T-Code: /CPD/37000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_RESP_ST
+```
+
+### 1174. `/CPD/37000009`
+
+```
+T-Code: /CPD/37000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_CAT
+```
+
+### 1175. `/CPD/37000010`
+
+```
+T-Code: /CPD/37000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_SUBCAT
+```
+
+### 1176. `/CPD/37000011`
+
+```
+T-Code: /CPD/37000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_LEVEL
+```
+
+### 1177. `/CPD/37000016`
+
+```
+T-Code: /CPD/37000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/AVRC_RES_D, /CPD/VAVRC_RES
+```
+
+### 1178. `/CPD/37000030`
+
+```
+T-Code: /CPD/37000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/PFP_PRC_MOD, /CPD/PFP_SRV_GRP
+```
+
+### 1179. `/CPD/52000066`
+
+```
+T-Code: /CPD/52000066
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_WRKITEM
+```
+
+### 1180. `/CPD/52000209`
+
+```
+T-Code: /CPD/52000209
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ORGERP
+```
+
+### 1181. `/CPD/52000218`
+
+```
+T-Code: /CPD/52000218
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ORGERP
+```
+
+### 1182. `/CPD/52000219`
+
+```
+T-Code: /CPD/52000219
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ORGERP
+```
+
+### 1183. `/CPD/52000220`
+
+```
+T-Code: /CPD/52000220
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ORGERP
+```
+
+### 1184. `/CPD/52000221`
+
+```
+T-Code: /CPD/52000221
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ORGERP
+```
+
+### 1185. `/CPD/52000222`
+
+```
+T-Code: /CPD/52000222
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ORGERP
+```
+
+### 1186. `/CPD/52000223`
+
+```
+T-Code: /CPD/52000223
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ORGERP
+```
+
+### 1187. `/CPD/52000224`
+
+```
+T-Code: /CPD/52000224
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ORGERP
+```
+
+### 1188. `/CPD/52000707`
+
+```
+T-Code: /CPD/52000707
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_SALES
+```
+
+### 1189. `/CPD/52001201`
+
+```
+T-Code: /CPD/52001201
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_WRKITEM, /CPD/V_WITMGRPMP, /CPD/V_WRKITMGRP
+```
+
+### 1190. `/CPD/52001274`
+
+```
+T-Code: /CPD/52001274
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VAVR_KFERES
+```
+
+### 1191. `/CPD/52001694`
+
+```
+T-Code: /CPD/52001694
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_MAP_RESID, /CPD/V_RES_TYPES
+```
+
+### 1192. `/CPD/52002070`
+
+```
+T-Code: /CPD/52002070
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_PLN_CONFG
+```
+
+### 1193. `/CPD/52004234`
+
+```
+T-Code: /CPD/52004234
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_PROJ_CNFG
+```
+
+### 1194. `/CPD/67000082`
+
+```
+T-Code: /CPD/67000082
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_PLNG_AP
+```
+
+### 1195. `/CPD/90000001`
+
+```
+T-Code: /CPD/90000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ALT_CO, /CPD/VPWS_MPATTR, /CPD/VPWS_MPTOL, /CPD/VPWS_MPTYP, /CPD/VPWS_MP_ALR, /CPD/VPWS_VID_MP
+```
+
+### 1196. `/CPD/90000003`
+
+```
+T-Code: /CPD/90000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_PLN_TYP
+```
+
+### 1197. `/CPD/90000004`
+
+```
+T-Code: /CPD/90000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_ENGPST, /CPD/VFC_PF_VS, /CPD/VFC_PL_SCEN, /CPD/VFC_PSCRTY, /CPD/VFC_PSCVER, /CPD/VFC_RTY_CST
+```
+
+### 1198. `/CPD/90000005`
+
+```
+T-Code: /CPD/90000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_PSCRTY
+```
+
+### 1199. `/CPD/90000006`
+
+```
+T-Code: /CPD/90000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_RTYP, /CPD/VFC_RT_SEL, /CPD/VFC_RT_UOM
+```
+
+### 1200. `/CPD/90000007`
+
+```
+T-Code: /CPD/90000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_RES, /CPD/VFC_RESKEYF, /CPD/VFC_RES_CEG
+```
+
+### 1201. `/CPD/90000009`
+
+```
+T-Code: /CPD/90000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_VER_TYP
+```
+
+### 1202. `/CPD/90000010`
+
+```
+T-Code: /CPD/90000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_RCM_CT, /CPD/VPWS_RCM_PR
+```
+
+### 1203. `/CPD/90000011`
+
+```
+T-Code: /CPD/90000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_MPSTG, /CPD/VPWS_NEXT, /CPD/VPWS_STGPRF, /CPD/VPWS_STGPRL
+```
+
+### 1204. `/CPD/90000012`
+
+```
+T-Code: /CPD/90000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_MPROT, /CPD/VPWS_SOBJ
+```
+
+### 1205. `/CPD/90000013`
+
+```
+T-Code: /CPD/90000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_OACP, /CPD/VPWS_OAG, /CPD/VPWS_OAGL, /CPD/VPWS_OBATL
+```
+
+### 1206. `/CPD/90000014`
+
+```
+T-Code: /CPD/90000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_MPROL, /CPD/VPWS_MPROLD
+```
+
+### 1207. `/CPD/90000015`
+
+```
+T-Code: /CPD/90000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ORGERP, /CPD/VPWS_ORGID, /CPD/VPWS_ORGPLD, /CPD/VPWS_ORGPRF
+```
+
+### 1208. `/CPD/90000016`
+
+```
+T-Code: /CPD/90000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ROLPFL, /CPD/VPWS_ROLPRF, /CPD/VPWS_WSPRRL, /CPD/VPWS_WSROLE
+```
+
+### 1209. `/CPD/90000018`
+
+```
+T-Code: /CPD/90000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_VCOND, /CPD/VPWS_VIEW, /CPD/VPWS_VIWCON
+```
+
+### 1210. `/CPD/90000020`
+
+```
+T-Code: /CPD/90000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_VS, /CPD/VFC_VS_MAP, /CPD/VFC_VS_MET
+```
+
+### 1211. `/CPD/90000021`
+
+```
+T-Code: /CPD/90000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_VLMET, /CPD/VFC_VLMT_RF
+```
+
+### 1212. `/CPD/90000022`
+
+```
+T-Code: /CPD/90000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_GRATTR, /CPD/VPWS_GROUP, /CPD/VPWS_GRPRF, /CPD/VPWS_GRPRL, /CPD/VPWS_RA_DEP
+```
+
+### 1213. `/CPD/90000023`
+
+```
+T-Code: /CPD/90000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_PRF_ST, /CPD/VFC_STATUS, /CPD/VFC_ST_NEXT, /CPD/VFC_ST_PRF
+```
+
+### 1214. `/CPD/90000026`
+
+```
+T-Code: /CPD/90000026
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_MP_TAG
+```
+
+### 1215. `/CPD/90000027`
+
+```
+T-Code: /CPD/90000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_TRSTRG, /CPD/VFC_TSTRITM, /CPD/VFC_TSTRMET
+```
+
+### 1216. `/CPD/90000028`
+
+```
+T-Code: /CPD/90000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_TRMT_ST, /CPD/VFC_TRMT_TF, /CPD/VFC_TRNMT
+```
+
+### 1217. `/CPD/90000029`
+
+```
+T-Code: /CPD/90000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_DTR_DTL, /CPD/VFC_DT_RULE
+```
+
+### 1218. `/CPD/90000031`
+
+```
+T-Code: /CPD/90000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_RESCOD
+```
+
+### 1219. `/CPD/90000032`
+
+```
+T-Code: /CPD/90000032
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_VW_SWT
+```
+
+### 1220. `/CPD/90000034`
+
+```
+T-Code: /CPD/90000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ASPECT, /CPD/VPWS_CONFIG, /CPD/VPWS_UIBB
+```
+
+### 1221. `/CPD/90000035`
+
+```
+T-Code: /CPD/90000035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_RA_MAP
+```
+
+### 1222. `/CPD/90000036`
+
+```
+T-Code: /CPD/90000036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ALERT
+```
+
+### 1223. `/CPD/90000037`
+
+```
+T-Code: /CPD/90000037
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_SEVRTY
+```
+
+### 1224. `/CPD/90000038`
+
+```
+T-Code: /CPD/90000038
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_OBJ_LP
+```
+
+### 1225. `/CPD/90000039`
+
+```
+T-Code: /CPD/90000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_CAL, /CPD/VPWS_MP_KPI
+```
+
+### 1226. `/CPD/90000040`
+
+```
+T-Code: /CPD/90000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_ARA_ST, /CPD/VPWS_ARA_TR, /CPD/VPWS_AREAS, /CPD/VPWS_STATUS, /CPD/VPWS_TEMPLA, /CPD/VPWS_TPA_AR, /CPD/VPWS_TRENDS
+```
+
+### 1227. `/CPD/90000045`
+
+```
+T-Code: /CPD/90000045
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/AVRC_KFE, /CPD/AVRV_KEYFIG
+```
+
+### 1228. `/CPD/90000046`
+
+```
+T-Code: /CPD/90000046
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_KF_CEAT
+```
+
+### 1229. `/CPD/90000049`
+
+```
+T-Code: /CPD/90000049
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_AUTHAC
+```
+
+### 1230. `/CPD/90000050`
+
+```
+T-Code: /CPD/90000050
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VFC_CHARSRV
+```
+
+### 1231. `/CPD/90000058`
+
+```
+T-Code: /CPD/90000058
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/C_CHK_TEMPL
+```
+
+### 1232. `/CPD/90000059`
+
+```
+T-Code: /CPD/90000059
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/C_CHK_ITEMS
+```
+
+### 1233. `/CPD/90000060`
+
+```
+T-Code: /CPD/90000060
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_CHK_MAP
+```
+
+### 1234. `/CPD/90000062`
+
+```
+T-Code: /CPD/90000062
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/C_CHK_STAT
+```
+
+### 1235. `/CPD/90000064`
+
+```
+T-Code: /CPD/90000064
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_STAT_MAP
+```
+
+### 1236. `/CPD/90000065`
+
+```
+T-Code: /CPD/90000065
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_REASON_CD
+```
+
+### 1237. `/CPD/90000066`
+
+```
+T-Code: /CPD/90000066
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_CONATT, /CPD/VPWS_CONPRF
+```
+
+### 1238. `/CPD/90000067`
+
+```
+T-Code: /CPD/90000067
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VPWS_BILLCA
+```
+
+### 1239. `/CPD/90000069`
+
+```
+T-Code: /CPD/90000069
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_MC_OBJMAP
+```
+
+### 1240. `/CPD/90000073`
+
+```
+T-Code: /CPD/90000073
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/V_ACC_PRF, /CPD/V_ACC_SPEC, /CPD/V_ACC_SUPR, /CPD/V_PRF_ACC
+```
+
+### 1241. `/CPD/90000077`
+
+```
+T-Code: /CPD/90000077
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/PROG_VERSN
+```
+
+### 1242. `/CPD/90000094`
+
+```
+T-Code: /CPD/90000094
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VRM_PR_STAT, /CPD/VRM_STATUS, /CPD/VRM_STAT_PR
+```
+
+### 1243. `/CPD/BILL_PLAN_NO_R`
+
+```
+T-Code: /CPD/BILL_PLAN_NO_R
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /CPD/BPDLI
+```
+
+### 1244. `/CPD/CHK_ACT_NUM_RNG`
+
+```
+T-Code: /CPD/CHK_ACT_NUM_RNG
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /IAM/ACT
+```
+
+### 1245. `/CPD/CHK_NUM_RNG`
+
+```
+T-Code: /CPD/CHK_NUM_RNG
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /IAM/ISSUE
+```
+
+### 1246. `/CPD/PFP_PID_NR`
+
+```
+T-Code: /CPD/PFP_PID_NR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /CPD/FPOID
+```
+
+### 1247. `/CPD/PWS_WS_CJI3`
+
+```
+T-Code: /CPD/PWS_WS_CJI3
+└── C_PROJ_TCD
+    ├── PSARG → 120
+    └── TRTYP → A
+```
+
+### 1248. `/CPD/PWS_WS_PSHLP20`
+
+```
+T-Code: /CPD/PWS_WS_PSHLP20
+└── C_PROJ_TCD
+    ├── PSARG → 100
+    └── TRTYP → V
+```
+
+### 1249. `/CPD/RSK_AI_NUM_RNG`
+
+```
+T-Code: /CPD/RSK_AI_NUM_RNG
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /IAM/ACT
+```
+
+### 1250. `/CPD/RSK_NUM_RNG`
+
+```
+T-Code: /CPD/RSK_NUM_RNG
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /IAM/ISSUE
+```
+
+### 1251. `/CPD/SET_PRJ_STG_CLS`
+
+```
+T-Code: /CPD/SET_PRJ_STG_CLS
+└── /CPD/MP
+    ├── /CPD/ASPCT → (empty — maintain in PFCG)
+    ├── /CPD/MP_CF → (empty — maintain in PFCG)
+    ├── /CPD/MP_ID → (empty — maintain in PFCG)
+    ├── /CPD/MP_IN → (empty — maintain in PFCG)
+    ├── /CPD/MP_OR → (empty — maintain in PFCG)
+    ├── /CPD/MP_TY → P001
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── SUB_ACTVT → C
+```
+
+### 1252. `/CPD/SET_REVIEW_JOB`
+
+```
+T-Code: /CPD/SET_REVIEW_JOB
+└── /CPD/MP
+    ├── /CPD/ASPCT → (empty — maintain in PFCG)
+    ├── /CPD/MP_CF → (empty — maintain in PFCG)
+    ├── /CPD/MP_ID → (empty — maintain in PFCG)
+    ├── /CPD/MP_IN → (empty — maintain in PFCG)
+    ├── /CPD/MP_OR → (empty — maintain in PFCG)
+    ├── /CPD/MP_TY → P001
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── SUB_ACTVT → C
+```
+
+### 1253. `/CPD/SS_MIG_PROJECT`
+
+```
+T-Code: /CPD/SS_MIG_PROJECT
+├── /S4PPM/ORG
+    ├── ACTVT → 3
+    ├── BUKRS → $BUKRS
+    ├── KOKRS → $KOKRS
+    └── PRJ_ORG → (empty — maintain in PFCG)
+├── B_USERST_T
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BERSL → (empty — maintain in PFCG)
+    ├── OBTYP → PDN, PRN
+    └── STSMA → (empty — maintain in PFCG)
+├── K_CSKS
+    ├── ACTVT → 3
+    ├── KOKRS → $KOKRS
+    └── KOSTL → (empty — maintain in PFCG)
+├── P_ORGIN
+    ├── AUTHC → R
+    ├── INFTY → 0, 1, 3406, 7
+    ├── PERSA → (empty — maintain in PFCG)
+    ├── PERSG → (empty — maintain in PFCG)
+    ├── PERSK → (empty — maintain in PFCG)
+    ├── SUBTY → (empty — maintain in PFCG)
+    └── VDSK1 → (empty — maintain in PFCG)
+└── WFD_ASSGMT
+    ├── ACTVT → 3
+    └── WFD_SCOPE → 1
+```
+
+### 1254. `/CPD/TCPWS_ORGERP_CA`
+
+```
+T-Code: /CPD/TCPWS_ORGERP_CA
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VVPWS_ORGERP_CA
+```
+
+### 1255. `/CPD/TCPWS_ORGERP_CC`
+
+```
+T-Code: /CPD/TCPWS_ORGERP_CC
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VVPWS_ORGERP_CC
+```
+
+### 1256. `/CPD/TCPWS_ORGERP_CS`
+
+```
+T-Code: /CPD/TCPWS_ORGERP_CS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VVPWS_ORGERP_CS
+```
+
+### 1257. `/CPD/TCPWS_ORGERP_PL`
+
+```
+T-Code: /CPD/TCPWS_ORGERP_PL
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VVPWS_ORGERP_PL
+```
+
+### 1258. `/CPD/TCPWS_ORGERP_PO`
+
+```
+T-Code: /CPD/TCPWS_ORGERP_PO
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VVPWS_ORGERP_PO
+```
+
+### 1259. `/CPD/TCPWS_ORGERP_SC`
+
+```
+T-Code: /CPD/TCPWS_ORGERP_SC
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VVPWS_ORGERP_SC
+```
+
+### 1260. `/CPD/TCPWS_ORGERP_SD`
+
+```
+T-Code: /CPD/TCPWS_ORGERP_SD
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VVPWS_ORGERP_SD
+```
+
+### 1261. `/CPD/TCPWS_ORGERP_SO`
+
+```
+T-Code: /CPD/TCPWS_ORGERP_SO
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CPD/VVPWS_ORGERP_SO
+```
+
+### 1262. `/CPD/WI_NUM`
+
+```
+T-Code: /CPD/WI_NUM
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /CPD/WIUSR
+```
+
+## `/CRMBW/` — SAP CRM BW Integration
+> T-codes: **3**
+
+
+### 1263. `/CRMBW/CONFIG_WIZARD`
+
+```
+T-Code: /CRMBW/CONFIG_WIZARD
+└── S_RFC_ADM
+    ├── ACTVT → 1, 2, 3
+    ├── ICF_VALUE → (empty — maintain in PFCG)
+    ├── RFCDEST → (empty — maintain in PFCG)
+    └── RFCTYPE → 3
+```
+
+### 1264. `/CRMBW/CONT_GEN`
+
+```
+T-Code: /CRMBW/CONT_GEN
+├── BSANL_ACWB
+    └── ACTVT → 3, 63
+└── S_TRANSPRT
+    ├── ACTVT → 1, 2, 23, 3, 5
+    └── TTYPE → DTRA
+```
+
+### 1265. `/CRMBW/DEBUG_ON`
+
+```
+T-Code: /CRMBW/DEBUG_ON
+├── S_DEVELOP
+    ├── ACTVT → 16, 3
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_TCODE
+    └── TCD → SICF
+```
+
+## `/CRMTS/` — SAP CRM Trade Spend
+> T-codes: **3**
+
+
+### 1266. `/CRMTS/CLAIM_RULE`
+
+```
+T-Code: /CRMTS/CLAIM_RULE
+└── S_ALV_LAYO
+    └── ACTVT → 23
+```
+
+### 1267. `/CRMTS/CLAIM_RULE_01`
+
+```
+T-Code: /CRMTS/CLAIM_RULE_01
+└── S_ALV_LAYO
+    └── ACTVT → 23
+```
+
+### 1268. `/CRMTS/NR_RA_CLM`
+
+```
+T-Code: /CRMTS/NR_RA_CLM
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /CRMTS/CLM
+```
+
+## `/CRYSTAL/` — SAP Crystal Reports Integration
+> T-codes: **1**
+
+
+### 1269. `/CRYSTAL/RPTADMIN`
+
+```
+T-Code: /CRYSTAL/RPTADMIN
+└── S_USER_AGR
+    ├── ACTVT → 3
+    └── ACT_GROUP → (empty — maintain in PFCG)
+```
+
+## `/CUM/` — SAP Customer Management
+> T-codes: **36**
+
+
+### 1270. `/CUM/53000657`
+
+```
+T-Code: /CUM/53000657
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/INH_CHAR
+```
+
+### 1271. `/CUM/53000659`
+
+```
+T-Code: /CUM/53000659
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → T134, VT134M
+```
+
+### 1272. `/CUM/82000001`
+
+```
+T-Code: /CUM/82000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_CUTYPE
+```
+
+### 1273. `/CUM/82000002`
+
+```
+T-Code: /CUM/82000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_FUNCT
+```
+
+### 1274. `/CUM/82000003`
+
+```
+T-Code: /CUM/82000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_CLASS
+```
+
+### 1275. `/CUM/82000004`
+
+```
+T-Code: /CUM/82000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_ACTION, /CUM/V_ACTIONR
+```
+
+### 1276. `/CUM/82000005`
+
+```
+T-Code: /CUM/82000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_SERVICE
+```
+
+### 1277. `/CUM/82000008`
+
+```
+T-Code: /CUM/82000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_CUORDCUST
+```
+
+### 1278. `/CUM/82000010`
+
+```
+T-Code: /CUM/82000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_TYPE
+```
+
+### 1279. `/CUM/82000011`
+
+```
+T-Code: /CUM/82000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_CUWERK
+```
+
+### 1280. `/CUM/82000012`
+
+```
+T-Code: /CUM/82000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_PRF_ORD
+```
+
+### 1281. `/CUM/82000013`
+
+```
+T-Code: /CUM/82000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_CU_SRD
+```
+
+### 1282. `/CUM/82000014`
+
+```
+T-Code: /CUM/82000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/G_CHAR
+```
+
+### 1283. `/CUM/82000015`
+
+```
+T-Code: /CUM/82000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_ACPOS
+```
+
+### 1284. `/CUM/82000016`
+
+```
+T-Code: /CUM/82000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_KOKRS
+```
+
+### 1285. `/CUM/82000018`
+
+```
+T-Code: /CUM/82000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/SPARE_T413
+```
+
+### 1286. `/CUM/82000022`
+
+```
+T-Code: /CUM/82000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_CMTYPE
+```
+
+### 1287. `/CUM/82000023`
+
+```
+T-Code: /CUM/82000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_DESTYPE
+```
+
+### 1288. `/CUM/82000024`
+
+```
+T-Code: /CUM/82000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/INH_CHAR
+```
+
+### 1289. `/CUM/82000028`
+
+```
+T-Code: /CUM/82000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → T000
+```
+
+### 1290. `/CUM/82000029`
+
+```
+T-Code: /CUM/82000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_CUTYPEA
+```
+
+### 1291. `/CUM/82000032`
+
+```
+T-Code: /CUM/82000032
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/V_KOKRSR
+```
+
+### 1292. `/CUM/82000046`
+
+```
+T-Code: /CUM/82000046
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/ACTIONM
+```
+
+### 1293. `/CUM/95000473`
+
+```
+T-Code: /CUM/95000473
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CUM/INH_CHAR
+```
+
+### 1294. `/CUM/CM01`
+
+```
+T-Code: /CUM/CM01
+└── I_TCODE
+    └── TCD → /CUM/PR01
+```
+
+### 1295. `/CUM/CM02`
+
+```
+T-Code: /CUM/CM02
+└── I_TCODE
+    └── TCD → /CUM/PR01
+```
+
+### 1296. `/CUM/CM03`
+
+```
+T-Code: /CUM/CM03
+└── I_TCODE
+    └── TCD → /CUM/PR01
+```
+
+### 1297. `/CUM/CM04`
+
+```
+T-Code: /CUM/CM04
+└── I_TCODE
+    └── TCD → /CUM/PR01
+```
+
+### 1298. `/CUM/CMNR`
+
+```
+T-Code: /CUM/CMNR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /CUM/CMNUM
+```
+
+### 1299. `/CUM/CU01N`
+
+```
+T-Code: /CUM/CU01N
+├── C_TCLA_BKA
+    └── KLART → 16
+└── I_TCODE
+    └── TCD → IN01
+```
+
+### 1300. `/CUM/CU02N`
+
+```
+T-Code: /CUM/CU02N
+├── C_TCLA_BKA
+    └── KLART → 16
+└── I_TCODE
+    └── TCD → IN01
+```
+
+### 1301. `/CUM/CU03N`
+
+```
+T-Code: /CUM/CU03N
+├── C_TCLA_BKA
+    └── KLART → 16
+└── I_TCODE
+    └── TCD → IN01
+```
+
+### 1302. `/CUM/DESIGN_CHANGE`
+
+```
+T-Code: /CUM/DESIGN_CHANGE
+├── F_KNA1_BED
+    ├── ACTVT → F4
+    └── BRGRU → (empty — maintain in PFCG)
+├── F_KNA1_GEN
+    └── ACTVT → F4
+└── F_KNA1_GRP
+    ├── ACTVT → F4
+    └── KTOKD → (empty — maintain in PFCG)
+```
+
+### 1303. `/CUM/DESIGN_LIST`
+
+```
+T-Code: /CUM/DESIGN_LIST
+├── F_KNA1_BED
+    ├── ACTVT → F4
+    └── BRGRU → (empty — maintain in PFCG)
+├── F_KNA1_GEN
+    └── ACTVT → F4
+└── F_KNA1_GRP
+    ├── ACTVT → F4
+    └── KTOKD → (empty — maintain in PFCG)
+```
+
+### 1304. `/CUM/DESNR`
+
+```
+T-Code: /CUM/DESNR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /CUM/DESNM
+```
+
+### 1305. `/CUM/SELECTION`
+
+```
+T-Code: /CUM/SELECTION
+├── I_IWERK
+    ├── IWERK → $IWERK
+    └── TCD → (empty — maintain in PFCG)
+├── I_KOSTL
+    ├── KOKRS → $KOKRS
+    ├── KOSTL → (empty — maintain in PFCG)
+    └── TCD → (empty — maintain in PFCG)
+└── I_SWERK
+    ├── SWERK → $SWERK
+    └── TCD → (empty — maintain in PFCG)
+```
+
+## `/CWM/` — SAP Catch Weight Management
+> T-codes: **6**
+
+
+### 1306. `/CWM/09000002`
+
+```
+T-Code: /CWM/09000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CWM/V_T160M
+```
+
+### 1307. `/CWM/CHECK_TRANSIT`
+
+```
+T-Code: /CWM/CHECK_TRANSIT
+├── F_BKPF_BUK
+    ├── ACTVT → 1
+    └── BUKRS → $BUKRS
+├── M_BEST_EKO
+    ├── ACTVT → 3
+    └── EKORG → $EKORG
+├── M_ISEG_WDB
+    ├── ACTVT → 1
+    └── WERKS → $WERKS
+├── M_MATE_WRK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── WERKS → $WERKS
+├── M_MSEG_WWA
+    ├── ACTVT → 1
+    └── WERKS → $WERKS
+└── M_MSEG_WWE
+    ├── ACTVT → 1
+    └── WERKS → $WERKS
+```
+
+### 1308. `/CWM/MESSAGES`
+
+```
+T-Code: /CWM/MESSAGES
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CWM/V_T160M
+```
+
+### 1309. `/CWM/RHU_STOCK_DIFF`
+
+```
+T-Code: /CWM/RHU_STOCK_DIFF
+└── M_MSEG_LGO
+    ├── ACTVT → 3
+    ├── BWART → (empty — maintain in PFCG)
+    ├── LGORT → (empty — maintain in PFCG)
+    └── WERKS → $WERKS
+```
+
+### 1310. `/CWM/STOCK`
+
+```
+T-Code: /CWM/STOCK
+└── M_MATE_WRK
+    ├── ACTVT → 3
+    └── WERKS → $WERKS
+```
+
+### 1311. `/CWM/STOCK_CHECK`
+
+```
+T-Code: /CWM/STOCK_CHECK
+└── M_MATE_WRK
+    ├── ACTVT → 3
+    └── WERKS → $WERKS
+```
+
+## `/DMBE/` — SAP Document Management Basis Extended
+> T-codes: **7**
+
+
+### 1312. `/DMBE/CUST`
+
+```
+T-Code: /DMBE/CUST
+├── /DMBE/PROV
+    └── ACTVT → 1, 2, 3
+└── B_BUP_DCPD
+    ├── ACTVT → F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+```
+
+### 1313. `/DMBE/EVTDIST`
+
+```
+T-Code: /DMBE/EVTDIST
+└── S_TCODE
+    └── TCD → 01.01.1900
+```
+
+### 1314. `/DMBE/GENPROV`
+
+```
+T-Code: /DMBE/GENPROV
+├── S_Q_GOVERN
+    ├── ACTVT → 1, 2, 3, 31, 59, 6
+    ├── APPL_COMP → DUMMY
+    ├── ATC_OTYPGO → 1, 2
+    └── DEVCLASS → DUMMY
+└── S_TCODE
+    └── TCD → 01.01.1900
+```
+
+### 1315. `/DMBE/LEGALT`
+
+```
+T-Code: /DMBE/LEGALT
+├── S_Q_GOVERN
+    ├── ACTVT → 1, 2, 3, 31, 59, 6
+    ├── APPL_COMP → DUMMY
+    ├── ATC_OTYPGO → 1, 2
+    └── DEVCLASS → DUMMY
+└── S_TCODE
+    └── TCD → 01.01.1900
+```
+
+### 1316. `/DMBE/PRDTP_CUST`
+
+```
+T-Code: /DMBE/PRDTP_CUST
+└── S_TCODE
+    └── TCD → 01.01.1900
+```
+
+### 1317. `/DMBE/PRD_SCHEDULING`
+
+```
+T-Code: /DMBE/PRD_SCHEDULING
+└── S_TABU_NAM
+    ├── ACTVT → 2
+    └── TABLE → /DMBE/TM_PRD_SCH
+```
+
+### 1318. `/DMBE/SCHEDULING`
+
+```
+T-Code: /DMBE/SCHEDULING
+└── S_TABU_NAM
+    ├── ACTVT → 2
+    └── TABLE → /DMBE/TM_SCHEDLR
+```
+
+## `/DSD/` — SAP Direct Store Delivery
+> T-codes: **243**
+
+
+### 1319. `/DSD/01002241`
+
+```
+T-Code: /DSD/01002241
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_NRZUORD
+```
+
+### 1320. `/DSD/01002294`
+
+```
+T-Code: /DSD/01002294
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/RP_DRVKTO_V
+```
+
+### 1321. `/DSD/01002295`
+
+```
+T-Code: /DSD/01002295
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/RP_MOTRCAT
+```
+
+### 1322. `/DSD/01002299`
+
+```
+T-Code: /DSD/01002299
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_AUTH
+```
+
+### 1323. `/DSD/01002300`
+
+```
+T-Code: /DSD/01002300
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_GRP
+```
+
+### 1324. `/DSD/01002309`
+
+```
+T-Code: /DSD/01002309
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_CALTYP
+```
+
+### 1325. `/DSD/01002310`
+
+```
+T-Code: /DSD/01002310
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_VPTYPE_V
+```
+
+### 1326. `/DSD/01002311`
+
+```
+T-Code: /DSD/01002311
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_ORDER
+```
+
+### 1327. `/DSD/01002314`
+
+```
+T-Code: /DSD/01002314
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_DELIVER
+```
+
+### 1328. `/DSD/05000074`
+
+```
+T-Code: /DSD/05000074
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_TOUR_S_V
+```
+
+### 1329. `/DSD/05000294`
+
+```
+T-Code: /DSD/05000294
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/RP_CHECK_SA
+```
+
+### 1330. `/DSD/06000098`
+
+```
+T-Code: /DSD/06000098
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/RP_SETUP
+```
+
+### 1331. `/DSD/06000099`
+
+```
+T-Code: /DSD/06000099
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/RP_LICCAT
+```
+
+### 1332. `/DSD/06000104`
+
+```
+T-Code: /DSD/06000104
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_VSTATC_V
+```
+
+### 1333. `/DSD/06000108`
+
+```
+T-Code: /DSD/06000108
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/RP_LMT_V
+```
+
+### 1334. `/DSD/10000609`
+
+```
+T-Code: /DSD/10000609
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TC_CSTT
+```
+
+### 1335. `/DSD/10000610`
+
+```
+T-Code: /DSD/10000610
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TC_CTRL
+```
+
+### 1336. `/DSD/26000004`
+
+```
+T-Code: /DSD/26000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/PE_CONFIG
+```
+
+### 1337. `/DSD/26000005`
+
+```
+T-Code: /DSD/26000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/PE_KALSM
+```
+
+### 1338. `/DSD/50000114`
+
+```
+T-Code: /DSD/50000114
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/C_OC_PRCDEF
+```
+
+### 1339. `/DSD/56000001`
+
+```
+T-Code: /DSD/56000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_CON_RN_V
+```
+
+### 1340. `/DSD/60000008`
+
+```
+T-Code: /DSD/60000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_CPT_MT_V
+```
+
+### 1341. `/DSD/60000009`
+
+```
+T-Code: /DSD/60000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_CPT_MV_V
+```
+
+### 1342. `/DSD/60000010`
+
+```
+T-Code: /DSD/60000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_AT2RFC_V
+```
+
+### 1343. `/DSD/60000011`
+
+```
+T-Code: /DSD/60000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_OBJECT
+```
+
+### 1344. `/DSD/60000012`
+
+```
+T-Code: /DSD/60000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_OBJ_FM
+```
+
+### 1345. `/DSD/60000013`
+
+```
+T-Code: /DSD/60000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_MSGT2OBJ
+```
+
+### 1346. `/DSD/60000014`
+
+```
+T-Code: /DSD/60000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_MAP_FM
+```
+
+### 1347. `/DSD/60000015`
+
+```
+T-Code: /DSD/60000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_MAP_RULE
+```
+
+### 1348. `/DSD/60000016`
+
+```
+T-Code: /DSD/60000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_MAT_TYPE
+```
+
+### 1349. `/DSD/60000017`
+
+```
+T-Code: /DSD/60000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_OI_DOC
+```
+
+### 1350. `/DSD/60000018`
+
+```
+T-Code: /DSD/60000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_OI_INV
+```
+
+### 1351. `/DSD/60000019`
+
+```
+T-Code: /DSD/60000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_COCI_R_V
+```
+
+### 1352. `/DSD/60000020`
+
+```
+T-Code: /DSD/60000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_CHG_RSN
+```
+
+### 1353. `/DSD/60000021`
+
+```
+T-Code: /DSD/60000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_VISIT_V
+```
+
+### 1354. `/DSD/60000024`
+
+```
+T-Code: /DSD/60000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_CPT_GRP
+```
+
+### 1355. `/DSD/60000025`
+
+```
+T-Code: /DSD/60000025
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_ROLE
+```
+
+### 1356. `/DSD/60000026`
+
+```
+T-Code: /DSD/60000026
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_ROLE_G_V
+```
+
+### 1357. `/DSD/60000027`
+
+```
+T-Code: /DSD/60000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_EXPTYP_V
+```
+
+### 1358. `/DSD/60000028`
+
+```
+T-Code: /DSD/60000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_PAY_TY_V
+```
+
+### 1359. `/DSD/60000029`
+
+```
+T-Code: /DSD/60000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_TOUR_SHP
+```
+
+### 1360. `/DSD/60000030`
+
+```
+T-Code: /DSD/60000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_DELV_LFT
+```
+
+### 1361. `/DSD/60000031`
+
+```
+T-Code: /DSD/60000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_ORD_AUT
+```
+
+### 1362. `/DSD/60000033`
+
+```
+T-Code: /DSD/60000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_GEN_CU_V_GROUP
+```
+
+### 1363. `/DSD/60000034`
+
+```
+T-Code: /DSD/60000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_GEN_CU_V_DEVICE
+```
+
+### 1364. `/DSD/60000038`
+
+```
+T-Code: /DSD/60000038
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_PAYMENT
+```
+
+### 1365. `/DSD/62000175`
+
+```
+T-Code: /DSD/62000175
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/RP_SUM_V
+```
+
+### 1366. `/DSD/62000183`
+
+```
+T-Code: /DSD/62000183
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/DE_FUPREC
+```
+
+### 1367. `/DSD/62000212`
+
+```
+T-Code: /DSD/62000212
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_MSGTYP_V7
+```
+
+### 1368. `/DSD/62000213`
+
+```
+T-Code: /DSD/62000213
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_V7_PRN
+```
+
+### 1369. `/DSD/62000220`
+
+```
+T-Code: /DSD/62000220
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_MSGTYP_VL
+```
+
+### 1370. `/DSD/62000221`
+
+```
+T-Code: /DSD/62000221
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_VL_PRN
+```
+
+### 1371. `/DSD/62000234`
+
+```
+T-Code: /DSD/62000234
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_TRADAT_V
+```
+
+### 1372. `/DSD/63000039`
+
+```
+T-Code: /DSD/63000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_DEST_CN
+```
+
+### 1373. `/DSD/63000040`
+
+```
+T-Code: /DSD/63000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SV_RLD_ACT
+```
+
+### 1374. `/DSD/63000041`
+
+```
+T-Code: /DSD/63000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SV_RLD_ORD
+```
+
+### 1375. `/DSD/63000042`
+
+```
+T-Code: /DSD/63000042
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/PR_CUST
+```
+
+### 1376. `/DSD/63000043`
+
+```
+T-Code: /DSD/63000043
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/PR_CUTP
+```
+
+### 1377. `/DSD/63000044`
+
+```
+T-Code: /DSD/63000044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/PR_CUFC
+```
+
+### 1378. `/DSD/63000045`
+
+```
+T-Code: /DSD/63000045
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_CND_T_V
+```
+
+### 1379. `/DSD/63000046`
+
+```
+T-Code: /DSD/63000046
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_CND_PROM
+```
+
+### 1380. `/DSD/66000015`
+
+```
+T-Code: /DSD/66000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TGTYP_V
+```
+
+### 1381. `/DSD/66000016`
+
+```
+T-Code: /DSD/66000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TGGRP_V
+```
+
+### 1382. `/DSD/66000017`
+
+```
+T-Code: /DSD/66000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TGSEAR_V
+```
+
+### 1383. `/DSD/66000018`
+
+```
+T-Code: /DSD/66000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TGFIND_V
+```
+
+### 1384. `/DSD/66000185`
+
+```
+T-Code: /DSD/66000185
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/DX_CDTEL, /DSD/DX_CFIXVA_V
+```
+
+### 1385. `/DSD/66000187`
+
+```
+T-Code: /DSD/66000187
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/DX_CSEGM_V, /DSD/DX_CSTRUC_V, /DSD/DX_CVERS
+```
+
+### 1386. `/DSD/66000188`
+
+```
+T-Code: /DSD/66000188
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/DX_CPRTFORM
+```
+
+### 1387. `/DSD/66000189`
+
+```
+T-Code: /DSD/66000189
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/DX_CARCH
+```
+
+### 1388. `/DSD/66000191`
+
+```
+T-Code: /DSD/66000191
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_DX_UOM_V
+```
+
+### 1389. `/DSD/66000193`
+
+```
+T-Code: /DSD/66000193
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_DX_PQU_V
+```
+
+### 1390. `/DSD/66000206`
+
+```
+T-Code: /DSD/66000206
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/DX_CSEGM
+```
+
+### 1391. `/DSD/82000005`
+
+```
+T-Code: /DSD/82000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/GS_CAPPL
+```
+
+### 1392. `/DSD/82000006`
+
+```
+T-Code: /DSD/82000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/GS_CEXTV, /DSD/GS_VEXT_RFC
+```
+
+### 1393. `/DSD/82000007`
+
+```
+T-Code: /DSD/82000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/GS_CDMI_IPR, /DSD/GS_VDMI_CHA, /DSD/GS_VDMI_KYF, /DSD/GS_VDMI_SEL, /DSD/GS_VDMI_TSL
+```
+
+### 1394. `/DSD/82000009`
+
+```
+T-Code: /DSD/82000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/GS_CVAR_DET
+```
+
+### 1395. `/DSD/82000010`
+
+```
+T-Code: /DSD/82000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SV_ACT
+```
+
+### 1396. `/DSD/82000011`
+
+```
+T-Code: /DSD/82000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SV_CUS
+```
+
+### 1397. `/DSD/82000012`
+
+```
+T-Code: /DSD/82000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SV_LOCATION
+```
+
+### 1398. `/DSD/82000013`
+
+```
+T-Code: /DSD/82000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SV_MAIL_REC
+```
+
+### 1399. `/DSD/82000014`
+
+```
+T-Code: /DSD/82000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ES_CUST_REP
+```
+
+### 1400. `/DSD/82000015`
+
+```
+T-Code: /DSD/82000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ES_TEXT_ID
+```
+
+### 1401. `/DSD/82000016`
+
+```
+T-Code: /DSD/82000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_ES_CANC
+```
+
+### 1402. `/DSD/82000017`
+
+```
+T-Code: /DSD/82000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_ES_CUST
+```
+
+### 1403. `/DSD/82000018`
+
+```
+T-Code: /DSD/82000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ST_CSTATUS
+```
+
+### 1404. `/DSD/82000020`
+
+```
+T-Code: /DSD/82000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ST_CTYPE_SH
+```
+
+### 1405. `/DSD/82000021`
+
+```
+T-Code: /DSD/82000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ST_CSCEN_SH
+```
+
+### 1406. `/DSD/82000022`
+
+```
+T-Code: /DSD/82000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ST_CTYPE_VL
+```
+
+### 1407. `/DSD/82000023`
+
+```
+T-Code: /DSD/82000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ST_CSCEN_VL
+```
+
+### 1408. `/DSD/82000026`
+
+```
+T-Code: /DSD/82000026
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_VPTYPE_3
+```
+
+### 1409. `/DSD/82000031`
+
+```
+T-Code: /DSD/82000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/VC_BUSTRANS
+```
+
+### 1410. `/DSD/82000048`
+
+```
+T-Code: /DSD/82000048
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ST_CACT_IUV, /DSD/ST_CPROF_V, /DSD/ST_CSCEN
+```
+
+### 1411. `/DSD/82000083`
+
+```
+T-Code: /DSD/82000083
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SV_LC_CUS
+```
+
+### 1412. `/DSD/82000084`
+
+```
+T-Code: /DSD/82000084
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SV_LC_SCR
+```
+
+### 1413. `/DSD/82000085`
+
+```
+T-Code: /DSD/82000085
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SV_CNTGR
+```
+
+### 1414. `/DSD/82000086`
+
+```
+T-Code: /DSD/82000086
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SV_CG_LEV
+```
+
+### 1415. `/DSD/82000097`
+
+```
+T-Code: /DSD/82000097
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_TOUR_SV2
+```
+
+### 1416. `/DSD/82000129`
+
+```
+T-Code: /DSD/82000129
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TSLTY_V3
+```
+
+### 1417. `/DSD/82000130`
+
+```
+T-Code: /DSD/82000130
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_DRVTXT_3
+```
+
+### 1418. `/DSD/82000249`
+
+```
+T-Code: /DSD/82000249
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ST_ACTIV_V
+```
+
+### 1419. `/DSD/91000041`
+
+```
+T-Code: /DSD/91000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/PE_PROCE
+```
+
+### 1420. `/DSD/91000222`
+
+```
+T-Code: /DSD/91000222
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_DRVTXT_V
+```
+
+### 1421. `/DSD/91000223`
+
+```
+T-Code: /DSD/91000223
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_TRADAT_V
+```
+
+### 1422. `/DSD/91000224`
+
+```
+T-Code: /DSD/91000224
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_RAARTT_V
+```
+
+### 1423. `/DSD/91000225`
+
+```
+T-Code: /DSD/91000225
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_RACKD_V
+```
+
+### 1424. `/DSD/91000226`
+
+```
+T-Code: /DSD/91000226
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_RADIST_V
+```
+
+### 1425. `/DSD/91000227`
+
+```
+T-Code: /DSD/91000227
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_RAPAY_V
+```
+
+### 1426. `/DSD/91000229`
+
+```
+T-Code: /DSD/91000229
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_RAREAS_V
+```
+
+### 1427. `/DSD/91000230`
+
+```
+T-Code: /DSD/91000230
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_RATIMT_V
+```
+
+### 1428. `/DSD/91000231`
+
+```
+T-Code: /DSD/91000231
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_RAVISC_V
+```
+
+### 1429. `/DSD/91000232`
+
+```
+T-Code: /DSD/91000232
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_RTATYP_V
+```
+
+### 1430. `/DSD/91000233`
+
+```
+T-Code: /DSD/91000233
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_TBALCTRL
+```
+
+### 1431. `/DSD/91000234`
+
+```
+T-Code: /DSD/91000234
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_CLEARS_V
+```
+
+### 1432. `/DSD/91000235`
+
+```
+T-Code: /DSD/91000235
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_CLUSTATV
+```
+
+### 1433. `/DSD/91000236`
+
+```
+T-Code: /DSD/91000236
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_POSTSE_V
+```
+
+### 1434. `/DSD/91000237`
+
+```
+T-Code: /DSD/91000237
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TBSO_V
+```
+
+### 1435. `/DSD/91000238`
+
+```
+T-Code: /DSD/91000238
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TBSOAS_V
+```
+
+### 1436. `/DSD/91000239`
+
+```
+T-Code: /DSD/91000239
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TBSOSL_V
+```
+
+### 1437. `/DSD/91000240`
+
+```
+T-Code: /DSD/91000240
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TCSTAM_V
+```
+
+### 1438. `/DSD/91000241`
+
+```
+T-Code: /DSD/91000241
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_V_TCSTAT
+```
+
+### 1439. `/DSD/91000242`
+
+```
+T-Code: /DSD/91000242
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TIDTAA_V
+```
+
+### 1440. `/DSD/91000243`
+
+```
+T-Code: /DSD/91000243
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TSLTYA_V
+```
+
+### 1441. `/DSD/91000244`
+
+```
+T-Code: /DSD/91000244
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_TSLTYP_V
+```
+
+### 1442. `/DSD/91000249`
+
+```
+T-Code: /DSD/91000249
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/HH_TBALHD
+```
+
+### 1443. `/DSD/91000253`
+
+```
+T-Code: /DSD/91000253
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_ACTIVETA
+```
+
+### 1444. `/DSD/DE_ENTRY`
+
+```
+T-Code: /DSD/DE_ENTRY
+└── D_SDRE
+    ├── DSDR_AKTN → 2, 3, 4, 5, 6
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    ├── DSDR_SAREA → (empty — maintain in PFCG)
+    └── DSDR_STYP → (empty — maintain in PFCG)
+```
+
+### 1445. `/DSD/DE_FUPREC`
+
+```
+T-Code: /DSD/DE_FUPREC
+├── D_SD_TCODE
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TCD → /DSD/DE_FUPREC
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/DE_FUPREC
+```
+
+### 1446. `/DSD/DE_SL`
+
+```
+T-Code: /DSD/DE_SL
+├── /DSD/VC_VL
+    ├── /DSD/VAUTH → (empty — maintain in PFCG)
+    ├── /DSD/VPTYP → (empty — maintain in PFCG)
+    ├── /DSD/VROUT → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── D_SDRE
+    ├── DSDR_AKTN → 2, 3
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    ├── DSDR_SAREA → (empty — maintain in PFCG)
+    └── DSDR_STYP → (empty — maintain in PFCG)
+├── V_VTTK_SHT
+    ├── ACTVT → 3
+    └── SHTYP → (empty — maintain in PFCG)
+└── V_VTTK_TDS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TPLST → $TPLST
+```
+
+### 1447. `/DSD/DX_AUDIT`
+
+```
+T-Code: /DSD/DX_AUDIT
+└── D_SD_TCODE
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TCD → /DSD/DX_AUDIT
+```
+
+### 1448. `/DSD/DX_CARCHIVE`
+
+```
+T-Code: /DSD/DX_CARCHIVE
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → DSDC
+```
+
+### 1449. `/DSD/GS_ME_GET_STATISTIC_DATA`
+
+```
+T-Code: /DSD/GS_ME_GET_STATISTIC_DATA
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1450. `/DSD/GS_ME_RUN_STATISTIC_DATA`
+
+```
+T-Code: /DSD/GS_ME_RUN_STATISTIC_DATA
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1451. `/DSD/HH_DL_CREDIT_LIMIT`
+
+```
+T-Code: /DSD/HH_DL_CREDIT_LIMIT
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1452. `/DSD/HH_DL_OPEN_ITEMS`
+
+```
+T-Code: /DSD/HH_DL_OPEN_ITEMS
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1453. `/DSD/HH_DL_RFC_DRIVER`
+
+```
+T-Code: /DSD/HH_DL_RFC_DRIVER
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1454. `/DSD/HH_MASTERIDOC_CREATE_CRED`
+
+```
+T-Code: /DSD/HH_MASTERIDOC_CREATE_CRED
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1455. `/DSD/HH_MASTERIDOC_CREATE_CUST`
+
+```
+T-Code: /DSD/HH_MASTERIDOC_CREATE_CUST
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1456. `/DSD/HH_MASTERIDOC_CREATE_MAT`
+
+```
+T-Code: /DSD/HH_MASTERIDOC_CREATE_MAT
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1457. `/DSD/HH_PAYM`
+
+```
+T-Code: /DSD/HH_PAYM
+└── D_SD_TCODE
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TCD → /DSD/HH_PAYM
+```
+
+### 1458. `/DSD/HH_RA_DELE`
+
+```
+T-Code: /DSD/HH_RA_DELE
+├── D_SDR
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DSDR_AKTN → 7
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    └── VKORG → $VKORG
+└── D_SDRE
+    ├── DSDR_AKTN → 7
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    ├── DSDR_SAREA → (empty — maintain in PFCG)
+    └── DSDR_STYP → (empty — maintain in PFCG)
+```
+
+### 1459. `/DSD/ME_ACTIVITY_GENERATE`
+
+```
+T-Code: /DSD/ME_ACTIVITY_GENERATE
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1460. `/DSD/ME_ADMIN_STATUS_DETAIL`
+
+```
+T-Code: /DSD/ME_ADMIN_STATUS_DETAIL
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1461. `/DSD/ME_ADMIN_STATUS_SEARCH`
+
+```
+T-Code: /DSD/ME_ADMIN_STATUS_SEARCH
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1462. `/DSD/ME_ADMIN_UPLOAD_TOUR`
+
+```
+T-Code: /DSD/ME_ADMIN_UPLOAD_TOUR
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1463. `/DSD/ME_CLEANUP`
+
+```
+T-Code: /DSD/ME_CLEANUP
+└── D_SD_TCODE
+    ├── ACTVT → 70
+    └── TCD → /DSD/ME_CLEANUP
+```
+
+### 1464. `/DSD/ME_COCI_SYNC`
+
+```
+T-Code: /DSD/ME_COCI_SYNC
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1465. `/DSD/ME_CPT`
+
+```
+T-Code: /DSD/ME_CPT
+└── D_SDM
+    ├── ACTVT → 2, 3, 32
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1466. `/DSD/ME_DELETE_MW_QUEUE`
+
+```
+T-Code: /DSD/ME_DELETE_MW_QUEUE
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1467. `/DSD/ME_DELETE_RELOAD_QUEUE`
+
+```
+T-Code: /DSD/ME_DELETE_RELOAD_QUEUE
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1468. `/DSD/ME_DE_TRIGGER`
+
+```
+T-Code: /DSD/ME_DE_TRIGGER
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1469. `/DSD/ME_DLD_STATUS_CHECK`
+
+```
+T-Code: /DSD/ME_DLD_STATUS_CHECK
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1470. `/DSD/ME_DOCNUM_GET`
+
+```
+T-Code: /DSD/ME_DOCNUM_GET
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1471. `/DSD/ME_GEN_CU_V_GLO`
+
+```
+T-Code: /DSD/ME_GEN_CU_V_GLO
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_GEN_CU_V_GLOBAL
+```
+
+### 1472. `/DSD/ME_GEN_CU_V_GRO`
+
+```
+T-Code: /DSD/ME_GEN_CU_V_GRO
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/ME_GEN_CU_V_GROUP
+```
+
+### 1473. `/DSD/ME_GETDETAIL_TR`
+
+```
+T-Code: /DSD/ME_GETDETAIL_TR
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1474. `/DSD/ME_GETLIST_TR`
+
+```
+T-Code: /DSD/ME_GETLIST_TR
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1475. `/DSD/ME_GET_RELOAD_STATUS`
+
+```
+T-Code: /DSD/ME_GET_RELOAD_STATUS
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1476. `/DSD/ME_GET_TOUR_STATUS`
+
+```
+T-Code: /DSD/ME_GET_TOUR_STATUS
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1477. `/DSD/ME_GET_TOUR_STATUS_S`
+
+```
+T-Code: /DSD/ME_GET_TOUR_STATUS_S
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1478. `/DSD/ME_IDOCSTAT_EXTRACTOR`
+
+```
+T-Code: /DSD/ME_IDOCSTAT_EXTRACTOR
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1479. `/DSD/ME_MAINTAIN_TR`
+
+```
+T-Code: /DSD/ME_MAINTAIN_TR
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1480. `/DSD/ME_MS_DOWNLOAD`
+
+```
+T-Code: /DSD/ME_MS_DOWNLOAD
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1481. `/DSD/ME_MS_UPLOAD`
+
+```
+T-Code: /DSD/ME_MS_UPLOAD
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1482. `/DSD/ME_NOTIFY_DATA_DOWNLOADED`
+
+```
+T-Code: /DSD/ME_NOTIFY_DATA_DOWNLOADED
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1483. `/DSD/ME_NOTIFY_MW_QUEUE`
+
+```
+T-Code: /DSD/ME_NOTIFY_MW_QUEUE
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1484. `/DSD/ME_OC_ATP_PRICING`
+
+```
+T-Code: /DSD/ME_OC_ATP_PRICING
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1485. `/DSD/ME_RA_PREPARE_DATA`
+
+```
+T-Code: /DSD/ME_RA_PREPARE_DATA
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1486. `/DSD/ME_RELOAD_DOWNLOAD`
+
+```
+T-Code: /DSD/ME_RELOAD_DOWNLOAD
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1487. `/DSD/ME_RELOAD_UPLOAD`
+
+```
+T-Code: /DSD/ME_RELOAD_UPLOAD
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1488. `/DSD/ME_RLT_RCV`
+
+```
+T-Code: /DSD/ME_RLT_RCV
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1489. `/DSD/ME_RPL_REQUESTER`
+
+```
+T-Code: /DSD/ME_RPL_REQUESTER
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1490. `/DSD/ME_RPL_RESULT_RECEIVER`
+
+```
+T-Code: /DSD/ME_RPL_RESULT_RECEIVER
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1491. `/DSD/ME_RPL_STATUS_EXTRACTOR`
+
+```
+T-Code: /DSD/ME_RPL_STATUS_EXTRACTOR
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1492. `/DSD/ME_SET_RELOAD_STATUS`
+
+```
+T-Code: /DSD/ME_SET_RELOAD_STATUS
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1493. `/DSD/ME_SYNC_STATUS_CHECKER`
+
+```
+T-Code: /DSD/ME_SYNC_STATUS_CHECKER
+└── D_SDM
+    ├── ACTVT → 3
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1494. `/DSD/ME_UPLOAD_START`
+
+```
+T-Code: /DSD/ME_UPLOAD_START
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1495. `/DSD/OC_ATP_PRICING`
+
+```
+T-Code: /DSD/OC_ATP_PRICING
+└── D_SDM
+    ├── ACTVT → 2
+    ├── DSDM_ACTCH → (empty — maintain in PFCG)
+    ├── DSDM_ACTCU → (empty — maintain in PFCG)
+    ├── DSDM_ACTFZ → (empty — maintain in PFCG)
+    ├── DSDM_ACTGR → (empty — maintain in PFCG)
+    ├── DSDM_ACTJC → (empty — maintain in PFCG)
+    ├── DSDM_ACTRO → (empty — maintain in PFCG)
+    ├── DSDM_ACTST → (empty — maintain in PFCG)
+    └── DSDM_ACTUS → (empty — maintain in PFCG)
+```
+
+### 1496. `/DSD/PR_GET_PROMOTION`
+
+```
+T-Code: /DSD/PR_GET_PROMOTION
+└── D_SDPR
+    ├── /DSD/KUNNR → ''
+    ├── /DSD/SPART → ''
+    ├── /DSD/VKORG → ''
+    ├── /DSD/VTWEG → ''
+    ├── /DSD/WERKS → ''
+    └── ACTVT → 3
+```
+
+### 1497. `/DSD/RP_TOUR`
+
+```
+T-Code: /DSD/RP_TOUR
+└── D_SDRP
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TCD → /DSD/RP_TOUR
+```
+
+### 1498. `/DSD/SL_AUTOFSR_EXCL`
+
+```
+T-Code: /DSD/SL_AUTOFSR_EXCL
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_ASL_EXCL
+```
+
+### 1499. `/DSD/SL_CLEAR`
+
+```
+T-Code: /DSD/SL_CLEAR
+├── D_SDR
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DSDR_AKTN → 5, A
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    └── VKORG → $VKORG
+└── D_SDRE
+    ├── DSDR_AKTN → 5, A
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    ├── DSDR_SAREA → (empty — maintain in PFCG)
+    └── DSDR_STYP → (empty — maintain in PFCG)
+```
+
+### 1500. `/DSD/SL_CLEARDIALOG`
+
+```
+T-Code: /DSD/SL_CLEARDIALOG
+├── D_SDR
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DSDR_AKTN → 5, A
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    └── VKORG → $VKORG
+└── D_SDRE
+    ├── DSDR_AKTN → 5, A
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    ├── DSDR_SAREA → (empty — maintain in PFCG)
+    └── DSDR_STYP → (empty — maintain in PFCG)
+```
+
+### 1501. `/DSD/SL_COCKPIT`
+
+```
+T-Code: /DSD/SL_COCKPIT
+├── D_SDR
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DSDR_AKTN → 2, 3
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    └── VKORG → $VKORG
+└── D_SDRE
+    ├── DSDR_AKTN → 2, 3
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    ├── DSDR_SAREA → (empty — maintain in PFCG)
+    └── DSDR_STYP → (empty — maintain in PFCG)
+```
+
+### 1502. `/DSD/SL_DIFIAC`
+
+```
+T-Code: /DSD/SL_DIFIAC
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_DIFIAC_V
+```
+
+### 1503. `/DSD/SL_FSR`
+
+```
+T-Code: /DSD/SL_FSR
+├── D_SDR
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DSDR_AKTN → 5, A
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    └── VKORG → $VKORG
+└── D_SDRE
+    ├── DSDR_AKTN → 5, A
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    ├── DSDR_SAREA → (empty — maintain in PFCG)
+    └── DSDR_STYP → (empty — maintain in PFCG)
+```
+
+### 1504. `/DSD/SL_IACFIN`
+
+```
+T-Code: /DSD/SL_IACFIN
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_IACFIN_V
+```
+
+### 1505. `/DSD/SL_MS_PRESALES`
+
+```
+T-Code: /DSD/SL_MS_PRESALES
+└── D_SDRE
+    ├── DSDR_AKTN → 2, 4, 5
+    ├── DSDR_AREA → BALANCE, GENTOUR
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    ├── DSDR_SAREA → (empty — maintain in PFCG)
+    └── DSDR_STYP → (empty — maintain in PFCG)
+```
+
+### 1506. `/DSD/SL_MS_SETTLE`
+
+```
+T-Code: /DSD/SL_MS_SETTLE
+├── CPE_SETTIN
+    └── ACTVT → 3
+├── D_SDRE
+    ├── DSDR_AKTN → 2, 4, 5, 9, A
+    ├── DSDR_AREA → BALANCE, GENTOUR
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    ├── DSDR_SAREA → (empty — maintain in PFCG)
+    └── DSDR_STYP → (empty — maintain in PFCG)
+├── M_BEST_EKO
+    ├── ACTVT → 1
+    └── EKORG → $EKORG
+├── M_MSEG_BWA
+    ├── ACTVT → 1
+    └── BWART → (empty — maintain in PFCG)
+├── M_MSEG_WWA
+    ├── ACTVT → 1
+    └── WERKS → $WERKS
+├── V_LIKP_VST
+    ├── ACTVT → 1, 2, 4
+    └── VSTEL → $VSTEL
+├── V_VBAK_AAT
+    ├── ACTVT → 1, 2, 43, 5, C1
+    └── AUART → (empty — maintain in PFCG)
+└── V_VBAK_VKO
+    ├── ACTVT → 1, 2
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+### 1507. `/DSD/SL_PMGIAC`
+
+```
+T-Code: /DSD/SL_PMGIAC
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_PMGIAC_V
+```
+
+### 1508. `/DSD/SL_PMSIAC`
+
+```
+T-Code: /DSD/SL_PMSIAC
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /DSD/SL_PMSIAC_V
+```
+
+### 1509. `/DSD/SL_RADB`
+
+```
+T-Code: /DSD/SL_RADB
+├── D_SDR
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DSDR_AKTN → 6
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    └── VKORG → $VKORG
+└── D_SDRE
+    ├── DSDR_AKTN → 6
+    ├── DSDR_AREA → (empty — maintain in PFCG)
+    ├── DSDR_BSO → (empty — maintain in PFCG)
+    ├── DSDR_SAREA → (empty — maintain in PFCG)
+    └── DSDR_STYP → (empty — maintain in PFCG)
+```
+
+### 1510. `/DSD/SL_SNUM_FSR`
+
+```
+T-Code: /DSD/SL_SNUM_FSR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /DSD/FSR
+```
+
+### 1511. `/DSD/SL_SNUM_SLCOC`
+
+```
+T-Code: /DSD/SL_SNUM_SLCOC
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /DSD/SLCOC
+```
+
+### 1512. `/DSD/SL_SNUM_SLDEL`
+
+```
+T-Code: /DSD/SL_SNUM_SLDEL
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /DSD/SLDEL
+```
+
+### 1513. `/DSD/SL_SNUM_SLDID`
+
+```
+T-Code: /DSD/SL_SNUM_SLDID
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /DSD/SLDID
+```
+
+### 1514. `/DSD/SL_SNUM_SLINV`
+
+```
+T-Code: /DSD/SL_SNUM_SLINV
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /DSD/SLINV
+```
+
+### 1515. `/DSD/SL_TGFIND`
+
+```
+T-Code: /DSD/SL_TGFIND
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → DSDC
+```
+
+### 1516. `/DSD/SL_TGGRP`
+
+```
+T-Code: /DSD/SL_TGGRP
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → DSDC
+```
+
+### 1517. `/DSD/SL_TGSEARCH`
+
+```
+T-Code: /DSD/SL_TGSEARCH
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → DSDC
+```
+
+### 1518. `/DSD/SL_TGTYP`
+
+```
+T-Code: /DSD/SL_TGTYP
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → DSDC
+```
+
+### 1519. `/DSD/ST_CHECK_NEW_STATUS`
+
+```
+T-Code: /DSD/ST_CHECK_NEW_STATUS
+└── /DSD/TOUR
+    ├── /DSD/SCEN → ''
+    └── ACTVT → 3
+```
+
+### 1520. `/DSD/ST_DELETE_STATUS`
+
+```
+T-Code: /DSD/ST_DELETE_STATUS
+└── /DSD/TOUR
+    ├── /DSD/SCEN → ''
+    └── ACTVT → 2
+```
+
+### 1521. `/DSD/ST_GET_STATUS`
+
+```
+T-Code: /DSD/ST_GET_STATUS
+└── /DSD/TOUR
+    ├── /DSD/SCEN → ''
+    └── ACTVT → 3
+```
+
+### 1522. `/DSD/ST_SET_STATUS`
+
+```
+T-Code: /DSD/ST_SET_STATUS
+└── /DSD/TOUR
+    ├── /DSD/SCEN → ''
+    └── ACTVT → 2
+```
+
+### 1523. `/DSD/ST_TOUR`
+
+```
+T-Code: /DSD/ST_TOUR
+└── /DSD/TOUR
+    ├── /DSD/SCEN → (empty — maintain in PFCG)
+    └── ACTVT → 2, 3
+```
+
+### 1524. `/DSD/SV_COCI_SYNC`
+
+```
+T-Code: /DSD/SV_COCI_SYNC
+└── /DSD/SV_LC
+    ├── /DSD/LCROL → (empty — maintain in PFCG)
+    └── ACTVT → 2
+```
+
+### 1525. `/DSD/SV_GET_LC`
+
+```
+T-Code: /DSD/SV_GET_LC
+└── /DSD/SV_LC
+    ├── /DSD/LCROL → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 1526. `/DSD/SV_GET_RELOAD_STATUS`
+
+```
+T-Code: /DSD/SV_GET_RELOAD_STATUS
+└── /DSD/SL_WR
+    └── WERKS → $WERKS
+```
+
+### 1527. `/DSD/SV_LC_ADJUST`
+
+```
+T-Code: /DSD/SV_LC_ADJUST
+└── /DSD/SV_LC
+    ├── /DSD/LCROL → 1
+    └── ACTVT → 2
+```
+
+### 1528. `/DSD/SV_LC_COUNT`
+
+```
+T-Code: /DSD/SV_LC_COUNT
+└── /DSD/SV_LC
+    ├── /DSD/LCROL → 2
+    └── ACTVT → 2
+```
+
+### 1529. `/DSD/SV_LC_DELETE`
+
+```
+T-Code: /DSD/SV_LC_DELETE
+└── /DSD/SV_LC
+    ├── /DSD/LCROL → 1, 2
+    └── ACTVT → 6
+```
+
+### 1530. `/DSD/SV_LIST_SHIP`
+
+```
+T-Code: /DSD/SV_LIST_SHIP
+├── /DSD/VC_VL
+    ├── /DSD/VAUTH → (empty — maintain in PFCG)
+    ├── /DSD/VPTYP → (empty — maintain in PFCG)
+    ├── /DSD/VROUT → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── V_VTTK_SHT
+    ├── ACTVT → 3
+    └── SHTYP → (empty — maintain in PFCG)
+└── V_VTTK_TDS
+    ├── ACTVT → 3
+    └── TPLST → $TPLST
+```
+
+### 1531. `/DSD/SV_LIST_STOCK`
+
+```
+T-Code: /DSD/SV_LIST_STOCK
+└── M_MATE_WRK
+    ├── ACTVT → 3
+    └── WERKS → $WERKS
+```
+
+### 1532. `/DSD/SV_NOTIFY_MW_QUEUE`
+
+```
+T-Code: /DSD/SV_NOTIFY_MW_QUEUE
+└── /DSD/SL_WR
+    └── WERKS → $WERKS
+```
+
+### 1533. `/DSD/SV_RELOAD`
+
+```
+T-Code: /DSD/SV_RELOAD
+├── /DSD/SL_WR
+    └── WERKS → $WERKS
+├── CPE_SETTIN
+    └── ACTVT → 3
+├── C_STUE_BER
+    ├── ACTVT → 3
+    ├── BEGRU → (empty — maintain in PFCG)
+    ├── STLAN → 5
+    └── STLTY → M
+├── C_STUE_WRK
+    ├── ACTVT → 3
+    └── CSWRK → $WERKS
+├── M_MSEG_BWA
+    ├── ACTVT → 1
+    └── BWART → (empty — maintain in PFCG)
+├── M_MSEG_WWA
+    ├── ACTVT → 1
+    └── WERKS → $WERKS
+├── V_LIKP_VST
+    ├── ACTVT → 1
+    └── VSTEL → $VSTEL
+├── V_VBAK_AAT
+    ├── ACTVT → 1, 2, 3, 43, 5, C1
+    └── AUART → (empty — maintain in PFCG)
+└── V_VBAK_VKO
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+### 1534. `/DSD/SV_RL_RELEASE`
+
+```
+T-Code: /DSD/SV_RL_RELEASE
+├── CPE_SETTIN
+    └── ACTVT → 3
+├── M_MSEG_BWA
+    ├── ACTVT → 1
+    └── BWART → (empty — maintain in PFCG)
+├── M_MSEG_WWA
+    ├── ACTVT → 1
+    └── WERKS → $WERKS
+├── V_VBAK_AAT
+    ├── ACTVT → 2, 43, 5, C1
+    └── AUART → (empty — maintain in PFCG)
+└── V_VBAK_VKO
+    ├── ACTVT → 2
+    ├── SPART → $SPART
+    ├── VKORG → $VKORG
+    └── VTWEG → $VTWEG
+```
+
+### 1535. `/DSD/SV_SET_RELOAD_STATUS`
+
+```
+T-Code: /DSD/SV_SET_RELOAD_STATUS
+└── /DSD/SL_WR
+    └── WERKS → $WERKS
+```
+
+### 1536. `/DSD/SV_STOCK_AD_DP`
+
+```
+T-Code: /DSD/SV_STOCK_AD_DP
+├── M_MSEG_BWA
+    ├── ACTVT → 1, 2, 3
+    └── BWART → (empty — maintain in PFCG)
+└── M_MSEG_WWA
+    ├── ACTVT → 1, 2, 3, 4
+    └── WERKS → $WERKS
+```
+
+### 1537. `/DSD/SV_TOUR_STATUS_SET`
+
+```
+T-Code: /DSD/SV_TOUR_STATUS_SET
+└── /DSD/SV_LC
+    ├── /DSD/LCROL → (empty — maintain in PFCG)
+    └── ACTVT → 2
+```
+
+### 1538. `/DSD/VC_B_ACC`
+
+```
+T-Code: /DSD/VC_B_ACC
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → VS
+```
+
+### 1539. `/DSD/VC_B_C01`
+
+```
+T-Code: /DSD/VC_B_C01
+└── V_KONH_VKS
+    ├── ACTVT → 1
+    └── KSCHL → (empty — maintain in PFCG)
+```
+
+### 1540. `/DSD/VC_B_C02`
+
+```
+T-Code: /DSD/VC_B_C02
+└── V_KONH_VKS
+    ├── ACTVT → 2
+    └── KSCHL → (empty — maintain in PFCG)
+```
+
+### 1541. `/DSD/VC_B_C03`
+
+```
+T-Code: /DSD/VC_B_C03
+└── V_KONH_VKS
+    ├── ACTVT → 3
+    └── KSCHL → (empty — maintain in PFCG)
+```
+
+### 1542. `/DSD/VC_B_CAT`
+
+```
+T-Code: /DSD/VC_B_CAT
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → VC
+```
+
+### 1543. `/DSD/VC_B_CT1`
+
+```
+T-Code: /DSD/VC_B_CT1
+└── V_KONG_VWE
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── KAPPL → VL
+    └── KVEWE → B
+```
+
+### 1544. `/DSD/VC_B_CT2`
+
+```
+T-Code: /DSD/VC_B_CT2
+└── V_KONG_VWE
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── KAPPL → VL
+    └── KVEWE → B
+```
+
+### 1545. `/DSD/VC_B_CT3`
+
+```
+T-Code: /DSD/VC_B_CT3
+└── V_KONG_VWE
+    ├── ACTVT → 3
+    ├── KAPPL → VL
+    └── KVEWE → B
+```
+
+### 1546. `/DSD/VC_B_MAP`
+
+```
+T-Code: /DSD/VC_B_MAP
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → DSDV
+```
+
+### 1547. `/DSD/VC_B_SCH`
+
+```
+T-Code: /DSD/VC_B_SCH
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → VS
+```
+
+### 1548. `/DSD/VC_B_TYP`
+
+```
+T-Code: /DSD/VC_B_TYP
+└── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → VC, VN
+```
+
+### 1549. `/DSD/VC_GEN`
+
+```
+T-Code: /DSD/VC_GEN
+└── /DSD/VC_VP
+    ├── /DSD/VAUTH → (empty — maintain in PFCG)
+    ├── /DSD/VPTYP → (empty — maintain in PFCG)
+    ├── /DSD/VROUT → (empty — maintain in PFCG)
+    └── ACTVT → 2, 7
+```
+
+### 1550. `/DSD/VC_MESSAGES`
+
+```
+T-Code: /DSD/VC_MESSAGES
+├── /DSD/VC_VL
+    ├── /DSD/VAUTH → (empty — maintain in PFCG)
+    ├── /DSD/VPTYP → (empty — maintain in PFCG)
+    ├── /DSD/VROUT → (empty — maintain in PFCG)
+    └── ACTVT → 4
+├── V_VTTK_SHT
+    ├── ACTVT → 4
+    └── SHTYP → (empty — maintain in PFCG)
+└── V_VTTK_TDS
+    ├── ACTVT → 4
+    └── TPLST → $TPLST
+```
+
+### 1551. `/DSD/VC_REQDATES_GET`
+
+```
+T-Code: /DSD/VC_REQDATES_GET
+└── /DSD/VC_VP
+    ├── /DSD/VAUTH → ''
+    ├── /DSD/VPTYP → ''
+    ├── /DSD/VROUT → ''
+    └── ACTVT → 3
+```
+
+### 1552. `/DSD/VC_TEXT_CONTROL`
+
+```
+T-Code: /DSD/VC_TEXT_CONTROL
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → DSDV
+```
+
+### 1553. `/DSD/VC_VL`
+
+```
+T-Code: /DSD/VC_VL
+├── /DSD/VC_VL
+    ├── /DSD/VAUTH → (empty — maintain in PFCG)
+    ├── /DSD/VPTYP → (empty — maintain in PFCG)
+    ├── /DSD/VROUT → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 4, 6
+├── V_VTTK_SHT
+    ├── ACTVT → 4
+    └── SHTYP → (empty — maintain in PFCG)
+└── V_VTTK_TDS
+    ├── ACTVT → 4
+    └── TPLST → $TPLST
+```
+
+### 1554. `/DSD/VC_VLC_ARCH`
+
+```
+T-Code: /DSD/VC_VLC_ARCH
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → DSDV
+```
+
+### 1555. `/DSD/VC_VLRANGE`
+
+```
+T-Code: /DSD/VC_VLRANGE
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /DSD/VC_VL
+```
+
+### 1556. `/DSD/VC_VL_DELETE`
+
+```
+T-Code: /DSD/VC_VL_DELETE
+└── /DSD/VC_VL
+    ├── /DSD/VAUTH → (empty — maintain in PFCG)
+    ├── /DSD/VPTYP → (empty — maintain in PFCG)
+    ├── /DSD/VROUT → (empty — maintain in PFCG)
+    └── ACTVT → 6
+```
+
+### 1557. `/DSD/VC_VL_VIEW`
+
+```
+T-Code: /DSD/VC_VL_VIEW
+└── /DSD/VC_VL
+    ├── /DSD/VAUTH → (empty — maintain in PFCG)
+    ├── /DSD/VPTYP → (empty — maintain in PFCG)
+    ├── /DSD/VROUT → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 1558. `/DSD/VC_VP`
+
+```
+T-Code: /DSD/VC_VP
+└── /DSD/VC_VP
+    ├── /DSD/VAUTH → (empty — maintain in PFCG)
+    ├── /DSD/VPTYP → (empty — maintain in PFCG)
+    ├── /DSD/VROUT → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 6, 7
+```
+
+### 1559. `/DSD/VC_VPRANGE`
+
+```
+T-Code: /DSD/VC_VPRANGE
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /DSD/VC_VP
+```
+
+### 1560. `/DSD/VC_VP_CREATE`
+
+```
+T-Code: /DSD/VC_VP_CREATE
+└── /DSD/VC_VP
+    ├── /DSD/VAUTH → (empty — maintain in PFCG)
+    ├── /DSD/VPTYP → (empty — maintain in PFCG)
+    ├── /DSD/VROUT → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 6, 7
+```
+
+### 1561. `/DSD/VC_VP_VIEW`
+
+```
+T-Code: /DSD/VC_VP_VIEW
+└── /DSD/VC_VP
+    ├── /DSD/VAUTH → (empty — maintain in PFCG)
+    ├── /DSD/VPTYP → (empty — maintain in PFCG)
+    ├── /DSD/VROUT → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+## `/EACA/` — SAP EA Corporate Accounts
+> T-codes: **5**
+
+
+### 1562. `/EACA/50000030`
+
+```
+T-Code: /EACA/50000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /EACA/VACINST
+```
+
+### 1563. `/EACA/CHANGE_TEMPLAT`
+
+```
+T-Code: /EACA/CHANGE_TEMPLAT
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1564. `/EACA/GLCONTROL`
+
+```
+T-Code: /EACA/GLCONTROL
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1565. `/EACA/GL_IMG`
+
+```
+T-Code: /EACA/GL_IMG
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1566. `/EACA/GL_MD`
+
+```
+T-Code: /EACA/GL_MD
+└── R_UGMD_CHA
+    ├── ACTVT → 2, 3, 6
+    └── FIELDNAME → (empty — maintain in PFCG)
+```
+
+## `/EACC/` — SAP EA Credit & Collections
+> T-codes: **3**
+
+
+### 1567. `/EACC/50000019`
+
+```
+T-Code: /EACC/50000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /EACC/VCOMPON
+```
+
+### 1568. `/EACC/50000020`
+
+```
+T-Code: /EACC/50000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /EACA/VACCOMP
+```
+
+### 1569. `/EACC/READ_REG`
+
+```
+T-Code: /EACC/READ_REG
+├── FINB_ACINS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── FINB_ACINS → (empty — maintain in PFCG)
+├── S_CTS_ADMI
+    └── CTS_ADMFCT → TABL
+└── S_DEVELOP
+    ├── ACTVT → 40
+    ├── DEVCLASS → $TMP
+    ├── OBJNAME → *
+    ├── OBJTYPE → TABL
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+## `/ECRS/` — SAP Cash & Liquidity Management
+> T-codes: **33**
+
+
+### 1570. `/ECRS/12000001`
+
+```
+T-Code: /ECRS/12000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TPCI
+```
+
+### 1571. `/ECRS/12000002`
+
+```
+T-Code: /ECRS/12000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TRAP
+```
+
+### 1572. `/ECRS/12000003`
+
+```
+T-Code: /ECRS/12000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TCOO
+```
+
+### 1573. `/ECRS/12000004`
+
+```
+T-Code: /ECRS/12000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TRCO
+```
+
+### 1574. `/ECRS/12000005`
+
+```
+T-Code: /ECRS/12000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TRGI
+```
+
+### 1575. `/ECRS/12000006`
+
+```
+T-Code: /ECRS/12000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_T605
+```
+
+### 1576. `/ECRS/12000007`
+
+```
+T-Code: /ECRS/12000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_T616
+```
+
+### 1577. `/ECRS/12000008`
+
+```
+T-Code: /ECRS/12000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_T618
+```
+
+### 1578. `/ECRS/12000009`
+
+```
+T-Code: /ECRS/12000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TINC
+```
+
+### 1579. `/ECRS/12000010`
+
+```
+T-Code: /ECRS/12000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TPRT
+```
+
+### 1580. `/ECRS/12000011`
+
+```
+T-Code: /ECRS/12000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TSMC
+```
+
+### 1581. `/ECRS/12000012`
+
+```
+T-Code: /ECRS/12000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TCCE
+```
+
+### 1582. `/ECRS/12000015`
+
+```
+T-Code: /ECRS/12000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TMPC
+```
+
+### 1583. `/ECRS/12000016`
+
+```
+T-Code: /ECRS/12000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TMCO
+```
+
+### 1584. `/ECRS/12000017`
+
+```
+T-Code: /ECRS/12000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TMRE
+```
+
+### 1585. `/ECRS/52000036`
+
+```
+T-Code: /ECRS/52000036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_T609IS_1
+```
+
+### 1586. `/ECRS/52000037`
+
+```
+T-Code: /ECRS/52000037
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_T609IS_2
+```
+
+### 1587. `/ECRS/52000042`
+
+```
+T-Code: /ECRS/52000042
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_T161B
+```
+
+### 1588. `/ECRS/52000044`
+
+```
+T-Code: /ECRS/52000044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_T617_1
+```
+
+### 1589. `/ECRS/52000051`
+
+```
+T-Code: /ECRS/52000051
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TVFM
+```
+
+### 1590. `/ECRS/52000052`
+
+```
+T-Code: /ECRS/52000052
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_T161W_T
+```
+
+### 1591. `/ECRS/52000055`
+
+```
+T-Code: /ECRS/52000055
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_T609II
+```
+
+### 1592. `/ECRS/52000114`
+
+```
+T-Code: /ECRS/52000114
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TICX
+```
+
+### 1593. `/ECRS/52000161`
+
+```
+T-Code: /ECRS/52000161
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_T617_2
+```
+
+### 1594. `/ECRS/52000166`
+
+```
+T-Code: /ECRS/52000166
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /CCEE/SIFIINCP3
+```
+
+### 1595. `/ECRS/52000298`
+
+```
+T-Code: /ECRS/52000298
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TICS
+```
+
+### 1596. `/ECRS/52000636`
+
+```
+T-Code: /ECRS/52000636
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TDVS
+```
+
+### 1597. `/ECRS/52000637`
+
+```
+T-Code: /ECRS/52000637
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TBTR
+```
+
+### 1598. `/ECRS/52000638`
+
+```
+T-Code: /ECRS/52000638
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TPRR
+```
+
+### 1599. `/ECRS/52000778`
+
+```
+T-Code: /ECRS/52000778
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TRPA
+```
+
+### 1600. `/ECRS/52003055`
+
+```
+T-Code: /ECRS/52003055
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ECRS/V_TDVS2
+```
+
+### 1601. `/ECRS/POI_EDIT`
+
+```
+T-Code: /ECRS/POI_EDIT
+├── /ECRS/POIA
+    ├── ACTVT → 1, 2, 3, 6
+    └── BUKRS → $BUKRS
+├── /ECRS/POIB
+    ├── /ECRS/POIB → $/ECRS/POIB
+    └── ACTVT → 1, 2, 3, 6
+├── B_BUPA_GRP
+    ├── ACTVT → 3, F4
+    └── BEGRU → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → 3, F4
+    └── RLTYP → (empty — maintain in PFCG)
+└── B_BUP_DCPD
+    ├── ACTVT → 3, F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+```
+
+### 1602. `/ECRS/RP_EDIT`
+
+```
+T-Code: /ECRS/RP_EDIT
+├── /ECRS/RPHB
+    ├── /ECRS/POIB → $/ECRS/POIB
+    └── ACTVT → 1, 2, 3, 43, 6, 74, DL
+├── /ECRS/RPHD
+    ├── ACTVT → 1, 2, 3, 43, 6, 74, DL
+    └── BUKRS → $BUKRS
+├── B_BUPA_GRP
+    ├── ACTVT → 3, F4
+    └── BEGRU → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → 3, F4
+    └── RLTYP → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → 3, F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+├── M_MATE_MAR
+    ├── ACTVT → 3, F4
+    └── BEGRU → (empty — maintain in PFCG)
+├── M_MATE_MAT
+    ├── ACTVT → 3, F4
+    └── BEGRU → (empty — maintain in PFCG)
+└── M_MATE_WGR
+    ├── ACTVT → 3, F4
+    └── BEGRU → (empty — maintain in PFCG)
+```
+
+## `/FLDQ/` — SAP Field Quality Management
+> T-codes: **16**
+
+
+### 1603. `/FLDQ/02000004`
+
+```
+T-Code: /FLDQ/02000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/DQ_REGIONS
+```
+
+### 1604. `/FLDQ/02000005`
+
+```
+T-Code: /FLDQ/02000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/AD_RVW_CUS
+```
+
+### 1605. `/FLDQ/02000006`
+
+```
+T-Code: /FLDQ/02000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/AD_SUGLBL
+```
+
+### 1606. `/FLDQ/13000001`
+
+```
+T-Code: /FLDQ/13000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/AD_VAL_CNT
+```
+
+### 1607. `/FLDQ/13000002`
+
+```
+T-Code: /FLDQ/13000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/AD_QTR_OBJ
+```
+
+### 1608. `/FLDQ/68000142`
+
+```
+T-Code: /FLDQ/68000142
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/AD_VAL_CNT
+```
+
+### 1609. `/FLDQ/88000001`
+
+```
+T-Code: /FLDQ/88000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/AD_SUPPROC
+```
+
+### 1610. `/FLDQ/88000002`
+
+```
+T-Code: /FLDQ/88000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/AD_SUPPCCK
+```
+
+### 1611. `/FLDQ/88000003`
+
+```
+T-Code: /FLDQ/88000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/AD_CFGPRMS
+```
+
+### 1612. `/FLDQ/88000004`
+
+```
+T-Code: /FLDQ/88000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → TSAD10
+```
+
+### 1613. `/FLDQ/88000005`
+
+```
+T-Code: /FLDQ/88000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_TSADGRPC
+```
+
+### 1614. `/FLDQ/88000006`
+
+```
+T-Code: /FLDQ/88000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/AD_SCR_RVW
+```
+
+### 1615. `/FLDQ/88000007`
+
+```
+T-Code: /FLDQ/88000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/AD_SCR_DUP
+```
+
+### 1616. `/FLDQ/88000009`
+
+```
+T-Code: /FLDQ/88000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/AD_MKTGDUP
+```
+
+### 1617. `/FLDQ/90000001`
+
+```
+T-Code: /FLDQ/90000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/AD_CFG_RVW
+```
+
+### 1618. `/FLDQ/90000002`
+
+```
+T-Code: /FLDQ/90000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FLDQ/ADR_RVW_BT
+```
+
+## `/FMP/` — SAP Financial Market Planning
+> T-codes: **8**
+
+
+### 1619. `/FMP/74000001`
+
+```
+T-Code: /FMP/74000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FMP/V_MP_PTYP
+```
+
+### 1620. `/FMP/74000002`
+
+```
+T-Code: /FMP/74000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FMP/V_MP_T001K, V_T001K_PR
+```
+
+### 1621. `/FMP/74000003`
+
+```
+T-Code: /FMP/74000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FMP/C_MP_DYNREL
+```
+
+### 1622. `/FMP/74000005`
+
+```
+T-Code: /FMP/74000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FMP/V_MP_PRGRP
+```
+
+### 1623. `/FMP/MP_CHANGE`
+
+```
+T-Code: /FMP/MP_CHANGE
+├── K_PRICE001
+    ├── ACTVT → 2
+    ├── BUKRS → $BUKRS
+    ├── CWPRICLABL → *
+    └── WERKS → $WERKS
+├── M_MATE_BUK
+    ├── ACTVT → 8
+    └── BUKRS → $BUKRS
+├── M_MATE_MAN
+    └── ACTVT → 3
+├── M_MATE_STA
+    ├── ACTVT → 8
+    └── STATM → B
+└── M_MATE_WRK
+    ├── ACTVT → 8
+    └── WERKS → $WERKS
+```
+
+### 1624. `/FMP/MP_COMPARE`
+
+```
+T-Code: /FMP/MP_COMPARE
+├── K_PRICE001
+    ├── ACTVT → 3
+    ├── BUKRS → $BUKRS
+    ├── CWPRICLABL → *
+    └── WERKS → $WERKS
+├── M_MATE_BUK
+    ├── ACTVT → 8
+    └── BUKRS → $BUKRS
+├── M_MATE_STA
+    ├── ACTVT → 8
+    └── STATM → B
+└── M_MATE_WRK
+    ├── ACTVT → 8
+    └── WERKS → $WERKS
+```
+
+### 1625. `/FMP/MP_DISPLAY`
+
+```
+T-Code: /FMP/MP_DISPLAY
+├── K_KEKO
+    ├── ACTVT → 3
+    ├── BUKRS → $BUKRS
+    └── KLVAR → *
+├── K_PRICE001
+    ├── ACTVT → 3
+    ├── BUKRS → $BUKRS
+    ├── CWPRICLABL → *
+    └── WERKS → $WERKS
+├── M_MATE_BUK
+    ├── ACTVT → 8
+    └── BUKRS → $BUKRS
+├── M_MATE_MAN
+    └── ACTVT → 3
+├── M_MATE_STA
+    ├── ACTVT → 8
+    └── STATM → B
+└── M_MATE_WRK
+    ├── ACTVT → 8
+    └── WERKS → $WERKS
+```
+
+### 1626. `/FMP/MP_HISTORY`
+
+```
+T-Code: /FMP/MP_HISTORY
+├── K_KEKO
+    ├── ACTVT → 3
+    ├── BUKRS → $BUKRS
+    └── KLVAR → *
+├── K_PRICE001
+    ├── ACTVT → 3
+    ├── BUKRS → $BUKRS
+    ├── CWPRICLABL → *
+    └── WERKS → $WERKS
+├── M_MATE_BUK
+    ├── ACTVT → 8
+    └── BUKRS → $BUKRS
+├── M_MATE_STA
+    ├── ACTVT → 8
+    └── STATM → B
+└── M_MATE_WRK
+    ├── ACTVT → 8
+    └── WERKS → $WERKS
+```
+
+## `/FSCAA/` — SAP Financial Services Credit & Asset
+> T-codes: **3**
+
+
+### 1627. `/FSCAA/ADD_SHLP`
+
+```
+T-Code: /FSCAA/ADD_SHLP
+└── S_DOKU_AUT
+    ├── DOKU_ACT → ACTIVATE, FINAL_VERS
+    ├── DOKU_DEVCL → (empty — maintain in PFCG)
+    └── DOKU_MODE → (empty — maintain in PFCG)
+```
+
+### 1628. `/FSCAA/VC_FIELD`
+
+```
+T-Code: /FSCAA/VC_FIELD
+└── S_TRANSPRT
+    ├── ACTVT → 1, 2
+    └── TTYPE → CLCP, CUST, DTRA
+```
+
+### 1629. `/FSCAA/V_IF_2_CLASS`
+
+```
+T-Code: /FSCAA/V_IF_2_CLASS
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /FSCAA/VIF_CLASS
+```
+
+## `/FSIH/` — SAP Financial Services Insurance Holdings
+> T-codes: **3**
+
+
+### 1630. `/FSIH/10000977`
+
+```
+T-Code: /FSIH/10000977
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FSIH/V_SYSTEM
+```
+
+### 1631. `/FSIH/10000978`
+
+```
+T-Code: /FSIH/10000978
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /FSIH/V_PORTF
+```
+
+### 1632. `/FSIH/REPL`
+
+```
+T-Code: /FSIH/REPL
+├── FD_DAR_BUK
+    ├── ACTVT → 2
+    └── BUKRS → $BUKRS
+└── S_DATASET
+    ├── ACTVT → 34
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /FSIH/RREPLICATION_EXPORT
+```
+
+## `/FTI/` — SAP Financial Trade & Investment
+> T-codes: **7**
+
+
+### 1633. `/FTI/FO_COMPARE`
+
+```
+T-Code: /FTI/FO_COMPARE
+├── S_CTS_ADMI
+    └── CTS_ADMFCT → EPS1
+└── S_DATASET
+    ├── ACTVT → 33, 34, 6
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /FTI/FLEXORG_CONTENT_COMPARE
+```
+
+### 1634. `/FTI/FO_DELETE`
+
+```
+T-Code: /FTI/FO_DELETE
+└── S_PROGNAM
+    ├── P_ACTION → SUBMIT
+    └── P_PROGNAM → /FTI/DELETE_BUS_ORG_ENTITY
+```
+
+### 1635. `/FTI/FO_MAINTAIN`
+
+```
+T-Code: /FTI/FO_MAINTAIN
+├── S_BTCH_JOB
+    ├── JOBACTION → RELE
+    └── JOBGROUP → (empty — maintain in PFCG)
+├── S_BTCH_NA1
+    ├── BTCUNAME → (empty — maintain in PFCG)
+    └── PROGRAM → /SMB/UPGRADE_ACTIVATE_SOLUTION
+├── S_PROGNAM
+    ├── P_ACTION → SUBMIT
+    └── P_PROGNAM → /FTI/FLEXORG_MAINTAIN
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /SMB/FO_EXT_META, /SMB/SBA1_T_ASTP
+```
+
+### 1636. `/FTI/FO_SIMULATE`
+
+```
+T-Code: /FTI/FO_SIMULATE
+└── S_PROGNAM
+    ├── P_ACTION → SUBMIT
+    └── P_PROGNAM → /FTI/FLEXORG_SIMULATION
+```
+
+### 1637. `/FTI/LOG`
+
+```
+T-Code: /FTI/LOG
+└── S_APPL_LOG
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── ALG_OBJECT → /SMB/
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+```
+
+### 1638. `/FTI/PREP_MR_MT_Q2P`
+
+```
+T-Code: /FTI/PREP_MR_MT_Q2P
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /SMB/SEC_TASK_MR, /SMB/TASK_MR_IT
+```
+
+### 1639. `/FTI/SSCUI_PAYLOAD`
+
+```
+T-Code: /FTI/SSCUI_PAYLOAD
+└── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT, SUBMIT
+    └── P_PROGNAM → /FTI/SSCUI_PAYLOAD_CORRECTION
+```
+
+## `/GC1/` — SAP Global Control Framework
+> T-codes: **5**
+
+
+### 1640. `/GC1/INIT`
+
+```
+T-Code: /GC1/INIT
+└── /GC1/AUTH
+    ├── /GC1/DATCO → X
+    ├── /GC1/OBJNM → *
+    ├── /GC1/OBJTP → *
+    └── ACTVT → 6
+```
+
+### 1641. `/GC1/LOG`
+
+```
+T-Code: /GC1/LOG
+└── /GC1/AUTH
+    ├── /GC1/DATCO → X
+    ├── /GC1/OBJNM → *
+    ├── /GC1/OBJTP → *
+    └── ACTVT → 6
+```
+
+### 1642. `/GC1/OVERVIEW`
+
+```
+T-Code: /GC1/OVERVIEW
+└── /GC1/AUTH
+    ├── /GC1/DATCO → X
+    ├── /GC1/OBJNM → *
+    ├── /GC1/OBJTP → *
+    └── ACTVT → 6
+```
+
+### 1643. `/GC1/SCOPE`
+
+```
+T-Code: /GC1/SCOPE
+└── /GC1/AUTH
+    ├── /GC1/DATCO → X
+    ├── /GC1/OBJNM → *
+    ├── /GC1/OBJTP → *
+    └── ACTVT → 6
+```
+
+### 1644. `/GC1/START`
+
+```
+T-Code: /GC1/START
+└── /GC1/AUTH
+    ├── /GC1/DATCO → X
+    ├── /GC1/OBJNM → (empty — maintain in PFCG)
+    ├── /GC1/OBJTP → (empty — maintain in PFCG)
+    └── ACTVT → 6
+```
+
+## `/GSINS/` — SAP General & Specialty Insurance
+> T-codes: **37**
+
+
+### 1645. `/GSINS/50000033`
+
+```
+T-Code: /GSINS/50000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/NLG_ADF_V, /GSINS/NLG_ADH_V
+```
+
+### 1646. `/GSINS/50000037`
+
+```
+T-Code: /GSINS/50000037
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/NLG_UST_V
+```
+
+### 1647. `/GSINS/50000038`
+
+```
+T-Code: /GSINS/50000038
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/NLG_CLF_V
+```
+
+### 1648. `/GSINS/50000039`
+
+```
+T-Code: /GSINS/50000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/NLG_CTR_V
+```
+
+### 1649. `/GSINS/50000041`
+
+```
+T-Code: /GSINS/50000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/NLG_MST_V
+```
+
+### 1650. `/GSINS/50000042`
+
+```
+T-Code: /GSINS/50000042
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/NLG_NAT_V
+```
+
+### 1651. `/GSINS/50000043`
+
+```
+T-Code: /GSINS/50000043
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/NLG_PRM_V
+```
+
+### 1652. `/GSINS/50000044`
+
+```
+T-Code: /GSINS/50000044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/NLG_SET_V
+```
+
+### 1653. `/GSINS/50000049`
+
+```
+T-Code: /GSINS/50000049
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/INH_B2E_V, /GSINS/INH_B2W_V, /GSINS/INH_BRF_V, /GSINS/INH_CTR_V, /GSINS/INH_EVH_V, /GSINS/INH_EVM_V, /GSINS/INH_MST_V
+```
+
+### 1654. `/GSINS/50000053`
+
+```
+T-Code: /GSINS/50000053
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/INH_CD1_V, /GSINS/INH_CD2_V, /GSINS/INH_CD3_V, /GSINS/INH_CD4_V, /GSINS/INH_DPW_V, /GSINS/INH_PAR_V
+```
+
+### 1655. `/GSINS/77000006`
+
+```
+T-Code: /GSINS/77000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/TRCOMTRAV
+```
+
+### 1656. `/GSINS/77000007`
+
+```
+T-Code: /GSINS/77000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/TRCOMCTRV
+```
+
+### 1657. `/GSINS/BRBPADD`
+
+```
+T-Code: /GSINS/BRBPADD
+└── /GSINS/BR1
+    └── /GSINS/BR1 → 5, 6
+```
+
+### 1658. `/GSINS/CLAIMREP`
+
+```
+T-Code: /GSINS/CLAIMREP
+└── I_ICL_CTYP
+    ├── ACTVT → 3
+    └── ICL_CLTYPE → RUMT
+```
+
+### 1659. `/GSINS/MTPL_SEGMENT3`
+
+```
+T-Code: /GSINS/MTPL_SEGMENT3
+└── I_ICL_CTYP
+    ├── ACTVT → 3
+    └── ICL_CLTYPE → RUMT
+```
+
+### 1660. `/GSINS/NLGBA_DISPLAY`
+
+```
+T-Code: /GSINS/NLGBA_DISPLAY
+└── /GSINS/NL1
+    └── /GSINS/NL1 → 1
+```
+
+### 1661. `/GSINS/NLGBA_EXPORT`
+
+```
+T-Code: /GSINS/NLGBA_EXPORT
+└── /GSINS/NL1
+    └── /GSINS/NL1 → 1, 3
+```
+
+### 1662. `/GSINS/NLGBA_IMPORT`
+
+```
+T-Code: /GSINS/NLGBA_IMPORT
+└── /GSINS/NL1
+    └── /GSINS/NL1 → 1, 2
+```
+
+### 1663. `/GSINS/NLGBA_MASS`
+
+```
+T-Code: /GSINS/NLGBA_MASS
+└── /GSINS/PE2
+    └── /GSINS/PE2 → 1, 2, 3
+```
+
+### 1664. `/GSINS/NLGBA_RANGE`
+
+```
+T-Code: /GSINS/NLGBA_RANGE
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /GSINS/NL
+```
+
+### 1665. `/GSINS/NLGBA_RES`
+
+```
+T-Code: /GSINS/NLGBA_RES
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/GBA
+```
+
+### 1666. `/GSINS/PENS_CPHRR`
+
+```
+T-Code: /GSINS/PENS_CPHRR
+├── B_BUPA_GRP
+    ├── ACTVT → 3
+    └── BEGRU → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → 3
+    └── RLTYP → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+├── B_CCARD
+    └── ACTVT → 3
+├── F_KK_LOCK
+    ├── ACTVT → 3
+    ├── LOTYP_KK → (empty — maintain in PFCG)
+    └── PROID_KK → (empty — maintain in PFCG)
+├── I_INSO_AUT
+    ├── ACTVT → 3
+    ├── AUVAL1 → (empty — maintain in PFCG)
+    ├── AUVAL2 → (empty — maintain in PFCG)
+    └── INSO_AUTYP → (empty — maintain in PFCG)
+└── I_INS_OBJ
+    ├── ACTVT → 3
+    └── INSOTYP → (empty — maintain in PFCG)
+```
+
+### 1667. `/GSINS/PENS_PCDC`
+
+```
+T-Code: /GSINS/PENS_PCDC
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1668. `/GSINS/PENS_PCIM`
+
+```
+T-Code: /GSINS/PENS_PCIM
+└── /GSINS/PE1
+    └── /GSINS/PE1 → 3
+```
+
+### 1669. `/GSINS/PENS_PCIR`
+
+```
+T-Code: /GSINS/PENS_PCIR
+└── /GSINS/PE1
+    └── /GSINS/PE1 → 6
+```
+
+### 1670. `/GSINS/PENS_PCRS`
+
+```
+T-Code: /GSINS/PENS_PCRS
+└── /GSINS/PE1
+    └── /GSINS/PE1 → 4, 5
+```
+
+### 1671. `/GSINS/PENS_PRCI`
+
+```
+T-Code: /GSINS/PENS_PRCI
+└── /GSINS/PE1
+    └── /GSINS/PE1 → 1
+```
+
+### 1672. `/GSINS/PENS_PRCS`
+
+```
+T-Code: /GSINS/PENS_PRCS
+└── /GSINS/PE1
+    └── /GSINS/PE1 → 1
+```
+
+### 1673. `/GSINS/PENS_PRNR`
+
+```
+T-Code: /GSINS/PENS_PRNR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /GSINS/P01
+```
+
+### 1674. `/GSINS/PENS_PSTL`
+
+```
+T-Code: /GSINS/PENS_PSTL
+├── /GSINS/PE1
+    └── /GSINS/PE1 → 7
+├── /GSINS/PE2
+    └── /GSINS/PE2 → 1
+├── B_BUPA_RLT
+    ├── ACTVT → F4
+    └── RLTYP → (empty — maintain in PFCG)
+└── B_BUP_DCPD
+    ├── ACTVT → F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+```
+
+### 1675. `/GSINS/PENS_PSTM`
+
+```
+T-Code: /GSINS/PENS_PSTM
+├── /GSINS/PE1
+    └── /GSINS/PE1 → 2
+├── B_BUPA_GRP
+    ├── ACTVT → F4
+    └── BEGRU → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → F4
+    └── RLTYP → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+├── F_KKKO_BUK
+    ├── ACTVT → 1, 3
+    └── BUKRS → $BUKRS
+├── F_KKMA
+    ├── ACTVT → 1, 16, 2, 3, 32, 48, 50, 52, 6, 69
+    ├── AKTYP_KK → VPEN
+    └── BEGRU → (empty — maintain in PFCG)
+└── S_BTCH_JOB
+    ├── JOBACTION → LIST, PROT, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 1676. `/GSINS/PENS_PSTS`
+
+```
+T-Code: /GSINS/PENS_PSTS
+└── /GSINS/PE1
+    └── /GSINS/PE1 → 2
+```
+
+### 1677. `/GSINS/PSTRUN_RES`
+
+```
+T-Code: /GSINS/PSTRUN_RES
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /GSINS/TFK005_PR
+```
+
+### 1678. `/GSINS/RUAC_AAAI_INS`
+
+```
+T-Code: /GSINS/RUAC_AAAI_INS
+└── F_BKPF_BUK
+    ├── ACTVT → 3
+    └── BUKRS → $BUKRS
+```
+
+### 1679. `/GSINS/RUAC_AC_GR`
+
+```
+T-Code: /GSINS/RUAC_AC_GR
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1680. `/GSINS/TR_TRAMER`
+
+```
+T-Code: /GSINS/TR_TRAMER
+└── /GSINS/TR1
+    └── /GSINS/TR1 → 3
+```
+
+### 1681. `/GSINS/UPR_DISP`
+
+```
+T-Code: /GSINS/UPR_DISP
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+## `/IAM/` — SAP Identity Access Management
+> T-codes: **24**
+
+
+### 1682. `/IAM/35000001`
+
+```
+T-Code: /IAM/35000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_CATMAP, /IAM/V_CAT_SYS, /IAM/V_OBJ_CAT, /IAM/V_TYPE_REF
+```
+
+### 1683. `/IAM/35000008`
+
+```
+T-Code: /IAM/35000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_I_TYPE
+```
+
+### 1684. `/IAM/35000009`
+
+```
+T-Code: /IAM/35000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_CATEGORY_REF
+```
+
+### 1685. `/IAM/35000011`
+
+```
+T-Code: /IAM/35000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_DEPOBA
+```
+
+### 1686. `/IAM/35000015`
+
+```
+T-Code: /IAM/35000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_DOCSCM, /IAM/V_DOCTYPE, /IAM/V_DOC_DOC, /IAM/V_DOC_MIME
+```
+
+### 1687. `/IAM/35000016`
+
+```
+T-Code: /IAM/35000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_QTY_C_USG, /IAM/V_QTY_RL_CD
+```
+
+### 1688. `/IAM/35000017`
+
+```
+T-Code: /IAM/35000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_TP_RC_USG, /IAM/V_TP_RL_CD
+```
+
+### 1689. `/IAM/35000024`
+
+```
+T-Code: /IAM/35000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_I_JUMP
+```
+
+### 1690. `/IAM/35000031`
+
+```
+T-Code: /IAM/35000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_STAT
+```
+
+### 1691. `/IAM/35000032`
+
+```
+T-Code: /IAM/35000032
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_STATA
+```
+
+### 1692. `/IAM/35000033`
+
+```
+T-Code: /IAM/35000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_STPRF, /IAM/V_STPRFA, /IAM/V_STPRFAC, /IAM/V_STPRFD
+```
+
+### 1693. `/IAM/35000036`
+
+```
+T-Code: /IAM/35000036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_SUB_TXT
+```
+
+### 1694. `/IAM/35000037`
+
+```
+T-Code: /IAM/35000037
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_REM_TXT
+```
+
+### 1695. `/IAM/ACTPARTYBRF_QIM`
+
+```
+T-Code: /IAM/ACTPARTYBRF_QIM
+└── FDT_WORKB
+    └── FDT_WB_ACT → 1
+```
+
+### 1696. `/IAM/ACT_NO_RANGE`
+
+```
+T-Code: /IAM/ACT_NO_RANGE
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /IAM/ACT
+```
+
+### 1697. `/IAM/BPUSER`
+
+```
+T-Code: /IAM/BPUSER
+├── B_BUPA_RLT
+    ├── ACTVT → 1, 2, 3
+    └── RLTYP → (empty — maintain in PFCG)
+└── S_USER_GRP
+    ├── ACTVT → 3
+    └── CLASS → SUPER
+```
+
+### 1698. `/IAM/ISSPARTYBRF_QIM`
+
+```
+T-Code: /IAM/ISSPARTYBRF_QIM
+└── FDT_WORKB
+    └── FDT_WB_ACT → 1
+```
+
+### 1699. `/IAM/ISS_NO_RANGE`
+
+```
+T-Code: /IAM/ISS_NO_RANGE
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /IAM/ISSUE
+```
+
+### 1700. `/IAM/NOTIF_SNUM`
+
+```
+T-Code: /IAM/NOTIF_SNUM
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /IAM/NOTIF
+```
+
+### 1701. `/IAM/RESIDENCE_MAINT`
+
+```
+T-Code: /IAM/RESIDENCE_MAINT
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /BOFU/C_ARCHRETP
+```
+
+### 1702. `/IAM/SCHEDULE_REMIND`
+
+```
+T-Code: /IAM/SCHEDULE_REMIND
+├── /IAM/AAUTH
+    ├── /IAM/APPL → (empty — maintain in PFCG)
+    ├── /IAM/AUTHG → (empty — maintain in PFCG)
+    ├── /IAM/A_ACT → 3
+    ├── /IAM/A_ATY → (empty — maintain in PFCG)
+    └── /IAM/I_ITY → (empty — maintain in PFCG)
+├── /IAM/IAUTH
+    ├── /IAM/APPL → (empty — maintain in PFCG)
+    ├── /IAM/AUTHG → (empty — maintain in PFCG)
+    ├── /IAM/I_ACT → 3
+    └── /IAM/I_ITY → (empty — maintain in PFCG)
+├── /IAM/OREF
+    ├── /IAM/AFLD1 → (empty — maintain in PFCG)
+    ├── /IAM/AFLD2 → (empty — maintain in PFCG)
+    ├── /IAM/AFLD3 → (empty — maintain in PFCG)
+    ├── /IAM/APPL → (empty — maintain in PFCG)
+    ├── /IAM/OBJTY → (empty — maintain in PFCG)
+    ├── /IAM/SRCSY → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /IAM/REMIN
+    ├── /IAM/APPL → (empty — maintain in PFCG)
+    ├── /IAM/PRIVA → (empty — maintain in PFCG)
+    └── ACTVT → 2, 3
+├── /IAM/TXTTY
+    ├── /IAM/APPL → (empty — maintain in PFCG)
+    ├── /IAM/I_ITY → (empty — maintain in PFCG)
+    ├── /IAM/TXTTY → (empty — maintain in PFCG)
+    └── ACTVT → 3
+└── S_BTCH_JOB
+    ├── JOBACTION → LIST, PLAN, PROT, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 1703. `/IAM/VC_APPL_DEPEND`
+
+```
+T-Code: /IAM/VC_APPL_DEPEND
+└── S_TABU_RFC
+    └── ACTVT → 1, 2, 3
+```
+
+### 1704. `/IAM/VC_REDEF_QIM`
+
+```
+T-Code: /IAM/VC_REDEF_QIM
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_OBJMAP, /IAM/V_REDEFOTR, /IAM/V_REDEF_QIM
+```
+
+### 1705. `/IAM/VC_TYPE`
+
+```
+T-Code: /IAM/VC_TYPE
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_CATMAP, /IAM/V_CAT_SYS, /IAM/V_OBJ_CAT, /IAM/V_TYPE_REF
+```
+
+## `/IBPP/` — SAP Insurance — Policy Processing
+> T-codes: **9**
+
+
+### 1706. `/IBPP/R3_INIT_ORD_TR`
+
+```
+T-Code: /IBPP/R3_INIT_ORD_TR
+└── C_AFKO_AWA
+    ├── ACTVT → 3
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── AUTYP → (empty — maintain in PFCG)
+    └── WERKS → $WERKS
+```
+
+### 1707. `/IBPP/R3_ORDDEL_LOG`
+
+```
+T-Code: /IBPP/R3_ORDDEL_LOG
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /IBPP/R3_LOG
+    └── ALG_SUBOBJ → /IBPP/PORDLST_DEL
+```
+
+### 1708. `/IBPP/R3_ORDTRAN_LOG`
+
+```
+T-Code: /IBPP/R3_ORDTRAN_LOG
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /IBPP/R3_LOG
+    └── ALG_SUBOBJ → /IBPP/PREFCALC_ORDER
+```
+
+### 1709. `/IBPP/R3_ORD_TRANSF`
+
+```
+T-Code: /IBPP/R3_ORD_TRANSF
+├── C_AFKO_AWA
+    ├── ACTVT → 3
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── AUTYP → (empty — maintain in PFCG)
+    └── WERKS → $WERKS
+├── C_KLAH_BKL
+    ├── ACTVT → 3
+    └── BGRKL → (empty — maintain in PFCG)
+├── C_STUE_BER
+    ├── ACTVT → 3
+    ├── BEGRU → (empty — maintain in PFCG)
+    ├── STLAN → (empty — maintain in PFCG)
+    └── STLTY → (empty — maintain in PFCG)
+├── C_STUE_WRK
+    ├── ACTVT → 3
+    └── CSWRK → $WERKS
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /IBPP/R3_LOG
+    └── ALG_SUBOBJ → /IBPP/PREFCALC_ORDER
+```
+
+### 1710. `/IBPP/R3_PORDLST_DEL`
+
+```
+T-Code: /IBPP/R3_PORDLST_DEL
+└── S_BTCH_ADM
+    └── BTCADMIN → (empty — maintain in PFCG)
+```
+
+### 1711. `/IBPP/R3_PREDEL_LOG`
+
+```
+T-Code: /IBPP/R3_PREDEL_LOG
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /IBPP/R3_LOG
+    └── ALG_SUBOBJ → /IBPP/VBRPPRE_DEL
+```
+
+### 1712. `/IBPP/R3_SIM_ORD_TR`
+
+```
+T-Code: /IBPP/R3_SIM_ORD_TR
+├── C_AFKO_AWA
+    ├── ACTVT → 3
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── AUTYP → (empty — maintain in PFCG)
+    └── WERKS → $WERKS
+├── C_KLAH_BKL
+    ├── ACTVT → 3
+    └── BGRKL → (empty — maintain in PFCG)
+├── C_STUE_BER
+    ├── ACTVT → 3
+    ├── BEGRU → (empty — maintain in PFCG)
+    ├── STLAN → (empty — maintain in PFCG)
+    └── STLTY → (empty — maintain in PFCG)
+└── C_STUE_WRK
+    ├── ACTVT → 3
+    └── CSWRK → $WERKS
+```
+
+### 1713. `/IBPP/R3_UPD_REL_ORD`
+
+```
+T-Code: /IBPP/R3_UPD_REL_ORD
+└── S_BTCH_ADM
+    └── BTCADMIN → (empty — maintain in PFCG)
+```
+
+### 1714. `/IBPP/R3_VBRPPRE_DEL`
+
+```
+T-Code: /IBPP/R3_VBRPPRE_DEL
+└── S_BTCH_ADM
+    └── BTCADMIN → (empty — maintain in PFCG)
+```
+
+## `/IBS/` — SAP Insurance — Basis
+> T-codes: **169**
+
+
+### 1715. `/IBS/10000406`
+
+```
+T-Code: /IBS/10000406
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_PRIOTYP
+```
+
+### 1716. `/IBS/10000407`
+
+```
+T-Code: /IBS/10000407
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_RANKTYP
+```
+
+### 1717. `/IBS/10000408`
+
+```
+T-Code: /IBS/10000408
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_BALANCE
+```
+
+### 1718. `/IBS/10000409`
+
+```
+T-Code: /IBS/10000409
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_CONFST
+```
+
+### 1719. `/IBS/10000615`
+
+```
+T-Code: /IBS/10000615
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/VRB_GLOBAL
+```
+
+### 1720. `/IBS/10000621`
+
+```
+T-Code: /IBS/10000621
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ARBBEST
+```
+
+### 1721. `/IBS/10000622`
+
+```
+T-Code: /IBS/10000622
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_GATE
+```
+
+### 1722. `/IBS/35000023`
+
+```
+T-Code: /IBS/35000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_PROCA_P, /IBS/CRB_ZPROCCA
+```
+
+### 1723. `/IBS/35000054`
+
+```
+T-Code: /IBS/35000054
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_IASACC
+```
+
+### 1724. `/IBS/35000076`
+
+```
+T-Code: /IBS/35000076
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_CF_ZUL
+```
+
+### 1725. `/IBS/35000088`
+
+```
+T-Code: /IBS/35000088
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_RS_PROP
+```
+
+### 1726. `/IBS/35000090`
+
+```
+T-Code: /IBS/35000090
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_FPERIOD
+```
+
+### 1727. `/IBS/35000124`
+
+```
+T-Code: /IBS/35000124
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_DUEPO
+```
+
+### 1728. `/IBS/35000129`
+
+```
+T-Code: /IBS/35000129
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZGPDAVS
+```
+
+### 1729. `/IBS/62000208`
+
+```
+T-Code: /IBS/62000208
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ORGEIN
+```
+
+### 1730. `/IBS/62000209`
+
+```
+T-Code: /IBS/62000209
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_BENORD
+```
+
+### 1731. `/IBS/62000518`
+
+```
+T-Code: /IBS/62000518
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZVSK
+```
+
+### 1732. `/IBS/62000753`
+
+```
+T-Code: /IBS/62000753
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_PERIO
+```
+
+### 1733. `/IBS/68000027`
+
+```
+T-Code: /IBS/68000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_APDER
+```
+
+### 1734. `/IBS/68000068`
+
+```
+T-Code: /IBS/68000068
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_FILE_SP
+```
+
+### 1735. `/IBS/68000069`
+
+```
+T-Code: /IBS/68000069
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_PARS_CV
+```
+
+### 1736. `/IBS/68000070`
+
+```
+T-Code: /IBS/68000070
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_CONVF
+```
+
+### 1737. `/IBS/68000072`
+
+```
+T-Code: /IBS/68000072
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_SCE_PRC
+```
+
+### 1738. `/IBS/68000073`
+
+```
+T-Code: /IBS/68000073
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_SCE_DEF
+```
+
+### 1739. `/IBS/68000074`
+
+```
+T-Code: /IBS/68000074
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_SCE_SET
+```
+
+### 1740. `/IBS/68000075`
+
+```
+T-Code: /IBS/68000075
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_SCE_EXC
+```
+
+### 1741. `/IBS/68000155`
+
+```
+T-Code: /IBS/68000155
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_DEF_DEL
+```
+
+### 1742. `/IBS/68000208`
+
+```
+T-Code: /IBS/68000208
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_MAP_IPX
+```
+
+### 1743. `/IBS/68000249`
+
+```
+T-Code: /IBS/68000249
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_IFDP
+```
+
+### 1744. `/IBS/68000291`
+
+```
+T-Code: /IBS/68000291
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_SHOWIPX
+```
+
+### 1745. `/IBS/68000323`
+
+```
+T-Code: /IBS/68000323
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZIK_BW
+```
+
+### 1746. `/IBS/68000373`
+
+```
+T-Code: /IBS/68000373
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_PAR_ERR
+```
+
+### 1747. `/IBS/68000437`
+
+```
+T-Code: /IBS/68000437
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZIMPCAT
+```
+
+### 1748. `/IBS/68000438`
+
+```
+T-Code: /IBS/68000438
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_IMPCAT
+```
+
+### 1749. `/IBS/68000439`
+
+```
+T-Code: /IBS/68000439
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZRKIK
+```
+
+### 1750. `/IBS/68000451`
+
+```
+T-Code: /IBS/68000451
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ARCHIVE
+```
+
+### 1751. `/IBS/68000452`
+
+```
+T-Code: /IBS/68000452
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ARCHKTO
+```
+
+### 1752. `/IBS/72000026`
+
+```
+T-Code: /IBS/72000026
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_TREVENT
+```
+
+### 1753. `/IBS/72000027`
+
+```
+T-Code: /IBS/72000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_M_DISC
+```
+
+### 1754. `/IBS/72000029`
+
+```
+T-Code: /IBS/72000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_BVC_P
+```
+
+### 1755. `/IBS/72000030`
+
+```
+T-Code: /IBS/72000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_CONBVC
+```
+
+### 1756. `/IBS/72000032`
+
+```
+T-Code: /IBS/72000032
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_FCON
+```
+
+### 1757. `/IBS/72000033`
+
+```
+T-Code: /IBS/72000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ECFGAAP
+```
+
+### 1758. `/IBS/72000034`
+
+```
+T-Code: /IBS/72000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_FUPDATE
+```
+
+### 1759. `/IBS/72000035`
+
+```
+T-Code: /IBS/72000035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_PROCE_P, /IBS/CRB_ZPROC_E
+```
+
+### 1760. `/IBS/72000038`
+
+```
+T-Code: /IBS/72000038
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_CTRLMAN
+```
+
+### 1761. `/IBS/72000042`
+
+```
+T-Code: /IBS/72000042
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZBWARVB
+```
+
+### 1762. `/IBS/72000043`
+
+```
+T-Code: /IBS/72000043
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZSICRVB
+```
+
+### 1763. `/IBS/72000044`
+
+```
+T-Code: /IBS/72000044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_BCRPBAL
+```
+
+### 1764. `/IBS/72000065`
+
+```
+T-Code: /IBS/72000065
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/VRB_ECMOD
+```
+
+### 1765. `/IBS/72000068`
+
+```
+T-Code: /IBS/72000068
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/VRB_ECKON_P, /IBS/VRB_ECLIB_P
+```
+
+### 1766. `/IBS/72000070`
+
+```
+T-Code: /IBS/72000070
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_BWTXT_P
+```
+
+### 1767. `/IBS/72000084`
+
+```
+T-Code: /IBS/72000084
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ECFGLB
+```
+
+### 1768. `/IBS/72000085`
+
+```
+T-Code: /IBS/72000085
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ECLCTRL
+```
+
+### 1769. `/IBS/72000099`
+
+```
+T-Code: /IBS/72000099
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ECMPROD
+```
+
+### 1770. `/IBS/72000140`
+
+```
+T-Code: /IBS/72000140
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ISEVENT
+```
+
+### 1771. `/IBS/72000144`
+
+```
+T-Code: /IBS/72000144
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_RELSTAT
+```
+
+### 1772. `/IBS/72000145`
+
+```
+T-Code: /IBS/72000145
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_RSTACHG
+```
+
+### 1773. `/IBS/72000146`
+
+```
+T-Code: /IBS/72000146
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZAMNT
+```
+
+### 1774. `/IBS/72000147`
+
+```
+T-Code: /IBS/72000147
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_INDVI_P
+```
+
+### 1775. `/IBS/72000234`
+
+```
+T-Code: /IBS/72000234
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_BSI
+```
+
+### 1776. `/IBS/72000237`
+
+```
+T-Code: /IBS/72000237
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ECF_RIR
+```
+
+### 1777. `/IBS/72000244`
+
+```
+T-Code: /IBS/72000244
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_LOGNAME
+```
+
+### 1778. `/IBS/72000334`
+
+```
+T-Code: /IBS/72000334
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_PARS_EX
+```
+
+### 1779. `/IBS/72000433`
+
+```
+T-Code: /IBS/72000433
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_IC_TRAN
+```
+
+### 1780. `/IBS/72000434`
+
+```
+T-Code: /IBS/72000434
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_BWART
+```
+
+### 1781. `/IBS/72000435`
+
+```
+T-Code: /IBS/72000435
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_BUSOPS
+```
+
+### 1782. `/IBS/72000436`
+
+```
+T-Code: /IBS/72000436
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZPRV_BW
+```
+
+### 1783. `/IBS/72000437`
+
+```
+T-Code: /IBS/72000437
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/VRB_FIFI
+```
+
+### 1784. `/IBS/72000493`
+
+```
+T-Code: /IBS/72000493
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ACC_UPD
+```
+
+### 1785. `/IBS/76000014`
+
+```
+T-Code: /IBS/76000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_FVARISK
+```
+
+### 1786. `/IBS/76000015`
+
+```
+T-Code: /IBS/76000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_RECLAS
+```
+
+### 1787. `/IBS/95000002`
+
+```
+T-Code: /IBS/95000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_IASBEWE
+```
+
+### 1788. `/IBS/95000006`
+
+```
+T-Code: /IBS/95000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_CFTYP_P
+```
+
+### 1789. `/IBS/95000012`
+
+```
+T-Code: /IBS/95000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_COLTY_P
+```
+
+### 1790. `/IBS/95000015`
+
+```
+T-Code: /IBS/95000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_RBD_P, /IBS/CRB_ZAR
+```
+
+### 1791. `/IBS/95000016`
+
+```
+T-Code: /IBS/95000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_BEWME_P, /IBS/CRB_ZBR
+```
+
+### 1792. `/IBS/95000018`
+
+```
+T-Code: /IBS/95000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/VRB_GLOBAL
+```
+
+### 1793. `/IBS/95000019`
+
+```
+T-Code: /IBS/95000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_RKLUE
+```
+
+### 1794. `/IBS/95000020`
+
+```
+T-Code: /IBS/95000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_MODID_P
+```
+
+### 1795. `/IBS/95000021`
+
+```
+T-Code: /IBS/95000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZMR
+```
+
+### 1796. `/IBS/95000022`
+
+```
+T-Code: /IBS/95000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZRLIB
+```
+
+### 1797. `/IBS/95000023`
+
+```
+T-Code: /IBS/95000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_KTART_P
+```
+
+### 1798. `/IBS/95000024`
+
+```
+T-Code: /IBS/95000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_PRODA_P, /IBS/CRB_ZPVRP
+```
+
+### 1799. `/IBS/95000030`
+
+```
+T-Code: /IBS/95000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_BA_NRKR
+```
+
+### 1800. `/IBS/95000031`
+
+```
+T-Code: /IBS/95000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_RBDSB
+```
+
+### 1801. `/IBS/95000032`
+
+```
+T-Code: /IBS/95000032
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ORGEIN
+```
+
+### 1802. `/IBS/95000033`
+
+```
+T-Code: /IBS/95000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_BENORD
+```
+
+### 1803. `/IBS/95000034`
+
+```
+T-Code: /IBS/95000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_RFCXTRA
+```
+
+### 1804. `/IBS/95000035`
+
+```
+T-Code: /IBS/95000035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_GATE
+```
+
+### 1805. `/IBS/95000036`
+
+```
+T-Code: /IBS/95000036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_PRCB
+```
+
+### 1806. `/IBS/95000037`
+
+```
+T-Code: /IBS/95000037
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_CSG
+```
+
+### 1807. `/IBS/95000038`
+
+```
+T-Code: /IBS/95000038
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZGPAP
+```
+
+### 1808. `/IBS/95000039`
+
+```
+T-Code: /IBS/95000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_KTOFI, /IBS/CRB_RBDBW_P
+```
+
+### 1809. `/IBS/95000040`
+
+```
+T-Code: /IBS/95000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZRBWA
+```
+
+### 1810. `/IBS/95000041`
+
+```
+T-Code: /IBS/95000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ZKRBW
+```
+
+### 1811. `/IBS/95000042`
+
+```
+T-Code: /IBS/95000042
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_CONFST
+```
+
+### 1812. `/IBS/95000043`
+
+```
+T-Code: /IBS/95000043
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_RANKTYP
+```
+
+### 1813. `/IBS/95000044`
+
+```
+T-Code: /IBS/95000044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_ARBBEST
+```
+
+### 1814. `/IBS/95000045`
+
+```
+T-Code: /IBS/95000045
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_PRIOTYP
+```
+
+### 1815. `/IBS/95000046`
+
+```
+T-Code: /IBS/95000046
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_BALANCE
+```
+
+### 1816. `/IBS/95000047`
+
+```
+T-Code: /IBS/95000047
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_RECLAS
+```
+
+### 1817. `/IBS/95000048`
+
+```
+T-Code: /IBS/95000048
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_RKLS_P, /IBS/CRB_ZVSK
+```
+
+### 1818. `/IBS/95000049`
+
+```
+T-Code: /IBS/95000049
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_FVARISK
+```
+
+### 1819. `/IBS/95000050`
+
+```
+T-Code: /IBS/95000050
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBS/CRB_PERIO
+```
+
+### 1820. `/IBS/RB_ACC_CREATION`
+
+```
+T-Code: /IBS/RB_ACC_CREATION
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1821. `/IBS/RB_ASSIGN_CALL`
+
+```
+T-Code: /IBS/RB_ASSIGN_CALL
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1822. `/IBS/RB_ASSIGN_CO`
+
+```
+T-Code: /IBS/RB_ASSIGN_CO
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1823. `/IBS/RB_DEVL`
+
+```
+T-Code: /IBS/RB_DEVL
+├── RBD_EDIT
+    ├── /IBS/ORGEI → (empty — maintain in PFCG)
+    ├── /IBS/RBDID → (empty — maintain in PFCG)
+    └── ACTVT → 3
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1824. `/IBS/RB_DEVL_SINGLE`
+
+```
+T-Code: /IBS/RB_DEVL_SINGLE
+├── RBD_EDIT
+    ├── /IBS/ORGEI → (empty — maintain in PFCG)
+    ├── /IBS/RBDID → (empty — maintain in PFCG)
+    └── ACTVT → 3
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1825. `/IBS/RB_ECF_A_CREATE`
+
+```
+T-Code: /IBS/RB_ECF_A_CREATE
+├── RBD_EDIT
+    ├── /IBS/ORGEI → (empty — maintain in PFCG)
+    ├── /IBS/RBDID → (empty — maintain in PFCG)
+    └── ACTVT → 3
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1826. `/IBS/RB_ECF_CLEAR`
+
+```
+T-Code: /IBS/RB_ECF_CLEAR
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1827. `/IBS/RB_ECF_DERECOGN`
+
+```
+T-Code: /IBS/RB_ECF_DERECOGN
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1828. `/IBS/RB_ECF_FILL`
+
+```
+T-Code: /IBS/RB_ECF_FILL
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1829. `/IBS/RB_ECF_FILL_MIG`
+
+```
+T-Code: /IBS/RB_ECF_FILL_MIG
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1830. `/IBS/RB_ECF_INIT_PPF`
+
+```
+T-Code: /IBS/RB_ECF_INIT_PPF
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1831. `/IBS/RB_ECF_RECLAS`
+
+```
+T-Code: /IBS/RB_ECF_RECLAS
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1832. `/IBS/RB_ECF_UNW_PPF`
+
+```
+T-Code: /IBS/RB_ECF_UNW_PPF
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1833. `/IBS/RB_ECF_UNW_UMGL`
+
+```
+T-Code: /IBS/RB_ECF_UNW_UMGL
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1834. `/IBS/RB_ECF_UPDATE`
+
+```
+T-Code: /IBS/RB_ECF_UPDATE
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1835. `/IBS/RB_ECF_UPD_INIT`
+
+```
+T-Code: /IBS/RB_ECF_UPD_INIT
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1836. `/IBS/RB_ECF_UPD_PPF`
+
+```
+T-Code: /IBS/RB_ECF_UPD_PPF
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1837. `/IBS/RB_ECF_UPD_UNW`
+
+```
+T-Code: /IBS/RB_ECF_UPD_UNW
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1838. `/IBS/RB_EWB_UPD`
+
+```
+T-Code: /IBS/RB_EWB_UPD
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1839. `/IBS/RB_FILL_GATE`
+
+```
+T-Code: /IBS/RB_FILL_GATE
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1840. `/IBS/RB_GATE_CLEAR`
+
+```
+T-Code: /IBS/RB_GATE_CLEAR
+└── RBD_EDIT
+    ├── /IBS/ORGEI → (empty — maintain in PFCG)
+    ├── /IBS/RBDID → (empty — maintain in PFCG)
+    └── ACTVT → 2
+```
+
+### 1841. `/IBS/RB_GATE_MODIFY`
+
+```
+T-Code: /IBS/RB_GATE_MODIFY
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1842. `/IBS/RB_HINT`
+
+```
+T-Code: /IBS/RB_HINT
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1843. `/IBS/RB_HINTM`
+
+```
+T-Code: /IBS/RB_HINTM
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1844. `/IBS/RB_IAS_FILL`
+
+```
+T-Code: /IBS/RB_IAS_FILL
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1845. `/IBS/RB_IAS_FILL_MIG`
+
+```
+T-Code: /IBS/RB_IAS_FILL_MIG
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1846. `/IBS/RB_IAS_POST`
+
+```
+T-Code: /IBS/RB_IAS_POST
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1847. `/IBS/RB_IAS_POST_PPF`
+
+```
+T-Code: /IBS/RB_IAS_POST_PPF
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1848. `/IBS/RB_IAS_POST_UNW`
+
+```
+T-Code: /IBS/RB_IAS_POST_UNW
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1849. `/IBS/RB_IAS_UPD`
+
+```
+T-Code: /IBS/RB_IAS_UPD
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1850. `/IBS/RB_IAS_UPD_INIT`
+
+```
+T-Code: /IBS/RB_IAS_UPD_INIT
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1851. `/IBS/RB_IAS_UPD_KTO`
+
+```
+T-Code: /IBS/RB_IAS_UPD_KTO
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1852. `/IBS/RB_IAS_UPD_PPF`
+
+```
+T-Code: /IBS/RB_IAS_UPD_PPF
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1853. `/IBS/RB_IAS_UPD_UNW`
+
+```
+T-Code: /IBS/RB_IAS_UPD_UNW
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1854. `/IBS/RB_KTO_DIS`
+
+```
+T-Code: /IBS/RB_KTO_DIS
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+├── RBD_ARCH
+    ├── /IBS/RBDID → (empty — maintain in PFCG)
+    └── ACTVT → 3
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1855. `/IBS/RB_KTO_INS`
+
+```
+T-Code: /IBS/RB_KTO_INS
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1856. `/IBS/RB_KTO_REACT`
+
+```
+T-Code: /IBS/RB_KTO_REACT
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1857. `/IBS/RB_KTO_UPD`
+
+```
+T-Code: /IBS/RB_KTO_UPD
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+├── RBD_ARCH
+    ├── /IBS/RBDID → (empty — maintain in PFCG)
+    └── ACTVT → 3
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1858. `/IBS/RB_LOG_POST`
+
+```
+T-Code: /IBS/RB_LOG_POST
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1859. `/IBS/RB_LOG_RUN`
+
+```
+T-Code: /IBS/RB_LOG_RUN
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1860. `/IBS/RB_MANCON`
+
+```
+T-Code: /IBS/RB_MANCON
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1861. `/IBS/RB_MANCON_DEL`
+
+```
+T-Code: /IBS/RB_MANCON_DEL
+└── RBD_EDIT
+    ├── /IBS/ORGEI → (empty — maintain in PFCG)
+    ├── /IBS/RBDID → (empty — maintain in PFCG)
+    └── ACTVT → 2
+```
+
+### 1862. `/IBS/RB_MAN_PLAN_CHG`
+
+```
+T-Code: /IBS/RB_MAN_PLAN_CHG
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1863. `/IBS/RB_PEWB_RFR`
+
+```
+T-Code: /IBS/RB_PEWB_RFR
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1864. `/IBS/RB_PEWB_RST`
+
+```
+T-Code: /IBS/RB_PEWB_RST
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1865. `/IBS/RB_PEWB_RSTM`
+
+```
+T-Code: /IBS/RB_PEWB_RSTM
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1866. `/IBS/RB_PROPRES_ECF`
+
+```
+T-Code: /IBS/RB_PROPRES_ECF
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1867. `/IBS/RB_PROPRES_HGB`
+
+```
+T-Code: /IBS/RB_PROPRES_HGB
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1868. `/IBS/RB_PROPRES_IAS`
+
+```
+T-Code: /IBS/RB_PROPRES_IAS
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1869. `/IBS/RB_PWV_KK`
+
+```
+T-Code: /IBS/RB_PWV_KK
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1870. `/IBS/RB_PWV_UPD`
+
+```
+T-Code: /IBS/RB_PWV_UPD
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1871. `/IBS/RB_PWV_UPD_PPF`
+
+```
+T-Code: /IBS/RB_PWV_UPD_PPF
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1872. `/IBS/RB_RBDGATE_FILL`
+
+```
+T-Code: /IBS/RB_RBDGATE_FILL
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1873. `/IBS/RB_RBDGATE_FILM`
+
+```
+T-Code: /IBS/RB_RBDGATE_FILM
+└── RBD_EDIT
+    ├── /IBS/ORGEI → (empty — maintain in PFCG)
+    ├── /IBS/RBDID → (empty — maintain in PFCG)
+    └── ACTVT → 2
+```
+
+### 1874. `/IBS/RB_REALLOC`
+
+```
+T-Code: /IBS/RB_REALLOC
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1875. `/IBS/RB_RECLAS`
+
+```
+T-Code: /IBS/RB_RECLAS
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1876. `/IBS/RB_REF`
+
+```
+T-Code: /IBS/RB_REF
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1877. `/IBS/RB_REPORTING`
+
+```
+T-Code: /IBS/RB_REPORTING
+├── B_BUPA_GRP
+    ├── ACTVT → 3
+    └── BEGRU → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → 3
+    └── RLTYP → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → 3, F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── RBD_EDIT
+    ├── /IBS/ORGEI → (empty — maintain in PFCG)
+    ├── /IBS/RBDID → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 1878. `/IBS/RB_REPORT_ECF`
+
+```
+T-Code: /IBS/RB_REPORT_ECF
+└── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+```
+
+### 1879. `/IBS/RB_REPORT_IPX`
+
+```
+T-Code: /IBS/RB_REPORT_IPX
+└── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+```
+
+### 1880. `/IBS/RB_SHEETSUMMARY`
+
+```
+T-Code: /IBS/RB_SHEETSUMMARY
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1881. `/IBS/RB_VS_SALDO`
+
+```
+T-Code: /IBS/RB_VS_SALDO
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1882. `/IBS/RB_WORKLIST`
+
+```
+T-Code: /IBS/RB_WORKLIST
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1883. `/IBS/RB_WORKLIST_SEL`
+
+```
+T-Code: /IBS/RB_WORKLIST_SEL
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+## `/IBX/` — SAP Insurance — Extended
+> T-codes: **96**
+
+
+### 1884. `/IBX/68000028`
+
+```
+T-Code: /IBX/68000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_SCENARIO
+```
+
+### 1885. `/IBX/68000030`
+
+```
+T-Code: /IBX/68000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_ASGN_CLS
+```
+
+### 1886. `/IBX/68000066`
+
+```
+T-Code: /IBX/68000066
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_MANAS_RE
+```
+
+### 1887. `/IBX/68000131`
+
+```
+T-Code: /IBX/68000131
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_ALLDCALC
+```
+
+### 1888. `/IBX/68000165`
+
+```
+T-Code: /IBX/68000165
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_ADJ_EFF
+```
+
+### 1889. `/IBX/68000168`
+
+```
+T-Code: /IBX/68000168
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CON_DFLT
+```
+
+### 1890. `/IBX/68000169`
+
+```
+T-Code: /IBX/68000169
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CON_EAD
+```
+
+### 1891. `/IBX/68000172`
+
+```
+T-Code: /IBX/68000172
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PROF_TR
+```
+
+### 1892. `/IBX/68000201`
+
+```
+T-Code: /IBX/68000201
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_RELEASE
+```
+
+### 1893. `/IBX/68000202`
+
+```
+T-Code: /IBX/68000202
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_REL_DEF
+```
+
+### 1894. `/IBX/68000203`
+
+```
+T-Code: /IBX/68000203
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_REL_PROC
+```
+
+### 1895. `/IBX/68000204`
+
+```
+T-Code: /IBX/68000204
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_REL_STEPS
+```
+
+### 1896. `/IBX/68000209`
+
+```
+T-Code: /IBX/68000209
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_ARCHIVE
+```
+
+### 1897. `/IBX/68000220`
+
+```
+T-Code: /IBX/68000220
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_TRFIBWART
+```
+
+### 1898. `/IBX/68000222`
+
+```
+T-Code: /IBX/68000222
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_UNWIND
+```
+
+### 1899. `/IBX/68000225`
+
+```
+T-Code: /IBX/68000225
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PP_GRP_C
+```
+
+### 1900. `/IBX/68000232`
+
+```
+T-Code: /IBX/68000232
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_RECPERIOD
+```
+
+### 1901. `/IBX/68000320`
+
+```
+T-Code: /IBX/68000320
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_EFFECT
+```
+
+### 1902. `/IBX/68000321`
+
+```
+T-Code: /IBX/68000321
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_EFFORD
+```
+
+### 1903. `/IBX/68000322`
+
+```
+T-Code: /IBX/68000322
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_EFF_CLA
+```
+
+### 1904. `/IBX/68000337`
+
+```
+T-Code: /IBX/68000337
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_BA_SETTLE
+```
+
+### 1905. `/IBX/68000338`
+
+```
+T-Code: /IBX/68000338
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_UW_SETTLE
+```
+
+### 1906. `/IBX/68000339`
+
+```
+T-Code: /IBX/68000339
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_US_EAD_RE
+```
+
+### 1907. `/IBX/68000483`
+
+```
+T-Code: /IBX/68000483
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_EXCLELMSG
+```
+
+### 1908. `/IBX/68000484`
+
+```
+T-Code: /IBX/68000484
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_UNW_IC
+```
+
+### 1909. `/IBX/68000494`
+
+```
+T-Code: /IBX/68000494
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_REC_ACT
+```
+
+### 1910. `/IBX/72000295`
+
+```
+T-Code: /IBX/72000295
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_RUN_TYPE
+```
+
+### 1911. `/IBX/72000296`
+
+```
+T-Code: /IBX/72000296
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PP_GRP_AS
+```
+
+### 1912. `/IBX/72000297`
+
+```
+T-Code: /IBX/72000297
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CON_AS
+```
+
+### 1913. `/IBX/72000299`
+
+```
+T-Code: /IBX/72000299
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/V_MSG_OVERL
+```
+
+### 1914. `/IBX/72000300`
+
+```
+T-Code: /IBX/72000300
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CFG_PPLOG
+```
+
+### 1915. `/IBX/72000301`
+
+```
+T-Code: /IBX/72000301
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PROT
+```
+
+### 1916. `/IBX/72000302`
+
+```
+T-Code: /IBX/72000302
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_MSG_LOCK
+```
+
+### 1917. `/IBX/72000303`
+
+```
+T-Code: /IBX/72000303
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_RUN_INFO
+```
+
+### 1918. `/IBX/72000304`
+
+```
+T-Code: /IBX/72000304
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PROT_CAT
+```
+
+### 1919. `/IBX/72000305`
+
+```
+T-Code: /IBX/72000305
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CHAR_CAT
+```
+
+### 1920. `/IBX/72000306`
+
+```
+T-Code: /IBX/72000306
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → BALOBJ, V_BALSUB
+```
+
+### 1921. `/IBX/72000307`
+
+```
+T-Code: /IBX/72000307
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_RO_AREA
+```
+
+### 1922. `/IBX/72000308`
+
+```
+T-Code: /IBX/72000308
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_RO_AREA_T
+```
+
+### 1923. `/IBX/72000309`
+
+```
+T-Code: /IBX/72000309
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → TBANK_PP_APPSAP, V_TBANK_PP_APPL, V_TBANK_PP_APPM, V_TBANK_PP_IFDEF, V_TBANK_PP_IF_CH, V_TBANK_PP_IF_EX, V_TBANK_PP_IF_IM, V_TBANK_PP_IF_X, V_TBANK_PP_LCKDF, V_TBANK_PP_LOCKR, V_TBANK_PP_OBJ
+```
+
+### 1924. `/IBX/72000311`
+
+```
+T-Code: /IBX/72000311
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_RO_CAT
+```
+
+### 1925. `/IBX/72000312`
+
+```
+T-Code: /IBX/72000312
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PP_GRP
+```
+
+### 1926. `/IBX/72000313`
+
+```
+T-Code: /IBX/72000313
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PP_STEPS
+```
+
+### 1927. `/IBX/72000314`
+
+```
+T-Code: /IBX/72000314
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PP_GRPASS
+```
+
+### 1928. `/IBX/72000316`
+
+```
+T-Code: /IBX/72000316
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PH_CONTXT
+```
+
+### 1929. `/IBX/72000317`
+
+```
+T-Code: /IBX/72000317
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_RAPI_CAT
+```
+
+### 1930. `/IBX/72000318`
+
+```
+T-Code: /IBX/72000318
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_LOGF_CAT
+```
+
+### 1931. `/IBX/72000319`
+
+```
+T-Code: /IBX/72000319
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_LOGFLD_AS
+```
+
+### 1932. `/IBX/72000320`
+
+```
+T-Code: /IBX/72000320
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CON_CAT
+```
+
+### 1933. `/IBX/72000321`
+
+```
+T-Code: /IBX/72000321
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CON_RAPI
+```
+
+### 1934. `/IBX/72000322`
+
+```
+T-Code: /IBX/72000322
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_SYSSELPAR
+```
+
+### 1935. `/IBX/72000323`
+
+```
+T-Code: /IBX/72000323
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/V_FILE_CAT
+```
+
+### 1936. `/IBX/72000325`
+
+```
+T-Code: /IBX/72000325
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_AGGR_CMOD
+```
+
+### 1937. `/IBX/72000326`
+
+```
+T-Code: /IBX/72000326
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/V_PPGRP2SET_SORT, /IBX/V_SORT_CHAR, /IBX/V_SORT_ID
+```
+
+### 1938. `/IBX/72000327`
+
+```
+T-Code: /IBX/72000327
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_GUIFUNC
+```
+
+### 1939. `/IBX/72000328`
+
+```
+T-Code: /IBX/72000328
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_DYN_RO
+```
+
+### 1940. `/IBX/72000330`
+
+```
+T-Code: /IBX/72000330
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CON_FILE
+```
+
+### 1941. `/IBX/72000331`
+
+```
+T-Code: /IBX/72000331
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/V_AGGR_BKEY, /IBX/V_AGGR_GC_C, /IBX/V_AGGR_GC_V, /IBX/V_AGGR_GRAN, /IBX/V_AGGR_ID, /IBX/V_AGGR_KEYF, /IBX/V_AGGR_KF_P, /IBX/V_AGGR_LEXG, /IBX/V_AGGR_LX_P, /IBX/V_PPGRP2SET_AGGREGATION
+```
+
+### 1942. `/IBX/72000335`
+
+```
+T-Code: /IBX/72000335
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CON_AS_RT
+```
+
+### 1943. `/IBX/72000336`
+
+```
+T-Code: /IBX/72000336
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CON_RAPIR
+```
+
+### 1944. `/IBX/72000337`
+
+```
+T-Code: /IBX/72000337
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CON_ASYS
+```
+
+### 1945. `/IBX/72000340`
+
+```
+T-Code: /IBX/72000340
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_APPL
+```
+
+### 1946. `/IBX/72000341`
+
+```
+T-Code: /IBX/72000341
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CONFIG
+```
+
+### 1947. `/IBX/72000342`
+
+```
+T-Code: /IBX/72000342
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_REQUEST
+```
+
+### 1948. `/IBX/72000343`
+
+```
+T-Code: /IBX/72000343
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_VIEW
+```
+
+### 1949. `/IBX/72000344`
+
+```
+T-Code: /IBX/72000344
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CONTROL
+```
+
+### 1950. `/IBX/72000345`
+
+```
+T-Code: /IBX/72000345
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_MODEL
+```
+
+### 1951. `/IBX/72000346`
+
+```
+T-Code: /IBX/72000346
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_FD_REP_FC
+```
+
+### 1952. `/IBX/72000347`
+
+```
+T-Code: /IBX/72000347
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_USRGRP
+```
+
+### 1953. `/IBX/72000348`
+
+```
+T-Code: /IBX/72000348
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/V_FD_REP_CU
+```
+
+### 1954. `/IBX/72000371`
+
+```
+T-Code: /IBX/72000371
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/V_FD_REP_CG
+```
+
+### 1955. `/IBX/72000372`
+
+```
+T-Code: /IBX/72000372
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_FIELD_REP
+```
+
+### 1956. `/IBX/72000374`
+
+```
+T-Code: /IBX/72000374
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CON_FILER
+```
+
+### 1957. `/IBX/72000375`
+
+```
+T-Code: /IBX/72000375
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CON_FILE
+```
+
+### 1958. `/IBX/72000376`
+
+```
+T-Code: /IBX/72000376
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_IMPCAT
+```
+
+### 1959. `/IBX/72000378`
+
+```
+T-Code: /IBX/72000378
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_AGGR_LAY
+```
+
+### 1960. `/IBX/72000379`
+
+```
+T-Code: /IBX/72000379
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_KT_ASSIGN
+```
+
+### 1961. `/IBX/72000381`
+
+```
+T-Code: /IBX/72000381
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CONTR_PER
+```
+
+### 1962. `/IBX/72000382`
+
+```
+T-Code: /IBX/72000382
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_COMP_PRIO, /IBX/V_COMP_CL, /IBX/V_COMP_RULE
+```
+
+### 1963. `/IBX/72000384`
+
+```
+T-Code: /IBX/72000384
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PRE_MAP
+```
+
+### 1964. `/IBX/72000385`
+
+```
+T-Code: /IBX/72000385
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PRE_OPS
+```
+
+### 1965. `/IBX/72000415`
+
+```
+T-Code: /IBX/72000415
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_FILE_SPEC
+```
+
+### 1966. `/IBX/72000416`
+
+```
+T-Code: /IBX/72000416
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_FIELDCAT
+```
+
+### 1967. `/IBX/72000417`
+
+```
+T-Code: /IBX/72000417
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_ENT_GRID
+```
+
+### 1968. `/IBX/72000418`
+
+```
+T-Code: /IBX/72000418
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_ALV_TOOLB
+```
+
+### 1969. `/IBX/72000421`
+
+```
+T-Code: /IBX/72000421
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_FD_REP_DV
+```
+
+### 1970. `/IBX/72000425`
+
+```
+T-Code: /IBX/72000425
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_ALV_TOOL
+```
+
+### 1971. `/IBX/72000426`
+
+```
+T-Code: /IBX/72000426
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_CALC_CLS
+```
+
+### 1972. `/IBX/72000429`
+
+```
+T-Code: /IBX/72000429
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_TRANSFER
+```
+
+### 1973. `/IBX/72000439`
+
+```
+T-Code: /IBX/72000439
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PROF_STRU
+```
+
+### 1974. `/IBX/72000440`
+
+```
+T-Code: /IBX/72000440
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PROF_SEL
+```
+
+### 1975. `/IBX/72000441`
+
+```
+T-Code: /IBX/72000441
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PROF_USE
+```
+
+### 1976. `/IBX/72000442`
+
+```
+T-Code: /IBX/72000442
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/C_PROF_DEF
+```
+
+### 1977. `/IBX/CML_IMPORT`
+
+```
+T-Code: /IBX/CML_IMPORT
+├── FD_DAR_BUK
+    ├── ACTVT → F4
+    └── BUKRS → $BUKRS
+├── FD_DAR_GSA
+    ├── ACTVT → F4
+    └── GSART → (empty — maintain in PFCG)
+└── FD_DAR_STA
+    ├── ACTVT → F4
+    └── SSTATI → (empty — maintain in PFCG)
+```
+
+### 1978. `/IBX/IMP_CHECK`
+
+```
+T-Code: /IBX/IMP_CHECK
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 1979. `/IBX/SELECTION`
+
+```
+T-Code: /IBX/SELECTION
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IBX/V_SELECTION, /IBX/V_SEL_PAR
+```
+
+## `/ILE/` — SAP Integrated Logistics Execution
+> T-codes: **25**
+
+
+### 1980. `/ILE/79000001`
+
+```
+T-Code: /ILE/79000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/MM_BLOCK, /ILE/MM_BLOCK2
+```
+
+### 1981. `/ILE/89000003`
+
+```
+T-Code: /ILE/89000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/RE_ANNEX
+```
+
+### 1982. `/ILE/89000004`
+
+```
+T-Code: /ILE/89000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/TV_TV02B
+```
+
+### 1983. `/ILE/89000005`
+
+```
+T-Code: /ILE/89000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/T_TRANS_DAT
+```
+
+### 1984. `/ILE/89000006`
+
+```
+T-Code: /ILE/89000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/TMPO01
+```
+
+### 1985. `/ILE/89000007`
+
+```
+T-Code: /ILE/89000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/AT21_ANNX
+```
+
+### 1986. `/ILE/89000008`
+
+```
+T-Code: /ILE/89000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/AT02
+```
+
+### 1987. `/ILE/89000009`
+
+```
+T-Code: /ILE/89000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/LOAN_COND_A
+```
+
+### 1988. `/ILE/89000010`
+
+```
+T-Code: /ILE/89000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/LOANSACCREF
+```
+
+### 1989. `/ILE/ANNFTA`
+
+```
+T-Code: /ILE/ANNFTA
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1990. `/ILE/AT02`
+
+```
+T-Code: /ILE/AT02
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1991. `/ILE/AT21`
+
+```
+T-Code: /ILE/AT21
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1992. `/ILE/B41P`
+
+```
+T-Code: /ILE/B41P
+└── S_DEVELOP
+    ├── ACTVT → 1, 16, 2, 3, 40, 41, 42, 6, 7, 70, 90, 94, L0, MA
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 1993. `/ILE/BV98`
+
+```
+T-Code: /ILE/BV98
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 1994. `/ILE/HASHCAL`
+
+```
+T-Code: /ILE/HASHCAL
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/HASHCAL
+```
+
+### 1995. `/ILE/INSERT_TZFB`
+
+```
+T-Code: /ILE/INSERT_TZFB
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1996. `/ILE/LOANDOCLINE`
+
+```
+T-Code: /ILE/LOANDOCLINE
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 1997. `/ILE/LOAN_COND_A`
+
+```
+T-Code: /ILE/LOAN_COND_A
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → (empty — maintain in PFCG)
+```
+
+### 1998. `/ILE/MM_BLOCK`
+
+```
+T-Code: /ILE/MM_BLOCK
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/MM_BLOCK, /ILE/MM_BLOCK2
+```
+
+### 1999. `/ILE/REM_CAP_GL_ACC`
+
+```
+T-Code: /ILE/REM_CAP_GL_ACC
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2000. `/ILE/TMP2`
+
+```
+T-Code: /ILE/TMP2
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/TMPO02
+```
+
+### 2001. `/ILE/TQZ5`
+
+```
+T-Code: /ILE/TQZ5
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/TMPO01
+```
+
+### 2002. `/ILE/TQZ6`
+
+```
+T-Code: /ILE/TQZ6
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/T_TRANS_DAT
+```
+
+### 2003. `/ILE/TVA5`
+
+```
+T-Code: /ILE/TVA5
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/TV_TV02A
+```
+
+### 2004. `/ILE/TVA6`
+
+```
+T-Code: /ILE/TVA6
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /ILE/TV_TV02B
+```
+
+## `/INCMD/` — SAP Incoterms & Command Management
+> T-codes: **7**
+
+
+### 2005. `/INCMD/ARCH`
+
+```
+T-Code: /INCMD/ARCH
+└── /INCMD/AUT
+    ├── /INCMD/ICC → (empty — maintain in PFCG)
+    └── ACTVT → 24
+```
+
+### 2006. `/INCMD/BATCH_UPLOAD`
+
+```
+T-Code: /INCMD/BATCH_UPLOAD
+└── /INCMD/AUT
+    ├── /INCMD/ICC → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 43, 6
+```
+
+### 2007. `/INCMD/FFFSGEN`
+
+```
+T-Code: /INCMD/FFFSGEN
+└── /INCMD/AUT
+    ├── /INCMD/ICC → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 43, 6
+```
+
+### 2008. `/INCMD/GRPNR`
+
+```
+T-Code: /INCMD/GRPNR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /INCMD/GRP
+```
+
+### 2009. `/INCMD/ITMNR`
+
+```
+T-Code: /INCMD/ITMNR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /INCMD/ITM
+```
+
+### 2010. `/INCMD/UI`
+
+```
+T-Code: /INCMD/UI
+├── /INCMD/AUT
+    ├── /INCMD/ICC → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 43, 6
+├── C_PVS_GRID
+    ├── ACTVT → 3
+    ├── PPE_FNAME → (empty — maintain in PFCG)
+    └── TABLE → (empty — maintain in PFCG)
+├── C_PVS_PNID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → (empty — maintain in PFCG)
+├── C_PVS_PNTY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PNTYPE → (empty — maintain in PFCG)
+├── C_PVS_PVID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── PNAME → (empty — maintain in PFCG)
+    ├── PRODCLASS → (empty — maintain in PFCG)
+    └── PVNAME → (empty — maintain in PFCG)
+└── C_PVS_PVTY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PVTYPE → (empty — maintain in PFCG)
+```
+
+### 2011. `/INCMD/UPLOAD`
+
+```
+T-Code: /INCMD/UPLOAD
+└── /INCMD/AUT
+    ├── /INCMD/ICC → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 43, 6
+```
+
+## `/IPRO/` — SAP Intellectual Property Management
+> T-codes: **45**
+
+
+### 2012. `/IPRO/17000001`
+
+```
+T-Code: /IPRO/17000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_CONTENT
+```
+
+### 2013. `/IPRO/17000002`
+
+```
+T-Code: /IPRO/17000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_CONFIG
+```
+
+### 2014. `/IPRO/17000003`
+
+```
+T-Code: /IPRO/17000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_PROP
+```
+
+### 2015. `/IPRO/17000004`
+
+```
+T-Code: /IPRO/17000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_DOCTYP
+```
+
+### 2016. `/IPRO/17000006`
+
+```
+T-Code: /IPRO/17000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_DOCFMT, /IPRO/V_FMT_SECT
+```
+
+### 2017. `/IPRO/17000007`
+
+```
+T-Code: /IPRO/17000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_DOCGRP
+```
+
+### 2018. `/IPRO/17000010`
+
+```
+T-Code: /IPRO/17000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_LOCAT
+```
+
+### 2019. `/IPRO/17000012`
+
+```
+T-Code: /IPRO/17000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_DOCSLGRP
+```
+
+### 2020. `/IPRO/17000013`
+
+```
+T-Code: /IPRO/17000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_DOCSEL, /IPRO/V_DOCSLELM, /IPRO/V_DOCSLGRP, /IPRO/V_DOCSLRGS, /IPRO/V_FILLIN, /IPRO/V_LOCAT, /IPRO/V_OUTPUT
+```
+
+### 2021. `/IPRO/17000015`
+
+```
+T-Code: /IPRO/17000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_REGSET
+```
+
+### 2022. `/IPRO/17000016`
+
+```
+T-Code: /IPRO/17000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/VALTCLAUSE, /IPRO/V_ELMNT, /IPRO/V_ELMNTFMT, /IPRO/V_ELMNTGDE, /IPRO/V_ELMNTPRE, /IPRO/V_ELMNTPRO, /IPRO/V_ELMNTTXT, /IPRO/V_ELMNTVAR
+```
+
+### 2023. `/IPRO/17000018`
+
+```
+T-Code: /IPRO/17000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_SIMP_VAR
+```
+
+### 2024. `/IPRO/17000019`
+
+```
+T-Code: /IPRO/17000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_ELMORD, /IPRO/V_ORDER
+```
+
+### 2025. `/IPRO/17000020`
+
+```
+T-Code: /IPRO/17000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_DOCSLELM
+```
+
+### 2026. `/IPRO/17000022`
+
+```
+T-Code: /IPRO/17000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_RGSETCMP
+```
+
+### 2027. `/IPRO/17000027`
+
+```
+T-Code: /IPRO/17000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_STRU_VAR, /IPRO/V_STRU_VH
+```
+
+### 2028. `/IPRO/17000029`
+
+```
+T-Code: /IPRO/17000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_SIMP_VAR, /IPRO/V_STRU_VAR, /IPRO/V_STRU_VH, /IPRO/V_TAB_VH
+```
+
+### 2029. `/IPRO/67000001`
+
+```
+T-Code: /IPRO/67000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_RGSTHST
+```
+
+### 2030. `/IPRO/67000002`
+
+```
+T-Code: /IPRO/67000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/TSTYL, /IPRO/V_STYLDAT
+```
+
+### 2031. `/IPRO/67000005`
+
+```
+T-Code: /IPRO/67000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_CONT_CLS
+```
+
+### 2032. `/IPRO/67000006`
+
+```
+T-Code: /IPRO/67000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_VAR_CLS
+```
+
+### 2033. `/IPRO/67000007`
+
+```
+T-Code: /IPRO/67000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_RULES
+```
+
+### 2034. `/IPRO/67000013`
+
+```
+T-Code: /IPRO/67000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_CMODIF
+```
+
+### 2035. `/IPRO/67000014`
+
+```
+T-Code: /IPRO/67000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/TTXTFMT
+```
+
+### 2036. `/IPRO/67000024`
+
+```
+T-Code: /IPRO/67000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/TSTYLVAR
+```
+
+### 2037. `/IPRO/67000026`
+
+```
+T-Code: /IPRO/67000026
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_OVERLAY
+```
+
+### 2038. `/IPRO/67000027`
+
+```
+T-Code: /IPRO/67000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/TOUTDEF
+```
+
+### 2039. `/IPRO/67000028`
+
+```
+T-Code: /IPRO/67000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_OUTPUT
+```
+
+### 2040. `/IPRO/67000029`
+
+```
+T-Code: /IPRO/67000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/TTEXTTYP
+```
+
+### 2041. `/IPRO/67000030`
+
+```
+T-Code: /IPRO/67000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_VAR_REF
+```
+
+### 2042. `/IPRO/67000031`
+
+```
+T-Code: /IPRO/67000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_OWNER
+```
+
+### 2043. `/IPRO/67000033`
+
+```
+T-Code: /IPRO/67000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/TELMTYP
+```
+
+### 2044. `/IPRO/67000063`
+
+```
+T-Code: /IPRO/67000063
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/TELMNT_CAT
+```
+
+### 2045. `/IPRO/67000064`
+
+```
+T-Code: /IPRO/67000064
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/TWF_USER
+```
+
+### 2046. `/IPRO/67000065`
+
+```
+T-Code: /IPRO/67000065
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/TTMPL_CAT
+```
+
+### 2047. `/IPRO/67000066`
+
+```
+T-Code: /IPRO/67000066
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/TWF_APPR
+```
+
+### 2048. `/IPRO/67000075`
+
+```
+T-Code: /IPRO/67000075
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/V_ATTRSTR
+```
+
+### 2049. `/IPRO/67000076`
+
+```
+T-Code: /IPRO/67000076
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IPRO/VA_CONFIG
+```
+
+### 2050. `/IPRO/ACTIVE_VAR`
+
+```
+T-Code: /IPRO/ACTIVE_VAR
+└── S_TCODE
+    └── TCD → /IPRO/DOCB_IMG
+```
+
+### 2051. `/IPRO/CLAUSE_COUNT_L`
+
+```
+T-Code: /IPRO/CLAUSE_COUNT_L
+└── S_TCODE
+    └── TCD → /IPRO/DOCB_IMG
+```
+
+### 2052. `/IPRO/DOCB_IMG`
+
+```
+T-Code: /IPRO/DOCB_IMG
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /IPRO/*
+```
+
+### 2053. `/IPRO/MIGRATION`
+
+```
+T-Code: /IPRO/MIGRATION
+└── S_TCODE
+    └── TCD → /IPRO/DOCB_IMG
+```
+
+### 2054. `/IPRO/NUM_RANGE`
+
+```
+T-Code: /IPRO/NUM_RANGE
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /IPRO/DOCB
+```
+
+### 2055. `/IPRO/READ_SRM_VAR`
+
+```
+T-Code: /IPRO/READ_SRM_VAR
+└── S_TCODE
+    └── TCD → /IPRO/DOCB_IMG
+```
+
+### 2056. `/IPRO/VARIABLE_CONFL`
+
+```
+T-Code: /IPRO/VARIABLE_CONFL
+└── S_TCODE
+    └── TCD → /IPRO/DOCB_IMG
+```
+
+## `/ISDFPS/` — SAP Defense & Public Security (DPS)
+> T-codes: **370**
+
+
+### 2057. `/ISDFPS/ABRV`
+
+```
+T-Code: /ISDFPS/ABRV
+├── C_TCLA_BKA
+    └── KLART → 13
+├── I_AUART
+    ├── AUFART → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── I_BEGRP
+    ├── BEGRP → (empty — maintain in PFCG)
+    └── TCD → IW32
+├── I_BETRVORG
+    └── BETRVORG → KABV
+├── I_ILOA
+    ├── AUFART → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── I_INGRP
+    ├── INGRP → (empty — maintain in PFCG)
+    ├── IWERK → $IWERK
+    └── TCD → IW32
+├── I_IWERK
+    ├── IWERK → $IWERK
+    └── TCD → IW32
+├── I_KOSTL
+    ├── KOKRS → $KOKRS
+    ├── KOSTL → (empty — maintain in PFCG)
+    └── TCD → IW32
+├── I_SOGEN
+    ├── PMSOG → (empty — maintain in PFCG)
+    └── SWERK → $SWERK
+├── I_SWERK
+    ├── SWERK → $SWERK
+    └── TCD → IW32
+├── I_TCODE
+    └── TCD → IW32
+├── I_VORG_ORD
+    ├── AUFART → (empty — maintain in PFCG)
+    └── BETRVORG → KABV
+├── K_VRGNG
+    ├── ACTVT → 2, 3
+    ├── CO_VRGNG → KABV
+    └── KOKRS → $KOKRS
+├── M_INFO_ANL
+    ├── ACTVT → 71
+    ├── MCAPP → 7
+    └── MCINF → S061, S116
+├── M_IS_KENNZ
+    ├── MCINF → S061, S116
+    └── MCKEN → (empty — maintain in PFCG)
+├── M_IS_WERKS
+    ├── MCINF → S061, S116
+    └── WERKS → $WERKS
+└── SDDLVIEW
+    ├── ACTVT → 3
+    ├── DDLNAME → (empty — maintain in PFCG)
+    └── DDLSRCNAME → (empty — maintain in PFCG)
+```
+
+### 2058. `/ISDFPS/ACCCORATES`
+
+```
+T-Code: /ISDFPS/ACCCORATES
+├── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+└── S_TCODE
+    └── TCD → BD27
+```
+
+### 2059. `/ISDFPS/ACCHIERCOPY`
+
+```
+T-Code: /ISDFPS/ACCHIERCOPY
+├── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+└── S_TCODE
+    └── TCD → KEOG3
+```
+
+### 2060. `/ISDFPS/ACCHIERGEN`
+
+```
+T-Code: /ISDFPS/ACCHIERGEN
+├── G_800S_GSE
+    ├── ACTVT → 1, 2, 3, 6
+    └── BRGRU → (empty — maintain in PFCG)
+├── K_CSKS
+    ├── ACTVT → 1, 2, 3, 6, 63, 8
+    ├── KOKRS → $KOKRS
+    └── KOSTL → (empty — maintain in PFCG)
+├── K_CSKS_SET
+    ├── ACTVT → 2, 3, 6
+    └── KOKRS → $KOKRS
+├── K_PCAP_SET
+    ├── ACTVT → 1, 2, 3, 6
+    └── KOKRS → $KOKRS
+├── K_PCAR_REP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── KSTAR → (empty — maintain in PFCG)
+    └── PRCTR → $PRCTR
+├── K_PCAS_PRC
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── KOKRS → $KOKRS
+├── PLOG
+    ├── INFOTYP → 1001, 1270
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+└── S_PROGRAM
+    ├── P_ACTION → SUBMIT
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 2061. `/ISDFPS/ACCHIERPREP`
+
+```
+T-Code: /ISDFPS/ACCHIERPREP
+├── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+└── S_TCODE
+    └── TCD → OKEON
+```
+
+### 2062. `/ISDFPS/ACCHIERREST`
+
+```
+T-Code: /ISDFPS/ACCHIERREST
+├── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+└── S_TCODE
+    └── TCD → KEOG3
+```
+
+### 2063. `/ISDFPS/ACCMDGEN`
+
+```
+T-Code: /ISDFPS/ACCMDGEN
+├── G_800S_GSE
+    ├── ACTVT → 1, 2, 3, 6
+    └── BRGRU → (empty — maintain in PFCG)
+├── K_CSKS
+    ├── ACTVT → 1, 2, 3, 6, 63, 8
+    ├── KOKRS → $KOKRS
+    └── KOSTL → (empty — maintain in PFCG)
+├── K_CSKS_SET
+    ├── ACTVT → 2, 3, 6
+    └── KOKRS → $KOKRS
+├── K_PCAP_SET
+    ├── ACTVT → 1, 2, 3, 6
+    └── KOKRS → $KOKRS
+├── K_PCAR_REP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── KSTAR → (empty — maintain in PFCG)
+    └── PRCTR → $PRCTR
+├── K_PCAS_PRC
+    ├── ACTVT → 1, 2, 3, 6, 63
+    └── KOKRS → $KOKRS
+├── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+└── P_ORGIN
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 1000, 1001, 1270, 1950
+    ├── PERSA → (empty — maintain in PFCG)
+    ├── PERSG → (empty — maintain in PFCG)
+    ├── PERSK → (empty — maintain in PFCG)
+    ├── SUBTY → (empty — maintain in PFCG)
+    └── VDSK1 → (empty — maintain in PFCG)
+```
+
+### 2064. `/ISDFPS/ALE_CRE_CCMS`
+
+```
+T-Code: /ISDFPS/ALE_CRE_CCMS
+└── DF_BAS_ALE
+    └── DF_SYNCACT → CONFIG
+```
+
+### 2065. `/ISDFPS/ALE_IN_PROC`
+
+```
+T-Code: /ISDFPS/ALE_IN_PROC
+└── DF_BAS_ALE
+    └── DF_SYNCACT → OFFLINE, ONLINE, SYNC
+```
+
+### 2066. `/ISDFPS/ALE_OBJ_MAIN`
+
+```
+T-Code: /ISDFPS/ALE_OBJ_MAIN
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → XXXX
+```
+
+### 2067. `/ISDFPS/ALE_PRI_MAIN`
+
+```
+T-Code: /ISDFPS/ALE_PRI_MAIN
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → XXXX
+```
+
+### 2068. `/ISDFPS/ALE_RES_CCMS`
+
+```
+T-Code: /ISDFPS/ALE_RES_CCMS
+└── DF_BAS_ALE
+    └── DF_SYNCACT → CONFIG
+```
+
+### 2069. `/ISDFPS/ALE_STRTSYNC`
+
+```
+T-Code: /ISDFPS/ALE_STRTSYNC
+└── DF_BAS_ALE
+    └── DF_SYNCACT → OFFLINE, ONLINE, SYNC
+```
+
+### 2070. `/ISDFPS/ALE_SYNC`
+
+```
+T-Code: /ISDFPS/ALE_SYNC
+└── DF_BAS_ALE
+    └── DF_SYNCACT → OFFLINE, ONLINE, SYNC
+```
+
+### 2071. `/ISDFPS/ALE_SYS_MAIN`
+
+```
+T-Code: /ISDFPS/ALE_SYS_MAIN
+└── DF_BAS_ALE
+    └── DF_SYNCACT → CONFIG
+```
+
+### 2072. `/ISDFPS/AVAIL_FORCES`
+
+```
+T-Code: /ISDFPS/AVAIL_FORCES
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2073. `/ISDFPS/BAPI_CO_OPERATION`
+
+```
+T-Code: /ISDFPS/BAPI_CO_OPERATION
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2074. `/ISDFPS/BAPI_LES_MOVE_REPLICA`
+
+```
+T-Code: /ISDFPS/BAPI_LES_MOVE_REPLICA
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2075. `/ISDFPS/BAPI_REP_BELO`
+
+```
+T-Code: /ISDFPS/BAPI_REP_BELO
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2076. `/ISDFPS/BAPI_START_MOVE`
+
+```
+T-Code: /ISDFPS/BAPI_START_MOVE
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2077. `/ISDFPS/BD11`
+
+```
+T-Code: /ISDFPS/BD11
+└── M_MATE_MAT
+    ├── ACTVT → 1
+    └── BEGRU → (empty — maintain in PFCG)
+```
+
+### 2078. `/ISDFPS/BD87N`
+
+```
+T-Code: /ISDFPS/BD87N
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2079. `/ISDFPS/BDXE`
+
+```
+T-Code: /ISDFPS/BDXE
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /ISDFPS/TRANSP_CUST
+    └── ALG_SUBOBJ → CUST
+├── S_TABU_CLI
+    └── CLIIDMAINT → X
+├── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → 1, 43
+    └── TTYPE → CUST, TASK
+```
+
+### 2080. `/ISDFPS/BERID_AEND`
+
+```
+T-Code: /ISDFPS/BERID_AEND
+├── C_PPE_PAID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── ALTNUM → (empty — maintain in PFCG)
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → (empty — maintain in PFCG)
+├── C_PVS_PATY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PATYPE → (empty — maintain in PFCG)
+├── C_PVS_PNID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → (empty — maintain in PFCG)
+├── C_PVS_PNTY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PNTYPE → (empty — maintain in PFCG)
+├── C_PVS_PVID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── PNAME → (empty — maintain in PFCG)
+    ├── PRODCLASS → (empty — maintain in PFCG)
+    └── PVNAME → (empty — maintain in PFCG)
+└── C_PVS_PVTY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PVTYPE → (empty — maintain in PFCG)
+```
+
+### 2081. `/ISDFPS/BERID_DELE`
+
+```
+T-Code: /ISDFPS/BERID_DELE
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2082. `/ISDFPS/C02WM1`
+
+```
+T-Code: /ISDFPS/C02WM1
+└── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+```
+
+### 2083. `/ISDFPS/CALLRBDAPP01`
+
+```
+T-Code: /ISDFPS/CALLRBDAPP01
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2084. `/ISDFPS/CALLRBDMIDOC`
+
+```
+T-Code: /ISDFPS/CALLRBDMIDOC
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2085. `/ISDFPS/CALLRBDSTATE`
+
+```
+T-Code: /ISDFPS/CALLRBDSTATE
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2086. `/ISDFPS/CALLRSARFCSE`
+
+```
+T-Code: /ISDFPS/CALLRSARFCSE
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2087. `/ISDFPS/CALLRSEIDOC2`
+
+```
+T-Code: /ISDFPS/CALLRSEIDOC2
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2088. `/ISDFPS/CALLRSEOUT00`
+
+```
+T-Code: /ISDFPS/CALLRSEOUT00
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2089. `/ISDFPS/CALLRSNAST00`
+
+```
+T-Code: /ISDFPS/CALLRSNAST00
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2090. `/ISDFPS/CBSART_CS`
+
+```
+T-Code: /ISDFPS/CBSART_CS
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2091. `/ISDFPS/CCM_SYS_MAIN`
+
+```
+T-Code: /ISDFPS/CCM_SYS_MAIN
+└── DF_BAS_ALE
+    └── DF_SYNCACT → CONFIG
+```
+
+### 2092. `/ISDFPS/CDOC_SEND`
+
+```
+T-Code: /ISDFPS/CDOC_SEND
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /ISDFPS/UTILITIES
+    └── ALG_SUBOBJ → CDOC
+└── S_SCD0
+    └── ACTVT → 12, 8
+```
+
+### 2093. `/ISDFPS/CFRGKZ_CS`
+
+```
+T-Code: /ISDFPS/CFRGKZ_CS
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2094. `/ISDFPS/CHANGE_PARTY`
+
+```
+T-Code: /ISDFPS/CHANGE_PARTY
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → 1
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2095. `/ISDFPS/CHA_TBL_LOG`
+
+```
+T-Code: /ISDFPS/CHA_TBL_LOG
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2096. `/ISDFPS/CHECK_LES`
+
+```
+T-Code: /ISDFPS/CHECK_LES
+└── L_LGNUM
+    ├── LGNUM → $LGNUM
+    └── LGTYP → $LGTYP
+```
+
+### 2097. `/ISDFPS/CLEANUP_HR`
+
+```
+T-Code: /ISDFPS/CLEANUP_HR
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /ISDFPS/UTILITIES
+    └── ALG_SUBOBJ → CLEANUP_HR
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2098. `/ISDFPS/CLMASCL`
+
+```
+T-Code: /ISDFPS/CLMASCL
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2099. `/ISDFPS/CLMCAP`
+
+```
+T-Code: /ISDFPS/CLMCAP
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2100. `/ISDFPS/CLMCUS`
+
+```
+T-Code: /ISDFPS/CLMCUS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2101. `/ISDFPS/CLMEAPP`
+
+```
+T-Code: /ISDFPS/CLMEAPP
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2102. `/ISDFPS/CLMEVT`
+
+```
+T-Code: /ISDFPS/CLMEVT
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2103. `/ISDFPS/CLMEXSTA`
+
+```
+T-Code: /ISDFPS/CLMEXSTA
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2104. `/ISDFPS/CLMFLAUF`
+
+```
+T-Code: /ISDFPS/CLMFLAUF
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2105. `/ISDFPS/CLMFLSTA`
+
+```
+T-Code: /ISDFPS/CLMFLSTA
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2106. `/ISDFPS/CLMIAST`
+
+```
+T-Code: /ISDFPS/CLMIAST
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2107. `/ISDFPS/CLMIMST`
+
+```
+T-Code: /ISDFPS/CLMIMST
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2108. `/ISDFPS/CLMISE`
+
+```
+T-Code: /ISDFPS/CLMISE
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2109. `/ISDFPS/CLMMDID`
+
+```
+T-Code: /ISDFPS/CLMMDID
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2110. `/ISDFPS/CLMSFCT`
+
+```
+T-Code: /ISDFPS/CLMSFCT
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2111. `/ISDFPS/CLMSLF`
+
+```
+T-Code: /ISDFPS/CLMSLF
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2112. `/ISDFPS/CLMSTAD`
+
+```
+T-Code: /ISDFPS/CLMSTAD
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2113. `/ISDFPS/CLMSTB`
+
+```
+T-Code: /ISDFPS/CLMSTB
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2114. `/ISDFPS/CLMSTIC`
+
+```
+T-Code: /ISDFPS/CLMSTIC
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2115. `/ISDFPS/CLMUPRI`
+
+```
+T-Code: /ISDFPS/CLMUPRI
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2116. `/ISDFPS/CLPMBOOK`
+
+```
+T-Code: /ISDFPS/CLPMBOOK
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → &NC&
+```
+
+### 2117. `/ISDFPS/CMP_AGR_TABS`
+
+```
+T-Code: /ISDFPS/CMP_AGR_TABS
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /ISDFPS/ROLE_MANAGER
+    └── ALG_SUBOBJ → TAB_COMP
+```
+
+### 2118. `/ISDFPS/COMPARE_MAT`
+
+```
+T-Code: /ISDFPS/COMPARE_MAT
+├── C_PPE_PAID
+    ├── ACTVT → 3
+    ├── ALTNUM → (empty — maintain in PFCG)
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → (empty — maintain in PFCG)
+├── C_PVS_PATY
+    ├── ACTVT → 3
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PATYPE → (empty — maintain in PFCG)
+├── C_PVS_PNID
+    ├── ACTVT → 3
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → (empty — maintain in PFCG)
+├── C_PVS_PNTY
+    ├── ACTVT → 3
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PNTYPE → (empty — maintain in PFCG)
+├── C_PVS_PVID
+    ├── ACTVT → 3
+    ├── PNAME → (empty — maintain in PFCG)
+    ├── PRODCLASS → (empty — maintain in PFCG)
+    └── PVNAME → (empty — maintain in PFCG)
+├── C_PVS_PVTY
+    ├── ACTVT → 3
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PVTYPE → (empty — maintain in PFCG)
+├── DF_FOR_REL
+    ├── ACTVT → 3
+    ├── DF_OTYPE → MC, MPO
+    └── DF_STATUS → (empty — maintain in PFCG)
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2119. `/ISDFPS/COMPARE_PERS`
+
+```
+T-Code: /ISDFPS/COMPARE_PERS
+└── PLOG
+    ├── INFOTYP → 1000, 1001
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O, P, S
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2120. `/ISDFPS/CPMGOS1`
+
+```
+T-Code: /ISDFPS/CPMGOS1
+└── S_TABU_CLI
+    └── CLIIDMAINT → X
+```
+
+### 2121. `/ISDFPS/CREIP1M`
+
+```
+T-Code: /ISDFPS/CREIP1M
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2122. `/ISDFPS/CREIP2M`
+
+```
+T-Code: /ISDFPS/CREIP2M
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2123. `/ISDFPS/CREIPFM`
+
+```
+T-Code: /ISDFPS/CREIPFM
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2124. `/ISDFPS/CREIPLY`
+
+```
+T-Code: /ISDFPS/CREIPLY
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2125. `/ISDFPS/CREIPNM`
+
+```
+T-Code: /ISDFPS/CREIPNM
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2126. `/ISDFPS/CREL`
+
+```
+T-Code: /ISDFPS/CREL
+└── DF_REL
+    └── ACTVT → 3
+```
+
+### 2127. `/ISDFPS/CREL01`
+
+```
+T-Code: /ISDFPS/CREL01
+└── DF_REL
+    └── ACTVT → 1, 2
+```
+
+### 2128. `/ISDFPS/CREL02`
+
+```
+T-Code: /ISDFPS/CREL02
+└── DF_REL
+    └── ACTVT → 1, 2
+```
+
+### 2129. `/ISDFPS/CREL03`
+
+```
+T-Code: /ISDFPS/CREL03
+└── DF_REL
+    └── ACTVT → 1, 2
+```
+
+### 2130. `/ISDFPS/CREL04`
+
+```
+T-Code: /ISDFPS/CREL04
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2131. `/ISDFPS/CREL1`
+
+```
+T-Code: /ISDFPS/CREL1
+└── DF_REL
+    └── ACTVT → 1, 2, 3, 6
+```
+
+### 2132. `/ISDFPS/CREL2`
+
+```
+T-Code: /ISDFPS/CREL2
+└── DF_REL
+    └── ACTVT → 1, 2, 3, 6
+```
+
+### 2133. `/ISDFPS/CRERRFM`
+
+```
+T-Code: /ISDFPS/CRERRFM
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2134. `/ISDFPS/CRWBD`
+
+```
+T-Code: /ISDFPS/CRWBD
+├── B_UPS
+    ├── ACTVT → 1, 2, 3, 6
+    ├── UPSMODE → C, O
+    ├── UPSTYP → (empty — maintain in PFCG)
+    └── VRGNG → (empty — maintain in PFCG)
+└── C_LO_CM
+    ├── ACTVT → 1, 2, 3, 6
+    └── ACT_OBJ_CM → BL, CD, CF, CM, NF
+```
+
+### 2135. `/ISDFPS/CS_RELOC`
+
+```
+T-Code: /ISDFPS/CS_RELOC
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2136. `/ISDFPS/CUA_SWITCH`
+
+```
+T-Code: /ISDFPS/CUA_SWITCH
+├── DF_BAS_ALE
+    └── DF_SYNCACT → CONFIG
+├── S_TCODE
+    └── TCD → SCUA
+└── S_USER_SYS
+    ├── ACTVT → 78
+    └── SUBSYSTEM → (empty — maintain in PFCG)
+```
+
+### 2137. `/ISDFPS/CUA_USER_CMP`
+
+```
+T-Code: /ISDFPS/CUA_USER_CMP
+├── S_USER_AGR
+    ├── ACTVT → 78
+    └── ACT_GROUP → (empty — maintain in PFCG)
+├── S_USER_AUT
+    ├── ACTVT → 2, 22, 3, 8
+    ├── AUTH → (empty — maintain in PFCG)
+    └── OBJECT → (empty — maintain in PFCG)
+├── S_USER_GRP
+    ├── ACTVT → 22, 78
+    └── CLASS → (empty — maintain in PFCG)
+├── S_USER_PRO
+    ├── ACTVT → 22
+    └── PROFILE → (empty — maintain in PFCG)
+├── S_USER_SAS
+    ├── ACTVT → 1, 22, 6
+    ├── ACT_GROUP → (empty — maintain in PFCG)
+    ├── CLASS → (empty — maintain in PFCG)
+    ├── PROFILE → (empty — maintain in PFCG)
+    └── SUBSYSTEM → (empty — maintain in PFCG)
+└── S_USER_SYS
+    ├── ACTVT → 3, 59, 78
+    └── SUBSYSTEM → (empty — maintain in PFCG)
+```
+
+### 2138. `/ISDFPS/C_CID`
+
+```
+T-Code: /ISDFPS/C_CID
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /ISDFPS/CM
+```
+
+### 2139. `/ISDFPS/C_CS_CMD`
+
+```
+T-Code: /ISDFPS/C_CS_CMD
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2140. `/ISDFPS/C_CS_SYS`
+
+```
+T-Code: /ISDFPS/C_CS_SYS
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2141. `/ISDFPS/C_MM_CS`
+
+```
+T-Code: /ISDFPS/C_MM_CS
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2142. `/ISDFPS/C_V_T307`
+
+```
+T-Code: /ISDFPS/C_V_T307
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → VC
+```
+
+### 2143. `/ISDFPS/C_V_T319`
+
+```
+T-Code: /ISDFPS/C_V_T319
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → VC
+```
+
+### 2144. `/ISDFPS/C_V_T319A`
+
+```
+T-Code: /ISDFPS/C_V_T319A
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → VC
+```
+
+### 2145. `/ISDFPS/DISPLAY_AZA`
+
+```
+T-Code: /ISDFPS/DISPLAY_AZA
+├── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+└── DF_WM_NAV
+    ├── ACTVT → 1, 2, 21, 3, 6
+    ├── DF_WM_NAV → MISC, PTWY, STPA, STRE, STSE, STTD
+    └── LGNUM → $LGNUM
+```
+
+### 2146. `/ISDFPS/DISP_EQU_SIT`
+
+```
+T-Code: /ISDFPS/DISP_EQU_SIT
+├── C_PVS_PNID
+    ├── ACTVT → 3
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → ' '
+├── C_PVS_PNTY
+    ├── ACTVT → 3
+    ├── APPLOBJTYP → MPO
+    └── PNTYPE → S_DFMPO
+├── C_PVS_PVID
+    ├── ACTVT → 3
+    ├── PNAME → (empty — maintain in PFCG)
+    ├── PRODCLASS → ' '
+    └── PVNAME → (empty — maintain in PFCG)
+├── C_PVS_PVTY
+    ├── ACTVT → 3
+    ├── APPLOBJTYP → MPO
+    └── PVTYPE → S_DFMDL
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1955, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → A002, B002, E002, T002, V002
+```
+
+### 2147. `/ISDFPS/DISP_INITSUP`
+
+```
+T-Code: /ISDFPS/DISP_INITSUP
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1955, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → A002, B002, E003, T002, V002
+```
+
+### 2148. `/ISDFPS/DISP_MATSTAT`
+
+```
+T-Code: /ISDFPS/DISP_MATSTAT
+├── DF_FOR_REL
+    ├── ACTVT → 3
+    ├── DF_OTYPE → VPA
+    └── DF_STATUS → I1170, I1171, I1172, I1173, I1174, I1175
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1956, 1980, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → 1, 2, A002, A823, A826, AC00, C400, E002, E400, EC00, F400, FC00, U002
+```
+
+### 2149. `/ISDFPS/DISP_MAT_SIT`
+
+```
+T-Code: /ISDFPS/DISP_MAT_SIT
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1955, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → A002, B002, E002, T002, V002
+```
+
+### 2150. `/ISDFPS/DISP_SRV_USE`
+
+```
+T-Code: /ISDFPS/DISP_SRV_USE
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → 1
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2151. `/ISDFPS/DSP1`
+
+```
+T-Code: /ISDFPS/DSP1
+├── DF_FOR_REL
+    ├── ACTVT → 3
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+├── DF_LOGFUNC
+    └── DF_LOGFUNC → ANFO, DISP
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2152. `/ISDFPS/DSP_HIER_STR`
+
+```
+T-Code: /ISDFPS/DSP_HIER_STR
+└── PLOG
+    ├── INFOTYP → 1000, 1001
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O, P, S
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2153. `/ISDFPS/DSP_OP_RDNS`
+
+```
+T-Code: /ISDFPS/DSP_OP_RDNS
+└── PLOG
+    ├── INFOTYP → 1000, 1001
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2154. `/ISDFPS/EL`
+
+```
+T-Code: /ISDFPS/EL
+├── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+└── DF_WM_NAV
+    ├── ACTVT → 1, 2, 21, 3, 6
+    ├── DF_WM_NAV → MISC, PTWY, STPA, STRE, STSE, STTD
+    └── LGNUM → $LGNUM
+```
+
+### 2155. `/ISDFPS/EPA_HU`
+
+```
+T-Code: /ISDFPS/EPA_HU
+├── C_PPE_PAID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── ALTNUM → (empty — maintain in PFCG)
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → (empty — maintain in PFCG)
+├── C_PVS_PAID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── ALTNUM → (empty — maintain in PFCG)
+    ├── CLASS → (empty — maintain in PFCG)
+    └── PNAME → (empty — maintain in PFCG)
+├── C_PVS_PATY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PATYPE → (empty — maintain in PFCG)
+├── C_PVS_PNID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → (empty — maintain in PFCG)
+├── C_PVS_PNTY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PNTYPE → (empty — maintain in PFCG)
+├── C_PVS_PVID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── PNAME → (empty — maintain in PFCG)
+    ├── PRODCLASS → (empty — maintain in PFCG)
+    └── PVNAME → (empty — maintain in PFCG)
+└── C_PVS_PVTY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PVTYPE → (empty — maintain in PFCG)
+```
+
+### 2156. `/ISDFPS/EPA_PRINT`
+
+```
+T-Code: /ISDFPS/EPA_PRINT
+└── M_MSEG_LGO
+    ├── ACTVT → F4
+    ├── BWART → (empty — maintain in PFCG)
+    ├── LGORT → (empty — maintain in PFCG)
+    └── WERKS → $WERKS
+```
+
+### 2157. `/ISDFPS/EQUITRP`
+
+```
+T-Code: /ISDFPS/EQUITRP
+├── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+└── DF_WM_NAV
+    ├── ACTVT → 1, 2, 21, 3, 6
+    ├── DF_WM_NAV → MISC, PTWY, STPA, STRE, STSE, STTD
+    └── LGNUM → $LGNUM
+```
+
+### 2158. `/ISDFPS/EQUI_STAT1`
+
+```
+T-Code: /ISDFPS/EQUI_STAT1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+├── DF_LOGFUNC
+    └── DF_LOGFUNC → ANFO, DISP
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → (empty — maintain in PFCG)
+```
+
+### 2159. `/ISDFPS/EQUI_STAT2`
+
+```
+T-Code: /ISDFPS/EQUI_STAT2
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2160. `/ISDFPS/EXPO_TEST`
+
+```
+T-Code: /ISDFPS/EXPO_TEST
+├── B_FOX
+    └── ACTVT → 1, 79
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2161. `/ISDFPS/EXT_BATCHES`
+
+```
+T-Code: /ISDFPS/EXT_BATCHES
+└── EXTBAT_CRE
+    └── ACTVT → 1, 2, 3
+```
+
+### 2162. `/ISDFPS/EXT_BATCHES3`
+
+```
+T-Code: /ISDFPS/EXT_BATCHES3
+└── EXTBAT_CRE
+    └── ACTVT → 3
+```
+
+### 2163. `/ISDFPS/FDP1`
+
+```
+T-Code: /ISDFPS/FDP1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+├── DF_LOGFUNC
+    └── DF_LOGFUNC → ANFO, DISP
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 3, 6, 7, 8
+    └── DF_PRPL → 1, 3
+```
+
+### 2164. `/ISDFPS/FDP2`
+
+```
+T-Code: /ISDFPS/FDP2
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2165. `/ISDFPS/FDP_START`
+
+```
+T-Code: /ISDFPS/FDP_START
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, VPA
+    └── DF_STATUS → I1170, I1171, I1172, I1173, I1174, I1175
+```
+
+### 2166. `/ISDFPS/FE01`
+
+```
+T-Code: /ISDFPS/FE01
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → &NC&
+```
+
+### 2167. `/ISDFPS/FE02`
+
+```
+T-Code: /ISDFPS/FE02
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → &NC&
+```
+
+### 2168. `/ISDFPS/FE03`
+
+```
+T-Code: /ISDFPS/FE03
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → &NC&
+```
+
+### 2169. `/ISDFPS/FE04`
+
+```
+T-Code: /ISDFPS/FE04
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → &NC&
+```
+
+### 2170. `/ISDFPS/FE05`
+
+```
+T-Code: /ISDFPS/FE05
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → &NC&
+```
+
+### 2171. `/ISDFPS/FE06`
+
+```
+T-Code: /ISDFPS/FE06
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2172. `/ISDFPS/FE07`
+
+```
+T-Code: /ISDFPS/FE07
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2173. `/ISDFPS/FORCERMIG`
+
+```
+T-Code: /ISDFPS/FORCERMIG
+├── C_PPE_PAID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── ALTNUM → (empty — maintain in PFCG)
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → (empty — maintain in PFCG)
+├── C_PVS_PATY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → ACT, CMP, FLO, FRM, MPO
+    └── PATYPE → (empty — maintain in PFCG)
+├── C_PVS_PNID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → (empty — maintain in PFCG)
+├── C_PVS_PNTY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → ACT, CMP, COL, CON, EQR, FLO, FRM, GEN, MPA, MPO, POB, RCP, RES, SET
+    └── PNTYPE → (empty — maintain in PFCG)
+├── C_PVS_PVID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── PNAME → (empty — maintain in PFCG)
+    ├── PRODCLASS → (empty — maintain in PFCG)
+    └── PVNAME → (empty — maintain in PFCG)
+├── C_PVS_PVTY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → CMP, COL, CON, FRM, MPO, RCP, SET
+    └── PVTYPE → (empty — maintain in PFCG)
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → ' ', I1170, I1171, I1172, I1173, I1174, I1175
+├── FI_WEI_BUK
+    ├── ACTVT → 3
+    ├── BUKRS → $BUKRS
+    └── SWENR → (empty — maintain in PFCG)
+├── F_REBD_AO
+    ├── ACTVT → 1, 2, 3
+    └── AOTYPE → (empty — maintain in PFCG)
+├── F_RECN
+    ├── ACTVT → 3
+    ├── BUKRS → $BUKRS
+    └── SMVART → (empty — maintain in PFCG)
+├── F_REOR_RR
+    ├── ACTVT → 1, 2, 3
+    └── RRTYPE → (empty — maintain in PFCG)
+├── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → C, O, S
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+└── S_GUI
+    └── ACTVT → 60
+```
+
+### 2174. `/ISDFPS/FORCERMIGSE`
+
+```
+T-Code: /ISDFPS/FORCERMIGSE
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1019, 1955, 1956, 1958, 1985
+    ├── ISTAT → 1, 2, 3, 4
+    ├── OTYPE → C, O, RF, S
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → AEND, DISP, INSE
+    └── SUBTYP → 000I, 000U, 000V, 000X, 1, 2, A002, A003, A007, A821, B002, B003, B012, B821, L002, T002, T003, V002, V003
+```
+
+### 2175. `/ISDFPS/FORCE_CD_DIS`
+
+```
+T-Code: /ISDFPS/FORCE_CD_DIS
+└── S_SCD0
+    └── ACTVT → 8
+```
+
+### 2176. `/ISDFPS/GET_LAGP_BEL`
+
+```
+T-Code: /ISDFPS/GET_LAGP_BEL
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2177. `/ISDFPS/GET_LAGP_LQU`
+
+```
+T-Code: /ISDFPS/GET_LAGP_LQU
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2178. `/ISDFPS/GET_LAGP_LQUA`
+
+```
+T-Code: /ISDFPS/GET_LAGP_LQUA
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2179. `/ISDFPS/GIS1`
+
+```
+T-Code: /ISDFPS/GIS1
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2180. `/ISDFPS/GIS2`
+
+```
+T-Code: /ISDFPS/GIS2
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2181. `/ISDFPS/GNR_CHECK`
+
+```
+T-Code: /ISDFPS/GNR_CHECK
+└── S_NUMBER
+    ├── ACTVT → 17
+    └── NROBJ → (empty — maintain in PFCG)
+```
+
+### 2182. `/ISDFPS/GNR_MAINTAIN`
+
+```
+T-Code: /ISDFPS/GNR_MAINTAIN
+└── S_NUMBER
+    ├── ACTVT → 17
+    └── NROBJ → (empty — maintain in PFCG)
+```
+
+### 2183. `/ISDFPS/ICM_START`
+
+```
+T-Code: /ISDFPS/ICM_START
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, VPA
+    └── DF_STATUS → I1170, I1171, I1172, I1173, I1174, I1175
+```
+
+### 2184. `/ISDFPS/IL07R`
+
+```
+T-Code: /ISDFPS/IL07R
+├── C_TCLA_BKA
+    └── KLART → 3
+├── I_AUART
+    ├── AUFART → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── I_BEGRP
+    ├── BEGRP → (empty — maintain in PFCG)
+    └── TCD → IE03, IK03, IL03
+├── I_IWERK
+    ├── IWERK → $IWERK
+    └── TCD → IE03, IL03, IW23, IW33, IW53
+├── I_QMEL
+    ├── QMART → (empty — maintain in PFCG)
+    └── TCD → IW23, IW53
+├── I_SWERK
+    ├── SWERK → $SWERK
+    └── TCD → IE03, IL03, IW23, IW33, IW53
+└── I_TCODE
+    └── TCD → IL07
+```
+
+### 2185. `/ISDFPS/IL21`
+
+```
+T-Code: /ISDFPS/IL21
+└── I_TCODE
+    └── TCD → /ISDFPS/IL21
+```
+
+### 2186. `/ISDFPS/IMPORT_BELO`
+
+```
+T-Code: /ISDFPS/IMPORT_BELO
+├── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+└── DF_WM_NAV
+    ├── ACTVT → 1, 2, 21, 3, 6
+    ├── DF_WM_NAV → MISC, PTWY, STPA, STRE, STSE, STTD
+    └── LGNUM → $LGNUM
+```
+
+### 2187. `/ISDFPS/INFO_LES_REL`
+
+```
+T-Code: /ISDFPS/INFO_LES_REL
+├── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+└── DF_WM_NAV
+    ├── ACTVT → 1, 2, 21, 3, 6
+    ├── DF_WM_NAV → MISC, PTWY, STPA, STRE, STSE, STTD
+    └── LGNUM → $LGNUM
+```
+
+### 2188. `/ISDFPS/INFRA1`
+
+```
+T-Code: /ISDFPS/INFRA1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+├── DF_LM_EQXT
+    └── ACTVT → 3
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 3, 6, 7, 8
+    └── DF_PRPL → 1, 3
+```
+
+### 2189. `/ISDFPS/INFRA2`
+
+```
+T-Code: /ISDFPS/INFRA2
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 3, 6, 7, 8
+    └── DF_PRPL → 1, 3
+```
+
+### 2190. `/ISDFPS/INFRAMAT_ALL`
+
+```
+T-Code: /ISDFPS/INFRAMAT_ALL
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1955, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → A002, B002, E003, T002, V002
+```
+
+### 2191. `/ISDFPS/INFRAMAT_RET`
+
+```
+T-Code: /ISDFPS/INFRAMAT_RET
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1955, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → A002, B002, E002, T002, V002
+```
+
+### 2192. `/ISDFPS/INFRA_COMP`
+
+```
+T-Code: /ISDFPS/INFRA_COMP
+├── C_PPE_PAID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── ALTNUM → (empty — maintain in PFCG)
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → ' '
+├── C_PVS_PATY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → MPO
+    └── PATYPE → S_DFCMP, S_DFTXT
+├── C_PVS_PNID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → ' '
+├── C_PVS_PNTY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → MPA, MPO
+    └── PNTYPE → S_DFEPA, S_DFMC, S_DFMPO, S_DFMPOV
+├── C_PVS_PVID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── PNAME → (empty — maintain in PFCG)
+    ├── PRODCLASS → ' '
+    └── PVNAME → (empty — maintain in PFCG)
+├── C_PVS_PVTY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → MPO
+    └── PVTYPE → S_DFMDL
+├── DF_FOR_REL
+    ├── ACTVT → 3
+    ├── DF_OTYPE → MC, MPO
+    └── DF_STATUS → I1170, I1171, I1172, I1173, I1174
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1950, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → ' ', A002, A806, A823, B002, B806, B823
+```
+
+### 2193. `/ISDFPS/INIT_SUPPLY`
+
+```
+T-Code: /ISDFPS/INIT_SUPPLY
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → (empty — maintain in PFCG)
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+```
+
+### 2194. `/ISDFPS/LA01`
+
+```
+T-Code: /ISDFPS/LA01
+└── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+```
+
+### 2195. `/ISDFPS/LA02`
+
+```
+T-Code: /ISDFPS/LA02
+└── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+```
+
+### 2196. `/ISDFPS/LA03`
+
+```
+T-Code: /ISDFPS/LA03
+└── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+```
+
+### 2197. `/ISDFPS/LES_RETURN`
+
+```
+T-Code: /ISDFPS/LES_RETURN
+└── PLOG
+    ├── INFOTYP → 1001, 1950, 1951, 1955, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2198. `/ISDFPS/LGORT_DELETE`
+
+```
+T-Code: /ISDFPS/LGORT_DELETE
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → ' ', C400
+```
+
+### 2199. `/ISDFPS/LMACC1`
+
+```
+T-Code: /ISDFPS/LMACC1
+├── DF_LM_EQXT
+    └── ACTVT → 3
+├── I_IWERK
+    ├── IWERK → $IWERK
+    └── TCD → /ISDFPS/LMACC1
+├── I_QMEL
+    ├── QMART → (empty — maintain in PFCG)
+    └── TCD → IW23
+├── I_SWERK
+    ├── SWERK → $SWERK
+    └── TCD → /ISDFPS/LMACC1
+├── I_TCODE
+    └── TCD → /ISDFPS/LMACC1
+├── S_DATASET
+    ├── ACTVT → 34
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /ISDFPS/SAPLLM_ACCIDENT_UI
+└── S_GUI
+    └── ACTVT → 61
+```
+
+### 2200. `/ISDFPS/LMAR01`
+
+```
+T-Code: /ISDFPS/LMAR01
+├── F_REBD_AO
+    ├── ACTVT → 3
+    └── AOTYPE → (empty — maintain in PFCG)
+├── I_BEGRP
+    ├── BEGRP → (empty — maintain in PFCG)
+    └── TCD → IL03
+└── I_TCODE
+    └── TCD → IL03
+```
+
+### 2201. `/ISDFPS/LMAR02`
+
+```
+T-Code: /ISDFPS/LMAR02
+├── F_REBD_AO
+    ├── ACTVT → 3
+    └── AOTYPE → (empty — maintain in PFCG)
+└── I_TCODE
+    └── TCD → IL03
+```
+
+### 2202. `/ISDFPS/LMCUS1`
+
+```
+T-Code: /ISDFPS/LMCUS1
+├── DF_FOR_REL
+    ├── ACTVT → 3
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+└── DF_LM_EQXT
+    └── ACTVT → 3
+```
+
+### 2203. `/ISDFPS/LMER01`
+
+```
+T-Code: /ISDFPS/LMER01
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → &NC&
+```
+
+### 2204. `/ISDFPS/LMER02`
+
+```
+T-Code: /ISDFPS/LMER02
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2205. `/ISDFPS/LMFL01`
+
+```
+T-Code: /ISDFPS/LMFL01
+├── DF_FOR_REL
+    ├── ACTVT → 3
+    ├── DF_OTYPE → MPO, RIC
+    └── DF_STATUS → I1170
+├── DF_LM_EQXT
+    └── ACTVT → 3
+├── DF_LM_TARG
+    └── ACTVT → 45
+└── I_ILOA
+    ├── AUFART → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+```
+
+### 2206. `/ISDFPS/LMFL02`
+
+```
+T-Code: /ISDFPS/LMFL02
+├── C_CABN
+    └── ACTVT → 3
+├── DF_FOR_REL
+    ├── ACTVT → 3
+    ├── DF_OTYPE → MPO, RIC
+    └── DF_STATUS → I1170
+├── DF_LM_EQXT
+    └── ACTVT → 3
+├── DF_LM_TARG
+    └── ACTVT → 45
+└── I_SOGEN
+    ├── PMSOG → (empty — maintain in PFCG)
+    └── SWERK → $SWERK
+```
+
+### 2207. `/ISDFPS/LMFL03`
+
+```
+T-Code: /ISDFPS/LMFL03
+├── DF_LM_TARG
+    └── ACTVT → 45
+├── I_AUART
+    ├── AUFART → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+└── I_INGRP
+    ├── INGRP → (empty — maintain in PFCG)
+    ├── IWERK → $IWERK
+    └── TCD → (empty — maintain in PFCG)
+```
+
+### 2208. `/ISDFPS/LMFLM1`
+
+```
+T-Code: /ISDFPS/LMFLM1
+└── S_ALV_LAYO
+    └── ACTVT → 23
+```
+
+### 2209. `/ISDFPS/LMFLP1`
+
+```
+T-Code: /ISDFPS/LMFLP1
+├── B_USERSTAT
+    ├── ACTVT → 1, 6
+    ├── BERSL → (empty — maintain in PFCG)
+    ├── OBTYP → LLS
+    └── STSMA → (empty — maintain in PFCG)
+├── C_TCLA_BKA
+    └── KLART → 2, FL1
+├── DF_LM_EQXT
+    └── ACTVT → 3
+├── I_BEGRP
+    ├── BEGRP → (empty — maintain in PFCG)
+    └── TCD → /ISDFPS/LMFLP1
+├── I_INGRP
+    ├── INGRP → (empty — maintain in PFCG)
+    ├── IWERK → $IWERK
+    └── TCD → (empty — maintain in PFCG)
+├── I_IWERK
+    ├── IWERK → $IWERK
+    └── TCD → (empty — maintain in PFCG)
+├── I_SWERK
+    ├── SWERK → $SWERK
+    └── TCD → (empty — maintain in PFCG)
+├── S_ALV_LAYO
+    └── ACTVT → 23
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /ISDFPS/LMFPLAN
+    └── ALG_SUBOBJ → ERROR, PROT
+```
+
+### 2210. `/ISDFPS/LMIE01`
+
+```
+T-Code: /ISDFPS/LMIE01
+└── S_TCODE
+    └── TCD → IE01
+```
+
+### 2211. `/ISDFPS/LMIE02`
+
+```
+T-Code: /ISDFPS/LMIE02
+└── S_TCODE
+    └── TCD → IE02
+```
+
+### 2212. `/ISDFPS/LMIE03`
+
+```
+T-Code: /ISDFPS/LMIE03
+└── S_TCODE
+    └── TCD → IE03
+```
+
+### 2213. `/ISDFPS/LMSI01`
+
+```
+T-Code: /ISDFPS/LMSI01
+├── F_REBD_AO
+    ├── ACTVT → 3
+    └── AOTYPE → (empty — maintain in PFCG)
+├── I_TCODE
+    └── TCD → IL03
+└── S_PROJECT
+    ├── ACTVT → 3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+```
+
+### 2214. `/ISDFPS/LMSI02`
+
+```
+T-Code: /ISDFPS/LMSI02
+├── F_REBD_AO
+    ├── ACTVT → 3
+    └── AOTYPE → (empty — maintain in PFCG)
+├── I_IWERK
+    ├── IWERK → $IWERK
+    └── TCD → (empty — maintain in PFCG)
+├── I_KOSTL
+    ├── KOKRS → $KOKRS
+    ├── KOSTL → (empty — maintain in PFCG)
+    └── TCD → (empty — maintain in PFCG)
+├── I_SWERK
+    ├── SWERK → $SWERK
+    └── TCD → (empty — maintain in PFCG)
+└── I_TCODE
+    └── TCD → IL03
+```
+
+### 2215. `/ISDFPS/LMSI05`
+
+```
+T-Code: /ISDFPS/LMSI05
+├── F_REBD_AO
+    ├── ACTVT → 3
+    └── AOTYPE → (empty — maintain in PFCG)
+└── I_TCODE
+    └── TCD → IL03
+```
+
+### 2216. `/ISDFPS/LMSTB1`
+
+```
+T-Code: /ISDFPS/LMSTB1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, VPA
+    └── DF_STATUS → I1170
+├── DF_LM_EQXT
+    └── ACTVT → 3
+├── I_TCODE
+    └── TCD → /ISDFPS/LMSTB1
+└── K_CSKS
+    ├── ACTVT → F4
+    ├── KOKRS → $KOKRS
+    └── KOSTL → (empty — maintain in PFCG)
+```
+
+### 2217. `/ISDFPS/LMSTB2`
+
+```
+T-Code: /ISDFPS/LMSTB2
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, VPA
+    └── DF_STATUS → I1170
+├── DF_LM_EQXT
+    └── ACTVT → 2, 3
+└── I_TCODE
+    └── TCD → /ISDFPS/LMSTB2
+```
+
+### 2218. `/ISDFPS/LMTST1`
+
+```
+T-Code: /ISDFPS/LMTST1
+└── S_ALV_LAYO
+    └── ACTVT → 23
+```
+
+### 2219. `/ISDFPS/LM_EVM`
+
+```
+T-Code: /ISDFPS/LM_EVM
+└── I_TCODE
+    └── TCD → /ISDFPS/LMSTB1
+```
+
+### 2220. `/ISDFPS/LN01`
+
+```
+T-Code: /ISDFPS/LN01
+├── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+└── DF_WM_NAV
+    ├── ACTVT → 1, 2, 21, 3, 6
+    ├── DF_WM_NAV → MISC, PTWY, STPA, STRE, STSE, STTD
+    └── LGNUM → $LGNUM
+```
+
+### 2221. `/ISDFPS/LN02`
+
+```
+T-Code: /ISDFPS/LN02
+├── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+└── DF_WM_NAV
+    ├── ACTVT → 1, 2, 21, 3, 6
+    ├── DF_WM_NAV → MISC, PTWY, STPA, STRE, STSE, STTD
+    └── LGNUM → $LGNUM
+```
+
+### 2222. `/ISDFPS/LN03`
+
+```
+T-Code: /ISDFPS/LN03
+├── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+└── DF_WM_NAV
+    ├── ACTVT → 1, 2, 21, 3, 6
+    ├── DF_WM_NAV → MISC, PTWY, STPA, STRE, STSE, STTD
+    └── LGNUM → $LGNUM
+```
+
+### 2223. `/ISDFPS/LN04`
+
+```
+T-Code: /ISDFPS/LN04
+├── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+└── DF_WM_NAV
+    ├── ACTVT → 1, 2, 21, 3, 6
+    ├── DF_WM_NAV → MISC, PTWY, STPA, STRE, STSE, STTD
+    └── LGNUM → $LGNUM
+```
+
+### 2224. `/ISDFPS/LPL1`
+
+```
+T-Code: /ISDFPS/LPL1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+├── DF_LOGFUNC
+    └── DF_LOGFUNC → ANFO, DISP
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → (empty — maintain in PFCG)
+```
+
+### 2225. `/ISDFPS/LPL2`
+
+```
+T-Code: /ISDFPS/LPL2
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → (empty — maintain in PFCG)
+```
+
+### 2226. `/ISDFPS/LS26N`
+
+```
+T-Code: /ISDFPS/LS26N
+└── L_LGNUM
+    ├── LGNUM → $LGNUM
+    └── LGTYP → $LGTYP
+```
+
+### 2227. `/ISDFPS/LSNR`
+
+```
+T-Code: /ISDFPS/LSNR
+└── L_LGNUM
+    ├── LGNUM → $LGNUM
+    └── LGTYP → $LGTYP
+```
+
+### 2228. `/ISDFPS/LSP1`
+
+```
+T-Code: /ISDFPS/LSP1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+├── DF_LOGFUNC
+    └── DF_LOGFUNC → ANFO, DISP
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → (empty — maintain in PFCG)
+```
+
+### 2229. `/ISDFPS/LSP2`
+
+```
+T-Code: /ISDFPS/LSP2
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2230. `/ISDFPS/MASS_LOSS`
+
+```
+T-Code: /ISDFPS/MASS_LOSS
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 2231. `/ISDFPS/MASS_LOSS_HU`
+
+```
+T-Code: /ISDFPS/MASS_LOSS_HU
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 2232. `/ISDFPS/MATMAS_COPY`
+
+```
+T-Code: /ISDFPS/MATMAS_COPY
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2
+    ├── DF_OTYPE → MPO, VPA
+    └── DF_STATUS → (empty — maintain in PFCG)
+└── M_MATE_WRK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── WERKS → $WERKS
+```
+
+### 2233. `/ISDFPS/MAT_ASSIGN`
+
+```
+T-Code: /ISDFPS/MAT_ASSIGN
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2234. `/ISDFPS/MAT_COMP`
+
+```
+T-Code: /ISDFPS/MAT_COMP
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+├── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4
+    └── DF_PRPL → (empty — maintain in PFCG)
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2235. `/ISDFPS/MAT_COMP_PR`
+
+```
+T-Code: /ISDFPS/MAT_COMP_PR
+├── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 6, 8
+    └── DF_PRPL → (empty — maintain in PFCG)
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → 1
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2236. `/ISDFPS/MB52`
+
+```
+T-Code: /ISDFPS/MB52
+└── M_MATE_WRK
+    ├── ACTVT → 3
+    └── WERKS → $WERKS
+```
+
+### 2237. `/ISDFPS/MCHG`
+
+```
+T-Code: /ISDFPS/MCHG
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2238. `/ISDFPS/MCHG_SRV_USE`
+
+```
+T-Code: /ISDFPS/MCHG_SRV_USE
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → 1
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2239. `/ISDFPS/MCHG_SUP_REL`
+
+```
+T-Code: /ISDFPS/MCHG_SUP_REL
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2240. `/ISDFPS/MEBOR`
+
+```
+T-Code: /ISDFPS/MEBOR
+├── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → IS
+└── S_TABU_RFC
+    └── ACTVT → 2
+```
+
+### 2241. `/ISDFPS/ME_BSART`
+
+```
+T-Code: /ISDFPS/ME_BSART
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2242. `/ISDFPS/ME_BWB`
+
+```
+T-Code: /ISDFPS/ME_BWB
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2243. `/ISDFPS/ME_BWS`
+
+```
+T-Code: /ISDFPS/ME_BWS
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2244. `/ISDFPS/ME_COMALSYS`
+
+```
+T-Code: /ISDFPS/ME_COMALSYS
+├── DF_DEVRE
+    └── ACTVT → 2
+├── S_DATASET
+    ├── ACTVT → 34
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → 1
+    └── TTYPE → DTRA, TASK
+```
+
+### 2245. `/ISDFPS/ME_COMAT`
+
+```
+T-Code: /ISDFPS/ME_COMAT
+├── DF_DEVRE
+    └── ACTVT → 2
+├── S_DATASET
+    ├── ACTVT → 34
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → (empty — maintain in PFCG)
+├── S_TABU_CLI
+    └── CLIIDMAINT → X
+├── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+└── S_TRANSPRT
+    ├── ACTVT → 1, 3
+    └── TTYPE → DTRA, TASK
+```
+
+### 2246. `/ISDFPS/ME_COMATRIX`
+
+```
+T-Code: /ISDFPS/ME_COMATRIX
+├── DF_DEVRE
+    └── ACTVT → 2
+├── S_DATASET
+    ├── ACTVT → 34
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → 1
+    └── TTYPE → CUST, DTRA, TASK
+```
+
+### 2247. `/ISDFPS/ME_COMCSYST`
+
+```
+T-Code: /ISDFPS/ME_COMCSYST
+└── DF_DEVRE
+    └── ACTVT → 2
+```
+
+### 2248. `/ISDFPS/ME_COMP`
+
+```
+T-Code: /ISDFPS/ME_COMP
+├── DF_DEVRE
+    └── ACTVT → 1, 2, 3, 6, 63
+├── S_TABU_CLI
+    └── CLIIDMAINT → X
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → &NC&
+```
+
+### 2249. `/ISDFPS/ME_HR_TAHDM`
+
+```
+T-Code: /ISDFPS/ME_HR_TAHDM
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → &NC&
+```
+
+### 2250. `/ISDFPS/ME_MWMSGDISP`
+
+```
+T-Code: /ISDFPS/ME_MWMSGDISP
+└── DF_ME_NAV
+    ├── ACTVT → 3
+    └── DF_ME_NAV → (empty — maintain in PFCG)
+```
+
+### 2251. `/ISDFPS/ME_NUM_MAIN`
+
+```
+T-Code: /ISDFPS/ME_NUM_MAIN
+├── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /ISDFPS/II
+└── S_TCODE
+    └── TCD → SNUM
+```
+
+### 2252. `/ISDFPS/ME_REQ`
+
+```
+T-Code: /ISDFPS/ME_REQ
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2253. `/ISDFPS/MMW_DEL_MSGS`
+
+```
+T-Code: /ISDFPS/MMW_DEL_MSGS
+└── DF_ME_NAV
+    ├── ACTVT → 16
+    └── DF_ME_NAV → ADM
+```
+
+### 2254. `/ISDFPS/MMW_MESGS`
+
+```
+T-Code: /ISDFPS/MMW_MESGS
+└── DF_ME_NAV
+    ├── ACTVT → 16, 3
+    └── DF_ME_NAV → ADM, EHS, HR, MM, PM
+```
+
+### 2255. `/ISDFPS/MM_CS_EXLST`
+
+```
+T-Code: /ISDFPS/MM_CS_EXLST
+└── S_GUI
+    └── ACTVT → 4, 60, 61
+```
+
+### 2256. `/ISDFPS/MM_RL01`
+
+```
+T-Code: /ISDFPS/MM_RL01
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 8
+    └── DF_PRPL → 1
+```
+
+### 2257. `/ISDFPS/MM_TRANS_DEL`
+
+```
+T-Code: /ISDFPS/MM_TRANS_DEL
+├── B_BUP_DCPD
+    ├── ACTVT → F4
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+├── F_KNA1_GEN
+    └── ACTVT → F4
+└── V_LIKP_VST
+    ├── ACTVT → 3
+    └── VSTEL → $VSTEL
+```
+
+### 2258. `/ISDFPS/MPA1`
+
+```
+T-Code: /ISDFPS/MPA1
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2259. `/ISDFPS/MPA2`
+
+```
+T-Code: /ISDFPS/MPA2
+├── C_PVS_PAID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── ALTNUM → (empty — maintain in PFCG)
+    ├── CLASS → (empty — maintain in PFCG)
+    └── PNAME → (empty — maintain in PFCG)
+├── C_PVS_PATY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PATYPE → (empty — maintain in PFCG)
+├── C_PVS_PNID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → (empty — maintain in PFCG)
+├── C_PVS_PNTY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PNTYPE → (empty — maintain in PFCG)
+├── C_PVS_PVID
+    ├── ACTVT → 1, 2, 3, 6
+    ├── PNAME → (empty — maintain in PFCG)
+    ├── PRODCLASS → (empty — maintain in PFCG)
+    └── PVNAME → (empty — maintain in PFCG)
+├── C_PVS_PVTY
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PVTYPE → (empty — maintain in PFCG)
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2260. `/ISDFPS/MPAEXPGEN`
+
+```
+T-Code: /ISDFPS/MPAEXPGEN
+├── C_PVS_PNID
+    ├── ACTVT → 1, 2, 3
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → (empty — maintain in PFCG)
+├── C_PVS_PNTY
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── APPLOBJTYP → MPA
+    └── PNTYPE → (empty — maintain in PFCG)
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2261. `/ISDFPS/MPANR`
+
+```
+T-Code: /ISDFPS/MPANR
+└── S_NUMBER
+    ├── ACTVT → 11, 2, 3
+    └── NROBJ → BP_BELEG
+```
+
+### 2262. `/ISDFPS/MPO`
+
+```
+T-Code: /ISDFPS/MPO
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2263. `/ISDFPS/MPONR`
+
+```
+T-Code: /ISDFPS/MPONR
+└── S_NUMBER
+    ├── ACTVT → 11, 2, 3
+    └── NROBJ → BP_BELEG
+```
+
+### 2264. `/ISDFPS/MPO_COMP`
+
+```
+T-Code: /ISDFPS/MPO_COMP
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2265. `/ISDFPS/MPO_MIG`
+
+```
+T-Code: /ISDFPS/MPO_MIG
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2266. `/ISDFPS/MPO_PLAN`
+
+```
+T-Code: /ISDFPS/MPO_PLAN
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2267. `/ISDFPS/MPO_SUB`
+
+```
+T-Code: /ISDFPS/MPO_SUB
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2268. `/ISDFPS/NASL`
+
+```
+T-Code: /ISDFPS/NASL
+└── DF_FOR_REL
+    ├── ACTVT → 3
+    ├── DF_OTYPE → (empty — maintain in PFCG)
+    └── DF_STATUS → (empty — maintain in PFCG)
+```
+
+### 2269. `/ISDFPS/OM_REF`
+
+```
+T-Code: /ISDFPS/OM_REF
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2270. `/ISDFPS/OPC_CF`
+
+```
+T-Code: /ISDFPS/OPC_CF
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1018, 1950, 1951, 1952, 1956, 1981, 1982, 1984, 9108
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2271. `/ISDFPS/OPC_LR`
+
+```
+T-Code: /ISDFPS/OPC_LR
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1018, 1950, 1951, 1952, 1956, 1981, 1982, 1984, 9108
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2272. `/ISDFPS/OPC_OECF`
+
+```
+T-Code: /ISDFPS/OPC_OECF
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1018, 1950, 1951, 1952, 1956, 1981, 1982, 1984, 9108
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2273. `/ISDFPS/OPC_OELR`
+
+```
+T-Code: /ISDFPS/OPC_OELR
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1018, 1950, 1951, 1952, 1956, 1981, 1982, 1984, 9108
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2274. `/ISDFPS/OPC_PROJ`
+
+```
+T-Code: /ISDFPS/OPC_PROJ
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1018, 1950, 1951, 1952, 1956, 1981, 1982, 1984, 9108
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2275. `/ISDFPS/OR01`
+
+```
+T-Code: /ISDFPS/OR01
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → &NC&
+```
+
+### 2276. `/ISDFPS/OR02`
+
+```
+T-Code: /ISDFPS/OR02
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → &NC&
+```
+
+### 2277. `/ISDFPS/ORMNT_MMDOCS`
+
+```
+T-Code: /ISDFPS/ORMNT_MMDOCS
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1955, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2278. `/ISDFPS/ORMNT_PMDOCS`
+
+```
+T-Code: /ISDFPS/ORMNT_PMDOCS
+├── I_AUART
+    ├── AUFART → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1955, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → A806
+```
+
+### 2279. `/ISDFPS/ORSUP_DOCS`
+
+```
+T-Code: /ISDFPS/ORSUP_DOCS
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, VPA
+    └── DF_STATUS → I1170
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1955, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → A002, B002, E002, T002, V002
+```
+
+### 2280. `/ISDFPS/OVXC`
+
+```
+T-Code: /ISDFPS/OVXC
+└── S_TCODE
+    └── TCD → /ISDFPS/OVCX
+```
+
+### 2281. `/ISDFPS/PERS1`
+
+```
+T-Code: /ISDFPS/PERS1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+├── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 3, 6, 7, 8
+    └── DF_PRPL → 1, 3
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2282. `/ISDFPS/PERS2`
+
+```
+T-Code: /ISDFPS/PERS2
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2283. `/ISDFPS/PLBA`
+
+```
+T-Code: /ISDFPS/PLBA
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /ISDFPS/ME_LUA
+    └── ALG_SUBOBJ → APPL, AUTH, OTHERS
+├── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_USER_GRP
+    ├── ACTVT → 8
+    └── CLASS → ' '
+```
+
+### 2284. `/ISDFPS/PMBOOK0`
+
+```
+T-Code: /ISDFPS/PMBOOK0
+├── I_IWERK
+    ├── IWERK → $IWERK
+    └── TCD → /ISDFPS/LMACC1
+├── I_SWERK
+    ├── SWERK → $SWERK
+    └── TCD → /ISDFPS/LMACC1
+├── I_TCODE
+    └── TCD → /ISDFPS/LMACC1
+├── S_DATASET
+    ├── ACTVT → 34
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /ISDFPS/SAPLLM_ACCIDENT_UI
+└── S_GUI
+    └── ACTVT → 61
+```
+
+### 2285. `/ISDFPS/PMBOOK1`
+
+```
+T-Code: /ISDFPS/PMBOOK1
+├── I_IWERK
+    ├── IWERK → $IWERK
+    └── TCD → /ISDFPS/LMACC1
+├── I_SWERK
+    ├── SWERK → $SWERK
+    └── TCD → /ISDFPS/LMACC1
+├── I_TCODE
+    └── TCD → /ISDFPS/LMACC1
+├── S_DATASET
+    ├── ACTVT → 34
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /ISDFPS/SAPLLM_ACCIDENT_UI
+└── S_GUI
+    └── ACTVT → 61
+```
+
+### 2286. `/ISDFPS/PMBOOK2`
+
+```
+T-Code: /ISDFPS/PMBOOK2
+├── I_IWERK
+    ├── IWERK → $IWERK
+    └── TCD → /ISDFPS/LMACC1
+├── I_SWERK
+    ├── SWERK → $SWERK
+    └── TCD → /ISDFPS/LMACC1
+├── I_TCODE
+    └── TCD → /ISDFPS/LMACC1
+├── S_DATASET
+    ├── ACTVT → 34
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /ISDFPS/SAPLLM_ACCIDENT_UI
+└── S_GUI
+    └── ACTVT → 61
+```
+
+### 2287. `/ISDFPS/PMCPRUN1`
+
+```
+T-Code: /ISDFPS/PMCPRUN1
+└── B_FOX
+    └── ACTVT → 1, 3, 6
+```
+
+### 2288. `/ISDFPS/PMDIS3`
+
+```
+T-Code: /ISDFPS/PMDIS3
+├── S_DATASET
+    ├── ACTVT → 33, 34, 6
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /ISDFPS/PM_ALT_DATEN_EXP, /ISDFPS/PM_ALT_DATEN_GEN_EXP
+└── S_GUI
+    └── ACTVT → 60, 61
+```
+
+### 2289. `/ISDFPS/PMDIS4`
+
+```
+T-Code: /ISDFPS/PMDIS4
+├── S_DATASET
+    ├── ACTVT → 33, 34, 6
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /ISDFPS/PM_ALT_DATEN_GEN_EXP
+└── S_GUI
+    └── ACTVT → 60, 61
+```
+
+### 2290. `/ISDFPS/PMDIS5`
+
+```
+T-Code: /ISDFPS/PMDIS5
+├── S_DATASET
+    ├── ACTVT → 33, 34, 6
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /ISDFPS/PM_ALT_DATEN_IMPORT
+└── S_GUI
+    └── ACTVT → 60, 61
+```
+
+### 2291. `/ISDFPS/PMEQSE1`
+
+```
+T-Code: /ISDFPS/PMEQSE1
+├── S_ALV_LAYO
+    └── ACTVT → 23
+└── S_GUI
+    └── ACTVT → 4, 61
+```
+
+### 2292. `/ISDFPS/PMMASSFWOBJ`
+
+```
+T-Code: /ISDFPS/PMMASSFWOBJ
+├── C_AFKO_ACT
+    └── PS_ACTVT → F4
+├── C_AFKO_AWK
+    ├── AUFART → (empty — maintain in PFCG)
+    └── WERKS → $WERKS
+├── C_AFKO_DIS
+    ├── DISPO → (empty — maintain in PFCG)
+    ├── TRTYP → (empty — maintain in PFCG)
+    └── WERKS → $WERKS
+└── I_TCODE
+    └── TCD → /ISDFPS/PMMASSFWOBJ
+```
+
+### 2293. `/ISDFPS/PMRELOC1`
+
+```
+T-Code: /ISDFPS/PMRELOC1
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2294. `/ISDFPS/PMRUECK1`
+
+```
+T-Code: /ISDFPS/PMRUECK1
+└── B_UPS
+    ├── ACTVT → 1, 2
+    ├── UPSMODE → O
+    ├── UPSTYP → (empty — maintain in PFCG)
+    └── VRGNG → (empty — maintain in PFCG)
+```
+
+### 2295. `/ISDFPS/PMTR0`
+
+```
+T-Code: /ISDFPS/PMTR0
+├── DF_TRAIN_C
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── DF_TRAIN_C → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── DF_TRAIN_P
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── DF_TRAIN_P → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+├── P_ORGIN
+    ├── AUTHC → M, R
+    ├── INFTY → 1, 2, 806
+    ├── PERSA → (empty — maintain in PFCG)
+    ├── PERSG → (empty — maintain in PFCG)
+    ├── PERSK → (empty — maintain in PFCG)
+    ├── SUBTY → (empty — maintain in PFCG)
+    └── VDSK1 → (empty — maintain in PFCG)
+└── P_PERNR
+    ├── AUTHC → R
+    ├── INFTY → 1, 2, 806
+    ├── PSIGN → (empty — maintain in PFCG)
+    └── SUBTY → (empty — maintain in PFCG)
+```
+
+### 2296. `/ISDFPS/PMTR1`
+
+```
+T-Code: /ISDFPS/PMTR1
+├── DF_TRAIN_C
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── DF_TRAIN_C → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── P_ORGIN
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0, 1, 1000, 1001, 1055, 2, 6
+    ├── PERSA → (empty — maintain in PFCG)
+    ├── PERSG → (empty — maintain in PFCG)
+    ├── PERSK → (empty — maintain in PFCG)
+    ├── SUBTY → (empty — maintain in PFCG)
+    └── VDSK1 → (empty — maintain in PFCG)
+└── P_PERNR
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0, 1, 1000, 1001, 1055, 2, 6
+    ├── PSIGN → (empty — maintain in PFCG)
+    └── SUBTY → (empty — maintain in PFCG)
+```
+
+### 2297. `/ISDFPS/PMTR2`
+
+```
+T-Code: /ISDFPS/PMTR2
+├── DF_TRAIN_P
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── DF_TRAIN_P → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── P_ORGIN
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0, 1, 1000, 1001, 1055, 2, 6
+    ├── PERSA → (empty — maintain in PFCG)
+    ├── PERSG → (empty — maintain in PFCG)
+    ├── PERSK → (empty — maintain in PFCG)
+    ├── SUBTY → (empty — maintain in PFCG)
+    └── VDSK1 → (empty — maintain in PFCG)
+└── P_PERNR
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0, 1, 1000, 1001, 1055, 2, 6
+    ├── PSIGN → (empty — maintain in PFCG)
+    └── SUBTY → (empty — maintain in PFCG)
+```
+
+### 2298. `/ISDFPS/PMTR3`
+
+```
+T-Code: /ISDFPS/PMTR3
+├── DF_TRAIN_C
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── DF_TRAIN_C → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── DF_TRAIN_P
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── DF_TRAIN_P → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── P_ORGIN
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0, 1, 1000, 1001, 1055, 2, 6
+    ├── PERSA → (empty — maintain in PFCG)
+    ├── PERSG → (empty — maintain in PFCG)
+    ├── PERSK → (empty — maintain in PFCG)
+    ├── SUBTY → (empty — maintain in PFCG)
+    └── VDSK1 → (empty — maintain in PFCG)
+└── P_PERNR
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0, 1, 1000, 1001, 1055, 2, 6
+    ├── PSIGN → (empty — maintain in PFCG)
+    └── SUBTY → (empty — maintain in PFCG)
+```
+
+### 2299. `/ISDFPS/PMTR4`
+
+```
+T-Code: /ISDFPS/PMTR4
+├── DF_TRAIN_C
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── DF_TRAIN_C → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── DF_TRAIN_P
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── DF_TRAIN_P → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+├── P_ORGIN
+    ├── AUTHC → M, R
+    ├── INFTY → 1, 2, 806
+    ├── PERSA → (empty — maintain in PFCG)
+    ├── PERSG → (empty — maintain in PFCG)
+    ├── PERSK → (empty — maintain in PFCG)
+    ├── SUBTY → (empty — maintain in PFCG)
+    └── VDSK1 → (empty — maintain in PFCG)
+└── P_PERNR
+    ├── AUTHC → R
+    ├── INFTY → 1, 2, 806
+    ├── PSIGN → (empty — maintain in PFCG)
+    └── SUBTY → (empty — maintain in PFCG)
+```
+
+### 2300. `/ISDFPS/PMTR5`
+
+```
+T-Code: /ISDFPS/PMTR5
+├── DF_TRAIN_C
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── DF_TRAIN_C → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── P_ORGIN
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0, 1, 1000, 1001, 1055, 2, 6
+    ├── PERSA → (empty — maintain in PFCG)
+    ├── PERSG → (empty — maintain in PFCG)
+    ├── PERSK → (empty — maintain in PFCG)
+    ├── SUBTY → (empty — maintain in PFCG)
+    └── VDSK1 → (empty — maintain in PFCG)
+└── P_PERNR
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0, 1, 1000, 1001, 1055, 2, 6
+    ├── PSIGN → (empty — maintain in PFCG)
+    └── SUBTY → (empty — maintain in PFCG)
+```
+
+### 2301. `/ISDFPS/PMTR6`
+
+```
+T-Code: /ISDFPS/PMTR6
+├── DF_TRAIN_P
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── DF_TRAIN_P → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── P_ORGIN
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0, 1, 1000, 1001, 1055, 2, 6
+    ├── PERSA → (empty — maintain in PFCG)
+    ├── PERSG → (empty — maintain in PFCG)
+    ├── PERSK → (empty — maintain in PFCG)
+    ├── SUBTY → (empty — maintain in PFCG)
+    └── VDSK1 → (empty — maintain in PFCG)
+└── P_PERNR
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0, 1, 1000, 1001, 1055, 2, 6
+    ├── PSIGN → (empty — maintain in PFCG)
+    └── SUBTY → (empty — maintain in PFCG)
+```
+
+### 2302. `/ISDFPS/PMTR7`
+
+```
+T-Code: /ISDFPS/PMTR7
+├── DF_TRAIN_C
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── DF_TRAIN_C → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── DF_TRAIN_P
+    ├── AUFART → (empty — maintain in PFCG)
+    ├── DF_TRAIN_P → (empty — maintain in PFCG)
+    └── IWERK → $IWERK
+├── P_ORGIN
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0, 1, 1000, 1001, 1055, 2, 6
+    ├── PERSA → (empty — maintain in PFCG)
+    ├── PERSG → (empty — maintain in PFCG)
+    ├── PERSK → (empty — maintain in PFCG)
+    ├── SUBTY → (empty — maintain in PFCG)
+    └── VDSK1 → (empty — maintain in PFCG)
+└── P_PERNR
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0, 1, 1000, 1001, 1055, 2, 6
+    ├── PSIGN → (empty — maintain in PFCG)
+    └── SUBTY → (empty — maintain in PFCG)
+```
+
+### 2303. `/ISDFPS/PORT_SWITCH`
+
+```
+T-Code: /ISDFPS/PORT_SWITCH
+└── DF_BAS_ALE
+    └── DF_SYNCACT → OFFLINE, ONLINE, SYNC
+```
+
+### 2304. `/ISDFPS/POSGEN`
+
+```
+T-Code: /ISDFPS/POSGEN
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2305. `/ISDFPS/POS_GEN`
+
+```
+T-Code: /ISDFPS/POS_GEN
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → (empty — maintain in PFCG)
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2306. `/ISDFPS/PRELOC1`
+
+```
+T-Code: /ISDFPS/PRELOC1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+├── DF_LOGFUNC
+    └── DF_LOGFUNC → ANFO, DISP
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 3, 6, 7
+    └── DF_PRPL → 1, 3
+```
+
+### 2307. `/ISDFPS/PRELOC2`
+
+```
+T-Code: /ISDFPS/PRELOC2
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2308. `/ISDFPS/PRPLB`
+
+```
+T-Code: /ISDFPS/PRPLB
+└── DF_MAT_PLN
+    ├── DF_MATPLN → (empty — maintain in PFCG)
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2309. `/ISDFPS/PRPLD`
+
+```
+T-Code: /ISDFPS/PRPLD
+└── DF_MAT_PLN
+    ├── DF_MATPLN → (empty — maintain in PFCG)
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2310. `/ISDFPS/PURDOCS`
+
+```
+T-Code: /ISDFPS/PURDOCS
+├── M_BANF_BSA
+    ├── ACTVT → 3, 8
+    └── BSART → 3, 8
+├── M_BANF_EKG
+    ├── ACTVT → 3, 8
+    └── EKGRP → $EKGRP
+├── M_BANF_EKO
+    ├── ACTVT → 3, 8
+    └── EKORG → $EKORG
+├── M_BANF_WRK
+    ├── ACTVT → 3, 8
+    └── WERKS → $WERKS
+├── M_BEST_BSA
+    ├── ACTVT → 3, 8, 9
+    └── BSART → 3, 8, 9
+├── M_BEST_EKG
+    ├── ACTVT → 3, 8, 9
+    └── EKGRP → $EKGRP
+├── M_BEST_EKO
+    ├── ACTVT → 3, 8, 9
+    └── EKORG → $EKORG
+├── M_BEST_WRK
+    ├── ACTVT → 3
+    └── WERKS → $WERKS
+└── V_LIKP_VST
+    ├── ACTVT → 3
+    └── VSTEL → $VSTEL
+```
+
+### 2311. `/ISDFPS/PUWNR_U`
+
+```
+T-Code: /ISDFPS/PUWNR_U
+└── DF_BERID
+    ├── ACTVT → 2, 3
+    └── BERID → (empty — maintain in PFCG)
+```
+
+### 2312. `/ISDFPS/PUWNR_V`
+
+```
+T-Code: /ISDFPS/PUWNR_V
+└── DF_BERID
+    ├── ACTVT → 2, 3
+    └── BERID → (empty — maintain in PFCG)
+```
+
+### 2313. `/ISDFPS/RELOC1`
+
+```
+T-Code: /ISDFPS/RELOC1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+├── DF_LOGFUNC
+    └── DF_LOGFUNC → ANFO, DISP
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2314. `/ISDFPS/RELOC2`
+
+```
+T-Code: /ISDFPS/RELOC2
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2315. `/ISDFPS/RELOC_DEL`
+
+```
+T-Code: /ISDFPS/RELOC_DEL
+├── DF_REL
+    └── ACTVT → 1, 2, 3, 6
+└── PLOG
+    ├── INFOTYP → 1001, 1008, 1270, 1956, 1980, 1985
+    ├── ISTAT → 1
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DEL, DISP, INSE
+    └── SUBTYP → 1, 101, 106, A002, A003, A011, A806, A807, A823, B800, B803, B806, B821, B823, B826, E002, L002
+```
+
+### 2316. `/ISDFPS/RELOC_STORNO`
+
+```
+T-Code: /ISDFPS/RELOC_STORNO
+└── DF_REL
+    └── ACTVT → 2
+```
+
+### 2317. `/ISDFPS/REPL_LAGP`
+
+```
+T-Code: /ISDFPS/REPL_LAGP
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2318. `/ISDFPS/REPL_LAGP_RF`
+
+```
+T-Code: /ISDFPS/REPL_LAGP_RF
+├── DF_WM_ATR
+    ├── ACTVT → 1, 2, 21, 3, 6
+    └── DF_WM_ATR → ACUS, ALNR, ALPL, ALTP, PTWY, TLNK
+└── DF_WM_NAV
+    ├── ACTVT → 1, 2, 21, 3, 6
+    ├── DF_WM_NAV → MISC, PTWY, STPA, STRE, STSE, STTD
+    └── LGNUM → $LGNUM
+```
+
+### 2319. `/ISDFPS/RES_TBL_LOG`
+
+```
+T-Code: /ISDFPS/RES_TBL_LOG
+├── S_TABU_CLI
+    └── CLIIDMAINT → X
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2320. `/ISDFPS/RFFMKBHA`
+
+```
+T-Code: /ISDFPS/RFFMKBHA
+├── F_FICB_FKR
+    ├── FM_AUTHACT → (empty — maintain in PFCG)
+    └── FM_FIKRS → $FIKRS
+└── F_FICB_VER
+    ├── FM_AUTHACT → (empty — maintain in PFCG)
+    ├── FM_FIKRS → $FIKRS
+    └── FM_VERSN → (empty — maintain in PFCG)
+```
+
+### 2321. `/ISDFPS/RFFMKBHE`
+
+```
+T-Code: /ISDFPS/RFFMKBHE
+├── F_FICB_FKR
+    ├── FM_AUTHACT → (empty — maintain in PFCG)
+    └── FM_FIKRS → $FIKRS
+└── F_FICB_VER
+    ├── FM_AUTHACT → (empty — maintain in PFCG)
+    ├── FM_FIKRS → $FIKRS
+    └── FM_VERSN → (empty — maintain in PFCG)
+```
+
+### 2322. `/ISDFPS/RIC1`
+
+```
+T-Code: /ISDFPS/RIC1
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2323. `/ISDFPS/RIC2`
+
+```
+T-Code: /ISDFPS/RIC2
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2324. `/ISDFPS/ROLE_MANAGER`
+
+```
+T-Code: /ISDFPS/ROLE_MANAGER
+├── PLOG
+    ├── INFOTYP → 1000, 1001, 1270, 1955, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → AG, C, LA, O, P, S, US
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DEL, DISP, INSE
+    └── SUBTYP → *
+├── S_TCODE
+    └── TCD → PFCG
+├── S_TRANSPRT
+    ├── ACTVT → 1, 2
+    └── TTYPE → CUST, TASK
+├── S_USER_AGR
+    ├── ACTVT → 1, 2, 21, 3, 6, 64
+    └── ACT_GROUP → (empty — maintain in PFCG)
+├── S_USER_PRO
+    ├── ACTVT → 1, 3, 6
+    └── PROFILE → (empty — maintain in PFCG)
+└── S_USER_VAL
+    ├── AUTH_FIELD → (empty — maintain in PFCG)
+    ├── AUTH_VALUE → (empty — maintain in PFCG)
+    └── OBJECT → (empty — maintain in PFCG)
+```
+
+### 2325. `/ISDFPS/SET_OFFLINE`
+
+```
+T-Code: /ISDFPS/SET_OFFLINE
+└── DF_BAS_ALE
+    └── DF_SYNCACT → OFFLINE, ONLINE, SYNC
+```
+
+### 2326. `/ISDFPS/SET_ONLINE`
+
+```
+T-Code: /ISDFPS/SET_ONLINE
+└── DF_BAS_ALE
+    └── DF_SYNCACT → OFFLINE, ONLINE, SYNC
+```
+
+### 2327. `/ISDFPS/SHIFT_MAT`
+
+```
+T-Code: /ISDFPS/SHIFT_MAT
+├── C_PVS_PNID
+    ├── ACTVT → 2, 3
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → ' '
+├── C_PVS_PNTY
+    ├── ACTVT → 2, 3
+    ├── APPLOBJTYP → MPA, MPO
+    └── PNTYPE → (empty — maintain in PFCG)
+├── DF_FOR_REL
+    ├── ACTVT → 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170, I1171, I1172, I1173, I1174, I1175
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1950, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → C, O, RF, S
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2328. `/ISDFPS/SHIFT_OPEX`
+
+```
+T-Code: /ISDFPS/SHIFT_OPEX
+├── PLOG
+    ├── INFOTYP → 1001, 1985
+    ├── ISTAT → 1
+    ├── OTYPE → O, P, S
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → INSE
+    └── SUBTYP → A824, A826, A827, B823, B824, B826, B827, E002, E003, E008, U002, U003, U008
+├── P_ORGIN
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0, 1
+    ├── PERSA → (empty — maintain in PFCG)
+    ├── PERSG → (empty — maintain in PFCG)
+    ├── PERSK → (empty — maintain in PFCG)
+    ├── SUBTY → (empty — maintain in PFCG)
+    └── VDSK1 → (empty — maintain in PFCG)
+├── P_PERNR
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 0
+    ├── PSIGN → (empty — maintain in PFCG)
+    └── SUBTY → (empty — maintain in PFCG)
+├── S_SCMG_CAS
+    ├── CASETYPE → DFP1, DFP2, DFP3
+    ├── SCMG_ACT → CREA, DISP, MODI
+    ├── SCMG_KEY → (empty — maintain in PFCG)
+    ├── SCMG_LVL → (empty — maintain in PFCG)
+    ├── SCMG_ROLE → (empty — maintain in PFCG)
+    └── SPS_ID → /ISDFPS/GENERAL_TRANSACTION, /ISDFPS/GENERAL_URL, /ISDFPS/IND_MEASURE, /ISDFPS/IND_MEASURE_MODEL, /ISDFPS/IND_MEASURE_RECORD, /ISDFPS/MEASURE_AREA, /ISDFPS/MEASURE_AREA_MODEL, /ISDFPS/MEASURE_AREA_RECORD, /ISDFPS/ORGM_DOCUMENT, /ISDFPS/ORG_MEASURE, /ISDFPS/ORG_MEASURE_MODEL, /ISDFPS/ORG_MEASURE_NOTES, /ISDFPS/ORG_MEASURE_RECORD
+├── S_SCMG_FLN
+    ├── ACTVT → 2, 3
+    ├── CASETYPE → DFP1, DFP2, DFP3
+    ├── SCMG_FIELD → (empty — maintain in PFCG)
+    ├── SCMG_ROLE → (empty — maintain in PFCG)
+    └── SPS_ID → (empty — maintain in PFCG)
+└── S_SRMGS_PR
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DOCUMENTID → (empty — maintain in PFCG)
+    ├── PROPGROUP → (empty — maintain in PFCG)
+    ├── PROPNAME → (empty — maintain in PFCG)
+    ├── SPS_ID → /ISDFPS/GENERAL_TRANSACTION, /ISDFPS/GENERAL_URL, /ISDFPS/IND_MEASURE, /ISDFPS/IND_MEASURE_MODEL, /ISDFPS/IND_MEASURE_RECORD, /ISDFPS/MEASURE_AREA, /ISDFPS/MEASURE_AREA_MODEL, /ISDFPS/MEASURE_AREA_RECORD, /ISDFPS/ORGM_DOCUMENT, /ISDFPS/ORG_MEASURE, /ISDFPS/ORG_MEASURE_MODEL, /ISDFPS/ORG_MEASURE_NOTES, /ISDFPS/ORG_MEASURE_RECORD
+    └── SRM_MODEL → (empty — maintain in PFCG)
+```
+
+### 2329. `/ISDFPS/SHIFT_OR`
+
+```
+T-Code: /ISDFPS/SHIFT_OR
+└── PLOG
+    ├── INFOTYP → 1000, 1001, 1950, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → O, RF
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+```
+
+### 2330. `/ISDFPS/SHIFT_REL`
+
+```
+T-Code: /ISDFPS/SHIFT_REL
+└── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → O
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → (empty — maintain in PFCG)
+    └── SUBTYP → A803, A806, A807, A808, B803, B806, B807, B808
+```
+
+### 2331. `/ISDFPS/SLG1`
+
+```
+T-Code: /ISDFPS/SLG1
+└── S_APPL_LOG
+    ├── ACTVT → 3, 6
+    ├── ALG_OBJECT → (empty — maintain in PFCG)
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+```
+
+### 2332. `/ISDFPS/SLG1_SW`
+
+```
+T-Code: /ISDFPS/SLG1_SW
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → (empty — maintain in PFCG)
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+```
+
+### 2333. `/ISDFPS/SREL1`
+
+```
+T-Code: /ISDFPS/SREL1
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2334. `/ISDFPS/SREL2`
+
+```
+T-Code: /ISDFPS/SREL2
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 3, 6, 7
+    └── DF_PRPL → 1, 3
+```
+
+### 2335. `/ISDFPS/START_CPR`
+
+```
+T-Code: /ISDFPS/START_CPR
+└── W_BETR_USR
+    ├── ACTVT → F4
+    └── WERKS → $WERKS
+```
+
+### 2336. `/ISDFPS/STATE_CHECK`
+
+```
+T-Code: /ISDFPS/STATE_CHECK
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2337. `/ISDFPS/STOCK_RELOC`
+
+```
+T-Code: /ISDFPS/STOCK_RELOC
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2338. `/ISDFPS/STOCK_RETURN`
+
+```
+T-Code: /ISDFPS/STOCK_RETURN
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2339. `/ISDFPS/SV_FORM`
+
+```
+T-Code: /ISDFPS/SV_FORM
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → &NC&
+└── S_TRANSPRT
+    ├── ACTVT → 1, 2, 3
+    └── TTYPE → CUST, TASK
+```
+
+### 2340. `/ISDFPS/SWITCH_PP_I`
+
+```
+T-Code: /ISDFPS/SWITCH_PP_I
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2341. `/ISDFPS/SWITCH_PP_O`
+
+```
+T-Code: /ISDFPS/SWITCH_PP_O
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2342. `/ISDFPS/SW_EXEC`
+
+```
+T-Code: /ISDFPS/SW_EXEC
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /ISDFPS/MM_CS
+    └── ALG_SUBOBJ → SYSTEMCHANGE
+```
+
+### 2343. `/ISDFPS/SW_SIMULATE`
+
+```
+T-Code: /ISDFPS/SW_SIMULATE
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /ISDFPS/MM_CS
+    └── ALG_SUBOBJ → SYSTEMCHANGE
+```
+
+### 2344. `/ISDFPS/SYSTEM_MON`
+
+```
+T-Code: /ISDFPS/SYSTEM_MON
+└── DF_BAS_ALE
+    └── DF_SYNCACT → OFFLINE, ONLINE, SYNC
+```
+
+### 2345. `/ISDFPS/SYSTEM_STATE`
+
+```
+T-Code: /ISDFPS/SYSTEM_STATE
+└── DF_BAS_ALE
+    └── DF_SYNCACT → OFFLINE, ONLINE, SYNC
+```
+
+### 2346. `/ISDFPS/SYSTEM_SYNC`
+
+```
+T-Code: /ISDFPS/SYSTEM_SYNC
+└── DF_BAS_ALE
+    └── DF_SYNCACT → OFFLINE, ONLINE, SYNC
+```
+
+### 2347. `/ISDFPS/T024D_U`
+
+```
+T-Code: /ISDFPS/T024D_U
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2348. `/ISDFPS/T024D_V`
+
+```
+T-Code: /ISDFPS/T024D_V
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2349. `/ISDFPS/T313Y_U`
+
+```
+T-Code: /ISDFPS/T313Y_U
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2350. `/ISDFPS/T313Y_V`
+
+```
+T-Code: /ISDFPS/T313Y_V
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2351. `/ISDFPS/T630L_U`
+
+```
+T-Code: /ISDFPS/T630L_U
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → VC
+```
+
+### 2352. `/ISDFPS/T630L_V`
+
+```
+T-Code: /ISDFPS/T630L_V
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → VC
+```
+
+### 2353. `/ISDFPS/T630R_U`
+
+```
+T-Code: /ISDFPS/T630R_U
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2354. `/ISDFPS/T630R_V`
+
+```
+T-Code: /ISDFPS/T630R_V
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2355. `/ISDFPS/TA_PSPMAT`
+
+```
+T-Code: /ISDFPS/TA_PSPMAT
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2356. `/ISDFPS/TOB1`
+
+```
+T-Code: /ISDFPS/TOB1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+├── DF_LM_EQXT
+    └── ACTVT → 3
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 3, 6, 7
+    └── DF_PRPL → 1, 3
+```
+
+### 2357. `/ISDFPS/TOB2`
+
+```
+T-Code: /ISDFPS/TOB2
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2358. `/ISDFPS/TOE1`
+
+```
+T-Code: /ISDFPS/TOE1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 3, 6, 7
+    └── DF_PRPL → 1, 3
+```
+
+### 2359. `/ISDFPS/TOEACC1`
+
+```
+T-Code: /ISDFPS/TOEACC1
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2360. `/ISDFPS/TOEACC2`
+
+```
+T-Code: /ISDFPS/TOEACC2
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2361. `/ISDFPS/TOEFU1`
+
+```
+T-Code: /ISDFPS/TOEFU1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+├── DF_LM_EQXT
+    └── ACTVT → 3
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 3, 6, 7
+    └── DF_PRPL → 1, 3
+```
+
+### 2362. `/ISDFPS/TOEFU2`
+
+```
+T-Code: /ISDFPS/TOEFU2
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2363. `/ISDFPS/TOELOG1`
+
+```
+T-Code: /ISDFPS/TOELOG1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, VPA
+    └── DF_STATUS → I1170
+├── DF_LOGFUNC
+    └── DF_LOGFUNC → ANFO, DISP
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2364. `/ISDFPS/TOELOG2`
+
+```
+T-Code: /ISDFPS/TOELOG2
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2365. `/ISDFPS/TOEM1`
+
+```
+T-Code: /ISDFPS/TOEM1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+├── DF_LOGFUNC
+    └── DF_LOGFUNC → ANFO, DISP
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 3, 6, 7
+    └── DF_PRPL → 1, 3
+```
+
+### 2366. `/ISDFPS/TOEM2`
+
+```
+T-Code: /ISDFPS/TOEM2
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2367. `/ISDFPS/TOEP1`
+
+```
+T-Code: /ISDFPS/TOEP1
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2368. `/ISDFPS/TOEP2`
+
+```
+T-Code: /ISDFPS/TOEP2
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2369. `/ISDFPS/TORG1`
+
+```
+T-Code: /ISDFPS/TORG1
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2370. `/ISDFPS/TORG2`
+
+```
+T-Code: /ISDFPS/TORG2
+├── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2371. `/ISDFPS/TROAL_U`
+
+```
+T-Code: /ISDFPS/TROAL_U
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → VC
+```
+
+### 2372. `/ISDFPS/TROAL_V`
+
+```
+T-Code: /ISDFPS/TROAL_V
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → VC
+```
+
+### 2373. `/ISDFPS/TROLZ_U`
+
+```
+T-Code: /ISDFPS/TROLZ_U
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → VC
+```
+
+### 2374. `/ISDFPS/TROLZ_V`
+
+```
+T-Code: /ISDFPS/TROLZ_V
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → VC
+```
+
+### 2375. `/ISDFPS/TVKOL_U`
+
+```
+T-Code: /ISDFPS/TVKOL_U
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2376. `/ISDFPS/TVKOL_V`
+
+```
+T-Code: /ISDFPS/TVKOL_V
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2377. `/ISDFPS/TVLA_U`
+
+```
+T-Code: /ISDFPS/TVLA_U
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2378. `/ISDFPS/TVLA_V`
+
+```
+T-Code: /ISDFPS/TVLA_V
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2379. `/ISDFPS/TVRO_U`
+
+```
+T-Code: /ISDFPS/TVRO_U
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → VC
+```
+
+### 2380. `/ISDFPS/TVRO_V`
+
+```
+T-Code: /ISDFPS/TVRO_V
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → VC
+```
+
+### 2381. `/ISDFPS/TVSTRF_V`
+
+```
+T-Code: /ISDFPS/TVSTRF_V
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → VC
+```
+
+### 2382. `/ISDFPS/TVSTZ_U`
+
+```
+T-Code: /ISDFPS/TVSTZ_U
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2383. `/ISDFPS/TVSTZ_V`
+
+```
+T-Code: /ISDFPS/TVSTZ_V
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2384. `/ISDFPS/TZONE_U`
+
+```
+T-Code: /ISDFPS/TZONE_U
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → FC
+```
+
+### 2385. `/ISDFPS/TZONE_V`
+
+```
+T-Code: /ISDFPS/TZONE_V
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → VC
+```
+
+### 2386. `/ISDFPS/UPD806`
+
+```
+T-Code: /ISDFPS/UPD806
+├── PLOG
+    ├── INFOTYP → 1001
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → CP, US
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → A208, B209
+├── P_ORGIN
+    ├── AUTHC → E, M, R
+    ├── INFTY → 2, 806
+    ├── PERSA → (empty — maintain in PFCG)
+    ├── PERSG → (empty — maintain in PFCG)
+    ├── PERSK → (empty — maintain in PFCG)
+    ├── SUBTY → (empty — maintain in PFCG)
+    └── VDSK1 → (empty — maintain in PFCG)
+├── P_PERNR
+    ├── AUTHC → (empty — maintain in PFCG)
+    ├── INFTY → 806
+    ├── PSIGN → (empty — maintain in PFCG)
+    └── SUBTY → (empty — maintain in PFCG)
+├── S_ALV_LAYO
+    └── ACTVT → 23
+└── S_GUI
+    └── ACTVT → 61
+```
+
+### 2387. `/ISDFPS/UPD_ORG_LEVB`
+
+```
+T-Code: /ISDFPS/UPD_ORG_LEVB
+├── PLOG
+    ├── INFOTYP → 1000, 1001, 1270, 1955, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → AG, C, LA, O, P, S, US
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → *
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /ISDFPS/ROLE_MANAGER
+    └── ALG_SUBOBJ → UPD_ORG_LEVS
+├── S_USER_AGR
+    ├── ACTVT → 2, 64, 78
+    └── ACT_GROUP → (empty — maintain in PFCG)
+└── S_USER_GRP
+    ├── ACTVT → 3
+    └── CLASS → (empty — maintain in PFCG)
+```
+
+### 2388. `/ISDFPS/UPD_ORG_LEVS`
+
+```
+T-Code: /ISDFPS/UPD_ORG_LEVS
+├── PLOG
+    ├── INFOTYP → 1000, 1001, 1270, 1955, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → AG, C, LA, O, P, S, US
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → *
+├── S_USER_AGR
+    ├── ACTVT → 2, 64, 78
+    └── ACT_GROUP → (empty — maintain in PFCG)
+└── S_USER_GRP
+    ├── ACTVT → 3
+    └── CLASS → (empty — maintain in PFCG)
+```
+
+### 2389. `/ISDFPS/UPD_ORG_LEVT`
+
+```
+T-Code: /ISDFPS/UPD_ORG_LEVT
+├── PLOG
+    ├── INFOTYP → 1000, 1001, 1270, 1955, 1985
+    ├── ISTAT → 1, 2, 3, 4, 5
+    ├── OTYPE → AG, C, LA, O, P, S, US
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → *
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /ISDFPS/ROLE_MANAGER
+    └── ALG_SUBOBJ → TIME_DEP
+├── S_USER_AGR
+    ├── ACTVT → 2, 64, 78
+    └── ACT_GROUP → (empty — maintain in PFCG)
+└── S_USER_GRP
+    ├── ACTVT → 3
+    └── CLASS → (empty — maintain in PFCG)
+```
+
+### 2390. `/ISDFPS/UPLN1`
+
+```
+T-Code: /ISDFPS/UPLN1
+└── DF_MAT_PLN
+    ├── DF_MATPLN → 1, 2, 3, 4, 5, 6, 7, 8
+    └── DF_PRPL → 1, 2, 3
+```
+
+### 2391. `/ISDFPS/UPS`
+
+```
+T-Code: /ISDFPS/UPS
+└── B_UPS
+    ├── ACTVT → 2, 3, 6
+    ├── UPSMODE → C, O
+    ├── UPSTYP → (empty — maintain in PFCG)
+    └── VRGNG → (empty — maintain in PFCG)
+```
+
+### 2392. `/ISDFPS/UPS01`
+
+```
+T-Code: /ISDFPS/UPS01
+├── B_UPS_CUS
+    └── ACTVT → 3
+├── C_PROJ_KOK
+    ├── KOKRS → $KOKRS
+    └── PS_ACTVT → (empty — maintain in PFCG)
+├── C_PROJ_PRC
+    ├── PRCTR → $PRCTR
+    └── PS_ACTVT → (empty — maintain in PFCG)
+├── C_PROJ_VNR
+    ├── PS_ACTVT → 3
+    └── PS_VERNR → 3
+├── C_PVS_PAID
+    ├── ACTVT → 3
+    ├── ALTNUM → (empty — maintain in PFCG)
+    ├── CLASS → (empty — maintain in PFCG)
+    └── PNAME → (empty — maintain in PFCG)
+├── C_PVS_PATY
+    ├── ACTVT → 3
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PATYPE → (empty — maintain in PFCG)
+├── C_PVS_PNID
+    ├── ACTVT → 3
+    ├── PNAME → (empty — maintain in PFCG)
+    └── PRODCLASS → (empty — maintain in PFCG)
+├── C_PVS_PNTY
+    ├── ACTVT → 3
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PNTYPE → (empty — maintain in PFCG)
+├── C_PVS_PVID
+    ├── ACTVT → 3
+    ├── PNAME → (empty — maintain in PFCG)
+    ├── PRODCLASS → (empty — maintain in PFCG)
+    └── PVNAME → (empty — maintain in PFCG)
+├── C_PVS_PVTY
+    ├── ACTVT → 3
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    └── PVTYPE → (empty — maintain in PFCG)
+├── F_BKPF_KOA
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── KOART → $KOART
+├── I_INGRP
+    ├── INGRP → (empty — maintain in PFCG)
+    ├── IWERK → $IWERK
+    └── TCD → (empty — maintain in PFCG)
+├── I_IWERK
+    ├── IWERK → $IWERK
+    └── TCD → (empty — maintain in PFCG)
+├── I_KOSTL
+    ├── KOKRS → $KOKRS
+    ├── KOSTL → (empty — maintain in PFCG)
+    └── TCD → (empty — maintain in PFCG)
+├── I_SWERK
+    ├── SWERK → $SWERK
+    └── TCD → (empty — maintain in PFCG)
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → CAPI
+    └── ALG_SUBOBJ → CAPILOG
+└── S_BTCH_JOB
+    ├── JOBACTION → LIST, PLAN, PROT, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 2393. `/ISDFPS/UPS02`
+
+```
+T-Code: /ISDFPS/UPS02
+├── B_UPS
+    ├── ACTVT → 2, 3, 6
+    ├── UPSMODE → C, O
+    ├── UPSTYP → (empty — maintain in PFCG)
+    └── VRGNG → (empty — maintain in PFCG)
+└── S_ALE_DSP
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_MATPLN → (empty — maintain in PFCG)
+    ├── DICBERCLS → (empty — maintain in PFCG)
+    ├── DSPMODE → C, O
+    ├── DSPNAM → 0
+    ├── FM_AUTHACT → (empty — maintain in PFCG)
+    ├── FM_FIKRS → $FIKRS
+    ├── KAPPL → (empty — maintain in PFCG)
+    ├── KOKRS → $KOKRS
+    ├── KSTAR → (empty — maintain in PFCG)
+    ├── KVEWE → (empty — maintain in PFCG)
+    ├── ORGEH → (empty — maintain in PFCG)
+    ├── UPSMODE → (empty — maintain in PFCG)
+    ├── UPSTYP → (empty — maintain in PFCG)
+    └── VRGNG → 0
+```
+
+### 2394. `/ISDFPS/UPS03`
+
+```
+T-Code: /ISDFPS/UPS03
+└── B_UPS
+    ├── ACTVT → 3
+    ├── UPSMODE → C, O
+    ├── UPSTYP → (empty — maintain in PFCG)
+    └── VRGNG → (empty — maintain in PFCG)
+```
+
+### 2395. `/ISDFPS/UPS04`
+
+```
+T-Code: /ISDFPS/UPS04
+├── B_UPS
+    ├── ACTVT → 1, 2, 3
+    ├── UPSMODE → C, O
+    ├── UPSTYP → (empty — maintain in PFCG)
+    └── VRGNG → (empty — maintain in PFCG)
+└── S_ALE_DSP
+    ├── ACTVT → 1, 2, 3, 6
+    ├── APPLOBJTYP → (empty — maintain in PFCG)
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── DICBERCLS → (empty — maintain in PFCG)
+    ├── DSPMODE → C, O
+    ├── DSPNAM → 0
+    ├── FM_AUTHACT → (empty — maintain in PFCG)
+    ├── FM_FIKRS → $FIKRS
+    ├── FM_VERSN → (empty — maintain in PFCG)
+    ├── KOART → $KOART
+    ├── PRCLASS → (empty — maintain in PFCG)
+    ├── PVTYPE → (empty — maintain in PFCG)
+    ├── TRNTYP → (empty — maintain in PFCG)
+    ├── UPSMODE → (empty — maintain in PFCG)
+    ├── UPSTYP → (empty — maintain in PFCG)
+    ├── VRGNG → 0
+    └── WERKS → $WERKS
+```
+
+### 2396. `/ISDFPS/UPS_FORCE`
+
+```
+T-Code: /ISDFPS/UPS_FORCE
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2397. `/ISDFPS/UPS_WRK_MAIN`
+
+```
+T-Code: /ISDFPS/UPS_WRK_MAIN
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2398. `/ISDFPS/USER_DISTRIB`
+
+```
+T-Code: /ISDFPS/USER_DISTRIB
+├── PLOG
+    ├── INFOTYP → 1001
+    ├── ISTAT → 1
+    ├── OTYPE → P, S, US
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → *
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /ISDFPS/CUA
+    └── ALG_SUBOBJ → USER_INIT
+```
+
+### 2399. `/ISDFPS/VLA01`
+
+```
+T-Code: /ISDFPS/VLA01
+└── V_LIKP_VST
+    ├── ACTVT → 1, 4
+    └── VSTEL → $VSTEL
+```
+
+### 2400. `/ISDFPS/VLKO`
+
+```
+T-Code: /ISDFPS/VLKO
+├── M_BEST_EKO
+    ├── ACTVT → 1, 4
+    └── EKORG → $EKORG
+└── V_LIKP_VST
+    ├── ACTVT → 1, 4
+    └── VSTEL → $VSTEL
+```
+
+### 2401. `/ISDFPS/VLRF`
+
+```
+T-Code: /ISDFPS/VLRF
+├── M_BEST_EKO
+    ├── ACTVT → 1, 4
+    └── EKORG → $EKORG
+└── V_LIKP_VST
+    ├── ACTVT → 1, 4
+    └── VSTEL → $VSTEL
+```
+
+### 2402. `/ISDFPS/VLV1`
+
+```
+T-Code: /ISDFPS/VLV1
+└── DF_REL
+    └── ACTVT → 1
+```
+
+### 2403. `/ISDFPS/VLV2`
+
+```
+T-Code: /ISDFPS/VLV2
+└── DF_REL
+    └── ACTVT → 3
+```
+
+### 2404. `/ISDFPS/VLVBE`
+
+```
+T-Code: /ISDFPS/VLVBE
+└── DF_REL
+    └── ACTVT → 1
+```
+
+### 2405. `/ISDFPS/VLVET`
+
+```
+T-Code: /ISDFPS/VLVET
+└── DF_REL
+    └── ACTVT → 1
+```
+
+### 2406. `/ISDFPS/VLVLS`
+
+```
+T-Code: /ISDFPS/VLVLS
+└── DF_REL
+    └── ACTVT → 1
+```
+
+### 2407. `/ISDFPS/VPA_INTERN`
+
+```
+T-Code: /ISDFPS/VPA_INTERN
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2408. `/ISDFPS/V_024_U`
+
+```
+T-Code: /ISDFPS/V_024_U
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2409. `/ISDFPS/V_024_V`
+
+```
+T-Code: /ISDFPS/V_024_V
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2410. `/ISDFPS/WFLIST`
+
+```
+T-Code: /ISDFPS/WFLIST
+├── DF_MAT_PLN
+    ├── DF_MATPLN → 5
+    └── DF_PRPL → (empty — maintain in PFCG)
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2411. `/ISDFPS/WF_ACC`
+
+```
+T-Code: /ISDFPS/WF_ACC
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2412. `/ISDFPS/WF_CUST`
+
+```
+T-Code: /ISDFPS/WF_CUST
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2413. `/ISDFPS/WF_EPA`
+
+```
+T-Code: /ISDFPS/WF_EPA
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2414. `/ISDFPS/WF_EXT`
+
+```
+T-Code: /ISDFPS/WF_EXT
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2415. `/ISDFPS/WF_EXU`
+
+```
+T-Code: /ISDFPS/WF_EXU
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2416. `/ISDFPS/WF_KST`
+
+```
+T-Code: /ISDFPS/WF_KST
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2417. `/ISDFPS/WF_MAP`
+
+```
+T-Code: /ISDFPS/WF_MAP
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2418. `/ISDFPS/WF_MAT`
+
+```
+T-Code: /ISDFPS/WF_MAT
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → EPA, MC, MPO, RIC, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2419. `/ISDFPS/WF_MATPLAN`
+
+```
+T-Code: /ISDFPS/WF_MATPLAN
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2420. `/ISDFPS/WF_MC`
+
+```
+T-Code: /ISDFPS/WF_MC
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2421. `/ISDFPS/WF_PER`
+
+```
+T-Code: /ISDFPS/WF_PER
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2422. `/ISDFPS/WF_PERPLAN`
+
+```
+T-Code: /ISDFPS/WF_PERPLAN
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2423. `/ISDFPS/WF_RIC`
+
+```
+T-Code: /ISDFPS/WF_RIC
+└── DF_FOR_REL
+    ├── ACTVT → 1, 2, 3, 6
+    ├── DF_OTYPE → BE, CMD, CN, EPA, MC, MCH, MNT, MPH, MPO, RIC, SUP, TOB, VPA
+    └── DF_STATUS → I1170
+```
+
+### 2424. `/ISDFPS/WF_SE16`
+
+```
+T-Code: /ISDFPS/WF_SE16
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2425. `/ISDFPS/XI_ALE_SYNC`
+
+```
+T-Code: /ISDFPS/XI_ALE_SYNC
+└── DF_BAS_ALE
+    └── DF_SYNCACT → SYNC
+```
+
+### 2426. `/ISDFPS/XI_INIT_LOAD`
+
+```
+T-Code: /ISDFPS/XI_INIT_LOAD
+├── PLOG
+    ├── INFOTYP → 1000
+    ├── ISTAT → 1
+    ├── OTYPE → O, R
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+└── S_TABU_RFC
+    └── ACTVT → 1
+```
+
+## `/IWBEP/` — SAP Gateway Backend (OData)
+> T-codes: **41**
+
+
+### 2427. `/IWBEP/57000002`
+
+```
+T-Code: /IWBEP/57000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_SYSTEM
+```
+
+### 2428. `/IWBEP/57000004`
+
+```
+T-Code: /IWBEP/57000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/V_EVENT, /IWBEP/V_EVT_TXT
+```
+
+### 2429. `/IWBEP/57000006`
+
+```
+T-Code: /IWBEP/57000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → SWFDVEVTYNOOPT
+```
+
+### 2430. `/IWBEP/92000024`
+
+```
+T-Code: /IWBEP/92000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_MGWUMDC
+```
+
+### 2431. `/IWBEP/97000002`
+
+```
+T-Code: /IWBEP/97000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/V_MGW_OHD, /IWBEP/V_MGW_SRG, /IWBEP/V_MGW_SRH
+```
+
+### 2432. `/IWBEP/97000003`
+
+```
+T-Code: /IWBEP/97000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/V_MGW_OHD, /IWBEP/V_MGW_SRG, /IWBEP/V_MGW_SRH
+```
+
+### 2433. `/IWBEP/ANA_SRV_GEN`
+
+```
+T-Code: /IWBEP/ANA_SRV_GEN
+├── S_DEVELOP
+    ├── ACTVT → 1
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → PROG
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2434. `/IWBEP/BATCH_CONFIG`
+
+```
+T-Code: /IWBEP/BATCH_CONFIG
+├── /IWBEP/ADM
+    └── ACTVT → 3
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2435. `/IWBEP/CACHE`
+
+```
+T-Code: /IWBEP/CACHE
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_CONFIG, /IWBEP/C_SCO
+```
+
+### 2436. `/IWBEP/CACHE_CLEANUP`
+
+```
+T-Code: /IWBEP/CACHE_CLEANUP
+├── S_GW_OP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── GW_OPAREA → SUPPORT
+    └── GW_USERCAT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/I_MGW_CTC
+```
+
+### 2437. `/IWBEP/CLEANUP_JOBS`
+
+```
+T-Code: /IWBEP/CLEANUP_JOBS
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → IWAD
+```
+
+### 2438. `/IWBEP/CONFIG_CHECK`
+
+```
+T-Code: /IWBEP/CONFIG_CHECK
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 2439. `/IWBEP/CONF_SERVICE`
+
+```
+T-Code: /IWBEP/CONF_SERVICE
+├── /IWBEP/ADM
+    └── ACTVT → 3
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /IWBEP/
+    └── ALG_SUBOBJ → /IWWRK/WF
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_SCO
+```
+
+### 2440. `/IWBEP/CP_ADMIN`
+
+```
+T-Code: /IWBEP/CP_ADMIN
+└── S_DEVELOP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → GCPM
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 2441. `/IWBEP/CP_CONFIG`
+
+```
+T-Code: /IWBEP/CP_CONFIG
+└── S_GW_COF
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── GW_COFAREA → SETTINGS
+```
+
+### 2442. `/IWBEP/CP_CRE_JOBS`
+
+```
+T-Code: /IWBEP/CP_CRE_JOBS
+├── S_BTCH_JOB
+    ├── JOBACTION → RELE
+    └── JOBGROUP → (empty — maintain in PFCG)
+├── S_DEVELOP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → GCPM
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT
+    └── P_PROGNAM → /IWBEP/R_DELTA_LINK_CLEANUP
+```
+
+### 2443. `/IWBEP/CP_DELTA_LINK`
+
+```
+T-Code: /IWBEP/CP_DELTA_LINK
+└── S_GW_OP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── GW_OPAREA → SUPPORT
+    └── GW_USERCAT → (empty — maintain in PFCG)
+```
+
+### 2444. `/IWBEP/CP_DEL_JOBS`
+
+```
+T-Code: /IWBEP/CP_DEL_JOBS
+└── S_BTCH_JOB
+    ├── JOBACTION → RELE
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 2445. `/IWBEP/CRE_DEF_JOBS`
+
+```
+T-Code: /IWBEP/CRE_DEF_JOBS
+└── S_BTCH_ADM
+    └── BTCADMIN → (empty — maintain in PFCG)
+```
+
+### 2446. `/IWBEP/ERROR_LOG`
+
+```
+T-Code: /IWBEP/ERROR_LOG
+├── /IWBEP/ADM
+    └── ACTVT → 3
+└── S_GW_MON
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── GW_LOGLVL → (empty — maintain in PFCG)
+    ├── GW_MONAREA → LOGGING, TRACING
+    └── GW_USERCAT → (empty — maintain in PFCG)
+```
+
+### 2447. `/IWBEP/ERROR_LOG_E2E`
+
+```
+T-Code: /IWBEP/ERROR_LOG_E2E
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /IWBEP/
+    └── ALG_SUBOBJ → /IWWRK/WF
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2448. `/IWBEP/FM_V4_BUILD_MED_CACHE`
+
+```
+T-Code: /IWBEP/FM_V4_BUILD_MED_CACHE
+└── S_GW_OP
+    ├── ACTVT → 2
+    ├── GW_OPAREA → SUPPORT
+    └── GW_USERCAT → (empty — maintain in PFCG)
+```
+
+### 2449. `/IWBEP/GLOBAL_CONFIG`
+
+```
+T-Code: /IWBEP/GLOBAL_CONFIG
+├── /IWBEP/ADM
+    └── ACTVT → 3
+├── S_GW_COF
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── GW_COFAREA → SETTINGS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_CONFIG, /IWBEP/C_SCO
+```
+
+### 2450. `/IWBEP/IMPORT_MODEL`
+
+```
+T-Code: /IWBEP/IMPORT_MODEL
+├── S_ADMI_FCD
+    └── S_ADMI_FCD → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → IWDV
+```
+
+### 2451. `/IWBEP/NOTIF_MONITOR`
+
+```
+T-Code: /IWBEP/NOTIF_MONITOR
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /IWBEP/, /IWWRK/WF
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2452. `/IWBEP/OCI_SRV_GEN`
+
+```
+T-Code: /IWBEP/OCI_SRV_GEN
+└── S_DEVELOP
+    ├── ACTVT → 1
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → PROG
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 2453. `/IWBEP/REG_MODEL`
+
+```
+T-Code: /IWBEP/REG_MODEL
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_SCO
+```
+
+### 2454. `/IWBEP/REG_SERVICE`
+
+```
+T-Code: /IWBEP/REG_SERVICE
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_SCO, /IWBEP/I_MGW_CTC
+```
+
+### 2455. `/IWBEP/REG_VOCAN`
+
+```
+T-Code: /IWBEP/REG_VOCAN
+├── /IWBEP/ADM
+    └── ACTVT → 3
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_SCO
+```
+
+### 2456. `/IWBEP/RFC_BOP_DEL`
+
+```
+T-Code: /IWBEP/RFC_BOP_DEL
+└── /IWBEP/DST
+    ├── /IWBEP/TYP → BOP_RFC
+    └── ACTVT → 1
+```
+
+### 2457. `/IWBEP/RFC_BOP_GEN`
+
+```
+T-Code: /IWBEP/RFC_BOP_GEN
+└── /IWBEP/DST
+    ├── /IWBEP/TYP → BOP_RFC
+    └── ACTVT → 1
+```
+
+### 2458. `/IWBEP/SB`
+
+```
+T-Code: /IWBEP/SB
+├── /IWBEP/SB
+    ├── /IWBEP/PRJ → (empty — maintain in PFCG)
+    ├── ACTVT → 1, 2, 3, 6, 7
+    └── DEVCLASS → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → 1, 2, 43
+    └── TTYPE → DTRA, TASK
+```
+
+### 2459. `/IWBEP/SBS`
+
+```
+T-Code: /IWBEP/SBS
+├── /IWBEP/SB
+    ├── /IWBEP/PRJ → (empty — maintain in PFCG)
+    ├── ACTVT → 1, 2, 3, 6, 60, 61, 7
+    └── DEVCLASS → (empty — maintain in PFCG)
+├── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/V_SBD_D, /IWBEP/V_SBD_G, /IWBEP/V_SBD_GP, /IWBEP/V_SBD_N, /IWBEP/V_SBD_NR, /IWBEP/V_SBD_P, /IWBEP/V_SBD_XP, /IWBEP/V_SBD_XT, /IWBEP/V_SBU_A, /IWBEP/V_SBU_AC, /IWBEP/V_SBU_AF, /IWBEP/V_SBU_AG, /IWBEP/V_SBU_P, /IWBEP/V_SBU_PS, /IWBEP/V_SBU_PSF, /IWBEP/V_SBU_PSV, /IWBEP/V_SBU_RP, /IWBEP/V_SBU_XP, /IWBEP/V_SBU_XT
+└── S_TRANSPRT
+    ├── ACTVT → 1, 2, 43
+    └── TTYPE → DTRA, TASK
+```
+
+### 2460. `/IWBEP/ST_ADMIN`
+
+```
+T-Code: /IWBEP/ST_ADMIN
+├── S_GW_OP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── GW_OPAREA → SUPPORT
+    └── GW_USERCAT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/L_ST, /IWBEP/L_V4_ST
+```
+
+### 2461. `/IWBEP/TRACES`
+
+```
+T-Code: /IWBEP/TRACES
+├── /IWBEP/ADM
+    └── ACTVT → 3
+└── S_GW_MON
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── GW_LOGLVL → (empty — maintain in PFCG)
+    ├── GW_MONAREA → TRACING
+    └── GW_USERCAT → (empty — maintain in PFCG)
+```
+
+### 2462. `/IWBEP/UM_NR_INT`
+
+```
+T-Code: /IWBEP/UM_NR_INT
+└── S_NUMBER
+    ├── ACTVT → 2, 3
+    └── NROBJ → /IWBEP/UMN
+```
+
+### 2463. `/IWBEP/UR_CLEANUP`
+
+```
+T-Code: /IWBEP/UR_CLEANUP
+└── /IWBEP/URB
+    ├── /IWBEP/RBC → 0
+    └── ACTVT → 3
+```
+
+### 2464. `/IWBEP/V4_ADMIN`
+
+```
+T-Code: /IWBEP/V4_ADMIN
+├── /IWBEP/ADM
+    └── ACTVT → 3
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_SCO, /IWBEP/I_V4_MSGA, /IWBEP/I_V4_MSGR, /IWBEP/I_V4_MSRV, /IWBEP/SU_ERRLOG
+```
+
+### 2465. `/IWBEP/VIEW_LOG`
+
+```
+T-Code: /IWBEP/VIEW_LOG
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /IWBEP/, /IWFND/, /IWNGW/, /IWPGW/TGW_INBOX, /IWWRK/WF, /IWXBE/
+    └── ALG_SUBOBJ → DESTIM, RUNTIM
+```
+
+### 2466. `/IWBEP/WS_BOP_DEL`
+
+```
+T-Code: /IWBEP/WS_BOP_DEL
+└── /IWBEP/DST
+    ├── /IWBEP/TYP → BOP_WS
+    └── ACTVT → 1
+```
+
+### 2467. `/IWBEP/WS_BOP_GEN`
+
+```
+T-Code: /IWBEP/WS_BOP_GEN
+├── /IWBEP/DST
+    ├── /IWBEP/TYP → BOP_WS
+    └── ACTVT → 1
+├── S_CTS_ADMI
+    └── CTS_ADMFCT → (empty — maintain in PFCG)
+└── S_CTS_SADM
+    ├── CTS_ADMFCT → (empty — maintain in PFCG)
+    ├── DESTSYS → (empty — maintain in PFCG)
+    └── DOMAIN → (empty — maintain in PFCG)
+```
+
+## `/IWFND/` — SAP Gateway Foundation (OData)
+> T-codes: **37**
+
+
+### 2468. `/IWFND/32000018`
+
+```
+T-Code: /IWFND/32000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWFND/V_MGDEAM
+```
+
+### 2469. `/IWFND/50000022`
+
+```
+T-Code: /IWFND/50000022
+└── S_TABU_NAM
+    ├── ACTVT → 2
+    └── TABLE → /IWFND/V_GSDO
+```
+
+### 2470. `/IWFND/50000045`
+
+```
+T-Code: /IWFND/50000045
+└── S_TABU_NAM
+    ├── ACTVT → 2
+    └── TABLE → /IWFND/V_SM_CNRL
+```
+
+### 2471. `/IWFND/50000053`
+
+```
+T-Code: /IWFND/50000053
+├── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → IWAD
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWFND/V_CONSA
+```
+
+### 2472. `/IWFND/50000054`
+
+```
+T-Code: /IWFND/50000054
+├── S_ADMI_FCD
+    └── S_ADMI_FCD → ST0M
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWFND/V_CCMS
+```
+
+### 2473. `/IWFND/50000072`
+
+```
+T-Code: /IWFND/50000072
+├── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → IWAD
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWFND/V_LOGLV
+```
+
+### 2474. `/IWFND/APPS_LOG`
+
+```
+T-Code: /IWFND/APPS_LOG
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /IWBEP/, /IWFND/, /IWNGW/, /IWPGW/TGW_INBOX, /IWWRK/WF, /IWXBE/
+    └── ALG_SUBOBJ → DESTIM, RUNTIM
+```
+
+### 2475. `/IWFND/BULK_USER_MAP`
+
+```
+T-Code: /IWFND/BULK_USER_MAP
+└── S_USER_GRP
+    ├── ACTVT → 2, 3
+    └── CLASS → (empty — maintain in PFCG)
+```
+
+### 2476. `/IWFND/CACHE`
+
+```
+T-Code: /IWFND/CACHE
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWFND/C_CONFIG
+```
+
+### 2477. `/IWFND/CACHE_CLEANUP`
+
+```
+T-Code: /IWFND/CACHE_CLEANUP
+├── S_GW_OP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── GW_OPAREA → SUPPORT
+    └── GW_USERCAT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/I_MGW_CTC, /IWFND/I_MED_CTC
+```
+
+### 2478. `/IWFND/CACHE_REBUILD`
+
+```
+T-Code: /IWFND/CACHE_REBUILD
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2479. `/IWFND/CLEANUP`
+
+```
+T-Code: /IWFND/CLEANUP
+├── S_GUI
+    └── ACTVT → 2, 4
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → IWAD
+```
+
+### 2480. `/IWFND/CLEANUP_JOBS`
+
+```
+T-Code: /IWFND/CLEANUP_JOBS
+├── S_SRT_ADM
+    ├── ACTVT → 70
+    └── WS_NAME → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → IWAD
+```
+
+### 2481. `/IWFND/CRE_DEF_JOBS`
+
+```
+T-Code: /IWFND/CRE_DEF_JOBS
+├── S_BTCH_ADM
+    └── BTCADMIN → (empty — maintain in PFCG)
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → IWAD
+```
+
+### 2482. `/IWFND/CSRF_WITH_RAL`
+
+```
+T-Code: /IWFND/CSRF_WITH_RAL
+└── S_GW_COF
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── GW_COFAREA → SETTINGS
+```
+
+### 2483. `/IWFND/ERROR_LOG`
+
+```
+T-Code: /IWFND/ERROR_LOG
+├── /IWFND/ADM
+    └── ACTVT → 3
+├── S_GW_MON
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── GW_LOGLVL → (empty — maintain in PFCG)
+    ├── GW_MONAREA → LOGGING, TRACING
+    └── GW_USERCAT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_CONFIG, /IWBEP/C_SCO, /IWBEP/C_V4_SETT, /IWBEP/L_V4_CAC, /IWFND/C_MGDEAM, /IWFND/SU_CONFIG, /IWFND/SU_ERRLOG, /IWFND/V_MGDEAM
+```
+
+### 2484. `/IWFND/ERROR_LOG_E2E`
+
+```
+T-Code: /IWFND/ERROR_LOG_E2E
+├── /IWFND/ADM
+    └── ACTVT → 3
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /IWFND/
+    └── ALG_SUBOBJ → /IWCNT/*, DESTIM, RUNTIM, WF*
+```
+
+### 2485. `/IWFND/EXPLORER`
+
+```
+T-Code: /IWFND/EXPLORER
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2486. `/IWFND/GLOBAL_CONFIG`
+
+```
+T-Code: /IWFND/GLOBAL_CONFIG
+├── /IWFND/ADM
+    └── ACTVT → 3
+├── S_GW_COF
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── GW_COFAREA → SETTINGS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_V4_SETT, /IWFND/SU_CONFIG
+```
+
+### 2487. `/IWFND/GW_CLIENT`
+
+```
+T-Code: /IWFND/GW_CLIENT
+├── /IWFND/ADM
+    └── ACTVT → 3
+├── S_GW_OP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── GW_OPAREA → TESTING
+    └── GW_USERCAT → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_SCO, /IWBEP/I_V4_MSGR, /IWBEP/I_V4_MSRV, /IWBEP/L_V4_CAC, /IWFND/C_CFIWAT, /IWFND/C_DFSYAL, /IWFND/C_MGDEAM, /IWFND/C_V4_RSAG, /IWFND/I_MED_CTC
+```
+
+### 2488. `/IWFND/GW_SUPPORT`
+
+```
+T-Code: /IWFND/GW_SUPPORT
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_CONFIG, /IWBEP/C_SCO, /IWBEP/I_MGW_CTC, /IWBEP/L_ST, /IWBEP/L_V4_ST, /IWFND/C_CONFIG, /IWFND/I_MED_CTC
+```
+
+### 2489. `/IWFND/INIT_CCMS`
+
+```
+T-Code: /IWFND/INIT_CCMS
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → IWAD
+```
+
+### 2490. `/IWFND/IWF_ACTIVATE`
+
+```
+T-Code: /IWFND/IWF_ACTIVATE
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → IWAD
+```
+
+### 2491. `/IWFND/MAINT_SERVICE`
+
+```
+T-Code: /IWFND/MAINT_SERVICE
+├── /IWFND/ADM
+    └── ACTVT → 3
+├── S_ICF_ADM
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── ICF_HOST → DEFAULT_HOST
+    ├── ICF_NODE → 00O2TIQEOW46HHWBD0SIEB7HA, 00O2TMQPDL0AUC5TPCVOZT49F, 00O2TMQPDL0AXGC2ZZH2Y8XW1, 00O2TPZ7T5T37Z9DTVJYYUPM5
+    └── ICF_TYPE → NODE
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_SCO, /IWBEP/I_MGW_OHD, /IWBEP/I_MGW_SRT, /IWFND/C_COOBGR, /IWFND/C_DFDEAM, /IWFND/C_DFSYAL, /IWFND/C_MGDEAM, /IWFND/I_MED_SRH, /IWFND/I_MGDPIM, /IWFND/V_DFSYAL, /IWFND/V_MGDEAM
+```
+
+### 2492. `/IWFND/MED_ACTIVATE`
+
+```
+T-Code: /IWFND/MED_ACTIVATE
+├── S_TABU_DIS
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── DICBERCLS → IWAD
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWFND/C_CONFIG
+```
+
+### 2493. `/IWFND/MED_SA_ACTIV`
+
+```
+T-Code: /IWFND/MED_SA_ACTIV
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → IWAD
+```
+
+### 2494. `/IWFND/MOC_PARALLEL`
+
+```
+T-Code: /IWFND/MOC_PARALLEL
+├── /IWFND/ADM
+    └── ACTVT → 3
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /IWCNT/, /IWFND/, /IWTNG/
+    └── ALG_SUBOBJ → /IWCNT/*, DESTIM, RUNTIM, WF*
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → IWAD
+```
+
+### 2495. `/IWFND/NOTIF_MONITOR`
+
+```
+T-Code: /IWFND/NOTIF_MONITOR
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → (empty — maintain in PFCG)
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2496. `/IWFND/ROUTING`
+
+```
+T-Code: /IWFND/ROUTING
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWFND/C_DFSYAL, /IWFND/C_V4_RSAG
+```
+
+### 2497. `/IWFND/SERVICE_TEST`
+
+```
+T-Code: /IWFND/SERVICE_TEST
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2498. `/IWFND/SOFTSTATE`
+
+```
+T-Code: /IWFND/SOFTSTATE
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → IWAD
+```
+
+### 2499. `/IWFND/STATS`
+
+```
+T-Code: /IWFND/STATS
+├── /IWFND/ADM
+    └── ACTVT → 3
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_SCO, /IWBEP/C_V4_SETT, /IWFND/C_MGDEAM
+```
+
+### 2500. `/IWFND/TRACES`
+
+```
+T-Code: /IWFND/TRACES
+├── /IWFND/ADM
+    └── ACTVT → 3
+└── S_GW_MON
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── GW_LOGLVL → (empty — maintain in PFCG)
+    ├── GW_MONAREA → TRACING
+    └── GW_USERCAT → (empty — maintain in PFCG)
+```
+
+### 2501. `/IWFND/V4_ADMIN`
+
+```
+T-Code: /IWFND/V4_ADMIN
+├── /IWFND/ADM
+    └── ACTVT → 3
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_SCO, /IWBEP/C_V4_SETT, /IWBEP/I_V4_MSGA, /IWBEP/I_V4_MSGR, /IWBEP/I_V4_MSRV, /IWBEP/L_V4_CAC, /IWFND/C_CFIWAT, /IWFND/C_DFSYAL, /IWFND/C_DFSYALT, /IWFND/C_MGDEAM, /IWFND/C_V4_MSGR, /IWFND/C_V4_RSAG, /IWFND/SU_CONFIG
+```
+
+### 2502. `/IWFND/VIEW_LOG`
+
+```
+T-Code: /IWFND/VIEW_LOG
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /IWFND/
+    └── ALG_SUBOBJ → /IWCNT/*, DESTIM, RUNTIM, WF*
+```
+
+### 2503. `/IWFND/VIRUS_SCAN`
+
+```
+T-Code: /IWFND/VIRUS_SCAN
+├── S_GW_COF
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── GW_COFAREA → SETTINGS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWBEP/C_V4_SETT, /IWFND/C_CONFIG
+```
+
+### 2504. `/IWFND/WF_WEBGUI`
+
+```
+T-Code: /IWFND/WF_WEBGUI
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → (empty — maintain in PFCG)
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+```
+
+## `/IWNGW/` — SAP Next Gen Gateway
+> T-codes: **11**
+
+
+### 2505. `/IWNGW/99000011`
+
+```
+T-Code: /IWNGW/99000011
+└── S_TCODE
+    └── TCD → SMWS
+```
+
+### 2506. `/IWNGW/BEP_DEMO`
+
+```
+T-Code: /IWNGW/BEP_DEMO
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /IWNGW/
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+```
+
+### 2507. `/IWNGW/BEP_NPREG`
+
+```
+T-Code: /IWNGW/BEP_NPREG
+└── S_DEVELOP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → IWNG
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 2508. `/IWNGW/BEP_SET_ALIAS`
+
+```
+T-Code: /IWNGW/BEP_SET_ALIAS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWNGW/GENERAL
+```
+
+### 2509. `/IWNGW/BEP_SET_HUB_D`
+
+```
+T-Code: /IWNGW/BEP_SET_HUB_D
+└── S_GUI
+    └── ACTVT → 2
+```
+
+### 2510. `/IWNGW/H_CLEAR_CACHE`
+
+```
+T-Code: /IWNGW/H_CLEAR_CACHE
+└── S_TABU_NAM
+    ├── ACTVT → 2
+    └── TABLE → /IWNGW/NACTION, /IWNGW/NACTION_T, /IWNGW/NENCSTORE, /IWNGW/NOTIF, /IWNGW/NPROP, /IWNGW/NTYPE, /IWNGW/NTYPE_TT, /IWNGW/NTYP_SETN
+```
+
+### 2511. `/IWNGW/H_CLEAR_NOTIF`
+
+```
+T-Code: /IWNGW/H_CLEAR_NOTIF
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWNGW/NOTIF
+```
+
+### 2512. `/IWNGW/SYS_ALIAS`
+
+```
+T-Code: /IWNGW/SYS_ALIAS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWNGW/V_DFSYAL
+```
+
+### 2513. `/IWNGW/VB_REG_P`
+
+```
+T-Code: /IWNGW/VB_REG_P
+├── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWNGW/VB_REG_P
+└── S_TRANSPRT
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TTYPE → CUST, TASK
+```
+
+### 2514. `/IWNGW/VNPUSHP`
+
+```
+T-Code: /IWNGW/VNPUSHP
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWNGW/VNPUSHP
+```
+
+### 2515. `/IWNGW/VNPUSHR`
+
+```
+T-Code: /IWNGW/VNPUSHR
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWNGW/VNPUSHR
+```
+
+## `/IWPGW/` — SAP Push Gateway
+> T-codes: **7**
+
+
+### 2516. `/IWPGW/34000005`
+
+```
+T-Code: /IWPGW/34000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWPGW/V_TGW_FAC
+```
+
+### 2517. `/IWPGW/34000006`
+
+```
+T-Code: /IWPGW/34000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWPGW/C_TGW_CTX
+```
+
+### 2518. `/IWPGW/34000007`
+
+```
+T-Code: /IWPGW/34000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWPGW/V_TGW_SCN, /IWPGW/V_TGW_SCR, /IWPGW/V_TGW_SCS, /IWPGW/V_TGW_TSK
+```
+
+### 2519. `/IWPGW/34000008`
+
+```
+T-Code: /IWPGW/34000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWPGW/V_TGW_CFG
+```
+
+### 2520. `/IWPGW/34000009`
+
+```
+T-Code: /IWPGW/34000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWPGW/V_TGW_INB
+```
+
+### 2521. `/IWPGW/PGW_CTXT_SVC`
+
+```
+T-Code: /IWPGW/PGW_CTXT_SVC
+└── S_WF_ADM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── WF_GROUP → ADMIN
+```
+
+### 2522. `/IWPGW/PGW_SYAL`
+
+```
+T-Code: /IWPGW/PGW_SYAL
+└── S_TABU_NAM
+    ├── ACTVT → 3
+    └── TABLE → /IWPGW/C_SYAL
+```
+
+## `/IWWRK/` — SAP Gateway Workflow
+> T-codes: **4**
+
+
+### 2523. `/IWWRK/92000001`
+
+```
+T-Code: /IWWRK/92000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWWRK/V_WF_PACT, /IWWRK/V_WF_PADP, /IWWRK/V_WF_PROV, /IWWRK/V_WF_PSRV
+```
+
+### 2524. `/IWWRK/97000006`
+
+```
+T-Code: /IWWRK/97000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWWRK/V_WFDEC, /IWWRK/V_WFSTEP
+```
+
+### 2525. `/IWWRK/GW_SUBSTITUTES_GET_LIST`
+
+```
+T-Code: /IWWRK/GW_SUBSTITUTES_GET_LIST
+├── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → (empty — maintain in PFCG)
+    └── RFC_TYPE → (empty — maintain in PFCG)
+└── S_RFCACL
+    ├── ACTVT → 16
+    ├── RFC_CLIENT → (empty — maintain in PFCG)
+    ├── RFC_EQUSER → (empty — maintain in PFCG)
+    ├── RFC_INFO → (empty — maintain in PFCG)
+    ├── RFC_SYSID → (empty — maintain in PFCG)
+    ├── RFC_TCODE → (empty — maintain in PFCG)
+    └── RFC_USER → (empty — maintain in PFCG)
+```
+
+### 2526. `/IWWRK/WF_FILTER`
+
+```
+T-Code: /IWWRK/WF_FILTER
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+## `/IWXBE/` — SAP Event Based Infrastructure
+> T-codes: **16**
+
+
+### 2527. `/IWXBE/99000016`
+
+```
+T-Code: /IWXBE/99000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWXBE/V_LOGLV
+```
+
+### 2528. `/IWXBE/CONFIG`
+
+```
+T-Code: /IWXBE/CONFIG
+├── S_ADF_CFG
+    ├── ACTVT → 1, 3, 5, 6
+    ├── DAEMON_ID → /IWXBE/CL_DAEMON_CONSUME, /IWXBE/CL_DAEMON_MANAGER, /IWXBE/CL_DAEMON_PUBLISH, /IWXBE/CL_DAEMON_SUBSCRIBE
+    └── DAEMON_TYP → CLAS
+├── S_OA2C_ADM
+    └── ACTVT → 2, 3
+└── S_RFC_ADM
+    ├── ACTVT → 2, 3
+    ├── ICF_VALUE → (empty — maintain in PFCG)
+    ├── RFCDEST → (empty — maintain in PFCG)
+    └── RFCTYPE → G
+```
+
+### 2529. `/IWXBE/CONFIG_OLD`
+
+```
+T-Code: /IWXBE/CONFIG_OLD
+├── S_ABAPDUMP
+    ├── ACTVT → 3
+    ├── DUMP_CCLNT → ALL
+    ├── DUMP_CUSER → ALL
+    └── DUMP_INFO → FULL
+├── S_ADF_CFG
+    ├── ACTVT → 1, 2, 3, 5, 6
+    ├── DAEMON_ID → /IWXBE/CL_DAEMON_MANAGER, /IWXBE/CL_DAEMON_PUBLISH, /IWXBE/CL_DAEMON_SUBSCRIBE
+    └── DAEMON_TYP → CLAS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWXBE/V_CH, /IWXBE/V_CHP
+```
+
+### 2530. `/IWXBE/CONSUME_TEST`
+
+```
+T-Code: /IWXBE/CONSUME_TEST
+└── S_DEVELOP
+    ├── ACTVT → 3
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → EEEC
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 2531. `/IWXBE/EEE_SUPPORT`
+
+```
+T-Code: /IWXBE/EEE_SUPPORT
+└── S_DEVELOP
+    ├── ACTVT → 3
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → EEEC
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 2532. `/IWXBE/ERROR_LOG`
+
+```
+T-Code: /IWXBE/ERROR_LOG
+└── /IWXBE/MON
+    ├── /IWXBE/CMT → (empty — maintain in PFCG)
+    ├── /IWXBE/MOA → LOGS
+    ├── /IWXBE/SCE → (empty — maintain in PFCG)
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2533. `/IWXBE/EVENT_DEMO`
+
+```
+T-Code: /IWXBE/EVENT_DEMO
+└── /IWXBE/USR
+    ├── /IWXBE/SCE → 1
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2534. `/IWXBE/INBOUND_CFG`
+
+```
+T-Code: /IWXBE/INBOUND_CFG
+└── /IWXBE/USR
+    ├── /IWXBE/SCE → 2
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2535. `/IWXBE/MAINTAIN_CONS`
+
+```
+T-Code: /IWXBE/MAINTAIN_CONS
+└── S_DEVELOP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → EEEC
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 2536. `/IWXBE/MAINTAIN_PROD`
+
+```
+T-Code: /IWXBE/MAINTAIN_PROD
+└── S_DEVELOP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → EEEP
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 2537. `/IWXBE/OUTBOUND_CFG`
+
+```
+T-Code: /IWXBE/OUTBOUND_CFG
+└── /IWXBE/USR
+    ├── /IWXBE/SCE → 1
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2538. `/IWXBE/SERVICE`
+
+```
+T-Code: /IWXBE/SERVICE
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWXBE/V_SRV
+```
+
+### 2539. `/IWXBE/SETUP`
+
+```
+T-Code: /IWXBE/SETUP
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWXBE/V_CP, /IWXBE/V_CPP, /IWXBE/V_CPPD, /IWXBE/V_SRV
+```
+
+### 2540. `/IWXBE/STATS_MONITOR`
+
+```
+T-Code: /IWXBE/STATS_MONITOR
+├── /IWXBE/CHM
+    ├── /IWXBE/CMT → (empty — maintain in PFCG)
+    └── ACTVT → 3
+└── /IWXBE/SUP
+    ├── /IWXBE/SCE → (empty — maintain in PFCG)
+    └── ACTVT → 3
+```
+
+### 2541. `/IWXBE/SUBSCRIPTION`
+
+```
+T-Code: /IWXBE/SUBSCRIPTION
+└── /IWXBE/USR
+    ├── /IWXBE/SCE → 2
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2542. `/IWXBE/SUBSCRIPTIONS`
+
+```
+T-Code: /IWXBE/SUBSCRIPTIONS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IWXBE/V_IS_CHB
+```
+
+## `/KJRTAX01/` — SAP Korea Tax Localization
+> T-codes: **8**
+
+
+### 2543. `/KJRTAX01/ATMIGALVD`
+
+```
+T-Code: /KJRTAX01/ATMIGALVD
+├── A_B_BWART
+    ├── ANLKL → (empty — maintain in PFCG)
+    └── BWASL → 100, 200
+└── A_PERI_BUK
+    ├── AM_ACT_PER → 30, 35
+    └── BUKRS → $BUKRS
+```
+
+### 2544. `/KJRTAX01/ATMIGDEL`
+
+```
+T-Code: /KJRTAX01/ATMIGDEL
+├── A_B_BWART
+    ├── ANLKL → (empty — maintain in PFCG)
+    └── BWASL → 100, 200
+└── A_PERI_BUK
+    ├── AM_ACT_PER → 30, 35
+    └── BUKRS → $BUKRS
+```
+
+### 2545. `/KJRTAX01/ATMIGINS`
+
+```
+T-Code: /KJRTAX01/ATMIGINS
+├── A_B_BWART
+    ├── ANLKL → (empty — maintain in PFCG)
+    └── BWASL → 100, 200
+└── A_PERI_BUK
+    ├── AM_ACT_PER → 30, 35
+    └── BUKRS → $BUKRS
+```
+
+### 2546. `/KJRTAX01/MIG_PRDCD`
+
+```
+T-Code: /KJRTAX01/MIG_PRDCD
+└── A_PERI_BUK
+    ├── AM_ACT_PER → 30, 35
+    └── BUKRS → $BUKRS
+```
+
+### 2547. `/KJRTAX01/PDEL`
+
+```
+T-Code: /KJRTAX01/PDEL
+└── A_PERI_BUK
+    ├── AM_ACT_PER → 30, 35
+    └── BUKRS → $BUKRS
+```
+
+### 2548. `/KJRTAX01/PINS`
+
+```
+T-Code: /KJRTAX01/PINS
+└── A_PERI_BUK
+    ├── AM_ACT_PER → 30, 35
+    └── BUKRS → $BUKRS
+```
+
+### 2549. `/KJRTAX01/PUPLOAD`
+
+```
+T-Code: /KJRTAX01/PUPLOAD
+└── A_PERI_BUK
+    ├── AM_ACT_PER → 30, 35
+    └── BUKRS → $BUKRS
+```
+
+### 2550. `/KJRTAX01/RINS`
+
+```
+T-Code: /KJRTAX01/RINS
+└── A_PERI_BUK
+    ├── AM_ACT_PER → 30, 35
+    └── BUKRS → $BUKRS
+```
+
+## `/LIME/` — SAP LIME — Logistics Inventory Engine
+> T-codes: **28**
+
+
+### 2551. `/LIME/15000099`
+
+```
+T-Code: /LIME/15000099
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/PIVCUST_TL
+```
+
+### 2552. `/LIME/15000100`
+
+```
+T-Code: /LIME/15000100
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/PICUST_TRE
+```
+
+### 2553. `/LIME/42000001`
+
+```
+T-Code: /LIME/42000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/CUST_WIDTH
+```
+
+### 2554. `/LIME/48000007`
+
+```
+T-Code: /LIME/48000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/CUST_ICD
+```
+
+### 2555. `/LIME/48000022`
+
+```
+T-Code: /LIME/48000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/PIVCUST_AR, /LIME/PIVCUST_DC
+```
+
+### 2556. `/LIME/60000673`
+
+```
+T-Code: /LIME/60000673
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/PICUST_USE
+```
+
+### 2557. `/LIME/86000063`
+
+```
+T-Code: /LIME/86000063
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/CUST_COLL, /LIME/CUST_PROCE
+```
+
+### 2558. `/LIME/86000064`
+
+```
+T-Code: /LIME/86000064
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/V_CUST_IND
+```
+
+### 2559. `/LIME/86000065`
+
+```
+T-Code: /LIME/86000065
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/V_CUST_HIE
+```
+
+### 2560. `/LIME/86000066`
+
+```
+T-Code: /LIME/86000066
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/CUST_PARAM
+```
+
+### 2561. `/LIME/86000067`
+
+```
+T-Code: /LIME/86000067
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/CUSY_QCI
+```
+
+### 2562. `/LIME/86000068`
+
+```
+T-Code: /LIME/86000068
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/CUST_CAT
+```
+
+### 2563. `/LIME/86000069`
+
+```
+T-Code: /LIME/86000069
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/CUST_VSI
+```
+
+### 2564. `/LIME/86000070`
+
+```
+T-Code: /LIME/86000070
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/CUST_USAGE
+```
+
+### 2565. `/LIME/86000071`
+
+```
+T-Code: /LIME/86000071
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/CUST_REA
+```
+
+### 2566. `/LIME/86000083`
+
+```
+T-Code: /LIME/86000083
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/CUST_GLOB
+```
+
+### 2567. `/LIME/86000084`
+
+```
+T-Code: /LIME/86000084
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/V_CUST_DIS
+```
+
+### 2568. `/LIME/86000097`
+
+```
+T-Code: /LIME/86000097
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/V_CUST_FDR
+```
+
+### 2569. `/LIME/86000105`
+
+```
+T-Code: /LIME/86000105
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/CUSY_FLTDI
+```
+
+### 2570. `/LIME/86000107`
+
+```
+T-Code: /LIME/86000107
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/MMIM_BSART
+```
+
+### 2571. `/LIME/86000108`
+
+```
+T-Code: /LIME/86000108
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/MMIM_BWADA
+```
+
+### 2572. `/LIME/86000109`
+
+```
+T-Code: /LIME/86000109
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/MMIM_BWART
+```
+
+### 2573. `/LIME/86000110`
+
+```
+T-Code: /LIME/86000110
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LIME/MMIM_SOBKZ
+```
+
+### 2574. `/LIME/GEN_CODE`
+
+```
+T-Code: /LIME/GEN_CODE
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → LIMG
+```
+
+### 2575. `/LIME/SNUM_DIEX`
+
+```
+T-Code: /LIME/SNUM_DIEX
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /LIME/DIEX
+```
+
+### 2576. `/LIME/SNUM_EXDO`
+
+```
+T-Code: /LIME/SNUM_EXDO
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /LIME/EXDO
+```
+
+### 2577. `/LIME/SNUM_IPON`
+
+```
+T-Code: /LIME/SNUM_IPON
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /LIME/IPON
+```
+
+### 2578. `/LIME/SNUM_PIDO`
+
+```
+T-Code: /LIME/SNUM_PIDO
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /LIME/PIDO
+```
+
+## `/LSIERP/` — SAP LSI ERP Integration
+> T-codes: **9**
+
+
+### 2579. `/LSIERP/TQ_CHECK_INC`
+
+```
+T-Code: /LSIERP/TQ_CHECK_INC
+└── F_KKZK
+    └── ACTVT → 1, 10, 2, 3, 6
+```
+
+### 2580. `/LSIERP/TQ_CHECK_LOG`
+
+```
+T-Code: /LSIERP/TQ_CHECK_LOG
+└── S_APPL_LOG
+    ├── ACTVT → 3, 6
+    ├── ALG_OBJECT → FICA
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+```
+
+### 2581. `/LSIERP/TQ_DEL_LOG`
+
+```
+T-Code: /LSIERP/TQ_DEL_LOG
+└── S_APPL_LOG
+    ├── ACTVT → 3, 6
+    ├── ALG_OBJECT → FICA
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+```
+
+### 2582. `/LSIERP/TQ_DEL_RES`
+
+```
+T-Code: /LSIERP/TQ_DEL_RES
+└── S_GUI
+    └── ACTVT → 2
+```
+
+### 2583. `/LSIERP/TQ_PAYLOT_PR`
+
+```
+T-Code: /LSIERP/TQ_PAYLOT_PR
+├── F_KKKO_BUK
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BUKRS → $BUKRS
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2584. `/LSIERP/TQ_PAYL_LOG`
+
+```
+T-Code: /LSIERP/TQ_PAYL_LOG
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 2585. `/LSIERP/WLM`
+
+```
+T-Code: /LSIERP/WLM
+└── S_ALV_LAYO
+    └── ACTVT → 23
+```
+
+### 2586. `/LSIERP/WL_SEND`
+
+```
+T-Code: /LSIERP/WL_SEND
+└── S_ALV_LAYO
+    └── ACTVT → 23
+```
+
+### 2587. `/LSIERP/WL_SEND_LOG`
+
+```
+T-Code: /LSIERP/WL_SEND_LOG
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+## `/LTB/` — SAP Long-Term Budget Planning
+> T-codes: **8**
+
+
+### 2588. `/LTB/IFF_CUST_TYPES`
+
+```
+T-Code: /LTB/IFF_CUST_TYPES
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → DM01
+```
+
+### 2589. `/LTB/MC_EXT_API_MWB_CPY_MO_TPL`
+
+```
+T-Code: /LTB/MC_EXT_API_MWB_CPY_MO_TPL
+├── S_DMIS_MOM
+    └── ACTVT → 1
+└── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT
+    └── P_PROGNAM → DMC_MWB_COPY_MIGOBJ
+```
+
+### 2590. `/LTB/MC_EXT_API_MWB_CRE_PROJ`
+
+```
+T-Code: /LTB/MC_EXT_API_MWB_CRE_PROJ
+├── S_DMC_S_R
+    └── ACTVT → 1
+├── S_DMIS
+    ├── ACTVT → 1, 16, 2, 3
+    ├── MBT_PR_ARE → SLOP
+    └── MBT_PR_LEV → PACKAGE
+└── S_DMIS_MOM
+    └── ACTVT → 1
+```
+
+### 2591. `/LTB/MC_SYS_SET`
+
+```
+T-Code: /LTB/MC_SYS_SET
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /LTB/V_MC_SYSSET
+```
+
+### 2592. `/LTB/TR`
+
+```
+T-Code: /LTB/TR
+└── S_DMIS_TR
+    ├── /LTB/RGMAS → ' '
+    └── ACTVT → 1, 16, 2, 21, 3, 43, 48, 5, 6, 61, 7
+```
+
+### 2593. `/LTB/TR_RT_CLASS_DELETE`
+
+```
+T-Code: /LTB/TR_RT_CLASS_DELETE
+└── S_DMIS_TR
+    ├── /LTB/RGMAS → ' '
+    └── ACTVT → 6, 7
+```
+
+### 2594. `/LTB/TR_RT_SYNTAX_CHECK_BY_ID`
+
+```
+T-Code: /LTB/TR_RT_SYNTAX_CHECK_BY_ID
+└── S_DMIS_TR
+    ├── /LTB/RGMAS → ' '
+    └── ACTVT → 3
+```
+
+### 2595. `/LTB/TR_WHUSED_MAINT`
+
+```
+T-Code: /LTB/TR_WHUSED_MAINT
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → DM01
+├── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /LTB/TR_WH_USED
+└── S_TRANSPRT
+    ├── ACTVT → 1, 2, 23, 3, 5
+    └── TTYPE → DTRA, TASK
+```
+
+## `/MACCRM/` — SAP Marketing CRM
+> T-codes: **7**
+
+
+### 2596. `/MACCRM/30000001`
+
+```
+T-Code: /MACCRM/30000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MACCRM/V_TR_TYP
+```
+
+### 2597. `/MACCRM/30000002`
+
+```
+T-Code: /MACCRM/30000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MACCRM/V_DOCSIZ
+```
+
+### 2598. `/MACCRM/30000003`
+
+```
+T-Code: /MACCRM/30000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MACCRM/V_PACSIZ
+```
+
+### 2599. `/MACCRM/30000004`
+
+```
+T-Code: /MACCRM/30000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MACCRM/V_OBJCAT
+```
+
+### 2600. `/MACCRM/30000005`
+
+```
+T-Code: /MACCRM/30000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MACCRM/V_FV_ACC
+```
+
+### 2601. `/MACCRM/30000011`
+
+```
+T-Code: /MACCRM/30000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MACCRM/V_ACCOND
+```
+
+### 2602. `/MACCRM/30000012`
+
+```
+T-Code: /MACCRM/30000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MACCRM/V_MA_CH
+```
+
+## `/MERP/` — SAP Manufacturing ERP
+> T-codes: **3**
+
+
+### 2603. `/MERP/52002658`
+
+```
+T-Code: /MERP/52002658
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MERP/V_C_EQTYP
+```
+
+### 2604. `/MERP/52002659`
+
+```
+T-Code: /MERP/52002659
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MERP/V_C_DOCSWH
+```
+
+### 2605. `/MERP/OPSHCND`
+
+```
+T-Code: /MERP/OPSHCND
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MERP/V_OPSHCND
+```
+
+## `/MFND/` — SAP Manufacturing Foundation
+> T-codes: **8**
+
+
+### 2606. `/MFND/CFG_OMDO`
+
+```
+T-Code: /MFND/CFG_OMDO
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MFND/C_ODO01, /MFND/C_ODO01D, /MFND/C_ODO01DK, /MFND/C_ODO01E, /MFND/C_ODO01F, /MFND/C_ODO01OT, /MFND/C_ODO01T, /MFND/C_ODO03, /MFND/C_ODO03D, /MFND/C_ODO03M
+```
+
+### 2607. `/MFND/CFG_OMODEL`
+
+```
+T-Code: /MFND/CFG_OMODEL
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MFND/C_OM001, /MFND/C_OM001NP, /MFND/C_OM001P, /MFND/C_OM001S, /MFND/C_OM002, /MFND/C_OM003, /MFND/C_OM004, /MFND/C_OM005
+```
+
+### 2608. `/MFND/CFG_OS_ASGMNT`
+
+```
+T-Code: /MFND/CFG_OS_ASGMNT
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MFND/C_OM000, /MFND/C_OM000C
+```
+
+### 2609. `/MFND/CLINT_ST_PURGE`
+
+```
+T-Code: /MFND/CLINT_ST_PURGE
+└── S_MI_CCMS
+    └── ACTVT → 6
+```
+
+### 2610. `/MFND/CS1_NR`
+
+```
+T-Code: /MFND/CS1_NR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /MFND/CS1
+```
+
+### 2611. `/MFND/DEPOBJ_Q_PURGE`
+
+```
+T-Code: /MFND/DEPOBJ_Q_PURGE
+└── S_MI_CCMS
+    └── ACTVT → 6
+```
+
+### 2612. `/MFND/DQ1_NR`
+
+```
+T-Code: /MFND/DQ1_NR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /MFND/DQ1
+```
+
+### 2613. `/MFND/SVR_PKG_PURGE`
+
+```
+T-Code: /MFND/SVR_PKG_PURGE
+└── S_MI_CCMS
+    └── ACTVT → 6
+```
+
+## `/MOC/` — SAP Mobile On Demand
+> T-codes: **18**
+
+
+### 2614. `/MOC/29000005`
+
+```
+T-Code: /MOC/29000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MOC/VV_DURATION
+```
+
+### 2615. `/MOC/29000006`
+
+```
+T-Code: /MOC/29000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MOC/VV_ROLE_CD
+```
+
+### 2616. `/MOC/29000015`
+
+```
+T-Code: /MOC/29000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/VV_ACTTYPE_MOC, /IAM/V_ACTPTY
+```
+
+### 2617. `/MOC/29000021`
+
+```
+T-Code: /MOC/29000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MOC/VV_CRIT
+```
+
+### 2618. `/MOC/29000030`
+
+```
+T-Code: /MOC/29000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_TP_RC_USG, /IAM/V_TP_RL_CD
+```
+
+### 2619. `/MOC/29000031`
+
+```
+T-Code: /MOC/29000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MOC/VV_FOLLUP
+```
+
+### 2620. `/MOC/29000035`
+
+```
+T-Code: /MOC/29000035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_STAT
+```
+
+### 2621. `/MOC/29000036`
+
+```
+T-Code: /MOC/29000036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MOC/VV_STATA_MOC
+```
+
+### 2622. `/MOC/29000037`
+
+```
+T-Code: /MOC/29000037
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_STPRF, /IAM/V_STPRFA, /IAM/V_STPRFAC, /IAM/V_STPRFD
+```
+
+### 2623. `/MOC/ACTBP`
+
+```
+T-Code: /MOC/ACTBP
+├── B_BUPA_GRP
+    ├── ACTVT → 3
+    └── BEGRU → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → 3
+    └── RLTYP → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+├── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → S
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /IAM/VV_ACTTYPE_OV_MOC, /IAM/V_ACTPTY_MD
+```
+
+### 2624. `/MOC/ACT_NO_RANGE`
+
+```
+T-Code: /MOC/ACT_NO_RANGE
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /IAM/ACT
+```
+
+### 2625. `/MOC/ACT_TEMPLT_SM34`
+
+```
+T-Code: /MOC/ACT_TEMPLT_SM34
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/VV_ACTIVTYP_MOC, /IAM/VV_ACT_ACT_MOC, /IAM/VV_ACT_DS_MOC, /IAM/V_ACT_CDGR
+```
+
+### 2626. `/MOC/CHG_BP_ASSIGNM`
+
+```
+T-Code: /MOC/CHG_BP_ASSIGNM
+├── /IAM/AAUTH
+    ├── /IAM/APPL → MOC
+    ├── /IAM/AUTHG → (empty — maintain in PFCG)
+    ├── /IAM/A_ACT → (empty — maintain in PFCG)
+    ├── /IAM/A_ATY → (empty — maintain in PFCG)
+    └── /IAM/I_ITY → (empty — maintain in PFCG)
+├── /IAM/IAUTH
+    ├── /IAM/APPL → MOC
+    ├── /IAM/AUTHG → (empty — maintain in PFCG)
+    ├── /IAM/I_ACT → (empty — maintain in PFCG)
+    └── /IAM/I_ITY → (empty — maintain in PFCG)
+├── /IAM/TXTTY
+    ├── /IAM/APPL → MOC
+    ├── /IAM/I_ITY → AM1, APP, CR1, CR2, DUU, JW1, JW2, JW3, JW4, KDC, KF, MAR, MH1, MIC, MN1, MP1, MW1, MZ1, NI1, NI2, RC1, RC2, RC3, RL1, SC2, SC3, SC4, TES, TH1, XX1, Y1, Y2, YT, ZXX
+    ├── /IAM/TXTTY → A5WA, A5WQ, ADESC, AEFF, ARESP, CDESC, DDESC, DESCR, DFLT, DLCTN, EDESC, EXPLN, FDESC, IDESC, ISOLU, NOTES, P_SOL, Q_CMT
+    └── ACTVT → 3
+├── B_BUPA_GRP
+    ├── ACTVT → 3
+    └── BEGRU → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → 3
+    └── RLTYP → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+├── IAM/A_STAT
+    ├── /IAM/APPL → MOC
+    ├── /IAM/AUTHG → (empty — maintain in PFCG)
+    ├── /IAM/A_ACT → (empty — maintain in PFCG)
+    ├── /IAM/A_ATY → (empty — maintain in PFCG)
+    ├── /IAM/A_STA → (empty — maintain in PFCG)
+    └── /IAM/I_ITY → (empty — maintain in PFCG)
+├── IAM/I_STAT
+    ├── /IAM/APPL → MOC
+    ├── /IAM/AUTHG → (empty — maintain in PFCG)
+    ├── /IAM/I_ACT → (empty — maintain in PFCG)
+    ├── /IAM/I_ITY → (empty — maintain in PFCG)
+    └── /IAM/I_STA → (empty — maintain in PFCG)
+└── S_PROGRAM
+    ├── P_ACTION → SUBMIT
+    └── P_GROUP → MOCPRG
+```
+
+### 2627. `/MOC/CRBP`
+
+```
+T-Code: /MOC/CRBP
+├── B_BUPA_GRP
+    ├── ACTVT → 3
+    └── BEGRU → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → 3
+    └── RLTYP → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+├── PLOG
+    ├── INFOTYP → (empty — maintain in PFCG)
+    ├── ISTAT → (empty — maintain in PFCG)
+    ├── OTYPE → S
+    ├── PLVAR → $PLVAR
+    ├── PPFCODE → DISP
+    └── SUBTYP → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /IAM/VV_ISSUETYPE_OV_MOC, /IAM/V_IS_PTY_MD
+```
+
+### 2628. `/MOC/ISS_NO_RANGE`
+
+```
+T-Code: /MOC/ISS_NO_RANGE
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /IAM/ISSUE
+```
+
+### 2629. `/MOC/VC_CATALOG_SM34`
+
+```
+T-Code: /MOC/VC_CATALOG_SM34
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_CATALOG, /IAM/V_CATCODREL, /IAM/V_CODE_REL, /MOC/V_CODEGR
+```
+
+### 2630. `/MOC/VC_ISS_SM34`
+
+```
+T-Code: /MOC/VC_ISS_SM34
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/VV_ISSUETYP_MOC, /IAM/VV_ISS_ACT_MOC, /IAM/VV_ISS_DS_MOC, /IAM/VV_ISS_PARTY_MOC, /IAM/VV_ISS_REFOB_MOC, /IAM/VV_SCCHK_MOC, /IAM/V_ISS_ASC, /IAM/V_ISS_ASC_P, /IAM/V_ISS_SISS, /MOC/V_ACT_ANA, /MOC/V_ACT_ANA_P
+```
+
+### 2631. `/MOC/VV_CODE_SM30`
+
+```
+T-Code: /MOC/VV_CODE_SM30
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MOC/VV_CODE
+```
+
+## `/MSG/` — SAP Message & Communication Framework
+> T-codes: **24**
+
+
+### 2632. `/MSG/4_PM_CONFIG`
+
+```
+T-Code: /MSG/4_PM_CONFIG
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → &NC&
+```
+
+### 2633. `/MSG/4_PM_CUSTOMIZE`
+
+```
+T-Code: /MSG/4_PM_CUSTOMIZE
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2634. `/MSG/4_PM_CUS_APPL`
+
+```
+T-Code: /MSG/4_PM_CUS_APPL
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2635. `/MSG/4_PM_IMPORT`
+
+```
+T-Code: /MSG/4_PM_IMPORT
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2636. `/MSG/4_PM_METHCALL`
+
+```
+T-Code: /MSG/4_PM_METHCALL
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2637. `/MSG/4_PM_MONITOR`
+
+```
+T-Code: /MSG/4_PM_MONITOR
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2638. `/MSG/4_PM_MON_DEST`
+
+```
+T-Code: /MSG/4_PM_MON_DEST
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2639. `/MSG/4_PM_PARRAY`
+
+```
+T-Code: /MSG/4_PM_PARRAY
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2640. `/MSG/4_PM_PARRTREE`
+
+```
+T-Code: /MSG/4_PM_PARRTREE
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2641. `/MSG/4_PM_PDATA`
+
+```
+T-Code: /MSG/4_PM_PDATA
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2642. `/MSG/4_PM_PDATAGR`
+
+```
+T-Code: /MSG/4_PM_PDATAGR
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2643. `/MSG/4_PM_PENUMVAL`
+
+```
+T-Code: /MSG/4_PM_PENUMVAL
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2644. `/MSG/4_PM_PFNCTREE`
+
+```
+T-Code: /MSG/4_PM_PFNCTREE
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2645. `/MSG/4_PM_PFUNCT`
+
+```
+T-Code: /MSG/4_PM_PFUNCT
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2646. `/MSG/4_PM_PLIB`
+
+```
+T-Code: /MSG/4_PM_PLIB
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2647. `/MSG/4_PM_PROTOCOL`
+
+```
+T-Code: /MSG/4_PM_PROTOCOL
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2648. `/MSG/4_PM_PSELLABLE`
+
+```
+T-Code: /MSG/4_PM_PSELLABLE
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2649. `/MSG/4_PM_PSETREE`
+
+```
+T-Code: /MSG/4_PM_PSETREE
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2650. `/MSG/4_PM_PTABENUM`
+
+```
+T-Code: /MSG/4_PM_PTABENUM
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2651. `/MSG/4_PM_PTABVAL`
+
+```
+T-Code: /MSG/4_PM_PTABVAL
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2652. `/MSG/4_PM_PTREE`
+
+```
+T-Code: /MSG/4_PM_PTREE
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2653. `/MSG/4_PM_RFC_DEST`
+
+```
+T-Code: /MSG/4_PM_RFC_DEST
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2654. `/MSG/4_PM_VERS_CAI`
+
+```
+T-Code: /MSG/4_PM_VERS_CAI
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 2655. `/MSG/4_PM_VERS_TOM`
+
+```
+T-Code: /MSG/4_PM_VERS_TOM
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+## `/MVA/` — SAP Merchandise & Category Management
+> T-codes: **170**
+
+
+### 2656. `/MVA/04000002`
+
+```
+T-Code: /MVA/04000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSD_STOR
+```
+
+### 2657. `/MVA/31000001`
+
+```
+T-Code: /MVA/31000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSD_PVUS
+```
+
+### 2658. `/MVA/31000002`
+
+```
+T-Code: /MVA/31000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMD_PZBN
+```
+
+### 2659. `/MVA/31000003`
+
+```
+T-Code: /MVA/31000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMD_PAKZ
+```
+
+### 2660. `/MVA/36000002`
+
+```
+T-Code: /MVA/36000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMV_PETSHLP
+```
+
+### 2661. `/MVA/36000003`
+
+```
+T-Code: /MVA/36000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PUSAGE
+```
+
+### 2662. `/MVA/36000073`
+
+```
+T-Code: /MVA/36000073
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMDADBCHGVV
+```
+
+### 2663. `/MVA/36000074`
+
+```
+T-Code: /MVA/36000074
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMV_PTERM
+```
+
+### 2664. `/MVA/36000075`
+
+```
+T-Code: /MVA/36000075
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMV_PINSURE
+```
+
+### 2665. `/MVA/36000076`
+
+```
+T-Code: /MVA/36000076
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMUYR_MSCD
+```
+
+### 2666. `/MVA/36000077`
+
+```
+T-Code: /MVA/36000077
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMUYR_RUN
+```
+
+### 2667. `/MVA/36000078`
+
+```
+T-Code: /MVA/36000078
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSD_PDEL
+```
+
+### 2668. `/MVA/36000079`
+
+```
+T-Code: /MVA/36000079
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMUV_AUTAPP
+```
+
+### 2669. `/MVA/36000080`
+
+```
+T-Code: /MVA/36000080
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMUV_GUIL
+```
+
+### 2670. `/MVA/36000081`
+
+```
+T-Code: /MVA/36000081
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMVR_HIDEF
+```
+
+### 2671. `/MVA/37000001`
+
+```
+T-Code: /MVA/37000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PLICCAT
+```
+
+### 2672. `/MVA/37000002`
+
+```
+T-Code: /MVA/37000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PREGDIS
+```
+
+### 2673. `/MVA/37000003`
+
+```
+T-Code: /MVA/37000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PVEHCAT, /MVA/AMO_PVEHICC
+```
+
+### 2674. `/MVA/37000004`
+
+```
+T-Code: /MVA/37000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PPRODID
+```
+
+### 2675. `/MVA/37000007`
+
+```
+T-Code: /MVA/37000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMD_TYPCLA
+```
+
+### 2676. `/MVA/37000009`
+
+```
+T-Code: /MVA/37000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMD_REGCLA
+```
+
+### 2677. `/MVA/37000010`
+
+```
+T-Code: /MVA/37000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PCATNAM
+```
+
+### 2678. `/MVA/37000011`
+
+```
+T-Code: /MVA/37000011
+└── S_TABU_NAM
+    ├── ACTVT → 3
+    └── TABLE → /MVA/AMD_TRBCA
+```
+
+### 2679. `/MVA/37000012`
+
+```
+T-Code: /MVA/37000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PBCCRC
+```
+
+### 2680. `/MVA/37000013`
+
+```
+T-Code: /MVA/37000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PBCMVA
+```
+
+### 2681. `/MVA/37000015`
+
+```
+T-Code: /MVA/37000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PPMIMP2
+```
+
+### 2682. `/MVA/37000017`
+
+```
+T-Code: /MVA/37000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PREGDIT
+```
+
+### 2683. `/MVA/37000019`
+
+```
+T-Code: /MVA/37000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMUACERTREL
+```
+
+### 2684. `/MVA/37000020`
+
+```
+T-Code: /MVA/37000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMUACERTREL
+```
+
+### 2685. `/MVA/37000021`
+
+```
+T-Code: /MVA/37000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PBCCBM
+```
+
+### 2686. `/MVA/37000024`
+
+```
+T-Code: /MVA/37000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PCONC
+```
+
+### 2687. `/MVA/37000025`
+
+```
+T-Code: /MVA/37000025
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PADMDIS
+```
+
+### 2688. `/MVA/37000027`
+
+```
+T-Code: /MVA/37000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PCITY
+```
+
+### 2689. `/MVA/37000028`
+
+```
+T-Code: /MVA/37000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PGROUP
+```
+
+### 2690. `/MVA/37000029`
+
+```
+T-Code: /MVA/37000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PLETTER
+```
+
+### 2691. `/MVA/37000030`
+
+```
+T-Code: /MVA/37000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PMUSTER
+```
+
+### 2692. `/MVA/37000032`
+
+```
+T-Code: /MVA/37000032
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PBCCCTR
+```
+
+### 2693. `/MVA/37000037`
+
+```
+T-Code: /MVA/37000037
+└── S_TABU_NAM
+    ├── ACTVT → 3
+    └── TABLE → /MVA/AMD_PINSNR
+```
+
+### 2694. `/MVA/37000044`
+
+```
+T-Code: /MVA/37000044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMX_POPTION
+```
+
+### 2695. `/MVA/37000052`
+
+```
+T-Code: /MVA/37000052
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PCOUNCO
+```
+
+### 2696. `/MVA/37000066`
+
+```
+T-Code: /MVA/37000066
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMT_POPTION
+```
+
+### 2697. `/MVA/37000068`
+
+```
+T-Code: /MVA/37000068
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PBCCRA
+```
+
+### 2698. `/MVA/37000075`
+
+```
+T-Code: /MVA/37000075
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMUAPERLIC
+```
+
+### 2699. `/MVA/45000002`
+
+```
+T-Code: /MVA/45000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/ABU_AMNRIVG
+```
+
+### 2700. `/MVA/45000003`
+
+```
+T-Code: /MVA/45000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSFCODE
+```
+
+### 2701. `/MVA/45000004`
+
+```
+T-Code: /MVA/45000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSICOMP
+```
+
+### 2702. `/MVA/45000005`
+
+```
+T-Code: /MVA/45000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSVEHTYP
+```
+
+### 2703. `/MVA/45000006`
+
+```
+T-Code: /MVA/45000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSREGPAR
+```
+
+### 2704. `/MVA/45000007`
+
+```
+T-Code: /MVA/45000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMD_PRGLIC
+```
+
+### 2705. `/MVA/45000008`
+
+```
+T-Code: /MVA/45000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMB_PJOURET
+```
+
+### 2706. `/MVA/57000001`
+
+```
+T-Code: /MVA/57000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PCONSTR
+```
+
+### 2707. `/MVA/57000002`
+
+```
+T-Code: /MVA/57000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PDERCST
+```
+
+### 2708. `/MVA/57000005`
+
+```
+T-Code: /MVA/57000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PBMFRCC, /MVA/AMU_PBMFRCE
+```
+
+### 2709. `/MVA/60000001`
+
+```
+T-Code: /MVA/60000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PLICCRT
+```
+
+### 2710. `/MVA/60000006`
+
+```
+T-Code: /MVA/60000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PCOUNOT
+```
+
+### 2711. `/MVA/60000007`
+
+```
+T-Code: /MVA/60000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMW_PGSVC
+```
+
+### 2712. `/MVA/60000008`
+
+```
+T-Code: /MVA/60000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PERIODS
+```
+
+### 2713. `/MVA/60000009`
+
+```
+T-Code: /MVA/60000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMW_PSOUTAR
+```
+
+### 2714. `/MVA/60000011`
+
+```
+T-Code: /MVA/60000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PCHGVEC
+```
+
+### 2715. `/MVA/60000012`
+
+```
+T-Code: /MVA/60000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PRS
+```
+
+### 2716. `/MVA/60000013`
+
+```
+T-Code: /MVA/60000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PVAS
+```
+
+### 2717. `/MVA/60000014`
+
+```
+T-Code: /MVA/60000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PVWB
+```
+
+### 2718. `/MVA/60000015`
+
+```
+T-Code: /MVA/60000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PCOUNTR
+```
+
+### 2719. `/MVA/60000017`
+
+```
+T-Code: /MVA/60000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_REGCLA
+```
+
+### 2720. `/MVA/69000002`
+
+```
+T-Code: /MVA/69000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PBFUNC, /MVA/AMU_PBMMSGT
+```
+
+### 2721. `/MVA/69000015`
+
+```
+T-Code: /MVA/69000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PBCHECK
+```
+
+### 2722. `/MVA/69000020`
+
+```
+T-Code: /MVA/69000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PVML
+```
+
+### 2723. `/MVA/69000021`
+
+```
+T-Code: /MVA/69000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSD_PLIC
+```
+
+### 2724. `/MVA/69000022`
+
+```
+T-Code: /MVA/69000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSD_PLTY
+```
+
+### 2725. `/MVA/69000023`
+
+```
+T-Code: /MVA/69000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSD_PCAN
+```
+
+### 2726. `/MVA/69000026`
+
+```
+T-Code: /MVA/69000026
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PVCE
+```
+
+### 2727. `/MVA/69000027`
+
+```
+T-Code: /MVA/69000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PPRCSTP
+```
+
+### 2728. `/MVA/69000028`
+
+```
+T-Code: /MVA/69000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PCMPASG
+```
+
+### 2729. `/MVA/69000029`
+
+```
+T-Code: /MVA/69000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PPRCTYP, /MVA/AMU_PPRSTTP
+```
+
+### 2730. `/MVA/69000030`
+
+```
+T-Code: /MVA/69000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PPRCTYP
+```
+
+### 2731. `/MVA/69000033`
+
+```
+T-Code: /MVA/69000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMT_POPT
+```
+
+### 2732. `/MVA/69000034`
+
+```
+T-Code: /MVA/69000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSD_PICR
+```
+
+### 2733. `/MVA/69000035`
+
+```
+T-Code: /MVA/69000035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSD_PWAI
+```
+
+### 2734. `/MVA/69000037`
+
+```
+T-Code: /MVA/69000037
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSD_PAUT
+```
+
+### 2735. `/MVA/69000038`
+
+```
+T-Code: /MVA/69000038
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMV_PCATITT
+```
+
+### 2736. `/MVA/69000040`
+
+```
+T-Code: /MVA/69000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PPRCTPC
+```
+
+### 2737. `/MVA/69000050`
+
+```
+T-Code: /MVA/69000050
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PFLDMAP
+```
+
+### 2738. `/MVA/69000051`
+
+```
+T-Code: /MVA/69000051
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMV_PDENRET
+```
+
+### 2739. `/MVA/69000055`
+
+```
+T-Code: /MVA/69000055
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PRCPN
+```
+
+### 2740. `/MVA/87000017`
+
+```
+T-Code: /MVA/87000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMV_PREDREQ
+```
+
+### 2741. `/MVA/87000018`
+
+```
+T-Code: /MVA/87000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMV_PCANCRE
+```
+
+### 2742. `/MVA/87000021`
+
+```
+T-Code: /MVA/87000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMURSD_PVTY
+```
+
+### 2743. `/MVA/87000022`
+
+```
+T-Code: /MVA/87000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMV_CAN_COR
+```
+
+### 2744. `/MVA/87000024`
+
+```
+T-Code: /MVA/87000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PCURRY
+```
+
+### 2745. `/MVA/92000009`
+
+```
+T-Code: /MVA/92000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMUV_RULEM
+```
+
+### 2746. `/MVA/92000010`
+
+```
+T-Code: /MVA/92000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMV_PCOMCON
+```
+
+### 2747. `/MVA/92000013`
+
+```
+T-Code: /MVA/92000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMX_COMP
+```
+
+### 2748. `/MVA/92000018`
+
+```
+T-Code: /MVA/92000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PCLASRE
+```
+
+### 2749. `/MVA/92000019`
+
+```
+T-Code: /MVA/92000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PPARKA
+```
+
+### 2750. `/MVA/92000020`
+
+```
+T-Code: /MVA/92000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PPAYSCL
+```
+
+### 2751. `/MVA/92000021`
+
+```
+T-Code: /MVA/92000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PPREMMO
+```
+
+### 2752. `/MVA/92000022`
+
+```
+T-Code: /MVA/92000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PPREMST
+```
+
+### 2753. `/MVA/92000023`
+
+```
+T-Code: /MVA/92000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PPRMSTE
+```
+
+### 2754. `/MVA/92000024`
+
+```
+T-Code: /MVA/92000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PPROPER
+```
+
+### 2755. `/MVA/92000025`
+
+```
+T-Code: /MVA/92000025
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PRATEXT
+```
+
+### 2756. `/MVA/92000026`
+
+```
+T-Code: /MVA/92000026
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PRATINT
+```
+
+### 2757. `/MVA/92000027`
+
+```
+T-Code: /MVA/92000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PREGKP
+```
+
+### 2758. `/MVA/92000028`
+
+```
+T-Code: /MVA/92000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PRISKCD
+```
+
+### 2759. `/MVA/92000029`
+
+```
+T-Code: /MVA/92000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PTRISK
+```
+
+### 2760. `/MVA/92000030`
+
+```
+T-Code: /MVA/92000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PUSRRNG
+```
+
+### 2761. `/MVA/92000031`
+
+```
+T-Code: /MVA/92000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_RSCOMP
+```
+
+### 2762. `/MVA/92000222`
+
+```
+T-Code: /MVA/92000222
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PIC
+```
+
+### 2763. `/MVA/92000227`
+
+```
+T-Code: /MVA/92000227
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PRSKADJ
+```
+
+### 2764. `/MVA/98000008`
+
+```
+T-Code: /MVA/98000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PDISPRO
+```
+
+### 2765. `/MVA/98000037`
+
+```
+T-Code: /MVA/98000037
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMU_PDRVCAT
+```
+
+### 2766. `/MVA/98000049`
+
+```
+T-Code: /MVA/98000049
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MVA/AMO_PVCTBTY
+```
+
+### 2767. `/MVA/AMB_PFRCS`
+
+```
+T-Code: /MVA/AMB_PFRCS
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 2768. `/MVA/AMC_BMSTART`
+
+```
+T-Code: /MVA/AMC_BMSTART
+├── /MVA/6VBM
+    └── ACTVT → 16
+├── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_TABU_CLI
+    └── CLIIDMAINT → ' '
+```
+
+### 2769. `/MVA/AMC_IASTART`
+
+```
+T-Code: /MVA/AMC_IASTART
+└── /MVA/6VIAA
+    └── ACTVT → 16
+```
+
+### 2770. `/MVA/AMC_ICASTART`
+
+```
+T-Code: /MVA/AMC_ICASTART
+├── /MVA/6VICA
+    └── ACTVT → 16
+└── /MVA/6V_IC
+    └── /MVA/VASSU → X
+```
+
+### 2771. `/MVA/AMC_RSDSTART`
+
+```
+T-Code: /MVA/AMC_RSDSTART
+└── /MVA/6VRSD
+    └── ACTVT → 16
+```
+
+### 2772. `/MVA/AMC_RSSTART`
+
+```
+T-Code: /MVA/AMC_RSSTART
+└── /MVA/6VRSA
+    └── ACTVT → 16
+```
+
+### 2773. `/MVA/AMN01`
+
+```
+T-Code: /MVA/AMN01
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /MVA/AMN01
+```
+
+### 2774. `/MVA/AMN02`
+
+```
+T-Code: /MVA/AMN02
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /MVA/AMN02
+```
+
+### 2775. `/MVA/AMN03`
+
+```
+T-Code: /MVA/AMN03
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /MVA/AMN03
+```
+
+### 2776. `/MVA/AMN04`
+
+```
+T-Code: /MVA/AMN04
+├── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /MVA/AMN04
+```
+
+### 2777. `/MVA/AMN05`
+
+```
+T-Code: /MVA/AMN05
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /MVA/AMN05
+```
+
+### 2778. `/MVA/AMN06`
+
+```
+T-Code: /MVA/AMN06
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /MVA/AMN06
+```
+
+### 2779. `/MVA/AMN07`
+
+```
+T-Code: /MVA/AMN07
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /MVA/AMN07
+```
+
+### 2780. `/MVA/AMQ_EXT_CONV`
+
+```
+T-Code: /MVA/AMQ_EXT_CONV
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 2781. `/MVA/AMQ_IA_MIGTEST`
+
+```
+T-Code: /MVA/AMQ_IA_MIGTEST
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 2782. `/MVA/AMQ_MIGTEST`
+
+```
+T-Code: /MVA/AMQ_MIGTEST
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 2783. `/MVA/AMQ_OBJ_MIGTEST`
+
+```
+T-Code: /MVA/AMQ_OBJ_MIGTEST
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 2784. `/MVA/AMQ_RS_MIGTEST`
+
+```
+T-Code: /MVA/AMQ_RS_MIGTEST
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 2785. `/MVA/AMT_APIF_NEWBUS`
+
+```
+T-Code: /MVA/AMT_APIF_NEWBUS
+├── /MVA/6VICA
+    └── ACTVT → 1, 16, 2
+├── /MVA/6VICD
+    └── ACTVT → 1, 16, 2
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+├── /PM0/APMPG
+    ├── /PM0/BPRC → N
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── /PM0/COMP
+    └── /PM0/CMPID → (empty — maintain in PFCG)
+```
+
+### 2786. `/MVA/AMT_SVC_NCMDP_AMD`
+
+```
+T-Code: /MVA/AMT_SVC_NCMDP_AMD
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /MVA/AMT_SVC_CHANGE
+    └── RFC_TYPE → FUGR
+```
+
+### 2787. `/MVA/AMVET_IMPORT`
+
+```
+T-Code: /MVA/AMVET_IMPORT
+└── /MVA/6V_ET
+    └── ACTVT → 60
+```
+
+### 2788. `/MVA/AMVI_PLAN_DATE_ICA`
+
+```
+T-Code: /MVA/AMVI_PLAN_DATE_ICA
+└── /MVA/6VICA
+    └── ACTVT → 2
+```
+
+### 2789. `/MVA/AMVI_PLAN_DATE_ICDE`
+
+```
+T-Code: /MVA/AMVI_PLAN_DATE_ICDE
+└── /MVA/6VICD
+    └── ACTVT → 2
+```
+
+### 2790. `/MVA/AMVI_POSITIONING`
+
+```
+T-Code: /MVA/AMVI_POSITIONING
+├── /MVA/6VBM
+    └── ACTVT → 16, 2, 23, 36
+├── /MVA/6VICA
+    └── ACTVT → 1, 16, 2, 36, 60, 61, A8
+├── /MVA/6VICD
+    └── ACTVT → 1, 16, 2, 36, 60, 61, A8
+├── /PM0/ABCOR
+    ├── ACTVT → 1, 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── /PM0/ABPST
+    ├── /PM0/BILXP → ' ', X
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2791. `/MVA/AMVML_EXPORT`
+
+```
+T-Code: /MVA/AMVML_EXPORT
+└── /MVA/6VML
+    └── ACTVT → 61
+```
+
+### 2792. `/MVA/AMVRA_EXPORT_DA`
+
+```
+T-Code: /MVA/AMVRA_EXPORT_DA
+└── /MVA/6VRSA
+    └── ACTVT → 61
+```
+
+### 2793. `/MVA/AMVRA_IMPORT_DA`
+
+```
+T-Code: /MVA/AMVRA_IMPORT_DA
+├── /MVA/6VRSA
+    └── ACTVT → 60
+└── S_DATASET
+    ├── ACTVT → 33, 34, 6, A6, A7
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /MVA/AMVRA_EXPORT_DATA, /MVA/AMVRA_IMPORT_DATA
+```
+
+### 2794. `/MVA/AMVRS_CHECKACK`
+
+```
+T-Code: /MVA/AMVRS_CHECKACK
+└── /MVA/6VRSD
+    └── ACTVT → 16
+```
+
+### 2795. `/MVA/AMVRS_DWTIME_IC`
+
+```
+T-Code: /MVA/AMVRS_DWTIME_IC
+└── /MVA/6VRSD
+    └── ACTVT → 16
+```
+
+### 2796. `/MVA/AMVRS_EXPORT_D`
+
+```
+T-Code: /MVA/AMVRS_EXPORT_D
+└── /MVA/6VRSD
+    └── ACTVT → 61
+```
+
+### 2797. `/MVA/AMVRS_IMPORT_D`
+
+```
+T-Code: /MVA/AMVRS_IMPORT_D
+└── /MVA/6VRSD
+    └── ACTVT → 60
+```
+
+### 2798. `/MVA/AMV_CE_EXPORT`
+
+```
+T-Code: /MVA/AMV_CE_EXPORT
+└── /MVA/6VCE
+    └── ACTVT → 61
+```
+
+### 2799. `/MVA/AMV_PARAM`
+
+```
+T-Code: /MVA/AMV_PARAM
+└── S_TRANSLAT
+    ├── ACTVT → 2, A8
+    ├── TLANGUAGE → (empty — maintain in PFCG)
+    └── TRANOBJ → (empty — maintain in PFCG)
+```
+
+### 2800. `/MVA/AMV_PCORRE`
+
+```
+T-Code: /MVA/AMV_PCORRE
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /MVA/AMV_PCORRE
+```
+
+### 2801. `/MVA/AMW_APIF_CHGVEC`
+
+```
+T-Code: /MVA/AMW_APIF_CHGVEC
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /MVA/AMW_APIF_CHGVEC
+    └── RFC_TYPE → FUGR
+```
+
+### 2802. `/MVA/AMW_DEL_BTS_CANC_SOURCE`
+
+```
+T-Code: /MVA/AMW_DEL_BTS_CANC_SOURCE
+└── /MVA/6VVCH
+    └── ACTVT → 16
+```
+
+### 2803. `/MVA/AMW_PLAN_CANC`
+
+```
+T-Code: /MVA/AMW_PLAN_CANC
+└── /MVA/6VVCH
+    └── ACTVT → 16
+```
+
+### 2804. `/MVA/AMW_START_POSITIONING`
+
+```
+T-Code: /MVA/AMW_START_POSITIONING
+├── /MVA/6VICA
+    └── ACTVT → 1, 16, 2
+├── /MVA/6VICD
+    └── ACTVT → 1, 16, 2
+├── /MVA/6VVCH
+    └── ACTVT → 16
+├── /PM0/ABCOR
+    ├── ACTVT → 1
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+├── /PM0/APMPG
+    ├── /PM0/BPRC → A, N, P
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+```
+
+### 2805. `/MVA/AMY_FPP_CE`
+
+```
+T-Code: /MVA/AMY_FPP_CE
+└── /MVA/6VCE
+    └── ACTVT → A8
+```
+
+### 2806. `/MVA/AMY_FPP_ICDEMSG`
+
+```
+T-Code: /MVA/AMY_FPP_ICDEMSG
+└── /MVA/6V_IC
+    └── /MVA/VASSU → X
+```
+
+### 2807. `/MVA/AMY_FPP_IC_EXP`
+
+```
+T-Code: /MVA/AMY_FPP_IC_EXP
+└── /MVA/6V_IC
+    └── /MVA/VASSU → X
+```
+
+### 2808. `/MVA/AMY_FPP_IC_IMP`
+
+```
+T-Code: /MVA/AMY_FPP_IC_IMP
+└── /MVA/6VICA
+    └── ACTVT → 16, 60, 61, A8
+```
+
+### 2809. `/MVA/AMY_FPP_RS`
+
+```
+T-Code: /MVA/AMY_FPP_RS
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2810. `/MVA/AMY_FPP_RSD`
+
+```
+T-Code: /MVA/AMY_FPP_RSD
+└── /MVA/6VICD
+    └── ACTVT → 16
+```
+
+### 2811. `/MVA/AMY_FPP_TYPCLA`
+
+```
+T-Code: /MVA/AMY_FPP_TYPCLA
+└── /MVA/6V_TR
+    └── ACTVT → 60
+```
+
+### 2812. `/MVA/AMY_UI_CE`
+
+```
+T-Code: /MVA/AMY_UI_CE
+├── /MVA/6VCE
+    └── ACTVT → A8
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 2813. `/MVA/AMY_UI_ICDEEXP`
+
+```
+T-Code: /MVA/AMY_UI_ICDEEXP
+├── /MVA/6VICD
+    └── ACTVT → 61
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 2814. `/MVA/AMY_UI_ICDEIMP`
+
+```
+T-Code: /MVA/AMY_UI_ICDEIMP
+├── /MVA/6VICD
+    └── ACTVT → 60
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 2815. `/MVA/AMY_UI_ICDEMSG`
+
+```
+T-Code: /MVA/AMY_UI_ICDEMSG
+├── /MVA/6VICD
+    └── ACTVT → A8
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 2816. `/MVA/AMY_UI_IC_EXP`
+
+```
+T-Code: /MVA/AMY_UI_IC_EXP
+├── /MVA/6VICA
+    └── ACTVT → 61
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 2817. `/MVA/AMY_UI_IC_IMP`
+
+```
+T-Code: /MVA/AMY_UI_IC_IMP
+├── /MVA/6VICA
+    └── ACTVT → 60
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 2818. `/MVA/AMY_UI_RS`
+
+```
+T-Code: /MVA/AMY_UI_RS
+├── /MVA/6VRSA
+    └── ACTVT → A8
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 2819. `/MVA/AMY_UI_RSD`
+
+```
+T-Code: /MVA/AMY_UI_RSD
+├── /MVA/6VRSD
+    └── ACTVT → A8
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 2820. `/MVA/AMY_UI_TYPCLA`
+
+```
+T-Code: /MVA/AMY_UI_TYPCLA
+├── /MVA/6V_TR
+    └── ACTVT → 60
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 2821. `/MVA/ANALYZE_BTXDC`
+
+```
+T-Code: /MVA/ANALYZE_BTXDC
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2822. `/MVA/ANALYZE_TMFCUST`
+
+```
+T-Code: /MVA/ANALYZE_TMFCUST
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2823. `/MVA/IMPORT_ALLOCDAT`
+
+```
+T-Code: /MVA/IMPORT_ALLOCDAT
+├── /MVA/6V_TR
+    └── ACTVT → 60
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2824. `/MVA/IMPORT_CONVERS`
+
+```
+T-Code: /MVA/IMPORT_CONVERS
+├── /MVA/6V_TR
+    └── ACTVT → 60
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 2825. `/MVA/IMPORT_TYPCLASS`
+
+```
+T-Code: /MVA/IMPORT_TYPCLASS
+├── /MVA/6V_TR
+    └── ACTVT → 60
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+## `/NFM/` — SAP Net Fabric Management
+> T-codes: **69**
+
+
+### 2826. `/NFM/ANARM`
+
+```
+T-Code: /NFM/ANARM
+└── /NFM/RATE
+    ├── ACTVT → 3
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2827. `/NFM/ANARS`
+
+```
+T-Code: /NFM/ANARS
+└── /NFM/RATE
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2828. `/NFM/BSLM`
+
+```
+T-Code: /NFM/BSLM
+└── M_LFM1_EKO
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── EKORG → $EKORG
+```
+
+### 2829. `/NFM/BSLS`
+
+```
+T-Code: /NFM/BSLS
+└── M_LFM1_EKO
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── EKORG → $EKORG
+```
+
+### 2830. `/NFM/CONVM`
+
+```
+T-Code: /NFM/CONVM
+└── /NFM/RATE
+    ├── ACTVT → 2, 3
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2831. `/NFM/CONVS`
+
+```
+T-Code: /NFM/CONVS
+└── /NFM/RATE
+    ├── ACTVT → 2, 3
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2832. `/NFM/COVM1`
+
+```
+T-Code: /NFM/COVM1
+└── /NFM/COVER
+    ├── ACTVT → 2, 3
+    ├── EKORG → $EKORG
+    ├── KNDNR → (empty — maintain in PFCG)
+    ├── LIFNR → (empty — maintain in PFCG)
+    └── VKORG → $VKORG
+```
+
+### 2833. `/NFM/COVM3`
+
+```
+T-Code: /NFM/COVM3
+└── /NFM/COVER
+    ├── ACTVT → 3
+    ├── EKORG → $EKORG
+    ├── KNDNR → (empty — maintain in PFCG)
+    ├── LIFNR → (empty — maintain in PFCG)
+    └── VKORG → $VKORG
+```
+
+### 2834. `/NFM/COVS1`
+
+```
+T-Code: /NFM/COVS1
+└── /NFM/COVER
+    ├── ACTVT → 2
+    ├── EKORG → $EKORG
+    ├── KNDNR → (empty — maintain in PFCG)
+    ├── LIFNR → (empty — maintain in PFCG)
+    └── VKORG → $VKORG
+```
+
+### 2835. `/NFM/COVS3`
+
+```
+T-Code: /NFM/COVS3
+└── /NFM/COVER
+    ├── ACTVT → 3
+    ├── EKORG → $EKORG
+    ├── KNDNR → (empty — maintain in PFCG)
+    ├── LIFNR → (empty — maintain in PFCG)
+    └── VKORG → $VKORG
+```
+
+### 2836. `/NFM/C_BASIC`
+
+```
+T-Code: /NFM/C_BASIC
+└── /NFM/RATE
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2837. `/NFM/C_BOESL`
+
+```
+T-Code: /NFM/C_BOESL
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → NFMO
+```
+
+### 2838. `/NFM/C_CO`
+
+```
+T-Code: /NFM/C_CO
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → NFMC
+```
+
+### 2839. `/NFM/C_COVHM`
+
+```
+T-Code: /NFM/C_COVHM
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /NFM/*
+```
+
+### 2840. `/NFM/C_COVHS`
+
+```
+T-Code: /NFM/C_COVHS
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /NFM/*
+```
+
+### 2841. `/NFM/C_KBB_MM`
+
+```
+T-Code: /NFM/C_KBB_MM
+└── /NFM/KBB
+    ├── ACTVT → 2, 3
+    └── KAPPL → M
+```
+
+### 2842. `/NFM/C_KBB_SD`
+
+```
+T-Code: /NFM/C_KBB_SD
+└── /NFM/KBB
+    ├── ACTVT → 2, 3
+    └── KAPPL → V
+```
+
+### 2843. `/NFM/C_NES`
+
+```
+T-Code: /NFM/C_NES
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → NFMN
+```
+
+### 2844. `/NFM/C_NES_EKO`
+
+```
+T-Code: /NFM/C_NES_EKO
+└── /NFM/NES
+    ├── ACTVT → 2, 3
+    └── KAPPL → M
+```
+
+### 2845. `/NFM/C_NES_VKO`
+
+```
+T-Code: /NFM/C_NES_VKO
+└── /NFM/NES
+    ├── ACTVT → 2, 3
+    └── KAPPL → V
+```
+
+### 2846. `/NFM/C_NFS_MM`
+
+```
+T-Code: /NFM/C_NFS_MM
+└── /NFM/NFS
+    ├── ACTVT → 2, 3
+    └── KAPPL → M
+```
+
+### 2847. `/NFM/C_NFS_SD`
+
+```
+T-Code: /NFM/C_NFS_SD
+└── /NFM/NFS
+    ├── ACTVT → 2, 3
+    └── KAPPL → V
+```
+
+### 2848. `/NFM/C_NKTYP_MM`
+
+```
+T-Code: /NFM/C_NKTYP_MM
+└── /NFM/NKTYP
+    ├── ACTVT → 2, 3
+    └── KAPPL → M
+```
+
+### 2849. `/NFM/C_NKTYP_SD`
+
+```
+T-Code: /NFM/C_NKTYP_SD
+└── /NFM/NKTYP
+    ├── ACTVT → 2, 3
+    └── KAPPL → V
+```
+
+### 2850. `/NFM/C_NORG_MM`
+
+```
+T-Code: /NFM/C_NORG_MM
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2851. `/NFM/C_NORG_SD`
+
+```
+T-Code: /NFM/C_NORG_SD
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2852. `/NFM/C_PROHM`
+
+```
+T-Code: /NFM/C_PROHM
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /NFM/*
+```
+
+### 2853. `/NFM/C_PROHS`
+
+```
+T-Code: /NFM/C_PROHS
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /NFM/*
+```
+
+### 2854. `/NFM/DEFDS`
+
+```
+T-Code: /NFM/DEFDS
+├── /NFM/NFDEF
+    ├── ACTVT → 2, 3
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /NFM/TDEF_DIFF
+```
+
+### 2855. `/NFM/DEHM1`
+
+```
+T-Code: /NFM/DEHM1
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2856. `/NFM/DEHM3`
+
+```
+T-Code: /NFM/DEHM3
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2857. `/NFM/DEHS1`
+
+```
+T-Code: /NFM/DEHS1
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2858. `/NFM/DEHS3`
+
+```
+T-Code: /NFM/DEHS3
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2859. `/NFM/DEPM1`
+
+```
+T-Code: /NFM/DEPM1
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2860. `/NFM/DEPM3`
+
+```
+T-Code: /NFM/DEPM3
+└── /NFM/NFDEF
+    ├── ACTVT → 3
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2861. `/NFM/DEPS1`
+
+```
+T-Code: /NFM/DEPS1
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2862. `/NFM/DEPS3`
+
+```
+T-Code: /NFM/DEPS3
+└── /NFM/NFDEF
+    ├── ACTVT → 3
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2863. `/NFM/DNEBM1`
+
+```
+T-Code: /NFM/DNEBM1
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2864. `/NFM/DNEBM3`
+
+```
+T-Code: /NFM/DNEBM3
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2865. `/NFM/DNEBS1`
+
+```
+T-Code: /NFM/DNEBS1
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2866. `/NFM/DNEBS3`
+
+```
+T-Code: /NFM/DNEBS3
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2867. `/NFM/GRAFM`
+
+```
+T-Code: /NFM/GRAFM
+└── /NFM/RATE
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2868. `/NFM/GRAFS`
+
+```
+T-Code: /NFM/GRAFS
+└── /NFM/RATE
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2869. `/NFM/NEBM1`
+
+```
+T-Code: /NFM/NEBM1
+└── /NFM/NFNEB
+    ├── ACTVT → 2, 3
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2870. `/NFM/NEBM3`
+
+```
+T-Code: /NFM/NEBM3
+└── /NFM/NFNEB
+    ├── ACTVT → 3
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2871. `/NFM/NEBS1`
+
+```
+T-Code: /NFM/NEBS1
+└── /NFM/NFNEB
+    ├── ACTVT → 2, 3
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2872. `/NFM/NEBS3`
+
+```
+T-Code: /NFM/NEBS3
+└── /NFM/NFNEB
+    ├── ACTVT → 3
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2873. `/NFM/POSLM`
+
+```
+T-Code: /NFM/POSLM
+└── /NFM/REPOR
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2874. `/NFM/POSLS`
+
+```
+T-Code: /NFM/POSLS
+└── /NFM/REPOR
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2875. `/NFM/PROM1`
+
+```
+T-Code: /NFM/PROM1
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2876. `/NFM/PROM2`
+
+```
+T-Code: /NFM/PROM2
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2877. `/NFM/PROM3`
+
+```
+T-Code: /NFM/PROM3
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2878. `/NFM/PROM4`
+
+```
+T-Code: /NFM/PROM4
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2879. `/NFM/PROS1`
+
+```
+T-Code: /NFM/PROS1
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2880. `/NFM/PROS2`
+
+```
+T-Code: /NFM/PROS2
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2881. `/NFM/PROS3`
+
+```
+T-Code: /NFM/PROS3
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2882. `/NFM/PROS4`
+
+```
+T-Code: /NFM/PROS4
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2883. `/NFM/RAPM1`
+
+```
+T-Code: /NFM/RAPM1
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2884. `/NFM/RAPM3`
+
+```
+T-Code: /NFM/RAPM3
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2885. `/NFM/RAPS1`
+
+```
+T-Code: /NFM/RAPS1
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2886. `/NFM/RAPS3`
+
+```
+T-Code: /NFM/RAPS3
+└── /NFM/PROV
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2887. `/NFM/RATM1`
+
+```
+T-Code: /NFM/RATM1
+└── /NFM/RATE
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2888. `/NFM/RATM3`
+
+```
+T-Code: /NFM/RATM3
+└── /NFM/RATE
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2889. `/NFM/RATS1`
+
+```
+T-Code: /NFM/RATS1
+└── /NFM/RATE
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2890. `/NFM/RATS3`
+
+```
+T-Code: /NFM/RATS3
+└── /NFM/RATE
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── BUKRS → $BUKRS
+    ├── EKORG → $EKORG
+    └── VKORG → $VKORG
+```
+
+### 2891. `/NFM/VGWM1`
+
+```
+T-Code: /NFM/VGWM1
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2892. `/NFM/VGWM3`
+
+```
+T-Code: /NFM/VGWM3
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2893. `/NFM/VGWS1`
+
+```
+T-Code: /NFM/VGWS1
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+### 2894. `/NFM/VGWS3`
+
+```
+T-Code: /NFM/VGWS3
+└── /NFM/NFDEF
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── EKORG → $EKORG
+    ├── VKORG → $VKORG
+    └── WERKS → $WERKS
+```
+
+## `/OLC/` — SAP Online Commerce
+> T-codes: **1**
+
+
+### 2895. `/OLC/53000538`
+
+```
+T-Code: /OLC/53000538
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OLC/V_OLCCUST
+```
+
+## `/OSP/` — SAP Order & Service Processing
+> T-codes: **21**
+
+
+### 2896. `/OSP/32000014`
+
+```
+T-Code: /OSP/32000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/V_RAUI_CTG, /OSP/V_RAUI_DELV, /OSP/V_RAUI_MROL, /OSP/V_RAUI_MVL, /OSP/V_RAUI_PBH, /OSP/V_RAUI_PVL, /OSP/V_RAUI_RDC, /OSP/V_RAUI_REL, /OSP/V_RAUI_RMT, /OSP/V_RAUI_RTP, /OSP/V_RAUI_SEL, /OSP/V_RAUI_SREL
+```
+
+### 2897. `/OSP/32000015`
+
+```
+T-Code: /OSP/32000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/V_BM_RLV, /OSP/V_RAUI_CHR, /OSP/V_RAUI_CMVL, /OSP/V_RAUI_CPVL, /OSP/V_RAUI_CSER, /OSP/V_RAUI_CSET, /OSP/V_RAUI_TMVL, /OSP/V_RAUI_TPBH, /OSP/V_RAUI_TPVL, /OSP/V_RAUI_TREL, /OSP/V_RAUI_TRG
+```
+
+### 2898. `/OSP/32000026`
+
+```
+T-Code: /OSP/32000026
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/V_BHV_ADMIN, /OSP/V_BHV_APPL, /OSP/V_BHV_SCN
+```
+
+### 2899. `/OSP/32000027`
+
+```
+T-Code: /OSP/32000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/V_RAUI_RFC
+```
+
+### 2900. `/OSP/32000028`
+
+```
+T-Code: /OSP/32000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/V_RAUI_MT, /OSP/V_RAUI_RFRO, /OSP/V_RAUI_TP
+```
+
+### 2901. `/OSP/32000029`
+
+```
+T-Code: /OSP/32000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/V_RAUI_DC, /OSP/V_RAUI_RFRO
+```
+
+### 2902. `/OSP/68002403`
+
+```
+T-Code: /OSP/68002403
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/V_RAUI_RFC
+```
+
+### 2903. `/OSP/68002404`
+
+```
+T-Code: /OSP/68002404
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/T_CON_VAR
+```
+
+### 2904. `/OSP/68002405`
+
+```
+T-Code: /OSP/68002405
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/T_VAR_MAP
+```
+
+### 2905. `/OSP/68002406`
+
+```
+T-Code: /OSP/68002406
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/V_RAUI_MT, /OSP/V_RAUI_RFRO, /OSP/V_RAUI_TP
+```
+
+### 2906. `/OSP/68002407`
+
+```
+T-Code: /OSP/68002407
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/V_RAUI_DC, /OSP/V_RAUI_RFRO
+```
+
+### 2907. `/OSP/68002417`
+
+```
+T-Code: /OSP/68002417
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/V_BHV_ADMIN, /OSP/V_BHV_APPL, /OSP/V_BHV_SCN
+```
+
+### 2908. `/OSP/80000007`
+
+```
+T-Code: /OSP/80000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/T_CON_VAR
+```
+
+### 2909. `/OSP/80000008`
+
+```
+T-Code: /OSP/80000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/T_CON_GRP
+```
+
+### 2910. `/OSP/80000009`
+
+```
+T-Code: /OSP/80000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /OSP/T_VAR_MAP
+```
+
+### 2911. `/OSP/SLD`
+
+```
+T-Code: /OSP/SLD
+├── S_DEVELOP
+    ├── ACTVT → 1, 16, 2, 3, 40, 41, 42, 6, 7, 70, 90, 94, L0, MA
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_RFC_ADM
+    ├── ACTVT → 1, 2, 3
+    ├── ICF_VALUE → (empty — maintain in PFCG)
+    ├── RFCDEST → (empty — maintain in PFCG)
+    └── RFCTYPE → (empty — maintain in PFCG)
+```
+
+### 2912. `/OSP/TR_ACE_STRT`
+
+```
+T-Code: /OSP/TR_ACE_STRT
+└── S_RFC_ADM
+    ├── ACTVT → 3
+    ├── ICF_VALUE → ' '
+    ├── RFCDEST → ' '
+    └── RFCTYPE → G
+```
+
+### 2913. `/OSP/TR_RP_ERROR_LOG`
+
+```
+T-Code: /OSP/TR_RP_ERROR_LOG
+└── S_DEVELOP
+    ├── ACTVT → 3
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 2914. `/OSP/TR_SCHDULER`
+
+```
+T-Code: /OSP/TR_SCHDULER
+└── S_TCODE
+    └── TCD → ' '
+```
+
+### 2915. `/OSP/TR_TP_REPORT`
+
+```
+T-Code: /OSP/TR_TP_REPORT
+└── S_ALV_LAYO
+    └── ACTVT → 23
+```
+
+### 2916. `/OSP/TR_WSR_SCHDULE`
+
+```
+T-Code: /OSP/TR_WSR_SCHDULE
+└── S_CTS_ADMI
+    └── CTS_ADMFCT → ' '
+```
+
+## `/PERSONAS/` — SAP Screen Personas
+> T-codes: **4**
+
+
+### 2917. `/PERSONAS/GLBSCRIPTS`
+
+```
+T-Code: /PERSONAS/GLBSCRIPTS
+└── S_GUI
+    └── ACTVT → 60
+```
+
+### 2918. `/PERSONAS/LAUNCH`
+
+```
+T-Code: /PERSONAS/LAUNCH
+└── P_RUNTIME
+    ├── P_ACTVT_FW → *
+    ├── P_ACTVT_RT → 1
+    └── P_APP_ID → *
+```
+
+### 2919. `/PERSONAS/SE`
+
+```
+T-Code: /PERSONAS/SE
+└── S_TCODE
+    └── TCD → /PERSONAS/LAUNCH
+```
+
+### 2920. `/PERSONAS/TEST`
+
+```
+T-Code: /PERSONAS/TEST
+└── P_RUNTIME
+    ├── P_ACTVT_FW → 1, 3
+    ├── P_ACTVT_RT → 1
+    └── P_APP_ID → /PERSONAS/TEST
+```
+
+## `/PF1/` — SAP Payroll — External Payroll
+> T-codes: **280**
+
+
+### 2921. `/PF1/04000013`
+
+```
+T-Code: /PF1/04000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_HOLD
+```
+
+### 2922. `/PF1/04000014`
+
+```
+T-Code: /PF1/04000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_CH_PH
+```
+
+### 2923. `/PF1/04000016`
+
+```
+T-Code: /PF1/04000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FH_DMEEXO
+```
+
+### 2924. `/PF1/04000017`
+
+```
+T-Code: /PF1/04000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_IPM_IDOC
+```
+
+### 2925. `/PF1/04000018`
+
+```
+T-Code: /PF1/04000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_GL_AC_DET
+```
+
+### 2926. `/PF1/04000019`
+
+```
+T-Code: /PF1/04000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_DET_DOC_T
+```
+
+### 2927. `/PF1/04000020`
+
+```
+T-Code: /PF1/04000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_RESUB
+```
+
+### 2928. `/PF1/04000021`
+
+```
+T-Code: /PF1/04000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_GL_SUSP
+```
+
+### 2929. `/PF1/04000022`
+
+```
+T-Code: /PF1/04000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_MBCO_DMEE
+```
+
+### 2930. `/PF1/04000023`
+
+```
+T-Code: /PF1/04000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_BRF
+```
+
+### 2931. `/PF1/04000026`
+
+```
+T-Code: /PF1/04000026
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_MBCI_CONV
+```
+
+### 2932. `/PF1/04000027`
+
+```
+T-Code: /PF1/04000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_MBCO_CONV
+```
+
+### 2933. `/PF1/04000028`
+
+```
+T-Code: /PF1/04000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_BCM_RULE
+```
+
+### 2934. `/PF1/04000030`
+
+```
+T-Code: /PF1/04000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PROCORDER
+```
+
+### 2935. `/PF1/04000031`
+
+```
+T-Code: /PF1/04000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PI_TR
+```
+
+### 2936. `/PF1/04000032`
+
+```
+T-Code: /PF1/04000032
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_RA_CONV_ACTIVE_RECALL
+```
+
+### 2937. `/PF1/04000035`
+
+```
+T-Code: /PF1/04000035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_TPM_FMC
+```
+
+### 2938. `/PF1/04000036`
+
+```
+T-Code: /PF1/04000036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_TPM_PO
+```
+
+### 2939. `/PF1/04000043`
+
+```
+T-Code: /PF1/04000043
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CONVCONF, /PF1/V_FH_ATTRIB, /PF1/V_FH_CONV, /PF1/V_FH_DEFVAL
+```
+
+### 2940. `/PF1/04000045`
+
+```
+T-Code: /PF1/04000045
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PACK_SIZE
+```
+
+### 2941. `/PF1/04000049`
+
+```
+T-Code: /PF1/04000049
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_MBCO_RCV
+```
+
+### 2942. `/PF1/11001522`
+
+```
+T-Code: /PF1/11001522
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_XML_POTYP
+```
+
+### 2943. `/PF1/11001560`
+
+```
+T-Code: /PF1/11001560
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_REACT
+```
+
+### 2944. `/PF1/11001578`
+
+```
+T-Code: /PF1/11001578
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_RTYPE1
+```
+
+### 2945. `/PF1/11001606`
+
+```
+T-Code: /PF1/11001606
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_RFC_DEST
+```
+
+### 2946. `/PF1/11001626`
+
+```
+T-Code: /PF1/11001626
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_STAT_REAC
+```
+
+### 2947. `/PF1/11001632`
+
+```
+T-Code: /PF1/11001632
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_STAT_BANK
+```
+
+### 2948. `/PF1/11001751`
+
+```
+T-Code: /PF1/11001751
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FEATURE
+```
+
+### 2949. `/PF1/11001847`
+
+```
+T-Code: /PF1/11001847
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_BANK
+```
+
+### 2950. `/PF1/11001867`
+
+```
+T-Code: /PF1/11001867
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_XML_PRIO
+```
+
+### 2951. `/PF1/11001882`
+
+```
+T-Code: /PF1/11001882
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FH_XML
+```
+
+### 2952. `/PF1/11001892`
+
+```
+T-Code: /PF1/11001892
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CTRY_GRP, /PF1/V_CTRY_GR_A
+```
+
+### 2953. `/PF1/11001927`
+
+```
+T-Code: /PF1/11001927
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CONVCONF, /PF1/V_CONVERTER, /PF1/V_CONV_C, /PF1/V_CONV_IFIL, /PF1/V_CONV_IFME, /PF1/V_CONV_IN, /PF1/V_CONV_OC, /PF1/V_CONV_OFIL, /PF1/V_CONV_OUT, /PF1/V_CONV_TEMS, /PF1/V_FH_DEFVAL, /PF1/V_FH_DMEEXO, /PF1/V_FH_POTYP, /PF1/V_XML_TRTYP
+```
+
+### 2954. `/PF1/11001931`
+
+```
+T-Code: /PF1/11001931
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FH_DMEE_C
+```
+
+### 2955. `/PF1/11001985`
+
+```
+T-Code: /PF1/11001985
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_MAP_TREE
+```
+
+### 2956. `/PF1/11002021`
+
+```
+T-Code: /PF1/11002021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CHAR2ACTC
+```
+
+### 2957. `/PF1/11002044`
+
+```
+T-Code: /PF1/11002044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_XML_TRTYP
+```
+
+### 2958. `/PF1/11002072`
+
+```
+T-Code: /PF1/11002072
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EBICS
+```
+
+### 2959. `/PF1/11002177`
+
+```
+T-Code: /PF1/11002177
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CHRG_PROC
+```
+
+### 2960. `/PF1/11002178`
+
+```
+T-Code: /PF1/11002178
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CHRG_TYPE
+```
+
+### 2961. `/PF1/11002179`
+
+```
+T-Code: /PF1/11002179
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EVTCNT
+```
+
+### 2962. `/PF1/11002303`
+
+```
+T-Code: /PF1/11002303
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_TRM_FMC
+```
+
+### 2963. `/PF1/11002372`
+
+```
+T-Code: /PF1/11002372
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_BNKAREA
+```
+
+### 2964. `/PF1/11002374`
+
+```
+T-Code: /PF1/11002374
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_ACTTYPE
+```
+
+### 2965. `/PF1/11002375`
+
+```
+T-Code: /PF1/11002375
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FILTERFLD
+```
+
+### 2966. `/PF1/11002582`
+
+```
+T-Code: /PF1/11002582
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FCT_FIELD
+```
+
+### 2967. `/PF1/11002677`
+
+```
+T-Code: /PF1/11002677
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EBS_CONVI
+```
+
+### 2968. `/PF1/11002679`
+
+```
+T-Code: /PF1/11002679
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EBS_CONVF
+```
+
+### 2969. `/PF1/11002689`
+
+```
+T-Code: /PF1/11002689
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_SCB_IND
+```
+
+### 2970. `/PF1/32000001`
+
+```
+T-Code: /PF1/32000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FH_ATTR
+```
+
+### 2971. `/PF1/32000010`
+
+```
+T-Code: /PF1/32000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EV_CHECK, /PF1/V_EV_CHECKT, /PF1/V_EV_CHECKX
+```
+
+### 2972. `/PF1/32000011`
+
+```
+T-Code: /PF1/32000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EV_RULE
+```
+
+### 2973. `/PF1/32000013`
+
+```
+T-Code: /PF1/32000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EV_RU_CHK
+```
+
+### 2974. `/PF1/32000014`
+
+```
+T-Code: /PF1/32000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_POTYPE
+```
+
+### 2975. `/PF1/32000016`
+
+```
+T-Code: /PF1/32000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PI_RJ
+```
+
+### 2976. `/PF1/32000017`
+
+```
+T-Code: /PF1/32000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PO_REV
+```
+
+### 2977. `/PF1/32000018`
+
+```
+T-Code: /PF1/32000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_STATES
+```
+
+### 2978. `/PF1/32000022`
+
+```
+T-Code: /PF1/32000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_SEGMENT
+```
+
+### 2979. `/PF1/32000031`
+
+```
+T-Code: /PF1/32000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PI_RJ
+```
+
+### 2980. `/PF1/32000033`
+
+```
+T-Code: /PF1/32000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PO_REV
+```
+
+### 2981. `/PF1/32000040`
+
+```
+T-Code: /PF1/32000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_POTYPE
+```
+
+### 2982. `/PF1/32000041`
+
+```
+T-Code: /PF1/32000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_SEGMENT
+```
+
+### 2983. `/PF1/32000043`
+
+```
+T-Code: /PF1/32000043
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_AREA
+```
+
+### 2984. `/PF1/32000044`
+
+```
+T-Code: /PF1/32000044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_OTGR_EH
+```
+
+### 2985. `/PF1/32000045`
+
+```
+T-Code: /PF1/32000045
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_RTYPE
+```
+
+### 2986. `/PF1/32000047`
+
+```
+T-Code: /PF1/32000047
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FH_CHECK
+```
+
+### 2987. `/PF1/32000051`
+
+```
+T-Code: /PF1/32000051
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_AREA
+```
+
+### 2988. `/PF1/32000053`
+
+```
+T-Code: /PF1/32000053
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_REL_RULE_SLA
+```
+
+### 2989. `/PF1/32000054`
+
+```
+T-Code: /PF1/32000054
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_RTW_SLA
+```
+
+### 2990. `/PF1/32000055`
+
+```
+T-Code: /PF1/32000055
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_REL_RULE_EH
+```
+
+### 2991. `/PF1/32000057`
+
+```
+T-Code: /PF1/32000057
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_RTW_EH
+```
+
+### 2992. `/PF1/32000061`
+
+```
+T-Code: /PF1/32000061
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_OTGR_FM
+```
+
+### 2993. `/PF1/32000063`
+
+```
+T-Code: /PF1/32000063
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CHANNEL
+```
+
+### 2994. `/PF1/32000065`
+
+```
+T-Code: /PF1/32000065
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_TTGR_EV
+```
+
+### 2995. `/PF1/32000066`
+
+```
+T-Code: /PF1/32000066
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_OTGR_EV
+```
+
+### 2996. `/PF1/32000073`
+
+```
+T-Code: /PF1/32000073
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EV_ORDER
+```
+
+### 2997. `/PF1/32000074`
+
+```
+T-Code: /PF1/32000074
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EV_ITEM
+```
+
+### 2998. `/PF1/32000077`
+
+```
+T-Code: /PF1/32000077
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_SLACS
+```
+
+### 2999. `/PF1/32000082`
+
+```
+T-Code: /PF1/32000082
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_LT_ID
+```
+
+### 3000. `/PF1/32000088`
+
+```
+T-Code: /PF1/32000088
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_TX_LANG
+```
+
+### 3001. `/PF1/32000092`
+
+```
+T-Code: /PF1/32000092
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_TTGR_RM
+```
+
+### 3002. `/PF1/32000093`
+
+```
+T-Code: /PF1/32000093
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_OTGR_RM
+```
+
+### 3003. `/PF1/32000133`
+
+```
+T-Code: /PF1/32000133
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_TBCA_REL_FM
+```
+
+### 3004. `/PF1/32000134`
+
+```
+T-Code: /PF1/32000134
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_TFK070A_HEAD, V_TFK070A_TABSTR
+```
+
+### 3005. `/PF1/32000135`
+
+```
+T-Code: /PF1/32000135
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_TFK070B, V_TFK070C
+```
+
+### 3006. `/PF1/32000136`
+
+```
+T-Code: /PF1/32000136
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_TFK070M
+```
+
+### 3007. `/PF1/32000137`
+
+```
+T-Code: /PF1/32000137
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_TFK070A_HEAD, V_TFK070A_TABSTR
+```
+
+### 3008. `/PF1/32000138`
+
+```
+T-Code: /PF1/32000138
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_TFK070_FRMCLS
+```
+
+### 3009. `/PF1/32000139`
+
+```
+T-Code: /PF1/32000139
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_TFK070F
+```
+
+### 3010. `/PF1/32000140`
+
+```
+T-Code: /PF1/32000140
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_TFK070_DOC_ARC
+```
+
+### 3011. `/PF1/32000141`
+
+```
+T-Code: /PF1/32000141
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_TFK070_ARCHIVE
+```
+
+### 3012. `/PF1/41000004`
+
+```
+T-Code: /PF1/41000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_TTYPES
+```
+
+### 3013. `/PF1/41000007`
+
+```
+T-Code: /PF1/41000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_COM_TY
+```
+
+### 3014. `/PF1/41000011`
+
+```
+T-Code: /PF1/41000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_DTYPES
+```
+
+### 3015. `/PF1/41000012`
+
+```
+T-Code: /PF1/41000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_MEDIUM
+```
+
+### 3016. `/PF1/41000014`
+
+```
+T-Code: /PF1/41000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_EC_PRI
+```
+
+### 3017. `/PF1/41000015`
+
+```
+T-Code: /PF1/41000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_ERRORS
+```
+
+### 3018. `/PF1/41000029`
+
+```
+T-Code: /PF1/41000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_ORPTSTYPE
+```
+
+### 3019. `/PF1/41000030`
+
+```
+T-Code: /PF1/41000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_SPLITTSTY
+```
+
+### 3020. `/PF1/41000034`
+
+```
+T-Code: /PF1/41000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EV_RCP_RE
+```
+
+### 3021. `/PF1/41000035`
+
+```
+T-Code: /PF1/41000035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FH_ATTRIB, /PF1/V_MBCO_CONV
+```
+
+### 3022. `/PF1/41000039`
+
+```
+T-Code: /PF1/41000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EXT_ERR
+```
+
+### 3023. `/PF1/41000040`
+
+```
+T-Code: /PF1/41000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_TRANSTYPE
+```
+
+### 3024. `/PF1/41000041`
+
+```
+T-Code: /PF1/41000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_TTGR_SPLT
+```
+
+### 3025. `/PF1/41000047`
+
+```
+T-Code: /PF1/41000047
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CONVCONF
+```
+
+### 3026. `/PF1/41000049`
+
+```
+T-Code: /PF1/41000049
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PO_PP
+```
+
+### 3027. `/PF1/41000058`
+
+```
+T-Code: /PF1/41000058
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_XML_PRIO
+```
+
+### 3028. `/PF1/41000059`
+
+```
+T-Code: /PF1/41000059
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_XML_ATHFL
+```
+
+### 3029. `/PF1/41000060`
+
+```
+T-Code: /PF1/41000060
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_XML_PIDEF
+```
+
+### 3030. `/PF1/41000066`
+
+```
+T-Code: /PF1/41000066
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_BANK_BIC
+```
+
+### 3031. `/PF1/41000068`
+
+```
+T-Code: /PF1/41000068
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PI_RSP_MP
+```
+
+### 3032. `/PF1/41000069`
+
+```
+T-Code: /PF1/41000069
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PI_RESP
+```
+
+### 3033. `/PF1/41000071`
+
+```
+T-Code: /PF1/41000071
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_RCP_ERCHK
+```
+
+### 3034. `/PF1/41000072`
+
+```
+T-Code: /PF1/41000072
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_RANGE_INT
+```
+
+### 3035. `/PF1/41000073`
+
+```
+T-Code: /PF1/41000073
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_SEPA_CTRY
+```
+
+### 3036. `/PF1/41000076`
+
+```
+T-Code: /PF1/41000076
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_STIMEFRM
+```
+
+### 3037. `/PF1/41000079`
+
+```
+T-Code: /PF1/41000079
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CLR_SYS
+```
+
+### 3038. `/PF1/41000080`
+
+```
+T-Code: /PF1/41000080
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_TBCA_OBJ_CAT
+```
+
+### 3039. `/PF1/41000082`
+
+```
+T-Code: /PF1/41000082
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_SEG_KEY
+```
+
+### 3040. `/PF1/41000083`
+
+```
+T-Code: /PF1/41000083
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PP_CNT
+```
+
+### 3041. `/PF1/47000006`
+
+```
+T-Code: /PF1/47000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_XI_PODEF
+```
+
+### 3042. `/PF1/47000007`
+
+```
+T-Code: /PF1/47000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_XI_PIDEF
+```
+
+### 3043. `/PF1/47000012`
+
+```
+T-Code: /PF1/47000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_CHECK
+```
+
+### 3044. `/PF1/47000021`
+
+```
+T-Code: /PF1/47000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_TECH_LOG
+```
+
+### 3045. `/PF1/47000041`
+
+```
+T-Code: /PF1/47000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/T_RTI_EXCL
+```
+
+### 3046. `/PF1/47000048`
+
+```
+T-Code: /PF1/47000048
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_RECONC_GR
+```
+
+### 3047. `/PF1/47000049`
+
+```
+T-Code: /PF1/47000049
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_RECON_MAP
+```
+
+### 3048. `/PF1/47000052`
+
+```
+T-Code: /PF1/47000052
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_RECONC_FH
+```
+
+### 3049. `/PF1/47000068`
+
+```
+T-Code: /PF1/47000068
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_RETRSN
+```
+
+### 3050. `/PF1/47000075`
+
+```
+T-Code: /PF1/47000075
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_OTGR_AR
+```
+
+### 3051. `/PF1/47000100`
+
+```
+T-Code: /PF1/47000100
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_MAP_PURP
+```
+
+### 3052. `/PF1/47000117`
+
+```
+T-Code: /PF1/47000117
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/T_SN_TID, /PF1/V_SN_ITEM_T, /PF1/V_SN_TYPES
+```
+
+### 3053. `/PF1/47000122`
+
+```
+T-Code: /PF1/47000122
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EV_CHECK
+```
+
+### 3054. `/PF1/47000123`
+
+```
+T-Code: /PF1/47000123
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EV_ITEM, /PF1/V_EV_OPO, /PF1/V_EV_OPO_IT, /PF1/V_EV_ORDER, /PF1/V_EV_RULE, /PF1/V_EV_RU_CHK, /PF1/V_OTGR_EV, /PF1/V_TTGR_EV
+```
+
+### 3055. `/PF1/47000124`
+
+```
+T-Code: /PF1/47000124
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_WRKBSKID
+```
+
+### 3056. `/PF1/47000134`
+
+```
+T-Code: /PF1/47000134
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_RT_CD_TYP
+```
+
+### 3057. `/PF1/47000138`
+
+```
+T-Code: /PF1/47000138
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PE_AM_RCN
+```
+
+### 3058. `/PF1/47000143`
+
+```
+T-Code: /PF1/47000143
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PI_RP
+```
+
+### 3059. `/PF1/47000144`
+
+```
+T-Code: /PF1/47000144
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PO_RP
+```
+
+### 3060. `/PF1/47000148`
+
+```
+T-Code: /PF1/47000148
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_OLSTENER
+```
+
+### 3061. `/PF1/47000153`
+
+```
+T-Code: /PF1/47000153
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FH_EX_RSP
+```
+
+### 3062. `/PF1/47000154`
+
+```
+T-Code: /PF1/47000154
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FH_CMP_RE
+```
+
+### 3063. `/PF1/47000157`
+
+```
+T-Code: /PF1/47000157
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_MANUAL
+```
+
+### 3064. `/PF1/47000158`
+
+```
+T-Code: /PF1/47000158
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_CH_F
+```
+
+### 3065. `/PF1/47000159`
+
+```
+T-Code: /PF1/47000159
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_REPAIR
+```
+
+### 3066. `/PF1/47000161`
+
+```
+T-Code: /PF1/47000161
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FCT_TYPES
+```
+
+### 3067. `/PF1/47000162`
+
+```
+T-Code: /PF1/47000162
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FLD_RTNS
+```
+
+### 3068. `/PF1/47000163`
+
+```
+T-Code: /PF1/47000163
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FIELD_GRP
+```
+
+### 3069. `/PF1/47000164`
+
+```
+T-Code: /PF1/47000164
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FCT_TYP_F
+```
+
+### 3070. `/PF1/47000165`
+
+```
+T-Code: /PF1/47000165
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FLD_GRP_L
+```
+
+### 3071. `/PF1/47000166`
+
+```
+T-Code: /PF1/47000166
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_OBJ_FIELD, /PF1/V_OBJ_F_XML
+```
+
+### 3072. `/PF1/47000168`
+
+```
+T-Code: /PF1/47000168
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_POT_TRANT
+```
+
+### 3073. `/PF1/47000177`
+
+```
+T-Code: /PF1/47000177
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_BP_AREA
+```
+
+### 3074. `/PF1/47000182`
+
+```
+T-Code: /PF1/47000182
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_UIPOTMPL
+```
+
+### 3075. `/PF1/47000189`
+
+```
+T-Code: /PF1/47000189
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PE_PPA
+```
+
+### 3076. `/PF1/47000190`
+
+```
+T-Code: /PF1/47000190
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PP_ACT
+```
+
+### 3077. `/PF1/47000191`
+
+```
+T-Code: /PF1/47000191
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_WB
+```
+
+### 3078. `/PF1/47000192`
+
+```
+T-Code: /PF1/47000192
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PE_PPF
+```
+
+### 3079. `/PF1/47000193`
+
+```
+T-Code: /PF1/47000193
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_ISO_CODE
+```
+
+### 3080. `/PF1/47000194`
+
+```
+T-Code: /PF1/47000194
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_BRFSWITCH
+```
+
+### 3081. `/PF1/47000195`
+
+```
+T-Code: /PF1/47000195
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_BRF_MDOBJ
+```
+
+### 3082. `/PF1/47000203`
+
+```
+T-Code: /PF1/47000203
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_SIN_OPROC
+```
+
+### 3083. `/PF1/47000218`
+
+```
+T-Code: /PF1/47000218
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_RA_ACTION
+```
+
+### 3084. `/PF1/47000219`
+
+```
+T-Code: /PF1/47000219
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_RA_CONV
+```
+
+### 3085. `/PF1/47000220`
+
+```
+T-Code: /PF1/47000220
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_REQ_AGTY
+```
+
+### 3086. `/PF1/47000221`
+
+```
+T-Code: /PF1/47000221
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_RA_FEEDB
+```
+
+### 3087. `/PF1/47000225`
+
+```
+T-Code: /PF1/47000225
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_RAPROC
+```
+
+### 3088. `/PF1/47000227`
+
+```
+T-Code: /PF1/47000227
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_P_CTRL
+```
+
+### 3089. `/PF1/47000230`
+
+```
+T-Code: /PF1/47000230
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_RCLFIN
+```
+
+### 3090. `/PF1/47000236`
+
+```
+T-Code: /PF1/47000236
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CTRY_GRP
+```
+
+### 3091. `/PF1/47000237`
+
+```
+T-Code: /PF1/47000237
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CURGR_ISO, /PF1/V_CURR_GRP
+```
+
+### 3092. `/PF1/47000239`
+
+```
+T-Code: /PF1/47000239
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CTRY_GRP, /PF1/V_CTRY_GR_A
+```
+
+### 3093. `/PF1/47000244`
+
+```
+T-Code: /PF1/47000244
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_LM_ATB, /PF1/V_LM_SYS
+```
+
+### 3094. `/PF1/47000245`
+
+```
+T-Code: /PF1/47000245
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_LM_AREA, /PF1/V_LM_VALUE
+```
+
+### 3095. `/PF1/47000248`
+
+```
+T-Code: /PF1/47000248
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CTRY_CUR
+```
+
+### 3096. `/PF1/47000257`
+
+```
+T-Code: /PF1/47000257
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_OPO_PI
+```
+
+### 3097. `/PF1/47000258`
+
+```
+T-Code: /PF1/47000258
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PI_EXC
+```
+
+### 3098. `/PF1/47000265`
+
+```
+T-Code: /PF1/47000265
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_REL_RULE_CRISIS
+```
+
+### 3099. `/PF1/47000266`
+
+```
+T-Code: /PF1/47000266
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_RTW_CRISIS
+```
+
+### 3100. `/PF1/47000270`
+
+```
+T-Code: /PF1/47000270
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_COR_SYNC
+```
+
+### 3101. `/PF1/47000272`
+
+```
+T-Code: /PF1/47000272
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PROCESS
+```
+
+### 3102. `/PF1/47000286`
+
+```
+T-Code: /PF1/47000286
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_ISO_TRANS
+```
+
+### 3103. `/PF1/47000287`
+
+```
+T-Code: /PF1/47000287
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_ERRIGN
+```
+
+### 3104. `/PF1/47000292`
+
+```
+T-Code: /PF1/47000292
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_SPLIT_POT
+```
+
+### 3105. `/PF1/47000295`
+
+```
+T-Code: /PF1/47000295
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PO_SPL
+```
+
+### 3106. `/PF1/47000298`
+
+```
+T-Code: /PF1/47000298
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EV_DUP_V3
+```
+
+### 3107. `/PF1/47000305`
+
+```
+T-Code: /PF1/47000305
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_REL_RULE_EHSOL
+```
+
+### 3108. `/PF1/47000306`
+
+```
+T-Code: /PF1/47000306
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_RTW_EHSOL
+```
+
+### 3109. `/PF1/47000308`
+
+```
+T-Code: /PF1/47000308
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_AUTOPP
+```
+
+### 3110. `/PF1/47000310`
+
+```
+T-Code: /PF1/47000310
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_DRAFT_PO
+```
+
+### 3111. `/PF1/47000313`
+
+```
+T-Code: /PF1/47000313
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FIELD_CAT
+```
+
+### 3112. `/PF1/51000001`
+
+```
+T-Code: /PF1/51000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CLAREA
+```
+
+### 3113. `/PF1/51000003`
+
+```
+T-Code: /PF1/51000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_TTGR_ROU
+```
+
+### 3114. `/PF1/51000006`
+
+```
+T-Code: /PF1/51000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_TTGR_EXC
+```
+
+### 3115. `/PF1/51000007`
+
+```
+T-Code: /PF1/51000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FORMAT
+```
+
+### 3116. `/PF1/51000008`
+
+```
+T-Code: /PF1/51000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_SYS
+```
+
+### 3117. `/PF1/51000009`
+
+```
+T-Code: /PF1/51000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_ATB
+```
+
+### 3118. `/PF1/51000010`
+
+```
+T-Code: /PF1/51000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CHANNEL
+```
+
+### 3119. `/PF1/51000013`
+
+```
+T-Code: /PF1/51000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_MEDIUM
+```
+
+### 3120. `/PF1/51000019`
+
+```
+T-Code: /PF1/51000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_REL_RULE_ROUTE
+```
+
+### 3121. `/PF1/51000020`
+
+```
+T-Code: /PF1/51000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_RTW_ROUTE
+```
+
+### 3122. `/PF1/51000022`
+
+```
+T-Code: /PF1/51000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_REL_RULE_CA
+```
+
+### 3123. `/PF1/51000023`
+
+```
+T-Code: /PF1/51000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_RTW_CA
+```
+
+### 3124. `/PF1/51000025`
+
+```
+T-Code: /PF1/51000025
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_REL_RULE_VA
+```
+
+### 3125. `/PF1/51000026`
+
+```
+T-Code: /PF1/51000026
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_RTW_VA
+```
+
+### 3126. `/PF1/51000028`
+
+```
+T-Code: /PF1/51000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_OFFTTYPE
+```
+
+### 3127. `/PF1/51000029`
+
+```
+T-Code: /PF1/51000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_POTYPE
+```
+
+### 3128. `/PF1/51000030`
+
+```
+T-Code: /PF1/51000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_ACCSYMBOL
+```
+
+### 3129. `/PF1/51000031`
+
+```
+T-Code: /PF1/51000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CURRCALE
+```
+
+### 3130. `/PF1/51000034`
+
+```
+T-Code: /PF1/51000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_AREA
+```
+
+### 3131. `/PF1/51000035`
+
+```
+T-Code: /PF1/51000035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_TRTYPSYM
+```
+
+### 3132. `/PF1/51000036`
+
+```
+T-Code: /PF1/51000036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_VALUE
+```
+
+### 3133. `/PF1/51000044`
+
+```
+T-Code: /PF1/51000044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_FH_CONV
+```
+
+### 3134. `/PF1/51000050`
+
+```
+T-Code: /PF1/51000050
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → NOTE_LANGUAGES
+```
+
+### 3135. `/PF1/51000051`
+
+```
+T-Code: /PF1/51000051
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_NOTEID_RO
+```
+
+### 3136. `/PF1/51000052`
+
+```
+T-Code: /PF1/51000052
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_NOTEID_CA
+```
+
+### 3137. `/PF1/51000053`
+
+```
+T-Code: /PF1/51000053
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_NOTEID_VA
+```
+
+### 3138. `/PF1/51000054`
+
+```
+T-Code: /PF1/51000054
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_NOTEID_VR
+```
+
+### 3139. `/PF1/51000058`
+
+```
+T-Code: /PF1/51000058
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PO_PP
+```
+
+### 3140. `/PF1/51000062`
+
+```
+T-Code: /PF1/51000062
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PI_PP
+```
+
+### 3141. `/PF1/51000064`
+
+```
+T-Code: /PF1/51000064
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PI_RJ
+```
+
+### 3142. `/PF1/51000065`
+
+```
+T-Code: /PF1/51000065
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_ASYM_CUR
+```
+
+### 3143. `/PF1/51000066`
+
+```
+T-Code: /PF1/51000066
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_IGNORE
+```
+
+### 3144. `/PF1/51000069`
+
+```
+T-Code: /PF1/51000069
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_REFERENCE
+```
+
+### 3145. `/PF1/51000070`
+
+```
+T-Code: /PF1/51000070
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_RETURN_TT
+```
+
+### 3146. `/PF1/51000076`
+
+```
+T-Code: /PF1/51000076
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PROCTTSYM
+```
+
+### 3147. `/PF1/51000083`
+
+```
+T-Code: /PF1/51000083
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_STOREITEM
+```
+
+### 3148. `/PF1/51000084`
+
+```
+T-Code: /PF1/51000084
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PRTYPE
+```
+
+### 3149. `/PF1/51000087`
+
+```
+T-Code: /PF1/51000087
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_SNDACCSYM
+```
+
+### 3150. `/PF1/51000099`
+
+```
+T-Code: /PF1/51000099
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_REL_RULE_RECALL
+```
+
+### 3151. `/PF1/51000111`
+
+```
+T-Code: /PF1/51000111
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_ACCSYMBOL, /PF1/V_ASYM_CUR
+```
+
+### 3152. `/PF1/51000112`
+
+```
+T-Code: /PF1/51000112
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_ATB, /PF1/V_AM_SYS, /PF1/V_REF_FLD
+```
+
+### 3153. `/PF1/51000113`
+
+```
+T-Code: /PF1/51000113
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_AM_AREA, /PF1/V_AM_VALUE, /PF1/V_REFERENCE
+```
+
+### 3154. `/PF1/51000118`
+
+```
+T-Code: /PF1/51000118
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_CLEARING_AREA, /PF1/VV_TXBL_COLLECTOR, /PF1/VV_TXBL_ITEM, /PF1/VV_TXBL_ORDER, /PF1/VV_TXBL_SYSTEM, /PF1/VV_TXBL_TEXT
+```
+
+### 3155. `/PF1/51000121`
+
+```
+T-Code: /PF1/51000121
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_REL_RULE_ORDER
+```
+
+### 3156. `/PF1/51000122`
+
+```
+T-Code: /PF1/51000122
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_RTW_ORDER
+```
+
+### 3157. `/PF1/51000125`
+
+```
+T-Code: /PF1/51000125
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_DISP_STAT
+```
+
+### 3158. `/PF1/51000126`
+
+```
+T-Code: /PF1/51000126
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_REVERSE
+```
+
+### 3159. `/PF1/51000127`
+
+```
+T-Code: /PF1/51000127
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_RTW_PO_ITEM
+```
+
+### 3160. `/PF1/51000128`
+
+```
+T-Code: /PF1/51000128
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/VV_TBCA_REL_RULE_PO_ITEM
+```
+
+### 3161. `/PF1/51000132`
+
+```
+T-Code: /PF1/51000132
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PROCACCNT
+```
+
+### 3162. `/PF1/51000134`
+
+```
+T-Code: /PF1/51000134
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EH_PO_REV
+```
+
+### 3163. `/PF1/51000140`
+
+```
+T-Code: /PF1/51000140
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_PROCITEM
+```
+
+### 3164. `/PF1/51000141`
+
+```
+T-Code: /PF1/51000141
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_TXBL, /PF1/V_TX_LANG
+```
+
+### 3165. `/PF1/ACCRUAL`
+
+```
+T-Code: /PF1/ACCRUAL
+├── /PF1/EOD
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 16, 3
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /PF1/TECH
+    └── ALG_SUBOBJ → PROCSTEP
+└── S_BTCH_JOB
+    ├── JOBACTION → DELE, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 3166. `/PF1/BANK_MAINTAIN`
+
+```
+T-Code: /PF1/BANK_MAINTAIN
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_BANK
+```
+
+### 3167. `/PF1/CHARS`
+
+```
+T-Code: /PF1/CHARS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_CHAR
+```
+
+### 3168. `/PF1/CP_COLL`
+
+```
+T-Code: /PF1/CP_COLL
+├── /PF1/ALOGS
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/CA
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/R_INT → (empty — maintain in PFCG)
+    ├── ACTVT → 2, 3, 32, 6, A3
+    └── BUKRS → $BUKRS
+├── /PF1/CARS
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/RUSET → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/CHGDC
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/COCCL
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 78
+├── /PF1/COLL
+    ├── /PF1/CA → (empty — maintain in PFCG)
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/COKIN → (empty — maintain in PFCG)
+    ├── /PF1/ROUTE → (empty — maintain in PFCG)
+    └── ACTVT → 10, 3, 78, A3
+├── /PF1/DISP
+    ├── /PF1/DATAT → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/EH_PP
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/EH_RC → (empty — maintain in PFCG)
+    ├── /PF1/EH_RT → (empty — maintain in PFCG)
+    ├── /PF1/WB → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/PI
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/CUSEG → (empty — maintain in PFCG)
+    ├── /PF1/PIAMT → (empty — maintain in PFCG)
+    ├── /PF1/PICUR → (empty — maintain in PFCG)
+    ├── /PF1/PIKIN → (empty — maintain in PFCG)
+    ├── /PF1/PITRA → (empty — maintain in PFCG)
+    └── ACTVT → 2, 29, 3, 6
+├── /PF1/PO
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/PAYSC → (empty — maintain in PFCG)
+    ├── /PF1/POAMT → (empty — maintain in PFCG)
+    ├── /PF1/POCUR → (empty — maintain in PFCG)
+    ├── /PF1/POTYP → (empty — maintain in PFCG)
+    ├── ACTVT → 16, 29, 3, 85, 96, A3
+    └── BUKRS → $BUKRS
+├── /PF1/QUCCT
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 16
+├── /PF1/RECA2
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/RECGP → (empty — maintain in PFCG)
+    ├── /PF1/RECTY → (empty — maintain in PFCG)
+    └── ACTVT → 1
+├── /PF1/ROUTE
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/R_INT → (empty — maintain in PFCG)
+    ├── ACTVT → 1
+    └── BUKRS → $BUKRS
+├── /PF1/SLA
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/CUSEG → (empty — maintain in PFCG)
+    └── ACTVT → 3
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /PF1/MAIN
+    └── ALG_SUBOBJ → PAYM_PROC
+```
+
+### 3169. `/PF1/DATE_INCR`
+
+```
+T-Code: /PF1/DATE_INCR
+├── /PF1/EOD
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 16
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /PF1/TECH
+    └── ALG_SUBOBJ → PROCSTEP, PROCTYPE
+└── S_BTCH_JOB
+    ├── JOBACTION → DELE, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 3170. `/PF1/EH`
+
+```
+T-Code: /PF1/EH
+├── /PF1/CHGDC
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/EHRSI
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 32, 43, 6, A3
+└── /PF1/EHRSO
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 32, 43, 6, A3
+```
+
+### 3171. `/PF1/EOD_SET_DATE`
+
+```
+T-Code: /PF1/EOD_SET_DATE
+├── /PF1/EOD
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 16
+├── S_BTCH_JOB
+    ├── JOBACTION → DELE, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+└── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT, SUBMIT
+    └── P_PROGNAM → /PF1/R_EOD_SET_DATES
+```
+
+### 3172. `/PF1/FH_IPM_EXPERT`
+
+```
+T-Code: /PF1/FH_IPM_EXPERT
+├── /PF1/ALOGS
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → DI
+├── /PF1/PO
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/PAYSC → (empty — maintain in PFCG)
+    ├── /PF1/POAMT → (empty — maintain in PFCG)
+    ├── /PF1/POCUR → (empty — maintain in PFCG)
+    ├── /PF1/POTYP → (empty — maintain in PFCG)
+    ├── ACTVT → 1
+    └── BUKRS → $BUKRS
+├── S_BTCH_JOB
+    ├── JOBACTION → DELE, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+├── S_DATASET
+    ├── ACTVT → 33, 34
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /PF1/CL_IPM_P=================CP, /PF1/CL_SEPA_XML_SERVICE======CP, CL_GUI_ABAPEDIT===============CP, CL_SEDI_TEMPORARY_STORAGE=====CP
+├── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT, SUBMIT
+    └── P_PROGNAM → /PF1/STEPS_OF_SMALL_POP
+└── S_TABU_NAM
+    ├── ACTVT → 3
+    └── TABLE → IFMCFMT, IFMCFMTATTRF, IFMCFMTCONST, IFMCFMTENUM, IFMCFMTENUMV, IFMCFMTVERS, IFMCNODE, IFMCNODEFLD, IFMCNODEFLDG, IFMCNODEREC, IFMCNODERECG, IFMEFMT, IFMEFMTATTRF, IFMEFMTCONST, IFMEFMTENUM, IFMEFMTENUMV, IFMEFMTTYPE, IFMEFMTTYPET, IFMEFMTVERS, IFMENODE, IFMENODEACT, IFMENODEACTPARAM, IFMENODEFLD, IFMENODEFLDG, IFMENODEREC, IFMENODERECG
+```
+
+### 3173. `/PF1/FH_PO_REF_RNG`
+
+```
+T-Code: /PF1/FH_PO_REF_RNG
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PF1/PO_RF
+```
+
+### 3174. `/PF1/FIN_OUT_ORD`
+
+```
+T-Code: /PF1/FIN_OUT_ORD
+├── F_CLM_BAM
+    ├── ACTVT → 3
+    ├── FCLM_ACTY → (empty — maintain in PFCG)
+    ├── FCLM_BUKRS → $BUKRS
+    ├── FCLM_GSBER → (empty — maintain in PFCG)
+    ├── FCLM_KOKRS → (empty — maintain in PFCG)
+    ├── FCLM_PRCTR → (empty — maintain in PFCG)
+    └── FCLM_SGMT → (empty — maintain in PFCG)
+├── S_BTCH_JOB
+    ├── JOBACTION → DELE, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+└── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT, SUBMIT
+    └── P_PROGNAM → RBANK_PROC_END, RBANK_PROC_START
+```
+
+### 3175. `/PF1/FORW_STAT_HST`
+
+```
+T-Code: /PF1/FORW_STAT_HST
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_EXT_STAT
+```
+
+### 3176. `/PF1/IHB_PB_NUM`
+
+```
+T-Code: /PF1/IHB_PB_NUM
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PF1/IHB_P
+```
+
+### 3177. `/PF1/NUM_RANGE_COLL`
+
+```
+T-Code: /PF1/NUM_RANGE_COLL
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PF1/COLL
+```
+
+### 3178. `/PF1/NUM_RANGE_CSTID`
+
+```
+T-Code: /PF1/NUM_RANGE_CSTID
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PF1/CSTID
+```
+
+### 3179. `/PF1/NUM_RANGE_DTAZV`
+
+```
+T-Code: /PF1/NUM_RANGE_DTAZV
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PF1/DTAZV
+```
+
+### 3180. `/PF1/NUM_RANGE_ITEM`
+
+```
+T-Code: /PF1/NUM_RANGE_ITEM
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PF1/COLL
+```
+
+### 3181. `/PF1/NUM_RANGE_OL`
+
+```
+T-Code: /PF1/NUM_RANGE_OL
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PF1/FH_OL
+```
+
+### 3182. `/PF1/NUM_RANGE_PI`
+
+```
+T-Code: /PF1/NUM_RANGE_PI
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PF1/PO_PI
+```
+
+### 3183. `/PF1/NUM_RANGE_PO`
+
+```
+T-Code: /PF1/NUM_RANGE_PO
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PF1/PO_PO
+```
+
+### 3184. `/PF1/NUM_RANGE_RA`
+
+```
+T-Code: /PF1/NUM_RANGE_RA
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PF1/REQAG
+```
+
+### 3185. `/PF1/NUM_RANGE_RE`
+
+```
+T-Code: /PF1/NUM_RANGE_RE
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PF1/PO_RE
+```
+
+### 3186. `/PF1/POLLER`
+
+```
+T-Code: /PF1/POLLER
+├── /PF1/COLL
+    ├── /PF1/CA → (empty — maintain in PFCG)
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/COKIN → (empty — maintain in PFCG)
+    ├── /PF1/ROUTE → (empty — maintain in PFCG)
+    └── ACTVT → 10, 3, 78
+├── /PF1/PO
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/PAYSC → (empty — maintain in PFCG)
+    ├── /PF1/POAMT → (empty — maintain in PFCG)
+    ├── /PF1/POCUR → (empty — maintain in PFCG)
+    ├── /PF1/POTYP → (empty — maintain in PFCG)
+    ├── ACTVT → 16
+    └── BUKRS → $BUKRS
+├── /PF1/UPLOA
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 16
+├── S_BTCH_JOB
+    ├── JOBACTION → RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+└── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT
+    └── P_PROGNAM → /PF1/R_POLLER, RBANK_PROC_END, RBANK_PROC_START
+```
+
+### 3187. `/PF1/PO_EXPERT`
+
+```
+T-Code: /PF1/PO_EXPERT
+├── /PF1/ALOGS
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/CA
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/R_INT → (empty — maintain in PFCG)
+    ├── ACTVT → 1, 3, 32, 43, 6, A3
+    └── BUKRS → $BUKRS
+├── /PF1/CARS
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/RUSET → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 43, 6, A3
+├── /PF1/CHGDC
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/COCCL
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 78
+├── /PF1/COLL
+    ├── /PF1/CA → (empty — maintain in PFCG)
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/COKIN → (empty — maintain in PFCG)
+    ├── /PF1/ROUTE → (empty — maintain in PFCG)
+    └── ACTVT → 10, 3, 78, A3
+├── /PF1/DISP
+    ├── /PF1/DATAT → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/EH_PP
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/EH_RC → (empty — maintain in PFCG)
+    ├── /PF1/EH_RT → (empty — maintain in PFCG)
+    ├── /PF1/WB → (empty — maintain in PFCG)
+    └── ACTVT → 16, 3
+├── /PF1/OL
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/PI
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/CUSEG → (empty — maintain in PFCG)
+    ├── /PF1/PIAMT → (empty — maintain in PFCG)
+    ├── /PF1/PICUR → (empty — maintain in PFCG)
+    ├── /PF1/PIKIN → (empty — maintain in PFCG)
+    ├── /PF1/PITRA → (empty — maintain in PFCG)
+    └── ACTVT → 10, 16, 2, 29, 3, 32, 87, 89
+├── /PF1/PO
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/PAYSC → (empty — maintain in PFCG)
+    ├── /PF1/POAMT → (empty — maintain in PFCG)
+    ├── /PF1/POCUR → (empty — maintain in PFCG)
+    ├── /PF1/POTYP → (empty — maintain in PFCG)
+    ├── ACTVT → 16, 2, 29, 3, 32, 43, 85, 96, DL
+    └── BUKRS → $BUKRS
+├── /PF1/QUCCT
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 16
+├── /PF1/QUEUE
+    ├── /PF1/CA → (empty — maintain in PFCG)
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/COKIN → (empty — maintain in PFCG)
+    ├── /PF1/ROUTE → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/RECA2
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/RECGP → (empty — maintain in PFCG)
+    ├── /PF1/RECTY → (empty — maintain in PFCG)
+    └── ACTVT → 1, 3
+├── /PF1/RORS
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 1, 3, 6, A3
+├── /PF1/ROUTE
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/R_INT → (empty — maintain in PFCG)
+    ├── ACTVT → 1, 2, 3, 32, 6, A3
+    └── BUKRS → $BUKRS
+├── /PF1/SLA
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/CUSEG → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 32, 43, 6, A3
+├── /PF1/UPLOA
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 16
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /PF1/MAIN
+    └── ALG_SUBOBJ → PAYM_PROC
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_BCM_RULE, /PF1/V_FH_XML
+```
+
+### 3188. `/PF1/PRINT_CORR`
+
+```
+T-Code: /PF1/PRINT_CORR
+└── /PF1/EOD
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 16, 3
+```
+
+### 3189. `/PF1/REJECT_PEND_PO`
+
+```
+T-Code: /PF1/REJECT_PEND_PO
+├── /PF1/PO
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/PAYSC → (empty — maintain in PFCG)
+    ├── /PF1/POAMT → (empty — maintain in PFCG)
+    ├── /PF1/POCUR → (empty — maintain in PFCG)
+    ├── /PF1/POTYP → (empty — maintain in PFCG)
+    ├── ACTVT → 16, 6
+    └── BUKRS → $BUKRS
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /PF1/TECH
+    └── ALG_SUBOBJ → PROCSTEP
+└── S_BTCH_JOB
+    ├── JOBACTION → DELE, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 3190. `/PF1/REQ_AGENT`
+
+```
+T-Code: /PF1/REQ_AGENT
+└── /PF1/PO
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/PAYSC → (empty — maintain in PFCG)
+    ├── /PF1/POAMT → (empty — maintain in PFCG)
+    ├── /PF1/POCUR → (empty — maintain in PFCG)
+    ├── /PF1/POTYP → (empty — maintain in PFCG)
+    ├── ACTVT → 2, 85, A3
+    └── BUKRS → $BUKRS
+```
+
+### 3191. `/PF1/RESUB`
+
+```
+T-Code: /PF1/RESUB
+├── S_BTCH_JOB
+    ├── JOBACTION → DELE, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+└── S_PROGNAM
+    ├── P_ACTION → BTCSUBMIT, SUBMIT
+    └── P_PROGNAM → RBANK_PROC_END
+```
+
+### 3192. `/PF1/REVERT_FAIL_PO`
+
+```
+T-Code: /PF1/REVERT_FAIL_PO
+├── /PF1/PO
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/PAYSC → (empty — maintain in PFCG)
+    ├── /PF1/POAMT → (empty — maintain in PFCG)
+    ├── /PF1/POCUR → (empty — maintain in PFCG)
+    ├── /PF1/POTYP → (empty — maintain in PFCG)
+    ├── ACTVT → 6
+    └── BUKRS → $BUKRS
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /PF1/TECH
+    └── ALG_SUBOBJ → PROCSTEP
+└── S_BTCH_JOB
+    ├── JOBACTION → DELE, RELE, SHOW
+    └── JOBGROUP → (empty — maintain in PFCG)
+```
+
+### 3193. `/PF1/RN`
+
+```
+T-Code: /PF1/RN
+├── /PF1/ALOGS
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/CA
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/R_INT → (empty — maintain in PFCG)
+    ├── ACTVT → 1, 2, 3, 32, 43, 6, A3
+    └── BUKRS → $BUKRS
+├── /PF1/CARS
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/RUSET → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 43, 6, A3
+├── /PF1/CHGDC
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/COCCL
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 78
+├── /PF1/COLL
+    ├── /PF1/CA → (empty — maintain in PFCG)
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/COKIN → (empty — maintain in PFCG)
+    ├── /PF1/ROUTE → (empty — maintain in PFCG)
+    └── ACTVT → 10, 78, A3
+├── /PF1/EHRSO
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 43
+├── /PF1/QUCCT
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 16
+├── /PF1/RORS
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 43, 6, A3
+├── /PF1/ROUTE
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/R_INT → (empty — maintain in PFCG)
+    ├── ACTVT → 1, 2, 3, 32, 6, A3
+    └── BUKRS → $BUKRS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_ACCSYMBOL, /PF1/V_ASYM_CUR
+```
+
+### 3194. `/PF1/SLA`
+
+```
+T-Code: /PF1/SLA
+├── /PF1/CHGDC
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    └── ACTVT → 3
+├── /PF1/SLA
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/CUSEG → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 32, 43, 6, 90, A3
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /PF1/MAIN
+    └── ALG_SUBOBJ → PAYM_MASTER
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/UAP_SETTING
+```
+
+### 3195. `/PF1/SLA_CUS`
+
+```
+T-Code: /PF1/SLA_CUS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_SLACS
+```
+
+### 3196. `/PF1/STAT_NOT`
+
+```
+T-Code: /PF1/STAT_NOT
+└── S_DATASET
+    ├── ACTVT → 34
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /PF1/CL_OPM_OUTPUT_STREAM_FILECP
+```
+
+### 3197. `/PF1/TECHLOG`
+
+```
+T-Code: /PF1/TECHLOG
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /PF1/TECH
+    └── ALG_SUBOBJ → PACKAGE, PROCSTEP, PROCTYPE, RUN
+```
+
+### 3198. `/PF1/TOV_ORD_CRT`
+
+```
+T-Code: /PF1/TOV_ORD_CRT
+└── /PF1/PO
+    ├── /PF1/CLARE → (empty — maintain in PFCG)
+    ├── /PF1/PAYSC → *
+    ├── /PF1/POAMT → *
+    ├── /PF1/POCUR → *
+    ├── /PF1/POTYP → *
+    ├── ACTVT → 16
+    └── BUKRS → $BUKRS
+```
+
+### 3199. `/PF1/V_BK_AREA`
+
+```
+T-Code: /PF1/V_BK_AREA
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PF1/V_BK_AREA
+```
+
+### 3200. `/PF1/XSD`
+
+```
+T-Code: /PF1/XSD
+├── S_DATASET
+    ├── ACTVT → 33
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /PF1/CL_IPM_P=================CP
+├── S_TABU_NAM
+    ├── ACTVT → 2
+    └── TABLE → /PF1/DB_FH_XSD2
+└── S_TRANSPRT
+    ├── ACTVT → 1, 3, 43, 5
+    └── TTYPE → DTRA, TASK
+```
+
+## `/PICM/` — SAP Process Integration & CM
+> T-codes: **25**
+
+
+### 3201. `/PICM/24000086`
+
+```
+T-Code: /PICM/24000086
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_I_TYPE
+```
+
+### 3202. `/PICM/24000098`
+
+```
+T-Code: /PICM/24000098
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_ACT_NOTI, /PICM/V_ISS_NOTI
+```
+
+### 3203. `/PICM/24000099`
+
+```
+T-Code: /PICM/24000099
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_ACT_NOTI, /PICM/V_ISS_NOTI
+```
+
+### 3204. `/PICM/24000104`
+
+```
+T-Code: /PICM/24000104
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_ACT_NOTI, /PICM/V_ISS_NOTI
+```
+
+### 3205. `/PICM/99000001`
+
+```
+T-Code: /PICM/99000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_FORM
+```
+
+### 3206. `/PICM/99000002`
+
+```
+T-Code: /PICM/99000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_IMPACT
+```
+
+### 3207. `/PICM/99000003`
+
+```
+T-Code: /PICM/99000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_STAT_CD
+```
+
+### 3208. `/PICM/99000004`
+
+```
+T-Code: /PICM/99000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_STATUSES, /PICM/V_STA_MAP
+```
+
+### 3209. `/PICM/99000005`
+
+```
+T-Code: /PICM/99000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_I_TYPE
+```
+
+### 3210. `/PICM/99000007`
+
+```
+T-Code: /PICM/99000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_CATMAP, /IAM/V_CAT_SYS, /IAM/V_OBJ_CAT, /IAM/V_TYPE_REF
+```
+
+### 3211. `/PICM/99000008`
+
+```
+T-Code: /PICM/99000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_CATEG
+```
+
+### 3212. `/PICM/99000009`
+
+```
+T-Code: /PICM/99000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_TEXTCAT
+```
+
+### 3213. `/PICM/99000010`
+
+```
+T-Code: /PICM/99000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_DOCSCM, /IAM/V_DOCTYPE, /IAM/V_DOC_DOC, /IAM/V_DOC_MIME
+```
+
+### 3214. `/PICM/99000014`
+
+```
+T-Code: /PICM/99000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_PRIO
+```
+
+### 3215. `/PICM/99000016`
+
+```
+T-Code: /PICM/99000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_ROLE_COD
+```
+
+### 3216. `/PICM/99000019`
+
+```
+T-Code: /PICM/99000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_ISS_CDGR, /IAM/V_ISS_REFOB, /PICM/V_APR_FLOW, /PICM/V_ISS_ACT, /PICM/V_ISS_FORM, /PICM/V_ISS_PTY, /PICM/V_ISS_TYPE
+```
+
+### 3217. `/PICM/99000020`
+
+```
+T-Code: /PICM/99000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_ACTPTY_ICM, /PICM/V_ACTTYPE_ICM
+```
+
+### 3218. `/PICM/99000021`
+
+```
+T-Code: /PICM/99000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_ACT_ACT, /PICM/V_ACTIVTYP, /PICM/V_ACT_RFOB
+```
+
+### 3219. `/PICM/99000022`
+
+```
+T-Code: /PICM/99000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_DEPOBA
+```
+
+### 3220. `/PICM/99000023`
+
+```
+T-Code: /PICM/99000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_CRIT1
+```
+
+### 3221. `/PICM/99000025`
+
+```
+T-Code: /PICM/99000025
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_IMPACT
+```
+
+### 3222. `/PICM/99000028`
+
+```
+T-Code: /PICM/99000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_CRCAT
+```
+
+### 3223. `/PICM/99000040`
+
+```
+T-Code: /PICM/99000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PICM/V_RR_MAP
+```
+
+### 3224. `/PICM/IAM_ACT_SNUM`
+
+```
+T-Code: /PICM/IAM_ACT_SNUM
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /IAM/ACT
+```
+
+### 3225. `/PICM/IAM_ISS_SNUM`
+
+```
+T-Code: /PICM/IAM_ISS_SNUM
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /IAM/ISSUE
+```
+
+## `/PLMB/` — SAP PLM Basis
+> T-codes: **99**
+
+
+### 3226. `/PLMB/05000007`
+
+```
+T-Code: /PLMB/05000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCPSUBTP, /PLMB/V_RCP_PO, /PLMB/V_RCP_SPEC, /PLMB/V_RCP_STSP, /PLMB/V_RCP_TYPE
+```
+
+### 3227. `/PLMB/05000010`
+
+```
+T-Code: /PLMB/05000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCPSUBUS, /PLMB/V_RCP_USG
+```
+
+### 3228. `/PLMB/05000011`
+
+```
+T-Code: /PLMB/05000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RFOLYOT, /PLMB/V_RFOLYOTF
+```
+
+### 3229. `/PLMB/05000012`
+
+```
+T-Code: /PLMB/05000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCA_UI_L
+```
+
+### 3230. `/PLMB/05000013`
+
+```
+T-Code: /PLMB/05000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCA_UI_S
+```
+
+### 3231. `/PLMB/05000014`
+
+```
+T-Code: /PLMB/05000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCP_SET
+```
+
+### 3232. `/PLMB/05000039`
+
+```
+T-Code: /PLMB/05000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCP_UOM
+```
+
+### 3233. `/PLMB/05000040`
+
+```
+T-Code: /PLMB/05000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCA_COST
+```
+
+### 3234. `/PLMB/05000044`
+
+```
+T-Code: /PLMB/05000044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RFOCOLPR
+```
+
+### 3235. `/PLMB/05000045`
+
+```
+T-Code: /PLMB/05000045
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCA_COPR
+```
+
+### 3236. `/PLMB/05000046`
+
+```
+T-Code: /PLMB/05000046
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCA_PRIC
+```
+
+### 3237. `/PLMB/05000055`
+
+```
+T-Code: /PLMB/05000055
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCA_COPR, /PLMB/V_RCA_COST, /PLMB/V_RCA_PRIC
+```
+
+### 3238. `/PLMB/05000080`
+
+```
+T-Code: /PLMB/05000080
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_AUTH_MOD
+```
+
+### 3239. `/PLMB/05000082`
+
+```
+T-Code: /PLMB/05000082
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/VGSS_CONCT
+```
+
+### 3240. `/PLMB/05000083`
+
+```
+T-Code: /PLMB/05000083
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/VGSS_ACTC
+```
+
+### 3241. `/PLMB/05000117`
+
+```
+T-Code: /PLMB/05000117
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/SAM_EDGE, /PLMB/SAM_ND_A, /PLMB/SAM_ND_F, /PLMB/SAM_V_NODE, /PLMB/SAM_V_SCHM
+```
+
+### 3242. `/PLMB/05000121`
+
+```
+T-Code: /PLMB/05000121
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCA_TAB, /PLMB/V_RCA_TBSC, /PLMB/V_RCA_TBSF
+```
+
+### 3243. `/PLMB/05000125`
+
+```
+T-Code: /PLMB/05000125
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RPR_OTRT
+```
+
+### 3244. `/PLMB/05000139`
+
+```
+T-Code: /PLMB/05000139
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_LBLRMQNT, /PLMB/V_LBL_RMCO, /PLMB/V_RCA_LBL
+```
+
+### 3245. `/PLMB/05000150`
+
+```
+T-Code: /PLMB/05000150
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RSP_VATC
+```
+
+### 3246. `/PLMB/05000151`
+
+```
+T-Code: /PLMB/05000151
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_LBL_GSET
+```
+
+### 3247. `/PLMB/05000153`
+
+```
+T-Code: /PLMB/05000153
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PR_OBACT
+```
+
+### 3248. `/PLMB/05000154`
+
+```
+T-Code: /PLMB/05000154
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/VGSS_R2BCU
+```
+
+### 3249. `/PLMB/05000161`
+
+```
+T-Code: /PLMB/05000161
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PR_OBJ_A
+```
+
+### 3250. `/PLMB/05000162`
+
+```
+T-Code: /PLMB/05000162
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/VCADV_VVAC
+```
+
+### 3251. `/PLMB/05000165`
+
+```
+T-Code: /PLMB/05000165
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RPR_PPGR
+```
+
+### 3252. `/PLMB/14000001`
+
+```
+T-Code: /PLMB/14000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/VRPR_TREE
+```
+
+### 3253. `/PLMB/14000012`
+
+```
+T-Code: /PLMB/14000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RBB_ACT, /PLMB/V_RBB_EQR, /PLMB/V_RBB_OP, /PLMB/V_RBB_PROC, /PLMB/V_RBB_STG
+```
+
+### 3254. `/PLMB/14000013`
+
+```
+T-Code: /PLMB/14000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_BB_A_SPE, /PLMB/V_BB_E_SPE, /PLMB/V_BB_O_SPE, /PLMB/V_BB_P_SPE, /PLMB/V_BB_S_SPE
+```
+
+### 3255. `/PLMB/38000076`
+
+```
+T-Code: /PLMB/38000076
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_NAV_CORD, /PLMB/V_NAV_HCOL, /PLMB/V_NAV_LYOT, /PLMB/V_NAV_OTYP, /PLMB/V_NAV_PAR, /PLMB/V_NAV_REL, /PLMB/V_NAV_TP, /PLMB/V_NAV_TPV, /PLMB/V_NAV_TVRK, /PLMB/V_NAV_TVRL
+```
+
+### 3256. `/PLMB/38000083`
+
+```
+T-Code: /PLMB/38000083
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_GOS_OTYP
+```
+
+### 3257. `/PLMB/38000092`
+
+```
+T-Code: /PLMB/38000092
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_FRW_PRM
+```
+
+### 3258. `/PLMB/38000093`
+
+```
+T-Code: /PLMB/38000093
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_MAPFLD
+```
+
+### 3259. `/PLMB/38000094`
+
+```
+T-Code: /PLMB/38000094
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_MAPDTL
+```
+
+### 3260. `/PLMB/38000095`
+
+```
+T-Code: /PLMB/38000095
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_FLDTYP
+```
+
+### 3261. `/PLMB/38000099`
+
+```
+T-Code: /PLMB/38000099
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RFC_DEST
+```
+
+### 3262. `/PLMB/38000100`
+
+```
+T-Code: /PLMB/38000100
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_SPI_ABB
+```
+
+### 3263. `/PLMB/38000101`
+
+```
+T-Code: /PLMB/38000101
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_GOS_SDEF
+```
+
+### 3264. `/PLMB/38000102`
+
+```
+T-Code: /PLMB/38000102
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_GOS_SGDF
+```
+
+### 3265. `/PLMB/38000103`
+
+```
+T-Code: /PLMB/38000103
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_GOS_SGRP
+```
+
+### 3266. `/PLMB/52000010`
+
+```
+T-Code: /PLMB/52000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/VSAM_SUBOT, /PLMB/V_SAM_ACTN, /PLMB/V_SAM_EDGE, /PLMB/V_SAM_ND_A, /PLMB/V_SAM_ND_F, /PLMB/V_SAM_NODE, /PLMB/V_SAM_OFLD, /PLMB/V_SAM_OTYP, /PLMB/V_SAM_SCHM
+```
+
+### 3267. `/PLMB/52000019`
+
+```
+T-Code: /PLMB/52000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/GSS_R2M_CU
+```
+
+### 3268. `/PLMB/52000021`
+
+```
+T-Code: /PLMB/52000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_CCK_MODE
+```
+
+### 3269. `/PLMB/52000022`
+
+```
+T-Code: /PLMB/52000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_CCK_VAT
+```
+
+### 3270. `/PLMB/52000023`
+
+```
+T-Code: /PLMB/52000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_CCK_NOEX
+```
+
+### 3271. `/PLMB/52000024`
+
+```
+T-Code: /PLMB/52000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_CCK_SET
+```
+
+### 3272. `/PLMB/52000027`
+
+```
+T-Code: /PLMB/52000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/GSS_R2M_PP
+```
+
+### 3273. `/PLMB/52000028`
+
+```
+T-Code: /PLMB/52000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → V_RMXM_T20, V_RMXM_T21
+```
+
+### 3274. `/PLMB/52000029`
+
+```
+T-Code: /PLMB/52000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/GSS_R2M_PC
+```
+
+### 3275. `/PLMB/52000030`
+
+```
+T-Code: /PLMB/52000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/GSS_R2M_CN
+```
+
+### 3276. `/PLMB/52000034`
+
+```
+T-Code: /PLMB/52000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/VR2MCONACT, /PLMB/VR2MCONSEV
+```
+
+### 3277. `/PLMB/52000039`
+
+```
+T-Code: /PLMB/52000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCP_ACAL
+```
+
+### 3278. `/PLMB/52000043`
+
+```
+T-Code: /PLMB/52000043
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_DIR_PARA
+```
+
+### 3279. `/PLMB/52000044`
+
+```
+T-Code: /PLMB/52000044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_MAT_PARA
+```
+
+### 3280. `/PLMB/52000055`
+
+```
+T-Code: /PLMB/52000055
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_R2XRFC
+```
+
+### 3281. `/PLMB/52000059`
+
+```
+T-Code: /PLMB/52000059
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_GSS_PARA
+```
+
+### 3282. `/PLMB/52000065`
+
+```
+T-Code: /PLMB/52000065
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PR_TMP_D, /PLMB/V_PR_TMP_S
+```
+
+### 3283. `/PLMB/52000069`
+
+```
+T-Code: /PLMB/52000069
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_DECSRV_I, /PLMB/V_PR_DEC_D, /PLMB/V_PR_DEC_H, /PLMB/V_PR_DEC_I
+```
+
+### 3284. `/PLMB/52000072`
+
+```
+T-Code: /PLMB/52000072
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PPE_PARA
+```
+
+### 3285. `/PLMB/52000073`
+
+```
+T-Code: /PLMB/52000073
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PR_SRV_D, /PLMB/V_PR_SRV_H, /PLMB/V_PR_SRV_I
+```
+
+### 3286. `/PLMB/52000083`
+
+```
+T-Code: /PLMB/52000083
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PR_PARA
+```
+
+### 3287. `/PLMB/52000084`
+
+```
+T-Code: /PLMB/52000084
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_EUD_CUST
+```
+
+### 3288. `/PLMB/52000099`
+
+```
+T-Code: /PLMB/52000099
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_LBL_ASET
+```
+
+### 3289. `/PLMB/52000101`
+
+```
+T-Code: /PLMB/52000101
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_ECR_PARA
+```
+
+### 3290. `/PLMB/52000105`
+
+```
+T-Code: /PLMB/52000105
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PR_MAIL
+```
+
+### 3291. `/PLMB/52000106`
+
+```
+T-Code: /PLMB/52000106
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_LBL_UOM
+```
+
+### 3292. `/PLMB/52000128`
+
+```
+T-Code: /PLMB/52000128
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_SPC_PARA
+```
+
+### 3293. `/PLMB/52000459`
+
+```
+T-Code: /PLMB/52000459
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCP_HIDE
+```
+
+### 3294. `/PLMB/52000607`
+
+```
+T-Code: /PLMB/52000607
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/VRCA_WU_CT
+```
+
+### 3295. `/PLMB/52000728`
+
+```
+T-Code: /PLMB/52000728
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_AUTH_OTA
+```
+
+### 3296. `/PLMB/52001191`
+
+```
+T-Code: /PLMB/52001191
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCA_TBSC
+```
+
+### 3297. `/PLMB/52001413`
+
+```
+T-Code: /PLMB/52001413
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_EXP_PARA
+```
+
+### 3298. `/PLMB/52002419`
+
+```
+T-Code: /PLMB/52002419
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PR_OBJ_A
+```
+
+### 3299. `/PLMB/52002421`
+
+```
+T-Code: /PLMB/52002421
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PR_TMP_C
+```
+
+### 3300. `/PLMB/52002422`
+
+```
+T-Code: /PLMB/52002422
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PR_DEC_H, /PLMB/V_PR_DEC_M
+```
+
+### 3301. `/PLMB/52002435`
+
+```
+T-Code: /PLMB/52002435
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_CR_STS_D
+```
+
+### 3302. `/PLMB/52002486`
+
+```
+T-Code: /PLMB/52002486
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PR_SRV_D, /PLMB/V_PR_SRV_H, /PLMB/V_PR_SRV_I
+```
+
+### 3303. `/PLMB/52002726`
+
+```
+T-Code: /PLMB/52002726
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PR_TMP_O
+```
+
+### 3304. `/PLMB/52002727`
+
+```
+T-Code: /PLMB/52002727
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PR_TMCAT
+```
+
+### 3305. `/PLMB/52004307`
+
+```
+T-Code: /PLMB/52004307
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_PR_CR
+```
+
+### 3306. `/PLMB/53000173`
+
+```
+T-Code: /PLMB/53000173
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_NAV_XOT, /PLMB/V_NAV_XOTS, /PLMB/V_NAV_XRL, /PLMB/V_NAV_XRLS
+```
+
+### 3307. `/PLMB/53000175`
+
+```
+T-Code: /PLMB/53000175
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/VVWR_VINST
+```
+
+### 3308. `/PLMB/53000203`
+
+```
+T-Code: /PLMB/53000203
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RFC_LSYS
+```
+
+### 3309. `/PLMB/57000007`
+
+```
+T-Code: /PLMB/57000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/VSEA_ADMIN, /PLMB/VSEA_ATTR, /PLMB/VSEA_QUERY, /PLMB/VSEA_SGMT, /PLMB/VSEA_XOBJ
+```
+
+### 3310. `/PLMB/57000008`
+
+```
+T-Code: /PLMB/57000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_AUTH_OTC
+```
+
+### 3311. `/PLMB/57000012`
+
+```
+T-Code: /PLMB/57000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/VCADV_VACT
+```
+
+### 3312. `/PLMB/57000021`
+
+```
+T-Code: /PLMB/57000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_AUTH_OTC
+```
+
+### 3313. `/PLMB/57000022`
+
+```
+T-Code: /PLMB/57000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_AUTH_BUF
+```
+
+### 3314. `/PLMB/57000023`
+
+```
+T-Code: /PLMB/57000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_AUTH_ROL
+```
+
+### 3315. `/PLMB/57000028`
+
+```
+T-Code: /PLMB/57000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_WEN_PRLS
+```
+
+### 3316. `/PLMB/57000033`
+
+```
+T-Code: /PLMB/57000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_AUTHMAXN
+```
+
+### 3317. `/PLMB/89000012`
+
+```
+T-Code: /PLMB/89000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_SAM_ACTN, /PLMB/V_SAM_EDGE, /PLMB/V_SAM_MBOM, /PLMB/V_SAM_ND_A, /PLMB/V_SAM_ND_F, /PLMB/V_SAM_NODE, /PLMB/V_SAM_OFLD, /PLMB/V_SAM_SCHM
+```
+
+### 3318. `/PLMB/89000025`
+
+```
+T-Code: /PLMB/89000025
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/VSAM_SUBOT, /PLMB/V_SAM_ACTN, /PLMB/V_SAM_EDGE, /PLMB/V_SAM_ND_A, /PLMB/V_SAM_ND_F, /PLMB/V_SAM_NODE, /PLMB/V_SAM_OFLD, /PLMB/V_SAM_OTYP, /PLMB/V_SAM_SCHM
+```
+
+### 3319. `/PLMB/89000028`
+
+```
+T-Code: /PLMB/89000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/CCK_CTYMAP, EHSBC_RC_COMTYPS, EHSBV_RC_COMTYP
+```
+
+### 3320. `/PLMB/AUTH_UGRP_CHK`
+
+```
+T-Code: /PLMB/AUTH_UGRP_CHK
+└── PLM_UGRP
+    └── ACTVT → 1
+```
+
+### 3321. `/PLMB/CADV_VACT`
+
+```
+T-Code: /PLMB/CADV_VACT
+└── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → PW-C
+```
+
+### 3322. `/PLMB/CADV_VINST`
+
+```
+T-Code: /PLMB/CADV_VINST
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/CADV_VINST
+```
+
+### 3323. `/PLMB/RCA_BALITM`
+
+```
+T-Code: /PLMB/RCA_BALITM
+├── C_SHES_TD2
+    ├── ACTVT → 3
+    ├── ESEAUTHGRP → (empty — maintain in PFCG)
+    ├── ESEESTCAT → (empty — maintain in PFCG)
+    ├── ESERVLID → (empty — maintain in PFCG)
+    ├── ESEVACLID → (empty — maintain in PFCG)
+    └── SUBCAT → (empty — maintain in PFCG)
+├── C_SHES_TR2
+    ├── ACTVT → 3
+    ├── ESEAUTHGRP → (empty — maintain in PFCG)
+    └── SUBCAT → (empty — maintain in PFCG)
+├── C_SHES_TRH
+    ├── ACTVT → 3
+    └── ESEAUTHGRP → (empty — maintain in PFCG)
+├── C_SHES_TV2
+    ├── ACTVT → 3
+    ├── ESEAUTHGRP → (empty — maintain in PFCG)
+    ├── ESEESTCAT → (empty — maintain in PFCG)
+    ├── ESERVLID → (empty — maintain in PFCG)
+    ├── ESEVACLID → (empty — maintain in PFCG)
+    └── SUBCAT → (empty — maintain in PFCG)
+├── C_SHES_TVH
+    ├── ACTVT → 3
+    ├── ESEAUTHGRP → (empty — maintain in PFCG)
+    ├── ESEESTCAT → (empty — maintain in PFCG)
+    ├── ESERVLID → (empty — maintain in PFCG)
+    └── ESEVACLID → (empty — maintain in PFCG)
+├── C_TCLA_BKA
+    └── KLART → 100
+├── M_MATE_MAR
+    ├── ACTVT → F4
+    └── BEGRU → (empty — maintain in PFCG)
+├── M_MATE_MAT
+    ├── ACTVT → F4
+    └── BEGRU → (empty — maintain in PFCG)
+├── M_MATE_WGR
+    ├── ACTVT → F4
+    └── BEGRU → (empty — maintain in PFCG)
+├── SDDLVIEW
+    ├── ACTVT → 3
+    ├── DDLNAME → (empty — maintain in PFCG)
+    └── DDLSRCNAME → ESH_S_SPECIFICATION
+├── S_ESH_CONN
+    ├── REQUEST → (empty — maintain in PFCG)
+    ├── SCONN_ID → (empty — maintain in PFCG)
+    ├── SYSTEM_ID → (empty — maintain in PFCG)
+    ├── SYS_CLIENT → (empty — maintain in PFCG)
+    ├── TEMPL_NAME → SPECIFICATION_H
+    └── TEMPL_TYPE → COMRUNTIME
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/V_RCA_BAL
+```
+
+### 3324. `/PLMB/VWR_VINST`
+
+```
+T-Code: /PLMB/VWR_VINST
+├── S_TABU_CLI
+    └── CLIIDMAINT → ' '
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+## `/PLMI/` — SAP PLM Integration
+> T-codes: **99**
+
+
+### 3325. `/PLMI/05000004`
+
+```
+T-Code: /PLMI/05000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_EXPL_CTY, /PLMI/V_EXPL_SC
+```
+
+### 3326. `/PLMI/05000006`
+
+```
+T-Code: /PLMI/05000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMB/VRCA_CPARA, /PLMB/V_RCA_COMP, /PLMB/V_RCA_CPA, /PLMB/V_RCA_CST, /PLMB/V_RCA_INGR, /PLMB/V_RCA_QNT, /PLMB/V_RCA_QUAL, /PLMB/V_RCA_RFO
+```
+
+### 3327. `/PLMI/05000015`
+
+```
+T-Code: /PLMI/05000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_RFO_COMP
+```
+
+### 3328. `/PLMI/05000029`
+
+```
+T-Code: /PLMI/05000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_RCA_EXC, /PLMI/V_RCA_SUBC
+```
+
+### 3329. `/PLMI/05000030`
+
+```
+T-Code: /PLMI/05000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_MPN_CUST
+```
+
+### 3330. `/PLMI/05000031`
+
+```
+T-Code: /PLMI/05000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_PPECUSGS
+```
+
+### 3331. `/PLMI/05000032`
+
+```
+T-Code: /PLMI/05000032
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_PPE_C_DR, /PLMI/V_PPE_C_MD, /PLMI/V_PPE_C_PF, /PLMI/V_PPE_C_RL
+```
+
+### 3332. `/PLMI/05000033`
+
+```
+T-Code: /PLMI/05000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VPPE_C_ODN
+```
+
+### 3333. `/PLMI/05000034`
+
+```
+T-Code: /PLMI/05000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VPPE_C_ODV
+```
+
+### 3334. `/PLMI/05000035`
+
+```
+T-Code: /PLMI/05000035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VPPE_CI2GN
+```
+
+### 3335. `/PLMI/05000036`
+
+```
+T-Code: /PLMI/05000036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VPPE_CI2GV
+```
+
+### 3336. `/PLMI/05000056`
+
+```
+T-Code: /PLMI/05000056
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_RCA_CA_C
+```
+
+### 3337. `/PLMI/05000057`
+
+```
+T-Code: /PLMI/05000057
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VB2BCONACT, /PLMI/VB2BCONSEV
+```
+
+### 3338. `/PLMI/05000081`
+
+```
+T-Code: /PLMI/05000081
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VPPE_C_TDN, /PLMI/VPPE_C_TDV, /PLMI/V_PPE_CTDG, /PLMI/V_PPE_CTDI, /PLMI/V_PPE_CVTD, /PLMI/V_PPE_C_TD
+```
+
+### 3339. `/PLMI/05000087`
+
+```
+T-Code: /PLMI/05000087
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_RCA_PARA
+```
+
+### 3340. `/PLMI/05000090`
+
+```
+T-Code: /PLMI/05000090
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_RFO_CALC
+```
+
+### 3341. `/PLMI/05000093`
+
+```
+T-Code: /PLMI/05000093
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_RCP_EHS
+```
+
+### 3342. `/PLMI/05000104`
+
+```
+T-Code: /PLMI/05000104
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VR2BCONACT, /PLMI/VR2BCONSEV
+```
+
+### 3343. `/PLMI/05000114`
+
+```
+T-Code: /PLMI/05000114
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_LBL_VIEW
+```
+
+### 3344. `/PLMI/05000115`
+
+```
+T-Code: /PLMI/05000115
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_SPC_TABV
+```
+
+### 3345. `/PLMI/05000116`
+
+```
+T-Code: /PLMI/05000116
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_SPC_TABH
+```
+
+### 3346. `/PLMI/05000120`
+
+```
+T-Code: /PLMI/05000120
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_RCA_DEFQ
+```
+
+### 3347. `/PLMI/05000123`
+
+```
+T-Code: /PLMI/05000123
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_SPC_DEFU
+```
+
+### 3348. `/PLMI/05000126`
+
+```
+T-Code: /PLMI/05000126
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_SPC_ECN
+```
+
+### 3349. `/PLMI/05000127`
+
+```
+T-Code: /PLMI/05000127
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_SPC_IDLI
+```
+
+### 3350. `/PLMI/05000137`
+
+```
+T-Code: /PLMI/05000137
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_LBL_RM
+```
+
+### 3351. `/PLMI/05000141`
+
+```
+T-Code: /PLMI/05000141
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_LBL_PHR
+```
+
+### 3352. `/PLMI/05000142`
+
+```
+T-Code: /PLMI/05000142
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_LBL_DEFP
+```
+
+### 3353. `/PLMI/05000143`
+
+```
+T-Code: /PLMI/05000143
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → ESV_TCG11, ESV_TCG13
+```
+
+### 3354. `/PLMI/05000144`
+
+```
+T-Code: /PLMI/05000144
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_RCATAVA
+```
+
+### 3355. `/PLMI/05000145`
+
+```
+T-Code: /PLMI/05000145
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/ECR_OBJFLD, /PLMI/V_ECR_CGPF, /PLMI/V_ECR_CLFC, /PLMI/V_ECR_CRAT, /PLMI/V_ECR_HDFL, /PLMI/V_ECR_IOBJ, /PLMI/V_ECR_IOCA, /PLMI/V_ECR_ITMV, /PLMI/V_ECR_ITSP, /PLMI/V_ECR_OTYP, /PLMI/V_ECR_PF_G, /PLMI/V_ECR_SIG, /PLMI/V_ECR_STPF, /PLMI/V_ECR_TYPE, /PLMI/V_ECR_TYVV, /PLMI/V_ECR_VVFL
+```
+
+### 3356. `/PLMI/05000147`
+
+```
+T-Code: /PLMI/05000147
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_SPC_DEFI
+```
+
+### 3357. `/PLMI/05000148`
+
+```
+T-Code: /PLMI/05000148
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VI2BCONACT, /PLMI/VI2BCONSEV
+```
+
+### 3358. `/PLMI/05000152`
+
+```
+T-Code: /PLMI/05000152
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/ECR_PREREQ, /PLMI/V_ECR_FC
+```
+
+### 3359. `/PLMI/05000176`
+
+```
+T-Code: /PLMI/05000176
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_LBL_LIS
+```
+
+### 3360. `/PLMI/09000001`
+
+```
+T-Code: /PLMI/09000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_SPC_TABD
+```
+
+### 3361. `/PLMI/52000005`
+
+```
+T-Code: /PLMI/52000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_LBL_PARA
+```
+
+### 3362. `/PLMI/52000046`
+
+```
+T-Code: /PLMI/52000046
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_ECR_CLFS
+```
+
+### 3363. `/PLMI/52000048`
+
+```
+T-Code: /PLMI/52000048
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_PPE_VIPN
+```
+
+### 3364. `/PLMI/52000049`
+
+```
+T-Code: /PLMI/52000049
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_DIR_ATT
+```
+
+### 3365. `/PLMI/52000062`
+
+```
+T-Code: /PLMI/52000062
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_PPE_TVA, /PLMI/V_PPE_TVD, /PLMI/V_PPE_TVO, /PLMI/V_PPE_TVP, /PLMI/V_PPE_TVSD
+```
+
+### 3366. `/PLMI/52000074`
+
+```
+T-Code: /PLMI/52000074
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_ECR_ST_D
+```
+
+### 3367. `/PLMI/52000086`
+
+```
+T-Code: /PLMI/52000086
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_PPE_MACL, /PLMI/V_PPE_MASS
+```
+
+### 3368. `/PLMI/52000087`
+
+```
+T-Code: /PLMI/52000087
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/PPE_C_TCAT, /PLMI/PPE_C_TMPL
+```
+
+### 3369. `/PLMI/52000091`
+
+```
+T-Code: /PLMI/52000091
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_PRT_SUBO
+```
+
+### 3370. `/PLMI/52000100`
+
+```
+T-Code: /PLMI/52000100
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_LBL_PARA
+```
+
+### 3371. `/PLMI/52000120`
+
+```
+T-Code: /PLMI/52000120
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_PPE_VIPV
+```
+
+### 3372. `/PLMI/52000237`
+
+```
+T-Code: /PLMI/52000237
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_N_ITMREL
+```
+
+### 3373. `/PLMI/52000248`
+
+```
+T-Code: /PLMI/52000248
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_STAT
+```
+
+### 3374. `/PLMI/52000249`
+
+```
+T-Code: /PLMI/52000249
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_STATA
+```
+
+### 3375. `/PLMI/52000250`
+
+```
+T-Code: /PLMI/52000250
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_STPRF, /IAM/V_STPRFA, /IAM/V_STPRFAC, /IAM/V_STPRFD
+```
+
+### 3376. `/PLMI/52000251`
+
+```
+T-Code: /PLMI/52000251
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_CROBJTYP
+```
+
+### 3377. `/PLMI/52000253`
+
+```
+T-Code: /PLMI/52000253
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_CRREFOBI, /PLMI/V_CRTYPE, /PLMI/V_CR_CLFC, /PLMI/V_CR_CRA, /PLMI/V_CR_CRAT, /PLMI/V_CR_DYNFC, /PLMI/V_CR_H_DS, /PLMI/V_CR_I_DSG, /PLMI/V_CR_MERGE, /PLMI/V_CR_OTY, /PLMI/V_CR_STPF, /PLMI/V_CR_STS, /PLMI/V_ISSREFOB, /PLMI/V_ITEMREL, IMPMGT_V_DEFSCEN
+```
+
+### 3378. `/PLMI/52000254`
+
+```
+T-Code: /PLMI/52000254
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VV_ROLE_CD
+```
+
+### 3379. `/PLMI/52000261`
+
+```
+T-Code: /PLMI/52000261
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_CATEGORY_REF
+```
+
+### 3380. `/PLMI/52000414`
+
+```
+T-Code: /PLMI/52000414
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_CATMAP, /PLMI/VV_TYPE_REF, /PLMI/V_OBJ_CAT
+```
+
+### 3381. `/PLMI/52000562`
+
+```
+T-Code: /PLMI/52000562
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_CR_REFOB
+```
+
+### 3382. `/PLMI/52000564`
+
+```
+T-Code: /PLMI/52000564
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /IAM/V_CATMAP, /PLMI/VV_TYPE_REF, /PLMI/V_OBJ_CAT
+```
+
+### 3383. `/PLMI/52000565`
+
+```
+T-Code: /PLMI/52000565
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_OBJ_CAT1
+```
+
+### 3384. `/PLMI/52001035`
+
+```
+T-Code: /PLMI/52001035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_CRTYPE_U
+```
+
+### 3385. `/PLMI/52001075`
+
+```
+T-Code: /PLMI/52001075
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_TCG31, /PLMI/V_TCG31OBJ
+```
+
+### 3386. `/PLMI/52001084`
+
+```
+T-Code: /PLMI/52001084
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_PPE_CURL
+```
+
+### 3387. `/PLMI/52001092`
+
+```
+T-Code: /PLMI/52001092
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_PPE_CIGN
+```
+
+### 3388. `/PLMI/52001187`
+
+```
+T-Code: /PLMI/52001187
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_PPE_C_MP
+```
+
+### 3389. `/PLMI/52001229`
+
+```
+T-Code: /PLMI/52001229
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VPPE_CIGV
+```
+
+### 3390. `/PLMI/52001303`
+
+```
+T-Code: /PLMI/52001303
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VPPE_CPSMF
+```
+
+### 3391. `/PLMI/52001980`
+
+```
+T-Code: /PLMI/52001980
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_SPC_CA_C, /PLMI/V_SPC_CA_D, /PLMI/V_SPC_CC_D, /PLMI/V_SPC_SA_D, /PLMI/V_SPC_SC_D, /PLMI/V_SPC_ST_D, /PLMI/V_SPC_TY_B
+```
+
+### 3392. `/PLMI/52002519`
+
+```
+T-Code: /PLMI/52002519
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/CR_STS_ACT
+```
+
+### 3393. `/PLMI/52002834`
+
+```
+T-Code: /PLMI/52002834
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/CR_USRSTAT
+```
+
+### 3394. `/PLMI/52002980`
+
+```
+T-Code: /PLMI/52002980
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/CR_DYNTHN
+```
+
+### 3395. `/PLMI/52003173`
+
+```
+T-Code: /PLMI/52003173
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_TSK_DEL
+```
+
+### 3396. `/PLMI/52003295`
+
+```
+T-Code: /PLMI/52003295
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_CRUSRST
+```
+
+### 3397. `/PLMI/52003446`
+
+```
+T-Code: /PLMI/52003446
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_CR_PURP
+```
+
+### 3398. `/PLMI/57000017`
+
+```
+T-Code: /PLMI/57000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_DIR_VSS
+```
+
+### 3399. `/PLMI/89000002`
+
+```
+T-Code: /PLMI/89000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VB2BGENSET
+```
+
+### 3400. `/PLMI/89000003`
+
+```
+T-Code: /PLMI/89000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VI2BGENSET
+```
+
+### 3401. `/PLMI/89000006`
+
+```
+T-Code: /PLMI/89000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_LBL_LDEF, /PLMI/V_LBL_LPRF, /PLMI/V_LBL_PLAN, /PLMI/V_LBL_PLOC
+```
+
+### 3402. `/PLMI/89000008`
+
+```
+T-Code: /PLMI/89000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_DIR_DOCT
+```
+
+### 3403. `/PLMI/89000009`
+
+```
+T-Code: /PLMI/89000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_SUBCAT
+```
+
+### 3404. `/PLMI/89000018`
+
+```
+T-Code: /PLMI/89000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VR2BCONACT, /PLMI/VR2BCONSEV
+```
+
+### 3405. `/PLMI/89000022`
+
+```
+T-Code: /PLMI/89000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VS2BGENSET
+```
+
+### 3406. `/PLMI/89000023`
+
+```
+T-Code: /PLMI/89000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_SPC_CPDF
+```
+
+### 3407. `/PLMI/89000024`
+
+```
+T-Code: /PLMI/89000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/VS2BCONACT, /PLMI/VS2BCONSEV
+```
+
+### 3408. `/PLMI/89000036`
+
+```
+T-Code: /PLMI/89000036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_SPC_DINI
+```
+
+### 3409. `/PLMI/89000038`
+
+```
+T-Code: /PLMI/89000038
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_RFOCOMPT
+```
+
+### 3410. `/PLMI/89000070`
+
+```
+T-Code: /PLMI/89000070
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_DOC_ICON
+```
+
+### 3411. `/PLMI/CR_NUMRG`
+
+```
+T-Code: /PLMI/CR_NUMRG
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /IAM/ISSUE
+```
+
+### 3412. `/PLMI/ECR`
+
+```
+T-Code: /PLMI/ECR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PLMI/ECR
+```
+
+### 3413. `/PLMI/GSS_B2B_SU_NR`
+
+```
+T-Code: /PLMI/GSS_B2B_SU_NR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PLMI/B2B
+```
+
+### 3414. `/PLMI/GSS_I2B_SU_NR`
+
+```
+T-Code: /PLMI/GSS_I2B_SU_NR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PLMI/I2B
+```
+
+### 3415. `/PLMI/GSS_R2B_SU_NR`
+
+```
+T-Code: /PLMI/GSS_R2B_SU_NR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PLMI/R2B
+```
+
+### 3416. `/PLMI/GSS_R2M_SU_NR`
+
+```
+T-Code: /PLMI/GSS_R2M_SU_NR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PLMI/R2MR
+```
+
+### 3417. `/PLMI/GSS_SI2B_SU_NR`
+
+```
+T-Code: /PLMI/GSS_SI2B_SU_NR
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PLMI/SI2B
+```
+
+### 3418. `/PLMI/PPE_USER_SET_P`
+
+```
+T-Code: /PLMI/PPE_USER_SET_P
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 3419. `/PLMI/PRTL`
+
+```
+T-Code: /PLMI/PRTL
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PLMI/PRTL
+```
+
+### 3420. `/PLMI/RCP_MIGRATION`
+
+```
+T-Code: /PLMI/RCP_MIGRATION
+└── PLM_RCPMIG
+    └── ACTVT → 3
+```
+
+### 3421. `/PLMI/RMSL_MIGRATION`
+
+```
+T-Code: /PLMI/RMSL_MIGRATION
+├── PLM_LBLMIG
+    └── ACTVT → 16, 3
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /PLMI/LBL_MIG
+    └── ALG_SUBOBJ → LABEL
+```
+
+### 3422. `/PLMI/RSP`
+
+```
+T-Code: /PLMI/RSP
+├── C_AENR_BGR
+    ├── ACTVT → 3
+    └── BEGRU → (empty — maintain in PFCG)
+├── C_AENR_ERW
+    ├── ACTVT → 3
+    ├── AEFUN → (empty — maintain in PFCG)
+    ├── AENST → (empty — maintain in PFCG)
+    ├── BEGRU → (empty — maintain in PFCG)
+    └── RLKEY → (empty — maintain in PFCG)
+├── C_EHSO_GRP
+    ├── ACTVT → 3
+    ├── ESEGRPID → (empty — maintain in PFCG)
+    └── ESEGRPTYP → (empty — maintain in PFCG)
+├── C_SHES_TDU
+    ├── ACTVT → 2, 3
+    ├── ESEAUTHGRP → (empty — maintain in PFCG)
+    ├── ESEESTCAT → (empty — maintain in PFCG)
+    ├── ESERVLID → (empty — maintain in PFCG)
+    └── ESEVACLID → (empty — maintain in PFCG)
+├── C_SHES_TRH
+    ├── ACTVT → 1, 2, 3
+    └── ESEAUTHGRP → (empty — maintain in PFCG)
+└── C_SHES_TVH
+    ├── ACTVT → 2, 3
+    ├── ESEAUTHGRP → (empty — maintain in PFCG)
+    ├── ESEESTCAT → (empty — maintain in PFCG)
+    ├── ESERVLID → (empty — maintain in PFCG)
+    └── ESEVACLID → (empty — maintain in PFCG)
+```
+
+### 3423. `/PLMI/VC_ESD_GS`
+
+```
+T-Code: /PLMI/VC_ESD_GS
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMI/V_ESD_GS, /PLMI/V_ESD_SWMT
+```
+
+## `/PLMPCV/` — SAP PLM Process Control & Variant
+> T-codes: **10**
+
+
+### 3424. `/PLMPCV/82000008`
+
+```
+T-Code: /PLMPCV/82000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMPCV/V_SIN_BI, /PLMPCV/V_SIN_BP, /PLMPCV/V_SIN_BT, /PLMPCV/V_SIN_EB, /PLMPCV/V_SIN_EP, /PLMPCV/V_SIN_ES, /PLMPCV/V_SIN_ET, /PLMPCV/V_SIN_IB, /PLMPCV/V_SIN_IP, /PLMPCV/V_SIN_IS, /PLMPCV/V_SIN_IT, /PLMPCV/V_SIN_SC, /PLMPCV/V_SIN_SE, /PLMPCV/V_SIN_ST, /PLMPCV/V_SIN_SY
+```
+
+### 3425. `/PLMPCV/82000009`
+
+```
+T-Code: /PLMPCV/82000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMPCV/V_QATTR, /PLMPCV/V_QCLF, /PLMPCV/V_QFORM, /PLMPCV/V_QFPAR, /PLMPCV/V_QHEAD, /PLMPCV/V_QRESA, /PLMPCV/V_QSCON, /PLMPCV/V_QSELC, /PLMPCV/V_QVAR
+```
+
+### 3426. `/PLMPCV/82000010`
+
+```
+T-Code: /PLMPCV/82000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMPCV/V_QASYNC
+```
+
+### 3427. `/PLMPCV/82000013`
+
+```
+T-Code: /PLMPCV/82000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMPCV/V_UCHART, /PLMPCV/V_USTRUC, /PLMPCV/V_UVARB, /PLMPCV/V_UVART
+```
+
+### 3428. `/PLMPCV/82000014`
+
+```
+T-Code: /PLMPCV/82000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMPCV/V_UDASH, /PLMPCV/V_UDASHB
+```
+
+### 3429. `/PLMPCV/82000015`
+
+```
+T-Code: /PLMPCV/82000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMPCV/V_UGROUP, /PLMPCV/V_UGRP
+```
+
+### 3430. `/PLMPCV/82000016`
+
+```
+T-Code: /PLMPCV/82000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMPCV/V_UPRVW
+```
+
+### 3431. `/PLMPCV/82000017`
+
+```
+T-Code: /PLMPCV/82000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMPCV/V_URSEQ
+```
+
+### 3432. `/PLMPCV/82000018`
+
+```
+T-Code: /PLMPCV/82000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMPCV/V_FMAP
+```
+
+### 3433. `/PLMPCV/82000019`
+
+```
+T-Code: /PLMPCV/82000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMPCV/V_SEMANT
+```
+
+## `/PLMU/` — SAP PLM Utilities
+> T-codes: **4**
+
+
+### 3434. `/PLMU/38000096`
+
+```
+T-Code: /PLMU/38000096
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMU/V_FRW_CTXM
+```
+
+### 3435. `/PLMU/38000097`
+
+```
+T-Code: /PLMU/38000097
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMU/V_FRW_NAV
+```
+
+### 3436. `/PLMU/38000098`
+
+```
+T-Code: /PLMU/38000098
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMU/V_NAVTG
+```
+
+### 3437. `/PLMU/38000106`
+
+```
+T-Code: /PLMU/38000106
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PLMU/V_PREVW
+```
+
+## `/PM0/` — SAP Oil & Gas — Upstream
+> T-codes: **855**
+
+
+### 3438. `/PM0/05000006`
+
+```
+T-Code: /PM0/05000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PHOBBY
+```
+
+### 3439. `/PM0/05000008`
+
+```
+T-Code: /PM0/05000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDIS
+```
+
+### 3440. `/PM0/05000023`
+
+```
+T-Code: /PM0/05000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POVERVW
+```
+
+### 3441. `/PM0/05000034`
+
+```
+T-Code: /PM0/05000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPOSTYP
+```
+
+### 3442. `/PM0/05000039`
+
+```
+T-Code: /PM0/05000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRANKVL
+```
+
+### 3443. `/PM0/05000040`
+
+```
+T-Code: /PM0/05000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREPTYP
+```
+
+### 3444. `/PM0/05000041`
+
+```
+T-Code: /PM0/05000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PROLECD
+```
+
+### 3445. `/PM0/05000051`
+
+```
+T-Code: /PM0/05000051
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTPINFR
+```
+
+### 3446. `/PM0/05000056`
+
+```
+T-Code: /PM0/05000056
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PIFLOB
+```
+
+### 3447. `/PM0/05000059`
+
+```
+T-Code: /PM0/05000059
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPRCDIS
+```
+
+### 3448. `/PM0/05000087`
+
+```
+T-Code: /PM0/05000087
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBIZRWH
+```
+
+### 3449. `/PM0/05000088`
+
+```
+T-Code: /PM0/05000088
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBIZWHE
+```
+
+### 3450. `/PM0/05000091`
+
+```
+T-Code: /PM0/05000091
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPLARGR
+```
+
+### 3451. `/PM0/05000092`
+
+```
+T-Code: /PM0/05000092
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPLAUS
+```
+
+### 3452. `/PM0/05000121`
+
+```
+T-Code: /PM0/05000121
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PLOCKR
+```
+
+### 3453. `/PM0/05000122`
+
+```
+T-Code: /PM0/05000122
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PUPPDTY
+```
+
+### 3454. `/PM0/05000131`
+
+```
+T-Code: /PM0/05000131
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PLOBCD
+```
+
+### 3455. `/PM0/05000140`
+
+```
+T-Code: /PM0/05000140
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTRFIEL
+```
+
+### 3456. `/PM0/05000141`
+
+```
+T-Code: /PM0/05000141
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPARTAC
+```
+
+### 3457. `/PM0/05000142`
+
+```
+T-Code: /PM0/05000142
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPPRUN
+```
+
+### 3458. `/PM0/05000145`
+
+```
+T-Code: /PM0/05000145
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRULECD
+```
+
+### 3459. `/PM0/05000152`
+
+```
+T-Code: /PM0/05000152
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PLOBCMB
+```
+
+### 3460. `/PM0/05000159`
+
+```
+T-Code: /PM0/05000159
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSEARCH
+```
+
+### 3461. `/PM0/05000163`
+
+```
+T-Code: /PM0/05000163
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POBJCA
+```
+
+### 3462. `/PM0/05000164`
+
+```
+T-Code: /PM0/05000164
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POBJTY
+```
+
+### 3463. `/PM0/05000165`
+
+```
+T-Code: /PM0/05000165
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PACTION
+```
+
+### 3464. `/PM0/05000169`
+
+```
+T-Code: /PM0/05000169
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PINSTPQ
+```
+
+### 3465. `/PM0/05000170`
+
+```
+T-Code: /PM0/05000170
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREFRES
+```
+
+### 3466. `/PM0/05000171`
+
+```
+T-Code: /PM0/05000171
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCLAIML
+```
+
+### 3467. `/PM0/05000172`
+
+```
+T-Code: /PM0/05000172
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBIZPRO
+```
+
+### 3468. `/PM0/05000180`
+
+```
+T-Code: /PM0/05000180
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDOUBLE
+```
+
+### 3469. `/PM0/05000181`
+
+```
+T-Code: /PM0/05000181
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PATLOCK
+```
+
+### 3470. `/PM0/05000192`
+
+```
+T-Code: /PM0/05000192
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PACCVAR
+```
+
+### 3471. `/PM0/05000193`
+
+```
+T-Code: /PM0/05000193
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PMDRESD
+```
+
+### 3472. `/PM0/05000195`
+
+```
+T-Code: /PM0/05000195
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCOMPCD
+```
+
+### 3473. `/PM0/05000196`
+
+```
+T-Code: /PM0/05000196
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCOMPTX
+```
+
+### 3474. `/PM0/05000199`
+
+```
+T-Code: /PM0/05000199
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PEXTPOL
+```
+
+### 3475. `/PM0/05000202`
+
+```
+T-Code: /PM0/05000202
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PICCDUN
+```
+
+### 3476. `/PM0/05000206`
+
+```
+T-Code: /PM0/05000206
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PLOBKEY
+```
+
+### 3477. `/PM0/05000208`
+
+```
+T-Code: /PM0/05000208
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PMNRREF
+```
+
+### 3478. `/PM0/05000209`
+
+```
+T-Code: /PM0/05000209
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PMNRSTA
+```
+
+### 3479. `/PM0/05000211`
+
+```
+T-Code: /PM0/05000211
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPARTIC
+```
+
+### 3480. `/PM0/05000220`
+
+```
+T-Code: /PM0/05000220
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSUSPTP
+```
+
+### 3481. `/PM0/05000221`
+
+```
+T-Code: /PM0/05000221
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSUSPVA
+```
+
+### 3482. `/PM0/05000225`
+
+```
+T-Code: /PM0/05000225
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBIZRUL
+```
+
+### 3483. `/PM0/05000226`
+
+```
+T-Code: /PM0/05000226
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCLIENT
+```
+
+### 3484. `/PM0/05000235`
+
+```
+T-Code: /PM0/05000235
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBUILTP
+```
+
+### 3485. `/PM0/05000245`
+
+```
+T-Code: /PM0/05000245
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBUSCAS
+```
+
+### 3486. `/PM0/05000251`
+
+```
+T-Code: /PM0/05000251
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PIFMAP
+```
+
+### 3487. `/PM0/05000253`
+
+```
+T-Code: /PM0/05000253
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PROLES
+```
+
+### 3488. `/PM0/05000258`
+
+```
+T-Code: /PM0/05000258
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PGENDER
+```
+
+### 3489. `/PM0/05000278`
+
+```
+T-Code: /PM0/05000278
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDUPOL, /PM0/ABU_PSUBJEC
+```
+
+### 3490. `/PM0/05000280`
+
+```
+T-Code: /PM0/05000280
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSALECH
+```
+
+### 3491. `/PM0/05000281`
+
+```
+T-Code: /PM0/05000281
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PACCANC, /PM0/ABU_PCANCEL, /PM0/ABU_PCANCRE
+```
+
+### 3492. `/PM0/05000285`
+
+```
+T-Code: /PM0/05000285
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PPRCTP
+```
+
+### 3493. `/PM0/12000009`
+
+```
+T-Code: /PM0/12000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALUASTVAL
+```
+
+### 3494. `/PM0/12000010`
+
+```
+T-Code: /PM0/12000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALUASTPRO
+```
+
+### 3495. `/PM0/12000019`
+
+```
+T-Code: /PM0/12000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCHKCMA, /PM0/ABU_PCHKCMB
+```
+
+### 3496. `/PM0/12000020`
+
+```
+T-Code: /PM0/12000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREOM
+```
+
+### 3497. `/PM0/12000022`
+
+```
+T-Code: /PM0/12000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PCLCRL
+```
+
+### 3498. `/PM0/12000029`
+
+```
+T-Code: /PM0/12000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRELGTP, /PM0/ABU_PTMFCAT, /PM0/ABU_PTMFSEQ
+```
+
+### 3499. `/PM0/12000030`
+
+```
+T-Code: /PM0/12000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PNRIVCA
+```
+
+### 3500. `/PM0/12000033`
+
+```
+T-Code: /PM0/12000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PIMMETH
+```
+
+### 3501. `/PM0/12000039`
+
+```
+T-Code: /PM0/12000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBOBJTP
+```
+
+### 3502. `/PM0/12000040`
+
+```
+T-Code: /PM0/12000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBCASTP
+```
+
+### 3503. `/PM0/12000041`
+
+```
+T-Code: /PM0/12000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POBMETH
+```
+
+### 3504. `/PM0/12000048`
+
+```
+T-Code: /PM0/12000048
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PACCTP
+```
+
+### 3505. `/PM0/12000050`
+
+```
+T-Code: /PM0/12000050
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PAGEGR
+```
+
+### 3506. `/PM0/12000051`
+
+```
+T-Code: /PM0/12000051
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PANNUTY
+```
+
+### 3507. `/PM0/12000052`
+
+```
+T-Code: /PM0/12000052
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBASICD
+```
+
+### 3508. `/PM0/12000053`
+
+```
+T-Code: /PM0/12000053
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBLKIND
+```
+
+### 3509. `/PM0/12000054`
+
+```
+T-Code: /PM0/12000054
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCALCTP
+```
+
+### 3510. `/PM0/12000055`
+
+```
+T-Code: /PM0/12000055
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCAUFLO
+```
+
+### 3511. `/PM0/12000057`
+
+```
+T-Code: /PM0/12000057
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCLAUNR
+```
+
+### 3512. `/PM0/12000058`
+
+```
+T-Code: /PM0/12000058
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCLAUSE
+```
+
+### 3513. `/PM0/12000062`
+
+```
+T-Code: /PM0/12000062
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCOVCP
+```
+
+### 3514. `/PM0/12000064`
+
+```
+T-Code: /PM0/12000064
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCOVVAR
+```
+
+### 3515. `/PM0/12000065`
+
+```
+T-Code: /PM0/12000065
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCPMIBN
+```
+
+### 3516. `/PM0/12000066`
+
+```
+T-Code: /PM0/12000066
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCVCPTP
+```
+
+### 3517. `/PM0/12000067`
+
+```
+T-Code: /PM0/12000067
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDEDUC
+```
+
+### 3518. `/PM0/12000068`
+
+```
+T-Code: /PM0/12000068
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDEPTYP
+```
+
+### 3519. `/PM0/12000069`
+
+```
+T-Code: /PM0/12000069
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDISBUR
+```
+
+### 3520. `/PM0/12000072`
+
+```
+T-Code: /PM0/12000072
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PHAZCLA
+```
+
+### 3521. `/PM0/12000073`
+
+```
+T-Code: /PM0/12000073
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PHAZGRP
+```
+
+### 3522. `/PM0/12000074`
+
+```
+T-Code: /PM0/12000074
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PHAZTYP
+```
+
+### 3523. `/PM0/12000075`
+
+```
+T-Code: /PM0/12000075
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PIDXGRO
+```
+
+### 3524. `/PM0/12000076`
+
+```
+T-Code: /PM0/12000076
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PINCRTA
+```
+
+### 3525. `/PM0/12000078`
+
+```
+T-Code: /PM0/12000078
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PINDPRO
+```
+
+### 3526. `/PM0/12000079`
+
+```
+T-Code: /PM0/12000079
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PINFRCT
+```
+
+### 3527. `/PM0/12000081`
+
+```
+T-Code: /PM0/12000081
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PINFRGR
+```
+
+### 3528. `/PM0/12000082`
+
+```
+T-Code: /PM0/12000082
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PINSAMT
+```
+
+### 3529. `/PM0/12000084`
+
+```
+T-Code: /PM0/12000084
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PINSPER
+```
+
+### 3530. `/PM0/12000085`
+
+```
+T-Code: /PM0/12000085
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PINSURA
+```
+
+### 3531. `/PM0/12000086`
+
+```
+T-Code: /PM0/12000086
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PJOB
+```
+
+### 3532. `/PM0/12000087`
+
+```
+T-Code: /PM0/12000087
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PJOBCLA
+```
+
+### 3533. `/PM0/12000088`
+
+```
+T-Code: /PM0/12000088
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PLIMIT
+```
+
+### 3534. `/PM0/12000093`
+
+```
+T-Code: /PM0/12000093
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POBJVAL
+```
+
+### 3535. `/PM0/12000094`
+
+```
+T-Code: /PM0/12000094
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POPMODE
+```
+
+### 3536. `/PM0/12000095`
+
+```
+T-Code: /PM0/12000095
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPARPAY
+```
+
+### 3537. `/PM0/12000097`
+
+```
+T-Code: /PM0/12000097
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPENSIO
+```
+
+### 3538. `/PM0/12000099`
+
+```
+T-Code: /PM0/12000099
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPREMRA
+```
+
+### 3539. `/PM0/12000101`
+
+```
+T-Code: /PM0/12000101
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPRFACC
+```
+
+### 3540. `/PM0/12000102`
+
+```
+T-Code: /PM0/12000102
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPRFACU
+```
+
+### 3541. `/PM0/12000103`
+
+```
+T-Code: /PM0/12000103
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPROBAT
+```
+
+### 3542. `/PM0/12000104`
+
+```
+T-Code: /PM0/12000104
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPROFS
+```
+
+### 3543. `/PM0/12000105`
+
+```
+T-Code: /PM0/12000105
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPROGTY
+```
+
+### 3544. `/PM0/12000107`
+
+```
+T-Code: /PM0/12000107
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRANK
+```
+
+### 3545. `/PM0/12000108`
+
+```
+T-Code: /PM0/12000108
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREFER
+```
+
+### 3546. `/PM0/12000109`
+
+```
+T-Code: /PM0/12000109
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREFLI
+```
+
+### 3547. `/PM0/12000110`
+
+```
+T-Code: /PM0/12000110
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREPVLE
+```
+
+### 3548. `/PM0/12000111`
+
+```
+T-Code: /PM0/12000111
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRESDEP
+```
+
+### 3549. `/PM0/12000112`
+
+```
+T-Code: /PM0/12000112
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRISKK
+```
+
+### 3550. `/PM0/12000113`
+
+```
+T-Code: /PM0/12000113
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PROLESC
+```
+
+### 3551. `/PM0/12000115`
+
+```
+T-Code: /PM0/12000115
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSCALE
+```
+
+### 3552. `/PM0/12000116`
+
+```
+T-Code: /PM0/12000116
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSCHEDC
+```
+
+### 3553. `/PM0/12000118`
+
+```
+T-Code: /PM0/12000118
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSUPDCT
+```
+
+### 3554. `/PM0/12000119`
+
+```
+T-Code: /PM0/12000119
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSWTYP
+```
+
+### 3555. `/PM0/12000120`
+
+```
+T-Code: /PM0/12000120
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTARGRP
+```
+
+### 3556. `/PM0/12000121`
+
+```
+T-Code: /PM0/12000121
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTAXEXE
+```
+
+### 3557. `/PM0/12000123`
+
+```
+T-Code: /PM0/12000123
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTMPLTY
+```
+
+### 3558. `/PM0/12000125`
+
+```
+T-Code: /PM0/12000125
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTYPAN
+```
+
+### 3559. `/PM0/12000126`
+
+```
+T-Code: /PM0/12000126
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PUSQBNF
+```
+
+### 3560. `/PM0/12000127`
+
+```
+T-Code: /PM0/12000127
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PUSQPRM
+```
+
+### 3561. `/PM0/12000128`
+
+```
+T-Code: /PM0/12000128
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PUSREME
+```
+
+### 3562. `/PM0/12000129`
+
+```
+T-Code: /PM0/12000129
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCPVAR, /PM0/ABU_PCPVARH
+```
+
+### 3563. `/PM0/12000130`
+
+```
+T-Code: /PM0/12000130
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREUSE, /PM0/ABU_PREUSE2
+```
+
+### 3564. `/PM0/12000131`
+
+```
+T-Code: /PM0/12000131
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBALACC
+```
+
+### 3565. `/PM0/12000134`
+
+```
+T-Code: /PM0/12000134
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBNFTYP
+```
+
+### 3566. `/PM0/12000138`
+
+```
+T-Code: /PM0/12000138
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PMODULE
+```
+
+### 3567. `/PM0/12000160`
+
+```
+T-Code: /PM0/12000160
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSTREQE
+```
+
+### 3568. `/PM0/18000001`
+
+```
+T-Code: /PM0/18000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PADRKIN
+```
+
+### 3569. `/PM0/18000002`
+
+```
+T-Code: /PM0/18000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBREED
+```
+
+### 3570. `/PM0/18000003`
+
+```
+T-Code: /PM0/18000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PADRCAT
+```
+
+### 3571. `/PM0/18000004`
+
+```
+T-Code: /PM0/18000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBUILDT
+```
+
+### 3572. `/PM0/18000006`
+
+```
+T-Code: /PM0/18000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POBJCAT
+```
+
+### 3573. `/PM0/18000007`
+
+```
+T-Code: /PM0/18000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POBJTYP
+```
+
+### 3574. `/PM0/18000008`
+
+```
+T-Code: /PM0/18000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POUTWAL
+```
+
+### 3575. `/PM0/18000009`
+
+```
+T-Code: /PM0/18000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PROFING
+```
+
+### 3576. `/PM0/18000011`
+
+```
+T-Code: /PM0/18000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTYPCHG
+```
+
+### 3577. `/PM0/26000001`
+
+```
+T-Code: /PM0/26000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREIMPL
+```
+
+### 3578. `/PM0/26000009`
+
+```
+T-Code: /PM0/26000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBTXFLD
+```
+
+### 3579. `/PM0/26000011`
+
+```
+T-Code: /PM0/26000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBTFOLD
+```
+
+### 3580. `/PM0/26000013`
+
+```
+T-Code: /PM0/26000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_UNIT
+```
+
+### 3581. `/PM0/26000019`
+
+```
+T-Code: /PM0/26000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBCNC, /PM0/ABU_PNONCF
+```
+
+### 3582. `/PM0/26000020`
+
+```
+T-Code: /PM0/26000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRENEW
+```
+
+### 3583. `/PM0/26000022`
+
+```
+T-Code: /PM0/26000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PWPRO
+```
+
+### 3584. `/PM0/26000026`
+
+```
+T-Code: /PM0/26000026
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDCGRP
+```
+
+### 3585. `/PM0/26000027`
+
+```
+T-Code: /PM0/26000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDCACT
+```
+
+### 3586. `/PM0/26000028`
+
+```
+T-Code: /PM0/26000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDCATGP
+```
+
+### 3587. `/PM0/26000029`
+
+```
+T-Code: /PM0/26000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDCA2A
+```
+
+### 3588. `/PM0/26000030`
+
+```
+T-Code: /PM0/26000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDCA2G, /PM0/ABU_PDCA2GC
+```
+
+### 3589. `/PM0/26000031`
+
+```
+T-Code: /PM0/26000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBTXCTR
+```
+
+### 3590. `/PM0/26000032`
+
+```
+T-Code: /PM0/26000032
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDCGRPO
+```
+
+### 3591. `/PM0/26000039`
+
+```
+T-Code: /PM0/26000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCDATE, /PM0/ABU_PCZTMF
+```
+
+### 3592. `/PM0/26000042`
+
+```
+T-Code: /PM0/26000042
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POLSUMM
+```
+
+### 3593. `/PM0/38000002`
+
+```
+T-Code: /PM0/38000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCIPOCO
+```
+
+### 3594. `/PM0/38000003`
+
+```
+T-Code: /PM0/38000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCHKAML
+```
+
+### 3595. `/PM0/38000005`
+
+```
+T-Code: /PM0/38000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABUNNOCASHG
+```
+
+### 3596. `/PM0/38000007`
+
+```
+T-Code: /PM0/38000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PANNSIM
+```
+
+### 3597. `/PM0/38000047`
+
+```
+T-Code: /PM0/38000047
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POMROLE
+```
+
+### 3598. `/PM0/38000048`
+
+```
+T-Code: /PM0/38000048
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PINCTP
+```
+
+### 3599. `/PM0/38000049`
+
+```
+T-Code: /PM0/38000049
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PINCTPA
+```
+
+### 3600. `/PM0/38000059`
+
+```
+T-Code: /PM0/38000059
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PADDROL
+```
+
+### 3601. `/PM0/38000062`
+
+```
+T-Code: /PM0/38000062
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PGSET
+```
+
+### 3602. `/PM0/38000063`
+
+```
+T-Code: /PM0/38000063
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCHAREV
+```
+
+### 3603. `/PM0/38000064`
+
+```
+T-Code: /PM0/38000064
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCHREAS
+```
+
+### 3604. `/PM0/38000078`
+
+```
+T-Code: /PM0/38000078
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PASSOM, /PM0/ABU_PASSOMR
+```
+
+### 3605. `/PM0/38000079`
+
+```
+T-Code: /PM0/38000079
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDOCCDT
+```
+
+### 3606. `/PM0/38000084`
+
+```
+T-Code: /PM0/38000084
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCOMPAN
+```
+
+### 3607. `/PM0/38000085`
+
+```
+T-Code: /PM0/38000085
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PNRIVG
+```
+
+### 3608. `/PM0/38000086`
+
+```
+T-Code: /PM0/38000086
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PNRIVS
+```
+
+### 3609. `/PM0/38000087`
+
+```
+T-Code: /PM0/38000087
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PNRIVP
+```
+
+### 3610. `/PM0/38000088`
+
+```
+T-Code: /PM0/38000088
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRR2CPG
+```
+
+### 3611. `/PM0/38000089`
+
+```
+T-Code: /PM0/38000089
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCC2CPG
+```
+
+### 3612. `/PM0/38000090`
+
+```
+T-Code: /PM0/38000090
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPR2CMP
+```
+
+### 3613. `/PM0/38000091`
+
+```
+T-Code: /PM0/38000091
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PEFFDT
+```
+
+### 3614. `/PM0/38000092`
+
+```
+T-Code: /PM0/38000092
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCIENTY, /PM0/ABU_PCIVAR
+```
+
+### 3615. `/PM0/38000093`
+
+```
+T-Code: /PM0/38000093
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCIBUSI, /PM0/ABU_PCIENTB, /PM0/ABU_PCIVARB
+```
+
+### 3616. `/PM0/38000098`
+
+```
+T-Code: /PM0/38000098
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPCDATE
+```
+
+### 3617. `/PM0/38000099`
+
+```
+T-Code: /PM0/38000099
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPCALLO
+```
+
+### 3618. `/PM0/38000100`
+
+```
+T-Code: /PM0/38000100
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPCBNMK
+```
+
+### 3619. `/PM0/38000101`
+
+```
+T-Code: /PM0/38000101
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBTSDID, /PM0/ABU_PBTSWS
+```
+
+### 3620. `/PM0/38000102`
+
+```
+T-Code: /PM0/38000102
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PADJUST
+```
+
+### 3621. `/PM0/38000103`
+
+```
+T-Code: /PM0/38000103
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCOLL
+```
+
+### 3622. `/PM0/38000107`
+
+```
+T-Code: /PM0/38000107
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCMPENT
+```
+
+### 3623. `/PM0/38000109`
+
+```
+T-Code: /PM0/38000109
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRMPRID
+```
+
+### 3624. `/PM0/38000110`
+
+```
+T-Code: /PM0/38000110
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POLPRDT
+```
+
+### 3625. `/PM0/38000111`
+
+```
+T-Code: /PM0/38000111
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBZPRUT, /PM0/ABU_PECREAC, /PM0/ABU_PEXCLDT, /PM0/ABU_PFLXUPD, /PM0/ABU_PTRGTDT
+```
+
+### 3626. `/PM0/38000112`
+
+```
+T-Code: /PM0/38000112
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PIFDES
+```
+
+### 3627. `/PM0/38000118`
+
+```
+T-Code: /PM0/38000118
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PALTFUN
+```
+
+### 3628. `/PM0/38000121`
+
+```
+T-Code: /PM0/38000121
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSTODPR
+```
+
+### 3629. `/PM0/3FCA_BACKG`
+
+```
+T-Code: /PM0/3FCA_BACKG
+├── /PM0/ABCOR
+    ├── ACTVT → 1, 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/RWP
+    ├── /PM0/RAPPL → 1, 2, 99999
+    ├── /PM0/RBOML → (empty — maintain in PFCG)
+    ├── /PM0/RMODL → (empty — maintain in PFCG)
+    └── ACTVT → 64
+└── S_BTCH_ADM
+    └── BTCADMIN → Y
+```
+
+### 3630. `/PM0/3FL_PERF_MON`
+
+```
+T-Code: /PM0/3FL_PERF_MON
+└── S_TOOLS_EX
+    └── AUTH → S_TOOLS_EX_A
+```
+
+### 3631. `/PM0/3FL_SHOW_APPLOG`
+
+```
+T-Code: /PM0/3FL_SHOW_APPLOG
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → IUMS
+    └── ALG_SUBOBJ → ERROR
+```
+
+### 3632. `/PM0/3FTD_SHARED_MEMORY_DELETE`
+
+```
+T-Code: /PM0/3FTD_SHARED_MEMORY_DELETE
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/3FTD_SHARED_MEMORY
+    └── RFC_TYPE → FUGR
+```
+
+### 3633. `/PM0/3FVC_BO`
+
+```
+T-Code: /PM0/3FVC_BO
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 3634. `/PM0/3FVC_CHANNEL`
+
+```
+T-Code: /PM0/3FVC_CHANNEL
+├── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+└── S_TABU_NAM
+    ├── ACTVT → 2
+    └── TABLE → &NC&
+```
+
+### 3635. `/PM0/3FVC_CHMODEL`
+
+```
+T-Code: /PM0/3FVC_CHMODEL
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 3636. `/PM0/3FVC_PROCESS`
+
+```
+T-Code: /PM0/3FVC_PROCESS
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 3637. `/PM0/3FWTF_RPY_PROGRAM_INSERT`
+
+```
+T-Code: /PM0/3FWTF_RPY_PROGRAM_INSERT
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/3FWTF_SIFP_OWN
+    └── RFC_TYPE → FUGR
+```
+
+### 3638. `/PM0/3FW_CHG_ORIG`
+
+```
+T-Code: /PM0/3FW_CHG_ORIG
+├── /PM0/RNS
+    └── /PM0/RAPPL → 1, 2, 99999
+└── /PM0/RWP
+    ├── /PM0/RAPPL → 1, 2, 99999
+    ├── /PM0/RBOML → (empty — maintain in PFCG)
+    ├── /PM0/RMODL → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 64
+```
+
+### 3639. `/PM0/3FW_START`
+
+```
+T-Code: /PM0/3FW_START
+├── /PM0/IBCT
+    ├── /PM0/APPLI → DISTPLAN, POLICY
+    ├── /PM0/ENTIT → (empty — maintain in PFCG)
+    ├── /PM0/OPERA → DEL, IMP, REL, TRM
+    ├── /PM0/TMPID → (empty — maintain in PFCG)
+    └── /PM0/TMPTY → (empty — maintain in PFCG)
+├── /PM0/RNS
+    └── /PM0/RAPPL → 1, 2, 99999
+└── /PM0/RWP
+    ├── /PM0/RAPPL → 1, 2, 99999
+    ├── /PM0/RBOML → (empty — maintain in PFCG)
+    ├── /PM0/RMODL → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 64
+```
+
+### 3640. `/PM0/3FW_START_D`
+
+```
+T-Code: /PM0/3FW_START_D
+└── /PM0/RWP
+    ├── /PM0/RAPPL → 1, 2, 99999
+    ├── /PM0/RBOML → (empty — maintain in PFCG)
+    ├── /PM0/RMODL → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 64
+```
+
+### 3641. `/PM0/3FW_START_TEST`
+
+```
+T-Code: /PM0/3FW_START_TEST
+└── /PM0/RWP
+    ├── /PM0/RAPPL → 1, 2, 99999
+    ├── /PM0/RBOML → (empty — maintain in PFCG)
+    ├── /PM0/RMODL → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 64
+```
+
+### 3642. `/PM0/66000001`
+
+```
+T-Code: /PM0/66000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSBGSET
+```
+
+### 3643. `/PM0/66000002`
+
+```
+T-Code: /PM0/66000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBLDBIZ, /PM0/ABU_PBLDKND
+```
+
+### 3644. `/PM0/66000005`
+
+```
+T-Code: /PM0/66000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCHGREA
+```
+
+### 3645. `/PM0/66000007`
+
+```
+T-Code: /PM0/66000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PINFOST
+```
+
+### 3646. `/PM0/66000008`
+
+```
+T-Code: /PM0/66000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRSKENT
+```
+
+### 3647. `/PM0/66000009`
+
+```
+T-Code: /PM0/66000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSELVAR
+```
+
+### 3648. `/PM0/66000010`
+
+```
+T-Code: /PM0/66000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PJDEF
+```
+
+### 3649. `/PM0/66000011`
+
+```
+T-Code: /PM0/66000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PASSOPT, /PM0/ALU_PBNFOPT
+```
+
+### 3650. `/PM0/66000013`
+
+```
+T-Code: /PM0/66000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPRCASG
+```
+
+### 3651. `/PM0/66000014`
+
+```
+T-Code: /PM0/66000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSETTLE
+```
+
+### 3652. `/PM0/66000016`
+
+```
+T-Code: /PM0/66000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSOUTAR
+```
+
+### 3653. `/PM0/66000018`
+
+```
+T-Code: /PM0/66000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTCCON
+```
+
+### 3654. `/PM0/66000019`
+
+```
+T-Code: /PM0/66000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCIENTY, /PM0/ABU_PCIVAR
+```
+
+### 3655. `/PM0/66000020`
+
+```
+T-Code: /PM0/66000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRSKSET
+```
+
+### 3656. `/PM0/66000021`
+
+```
+T-Code: /PM0/66000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PELPR, /PM0/ABU_PKUMAKT, /PM0/ABU_PKUMART, /PM0/ABU_PKUMCOV, /PM0/ABU_PKUMLPR, /PM0/ABU_PPRE
+```
+
+### 3657. `/PM0/66000022`
+
+```
+T-Code: /PM0/66000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRSKPN
+```
+
+### 3658. `/PM0/66000027`
+
+```
+T-Code: /PM0/66000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CHARABS, /PM0/ABU_CHARGES, /PM0/ABU_CHARREL, /PM0/ABU_SCHED, /PM0/ABU_TYPES
+```
+
+### 3659. `/PM0/66000028`
+
+```
+T-Code: /PM0/66000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBCNCF
+```
+
+### 3660. `/PM0/66000029`
+
+```
+T-Code: /PM0/66000029
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_BASES
+```
+
+### 3661. `/PM0/66000030`
+
+```
+T-Code: /PM0/66000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_COLLID
+```
+
+### 3662. `/PM0/66000032`
+
+```
+T-Code: /PM0/66000032
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CHAFREE
+```
+
+### 3663. `/PM0/66000035`
+
+```
+T-Code: /PM0/66000035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPREM, /PM0/ABU_PREMCD, /PM0/ALU_PPRDPRM
+```
+
+### 3664. `/PM0/66000036`
+
+```
+T-Code: /PM0/66000036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CHCOR
+```
+
+### 3665. `/PM0/66000037`
+
+```
+T-Code: /PM0/66000037
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CHCA001
+```
+
+### 3666. `/PM0/66000038`
+
+```
+T-Code: /PM0/66000038
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CHCA002
+```
+
+### 3667. `/PM0/66000039`
+
+```
+T-Code: /PM0/66000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CHCA003
+```
+
+### 3668. `/PM0/66000040`
+
+```
+T-Code: /PM0/66000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CHCA004
+```
+
+### 3669. `/PM0/66000044`
+
+```
+T-Code: /PM0/66000044
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CHCA005
+```
+
+### 3670. `/PM0/66000045`
+
+```
+T-Code: /PM0/66000045
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CHCA006
+```
+
+### 3671. `/PM0/66000049`
+
+```
+T-Code: /PM0/66000049
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CHCA010
+```
+
+### 3672. `/PM0/66000052`
+
+```
+T-Code: /PM0/66000052
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCORDIA, /PM0/ABU_PCORTMF
+```
+
+### 3673. `/PM0/66000056`
+
+```
+T-Code: /PM0/66000056
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CHGEN
+```
+
+### 3674. `/PM0/66000075`
+
+```
+T-Code: /PM0/66000075
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABR_PCLASS
+```
+
+### 3675. `/PM0/66000076`
+
+```
+T-Code: /PM0/66000076
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABR_PATTRIB
+```
+
+### 3676. `/PM0/66000082`
+
+```
+T-Code: /PM0/66000082
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PBNFPRE
+```
+
+### 3677. `/PM0/66000084`
+
+```
+T-Code: /PM0/66000084
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRIDATA
+```
+
+### 3678. `/PM0/66000085`
+
+```
+T-Code: /PM0/66000085
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTMFCDT
+```
+
+### 3679. `/PM0/66000086`
+
+```
+T-Code: /PM0/66000086
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTAXAAS, /PM0/ABU_PTAXAPR, /PM0/ABU_PTAXAPT, /PM0/ABU_PTAXBAS, /PM0/ABU_PTAXHDL, /PM0/ABU_PTAXLIA, /PM0/ABU_PTAXPYR, /PM0/ABU_PTAXRAT, /PM0/ABU_PTAXRUL, /PM0/ABU_PTAXTAS, /PM0/ABU_PTAXTGR, /PM0/ABU_PTAXTYP
+```
+
+### 3680. `/PM0/66000087`
+
+```
+T-Code: /PM0/66000087
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSELVAH, /PM0/ABU_PSELVAR
+```
+
+### 3681. `/PM0/66000088`
+
+```
+T-Code: /PM0/66000088
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PAMDVAR, /PM0/ABU_PAMENTY
+```
+
+### 3682. `/PM0/66000089`
+
+```
+T-Code: /PM0/66000089
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PAMDPRE, /PM0/ABU_PPAMPRE
+```
+
+### 3683. `/PM0/66000090`
+
+```
+T-Code: /PM0/66000090
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PFNDPER
+```
+
+### 3684. `/PM0/66000091`
+
+```
+T-Code: /PM0/66000091
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PPERFSC
+```
+
+### 3685. `/PM0/66000092`
+
+```
+T-Code: /PM0/66000092
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/APU_PBSIPRO
+```
+
+### 3686. `/PM0/66000093`
+
+```
+T-Code: /PM0/66000093
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PBBTXDA, /PM0/ALU_PBEBTX, /PM0/ALU_PBEBTXV
+```
+
+### 3687. `/PM0/66000094`
+
+```
+T-Code: /PM0/66000094
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PLSSTYP
+```
+
+### 3688. `/PM0/66000095`
+
+```
+T-Code: /PM0/66000095
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PLSTYC
+```
+
+### 3689. `/PM0/66000096`
+
+```
+T-Code: /PM0/66000096
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PLSSCAU
+```
+
+### 3690. `/PM0/66000097`
+
+```
+T-Code: /PM0/66000097
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PCRTERM, /PM0/ALU_PCRULE, /PM0/ALU_PDCRULE, /PM0/ALU_PTERM
+```
+
+### 3691. `/PM0/66000098`
+
+```
+T-Code: /PM0/66000098
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PDRBT, /PM0/ALU_PDRVABT, /PM0/ALU_PDRVRBT
+```
+
+### 3692. `/PM0/66000100`
+
+```
+T-Code: /PM0/66000100
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCLAUTX
+```
+
+### 3693. `/PM0/66000103`
+
+```
+T-Code: /PM0/66000103
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PATTNO
+```
+
+### 3694. `/PM0/66000104`
+
+```
+T-Code: /PM0/66000104
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PLOCKBI, /PM0/ABU_PLOCKBT, /PM0/ABU_PLOCKID
+```
+
+### 3695. `/PM0/66000106`
+
+```
+T-Code: /PM0/66000106
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PWHDTXP
+```
+
+### 3696. `/PM0/66000107`
+
+```
+T-Code: /PM0/66000107
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTMFDIS
+```
+
+### 3697. `/PM0/66000108`
+
+```
+T-Code: /PM0/66000108
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTMFDMT
+```
+
+### 3698. `/PM0/66000109`
+
+```
+T-Code: /PM0/66000109
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCARELV
+```
+
+### 3699. `/PM0/66000110`
+
+```
+T-Code: /PM0/66000110
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PODIW
+```
+
+### 3700. `/PM0/66000111`
+
+```
+T-Code: /PM0/66000111
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CHCA011
+```
+
+### 3701. `/PM0/66000112`
+
+```
+T-Code: /PM0/66000112
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBALTP, /PM0/ABU_PBALTPA, /PM0/ABU_PBALTPC, /PM0/ABU_PBALTPS
+```
+
+### 3702. `/PM0/66000116`
+
+```
+T-Code: /PM0/66000116
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CHCA012
+```
+
+### 3703. `/PM0/66000117`
+
+```
+T-Code: /PM0/66000117
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTAXASG, /PM0/ABU_PTAXWS
+```
+
+### 3704. `/PM0/66000118`
+
+```
+T-Code: /PM0/66000118
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPM12
+```
+
+### 3705. `/PM0/66000119`
+
+```
+T-Code: /PM0/66000119
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPM16, /PM0/ABU_PPM17
+```
+
+### 3706. `/PM0/66000122`
+
+```
+T-Code: /PM0/66000122
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PVALURU
+```
+
+### 3707. `/PM0/66000123`
+
+```
+T-Code: /PM0/66000123
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBENPRO
+```
+
+### 3708. `/PM0/66000124`
+
+```
+T-Code: /PM0/66000124
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBPUPD
+```
+
+### 3709. `/PM0/66000128`
+
+```
+T-Code: /PM0/66000128
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PMDCEXE
+```
+
+### 3710. `/PM0/66000129`
+
+```
+T-Code: /PM0/66000129
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPREM
+```
+
+### 3711. `/PM0/66000130`
+
+```
+T-Code: /PM0/66000130
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBENPRO, /PM0/ABU_PVALURU
+```
+
+### 3712. `/PM0/66000149`
+
+```
+T-Code: /PM0/66000149
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PLOBPOL
+```
+
+### 3713. `/PM0/66000156`
+
+```
+T-Code: /PM0/66000156
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PMDACT
+```
+
+### 3714. `/PM0/66000157`
+
+```
+T-Code: /PM0/66000157
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PMODTX
+```
+
+### 3715. `/PM0/66000159`
+
+```
+T-Code: /PM0/66000159
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PBBTXV, /PM0/ALU_PBTXDA, /PM0/ALU_PBTXTX
+```
+
+### 3716. `/PM0/66000160`
+
+```
+T-Code: /PM0/66000160
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPCCON
+```
+
+### 3717. `/PM0/66000161`
+
+```
+T-Code: /PM0/66000161
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDEFEXP
+```
+
+### 3718. `/PM0/66000162`
+
+```
+T-Code: /PM0/66000162
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PANUITP
+```
+
+### 3719. `/PM0/66000164`
+
+```
+T-Code: /PM0/66000164
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PENTITY
+```
+
+### 3720. `/PM0/66000169`
+
+```
+T-Code: /PM0/66000169
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_VBPSTAT
+```
+
+### 3721. `/PM0/75000001`
+
+```
+T-Code: /PM0/75000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PILTP
+```
+
+### 3722. `/PM0/75000002`
+
+```
+T-Code: /PM0/75000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPREXTM
+```
+
+### 3723. `/PM0/75000005`
+
+```
+T-Code: /PM0/75000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PFNDQFR
+```
+
+### 3724. `/PM0/75000008`
+
+```
+T-Code: /PM0/75000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PILINT, /PM0/ALU_VILOGIC
+```
+
+### 3725. `/PM0/75000011`
+
+```
+T-Code: /PM0/75000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCORTYP
+```
+
+### 3726. `/PM0/75000018`
+
+```
+T-Code: /PM0/75000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPWOFAT
+```
+
+### 3727. `/PM0/75000020`
+
+```
+T-Code: /PM0/75000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREFTYP
+```
+
+### 3728. `/PM0/75000062`
+
+```
+T-Code: /PM0/75000062
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → (empty — maintain in PFCG)
+```
+
+### 3729. `/PM0/75000088`
+
+```
+T-Code: /PM0/75000088
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBNYTYP
+```
+
+### 3730. `/PM0/75000096`
+
+```
+T-Code: /PM0/75000096
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREGIOC
+```
+
+### 3731. `/PM0/75000108`
+
+```
+T-Code: /PM0/75000108
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREFCOM
+```
+
+### 3732. `/PM0/75000109`
+
+```
+T-Code: /PM0/75000109
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PACQUTP
+```
+
+### 3733. `/PM0/75000112`
+
+```
+T-Code: /PM0/75000112
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PFBTX
+```
+
+### 3734. `/PM0/75000121`
+
+```
+T-Code: /PM0/75000121
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PFNDTP
+```
+
+### 3735. `/PM0/75000123`
+
+```
+T-Code: /PM0/75000123
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PFNDSTA
+```
+
+### 3736. `/PM0/75000129`
+
+```
+T-Code: /PM0/75000129
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PPALSTA
+```
+
+### 3737. `/PM0/75000132`
+
+```
+T-Code: /PM0/75000132
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PATT
+```
+
+### 3738. `/PM0/75000133`
+
+```
+T-Code: /PM0/75000133
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCORATT
+```
+
+### 3739. `/PM0/75000134`
+
+```
+T-Code: /PM0/75000134
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCORDS
+```
+
+### 3740. `/PM0/75000135`
+
+```
+T-Code: /PM0/75000135
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCORR
+```
+
+### 3741. `/PM0/75000136`
+
+```
+T-Code: /PM0/75000136
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCORTE
+```
+
+### 3742. `/PM0/75000137`
+
+```
+T-Code: /PM0/75000137
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCORTM
+```
+
+### 3743. `/PM0/75000138`
+
+```
+T-Code: /PM0/75000138
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCORVA
+```
+
+### 3744. `/PM0/75000139`
+
+```
+T-Code: /PM0/75000139
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDOCSTA
+```
+
+### 3745. `/PM0/75000142`
+
+```
+T-Code: /PM0/75000142
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREPTXT
+```
+
+### 3746. `/PM0/75000143`
+
+```
+T-Code: /PM0/75000143
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTEXT
+```
+
+### 3747. `/PM0/75000145`
+
+```
+T-Code: /PM0/75000145
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTXMOD
+```
+
+### 3748. `/PM0/75000147`
+
+```
+T-Code: /PM0/75000147
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PVAR
+```
+
+### 3749. `/PM0/75000149`
+
+```
+T-Code: /PM0/75000149
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDOCSEC
+```
+
+### 3750. `/PM0/75000161`
+
+```
+T-Code: /PM0/75000161
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTMFPLX
+```
+
+### 3751. `/PM0/75000163`
+
+```
+T-Code: /PM0/75000163
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTCOMSY
+```
+
+### 3752. `/PM0/75000164`
+
+```
+T-Code: /PM0/75000164
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTMET
+```
+
+### 3753. `/PM0/75000165`
+
+```
+T-Code: /PM0/75000165
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSUMM
+```
+
+### 3754. `/PM0/75000171`
+
+```
+T-Code: /PM0/75000171
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PAGBNF
+```
+
+### 3755. `/PM0/75000172`
+
+```
+T-Code: /PM0/75000172
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRC_CD
+```
+
+### 3756. `/PM0/75000173`
+
+```
+T-Code: /PM0/75000173
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PSURMET
+```
+
+### 3757. `/PM0/75000174`
+
+```
+T-Code: /PM0/75000174
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_ENTC_CD
+```
+
+### 3758. `/PM0/75000197`
+
+```
+T-Code: /PM0/75000197
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PLEVEL
+```
+
+### 3759. `/PM0/75000206`
+
+```
+T-Code: /PM0/75000206
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PROLE
+```
+
+### 3760. `/PM0/75000208`
+
+```
+T-Code: /PM0/75000208
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABUUESODEST
+```
+
+### 3761. `/PM0/75000214`
+
+```
+T-Code: /PM0/75000214
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_COVDAT, /PM0/ABU_COVDET, /PM0/ABU_PMGCOV, /PM0/ABU_PMGPPD, /PM0/ABU_PPDDET2, /PM0/ABU_PPDSUM
+```
+
+### 3762. `/PM0/75000216`
+
+```
+T-Code: /PM0/75000216
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PBADIPT
+```
+
+### 3763. `/PM0/75000219`
+
+```
+T-Code: /PM0/75000219
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_FPTGASN
+```
+
+### 3764. `/PM0/75000220`
+
+```
+T-Code: /PM0/75000220
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PFISIN
+```
+
+### 3765. `/PM0/75000221`
+
+```
+T-Code: /PM0/75000221
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBIZRUL, /PM0/ABU_PBIZRWH
+```
+
+### 3766. `/PM0/75000222`
+
+```
+T-Code: /PM0/75000222
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PMGPOL, /PM0/ABU_PMGPPD, /PM0/ABU_POLDET, /PM0/ABU_POLSUM, /PM0/ABU_PPDDAT, /PM0/ABU_PPDDET1
+```
+
+### 3767. `/PM0/75000223`
+
+```
+T-Code: /PM0/75000223
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_DSPLID
+```
+
+### 3768. `/PM0/75000226`
+
+```
+T-Code: /PM0/75000226
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSRVIB
+```
+
+### 3769. `/PM0/75000227`
+
+```
+T-Code: /PM0/75000227
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDCNAC
+```
+
+### 3770. `/PM0/75000228`
+
+```
+T-Code: /PM0/75000228
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDCNA2G
+```
+
+### 3771. `/PM0/75000230`
+
+```
+T-Code: /PM0/75000230
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PFPTPGP
+```
+
+### 3772. `/PM0/75000232`
+
+```
+T-Code: /PM0/75000232
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCREDTP
+```
+
+### 3773. `/PM0/75000233`
+
+```
+T-Code: /PM0/75000233
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDCCAC
+```
+
+### 3774. `/PM0/75000235`
+
+```
+T-Code: /PM0/75000235
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/KALU_PFNDCT
+```
+
+### 3775. `/PM0/75000236`
+
+```
+T-Code: /PM0/75000236
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/KALU_PFNQFR
+```
+
+### 3776. `/PM0/75000237`
+
+```
+T-Code: /PM0/75000237
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/KALU_PSTEXC
+```
+
+### 3777. `/PM0/75000240`
+
+```
+T-Code: /PM0/75000240
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRECDET
+```
+
+### 3778. `/PM0/75000241`
+
+```
+T-Code: /PM0/75000241
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDCCA2G
+```
+
+### 3779. `/PM0/75000263`
+
+```
+T-Code: /PM0/75000263
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_T100C
+```
+
+### 3780. `/PM0/75000265`
+
+```
+T-Code: /PM0/75000265
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POPGR
+```
+
+### 3781. `/PM0/75000272`
+
+```
+T-Code: /PM0/75000272
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PROLREL
+```
+
+### 3782. `/PM0/75000277`
+
+```
+T-Code: /PM0/75000277
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_T100C, /PM0/ABU_T100SA
+```
+
+### 3783. `/PM0/75000284`
+
+```
+T-Code: /PM0/75000284
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBTXLOB
+```
+
+### 3784. `/PM0/75000290`
+
+```
+T-Code: /PM0/75000290
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCACHE
+```
+
+### 3785. `/PM0/75000295`
+
+```
+T-Code: /PM0/75000295
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PENCONT
+```
+
+### 3786. `/PM0/75000316`
+
+```
+T-Code: /PM0/75000316
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPOSCBC
+```
+
+### 3787. `/PM0/75000326`
+
+```
+T-Code: /PM0/75000326
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CANCCTR
+```
+
+### 3788. `/PM0/75000328`
+
+```
+T-Code: /PM0/75000328
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PMADJAG
+```
+
+### 3789. `/PM0/75000362`
+
+```
+T-Code: /PM0/75000362
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCORFTM
+```
+
+### 3790. `/PM0/75000371`
+
+```
+T-Code: /PM0/75000371
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/AOUPLOANSET
+```
+
+### 3791. `/PM0/75000391`
+
+```
+T-Code: /PM0/75000391
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCGENC
+```
+
+### 3792. `/PM0/75000407`
+
+```
+T-Code: /PM0/75000407
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCORRGR
+```
+
+### 3793. `/PM0/75000478`
+
+```
+T-Code: /PM0/75000478
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PLCKSCH
+```
+
+### 3794. `/PM0/75000643`
+
+```
+T-Code: /PM0/75000643
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_FPPPRIO
+```
+
+### 3795. `/PM0/75000646`
+
+```
+T-Code: /PM0/75000646
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_INFOMOD
+```
+
+### 3796. `/PM0/75000662`
+
+```
+T-Code: /PM0/75000662
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_SPCHK
+```
+
+### 3797. `/PM0/75000665`
+
+```
+T-Code: /PM0/75000665
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRCNFE, /PM0/ABU_PRCNFH
+```
+
+### 3798. `/PM0/75000687`
+
+```
+T-Code: /PM0/75000687
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PFMSC
+```
+
+### 3799. `/PM0/75000688`
+
+```
+T-Code: /PM0/75000688
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PFMCOAT, /PM0/ABU_PFMCONS
+```
+
+### 3800. `/PM0/76000002`
+
+```
+T-Code: /PM0/76000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /MSG/4P_RFC_DEST
+```
+
+### 3801. `/PM0/79000004`
+
+```
+T-Code: /PM0/79000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSALECH
+```
+
+### 3802. `/PM0/90000001`
+
+```
+T-Code: /PM0/90000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRIATT
+```
+
+### 3803. `/PM0/90000002`
+
+```
+T-Code: /PM0/90000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PACINTR
+```
+
+### 3804. `/PM0/90000003`
+
+```
+T-Code: /PM0/90000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PACCPOL
+```
+
+### 3805. `/PM0/90000004`
+
+```
+T-Code: /PM0/90000004
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PACPROD
+```
+
+### 3806. `/PM0/90000005`
+
+```
+T-Code: /PM0/90000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PACELEM
+```
+
+### 3807. `/PM0/90000006`
+
+```
+T-Code: /PM0/90000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCIOPT
+```
+
+### 3808. `/PM0/90000007`
+
+```
+T-Code: /PM0/90000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PIDXVAL
+```
+
+### 3809. `/PM0/90000008`
+
+```
+T-Code: /PM0/90000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTMPLGR
+```
+
+### 3810. `/PM0/90000011`
+
+```
+T-Code: /PM0/90000011
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_IDXVAL, /PM0/ABU_INDEX
+```
+
+### 3811. `/PM0/90000012`
+
+```
+T-Code: /PM0/90000012
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRESLOD
+```
+
+### 3812. `/PM0/90000013`
+
+```
+T-Code: /PM0/90000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POVERPG, /PM0/ABU_POVERVW, /PM0/ABU_POVVIEW
+```
+
+### 3813. `/PM0/90000014`
+
+```
+T-Code: /PM0/90000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PDETCLC
+```
+
+### 3814. `/PM0/90000015`
+
+```
+T-Code: /PM0/90000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PMPTYPE
+```
+
+### 3815. `/PM0/90000016`
+
+```
+T-Code: /PM0/90000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCCUMUL
+```
+
+### 3816. `/PM0/90000018`
+
+```
+T-Code: /PM0/90000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PAPPLIN
+```
+
+### 3817. `/PM0/90000019`
+
+```
+T-Code: /PM0/90000019
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBITRA
+```
+
+### 3818. `/PM0/90000025`
+
+```
+T-Code: /PM0/90000025
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBPMACT, /PM0/ABU_PBPMCTB, /PM0/ABU_PBPMCTP
+```
+
+### 3819. `/PM0/90000035`
+
+```
+T-Code: /PM0/90000035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PFWREAS
+```
+
+### 3820. `/PM0/90000036`
+
+```
+T-Code: /PM0/90000036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDCPER
+```
+
+### 3821. `/PM0/90000134`
+
+```
+T-Code: /PM0/90000134
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABUASTABS
+```
+
+### 3822. `/PM0/90000135`
+
+```
+T-Code: /PM0/90000135
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDUEDT
+```
+
+### 3823. `/PM0/95000001`
+
+```
+T-Code: /PM0/95000001
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTXTMOD
+```
+
+### 3824. `/PM0/95000002`
+
+```
+T-Code: /PM0/95000002
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PILFBT
+```
+
+### 3825. `/PM0/95000007`
+
+```
+T-Code: /PM0/95000007
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PBASDT
+```
+
+### 3826. `/PM0/95000008`
+
+```
+T-Code: /PM0/95000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PBTBSDT
+```
+
+### 3827. `/PM0/95000009`
+
+```
+T-Code: /PM0/95000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBCABO
+```
+
+### 3828. `/PM0/95000014`
+
+```
+T-Code: /PM0/95000014
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTHOLD
+```
+
+### 3829. `/PM0/95000015`
+
+```
+T-Code: /PM0/95000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCUMBEH
+```
+
+### 3830. `/PM0/95000017`
+
+```
+T-Code: /PM0/95000017
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBOBJ
+```
+
+### 3831. `/PM0/95000018`
+
+```
+T-Code: /PM0/95000018
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PACCDET
+```
+
+### 3832. `/PM0/95000020`
+
+```
+T-Code: /PM0/95000020
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PCDPRD, /PM0/ABU_PCORPA, /PM0/ABU_PCORPRO, /PM0/ABU_PCORVAI, /PM0/ABU_PCREACC, /PM0/ABU_PDEFCAC, /PM0/ABU_PMAPLVL, /PM0/ABU_PPROCES, /PM0/ABU_PROLASS, /PM0/ABU_PTRANTY
+```
+
+### 3833. `/PM0/95000021`
+
+```
+T-Code: /PM0/95000021
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDEDCT
+```
+
+### 3834. `/PM0/95000022`
+
+```
+T-Code: /PM0/95000022
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDECCOR, /PM0/ABU_PGRPCOR, /PM0/ABU_PPOSGRP
+```
+
+### 3835. `/PM0/95000023`
+
+```
+T-Code: /PM0/95000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBCOBJ
+```
+
+### 3836. `/PM0/95000024`
+
+```
+T-Code: /PM0/95000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PROVVEW
+```
+
+### 3837. `/PM0/95000030`
+
+```
+T-Code: /PM0/95000030
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBUSKIN, /PM0/ABU_PRISKCO
+```
+
+### 3838. `/PM0/95000031`
+
+```
+T-Code: /PM0/95000031
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRISKID
+```
+
+### 3839. `/PM0/95000034`
+
+```
+T-Code: /PM0/95000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PACCLMA
+```
+
+### 3840. `/PM0/95000035`
+
+```
+T-Code: /PM0/95000035
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PPRCDIF
+```
+
+### 3841. `/PM0/95000036`
+
+```
+T-Code: /PM0/95000036
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_POPMCOR, /PM0/ABU_POPMGRP
+```
+
+### 3842. `/PM0/95000040`
+
+```
+T-Code: /PM0/95000040
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PSTOFPR
+```
+
+### 3843. `/PM0/95000041`
+
+```
+T-Code: /PM0/95000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTINFO
+```
+
+### 3844. `/PM0/95000042`
+
+```
+T-Code: /PM0/95000042
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPRCIDH, /PM0/ABU_PPRCIDI
+```
+
+### 3845. `/PM0/95000043`
+
+```
+T-Code: /PM0/95000043
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PAPPVAR
+```
+
+### 3846. `/PM0/95000045`
+
+```
+T-Code: /PM0/95000045
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSTOMPO
+```
+
+### 3847. `/PM0/95000046`
+
+```
+T-Code: /PM0/95000046
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTAGRDN
+```
+
+### 3848. `/PM0/98000005`
+
+```
+T-Code: /PM0/98000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PLOANAM
+```
+
+### 3849. `/PM0/98000009`
+
+```
+T-Code: /PM0/98000009
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_CTXPER
+```
+
+### 3850. `/PM0/98000034`
+
+```
+T-Code: /PM0/98000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PMARST
+```
+
+### 3851. `/PM0/98000038`
+
+```
+T-Code: /PM0/98000038
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_QUOTVAR
+```
+
+### 3852. `/PM0/98000041`
+
+```
+T-Code: /PM0/98000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PIRVAR
+```
+
+### 3853. `/PM0/98000043`
+
+```
+T-Code: /PM0/98000043
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABUDC_PRPER
+```
+
+### 3854. `/PM0/98000046`
+
+```
+T-Code: /PM0/98000046
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PROLES
+```
+
+### 3855. `/PM0/98000048`
+
+```
+T-Code: /PM0/98000048
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABUDELCTXER
+```
+
+### 3856. `/PM0/98000064`
+
+```
+T-Code: /PM0/98000064
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABUXMURL
+```
+
+### 3857. `/PM0/99000003`
+
+```
+T-Code: /PM0/99000003
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDOCROL
+```
+
+### 3858. `/PM0/99000005`
+
+```
+T-Code: /PM0/99000005
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTREEBT
+```
+
+### 3859. `/PM0/99000006`
+
+```
+T-Code: /PM0/99000006
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTREELO
+```
+
+### 3860. `/PM0/99000008`
+
+```
+T-Code: /PM0/99000008
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTREEIN
+```
+
+### 3861. `/PM0/99000010`
+
+```
+T-Code: /PM0/99000010
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPOTYPE
+```
+
+### 3862. `/PM0/99000013`
+
+```
+T-Code: /PM0/99000013
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PGLOSET
+```
+
+### 3863. `/PM0/99000015`
+
+```
+T-Code: /PM0/99000015
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PACCPAY
+```
+
+### 3864. `/PM0/99000016`
+
+```
+T-Code: /PM0/99000016
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PACCRAT
+```
+
+### 3865. `/PM0/99000023`
+
+```
+T-Code: /PM0/99000023
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPOSCOD
+```
+
+### 3866. `/PM0/99000024`
+
+```
+T-Code: /PM0/99000024
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDOCACC
+```
+
+### 3867. `/PM0/99000025`
+
+```
+T-Code: /PM0/99000025
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PACCPOC
+```
+
+### 3868. `/PM0/99000026`
+
+```
+T-Code: /PM0/99000026
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PARCHIV
+```
+
+### 3869. `/PM0/99000027`
+
+```
+T-Code: /PM0/99000027
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREGREP
+```
+
+### 3870. `/PM0/99000028`
+
+```
+T-Code: /PM0/99000028
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PORINT
+```
+
+### 3871. `/PM0/99000032`
+
+```
+T-Code: /PM0/99000032
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRISK
+```
+
+### 3872. `/PM0/99000033`
+
+```
+T-Code: /PM0/99000033
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRIBNFP
+```
+
+### 3873. `/PM0/99000034`
+
+```
+T-Code: /PM0/99000034
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRIMOVP
+```
+
+### 3874. `/PM0/99000037`
+
+```
+T-Code: /PM0/99000037
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBIZTYP
+```
+
+### 3875. `/PM0/99000039`
+
+```
+T-Code: /PM0/99000039
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSTOCKT
+```
+
+### 3876. `/PM0/99000041`
+
+```
+T-Code: /PM0/99000041
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPLANSE
+```
+
+### 3877. `/PM0/99000043`
+
+```
+T-Code: /PM0/99000043
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPLSEOR
+```
+
+### 3878. `/PM0/99000046`
+
+```
+T-Code: /PM0/99000046
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PCTRLMD
+```
+
+### 3879. `/PM0/99000047`
+
+```
+T-Code: /PM0/99000047
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PSHOWCO
+```
+
+### 3880. `/PM0/99000048`
+
+```
+T-Code: /PM0/99000048
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PPOYEAR
+```
+
+### 3881. `/PM0/99000049`
+
+```
+T-Code: /PM0/99000049
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PMCYEAR
+```
+
+### 3882. `/PM0/99000050`
+
+```
+T-Code: /PM0/99000050
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PFI
+```
+
+### 3883. `/PM0/99000055`
+
+```
+T-Code: /PM0/99000055
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PCOVSUM
+```
+
+### 3884. `/PM0/99000057`
+
+```
+T-Code: /PM0/99000057
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSTORPE
+```
+
+### 3885. `/PM0/99000058`
+
+```
+T-Code: /PM0/99000058
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSTOPEN
+```
+
+### 3886. `/PM0/99000060`
+
+```
+T-Code: /PM0/99000060
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PSTOPER
+```
+
+### 3887. `/PM0/99000061`
+
+```
+T-Code: /PM0/99000061
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ALU_PINTCL
+```
+
+### 3888. `/PM0/99000065`
+
+```
+T-Code: /PM0/99000065
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBTXMEN
+```
+
+### 3889. `/PM0/99000066`
+
+```
+T-Code: /PM0/99000066
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PACTGRP, /PM0/ABU_PGRPDIM, /PM0/ABU_PPRDMOD, /PM0/ABU_PPRELGR, /PM0/ABU_PPRGGP, /PM0/ABU_PTAGRDN
+```
+
+### 3890. `/PM0/99000069`
+
+```
+T-Code: /PM0/99000069
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBTXFLT, /PM0/ABU_PBTXFTR
+```
+
+### 3891. `/PM0/99000070`
+
+```
+T-Code: /PM0/99000070
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBTXSEQ, /PM0/ABU_PBTXSQR
+```
+
+### 3892. `/PM0/99000081`
+
+```
+T-Code: /PM0/99000081
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRSKRES
+```
+
+### 3893. `/PM0/99000082`
+
+```
+T-Code: /PM0/99000082
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PMDDRUG
+```
+
+### 3894. `/PM0/99000083`
+
+```
+T-Code: /PM0/99000083
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PUWDCN
+```
+
+### 3895. `/PM0/99000084`
+
+```
+T-Code: /PM0/99000084
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PFRQNCY
+```
+
+### 3896. `/PM0/99000085`
+
+```
+T-Code: /PM0/99000085
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PADDRUG
+```
+
+### 3897. `/PM0/99000086`
+
+```
+T-Code: /PM0/99000086
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPOTPCO
+```
+
+### 3898. `/PM0/99000087`
+
+```
+T-Code: /PM0/99000087
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PRISKQ
+```
+
+### 3899. `/PM0/99000089`
+
+```
+T-Code: /PM0/99000089
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPFO
+```
+
+### 3900. `/PM0/99000090`
+
+```
+T-Code: /PM0/99000090
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPOSPER
+```
+
+### 3901. `/PM0/99000092`
+
+```
+T-Code: /PM0/99000092
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBCA, /PM0/ABU_PBCAID
+```
+
+### 3902. `/PM0/99000093`
+
+```
+T-Code: /PM0/99000093
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBCCFC, /PM0/ABU_PCASHFL
+```
+
+### 3903. `/PM0/99000098`
+
+```
+T-Code: /PM0/99000098
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDISALV
+```
+
+### 3904. `/PM0/99000099`
+
+```
+T-Code: /PM0/99000099
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PFIELD, /PM0/ABU_PSTRUC
+```
+
+### 3905. `/PM0/99000100`
+
+```
+T-Code: /PM0/99000100
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBLDKND
+```
+
+### 3906. `/PM0/99000101`
+
+```
+T-Code: /PM0/99000101
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBLDTYP
+```
+
+### 3907. `/PM0/99000102`
+
+```
+T-Code: /PM0/99000102
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBALPER
+```
+
+### 3908. `/PM0/99000103`
+
+```
+T-Code: /PM0/99000103
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PTAXPO
+```
+
+### 3909. `/PM0/99000108`
+
+```
+T-Code: /PM0/99000108
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPRGRP
+```
+
+### 3910. `/PM0/99000109`
+
+```
+T-Code: /PM0/99000109
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PAWARDR
+```
+
+### 3911. `/PM0/99000119`
+
+```
+T-Code: /PM0/99000119
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PMDPEMP
+```
+
+### 3912. `/PM0/99000120`
+
+```
+T-Code: /PM0/99000120
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PREPORT
+```
+
+### 3913. `/PM0/99000121`
+
+```
+T-Code: /PM0/99000121
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PDUNLOC
+```
+
+### 3914. `/PM0/99000122`
+
+```
+T-Code: /PM0/99000122
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PEMCORR
+```
+
+### 3915. `/PM0/99000125`
+
+```
+T-Code: /PM0/99000125
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PUNPLAN
+```
+
+### 3916. `/PM0/99000132`
+
+```
+T-Code: /PM0/99000132
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PUCAAA
+```
+
+### 3917. `/PM0/99000136`
+
+```
+T-Code: /PM0/99000136
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PIFDEST, /PM0/ABU_PIFLO
+```
+
+### 3918. `/PM0/99000140`
+
+```
+T-Code: /PM0/99000140
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PFUNRR
+```
+
+### 3919. `/PM0/99000141`
+
+```
+T-Code: /PM0/99000141
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PPRTTYP
+```
+
+### 3920. `/PM0/99000188`
+
+```
+T-Code: /PM0/99000188
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PAMDST
+```
+
+### 3921. `/PM0/99000189`
+
+```
+T-Code: /PM0/99000189
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PAPPST
+```
+
+### 3922. `/PM0/ABB_ADDRESS_DESCR_GET`
+
+```
+T-Code: /PM0/ABB_ADDRESS_DESCR_GET
+├── B_BUPA_GRP
+    ├── ACTVT → 3
+    └── BEGRU → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → 3
+    └── RLTYP → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 3923. `/PM0/ABB_BANK_DESCR_GET`
+
+```
+T-Code: /PM0/ABB_BANK_DESCR_GET
+├── B_BUPA_GRP
+    ├── ACTVT → 3
+    └── BEGRU → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → 3
+    └── RLTYP → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 3924. `/PM0/ABB_CCARD_DESCR_GET`
+
+```
+T-Code: /PM0/ABB_CCARD_DESCR_GET
+├── B_BUPA_GRP
+    ├── ACTVT → 3
+    └── BEGRU → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → 3
+    └── RLTYP → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 3925. `/PM0/ABB_CHECK_ADDRESSES`
+
+```
+T-Code: /PM0/ABB_CHECK_ADDRESSES
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABB_REMOTE_BP
+    └── RFC_TYPE → FUGR
+```
+
+### 3926. `/PM0/ABB_COMMIT_DVIINFO`
+
+```
+T-Code: /PM0/ABB_COMMIT_DVIINFO
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 53
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+```
+
+### 3927. `/PM0/ABB_GET_BP_ADRESS_DATA`
+
+```
+T-Code: /PM0/ABB_GET_BP_ADRESS_DATA
+├── B_BUPA_GRP
+    ├── ACTVT → 3
+    └── BEGRU → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → 3
+    └── RLTYP → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 3928. `/PM0/ABB_GET_COUNTRY_PP`
+
+```
+T-Code: /PM0/ABB_GET_COUNTRY_PP
+├── B_BUPA_GRP
+    ├── ACTVT → 3
+    └── BEGRU → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → 3
+    └── RLTYP → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 3929. `/PM0/ABB_PM_USING_ADDRESS_GET`
+
+```
+T-Code: /PM0/ABB_PM_USING_ADDRESS_GET
+└── /PM0/APMPG
+    ├── /PM0/BPRC → D
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3930. `/PM0/ABB_PM_USING_BANKDATA_GET`
+
+```
+T-Code: /PM0/ABB_PM_USING_BANKDATA_GET
+└── /PM0/APMPG
+    ├── /PM0/BPRC → D
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3931. `/PM0/ABB_PROCESS_DVIINFO`
+
+```
+T-Code: /PM0/ABB_PROCESS_DVIINFO
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 53
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+```
+
+### 3932. `/PM0/ABB_QUO_ADDRESSDATA_GET`
+
+```
+T-Code: /PM0/ABB_QUO_ADDRESSDATA_GET
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABB_QUO_BP
+    └── RFC_TYPE → FUGR
+```
+
+### 3933. `/PM0/ABB_ROLLBACK_DVIINFO`
+
+```
+T-Code: /PM0/ABB_ROLLBACK_DVIINFO
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 53
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+```
+
+### 3934. `/PM0/ABC_A`
+
+```
+T-Code: /PM0/ABC_A
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 1, 13, 22, 42, 47, 51, 9
+    └── /PM0/ITEM → 1
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → C_B_S_CALL_CORR, P_B_S_ACC_ASS_AMD, P_L_S_AD_AMD, P_P_S_MAN_REWORK
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/ABCHR
+    └── /PM0/ACTVT → REPLBUS
+├── /PM0/ABCOR
+    ├── ACTVT → 1, 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABCRE
+    ├── ACTVT → 1, 2
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+├── /PM0/ALASM
+    └── ACTVT → 1, 2, 3
+├── /PM0/ALFSV
+    ├── ACTVT → 2
+    └── AUTH_FIELD → DEPINTEREST_VL
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3935. `/PM0/ABC_AB`
+
+```
+T-Code: /PM0/ABC_AB
+└── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 3936. `/PM0/ABC_ACC`
+
+```
+T-Code: /PM0/ABC_ACC
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → ACC, D
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3937. `/PM0/ABC_AI`
+
+```
+T-Code: /PM0/ABC_AI
+└── /PM0/ABBTX
+    ├── /PM0/BPRC → AI
+    ├── /PM0/BTXID → C_B_S_CALL_CORR, FHTEST3, P_B_S_COVCPCO_INFO, P_B_S_COV_INFO, P_B_S_CPK_INFO, P_B_S_POL_INFO, P_B_S_PPD_INFO
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3938. `/PM0/ABC_A_LIGHT`
+
+```
+T-Code: /PM0/ABC_A_LIGHT
+└── S_TCODE
+    └── TCD → /PM0/ABC_A
+```
+
+### 3939. `/PM0/ABC_BTX`
+
+```
+T-Code: /PM0/ABC_BTX
+└── S_TCODE
+    └── TCD → /PM0/ABC_A
+```
+
+### 3940. `/PM0/ABC_C`
+
+```
+T-Code: /PM0/ABC_C
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 1, 22, 51, 9
+    └── /PM0/ITEM → 1
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → C
+    ├── /PM0/BTXID → C_B_S_CALL_CORR, P_B_S_COVCPCO_INFO, P_B_S_COV_INFO, P_B_S_CPK_INFO, P_B_S_POL_INFO, P_B_S_POL_SUM, P_B_S_PPD_INFO
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/ABCOR
+    ├── ACTVT → 1, 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABCRE
+    ├── ACTVT → 1, 2
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → C
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3941. `/PM0/ABC_CF_SHOW_LOG`
+
+```
+T-Code: /PM0/ABC_CF_SHOW_LOG
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → (empty — maintain in PFCG)
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+```
+
+### 3942. `/PM0/ABC_CORR_PRINT`
+
+```
+T-Code: /PM0/ABC_CORR_PRINT
+└── /PM0/FPP
+    └── ACTVT → 1, 2, 3, 4
+```
+
+### 3943. `/PM0/ABC_D`
+
+```
+T-Code: /PM0/ABC_D
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 11, 12, 15, 17, 19, 26, 42
+    └── /PM0/ITEM → 1
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → D
+    ├── /PM0/BTXID → C_B_S_CALL_CORR, P_B_S_CALC_UPDATE, P_B_S_COVCPCO_INFO, P_B_S_COV_INFO, P_B_S_CPK_INFO, P_B_S_DPL, P_B_S_NOTE_EDIT, P_B_S_POL_INFO, P_B_S_POL_SUM, P_B_S_PPD_INFO, P_B_S_PPD_SUM, P_L_S_CALC_ANNUITY_SIMU, P_L_S_CALC_BNFTL, P_L_S_CALC_EWB, P_L_S_CALC_MDC, P_L_S_CALC_PGA, P_L_S_CALC_PLN, P_L_S_CALC_PXB, P_L_S_CALC_SUR, P_L_S_FND, P_L_S_FND_SHF_DCS
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/ABCHR
+    └── /PM0/ACTVT → REPLBUS
+├── /PM0/ABCOR
+    ├── ACTVT → 1, 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABCRE
+    ├── ACTVT → 1, 2
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+├── /PM0/ALASM
+    └── ACTVT → 3
+└── /PM0/APMPG
+    ├── /PM0/BPRC → D
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3944. `/PM0/ABC_DESIGN_FE`
+
+```
+T-Code: /PM0/ABC_DESIGN_FE
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 1
+    └── /PM0/ITEM → 1
+```
+
+### 3945. `/PM0/ABC_DP_D`
+
+```
+T-Code: /PM0/ABC_DP_D
+└── S_GUI
+    └── ACTVT → 4
+```
+
+### 3946. `/PM0/ABC_DP_M`
+
+```
+T-Code: /PM0/ABC_DP_M
+└── S_GUI
+    └── ACTVT → 4
+```
+
+### 3947. `/PM0/ABC_DP_N`
+
+```
+T-Code: /PM0/ABC_DP_N
+└── S_GUI
+    └── ACTVT → 4
+```
+
+### 3948. `/PM0/ABC_D_START`
+
+```
+T-Code: /PM0/ABC_D_START
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 11, 12, 16, 7
+    └── /PM0/ITEM → 1
+├── /PM0/ABCOR
+    ├── ACTVT → 1, 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABCRE
+    ├── ACTVT → 1, 2
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── S_DEVELOP
+    ├── ACTVT → 3
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 3949. `/PM0/ABC_FE`
+
+```
+T-Code: /PM0/ABC_FE
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 7, 8
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABCOR
+    ├── ACTVT → 1, 43, 80
+    └── COTYP_KK → BM01, BM50
+└── /PM0/ABCRE
+    ├── ACTVT → 1, 2
+    └── COTYP_KK → (empty — maintain in PFCG)
+```
+
+### 3950. `/PM0/ABC_IBC`
+
+```
+T-Code: /PM0/ABC_IBC
+└── /PM0/IBCT
+    ├── /PM0/APPLI → POLICY
+    ├── /PM0/ENTIT → (empty — maintain in PFCG)
+    ├── /PM0/OPERA → CHG, CRT, DEL, REL, SHO, TRM
+    ├── /PM0/TMPID → (empty — maintain in PFCG)
+    └── /PM0/TMPTY → (empty — maintain in PFCG)
+```
+
+### 3951. `/PM0/ABC_IBC_DSTPLAN`
+
+```
+T-Code: /PM0/ABC_IBC_DSTPLAN
+├── /PM0/IBCT
+    ├── /PM0/APPLI → DISTPLAN
+    ├── /PM0/ENTIT → (empty — maintain in PFCG)
+    ├── /PM0/OPERA → CHG, CRT, DEL, REL, SHO, TRM
+    ├── /PM0/TMPID → (empty — maintain in PFCG)
+    └── /PM0/TMPTY → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → 1, 2, 23, 3, 43, 5, 50, 6, 60, 65, 75, 78, 90
+    └── TTYPE → (empty — maintain in PFCG)
+```
+
+### 3952. `/PM0/ABC_IBC_IM_GNRL`
+
+```
+T-Code: /PM0/ABC_IBC_IM_GNRL
+├── /PM0/IBCT
+    ├── /PM0/APPLI → POLICY
+    ├── /PM0/ENTIT → (empty — maintain in PFCG)
+    ├── /PM0/OPERA → BK1, IMP, LOG, SHO
+    ├── /PM0/TMPID → (empty — maintain in PFCG)
+    └── /PM0/TMPTY → (empty — maintain in PFCG)
+├── S_ALV_LAYO
+    └── ACTVT → 23
+├── S_APPL_LOG
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── ALG_OBJECT → /PM0/IFBC
+    └── ALG_SUBOBJ → /PM0/IFBC_DEST, /PM0/IFBC_DEST_ENUM, /PM0/IFBC_IMP_ENU_C, /PM0/IFBC_IMP_ENU_D, /PM0/IFBC_IMP_ENU_E, /PM0/IFBC_IMP_ENU_S, /PM0/IFBC_IMP_LOCK, /PM0/IFBC_PBT, /PM0/IFBC_SRC_GNRL, /PM0/IFBC_SUBJCT
+└── S_TRANSPRT
+    ├── ACTVT → 1, 3, 43
+    └── TTYPE → CUST, TASK
+```
+
+### 3953. `/PM0/ABC_IBC_IM_MSG4`
+
+```
+T-Code: /PM0/ABC_IBC_IM_MSG4
+├── /PM0/IBCT
+    ├── /PM0/APPLI → POLICY
+    ├── /PM0/ENTIT → (empty — maintain in PFCG)
+    ├── /PM0/OPERA → IMP, LOG, SHO
+    ├── /PM0/TMPID → (empty — maintain in PFCG)
+    └── /PM0/TMPTY → (empty — maintain in PFCG)
+├── S_ALV_LAYO
+    └── ACTVT → 23
+├── S_ALV_LAYR
+    ├── ACTVT → 23
+    ├── HANDLE → (empty — maintain in PFCG)
+    ├── LOG_GROUP → (empty — maintain in PFCG)
+    └── REPORT → (empty — maintain in PFCG)
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /PM0/IFBC
+    └── ALG_SUBOBJ → /PM0/IFBC_DEST, /PM0/IFBC_DEST_ENUM, /PM0/IFBC_IMP_ENU_C, /PM0/IFBC_IMP_ENU_D, /PM0/IFBC_IMP_ENU_E, /PM0/IFBC_IMP_ENU_S, /PM0/IFBC_IMP_LOCK, /PM0/IFBC_PBT, /PM0/IFBC_SRC_MSG4, /PM0/IFBC_SUBJCT
+└── S_TRANSPRT
+    ├── ACTVT → 1, 2, 3, 5
+    └── TTYPE → CUST
+```
+
+### 3954. `/PM0/ABC_IBC_IM_NULL`
+
+```
+T-Code: /PM0/ABC_IBC_IM_NULL
+├── /PM0/IBCT
+    ├── /PM0/APPLI → POLICY
+    ├── /PM0/ENTIT → (empty — maintain in PFCG)
+    ├── /PM0/OPERA → IMP, LOG, SHO
+    ├── /PM0/TMPID → (empty — maintain in PFCG)
+    └── /PM0/TMPTY → (empty — maintain in PFCG)
+├── S_ALV_LAYO
+    └── ACTVT → 23
+├── S_ALV_LAYR
+    ├── ACTVT → 23
+    ├── HANDLE → (empty — maintain in PFCG)
+    ├── LOG_GROUP → (empty — maintain in PFCG)
+    └── REPORT → (empty — maintain in PFCG)
+├── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → /PM0/IFBC
+    └── ALG_SUBOBJ → /PM0/IFBC_DEST, /PM0/IFBC_DEST_ENUM, /PM0/IFBC_IMP_ENU_C, /PM0/IFBC_IMP_ENU_D, /PM0/IFBC_IMP_ENU_E, /PM0/IFBC_IMP_ENU_S, /PM0/IFBC_IMP_LOCK, /PM0/IFBC_PBT, /PM0/IFBC_SRC_MSG4, /PM0/IFBC_SUBJCT
+└── S_TRANSPRT
+    ├── ACTVT → 1, 2, 3, 5
+    └── TTYPE → CUST
+```
+
+### 3955. `/PM0/ABC_IBC_RECEIVE_GNRL`
+
+```
+T-Code: /PM0/ABC_IBC_RECEIVE_GNRL
+└── /PM0/IBCT
+    ├── /PM0/APPLI → DISTPLAN, POLICY
+    ├── /PM0/ENTIT → (empty — maintain in PFCG)
+    ├── /PM0/OPERA → AIM
+    ├── /PM0/TMPID → (empty — maintain in PFCG)
+    └── /PM0/TMPTY → (empty — maintain in PFCG)
+```
+
+### 3956. `/PM0/ABC_IBC_RFC_READ_TABLE`
+
+```
+T-Code: /PM0/ABC_IBC_RFC_READ_TABLE
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABC_IBC_RFC
+    └── RFC_TYPE → FUGR
+```
+
+### 3957. `/PM0/ABC_JOURNAL_QDS`
+
+```
+T-Code: /PM0/ABC_JOURNAL_QDS
+└── /PM0/ABBTX
+    ├── /PM0/BPRC → D
+    ├── /PM0/BTXID → (empty — maintain in PFCG)
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3958. `/PM0/ABC_MA`
+
+```
+T-Code: /PM0/ABC_MA
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → MA
+    ├── /PM0/BTXID → P_B_S_BN_PRM_AMD, P_B_S_CDA_AMD, P_B_S_CLS_AMD, P_B_S_COINS_AMD, P_B_S_COV_IFR_AMD, P_B_S_DDC_AMD, P_B_S_EXREV, P_B_S_PLAN_CANC, P_B_S_PMD_AMD, P_B_S_PPD_IFR_AMD, P_B_S_PPY_AMD, P_B_S_SCV_ICL, P_B_S_SPMDCT_AMD, P_B_S_TAXATTRIB_AMD, P_B_S_TVR_AMD
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/APMPG
+    ├── /PM0/BPRC → MA
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → 1, 2, 23, 3, 43, 5, 50, 6, 60, 65, 75, 78, 90
+    └── TTYPE → (empty — maintain in PFCG)
+```
+
+### 3959. `/PM0/ABC_MNR`
+
+```
+T-Code: /PM0/ABC_MNR
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 19
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A, N, V
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3960. `/PM0/ABC_MPO_GCL`
+
+```
+T-Code: /PM0/ABC_MPO_GCL
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → GD, GM, GN, MPO
+    ├── /PM0/BTXID → (empty — maintain in PFCG)
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → GD, GM, GN, MPO
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3961. `/PM0/ABC_MPO_GCP`
+
+```
+T-Code: /PM0/ABC_MPO_GCP
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → GD, GM, GN
+    ├── /PM0/BTXID → (empty — maintain in PFCG)
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → GD, GM, GN
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3962. `/PM0/ABC_MPO_GD`
+
+```
+T-Code: /PM0/ABC_MPO_GD
+├── /PM0/APMPG
+    ├── /PM0/BPRC → GD
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/IBCT
+    ├── /PM0/APPLI → POLICY
+    ├── /PM0/ENTIT → (empty — maintain in PFCG)
+    ├── /PM0/OPERA → SHO
+    ├── /PM0/TMPID → (empty — maintain in PFCG)
+    └── /PM0/TMPTY → (empty — maintain in PFCG)
+└── S_GUI
+    └── ACTVT → 4
+```
+
+### 3963. `/PM0/ABC_MPO_GM`
+
+```
+T-Code: /PM0/ABC_MPO_GM
+└── /PM0/APMPG
+    ├── /PM0/BPRC → GM
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3964. `/PM0/ABC_MPO_GN`
+
+```
+T-Code: /PM0/ABC_MPO_GN
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → GM, GN
+    ├── /PM0/BTXID → (empty — maintain in PFCG)
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/APMPG
+    ├── /PM0/BPRC → GN
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── /PM0/IBCT
+    ├── /PM0/APPLI → POLICY
+    ├── /PM0/ENTIT → (empty — maintain in PFCG)
+    ├── /PM0/OPERA → CHG, CRT, DEL, REL, SHO, TRM
+    ├── /PM0/TMPID → (empty — maintain in PFCG)
+    └── /PM0/TMPTY → (empty — maintain in PFCG)
+```
+
+### 3965. `/PM0/ABC_N`
+
+```
+T-Code: /PM0/ABC_N
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 1, 13, 14, 15, 16, 17, 18, 19, 2, 20, 22, 23, 24, 25, 26, 27, 28, 29, 3, 30, 31, 42, 43, 44, 47, 48, 7, 8
+    └── /PM0/ITEM → 1, 2, 3, 6, 7, 8
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → N
+    ├── /PM0/BTXID → C_B_S_CALL_CORR, P_B_S_COPY_PPD, P_B_S_COVCPCO_CRT, P_B_S_COVCPCO_CRT_EDIT, P_B_S_COVCPCO_DEL, P_B_S_COVCPCO_EDIT, P_B_S_COVCPCO_INFO, P_B_S_COVPAC_CRT_EDIT, P_B_S_COVPAC_EDIT, P_B_S_COVSHIFT, P_B_S_COV_BD_CRT, P_B_S_COV_CRT, P_B_S_COV_CRT_EDIT, P_B_S_COV_DEL, P_B_S_COV_EDIT, P_B_S_COV_INFO, P_B_S_COV_VDZ_CRT, P_B_S_COV_VDZ_CRT_EDIT, P_B_S_CPK_CRT, P_B_S_CPK_DEL, P_B_S_CPK_INFO, P_B_S_DATATRANS_BTX, P_B_S_DATATRANS_POL_BTX, P_B_S_DATATRANS_PPR_BTX, P_B_S_MACOST, P_B_S_MASTLAM, P_B_S_NOTE_EDIT, P_B_S_POLICY_EDIT, P_B_S_POLICY_SHIFT, P_B_S_POLPR_CRT_EDIT, P_B_S_POLPR_EDIT, P_B_S_POLPR_SHIFT, P_B_S_POLPR_VDZ_CRT_EDIT, P_B_S_POL_INFO, P_B_S_POL_SUM, P_B_S_PPDPAC_CRT, P_B_S_PPDPAC_DEL, P_B_S_PPD_BD_CRT, P_B_S_PPD_CRT, P_B_S_PPD_DEL, P_B_S_PPD_INFO, P_B_S_PPD_SUM, P_B_S_PPD_VDZ_CRT, P_L_S_CALC_MDC, P_L_S_PAC_CRT, P_L_S_PAC_DEL, P_L_S_PLN_IMP
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/ABCHR
+    └── /PM0/ACTVT → REPLBUS
+├── /PM0/ABCOR
+    ├── ACTVT → 1, 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABCRE
+    ├── ACTVT → 1, 2
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+├── /PM0/ALFSV
+    ├── ACTVT → 2
+    └── AUTH_FIELD → DEPINTEREST_VL
+├── /PM0/APMPG
+    ├── /PM0/BPRC → N
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── F_KKVK_VKT
+    ├── ACTVT → 3
+    └── VKTYP_KK → (empty — maintain in PFCG)
+├── I_ICL_CTYP
+    ├── ACTVT → 3
+    └── ICL_CLTYPE → (empty — maintain in PFCG)
+├── I_INSO_BEG
+    ├── ACTVT → 3
+    └── BEGRU → (empty — maintain in PFCG)
+└── S_WFAR_OBJ
+    ├── ACTVT → 1, 2, 3, 4, 6, 70
+    ├── OAARCHIV → (empty — maintain in PFCG)
+    ├── OADOKUMENT → (empty — maintain in PFCG)
+    └── OAOBJEKTE → (empty — maintain in PFCG)
+```
+
+### 3966. `/PM0/ABC_OM`
+
+```
+T-Code: /PM0/ABC_OM
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 1
+    └── /PM0/ITEM → 1
+├── /PM0/APMPG
+    ├── /PM0/BPRC → D
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── B_BUPA_RAT
+    ├── ACTVT → 3
+    └── BP_PER_IND → ' '
+├── B_BUPA_RLT
+    ├── ACTVT → 3
+    └── RLTYP → (empty — maintain in PFCG)
+└── B_CCARD
+    └── ACTVT → 3
+```
+
+### 3967. `/PM0/ABC_PLANEXDT`
+
+```
+T-Code: /PM0/ABC_PLANEXDT
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A, AI, C, D, GM, GN, N, R, U, V
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3968. `/PM0/ABC_PLANEXDTFLV`
+
+```
+T-Code: /PM0/ABC_PLANEXDTFLV
+└── S_GUI
+    └── ACTVT → 4
+```
+
+### 3969. `/PM0/ABC_PP_SHOW_LOG`
+
+```
+T-Code: /PM0/ABC_PP_SHOW_LOG
+└── S_APPL_LOG
+    ├── ACTVT → 3
+    ├── ALG_OBJECT → (empty — maintain in PFCG)
+    └── ALG_SUBOBJ → (empty — maintain in PFCG)
+```
+
+### 3970. `/PM0/ABC_QDS`
+
+```
+T-Code: /PM0/ABC_QDS
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → 3
+└── /PM0/APMPG
+    ├── /PM0/BPRC → D
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3971. `/PM0/ABC_QDS_ADDPOL`
+
+```
+T-Code: /PM0/ABC_QDS_ADDPOL
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → 3
+├── /PM0/APMPG
+    ├── /PM0/BPRC → D
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 3972. `/PM0/ABC_R`
+
+```
+T-Code: /PM0/ABC_R
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 1, 47, 9
+    └── /PM0/ITEM → 1, 2, 3, 6, 7, 8
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → R, R_IS
+    ├── /PM0/BTXID → BIZPRRESET, CANCELDATE, CNCLPREDAT, P_B_S_COVCPCO_INFO, P_B_S_COV_INFO, P_B_S_CPK_INFO, P_B_S_POLPR_SHIFT, P_B_S_POL_INFO, P_B_S_POL_SUM, P_B_S_PPD_INFO, P_B_S_PPD_SUM, P_B_S_SBJ_AMD, REACTIVATE, REINSTCNCL, REINSTPREM, REINSTTERM
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/ABCHR
+    └── /PM0/ACTVT → REPLBUS
+├── /PM0/ABCOR
+    ├── ACTVT → 1, 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABCRE
+    ├── ACTVT → 1, 2
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → R, R_IS
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3973. `/PM0/ABC_RESUME_BPRC`
+
+```
+T-Code: /PM0/ABC_RESUME_BPRC
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A, AI, N, V
+    ├── /PM0/BTXID → (empty — maintain in PFCG)
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/ABCHR
+    └── /PM0/ACTVT → REPLBUS
+├── /PM0/ALFSV
+    ├── ACTVT → 2
+    └── AUTH_FIELD → DEPINTEREST_VL
+├── /PM0/APMPG
+    ├── /PM0/BPRC → A, AI, N, V
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_GOS_ATT
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── BOROBJTYPE → (empty — maintain in PFCG)
+```
+
+### 3974. `/PM0/ABC_SCHEDRELDAT`
+
+```
+T-Code: /PM0/ABC_SCHEDRELDAT
+├── /PM0/APMPG
+    ├── /PM0/BPRC → E
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── S_BDS_DS
+    ├── ACTVT → 1, 2, 24, 25, 3, 30, 4, 5, 6, 70, 78, 82
+    ├── CLASSNAME → (empty — maintain in PFCG)
+    └── CLASSTYPE → (empty — maintain in PFCG)
+└── S_DATASET
+    ├── ACTVT → 33, 34, 6, A6, A7
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /PM0/ABC_SCHEDRELDAT
+```
+
+### 3975. `/PM0/ABC_UPDATE_D`
+
+```
+T-Code: /PM0/ABC_UPDATE_D
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 11, 12, 16, 7
+    └── /PM0/ITEM → 1
+├── /PM0/ABCOR
+    ├── ACTVT → 1, 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── /PM0/ABCRE
+    ├── ACTVT → 1, 2
+    └── COTYP_KK → (empty — maintain in PFCG)
+```
+
+### 3976. `/PM0/ABC_V`
+
+```
+T-Code: /PM0/ABC_V
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 1, 13, 22, 42, 47, 51, 9
+    └── /PM0/ITEM → 1, 6
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → V
+    ├── /PM0/BTXID → C_B_S_CALL_CORR, P_B_S_COVCPCO_CRT, P_B_S_COVCPCO_CRT_EDIT, P_B_S_COVCPCO_DEL, P_B_S_COVCPCO_EDIT, P_B_S_COVCPCO_INFO, P_B_S_COVPAC_CRT_EDIT, P_B_S_COVPAC_EDIT, P_B_S_COV_CRT, P_B_S_COV_CRT_EDIT, P_B_S_COV_DEL, P_B_S_COV_EDIT, P_B_S_COV_INFO, P_B_S_COV_VDZ_CRT, P_B_S_COV_VDZ_CRT_EDIT, P_B_S_CPK_CRT, P_B_S_CPK_DEL, P_B_S_CPK_INFO, P_B_S_MACOST, P_B_S_MASTLAM, P_B_S_NOTE_EDIT, P_B_S_POLICY_EDIT, P_B_S_POLPR_CRT_EDIT, P_B_S_POLPR_EDIT, P_B_S_POLPR_VDZ_CRT_EDIT, P_B_S_POL_INFO, P_B_S_POL_SUM, P_B_S_PPDPAC_CRT, P_B_S_PPDPAC_DEL, P_B_S_PPD_CRT, P_B_S_PPD_DEL, P_B_S_PPD_INFO, P_B_S_PPD_SUM, P_B_S_PPD_VDZ_CRT, P_L_S_CALC_MDC
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/ABCHR
+    └── /PM0/ACTVT → REPLBUS
+├── /PM0/ABCOR
+    ├── ACTVT → 1, 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABCRE
+    ├── ACTVT → 1, 2
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → V
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3977. `/PM0/ABC_XCHECK`
+
+```
+T-Code: /PM0/ABC_XCHECK
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_L_S_PLN_DCR, P_L_S_PLN_DIS, P_L_S_PLN_IMP, P_L_S_PLN_INC
+    └── /PM0/PRELG → POLPR_LL01, POLPR_LL03, POLPR_LL04, POLPR_LL05, POLPR_LL06, POLPR_LL07, POLPR_LL11, POLPR_LL12, POLPR_LL_F
+├── /PM0/ABCOR
+    ├── ACTVT → 1, 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A, AF, AI, B, C, CI, D, E, FD, FM, FN, FP, GD, GM, GN, M, MA, MPO, N, P, PP_R, Q, R, R_IS, T, U, V
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 3978. `/PM0/ABDYFPPEXIT`
+
+```
+T-Code: /PM0/ABDYFPPEXIT
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /PM0/ABDYFPPEXIT
+```
+
+### 3979. `/PM0/ABD_CREATE_DISTPL_DLG`
+
+```
+T-Code: /PM0/ABD_CREATE_DISTPL_DLG
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABD_INT_DISTPL
+    └── RFC_TYPE → FUGR
+```
+
+### 3980. `/PM0/ABD_DISPLAY_DISTPL`
+
+```
+T-Code: /PM0/ABD_DISPLAY_DISTPL
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABD_INT_DISTPL
+    └── RFC_TYPE → FUGR
+```
+
+### 3981. `/PM0/ABD_DP_GET_NEXT_NUMBER`
+
+```
+T-Code: /PM0/ABD_DP_GET_NEXT_NUMBER
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABD_INT_DISTPL
+    └── RFC_TYPE → FUGR
+```
+
+### 3982. `/PM0/ABD_GET_ALL_DP_VERSIONS`
+
+```
+T-Code: /PM0/ABD_GET_ALL_DP_VERSIONS
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABD_INT_DISTPL
+    └── RFC_TYPE → FUGR
+```
+
+### 3983. `/PM0/ABD_MODIFY_DISTPL_DLG`
+
+```
+T-Code: /PM0/ABD_MODIFY_DISTPL_DLG
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABD_INT_DISTPL
+    └── RFC_TYPE → FUGR
+```
+
+### 3984. `/PM0/ABH_PLIB_WL_AFTER_IMP`
+
+```
+T-Code: /PM0/ABH_PLIB_WL_AFTER_IMP
+├── /PM0/IBCT
+    ├── /PM0/APPLI → DISTPLAN, POLICY
+    ├── /PM0/ENTIT → (empty — maintain in PFCG)
+    ├── /PM0/OPERA → (empty — maintain in PFCG)
+    ├── /PM0/TMPID → (empty — maintain in PFCG)
+    └── /PM0/TMPTY → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABH_PLIB_SHM
+    └── RFC_TYPE → FUGR
+```
+
+### 3985. `/PM0/ABN04`
+
+```
+T-Code: /PM0/ABN04
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN04
+```
+
+### 3986. `/PM0/ABN08`
+
+```
+T-Code: /PM0/ABN08
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN08
+```
+
+### 3987. `/PM0/ABN09`
+
+```
+T-Code: /PM0/ABN09
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN09
+```
+
+### 3988. `/PM0/ABN10`
+
+```
+T-Code: /PM0/ABN10
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN10
+```
+
+### 3989. `/PM0/ABN14`
+
+```
+T-Code: /PM0/ABN14
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 2, 3
+    └── NROBJ → /PM0/ABN14
+```
+
+### 3990. `/PM0/ABN15`
+
+```
+T-Code: /PM0/ABN15
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /PM0/ABN15
+```
+
+### 3991. `/PM0/ABN16`
+
+```
+T-Code: /PM0/ABN16
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN16
+```
+
+### 3992. `/PM0/ABN17`
+
+```
+T-Code: /PM0/ABN17
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 2, 3
+    └── NROBJ → (empty — maintain in PFCG)
+```
+
+### 3993. `/PM0/ABN18`
+
+```
+T-Code: /PM0/ABN18
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN18
+```
+
+### 3994. `/PM0/ABN19`
+
+```
+T-Code: /PM0/ABN19
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN19
+```
+
+### 3995. `/PM0/ABN21`
+
+```
+T-Code: /PM0/ABN21
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN21
+```
+
+### 3996. `/PM0/ABN23`
+
+```
+T-Code: /PM0/ABN23
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN23
+```
+
+### 3997. `/PM0/ABN24`
+
+```
+T-Code: /PM0/ABN24
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN24
+```
+
+### 3998. `/PM0/ABN26`
+
+```
+T-Code: /PM0/ABN26
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN26
+```
+
+### 3999. `/PM0/ABN27`
+
+```
+T-Code: /PM0/ABN27
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN27
+```
+
+### 4000. `/PM0/ABN28`
+
+```
+T-Code: /PM0/ABN28
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN28
+```
+
+### 4001. `/PM0/ABN29`
+
+```
+T-Code: /PM0/ABN29
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /PM0/ABN29
+```
+
+### 4002. `/PM0/ABN30`
+
+```
+T-Code: /PM0/ABN30
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN30
+```
+
+### 4003. `/PM0/ABN31`
+
+```
+T-Code: /PM0/ABN31
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN31
+```
+
+### 4004. `/PM0/ABN32`
+
+```
+T-Code: /PM0/ABN32
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN32
+```
+
+### 4005. `/PM0/ABN33`
+
+```
+T-Code: /PM0/ABN33
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN33
+```
+
+### 4006. `/PM0/ABN34`
+
+```
+T-Code: /PM0/ABN34
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN34
+```
+
+### 4007. `/PM0/ABN35`
+
+```
+T-Code: /PM0/ABN35
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN35
+```
+
+### 4008. `/PM0/ABN36`
+
+```
+T-Code: /PM0/ABN36
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /PM0/ABN36
+```
+
+### 4009. `/PM0/ABN37`
+
+```
+T-Code: /PM0/ABN37
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN37
+```
+
+### 4010. `/PM0/ABN38`
+
+```
+T-Code: /PM0/ABN38
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN38
+```
+
+### 4011. `/PM0/ABN41`
+
+```
+T-Code: /PM0/ABN41
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN41
+```
+
+### 4012. `/PM0/ABN43`
+
+```
+T-Code: /PM0/ABN43
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /PM0/ABN43
+```
+
+### 4013. `/PM0/ABN44`
+
+```
+T-Code: /PM0/ABN44
+├── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN44
+```
+
+### 4014. `/PM0/ABN45`
+
+```
+T-Code: /PM0/ABN45
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN45
+```
+
+### 4015. `/PM0/ABN46`
+
+```
+T-Code: /PM0/ABN46
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN46
+```
+
+### 4016. `/PM0/ABN47`
+
+```
+T-Code: /PM0/ABN47
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN47
+```
+
+### 4017. `/PM0/ABN48`
+
+```
+T-Code: /PM0/ABN48
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN48
+```
+
+### 4018. `/PM0/ABN49`
+
+```
+T-Code: /PM0/ABN49
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN49
+```
+
+### 4019. `/PM0/ABN50`
+
+```
+T-Code: /PM0/ABN50
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN50
+```
+
+### 4020. `/PM0/ABN51`
+
+```
+T-Code: /PM0/ABN51
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN51
+```
+
+### 4021. `/PM0/ABN52`
+
+```
+T-Code: /PM0/ABN52
+└── S_NUMBER
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── NROBJ → /PM0/ABN52
+```
+
+### 4022. `/PM0/ABN54`
+
+```
+T-Code: /PM0/ABN54
+└── S_NUMBER
+    ├── ACTVT → 11, 13, 17, 2, 3
+    └── NROBJ → /PM0/ABN54
+```
+
+### 4023. `/PM0/ABN_GETCFDOCS`
+
+```
+T-Code: /PM0/ABN_GETCFDOCS
+└── /PM0/APMPG
+    ├── /PM0/BPRC → D
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 4024. `/PM0/ABN_GETNCDOCS`
+
+```
+T-Code: /PM0/ABN_GETNCDOCS
+└── /PM0/APMPG
+    ├── /PM0/BPRC → D
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 4025. `/PM0/ABO_OBJ_SEARCH`
+
+```
+T-Code: /PM0/ABO_OBJ_SEARCH
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 3
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABO_OM
+    └── RFC_TYPE → FUGR
+```
+
+### 4026. `/PM0/ABP_BTSDATE_D`
+
+```
+T-Code: /PM0/ABP_BTSDATE_D
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 52
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+```
+
+### 4027. `/PM0/ABP_CALL_EFG_PRINT`
+
+```
+T-Code: /PM0/ABP_CALL_EFG_PRINT
+└── /PM0/ABCOR
+    ├── ACTVT → 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+```
+
+### 4028. `/PM0/ABP_CRT_APPL_BG`
+
+```
+T-Code: /PM0/ABP_CRT_APPL_BG
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4029. `/PM0/ABP_DC_CREATE_DC_CLAS`
+
+```
+T-Code: /PM0/ABP_DC_CREATE_DC_CLAS
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABP_BTX_DC_ADMIN
+    └── RFC_TYPE → FUGR
+```
+
+### 4030. `/PM0/ABP_DC_CREATE_DC_INTF`
+
+```
+T-Code: /PM0/ABP_DC_CREATE_DC_INTF
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABP_BTX_DC_ADMIN
+    └── RFC_TYPE → FUGR
+```
+
+### 4031. `/PM0/ABP_DC_SYNTAX_CHECK`
+
+```
+T-Code: /PM0/ABP_DC_SYNTAX_CHECK
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABP_BTX_DC_ADMIN
+    └── RFC_TYPE → FUGR
+```
+
+### 4032. `/PM0/ABP_GEN_DC_CNTR`
+
+```
+T-Code: /PM0/ABP_GEN_DC_CNTR
+└── /PM0/RWP
+    ├── /PM0/RAPPL → 1
+    ├── /PM0/RBOML → (empty — maintain in PFCG)
+    ├── /PM0/RMODL → (empty — maintain in PFCG)
+    └── ACTVT → 64
+```
+
+### 4033. `/PM0/ABP_GEN_DC_CPIT`
+
+```
+T-Code: /PM0/ABP_GEN_DC_CPIT
+└── /PM0/RWP
+    ├── /PM0/RAPPL → 1
+    ├── /PM0/RBOML → (empty — maintain in PFCG)
+    ├── /PM0/RMODL → (empty — maintain in PFCG)
+    └── ACTVT → 64
+```
+
+### 4034. `/PM0/ABP_GEN_DX_FM_S`
+
+```
+T-Code: /PM0/ABP_GEN_DX_FM_S
+└── /PM0/RWP
+    ├── /PM0/RAPPL → 1
+    ├── /PM0/RBOML → (empty — maintain in PFCG)
+    ├── /PM0/RMODL → (empty — maintain in PFCG)
+    └── ACTVT → 64
+```
+
+### 4035. `/PM0/ABP_GEN_SERVICE`
+
+```
+T-Code: /PM0/ABP_GEN_SERVICE
+└── /PM0/RWP
+    ├── /PM0/RAPPL → 1
+    ├── /PM0/RBOML → (empty — maintain in PFCG)
+    ├── /PM0/RMODL → (empty — maintain in PFCG)
+    └── ACTVT → 64
+```
+
+### 4036. `/PM0/ABP_GET_MULTICONTRACT_DAT`
+
+```
+T-Code: /PM0/ABP_GET_MULTICONTRACT_DAT
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABP_MULTI_CONTRACT
+    └── RFC_TYPE → FUGR
+```
+
+### 4037. `/PM0/ABP_GET_REC_PREM_CONTRACT`
+
+```
+T-Code: /PM0/ABP_GET_REC_PREM_CONTRACT
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → D
+    ├── /PM0/BTXID → P_B_S_PPD_INFO
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → D
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 4038. `/PM0/ABP_PRINT_44011000`
+
+```
+T-Code: /PM0/ABP_PRINT_44011000
+├── /PM0/ABCOR
+    ├── ACTVT → 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABP_OPEN_FI
+    └── RFC_TYPE → FUGR
+```
+
+### 4039. `/PM0/ABP_RELEASE_APPL_BG`
+
+```
+T-Code: /PM0/ABP_RELEASE_APPL_BG
+├── /PM0/ABCHR
+    └── /PM0/ACTVT → REPLBUS
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4040. `/PM0/ABQ_COINS_DELETE`
+
+```
+T-Code: /PM0/ABQ_COINS_DELETE
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABQ_COINS
+    └── RFC_TYPE → FUGR
+```
+
+### 4041. `/PM0/ABQ_COINS_MASSMIGR`
+
+```
+T-Code: /PM0/ABQ_COINS_MASSMIGR
+├── /PM0/MIG
+    └── /PM0/MIGRA → X
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABQ_COINS
+    └── RFC_TYPE → FUGR
+```
+
+### 4042. `/PM0/ABQ_DEL_TMPDATA`
+
+```
+T-Code: /PM0/ABQ_DEL_TMPDATA
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 4043. `/PM0/ABQ_FP_Q_COIVAL`
+
+```
+T-Code: /PM0/ABQ_FP_Q_COIVAL
+├── /PM0/ABCOR
+    ├── ACTVT → 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 4044. `/PM0/ABQ_FP_Q_OBJVAL`
+
+```
+T-Code: /PM0/ABQ_FP_Q_OBJVAL
+├── /PM0/ABCOR
+    ├── ACTVT → 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 4045. `/PM0/ABQ_FP_Q_POLVAL`
+
+```
+T-Code: /PM0/ABQ_FP_Q_POLVAL
+├── /PM0/ABCOR
+    ├── ACTVT → 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69, W1, W2
+```
+
+### 4046. `/PM0/ABQ_MANMIG`
+
+```
+T-Code: /PM0/ABQ_MANMIG
+└── /PM0/APMPG
+    ├── /PM0/BPRC → Q
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 4047. `/PM0/ABQ_MIGCOR`
+
+```
+T-Code: /PM0/ABQ_MIGCOR
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 4048. `/PM0/ABQ_MIGTEST`
+
+```
+T-Code: /PM0/ABQ_MIGTEST
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 4049. `/PM0/ABQ_OBJM_MASSMIGR`
+
+```
+T-Code: /PM0/ABQ_OBJM_MASSMIGR
+├── /PM0/MIG
+    └── /PM0/MIGRA → X
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABQ_OBJM
+    └── RFC_TYPE → FUGR
+```
+
+### 4050. `/PM0/ABQ_OBJ_MIGTEST`
+
+```
+T-Code: /PM0/ABQ_OBJ_MIGTEST
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 4051. `/PM0/ABQ_POL_MASSMIGR`
+
+```
+T-Code: /PM0/ABQ_POL_MASSMIGR
+├── /PM0/MIG
+    └── /PM0/MIGRA → X
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABQ_POLMGM
+    └── RFC_TYPE → FUGR
+```
+
+### 4052. `/PM0/ABR_METHODS`
+
+```
+T-Code: /PM0/ABR_METHODS
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 4053. `/PM0/ABR_MTHENT`
+
+```
+T-Code: /PM0/ABR_MTHENT
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 4054. `/PM0/ABR_MTHPAR`
+
+```
+T-Code: /PM0/ABR_MTHPAR
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 4055. `/PM0/ABR_STRAT`
+
+```
+T-Code: /PM0/ABR_STRAT
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 4056. `/PM0/ABR_TOOLKIT`
+
+```
+T-Code: /PM0/ABR_TOOLKIT
+└── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → &NC&
+```
+
+### 4057. `/PM0/ABT_APIF_CREATE_RETRIEVE`
+
+```
+T-Code: /PM0/ABT_APIF_CREATE_RETRIEVE
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4058. `/PM0/ABT_APIF_REFUSE_APPL`
+
+```
+T-Code: /PM0/ABT_APIF_REFUSE_APPL
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_APIF
+    └── RFC_TYPE → FUGR
+```
+
+### 4059. `/PM0/ABT_APIF_REL_FB`
+
+```
+T-Code: /PM0/ABT_APIF_REL_FB
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_APIF
+    └── RFC_TYPE → FUGR
+```
+
+### 4060. `/PM0/ABT_CM_CALL_PM_DISCLOSURE`
+
+```
+T-Code: /PM0/ABT_CM_CALL_PM_DISCLOSURE
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4061. `/PM0/ABT_CM_CHECK_CONTR_LOCK`
+
+```
+T-Code: /PM0/ABT_CM_CHECK_CONTR_LOCK
+└── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 4062. `/PM0/ABT_CM_FIND_COVERAGES`
+
+```
+T-Code: /PM0/ABT_CM_FIND_COVERAGES
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4063. `/PM0/ABT_CM_GET_AMEND_PROC`
+
+```
+T-Code: /PM0/ABT_CM_GET_AMEND_PROC
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4064. `/PM0/ABT_CM_GET_BASIC_DATA`
+
+```
+T-Code: /PM0/ABT_CM_GET_BASIC_DATA
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4065. `/PM0/ABT_CM_GET_CHECK_DATA`
+
+```
+T-Code: /PM0/ABT_CM_GET_CHECK_DATA
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4066. `/PM0/ABT_CM_GET_CONTRACT_DATA`
+
+```
+T-Code: /PM0/ABT_CM_GET_CONTRACT_DATA
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4067. `/PM0/ABT_CM_GET_CREDITOR_DATA`
+
+```
+T-Code: /PM0/ABT_CM_GET_CREDITOR_DATA
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4068. `/PM0/ABT_CM_GET_DISTRBT_PLAN`
+
+```
+T-Code: /PM0/ABT_CM_GET_DISTRBT_PLAN
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4069. `/PM0/ABT_CM_GET_POLICY_DATA`
+
+```
+T-Code: /PM0/ABT_CM_GET_POLICY_DATA
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4070. `/PM0/ABT_CM_GET_POLICY_NR_DATA`
+
+```
+T-Code: /PM0/ABT_CM_GET_POLICY_NR_DATA
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4071. `/PM0/ABT_CM_GET_POLPR_NR_DATA`
+
+```
+T-Code: /PM0/ABT_CM_GET_POLPR_NR_DATA
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4072. `/PM0/ABT_CM_GET_PRT_PENSION`
+
+```
+T-Code: /PM0/ABT_CM_GET_PRT_PENSION
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4073. `/PM0/ABT_CM_GET_PRT_PREM_WAIV`
+
+```
+T-Code: /PM0/ABT_CM_GET_PRT_PREM_WAIV
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4074. `/PM0/ABT_CM_LOCK_CONTRACT`
+
+```
+T-Code: /PM0/ABT_CM_LOCK_CONTRACT
+└── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 4075. `/PM0/ABT_CM_PLAN_COV_REVERSAL`
+
+```
+T-Code: /PM0/ABT_CM_PLAN_COV_REVERSAL
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4076. `/PM0/ABT_CM_POLICY_DETAILS`
+
+```
+T-Code: /PM0/ABT_CM_POLICY_DETAILS
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── B_BUPA_RLT
+    ├── ACTVT → 3
+    └── RLTYP → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM_B
+    └── RFC_TYPE → FUGR
+```
+
+### 4077. `/PM0/ABT_CM_SET_CLAIM_DATA`
+
+```
+T-Code: /PM0/ABT_CM_SET_CLAIM_DATA
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4078. `/PM0/ABT_CM_UNLOCK_CONTRACT`
+
+```
+T-Code: /PM0/ABT_CM_UNLOCK_CONTRACT
+└── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 4079. `/PM0/ABT_COPY_CS`
+
+```
+T-Code: /PM0/ABT_COPY_CS
+└── S_DEVELOP
+    ├── ACTVT → 3, 7
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 4080. `/PM0/ABT_INFO_D`
+
+```
+T-Code: /PM0/ABT_INFO_D
+└── S_GUI
+    └── ACTVT → 4
+```
+
+### 4081. `/PM0/ABT_INFO_P`
+
+```
+T-Code: /PM0/ABT_INFO_P
+└── S_GUI
+    └── ACTVT → 4
+```
+
+### 4082. `/PM0/ABT_PPO_PROC`
+
+```
+T-Code: /PM0/ABT_PPO_PROC
+├── /SAPPO/FLT
+    ├── /SAPPO/CMP → FS-PM
+    ├── /SAPPO/FLT → ALL
+    └── ACTVT → 2
+└── /SAPPO/ORD
+    ├── /SAPPO/BPR → (empty — maintain in PFCG)
+    ├── /SAPPO/CMP → FS-PM
+    └── ACTVT → 2, 3, 6, A8, B2
+```
+
+### 4083. `/PM0/ABT_PPO_SHOW`
+
+```
+T-Code: /PM0/ABT_PPO_SHOW
+├── /SAPPO/FLT
+    ├── /SAPPO/CMP → FS-PM
+    ├── /SAPPO/FLT → ALL
+    └── ACTVT → 2
+└── /SAPPO/ORD
+    ├── /SAPPO/BPR → (empty — maintain in PFCG)
+    ├── /SAPPO/CMP → FS-PM
+    └── ACTVT → 2, 3, 6, A8, B2
+```
+
+### 4084. `/PM0/ABT_PROP_INSOBJ_CANCEL`
+
+```
+T-Code: /PM0/ABT_PROP_INSOBJ_CANCEL
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 2
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_INSOBJ
+    └── RFC_TYPE → FUGR
+```
+
+### 4085. `/PM0/ABT_PROP_INSOBJ_CHANGE`
+
+```
+T-Code: /PM0/ABT_PROP_INSOBJ_CHANGE
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 2
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_INSOBJ
+    └── RFC_TYPE → FUGR
+```
+
+### 4086. `/PM0/ABT_PROP_INSOBJ_CHGEFFDT`
+
+```
+T-Code: /PM0/ABT_PROP_INSOBJ_CHGEFFDT
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 2
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_INSOBJ
+    └── RFC_TYPE → FUGR
+```
+
+### 4087. `/PM0/ABT_PROP_INSOBJ_CREATE`
+
+```
+T-Code: /PM0/ABT_PROP_INSOBJ_CREATE
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 1
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_INSOBJ
+    └── RFC_TYPE → FUGR
+```
+
+### 4088. `/PM0/ABT_PROP_INSOBJ_LOAD`
+
+```
+T-Code: /PM0/ABT_PROP_INSOBJ_LOAD
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 3
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABT_INSOBJ
+    └── RFC_TYPE → FUGR
+```
+
+### 4089. `/PM0/ABT_QA_OBN_POL`
+
+```
+T-Code: /PM0/ABT_QA_OBN_POL
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A, AI, B, C, CI, D, E, FD, FM, FN, FP, GD, GM, GN, M, MA, MPO, N, P, PP_R, Q, R, R_IS, T, U, V
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 4090. `/PM0/ABT_READ_CHANMOD_DATA`
+
+```
+T-Code: /PM0/ABT_READ_CHANMOD_DATA
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_DATA_REPL
+    └── RFC_TYPE → FUGR
+```
+
+### 4091. `/PM0/ABT_SVC_APPL_FIND`
+
+```
+T-Code: /PM0/ABT_SVC_APPL_FIND
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4092. `/PM0/ABT_SVC_BNFCRY_AMD`
+
+```
+T-Code: /PM0/ABT_SVC_BNFCRY_AMD
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_B_S_BNY_AMD
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → 3
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4093. `/PM0/ABT_SVC_BN_PRM_AMD`
+
+```
+T-Code: /PM0/ABT_SVC_BN_PRM_AMD
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4094. `/PM0/ABT_SVC_CANCEL`
+
+```
+T-Code: /PM0/ABT_SVC_CANCEL
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → C
+    └── /PM0/PRELG → POL_LL
+```
+
+### 4095. `/PM0/ABT_SVC_CANCREQ_CANC`
+
+```
+T-Code: /PM0/ABT_SVC_CANCREQ_CANC
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → C
+    └── /PM0/PRELG → POL_LL
+```
+
+### 4096. `/PM0/ABT_SVC_CANCREQ_EXECUTE`
+
+```
+T-Code: /PM0/ABT_SVC_CANCREQ_EXECUTE
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → C
+    └── /PM0/PRELG → POL_LL
+```
+
+### 4097. `/PM0/ABT_SVC_CANCREQ_RTRV`
+
+```
+T-Code: /PM0/ABT_SVC_CANCREQ_RTRV
+└── /PM0/APMPG
+    ├── /PM0/BPRC → C
+    └── /PM0/PRELG → POL_LL
+```
+
+### 4098. `/PM0/ABT_SVC_CBCPAYR_AMD`
+
+```
+T-Code: /PM0/ABT_SVC_CBCPAYR_AMD
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_CHANGE
+    └── RFC_TYPE → FUGR
+```
+
+### 4099. `/PM0/ABT_SVC_CDA_AMD`
+
+```
+T-Code: /PM0/ABT_SVC_CDA_AMD
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_B_S_CDA_AMD
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4100. `/PM0/ABT_SVC_CDR_AMD`
+
+```
+T-Code: /PM0/ABT_SVC_CDR_AMD
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4101. `/PM0/ABT_SVC_CHGBTXLIST_GET`
+
+```
+T-Code: /PM0/ABT_SVC_CHGBTXLIST_GET
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_CHGREQ
+    └── RFC_TYPE → FUGR
+```
+
+### 4102. `/PM0/ABT_SVC_CHGREQ_CANC`
+
+```
+T-Code: /PM0/ABT_SVC_CHGREQ_CANC
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4103. `/PM0/ABT_SVC_CHGREQ_CRT`
+
+```
+T-Code: /PM0/ABT_SVC_CHGREQ_CRT
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_CHGREQ
+    └── RFC_TYPE → FUGR
+```
+
+### 4104. `/PM0/ABT_SVC_CHGREQ_EXECUTE`
+
+```
+T-Code: /PM0/ABT_SVC_CHGREQ_EXECUTE
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_CHGREQ
+    └── RFC_TYPE → FUGR
+```
+
+### 4105. `/PM0/ABT_SVC_CHGREQ_RTRV`
+
+```
+T-Code: /PM0/ABT_SVC_CHGREQ_RTRV
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_CHGREQ
+    └── RFC_TYPE → FUGR
+```
+
+### 4106. `/PM0/ABT_SVC_COVCPCO_EXC`
+
+```
+T-Code: /PM0/ABT_SVC_COVCPCO_EXC
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_B_S_COVCPCO_EXC
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4107. `/PM0/ABT_SVC_COV_IFR_AMD`
+
+```
+T-Code: /PM0/ABT_SVC_COV_IFR_AMD
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_B_S_COV_IFR_AMD
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4108. `/PM0/ABT_SVC_DDC_AMD`
+
+```
+T-Code: /PM0/ABT_SVC_DDC_AMD
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_B_S_DDC_AMD
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4109. `/PM0/ABT_SVC_DRS_AMD`
+
+```
+T-Code: /PM0/ABT_SVC_DRS_AMD
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_B_S_DRS_AMD
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → 3
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4110. `/PM0/ABT_SVC_INPI_CALCULATE`
+
+```
+T-Code: /PM0/ABT_SVC_INPI_CALCULATE
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4111. `/PM0/ABT_SVC_INPI_CHANGE`
+
+```
+T-Code: /PM0/ABT_SVC_INPI_CHANGE
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_INS_POL_ISS
+    └── RFC_TYPE → FUGR
+```
+
+### 4112. `/PM0/ABT_SVC_INPI_CHANGE_CALC`
+
+```
+T-Code: /PM0/ABT_SVC_INPI_CHANGE_CALC
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_INS_POL_ISS
+    └── RFC_TYPE → FUGR
+```
+
+### 4113. `/PM0/ABT_SVC_INPI_DET_CBCCAT`
+
+```
+T-Code: /PM0/ABT_SVC_INPI_DET_CBCCAT
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_INS_POL_ISS
+    └── RFC_TYPE → FUGR
+```
+
+### 4114. `/PM0/ABT_SVC_INPI_REQUEST_CBC`
+
+```
+T-Code: /PM0/ABT_SVC_INPI_REQUEST_CBC
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_INS_POL_ISS
+    └── RFC_TYPE → FUGR
+```
+
+### 4115. `/PM0/ABT_SVC_INPI_RETRIEVE`
+
+```
+T-Code: /PM0/ABT_SVC_INPI_RETRIEVE
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_INS_POL_ISS
+    └── RFC_TYPE → FUGR
+```
+
+### 4116. `/PM0/ABT_SVC_INPI_SIM_COMMIS`
+
+```
+T-Code: /PM0/ABT_SVC_INPI_SIM_COMMIS
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_INS_POL_ISS
+    └── RFC_TYPE → FUGR
+```
+
+### 4117. `/PM0/ABT_SVC_IO_CREATE`
+
+```
+T-Code: /PM0/ABT_SVC_IO_CREATE
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 1
+    └── /PM0/ITEM → 0
+```
+
+### 4118. `/PM0/ABT_SVC_IO_FIND`
+
+```
+T-Code: /PM0/ABT_SVC_IO_FIND
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 3
+    └── /PM0/ITEM → 0
+```
+
+### 4119. `/PM0/ABT_SVC_IO_READ`
+
+```
+T-Code: /PM0/ABT_SVC_IO_READ
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 3
+    └── /PM0/ITEM → 1
+```
+
+### 4120. `/PM0/ABT_SVC_IPRP_DET_CBCCAT`
+
+```
+T-Code: /PM0/ABT_SVC_IPRP_DET_CBCCAT
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → R, R_IS
+    ├── /PM0/BTXID → REINSTLAPSEWOG
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4121. `/PM0/ABT_SVC_IPRP_GET_PRM_OVVW`
+
+```
+T-Code: /PM0/ABT_SVC_IPRP_GET_PRM_OVVW
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4122. `/PM0/ABT_SVC_IPRP_IPRR_CANCEL`
+
+```
+T-Code: /PM0/ABT_SVC_IPRP_IPRR_CANCEL
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4123. `/PM0/ABT_SVC_IPRP_IPRR_EXECUTE`
+
+```
+T-Code: /PM0/ABT_SVC_IPRP_IPRR_EXECUTE
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4124. `/PM0/ABT_SVC_IPRP_REIN_LPS_WOG`
+
+```
+T-Code: /PM0/ABT_SVC_IPRP_REIN_LPS_WOG
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → R, R_IS
+    ├── /PM0/BTXID → REINSTLAPSEWOG
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/ABCOR
+    ├── ACTVT → 1, 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → R, R_IS
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 4125. `/PM0/ABT_SVC_IPRP_REQUEST_CBC`
+
+```
+T-Code: /PM0/ABT_SVC_IPRP_REQUEST_CBC
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → R, R_IS
+    ├── /PM0/BTXID → REINSTLAPSEWOG
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4126. `/PM0/ABT_SVC_IPRP_RETRIEVE`
+
+```
+T-Code: /PM0/ABT_SVC_IPRP_RETRIEVE
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4127. `/PM0/ABT_SVC_ISS_EXECUTE`
+
+```
+T-Code: /PM0/ABT_SVC_ISS_EXECUTE
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 7
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+├── /PM0/APMPG
+    ├── /PM0/BPRC → N
+    └── /PM0/PRELG → POL_LL, POL_LP
+└── /PM0/DUCON
+    ├── /PM0/PPGRP → AAA
+    └── /PM0/SVGRP → (empty — maintain in PFCG)
+```
+
+### 4128. `/PM0/ABT_SVC_LIMIT_AMD`
+
+```
+T-Code: /PM0/ABT_SVC_LIMIT_AMD
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4129. `/PM0/ABT_SVC_LOCK_SCHEME`
+
+```
+T-Code: /PM0/ABT_SVC_LOCK_SCHEME
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_POLICY
+    └── RFC_TYPE → FUGR
+```
+
+### 4130. `/PM0/ABT_SVC_MODEL_CALCULATION`
+
+```
+T-Code: /PM0/ABT_SVC_MODEL_CALCULATION
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → N
+    ├── /PM0/BTXID → P_L_S_CALC_MDC
+    └── /PM0/PRELG → PPD_LL
+└── /PM0/APMPG
+    ├── /PM0/BPRC → N
+    └── /PM0/PRELG → POL_LL
+```
+
+### 4131. `/PM0/ABT_SVC_MPO_FIND`
+
+```
+T-Code: /PM0/ABT_SVC_MPO_FIND
+└── /PM0/ABBTX
+    ├── /PM0/BPRC → GD
+    ├── /PM0/BTXID → (empty — maintain in PFCG)
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 4132. `/PM0/ABT_SVC_MPO_READ`
+
+```
+T-Code: /PM0/ABT_SVC_MPO_READ
+└── /PM0/ABBTX
+    ├── /PM0/BPRC → GD
+    ├── /PM0/BTXID → (empty — maintain in PFCG)
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 4133. `/PM0/ABT_SVC_MRT_CAN`
+
+```
+T-Code: /PM0/ABT_SVC_MRT_CAN
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_CHANGE
+    └── RFC_TYPE → FUGR
+```
+
+### 4134. `/PM0/ABT_SVC_MRT_XCT`
+
+```
+T-Code: /PM0/ABT_SVC_MRT_XCT
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_CHANGE
+    └── RFC_TYPE → FUGR
+```
+
+### 4135. `/PM0/ABT_SVC_NOTEREQ_PROC_READ`
+
+```
+T-Code: /PM0/ABT_SVC_NOTEREQ_PROC_READ
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_JOURNAL
+    └── RFC_TYPE → FUGR
+```
+
+### 4136. `/PM0/ABT_SVC_PMD_CHANGE`
+
+```
+T-Code: /PM0/ABT_SVC_PMD_CHANGE
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_B_S_PMD_AMD
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4137. `/PM0/ABT_SVC_POLHLDR_CHANGE`
+
+```
+T-Code: /PM0/ABT_SVC_POLHLDR_CHANGE
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_B_S_PHD_AMD
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4138. `/PM0/ABT_SVC_POLPR_CRT`
+
+```
+T-Code: /PM0/ABT_SVC_POLPR_CRT
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_B_S_POLPR_CRT
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → 3
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4139. `/PM0/ABT_SVC_POL_FIND`
+
+```
+T-Code: /PM0/ABT_SVC_POL_FIND
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_POLICY
+    └── RFC_TYPE → FUGR
+```
+
+### 4140. `/PM0/ABT_SVC_POL_READ`
+
+```
+T-Code: /PM0/ABT_SVC_POL_READ
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 3
+    └── /PM0/ITEM → 2
+└── /PM0/APMPG
+    ├── /PM0/BPRC → D
+    └── /PM0/PRELG → POL_LL, POL_LP
+```
+
+### 4141. `/PM0/ABT_SVC_PPY_AMD`
+
+```
+T-Code: /PM0/ABT_SVC_PPY_AMD
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_B_S_PPY_AMD
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4142. `/PM0/ABT_SVC_PXN_AMD`
+
+```
+T-Code: /PM0/ABT_SVC_PXN_AMD
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_CHANGE
+    └── RFC_TYPE → FUGR
+```
+
+### 4143. `/PM0/ABT_SVC_PXN_REM`
+
+```
+T-Code: /PM0/ABT_SVC_PXN_REM
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_CHANGE
+    └── RFC_TYPE → FUGR
+```
+
+### 4144. `/PM0/ABT_SVC_REQCBC`
+
+```
+T-Code: /PM0/ABT_SVC_REQCBC
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_CHANGE
+    └── RFC_TYPE → FUGR
+```
+
+### 4145. `/PM0/ABT_SVC_SALESPC`
+
+```
+T-Code: /PM0/ABT_SVC_SALESPC
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_CHANGE
+    └── RFC_TYPE → FUGR
+```
+
+### 4146. `/PM0/ABT_SVC_SALESPROD_FIND`
+
+```
+T-Code: /PM0/ABT_SVC_SALESPROD_FIND
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_DATA_REPL
+    └── RFC_TYPE → FUGR
+```
+
+### 4147. `/PM0/ABT_SVC_SCV_ICL`
+
+```
+T-Code: /PM0/ABT_SVC_SCV_ICL
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_CHANGE
+    └── RFC_TYPE → FUGR
+```
+
+### 4148. `/PM0/ABT_SVC_SET_CBC_CATEGORY`
+
+```
+T-Code: /PM0/ABT_SVC_SET_CBC_CATEGORY
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_CHANGE
+    └── RFC_TYPE → FUGR
+```
+
+### 4149. `/PM0/ABT_SVC_SMPL_APPL_NR_CONV`
+
+```
+T-Code: /PM0/ABT_SVC_SMPL_APPL_NR_CONV
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_SAMPLE_APPL
+    └── RFC_TYPE → FUGR
+```
+
+### 4150. `/PM0/ABT_SVC_SPMDCT_AMD`
+
+```
+T-Code: /PM0/ABT_SVC_SPMDCT_AMD
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_B_S_SPMDCT_AMD
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → 3
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4151. `/PM0/ABT_SVC_UNLOCK_SCHEME`
+
+```
+T-Code: /PM0/ABT_SVC_UNLOCK_SCHEME
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABT_SVC_POLICY
+    └── RFC_TYPE → FUGR
+```
+
+### 4152. `/PM0/ABT_SWITCH_INT`
+
+```
+T-Code: /PM0/ABT_SWITCH_INT
+└── S_DEVELOP
+    ├── ACTVT → 3
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 4153. `/PM0/ABT_WF_BP_CHANGE`
+
+```
+T-Code: /PM0/ABT_WF_BP_CHANGE
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 54
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+└── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+```
+
+### 4154. `/PM0/ABU_CBREX`
+
+```
+T-Code: /PM0/ABU_CBREX
+├── S_CTS_ADMI
+    └── CTS_ADMFCT → EPS1
+├── S_DATASET
+    ├── ACTVT → 33, 34, 6, A6, A7
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → (empty — maintain in PFCG)
+├── S_DEVELOP
+    ├── ACTVT → 1, 16, 2, 3, 40, 41, 42, 6, 7, 70, 90, 94, L0, MA
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+├── S_DOKU_AUT
+    ├── DOKU_ACT → ACTIVATE, FINAL_VERS, RAW_VERS
+    ├── DOKU_DEVCL → (empty — maintain in PFCG)
+    └── DOKU_MODE → MAINTAIN, TRANSLATE
+├── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TRANSLAT
+    ├── ACTVT → 2, A8
+    ├── TLANGUAGE → 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, a, b, c, d, i
+    └── TRANOBJ → LONG, SHRT
+```
+
+### 4155. `/PM0/ABU_CSTNSPC`
+
+```
+T-Code: /PM0/ABU_CSTNSPC
+└── S_GUI
+    └── ACTVT → 2, 4
+```
+
+### 4156. `/PM0/ABU_CTKCLUS`
+
+```
+T-Code: /PM0/ABU_CTKCLUS
+└── S_GUI
+    └── ACTVT → 2, 4
+```
+
+### 4157. `/PM0/ABU_IBC_XML_EXPORT`
+
+```
+T-Code: /PM0/ABU_IBC_XML_EXPORT
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABU_IBC_XML_EXP
+    └── RFC_TYPE → FUGR
+```
+
+### 4158. `/PM0/ABU_PBCBIMP`
+
+```
+T-Code: /PM0/ABU_PBCBIMP
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TABLE → /PM0/ABU_PBCBIMP
+```
+
+### 4159. `/PM0/ABU_PBIZPRS`
+
+```
+T-Code: /PM0/ABU_PBIZPRS
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 4160. `/PM0/ABU_PDETLOG`
+
+```
+T-Code: /PM0/ABU_PDETLOG
+├── S_BDS_DS
+    ├── ACTVT → 1, 2, 24, 25, 3, 30, 4, 5, 6, 70, 78, 82
+    ├── CLASSNAME → (empty — maintain in PFCG)
+    └── CLASSTYPE → BO, CL, OT
+├── S_CTS_ADMI
+    └── CTS_ADMFCT → IMPS, IMPT, INIT, QTEA, TADD, TADM
+├── S_DATASET
+    ├── ACTVT → 33, 34, 6, A6, A7
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → (empty — maintain in PFCG)
+├── S_DEVELOP
+    ├── ACTVT → 1, 16, 2, 3, 40, 41, 42, 6, 7, 70, 90, 94, L0, MA
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+├── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+├── S_PROJECT
+    ├── ACTVT → 2, 23, 3, 6, 71, 76, 78, A3
+    ├── APPL_COMP → (empty — maintain in PFCG)
+    ├── PROJECT_ID → (empty — maintain in PFCG)
+    └── PROJ_CONF → (empty — maintain in PFCG)
+├── S_TABU_DIS
+    ├── ACTVT → 2, 3, BD
+    └── DICBERCLS → (empty — maintain in PFCG)
+├── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /PM0/ABU_PDETLOG
+├── S_TABU_RFC
+    └── ACTVT → 1, 2, 3, 6
+├── S_TRANSLAT
+    ├── ACTVT → 2
+    ├── TLANGUAGE → (empty — maintain in PFCG)
+    └── TRANOBJ → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → 1, 2, 23, 3, 43, 5, 50, 6, 60, 65, 75, 78, 90
+    └── TTYPE → (empty — maintain in PFCG)
+```
+
+### 4161. `/PM0/ABU_PDISALV`
+
+```
+T-Code: /PM0/ABU_PDISALV
+├── S_TABU_DIS
+    ├── ACTVT → 2
+    └── DICBERCLS → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /PM0/ABU_PDISALV
+```
+
+### 4162. `/PM0/ABU_PDISPAC`
+
+```
+T-Code: /PM0/ABU_PDISPAC
+└── S_TABU_DIS
+    ├── ACTVT → 3
+    └── DICBERCLS → (empty — maintain in PFCG)
+```
+
+### 4163. `/PM0/ABU_PLATOBJ`
+
+```
+T-Code: /PM0/ABU_PLATOBJ
+├── S_DEVELOP
+    ├── ACTVT → 1
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+└── S_TABU_NAM
+    ├── ACTVT → 2, 3
+    └── TABLE → /PM0/ABU_PLATOBJ
+```
+
+### 4164. `/PM0/ABX_BTXCUST_CI`
+
+```
+T-Code: /PM0/ABX_BTXCUST_CI
+├── /PM0/RWP
+    ├── /PM0/RAPPL → 1, 2, 99999
+    ├── /PM0/RBOML → (empty — maintain in PFCG)
+    ├── /PM0/RMODL → (empty — maintain in PFCG)
+    └── ACTVT → 1, 2, 3, 64
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 4165. `/PM0/ABX_BTX_INQ_ALL_LOAD`
+
+```
+T-Code: /PM0/ABX_BTX_INQ_ALL_LOAD
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → D
+    ├── /PM0/BTXID → (empty — maintain in PFCG)
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/APMPG
+    ├── /PM0/BPRC → D
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABX_REMOTEINQUIRY
+    └── RFC_TYPE → FUGR
+```
+
+### 4166. `/PM0/ABX_BTX_INQ_PERS_LOAD`
+
+```
+T-Code: /PM0/ABX_BTX_INQ_PERS_LOAD
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → D
+    ├── /PM0/BTXID → (empty — maintain in PFCG)
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/APMPG
+    ├── /PM0/BPRC → D
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABX_REMOTEINQUIRY
+    └── RFC_TYPE → FUGR
+```
+
+### 4167. `/PM0/ABX_INDEX_READ`
+
+```
+T-Code: /PM0/ABX_INDEX_READ
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 55
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+```
+
+### 4168. `/PM0/ABX_INDEX_WRITE`
+
+```
+T-Code: /PM0/ABX_INDEX_WRITE
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 55
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+```
+
+### 4169. `/PM0/ABX_INT_FF`
+
+```
+T-Code: /PM0/ABX_INT_FF
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 4170. `/PM0/ABX_INT_LOB`
+
+```
+T-Code: /PM0/ABX_INT_LOB
+└── S_GUI
+    └── ACTVT → 2, 4, 60, 61
+```
+
+### 4171. `/PM0/ABX_SBTCUST_CI`
+
+```
+T-Code: /PM0/ABX_SBTCUST_CI
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 4172. `/PM0/ABY_FPP_BI`
+
+```
+T-Code: /PM0/ABY_FPP_BI
+├── /PM0/ABCOR
+    ├── ACTVT → 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69, W2
+```
+
+### 4173. `/PM0/ABY_FPP_BI_C`
+
+```
+T-Code: /PM0/ABY_FPP_BI_C
+├── /PM0/ABCOR
+    ├── ACTVT → 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69, W1, W2
+```
+
+### 4174. `/PM0/ABY_FPP_BI_M`
+
+```
+T-Code: /PM0/ABY_FPP_BI_M
+├── /PM0/ABCOR
+    ├── ACTVT → 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69, W1, W2
+```
+
+### 4175. `/PM0/ABY_FPP_BI_O`
+
+```
+T-Code: /PM0/ABY_FPP_BI_O
+├── /PM0/ABCOR
+    ├── ACTVT → 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69, W1, W2
+```
+
+### 4176. `/PM0/ABY_FPP_BI_RT`
+
+```
+T-Code: /PM0/ABY_FPP_BI_RT
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69, W2
+```
+
+### 4177. `/PM0/ABY_FPP_BTS`
+
+```
+T-Code: /PM0/ABY_FPP_BTS
+├── /PM0/ABCOR
+    ├── ACTVT → 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 4178. `/PM0/ABY_FPP_CFC`
+
+```
+T-Code: /PM0/ABY_FPP_CFC
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 4179. `/PM0/ABY_FPP_CORR`
+
+```
+T-Code: /PM0/ABY_FPP_CORR
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 4180. `/PM0/ABY_FPP_FP_PA`
+
+```
+T-Code: /PM0/ABY_FPP_FP_PA
+├── /PM0/ABCOR
+    ├── ACTVT → 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+├── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+└── /SAPPO/ORD
+    ├── /SAPPO/BPR → (empty — maintain in PFCG)
+    ├── /SAPPO/CMP → FS-PM
+    └── ACTVT → 2, 3, 6, A8, B2
+```
+
+### 4181. `/PM0/ABY_FPP_FP_TF`
+
+```
+T-Code: /PM0/ABY_FPP_FP_TF
+├── /PM0/ABCHR
+    └── /PM0/ACTVT → REPLBUS
+├── /PM0/ABCOR
+    ├── ACTVT → 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69, W2
+```
+
+### 4182. `/PM0/ABY_FPP_NCC`
+
+```
+T-Code: /PM0/ABY_FPP_NCC
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 4183. `/PM0/ABY_FPP_PP_TF_SINGLE2`
+
+```
+T-Code: /PM0/ABY_FPP_PP_TF_SINGLE2
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABY_FPP_PP_TF_ACT
+    └── RFC_TYPE → FUGR
+```
+
+### 4184. `/PM0/ABY_FPP_RES`
+
+```
+T-Code: /PM0/ABY_FPP_RES
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → R
+    ├── /PM0/BTXID → BIZPRRESET, CANCELDATE, CNCLPOLCHG, CNCLPREDAT, CNCLPROCHG, CNCLREPBUS, POLICYISSU, REACTIVATE, REINSTCNCL, REINSTPREM, REINSTTERM
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69, W1, W2
+```
+
+### 4185. `/PM0/ABY_FPP_REV`
+
+```
+T-Code: /PM0/ABY_FPP_REV
+├── /PM0/ABCOR
+    ├── ACTVT → 43, 80
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69, W2
+```
+
+### 4186. `/PM0/ABY_FPP_SAMPLE`
+
+```
+T-Code: /PM0/ABY_FPP_SAMPLE
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 4187. `/PM0/ABY_FPP_SHM_DISTRIBUTE`
+
+```
+T-Code: /PM0/ABY_FPP_SHM_DISTRIBUTE
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABY_FPP_SHM
+    └── RFC_TYPE → FUGR
+```
+
+### 4188. `/PM0/ABY_FPP_SHM_FETCH`
+
+```
+T-Code: /PM0/ABY_FPP_SHM_FETCH
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABY_FPP_SHM
+    └── RFC_TYPE → FUGR
+```
+
+### 4189. `/PM0/ABY_FPP_SHM_FREE`
+
+```
+T-Code: /PM0/ABY_FPP_SHM_FREE
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABY_FPP_SHM
+    └── RFC_TYPE → FUGR
+```
+
+### 4190. `/PM0/ABY_FP_R`
+
+```
+T-Code: /PM0/ABY_FP_R
+├── /PM0/ABCHR
+    └── /PM0/ACTVT → REPLBUS
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 4191. `/PM0/ABY_PP_CORRCOIN`
+
+```
+T-Code: /PM0/ABY_PP_CORRCOIN
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 4192. `/PM0/ABY_PP_CORR_GRP`
+
+```
+T-Code: /PM0/ABY_PP_CORR_GRP
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 4193. `/PM0/ABY_PP_MASK`
+
+```
+T-Code: /PM0/ABY_PP_MASK
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 4194. `/PM0/ABY_PP_REACT`
+
+```
+T-Code: /PM0/ABY_PP_REACT
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 4195. `/PM0/AB_UNIT_POL_XML`
+
+```
+T-Code: /PM0/AB_UNIT_POL_XML
+└── S_DEVELOP
+    ├── ACTVT → 1, 16, 2, 3, 40, 41, 42, 6, 7, 70, 90, 94, L0, MA
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+```
+
+### 4196. `/PM0/ALC_FNP`
+
+```
+T-Code: /PM0/ALC_FNP
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 24
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+```
+
+### 4197. `/PM0/ALF_CHG_FPRC`
+
+```
+T-Code: /PM0/ALF_CHG_FPRC
+└── S_DATASET
+    ├── ACTVT → 33
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /PM0/ALF_CHANGE_FPRC
+```
+
+### 4198. `/PM0/ALF_IMP_FPRICES`
+
+```
+T-Code: /PM0/ALF_IMP_FPRICES
+└── S_DATASET
+    ├── ACTVT → 33, 34, A6, A7
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → /PM0/ALF_IMP_FPRICES
+```
+
+### 4199. `/PM0/ALP_MODCALC_ON_NEW_APPL`
+
+```
+T-Code: /PM0/ALP_MODCALC_ON_NEW_APPL
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → D
+    ├── /PM0/BTXID → P_L_S_CALC_MDC
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/APMPG
+    ├── /PM0/BPRC → D
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── B_BUP_DCPD
+    ├── ACTVT → 3
+    ├── DATA_CTRLR → (empty — maintain in PFCG)
+    └── PURPSE → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALP_CDM_CALC
+    └── RFC_TYPE → FUGR
+```
+
+### 4200. `/PM0/ALT_CM_CALCULATE_BENEFIT`
+
+```
+T-Code: /PM0/ALT_CM_CALCULATE_BENEFIT
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4201. `/PM0/ALT_CM_CALC_MIN_REPAYMENT`
+
+```
+T-Code: /PM0/ALT_CM_CALC_MIN_REPAYMENT
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4202. `/PM0/ALT_CM_CALC_PENSION_VOTE`
+
+```
+T-Code: /PM0/ALT_CM_CALC_PENSION_VOTE
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4203. `/PM0/ALT_CM_CANCEL_BNFCASE`
+
+```
+T-Code: /PM0/ALT_CM_CANCEL_BNFCASE
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4204. `/PM0/ALT_CM_CANCEL_ORDERS`
+
+```
+T-Code: /PM0/ALT_CM_CANCEL_ORDERS
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4205. `/PM0/ALT_CM_EXECUTE_CTR_CHG`
+
+```
+T-Code: /PM0/ALT_CM_EXECUTE_CTR_CHG
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4206. `/PM0/ALT_CM_EXECUTE_MODEL_CALC`
+
+```
+T-Code: /PM0/ALT_CM_EXECUTE_MODEL_CALC
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4207. `/PM0/ALT_CM_GENERATE_ORDERS`
+
+```
+T-Code: /PM0/ALT_CM_GENERATE_ORDERS
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4208. `/PM0/ALT_CM_GET_CARELEVEL_DATA`
+
+```
+T-Code: /PM0/ALT_CM_GET_CARELEVEL_DATA
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4209. `/PM0/ALT_CM_GET_CHARGE_DATA`
+
+```
+T-Code: /PM0/ALT_CM_GET_CHARGE_DATA
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4210. `/PM0/ALT_CM_GET_FUND_DATA`
+
+```
+T-Code: /PM0/ALT_CM_GET_FUND_DATA
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4211. `/PM0/ALT_CM_GET_INV_LOGIC_INFO`
+
+```
+T-Code: /PM0/ALT_CM_GET_INV_LOGIC_INFO
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/COMP
+    └── /PM0/CMPID → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4212. `/PM0/ALT_CM_GET_PREM_LOAN_DATA`
+
+```
+T-Code: /PM0/ALT_CM_GET_PREM_LOAN_DATA
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4213. `/PM0/ALT_CM_GET_REL_BASE_VALUE`
+
+```
+T-Code: /PM0/ALT_CM_GET_REL_BASE_VALUE
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4214. `/PM0/ALT_CM_GET_TAXAPPR_DATA`
+
+```
+T-Code: /PM0/ALT_CM_GET_TAXAPPR_DATA
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4215. `/PM0/ALT_CM_GET_TAXATTR_DATA`
+
+```
+T-Code: /PM0/ALT_CM_GET_TAXATTR_DATA
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4216. `/PM0/ALT_CM_GET_TAXBASE_DATA`
+
+```
+T-Code: /PM0/ALT_CM_GET_TAXBASE_DATA
+├── /PM0/COMP
+    └── /PM0/CMPID → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_CM2FSPM
+    └── RFC_TYPE → FUGR
+```
+
+### 4217. `/PM0/ALT_CM_SETTLE_OLD_CTR`
+
+```
+T-Code: /PM0/ALT_CM_SETTLE_OLD_CTR
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_FSPM2CM
+    └── RFC_TYPE → FUGR
+```
+
+### 4218. `/PM0/ALT_SVC_AD_AMD`
+
+```
+T-Code: /PM0/ALT_SVC_AD_AMD
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4219. `/PM0/ALT_SVC_FND_FIND`
+
+```
+T-Code: /PM0/ALT_SVC_FND_FIND
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 27
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+```
+
+### 4220. `/PM0/ALT_SVC_FND_READ`
+
+```
+T-Code: /PM0/ALT_SVC_FND_READ
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 27
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+```
+
+### 4221. `/PM0/ALT_SVC_FND_SHF_AMD`
+
+```
+T-Code: /PM0/ALT_SVC_FND_SHF_AMD
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_L_S_FND_SHF
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4222. `/PM0/ALT_SVC_FND_SHF_ININ`
+
+```
+T-Code: /PM0/ALT_SVC_FND_SHF_ININ
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ALT_SVC_CHANGE_SOAP
+    └── RFC_TYPE → FUGR
+```
+
+### 4223. `/PM0/ALT_SVC_FND_SHF_INST`
+
+```
+T-Code: /PM0/ALT_SVC_FND_SHF_INST
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ALT_SVC_CHANGE_SOAP
+    └── RFC_TYPE → FUGR
+```
+
+### 4224. `/PM0/ALT_SVC_FND_SWT`
+
+```
+T-Code: /PM0/ALT_SVC_FND_SWT
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_L_S_FND_SWT
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4225. `/PM0/ALT_SVC_FNP_FIND`
+
+```
+T-Code: /PM0/ALT_SVC_FNP_FIND
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 26
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+```
+
+### 4226. `/PM0/ALT_SVC_FNP_READ`
+
+```
+T-Code: /PM0/ALT_SVC_FNP_READ
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 26
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+```
+
+### 4227. `/PM0/ALT_SVC_LOANCH_AMD`
+
+```
+T-Code: /PM0/ALT_SVC_LOANCH_AMD
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_L_S_LOANCH_AMD
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4228. `/PM0/ALT_SVC_SCV_EXC_AMD`
+
+```
+T-Code: /PM0/ALT_SVC_SCV_EXC_AMD
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → (empty — maintain in PFCG)
+    ├── /PM0/BTXID → P_L_S_SCV_EXC
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4229. `/PM0/AOIL_SVC_LOAN_CALC`
+
+```
+T-Code: /PM0/AOIL_SVC_LOAN_CALC
+└── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → POL_LL
+```
+
+### 4230. `/PM0/APT_CM_SETTLE_OLD_CTR`
+
+```
+T-Code: /PM0/APT_CM_SETTLE_OLD_CTR
+├── /PM0/APMPG
+    ├── /PM0/BPRC → B
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ALT_CM_FSPM2CM
+    └── RFC_TYPE → FUGR
+```
+
+### 4231. `/PM0/BAPI_ABQ_COINS_DELETE`
+
+```
+T-Code: /PM0/BAPI_ABQ_COINS_DELETE
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABQ_BAPI_MIGRATION
+    └── RFC_TYPE → FUGR
+```
+
+### 4232. `/PM0/BAPI_ABQ_COINS_MASSMIGR`
+
+```
+T-Code: /PM0/BAPI_ABQ_COINS_MASSMIGR
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABQ_BAPI_MIGRATION
+    └── RFC_TYPE → FUGR
+```
+
+### 4233. `/PM0/BAPI_ABQ_OBJM_MASSMIGR`
+
+```
+T-Code: /PM0/BAPI_ABQ_OBJM_MASSMIGR
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 4234. `/PM0/BAPI_ABQ_POL_GET_MIGSTATE`
+
+```
+T-Code: /PM0/BAPI_ABQ_POL_GET_MIGSTATE
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 4235. `/PM0/BAPI_ABQ_POL_MAP_PMID`
+
+```
+T-Code: /PM0/BAPI_ABQ_POL_MAP_PMID
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 4236. `/PM0/BAPI_ABQ_POL_SET_MIGSTATE`
+
+```
+T-Code: /PM0/BAPI_ABQ_POL_SET_MIGSTATE
+└── /PM0/MIG
+    └── /PM0/MIGRA → X
+```
+
+### 4237. `/PM0/BTX_ANALYSIS`
+
+```
+T-Code: /PM0/BTX_ANALYSIS
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 4238. `/PM0/CLS_EDC`
+
+```
+T-Code: /PM0/CLS_EDC
+└── S_ALV_LAYO
+    └── ACTVT → 23
+```
+
+### 4239. `/PM0/ESO_BP_CHANGE_CPOINTER`
+
+```
+T-Code: /PM0/ESO_BP_CHANGE_CPOINTER
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ESO_TOOLKIT
+    └── RFC_TYPE → FUGR
+```
+
+### 4240. `/PM0/ESO_RESET_SM_SEARCH_ACT`
+
+```
+T-Code: /PM0/ESO_RESET_SM_SEARCH_ACT
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ESO_TOOLKIT
+    └── RFC_TYPE → FUGR
+```
+
+### 4241. `/PM0/FPP`
+
+```
+T-Code: /PM0/FPP
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69, W2
+```
+
+### 4242. `/PM0/FPPOBJ`
+
+```
+T-Code: /PM0/FPPOBJ
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69, W2
+```
+
+### 4243. `/PM0/FPP_2`
+
+```
+T-Code: /PM0/FPP_2
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 4244. `/PM0/FPP_DISTRUBUTE_SHARED_OBJ`
+
+```
+T-Code: /PM0/FPP_DISTRUBUTE_SHARED_OBJ
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/FPP1
+    └── RFC_TYPE → FUGR
+```
+
+### 4245. `/PM0/FPP_EXT_COPY_RUN`
+
+```
+T-Code: /PM0/FPP_EXT_COPY_RUN
+├── /PM0/FPP
+    └── ACTVT → 1, W2
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/FPP1
+    └── RFC_TYPE → FUGR
+```
+
+### 4246. `/PM0/FPP_EXT_CREATE_RUN`
+
+```
+T-Code: /PM0/FPP_EXT_CREATE_RUN
+├── /PM0/FPP
+    └── ACTVT → 1, W2
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/FPP1
+    └── RFC_TYPE → FUGR
+```
+
+### 4247. `/PM0/FPP_EXT_RUN_DELETE`
+
+```
+T-Code: /PM0/FPP_EXT_RUN_DELETE
+├── /PM0/FPP
+    └── ACTVT → 6, W2
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/FPP1
+    └── RFC_TYPE → FUGR
+```
+
+### 4248. `/PM0/FPP_EXT_RUN_START_RESTART`
+
+```
+T-Code: /PM0/FPP_EXT_RUN_START_RESTART
+├── /PM0/FPP
+    └── ACTVT → 16, W2
+├── B_BUP_PCPT
+    └── ACTVT → 3
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/FPP1
+    └── RFC_TYPE → FUGR
+```
+
+### 4249. `/PM0/FPP_EXT_RUN_STOP`
+
+```
+T-Code: /PM0/FPP_EXT_RUN_STOP
+├── /PM0/FPP
+    └── ACTVT → 69, W2
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/FPP1
+    └── RFC_TYPE → FUGR
+```
+
+### 4250. `/PM0/FPP_EXT_SELECT_RUNS`
+
+```
+T-Code: /PM0/FPP_EXT_SELECT_RUNS
+├── /PM0/FPP
+    └── ACTVT → W2
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/FPP1
+    └── RFC_TYPE → FUGR
+```
+
+### 4251. `/PM0/FPP_FREE_SHARED_OBJ`
+
+```
+T-Code: /PM0/FPP_FREE_SHARED_OBJ
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/FPP1
+    └── RFC_TYPE → FUGR
+```
+
+### 4252. `/PM0/FPP_GET_RESOURCES_CURRENT`
+
+```
+T-Code: /PM0/FPP_GET_RESOURCES_CURRENT
+├── /PM0/FPP
+    └── ACTVT → W2
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/FPP_SERVICES
+    └── RFC_TYPE → FUGR
+```
+
+### 4253. `/PM0/FPP_GET_RESOURCES_DATE`
+
+```
+T-Code: /PM0/FPP_GET_RESOURCES_DATE
+├── /PM0/FPP
+    └── ACTVT → W2
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/FPP_SERVICES
+    └── RFC_TYPE → FUGR
+```
+
+### 4254. `/PM0/FPP_UI_START_2`
+
+```
+T-Code: /PM0/FPP_UI_START_2
+├── /PM0/ABCHR
+    └── /PM0/ACTVT → REPLBUS
+├── /PM0/ABCOR
+    ├── ACTVT → 43
+    └── COTYP_KK → (empty — maintain in PFCG)
+└── /PM0/FPP
+    └── ACTVT → 1, 16, 32, 6, 69
+```
+
+### 4255. `/PM0/FSPM_CANCELLATION_BACK`
+
+```
+T-Code: /PM0/FSPM_CANCELLATION_BACK
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 46
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+├── /PM0/APMPG
+    ├── /PM0/BPRC → C
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABP_BACK_CANCEL
+    └── RFC_TYPE → FUGR
+```
+
+### 4256. `/PM0/FSPM_PRODUCT_SHIFT_BACK`
+
+```
+T-Code: /PM0/FSPM_PRODUCT_SHIFT_BACK
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → R
+    ├── /PM0/BTXID → (empty — maintain in PFCG)
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/APMPG
+    ├── /PM0/BPRC → R
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+└── S_RFC
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── RFC_NAME → /PM0/ABP_BACK_RESETTING
+    └── RFC_TYPE → FUGR
+```
+
+### 4257. `/PM0/FSPM_SEARCH_POLICY`
+
+```
+T-Code: /PM0/FSPM_SEARCH_POLICY
+└── S_RFC
+    ├── ACTVT → 16
+    ├── RFC_NAME → /PM0/ABP_POLICY_TREX
+    └── RFC_TYPE → FUGR
+```
+
+### 4258. `/PM0/GEN_SERIALIZE`
+
+```
+T-Code: /PM0/GEN_SERIALIZE
+└── /PM0/RWP
+    ├── /PM0/RAPPL → 1
+    ├── /PM0/RBOML → (empty — maintain in PFCG)
+    ├── /PM0/RMODL → (empty — maintain in PFCG)
+    └── ACTVT → 64
+```
+
+### 4259. `/PM0/GET_BTX_INFO2`
+
+```
+T-Code: /PM0/GET_BTX_INFO2
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 4260. `/PM0/GET_INFO_TO_DIM`
+
+```
+T-Code: /PM0/GET_INFO_TO_DIM
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 4261. `/PM0/GET_PRGRP_ID`
+
+```
+T-Code: /PM0/GET_PRGRP_ID
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 4262. `/PM0/GET_PRODUCT_ID`
+
+```
+T-Code: /PM0/GET_PRODUCT_ID
+├── S_DATASET
+    ├── ACTVT → 33
+    ├── FILENAME → 33
+    └── PROGRAM → 33
+├── S_DEVELOP
+    ├── ACTVT → 3
+    ├── DEVCLASS → 3
+    ├── OBJNAME → 3
+    ├── OBJTYPE → 3
+    └── P_GROUP → 3
+└── S_GUI
+    └── ACTVT → (empty — maintain in PFCG)
+```
+
+### 4263. `/PM0/IOM_I_IO_IO_CRTBLK_RFC`
+
+```
+T-Code: /PM0/IOM_I_IO_IO_CRTBLK_RFC
+└── /PM0/ABACT
+    ├── /PM0/ACTN → 1
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+```
+
+### 4264. `/PM0/PCRP_I_PCR_A_CACTB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CACTB_RFC
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4265. `/PM0/PCRP_I_PCR_A_CADJB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CADJB_RFC
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4266. `/PM0/PCRP_I_PCR_A_CADPB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CADPB_RFC
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4267. `/PM0/PCRP_I_PCR_A_CBNYB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CBNYB_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_B_S_BNY_AMD
+    └── /PM0/PRELG → PPD_LP
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → POL_LP
+```
+
+### 4268. `/PM0/PCRP_I_PCR_A_CCCEB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CCCEB_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_B_S_COVCPCO_EXC
+    └── /PM0/PRELG → COVCPCO_LP
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → POL_LP
+```
+
+### 4269. `/PM0/PCRP_I_PCR_A_CCDAB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CCDAB_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_B_S_CDA_AMD
+    └── /PM0/PRELG → PPD_LP
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → POL_LP
+```
+
+### 4270. `/PM0/PCRP_I_PCR_A_CCDRB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CCDRB_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_B_S_CDR_AMD
+    └── /PM0/PRELG → PPD_LP
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → POL_LL
+```
+
+### 4271. `/PM0/PCRP_I_PCR_A_CCLSB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CCLSB_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_B_S_CLS_AMD
+    └── /PM0/PRELG → PPD_LL
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → POL_LL
+```
+
+### 4272. `/PM0/PCRP_I_PCR_A_CCPPB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CCPPB_RFC
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4273. `/PM0/PCRP_I_PCR_A_CCVEB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CCVEB_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_L_S_SCV_EXC
+    └── /PM0/PRELG → COV_LL
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → POL_LL
+```
+
+### 4274. `/PM0/PCRP_I_PCR_A_CCVIB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CCVIB_RFC
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4275. `/PM0/PCRP_I_PCR_A_CCVPB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CCVPB_RFC
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4276. `/PM0/PCRP_I_PCR_A_CDDCB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CDDCB_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_B_S_DDC_AMD
+    └── /PM0/PRELG → COV_LP
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → POL_LP
+```
+
+### 4277. `/PM0/PCRP_I_PCR_A_CERVB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CERVB_RFC
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4278. `/PM0/PCRP_I_PCR_A_CFAKB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CFAKB_RFC
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4279. `/PM0/PCRP_I_PCR_A_CLMTB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CLMTB_RFC
+└── /PM0/APMPG
+    ├── /PM0/BPRC → PPD_L
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 4280. `/PM0/PCRP_I_PCR_A_CPHDB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CPHDB_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 43
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_B_S_PHD_AMD
+    └── /PM0/PRELG → POL_LL
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+├── /PM0/ALCHR
+    ├── /PM0/CHRGS → 2
+    ├── /PM0/CHRGT → 44
+    └── /PM0/PRELG → L_VKPROD_1
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → POL_LL
+```
+
+### 4281. `/PM0/PCRP_I_PCR_A_CPMDB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CPMDB_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_B_S_PMD_AMD
+    └── /PM0/PRELG → PPD_LP
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → POL_LP
+```
+
+### 4282. `/PM0/PCRP_I_PCR_A_CPPRB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CPPRB_RFC
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4283. `/PM0/PCRP_I_PCR_A_CPPYB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CPPYB_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_B_S_PPY_AMD
+    └── /PM0/PRELG → PPD_LL
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → POL_LL
+```
+
+### 4284. `/PM0/PCRP_I_PCR_A_CPRMB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CPRMB_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → PPD_L
+    ├── /PM0/BTXID → (empty — maintain in PFCG)
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → PPD_L
+    └── /PM0/PRELG → (empty — maintain in PFCG)
+```
+
+### 4285. `/PM0/PCRP_I_PCR_A_CSBJB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CSBJB_RFC
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4286. `/PM0/PCRP_I_PCR_A_CSDCB_RFC`
+
+```
+T-Code: /PM0/PCRP_I_PCR_A_CSDCB_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_B_S_SPMDCT_AMD
+    └── /PM0/PRELG → PPD_LP
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → POL_LP
+```
+
+### 4287. `/PM0/PIP_I_I_I_CRTBLK_RFC`
+
+```
+T-Code: /PM0/PIP_I_I_I_CRTBLK_RFC
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4288. `/PM0/PIP_I_I_I_EXECBLK_RFC`
+
+```
+T-Code: /PM0/PIP_I_I_I_EXECBLK_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 7
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+├── /PM0/APMPG
+    ├── /PM0/BPRC → N
+    └── /PM0/PRELG → POL_LL
+└── /PM0/DUCON
+    ├── /PM0/PPGRP → AAA
+    └── /PM0/SVGRP → (empty — maintain in PFCG)
+```
+
+### 4289. `/PM0/PP_I_P_P_CHGBNYBLK_RFC`
+
+```
+T-Code: /PM0/PP_I_P_P_CHGBNYBLK_RFC
+└── B_BUP_PCPT
+    └── ACTVT → 3
+```
+
+### 4290. `/PM0/PP_I_P_P_CHGPHDBLK_RFC`
+
+```
+T-Code: /PM0/PP_I_P_P_CHGPHDBLK_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13, 43, 9
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_B_S_PHD_AMD
+    └── /PM0/PRELG → POL_LP
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → POL_LP
+```
+
+### 4291. `/PM0/PP_I_P_P_CHGPMDBLK_RFC`
+
+```
+T-Code: /PM0/PP_I_P_P_CHGPMDBLK_RFC
+├── /PM0/ABACT
+    ├── /PM0/ACTN → 13, 43, 9
+    └── /PM0/ITEM → (empty — maintain in PFCG)
+├── /PM0/ABBTX
+    ├── /PM0/BPRC → A
+    ├── /PM0/BTXID → P_B_S_PMD_AMD
+    └── /PM0/PRELG → PPD_LP
+├── /PM0/ABPST
+    ├── /PM0/BILXP → X
+    └── ACTVT → (empty — maintain in PFCG)
+└── /PM0/APMPG
+    ├── /PM0/BPRC → A
+    └── /PM0/PRELG → POL_LP
+```
+
+### 4292. `/PM0/TEST_AC`
+
+```
+T-Code: /PM0/TEST_AC
+├── S_BDS_DS
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── CLASSNAME → (empty — maintain in PFCG)
+    └── CLASSTYPE → (empty — maintain in PFCG)
+├── S_DATASET
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── FILENAME → (empty — maintain in PFCG)
+    └── PROGRAM → (empty — maintain in PFCG)
+├── S_DEVELOP
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── DEVCLASS → (empty — maintain in PFCG)
+    ├── OBJNAME → (empty — maintain in PFCG)
+    ├── OBJTYPE → (empty — maintain in PFCG)
+    └── P_GROUP → (empty — maintain in PFCG)
+├── S_DOKU_AUT
+    ├── DOKU_ACT → (empty — maintain in PFCG)
+    ├── DOKU_DEVCL → (empty — maintain in PFCG)
+    └── DOKU_MODE → (empty — maintain in PFCG)
+├── S_TRANSLAT
+    ├── ACTVT → (empty — maintain in PFCG)
+    ├── TLANGUAGE → (empty — maintain in PFCG)
+    └── TRANOBJ → (empty — maintain in PFCG)
+└── S_TRANSPRT
+    ├── ACTVT → (empty — maintain in PFCG)
+    └── TTYPE → (empty — maintain in PFCG)
+```
+
+---
+*📝 Generated from USOBT_C (SU24) — SAP S/4HANA System*
