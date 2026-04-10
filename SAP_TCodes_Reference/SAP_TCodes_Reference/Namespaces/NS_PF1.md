@@ -1,0 +1,584 @@
+# 📋 SAP T-Codes — /PF1/ Namespace
+> **Namespace:** /PF1/  
+> **Solution:** Project Framework (PF1)  
+> **Total T-Codes:** 559  
+> **Source:** TSTCT Table — SAP S/4HANA System Export  
+> **Date:** April 2026  
+
+---
+
+## 📋 About This Namespace
+
+Project management framework and configuration activities
+
+---
+
+## 📑 T-Code Reference (559 T-Codes)
+
+| T-Code | Description | Program |
+|--------|-------------|---------|
+| `/PF1/04000012` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000013` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000014` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000015` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000017` | Assign Converter to Inbound IDOC Map |  |
+| `/PF1/04000018` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000019` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000020` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000021` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000022` | DMEE Outbound Settings for MBC Conne |  |
+| `/PF1/04000023` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000024` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000025` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000026` | MBC Connector Inbound Settings |  |
+| `/PF1/04000027` | MBC Converter Outbound Settings |  |
+| `/PF1/04000028` | Customizing for Direct Release |  |
+| `/PF1/04000029` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000030` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000031` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000032` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000034` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000035` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000036` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000037` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000043` | Define Converter |  |
+| `/PF1/04000045` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000049` | Maintain Mapping of Receiver IDs |  |
+| `/PF1/04000054` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000055` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/04000222` | IMG Activity /PF1/V_IHC_EVNT |  |
+| `/PF1/04000273` | IMG Activity /PF1/V_AM_RETRSN |  |
+| `/PF1/11001522` | Determine Payment Order Type |  |
+| `/PF1/11001560` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/11001578` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/11001606` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/11001626` | Assign Exception Handling Reaction t |  |
+| `/PF1/11001632` | Bank External Status Classification |  |
+| `/PF1/11001662` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/11001751` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/11001847` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/11001865` | IMG Activity |  |
+| `/PF1/11001867` | IMG Activity |  |
+| `/PF1/11001872` | IMG Activity |  |
+| `/PF1/11001882` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/11001892` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/11001925` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/11001927` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/11001931` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/11001985` | IMG Activity /PF1/V_MAP_TREE |  |
+| `/PF1/11001990` | IMG Activity /PF1/BADI_BANK_VALID |  |
+| `/PF1/11002021` | IMG Activity /PF1/V_CHAR2ACTC |  |
+| `/PF1/11002044` | IMG Activity /PF1/V_XML_TRTYP_CE |  |
+| `/PF1/11002072` | Maintain EBICS Order Type Determinat |  |
+| `/PF1/11002177` | IMG Activity /PF1/V_CHRG_PROC |  |
+| `/PF1/11002178` | IMG Activity /PF1/V_CHRG_TYPE |  |
+| `/PF1/11002179` | IMG Activity /PF1/V_EVTCNT_IMG |  |
+| `/PF1/11002303` | IMG Activity /PF1/V_TRM_FMC |  |
+| `/PF1/11002372` | Define Bank Areas |  |
+| `/PF1/11002374` | Define Activity Type |  |
+| `/PF1/11002375` | Maintain Activity Type Criteria |  |
+| `/PF1/11002548` | IMG Activity /PF1/NUM_RANGE_PIB |  |
+| `/PF1/11002582` | IMG Activity /PF1/V_FCT_FIELD |  |
+| `/PF1/11002606` | IMG Activity /PF1/BADI_UI_CUSTFLD |  |
+| `/PF1/11002608` | IMG Activity /PF1/VC_SIMPTXT |  |
+| `/PF1/11002609` | IMG Activity /PF1/VC_EV_STXT |  |
+| `/PF1/11002612` | IMG Activity /PF1/VC_DMEE_STXT |  |
+| `/PF1/11002645` | IMG Activity /PF1/BADI_OPM_FILENM |  |
+| `/PF1/11002677` | IMG Activity /PF1/V_EBS_CONVI |  |
+| `/PF1/11002679` | IMG Activity /PF1/V_EBS_CONVF |  |
+| `/PF1/11002689` | IMG Activity /PF1/V_SCB_IND |  |
+| `/PF1/16000001` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/16000003` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/29000184` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000001` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000010` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000011` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000013` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000014` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000016` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000017` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000022` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000027` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000028` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000031` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000033` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000040` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000041` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000043` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000044` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000045` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000046` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000047` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000051` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000052` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000053` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000054` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000055` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000056` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000057` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000061` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000063` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000065` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000066` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000073` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000074` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000075` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000077` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000080` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000082` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000085` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000091` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000092` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000093` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000096` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000098` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000099` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000100` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000101` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000102` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000104` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000105` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000106` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000107` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000108` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000109` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000110` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000111` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000112` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000114` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000115` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000116` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000117` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000118` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000119` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000120` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000121` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000122` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000123` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000124` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000125` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000126` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000127` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000128` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000129` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000130` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000132` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000133` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000134` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000135` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000136` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000137` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000138` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000139` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000140` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/32000141` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000003` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000004` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000007` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000011` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000012` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000014` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000015` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000020` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000029` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000030` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000034` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000035` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000039` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000040` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000041` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000046` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000047` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000049` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000062` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000065` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000066` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000067` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000068` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000069` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000071` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000072` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000076` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000079` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000080` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000082` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000083` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/41000084` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000003` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000005` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000006` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000009` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000012` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000013` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000016` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000017` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000018` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000019` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000021` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000024` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000025` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000026` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000027` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000028` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000029` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000030` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000031` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000032` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000033` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000040` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000041` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000046` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000047` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000053` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000054` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000055` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000058` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000059` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000060` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000061` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000062` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000063` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000064` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000065` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000068` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000073` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000075` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000078` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000085` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000092` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000093` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000095` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000096` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000098` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000099` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000100` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000114` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000115` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000117` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000118` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000120` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000122` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000123` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000124` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000127` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000128` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000133` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000134` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000135` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000140` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000143` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000144` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000148` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000151` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000153` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000154` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000157` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000158` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000159` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000160` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000161` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000162` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000163` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000164` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000165` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000166` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000168` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000170` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000176` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000177` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000182` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000184` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000186` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000187` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000189` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000190` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000191` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000192` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000193` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000194` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000195` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000198` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000203` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000204` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000209` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000218` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000219` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000220` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000221` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000224` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000225` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000227` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000230` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000233` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000234` | IMG Activity |  |
+| `/PF1/47000236` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000237` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000238` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000239` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000244` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000245` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000248` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000251` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000253` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000255` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000257` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000258` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000259` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000260` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000261` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000264` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000265` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000266` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000270` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000271` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000272` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000277` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000284` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000286` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000287` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000289` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000290` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000291` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000292` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000293` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000294` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000295` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000296` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000297` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000298` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000303` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000304` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000305` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000306` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000307` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000308` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000309` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000310` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000311` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000313` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000314` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/47000315` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000001` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000003` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000004` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000006` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000007` | Define Formats |  |
+| `/PF1/51000008` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000009` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000010` | Define and assign Channels to Groups |  |
+| `/PF1/51000013` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000017` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000018` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000019` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000020` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000021` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000022` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000023` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000024` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000025` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000026` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000028` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000029` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000030` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000031` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000034` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000035` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000036` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000040` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000044` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000047` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000048` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000049` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000050` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000051` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000052` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000053` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000054` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000057` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000058` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000060` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000061` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000062` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000064` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000065` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000066` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000069` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000070` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000074` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000076` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000083` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000084` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000085` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000087` | Maintain Account Symbols for externa |  |
+| `/PF1/51000091` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000094` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000097` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000099` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000100` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000102` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000104` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000109` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000110` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000111` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000112` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000113` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000118` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000120` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000121` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000122` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000125` | Set Forwarding Status |  |
+| `/PF1/51000126` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000127` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000128` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000129` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000132` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000134` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000136` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000137` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000140` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000142` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000145` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/51000146` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/PF1/ACCRUAL` | Accrual Process |  |
+| `/PF1/AR_ORD2_DISPLAY` | Archiving: Order Business View |  |
+| `/PF1/BANK_MAINTAIN` | Maintain : Main Bank Table of  PE |  |
+| `/PF1/BIS_BULK_REQ` | Process BIS Bulk Request |  |
+| `/PF1/BRF_CHECK_PI_G` | Define Customizable PI Check Rules |  |
+| `/PF1/BRF_DISPOSITION` | Customize Rules for Posting Simul. |  |
+| `/PF1/BRF_FX_APP` | HDS for Foreign Exchange Rate |  |
+| `/PF1/BRF_LIQUIDITY` | Customize Rules for Liquidity |  |
+| `/PF1/BRF_PE_PRODUCT` | Customize Rules for PE Product |  |
+| `/PF1/BRF_RCP_ERR_THR` | Maintain RCP Error Threshold |  |
+| `/PF1/BRF_RESERVATION` | Customize Rules for Reservation |  |
+| `/PF1/BRF_SWIFT_PO_TY` | Determine SWIFT Payment Order Type |  |
+| `/PF1/BRF_SWIFT_TAG` | Determine SWIFT Tag Mapping Options |  |
+| `/PF1/BRF_TECH_PRIO` | BRF+ for determine Technical Priorit |  |
+| `/PF1/BRF_XML_PO_TYPE` | Determine XML Payment Order Type |  |
+| `/PF1/BRF_XML_RCL_GRP` | Determine Recall Group |  |
+| `/PF1/BRF_XML_T_TYPE` | Determine XML Transaction Type |  |
+| `/PF1/CC_AR_ARCHIVING` | Archiving: Collector categories |  |
+| `/PF1/CHARS` | Characteristics Maintenance |  |
+| `/PF1/CHDOC_AR_ARCH` | Archiving:Change Document archiving |  |
+| `/PF1/CLEARING` | Clearing Batches and Queues |  |
+| `/PF1/CLR_ACCOUNT_REC` | Clearing Account Reconciliation |  |
+| `/PF1/COLLECTORS` | Payment Batch Management |  |
+| `/PF1/COPY_CLA` | Copy Clearing Area |  |
+| `/PF1/CORR_BP02` | Create correspondence type BP02 |  |
+| `/PF1/CP_CLEARINGAREA` | Copy Customizing, Master Data |  |
+| `/PF1/CP_COLL` | Manage Batches and Queues |  |
+| `/PF1/CP_COLL_WEB` | Manage Payment Batches |  |
+| `/PF1/CRISIS_REL01` | Customizing for Release Procedure |  |
+| `/PF1/DATE_INCR` | (OBSOLETE) Posting Date Increaser |  |
+| `/PF1/EH` | Exception Control |  |
+| `/PF1/EHSOL_REL01` | Customizing for Release Procedure |  |
+| `/PF1/EH_AUTOPP` | Automatic Postprocessing - Learning |  |
+| `/PF1/EH_EH_REL01` | Customizing for Release Procedure |  |
+| `/PF1/EH_WEB` | Exception Handling |  |
+| `/PF1/EOD_SET_DATE` | Set Day/End-of-Day Processing |  |
+| `/PF1/ERROR_CORR` | Error: Correspondence Display |  |
+| `/PF1/FH_IMPORT_DIR` | Imports a whole directory |  |
+| `/PF1/FH_IPM_EXPERT` | Import/Process File (Expert) |  |
+| `/PF1/FH_OLIST` | Display Object List |  |
+| `/PF1/FH_PO_REF_RNG` | Number Range for External Reference |  |
+| `/PF1/FH_SERVERFILES` | Export / Import File To/From Server |  |
+| `/PF1/FH_SHOW_DB` | Display File Handler Database |  |
+| `/PF1/FIN_OUT_ORD` | Finalize Pending Outgoing Orders |  |
+| `/PF1/FIN_TECHLOG_RUN` | Finish Technical Logging |  |
+| `/PF1/FORW_STAT_HST` | History of Forwdg Status Changes |  |
+| `/PF1/GROUP_PROC` | Group Processing |  |
+| `/PF1/HDS_WB_ASSIGN` | Workbasket Assignment |  |
+| `/PF1/IDOC_RESTART` | Bulk IDOC Import |  |
+| `/PF1/IHB_ACCBAL` | Account Balancing |  |
+| `/PF1/IHB_ACCT_NUM` | Maintain NR for In-house Bank Accoun |  |
+| `/PF1/IHB_ACC_CLOSE` | Close Account |  |
+| `/PF1/IHB_ACC_FX` | Process FX |  |
+| `/PF1/IHB_BK_STMNT` | Create Bank Statement |  |
+| `/PF1/IHB_FI` | Transfer Payment Items to FI-GL |  |
+| `/PF1/IHB_INIT_DATE` | Initialize IHB EOD Dates |  |
+| `/PF1/IHB_NOTIFI` | Create Notification |  |
+| `/PF1/IHB_PB_NUM` | Maintain NR for Payment Item Bundles |  |
+| `/PF1/IHB_SET_CLOSE_D` | Set Account Balancing Date |  |
+| `/PF1/IHB_SET_TRANS_D` | Set Payment Transaction Date |  |
+| `/PF1/LM_ASYNC` | Asyncronous processing for Liquidity |  |
+| `/PF1/LOG_SEARCH_MSG` | Runtime Info for Parall. Processes |  |
+| `/PF1/LOG_SETTINGS` | Manage Log Settings |  |
+| `/PF1/NUM_RANGE_COLL` | Number Ranges for Payment Batch |  |
+| `/PF1/NUM_RANGE_CSTID` | No. Range f. Cust. Assg. to Cust. Ag |  |
+| `/PF1/NUM_RANGE_DTAZV` | Number Range Editing: /PF1/DTAZV |  |
+| `/PF1/NUM_RANGE_ITEM` | Number Ranges for Payment Batch |  |
+| `/PF1/NUM_RANGE_OL` | Number Ranges for Object List |  |
+| `/PF1/NUM_RANGE_PI` | Number Ranges for Payment Items |  |
+| `/PF1/NUM_RANGE_PO` | Number Ranges for Payment Orders |  |
+| `/PF1/NUM_RANGE_RA` | Number Ranges for Request Agent |  |
+| `/PF1/NUM_RANGE_RE` | Number Ranges for Recalls |  |
+| `/PF1/OLIST_ARCHIVING` | Archiving: Object Lists |  |
+| `/PF1/PI_AR_DELETE` | Archiving: Payment Item Deletion |  |
+| `/PF1/PI_DISPLAY` | Display Payment Item |  |
+| `/PF1/PI_DISPLAY_NEW` | Payment Order Display |  |
+| `/PF1/POLLER` | Payment Batch Processing |  |
+| `/PF1/PO_AR_ARCHIVING` | Archiving: Order Archiving |  |
+| `/PF1/PO_AR_HDS` | HDS for /PF1/ORD1 and /PF1/RCL |  |
+| `/PF1/PO_AR_HDS_ORD1` | HDS for scenario /PF1/ORD1 |  |
+| `/PF1/PO_AR_HDS_RCL` | HDS for scenario /PF1/RCL |  |
+| `/PF1/PO_DETAILS_WEB` | Display PO Details (for SAPUI5 App.) |  |
+| `/PF1/PO_DISPLAY` | Display Payment Order |  |
+| `/PF1/PO_DISPLAY_NEW` | Payment Order Display |  |
+| `/PF1/PO_EXPERT` | Expert Mode: Order Overview |  |
+| `/PF1/PO_ITEM_REL01` | Customizing for Release Procedure |  |
+| `/PF1/PO_ORDER_REL01` | Customizing for Release Procedure |  |
+| `/PF1/PO_POSTPROCESS` | Postprocessing Mode: Order Overview |  |
+| `/PF1/PO_RECALL_REL01` | Customizing for Release Procedure |  |
+| `/PF1/PO_SLA_REL01` | Customizing for Release Procedure |  |
+| `/PF1/PPO2` | Edit Postprocessing Order |  |
+| `/PF1/PPO3` | Display Postprocessing Order |  |
+| `/PF1/PRINT_CORR` | Print Correspondence |  |
+| `/PF1/QUEUE` | Queuing Overview |  |
+| `/PF1/RA_AR_ARCHIVING` | Archiving: Request Agent |  |
+| `/PF1/RC_AR_ARCHIVING` | Archiving: Recall archiving |  |
+| `/PF1/RECALL_ACTIV` | Mass Recall activation |  |
+| `/PF1/RECALL_GUI` | Recall Management |  |
+| `/PF1/RECALL_MASS` | Recall Mass Processing |  |
+| `/PF1/REJECT_PEND_PO` | Reject Pending Payment Orders |  |
+| `/PF1/REQ_AGENT` | Request Agent |  |
+| `/PF1/REQ_AGENT_MASS` | Request Agent Mass Processing |  |
+| `/PF1/RESUB` | Resubmit |  |
+| `/PF1/REVERT_FAIL_PO` | Delete Incorrect Payment Orders |  |
+| `/PF1/RM_DISPLAY` | Remittance Display |  |
+| `/PF1/RN` | Maintain Route and Clearing Agrmnt |  |
+| `/PF1/ROUTE_WEB` | Manage Routes and Clearing Agreem. |  |
+| `/PF1/RP_CA_REL01` | Customizing for Release Procedure |  |
+| `/PF1/RP_ROUTE_REL01` | Customizing for Release Procedure |  |
+| `/PF1/RST_OUT_ORD` | Rstarting Outgoing Order Processing |  |
+| `/PF1/RTI` | Runtime Info for Parall. Processes |  |
+| `/PF1/R_RMV_BOBJ` | Report for deletion of business obj. |  |
+| `/PF1/SBAL_AR_ARCH` | Archiving: Application Log archiving |  |
+| `/PF1/SHOW_FUNC_LOG` | Display Functional Logging |  |
+| `/PF1/SHOW_LOG` | Advanced Payment Application Log |  |
+| `/PF1/SLA` | Service Level Agreement |  |
+| `/PF1/SLA_AR_ARCH` | Archiving: Service Level Agreements |  |
+| `/PF1/SLA_CUS` | Customizing Object SLA |  |
+| `/PF1/SLA_WEB` | Maintain Service Level Agreements |  |
+| `/PF1/STATECHART` | Display Status Transitions |  |
+| `/PF1/STATECHART_IOR` | Status Diagram Incoming Order |  |
+| `/PF1/STATECHART_OOR` | Status Diagram Outgoing Order |  |
+| `/PF1/STAT_NOT` | Send Status Notification |  |
+| `/PF1/SWIFT_CODE_HDS` | Determine SWIFT Codes 23/23B/23E/26T |  |
+| `/PF1/SWIFT_HDS` | Determine SWIFT Transaction Type |  |
+| `/PF1/TECHLOG` | Display of Technical Log |  |
+| `/PF1/TECH_PRIO` | Technical Priority |  |
+| `/PF1/TOV_ORD_CRT` | Create Turnover for Payment Order |  |
+| `/PF1/TRM_NETTING` | Execute netting for TRM payments |  |
+| `/PF1/TXN_SHOW_LOG` | Display for Application Log |  |
+| `/PF1/UI_LOCK_ADMIN` | Lock and Reservation Management |  |
+| `/PF1/UPLOAD_RD` | Upload Referential Data |  |
+| `/PF1/V_BK_AREA` | IHB Bank Area Customizing |  |
+| `/PF1/WLS_RESULT_REQ` | Watch List Screening - Result Query |  |
+| `/PF1/WRAP_POLLER` | Asynchronous Processing in AM System |  |
+| `/PF1/XML_TEST` | XML Schema Validation |  |
+| `/PF1/XSD` | XML Validation - XSD Files |  |
+
+---
+
+*📝 Part of SAP T-Codes Reference — Namespaces*  
+*Back to: [Namespace Index](00_README.md)*  
+*Back to: [Master Index](../00_README.md)*
