@@ -1,0 +1,241 @@
+# 🤝 SAP T-Codes — /SRMSMC/ Namespace
+> **Namespace:** /SRMSMC/  
+> **Solution:** Supplier Relationship Mgmt (SRM)  
+> **Total T-Codes:** 216  
+> **Source:** TSTCT Table — SAP S/4HANA System Export  
+> **Date:** April 2026  
+
+---
+
+## 📋 About This Namespace
+
+Supplier management, catalog management, sourcing
+
+---
+
+## 📑 T-Code Reference (216 T-Codes)
+
+| T-Code | Description | Program |
+|--------|-------------|---------|
+| `/SRMSMC/52000123` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/52000124` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/52000127` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/52000461` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/52000559` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/52004347` | IMG Activity /SRMSMC/MDI_PUC |  |
+| `/SRMSMC/61000001` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/61000002` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000003` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000006` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000009` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000010` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000011` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000012` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000013` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000014` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000015` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000016` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000018` | IMG Activity |  |
+| `/SRMSMC/62000019` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000021` | Number Ranges for Qual. Template |  |
+| `/SRMSMC/62000022` | Number Ranges for Qual. Request |  |
+| `/SRMSMC/62000023` | Number Ranges for Qual. Response |  |
+| `/SRMSMC/62000025` | Number Range for Questions |  |
+| `/SRMSMC/62000026` | Number Range for Question Groups |  |
+| `/SRMSMC/62000027` | Number Range for Sections |  |
+| `/SRMSMC/62000028` | Create Question Library for Sup.Qual |  |
+| `/SRMSMC/62000029` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000030` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000031` | Sell-Side Registration Customizing |  |
+| `/SRMSMC/62000034` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000037` | Sell side S3Q Customizing |  |
+| `/SRMSMC/62000038` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000039` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000040` | Supplier Self-Service Customizing |  |
+| `/SRMSMC/62000042` | StyleSheets f. Brandg of Qual. Resp. |  |
+| `/SRMSMC/62000043` | BAdI for SAP SLC Suppl. Notification |  |
+| `/SRMSMC/62000044` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000045` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000047` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000048` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000049` | MIME types for Att. upload in BuPA |  |
+| `/SRMSMC/62000050` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000051` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000052` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000053` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000054` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000055` | Workflow Fallback Agents |  |
+| `/SRMSMC/62000056` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000058` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000060` | View for /SRMSMC/D_SYSCHR |  |
+| `/SRMSMC/62000061` | View for /SRMSMC/D_RFCDST |  |
+| `/SRMSMC/62000063` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000064` | MIME types for Att. upload |  |
+| `/SRMSMC/62000065` | MIME Types for Att. Upload |  |
+| `/SRMSMC/62000067` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000068` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000069` | IMG Activity |  |
+| `/SRMSMC/62000070` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000072` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000073` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000075` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000076` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000077` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000078` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000079` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000080` | IMG Activity |  |
+| `/SRMSMC/62000081` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000082` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000083` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000084` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000085` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000086` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000087` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000088` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000089` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000090` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000091` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000092` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000093` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000094` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000097` | IMG Activity |  |
+| `/SRMSMC/62000098` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000099` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000100` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000101` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000102` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000103` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000104` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000105` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000106` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000107` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000108` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000109` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000110` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000111` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000114` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000115` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000116` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000117` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000118` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000119` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000120` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000121` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000122` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000123` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000124` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000125` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000126` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000127` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000128` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000129` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000130` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000131` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000133` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000134` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000135` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000136` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000137` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000139` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000140` | IMG Activity |  |
+| `/SRMSMC/62000141` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000142` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000143` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000145` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000146` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000148` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000149` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000150` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000151` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000152` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000153` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000154` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000155` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000156` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000157` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000158` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000159` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000160` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000161` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000162` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000165` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000166` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000167` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000168` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/SRMSMC/62000169` | — |  |
+| `/SRMSMC/62000173` | — |  |
+| `/SRMSMC/62000174` | — |  |
+| `/SRMSMC/62000175` | — |  |
+| `/SRMSMC/62000176` | — |  |
+| `/SRMSMC/62000177` | — |  |
+| `/SRMSMC/62000178` | — |  |
+| `/SRMSMC/62000179` | — |  |
+| `/SRMSMC/62000180` | — |  |
+| `/SRMSMC/62000181` | — |  |
+| `/SRMSMC/62000182` | — |  |
+| `/SRMSMC/62000183` | — |  |
+| `/SRMSMC/62000184` | — |  |
+| `/SRMSMC/62000185` | — |  |
+| `/SRMSMC/62000186` | — |  |
+| `/SRMSMC/62000187` | — |  |
+| `/SRMSMC/62000188` | — |  |
+| `/SRMSMC/62000189` | — |  |
+| `/SRMSMC/62000190` | — |  |
+| `/SRMSMC/62000191` | — |  |
+| `/SRMSMC/62000192` | — |  |
+| `/SRMSMC/62000193` | — |  |
+| `/SRMSMC/62000194` | — |  |
+| `/SRMSMC/62000195` | — |  |
+| `/SRMSMC/62000196` | — |  |
+| `/SRMSMC/62000197` | — |  |
+| `/SRMSMC/62000198` | — |  |
+| `/SRMSMC/62000199` | — |  |
+| `/SRMSMC/62000200` | — |  |
+| `/SRMSMC/62000201` | — |  |
+| `/SRMSMC/62000202` | — |  |
+| `/SRMSMC/62000203` | — |  |
+| `/SRMSMC/62000204` | — |  |
+| `/SRMSMC/62000205` | — |  |
+| `/SRMSMC/62000206` | — |  |
+| `/SRMSMC/62000207` | — |  |
+| `/SRMSMC/62000210` | — |  |
+| `/SRMSMC/62000211` | — |  |
+| `/SRMSMC/62000212` | — |  |
+| `/SRMSMC/62000213` | — |  |
+| `/SRMSMC/62000214` | — |  |
+| `/SRMSMC/62000215` | — |  |
+| `/SRMSMC/62000216` | — |  |
+| `/SRMSMC/62000217` | — |  |
+| `/SRMSMC/62000218` | — |  |
+| `/SRMSMC/CREA_QLB_EVL` | Create Quest. Lib. for Evaluation |  |
+| `/SRMSMC/CREA_QLB_QUA` | Create Quest. Lib. for Qualification |  |
+| `/SRMSMC/NR_ACT` | Number Ranges for Activities |  |
+| `/SRMSMC/NR_BPH` | Number Range for Supplier Hierarchy |  |
+| `/SRMSMC/NR_CRT` | Number Range for Certificate Types |  |
+| `/SRMSMC/NR_PUC` | Number Range for Purch. Categories |  |
+| `/SRMSMC/NR_Q` | Number Ranges for Questions |  |
+| `/SRMSMC/NR_QG` | Number Ranges for Question Groups |  |
+| `/SRMSMC/NR_QNR` | Number Ranges for Questionnaires |  |
+| `/SRMSMC/NR_QNRE` | Number Ranges Eval. Questionnaire |  |
+| `/SRMSMC/NR_QS` | Number Ranges for Sections |  |
+| `/SRMSMC/NR_SCS` | Number Ranges for Class. Profiles |  |
+| `/SRMSMC/NR_SEP` | Number Ranges for Eval. Templates |  |
+| `/SRMSMC/NR_SES` | Number Ranges for Suppl. Scorecards |  |
+| `/SRMSMC/NR_SEV` | Number Ranges for Eval. Requests |  |
+| `/SRMSMC/NR_SQP` | Number Ranges for Qual. Templates |  |
+| `/SRMSMC/NR_SQQ` | Number Ranges for Qual. Requests |  |
+| `/SRMSMC/NR_SQR` | Number Ranges for Qual. Responses |  |
+| `/SRMSMC/NR_SQS` | Number Ranges for Qual. Scorecards |  |
+| `/SRMSMC/NR_SRS` | Number Ranges for Eval. Responses |  |
+| `/SRMSMC/NR_TSK` | Number Ranges for Tasks |  |
+| `/SRMSMC/UPLOAD_MCASS` | Upload Master Category Assignments |  |
+| `/SRMSMC/UPLOAD_MGPCT` | Upload Material Groups and Prod. Cat |  |
+| `/SRMSMC/UPLOAD_SPC` | Upload SPCs/Master Categories |  |
+| `/SRMSMC/WF_AUTO_CUST` | Customize SAP Business Workflow |  |
+| `/SRMSMC/WF_GEN` | Define Tasks as General Tasks |  |
+
+---
+
+*📝 Part of SAP T-Codes Reference — Namespaces*  
+*Back to: [Namespace Index](00_README.md)*  
+*Back to: [Master Index](../00_README.md)*

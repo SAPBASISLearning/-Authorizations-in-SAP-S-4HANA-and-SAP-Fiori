@@ -1,0 +1,91 @@
+# 🌐 SAP T-Codes — /OSP/ Namespace
+> **Namespace:** /OSP/  
+> **Solution:** Outsourcing (OSP)  
+> **Total T-Codes:** 66  
+> **Source:** TSTCT Table — SAP S/4HANA System Export  
+> **Date:** April 2026  
+
+---
+
+## 📋 About This Namespace
+
+Business process outsourcing and shared services
+
+---
+
+## 📑 T-Code Reference (66 T-Codes)
+
+| T-Code | Description | Program |
+|--------|-------------|---------|
+| `/OSP/07000009` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/07000010` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/07000011` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/07000012` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/07000013` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000008` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000009` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000012` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000013` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000014` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000015` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000016` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000017` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000018` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000019` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000021` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000022` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000023` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000024` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000026` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000027` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000028` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000029` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000030` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000031` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/32000034` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/45000002` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/45000003` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/45000004` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/45000005` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/45000007` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/45000016` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/49000007` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/68002403` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/68002404` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/68002405` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/68002406` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/68002407` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/68002408` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/68002409` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/68002410` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/68002411` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/68002412` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/68002413` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/68002417` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/68002425` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/80000006` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/80000007` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/80000008` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/80000009` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/80000016` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/80000017` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/80000018` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/80000019` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/80000020` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/80000021` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/OSP/CHECKTOOL` | Duet Checktool |  |
+| `/OSP/CLIENTCOPY_TOOL` | OSP Client Copy Tool |  |
+| `/OSP/ESACHECK` | Duet Web Services Check |  |
+| `/OSP/SLD` | SLD for Duet |  |
+| `/OSP/TR_ACE_STRT` | Business Environment Configurations |  |
+| `/OSP/TR_CAN_SCHDULE` | BM Cancel Scheduler |  |
+| `/OSP/TR_RP_ERROR_LOG` | Error Log for administrator |  |
+| `/OSP/TR_SCHDULER` | BM Scheduler setting |  |
+| `/OSP/TR_TP_REPORT` | List of Reports Scheduled for TP |  |
+| `/OSP/TR_WSR_SCHDULE` | Time WSR scheduling |  |
+
+---
+
+*📝 Part of SAP T-Codes Reference — Namespaces*  
+*Back to: [Namespace Index](00_README.md)*  
+*Back to: [Master Index](../00_README.md)*

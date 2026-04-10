@@ -1,0 +1,138 @@
+# 🔌 SAP T-Codes — /IWFND/ Namespace
+> **Namespace:** /IWFND/  
+> **Solution:** Gateway Foundation (IWFND)  
+> **Total T-Codes:** 113  
+> **Source:** TSTCT Table — SAP S/4HANA System Export  
+> **Date:** April 2026  
+
+---
+
+## 📋 About This Namespace
+
+OData service management, error log, cache management, SAP Gateway
+
+---
+
+## 📑 T-Code Reference (113 T-Codes)
+
+| T-Code | Description | Program |
+|--------|-------------|---------|
+| `/IWFND/14000001` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/32000004` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/32000011` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/32000012` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/32000013` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/32000018` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/32000020` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/32000021` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/32000022` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/32000023` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/32000024` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000001` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000003` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000004` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000005` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000006` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000007` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000008` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000009` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000010` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000011` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000013` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000014` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000015` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000018` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000019` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000022` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000027` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000031` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000038` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000039` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000040` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000043` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000044` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000045` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000046` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000051` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000052` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000053` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000054` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000055` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000056` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000057` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000058` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000059` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000060` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000061` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000062` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000063` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000065` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000066` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000068` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000071` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000072` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000073` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000074` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000075` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000076` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000077` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/50000078` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000010` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000011` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000012` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000013` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000018` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000019` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000020` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000021` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000022` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000023` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000024` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000025` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000026` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/59000027` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/99000004` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/99000005` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/99000006` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/IWFND/99000018` | IMG Activity /IWFND/SETT_CSRF_NEW |  |
+| `/IWFND/99000022` | IMG Activity /IWFND/SETT_CSRF_RAL |  |
+| `/IWFND/99000023` | IMG Activity /IWFND/SET_CSRF_RAL |  |
+| `/IWFND/APPS_LOG` | SAP Gateway Application Log Viewer |  |
+| `/IWFND/BULK_USER_MAP` | Transaction to Perform Bulk User Map |  |
+| `/IWFND/CACHE` | Gateway Cache Management |  |
+| `/IWFND/CACHE_CLEANUP` | Cleanup of GW Model Cache |  |
+| `/IWFND/CACHE_REBUILD` | Rebuild Gateway Model Cache |  |
+| `/IWFND/CLEANUP` | Execute Cleanup |  |
+| `/IWFND/CLEANUP_JOBS` | Manage cleanup jobs |  |
+| `/IWFND/CRE_DEF_JOBS` | Create Default Cleanup Jobs |  |
+| `/IWFND/CSRF_WITH_RAL` | CSRF with RAL-relevant services |  |
+| `/IWFND/ERROR_LOG` | SAP Gateway Error Log |  |
+| `/IWFND/ERROR_LOG_E2E` | SAP Gateway Error Log - E2E |  |
+| `/IWFND/EXPLORER` | Service Explorer |  |
+| `/IWFND/GLOBAL_CONFIG` | Global configuration settings |  |
+| `/IWFND/GW_CLIENT` | SAP Gateway Client |  |
+| `/IWFND/GW_SUPPORT` | Gateway Cloud Support |  |
+| `/IWFND/INIT_CCMS` | Initialize SAP Gateway CCMS Context |  |
+| `/IWFND/IWF_ACTIVATE` | Activate / Deactivate SAP Gateway |  |
+| `/IWFND/MAINT_SERVICE` | Activate and Maintain Services |  |
+| `/IWFND/MED_ACTIVATE` | Activate/Deactivate Metadata Cache |  |
+| `/IWFND/MED_SA_ACTIV` | Activate system alias based caching |  |
+| `/IWFND/MOC_PARALLEL` | Parallelize Multi-Origin Composition |  |
+| `/IWFND/NOTIF_CLEANUP` | Cleanup Notifications |  |
+| `/IWFND/NOTIF_MONITOR` | Notification Monitor |  |
+| `/IWFND/ROUTING` | SAP Gateway Routing Configuration |  |
+| `/IWFND/SERVICE_TEST` | Service Explorer |  |
+| `/IWFND/SOFTSTATE` | Enable or Disable Soft State |  |
+| `/IWFND/STATS` | SAP Gateway Statistics |  |
+| `/IWFND/TRACES` | SAP Gateway Traces |  |
+| `/IWFND/V4_ADMIN` | SAP Gateway Service Administration |  |
+| `/IWFND/VIEW_LOG` | SAP Gateway Application Log Viewer |  |
+| `/IWFND/VIRUS_SCAN` | Configuration of SAP GW Virus Scan |  |
+| `/IWFND/WF_WEBGUI` | WebGUI For Executing Workflow Item |  |
+| `/IWFND/WSS_SETUP` | Configure WS Message-Based |  |
+
+---
+
+*📝 Part of SAP T-Codes Reference — Namespaces*  
+*Back to: [Namespace Index](00_README.md)*  
+*Back to: [Master Index](../00_README.md)*

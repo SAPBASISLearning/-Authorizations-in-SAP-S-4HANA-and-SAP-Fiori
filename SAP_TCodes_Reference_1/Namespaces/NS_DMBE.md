@@ -1,0 +1,181 @@
+# 🔀 SAP T-Codes — /DMBE/ Namespace
+> **Namespace:** /DMBE/  
+> **Solution:** Data Migration & Business Engineering  
+> **Total T-Codes:** 156  
+> **Source:** TSTCT Table — SAP S/4HANA System Export  
+> **Date:** April 2026  
+
+---
+
+## 📋 About This Namespace
+
+Data migration tools and business engineering
+
+---
+
+## 📑 T-Code Reference (156 T-Codes)
+
+| T-Code | Description | Program |
+|--------|-------------|---------|
+| `/DMBE/01000002` | — |  |
+| `/DMBE/01000003` | — |  |
+| `/DMBE/01000004` | — |  |
+| `/DMBE/01000005` | — |  |
+| `/DMBE/01000006` | — |  |
+| `/DMBE/01000007` | — |  |
+| `/DMBE/01000008` | — |  |
+| `/DMBE/01000009` | — |  |
+| `/DMBE/01000010` | — |  |
+| `/DMBE/01000011` | — |  |
+| `/DMBE/01000012` | — |  |
+| `/DMBE/01000013` | — |  |
+| `/DMBE/01000014` | — |  |
+| `/DMBE/01000015` | — |  |
+| `/DMBE/01000016` | — |  |
+| `/DMBE/01000017` | — |  |
+| `/DMBE/01000018` | — |  |
+| `/DMBE/01000019` | — |  |
+| `/DMBE/01000020` | — |  |
+| `/DMBE/01000021` | — |  |
+| `/DMBE/01000022` | — |  |
+| `/DMBE/01000023` | — |  |
+| `/DMBE/01000024` | — |  |
+| `/DMBE/01000025` | — |  |
+| `/DMBE/01000026` | — |  |
+| `/DMBE/01000027` | — |  |
+| `/DMBE/01000028` | — |  |
+| `/DMBE/01000029` | — |  |
+| `/DMBE/01000030` | — |  |
+| `/DMBE/01000031` | — |  |
+| `/DMBE/01000032` | — |  |
+| `/DMBE/01000033` | — |  |
+| `/DMBE/01000034` | — |  |
+| `/DMBE/01000035` | — |  |
+| `/DMBE/01000036` | — |  |
+| `/DMBE/01000037` | — |  |
+| `/DMBE/01000038` | — |  |
+| `/DMBE/01000039` | — |  |
+| `/DMBE/01000040` | — |  |
+| `/DMBE/01000041` | — |  |
+| `/DMBE/01000042` | — |  |
+| `/DMBE/01000043` | — |  |
+| `/DMBE/01000044` | — |  |
+| `/DMBE/01000045` | — |  |
+| `/DMBE/01000046` | — |  |
+| `/DMBE/01000047` | — |  |
+| `/DMBE/01000048` | — |  |
+| `/DMBE/01000049` | — |  |
+| `/DMBE/01000050` | — |  |
+| `/DMBE/01000051` | — |  |
+| `/DMBE/01000052` | — |  |
+| `/DMBE/01000053` | — |  |
+| `/DMBE/01000054` | — |  |
+| `/DMBE/01000055` | — |  |
+| `/DMBE/01000056` | — |  |
+| `/DMBE/01000057` | — |  |
+| `/DMBE/01000058` | — |  |
+| `/DMBE/01000059` | — |  |
+| `/DMBE/01000060` | — |  |
+| `/DMBE/01000061` | — |  |
+| `/DMBE/01000062` | — |  |
+| `/DMBE/01000063` | — |  |
+| `/DMBE/01000064` | — |  |
+| `/DMBE/01000065` | — |  |
+| `/DMBE/01000066` | — |  |
+| `/DMBE/01000067` | — |  |
+| `/DMBE/01000068` | — |  |
+| `/DMBE/04000261` | IMG Activity /DMBE/PRICSIMCONFIG |  |
+| `/DMBE/04000284` | IMG Activity /DMBE/VM_RJCRS |  |
+| `/DMBE/72000001` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000002` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000003` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000004` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000005` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000006` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000007` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000008` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000009` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000010` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000011` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000012` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000013` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000014` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000015` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000016` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000017` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000018` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000019` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000020` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000021` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000022` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000023` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000024` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000025` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000026` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000027` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000028` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000029` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000030` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000031` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000032` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000033` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000034` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000035` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000036` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000037` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000038` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000039` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000040` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000041` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000042` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000043` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000044` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000045` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000046` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000047` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000048` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000049` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000050` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000051` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000052` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000053` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000054` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000055` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000056` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000057` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000058` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000059` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000060` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000061` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000062` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000063` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000064` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000065` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000066` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000067` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000068` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000069` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000070` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000072` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000073` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000074` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000075` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/72000076` | — | SAPLS_CUS_IMG_ACTIVITY |
+| `/DMBE/BP_COMPNY_CODE` | Company Codes per Business Partner |  |
+| `/DMBE/CUST` | Deal Capture IMG |  |
+| `/DMBE/EVTDIST` | Event x Distribution List |  |
+| `/DMBE/GENPROV` | SAP Fiori Launchpad |  |
+| `/DMBE/LEGALT` | SAP Fiori Launchpad |  |
+| `/DMBE/MASTAGREEMENT` | Master Agreement Category |  |
+| `/DMBE/PRC_SIM_NAV` | Price Simulatio Navigation |  |
+| `/DMBE/PRDTP_CUST` | Product Type maintanance |  |
+| `/DMBE/PRD_SCHEDULING` | Product Types x Scheduling Desk |  |
+| `/DMBE/PRODUCT_ALIAS` | Maintain Product Alias |  |
+| `/DMBE/SCHEDULING` | Define Scheduling Desk |  |
+| `/DMBE/TEMPLATE_RANGE` | Nr. Range for Deal Capture Templates |  |
+
+---
+
+*📝 Part of SAP T-Codes Reference — Namespaces*  
+*Back to: [Namespace Index](00_README.md)*  
+*Back to: [Master Index](../00_README.md)*
